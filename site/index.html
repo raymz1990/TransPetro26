@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Plataforma de estudos — Transpetro 2026.4, Ênfase 5 (Análise de Sistemas: Processos de Negócios)">
+  <title>Transpetro Ênfase 5 — Estudos</title>
+  <script>
+    /* Aplica o tema salvo antes da renderização (padrão: escuro). */
+    try { if (localStorage.getItem("transpetro_enfase5_tema") === "light") document.documentElement.setAttribute("data-theme", "light"); } catch (e) {}
+  </script>
+  <link rel="stylesheet" href="assets/css/themes.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <button class="btn menu-btn" id="menu-btn" type="button" aria-controls="menu" aria-expanded="false">Menu</button>
+      <a class="brand" href="#/">Transpetro<span>Ênfase 5</span></a>
+      <span class="spacer"></span>
+      <button class="btn" id="tema" type="button">Tema claro</button>
+    </header>
+    <nav class="sidebar" id="menu" aria-label="Navegação principal"></nav>
+    <main class="main" id="app" tabindex="-1"><noscript>Esta plataforma requer JavaScript.</noscript></main>
+    <footer class="footer">Projeto de estudos independente, sem vínculo com a TRANSPETRO ou a Fundação Cesgranrio. O edital oficial prevalece. Dados salvos apenas neste navegador.</footer>
+  </div>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/storage.js"></script>
+  <script src="assets/js/markdown.js"></script>
+  <script src="assets/js/navigation.js"></script>
+  <script src="assets/js/progress.js"></script>
+  <script src="assets/js/questions.js"></script>
+  <script src="assets/js/error-notebook.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

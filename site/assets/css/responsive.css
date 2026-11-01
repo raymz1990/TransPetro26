@@ -1,0 +1,13 @@
+@media (max-width:820px){
+  .app{grid-template-columns:1fr}
+  .menu-btn{display:inline-block}
+  .sidebar{position:fixed;top:51px;left:0;bottom:0;width:min(290px,86vw);height:auto;z-index:30;transform:translateX(-102%);transition:transform .15s}
+  .sidebar.open{transform:none;box-shadow:0 0 0 100vmax rgba(0,0,0,.45)}
+  .topbar{padding:8px 12px;gap:8px}
+  .brand{font-size:.85rem;white-space:nowrap}
+  .btn{padding:6px 10px}
+  h1{font-size:1.55rem}
+  .main{overflow-wrap:anywhere}
+  .main{padding-top:20px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}

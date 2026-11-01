@@ -1,0 +1,604 @@
+# Banco de questões — Módulo 2: Gerenciamento de Projetos e Produtos (lote piloto, gabaritos comentados)
+
+**Tipo:** questões **autorais** — **Questão autoral — estilo Cesgranrio.** **Status:** validada 10.
+
+## Quadro de gabaritos
+
+| Questão | ID | Gabarito | Item do edital | Dificuldade | Habilidade | Tipo | Status |
+|---|---|---|---|---|---|---|---|
+| 1 | AUT-000011 | B | 2.1 | Fácil | Compreensão | Cenário | Validada |
+| 2 | AUT-000012 | D | 2.1 | Difícil | Análise | Comparativa | Validada |
+| 3 | AUT-000013 | A | 2.1 | Fácil | Compreensão | Conceitual | Validada |
+| 4 | AUT-000014 | E | 2.1 | Média | Resolução de problemas | Cálculo | Validada |
+| 5 | AUT-000015 | C | 2.2 | Média | Aplicação | Cenário | Validada |
+| 6 | AUT-000016 | D | 2.3 | Média | Compreensão | Cenário | Validada |
+| 7 | AUT-000017 | A | 2.4 | Fácil | Compreensão | Conceitual | Validada |
+| 8 | AUT-000018 | C | 2.5 | Média | Análise | Comparativa | Validada |
+| 9 | AUT-000019 | E | 2.6 | Média | Aplicação | Cenário | Validada |
+| 10 | AUT-000020 | B | 2.4 | Difícil | Análise | Conceitual | Validada |
+
+---
+
+## Questão 1 — AUT-000011
+
+**AUT-000011** · Scrum: responsabilidades e cancelamento da Sprint · item 2.1 · Fácil · Compreensão
+
+*Questão autoral — estilo Cesgranrio.*
+
+Durante uma Sprint de duas semanas, a organização decide abandonar a iniciativa à qual a Meta da Sprint está associada. A Meta da Sprint deixa de fazer sentido para o negócio.  
+  
+Segundo o Scrum Guide, quem tem a autoridade para cancelar a Sprint nessa situação é
+
+(A) o Scrum Master, por ser o responsável por estabelecer o Scrum na organização.  
+(B) o Product Owner, por ser o responsável por maximizar o valor do produto.  
+(C) os Desenvolvedores, por serem os responsáveis pelo plano da Sprint.  
+(D) as partes interessadas, por serem as financiadoras da iniciativa.  
+(E) o Scrum Team, por votação unânime de todos os seus integrantes.  
+
+### A. Gabarito
+
+**B**
+
+### B. Resolução comentada
+
+O Scrum Guide atribui **somente ao Product Owner** a autoridade para cancelar uma Sprint, tipicamente quando a Meta da Sprint se torna obsoleta. O PO é o responsável por maximizar o valor do produto e responde pelas decisões sobre o Product Backlog e a Meta do Produto. Quando a Sprint é cancelada, os itens concluídos e utilizáveis são revisados, e os demais retornam ao Product Backlog.
+
+### C. Análise das alternativas
+
+- **(A)** Incorreta. O Scrum Master estabelece o Scrum, orienta e remove impedimentos, mas não decide cancelar a Sprint; esse poder não lhe pertence.
+- **(B)** Correta. Apenas o Product Owner pode cancelar a Sprint, por exemplo, quando a Meta da Sprint se torna obsoleta.
+- **(C)** Incorreta. Os Desenvolvedores criam o plano da Sprint e adaptam o trabalho, mas não têm autoridade para cancelá-la.
+- **(D)** Incorreta. As partes interessadas podem influenciar o PO, mas a decisão de cancelar a Sprint cabe ao Product Owner, não a elas.
+- **(E)** Incorreta. O Scrum não prevê votação do time para cancelar a Sprint; a autoridade é do Product Owner, e não coletiva.
+
+### D. Fundamentação teórica
+
+- **Módulo:** M02 — Gerenciamento de Projetos e Produtos
+- **Assunto:** Scrum: responsabilidades do Scrum Team e eventos
+- **Item do edital:** 2.1 (E5-026)
+- **Arquivo de teoria:** `conteudo/02-projetos-produtos/02-scrum.md`
+- **Referência:** Material teórico do projeto (seção 4 e 5); Scrum Guide 2020 (verificado em revisão do M02).
+
+### E. Ponto de atenção para a prova
+
+Quem decide **cancelar a Sprint** é o Product Owner. Não confunda com o poder do time de **ajustar o Sprint Backlog** e de **renegociar escopo** durante a Sprint, sem pôr a Meta da Sprint em risco.
+
+### F. Revisão rápida
+
+Somente o PO cancela a Sprint (ex.: Meta obsoleta). SM: estabelece o Scrum. Desenvolvedores: plano e Incremento.
+
+### G. Tags
+
+`m02` · `scrum` · `sprint` · `product-owner` · `item-2.1` · `facil` · `compreensao` · `cenario` · `autoral`
+
+**Verificação do gabarito:** Sem execução (questão conceitual); gabarito conferido contra o arquivo de teoria (Scrum Guide 2020 verificado na revisão do M02).  
+**Status de validação:** `validada`  
+**Validação:** Aprovada pelo usuário em 2026-10-31 (lote piloto do M02); sem revisão por terceiros; ressalva: textos do PMI não verificados em fonte primária.
+
+---
+
+## Questão 2 — AUT-000012
+
+**AUT-000012** · Scrum: artefatos e compromissos; Definição de Pronto · item 2.1 · Difícil · Análise
+
+*Questão autoral — estilo Cesgranrio.*
+
+Um Scrum Team discute como tratar a qualidade do Incremento. Um dos integrantes afirma: "Os critérios de aceitação de cada história e a Definição de Pronto são a mesma coisa; basta termos um deles". Outra integrante discorda e apresenta distinções entre os conceitos.  
+  
+A distinção correta, segundo o Scrum Guide, é:
+
+(A) Os critérios de aceitação são o compromisso do Incremento, e a Definição de Pronto é o compromisso do Sprint Backlog de cada Sprint.  
+(B) A Definição de Pronto é definida pelo Product Owner para cada item, e os critérios de aceitação são definidos pelos Desenvolvedores.  
+(C) A Definição de Pronto é o compromisso do Product Backlog, ao passo que a Meta do Produto é o compromisso do Incremento.  
+(D) A Definição de Pronto é o compromisso do Incremento e vale para todos os itens; os critérios de aceitação valem para cada item.  
+(E) A Definição de Pronto aplica-se somente aos itens de maior risco, e os critérios de aceitação, aos itens de menor complexidade.  
+
+### A. Gabarito
+
+**D**
+
+### B. Resolução comentada
+
+No Scrum, cada artefato tem um **compromisso**: Product Backlog → **Meta do Produto**; Sprint Backlog → **Meta da Sprint**; Incremento → **Definição de Pronto**. A Definição de Pronto descreve o estado do Incremento quando atende às medidas de qualidade e vale para **todos** os itens: o que não atende a ela não integra o Incremento e volta ao Product Backlog. Já os **critérios de aceitação** são condições **específicas de cada item** (história), que o Scrum Guide não prescreve, mas que são práticas comuns.
+
+### C. Análise das alternativas
+
+- **(A)** Incorreta. Troca os conceitos: a Definição de Pronto é o compromisso do Incremento, e o do Sprint Backlog é a Meta da Sprint. Critérios de aceitação não são compromisso de artefato algum.
+- **(B)** Incorreta. A Definição de Pronto não é definida item a item pelo PO. É um padrão de qualidade do Incremento (da organização ou do Scrum Team), comum a todos os itens.
+- **(C)** Incorreta. O compromisso do Product Backlog é a Meta do Produto, e o do Incremento é a Definição de Pronto; a alternativa troca os dois.
+- **(D)** Correta. Define o compromisso do Incremento e distingue o padrão geral (Definição de Pronto) das condições específicas de cada item (critérios de aceitação).
+- **(E)** Incorreta. A Definição de Pronto se aplica a todo o Incremento, não apenas a itens de maior risco; nem os critérios de aceitação se limitam aos itens simples.
+
+### D. Fundamentação teórica
+
+- **Módulo:** M02 — Gerenciamento de Projetos e Produtos
+- **Assunto:** Scrum: artefatos e seus compromissos
+- **Item do edital:** 2.1 (E5-026)
+- **Arquivo de teoria:** `conteudo/02-projetos-produtos/02-scrum.md`
+- **Referência:** Material teórico do projeto (seção 6); Scrum Guide 2020.
+
+### E. Ponto de atenção para a prova
+
+Memorize o trio **artefato → compromisso**: Product Backlog → Meta do Produto; Sprint Backlog → Meta da Sprint; Incremento → Definição de Pronto. Critérios de aceitação são **por item**.
+
+### F. Revisão rápida
+
+PB → Meta do Produto. SB → Meta da Sprint. Incremento → Definição de Pronto (vale para todos os itens). Critérios de aceitação: específicos do item.
+
+### G. Tags
+
+`m02` · `scrum` · `artefatos` · `definicao-de-pronto` · `criterios-de-aceitacao` · `item-2.1` · `dificil` · `analise` · `comparativa` · `autoral`
+
+**Verificação do gabarito:** Sem execução (questão conceitual); gabarito conferido contra o arquivo de teoria (Scrum Guide 2020 verificado na revisão do M02).  
+**Status de validação:** `validada`  
+**Validação:** Aprovada pelo usuário em 2026-10-31 (lote piloto do M02); sem revisão por terceiros; ressalva: textos do PMI não verificados em fonte primária.
+
+---
+
+## Questão 3 — AUT-000013
+
+**AUT-000013** · Scrum: Sprint Review · item 2.1 · Fácil · Compreensão
+
+*Questão autoral — estilo Cesgranrio.*
+
+Ao final de uma Sprint, o Scrum Team se reúne com representantes de áreas de negócio para examinar o Incremento produzido e discutir o que fazer a seguir.  
+  
+De acordo com o Scrum Guide, a finalidade da Sprint Review (Revisão da Sprint) é
+
+(A) inspecionar o resultado da Sprint com as partes interessadas e determinar adaptações futuras, podendo ajustar o Product Backlog.  
+(B) apresentar o Incremento às partes interessadas, para que elas o aprovem formalmente, sem alterações posteriores no Product Backlog.  
+(C) permitir que os Desenvolvedores identifiquem melhorias nas pessoas, nas interações e nas ferramentas do time para a Sprint seguinte.  
+(D) inspecionar diariamente o progresso rumo à Meta da Sprint e adaptar o Sprint Backlog, em até quinze minutos.  
+(E) avaliar o desempenho individual de cada Desenvolvedor, para subsidiar decisões de remuneração e de alocação.  
+
+### A. Gabarito
+
+**A**
+
+### B. Resolução comentada
+
+A Sprint Review é uma **sessão de trabalho** em que o Scrum Team e as partes interessadas **inspecionam o resultado da Sprint** e **determinam adaptações futuras**; o Product Backlog pode ser ajustado para atender a novas oportunidades. **Não** é uma apresentação para aprovação. Ocorre antes da Retrospectiva.
+
+### C. Análise das alternativas
+
+- **(A)** Correta. Descreve a finalidade da Revisão da Sprint: inspecionar o resultado e adaptar, com possível ajuste do Product Backlog.
+- **(B)** Incorreta. A Revisão não é uma apresentação formal de aprovação; é colaborativa, e o Product Backlog pode ser alterado como resultado.
+- **(C)** Incorreta. Descreve a Retrospectiva da Sprint, que trata de qualidade e eficácia do time e ocorre depois da Revisão.
+- **(D)** Incorreta. Descreve a Daily Scrum (Reunião Diária), de 15 minutos, voltada à Meta da Sprint.
+- **(E)** Incorreta. O Scrum não prevê avaliação individual de desempenho em seus eventos; a Revisão examina o Incremento, e não pessoas.
+
+### D. Fundamentação teórica
+
+- **Módulo:** M02 — Gerenciamento de Projetos e Produtos
+- **Assunto:** Scrum: eventos
+- **Item do edital:** 2.1 (E5-026)
+- **Arquivo de teoria:** `conteudo/02-projetos-produtos/02-scrum.md`
+- **Referência:** Material teórico do projeto (seção 5); Scrum Guide 2020.
+
+### E. Ponto de atenção para a prova
+
+A Revisão é **sessão de trabalho**, não apresentação. Ordem: Sprint Review → Sprint Retrospective → próxima Sprint (sem intervalo).
+
+### F. Revisão rápida
+
+Review: inspeciona o resultado com stakeholders e adapta o backlog. Retrospective: melhora o processo do time. Daily: 15 min, Meta da Sprint.
+
+### G. Tags
+
+`m02` · `scrum` · `sprint-review` · `eventos` · `item-2.1` · `facil` · `compreensao` · `conceitual` · `autoral`
+
+**Verificação do gabarito:** Sem execução (questão conceitual); gabarito conferido contra o arquivo de teoria (Scrum Guide 2020 verificado na revisão do M02).  
+**Status de validação:** `validada`  
+**Validação:** Aprovada pelo usuário em 2026-10-31 (lote piloto do M02); sem revisão por terceiros; ressalva: textos do PMI não verificados em fonte primária.
+
+---
+
+## Questão 4 — AUT-000014
+
+**AUT-000014** · Kanban: limite de WIP e Lei de Little · item 2.1 · Média · Resolução de problemas
+
+*Questão autoral — estilo Cesgranrio.*
+
+Um time de manutenção de sistemas usa Kanban. Em média, há 12 itens em andamento, e o time conclui, em média, 4 itens por semana. Considere o sistema estável e a Lei de Little (tempo de ciclo médio = WIP médio ÷ vazão média).  
+  
+Para reduzir o tempo de ciclo médio para 2 semanas, sem alterar a vazão, o WIP médio deve ser limitado a
+
+(A) 4 itens.  
+(B) 6 itens.  
+(C) 12 itens.  
+(D) 2 itens.  
+(E) 8 itens.  
+
+### A. Gabarito
+
+**E**
+
+### B. Resolução comentada
+
+Pela Lei de Little, **tempo de ciclo = WIP ÷ vazão**. Com 12 itens e vazão de 4 itens/semana, o tempo de ciclo atual é 12 ÷ 4 = 3 semanas. Para chegar a 2 semanas com a mesma vazão: WIP = tempo de ciclo × vazão = 2 × 4 = **8 itens**.
+
+### C. Análise das alternativas
+
+- **(A)** Incorreta. 4 itens corresponderiam a um tempo de ciclo de 1 semana (4 ÷ 4); é o valor da vazão, confundido com o WIP.
+- **(B)** Incorreta. 6 itens resultariam em 1,5 semana (6 ÷ 4); o valor pode vir de dividir o WIP atual por 2.
+- **(C)** Incorreta. É o WIP atual, que resulta em 3 semanas de tempo de ciclo, e não em 2.
+- **(D)** Incorreta. 2 itens resultariam em 0,5 semana; é o valor do tempo de ciclo-alvo, confundido com o WIP.
+- **(E)** Correta. WIP = 2 semanas × 4 itens/semana = 8 itens.
+
+### D. Fundamentação teórica
+
+- **Módulo:** M02 — Gerenciamento de Projetos e Produtos
+- **Assunto:** Kanban: sistema de puxar, limite de WIP e métricas de fluxo
+- **Item do edital:** 2.1 (E5-026)
+- **Arquivo de teoria:** `conteudo/02-projetos-produtos/03-kanban.md`
+- **Referência:** Material teórico do projeto (seção 2.5); Kanban Guide (métricas de fluxo).
+
+### E. Ponto de atenção para a prova
+
+**Tempo de ciclo = WIP ÷ vazão.** Para reduzir o tempo de ciclo sem alterar a vazão, **reduza o WIP**. Em enunciados, identifique qual grandeza é pedida antes de substituir.
+
+### F. Revisão rápida
+
+Lei de Little: CT = WIP ÷ TP. WIP-alvo = CT-alvo × TP.
+
+### G. Tags
+
+`m02` · `kanban` · `wip` · `lei-de-little` · `tempo-de-ciclo` · `item-2.1` · `media` · `resolucao-de-problemas` · `calculo` · `autoral`
+
+**Verificação do gabarito:** Cálculo conferido: 12 ÷ 4 = 3 semanas; 2 × 4 = 8 itens.  
+**Status de validação:** `validada`  
+**Validação:** Aprovada pelo usuário em 2026-10-31 (lote piloto do M02); sem revisão por terceiros; ressalva: textos do PMI não verificados em fonte primária.
+
+---
+
+## Questão 5 — AUT-000015
+
+**AUT-000015** · Gestão de projeto versus gestão de produto · item 2.2 · Média · Aplicação
+
+*Questão autoral — estilo Cesgranrio.*
+
+Uma empresa avalia o desempenho da iniciativa de um aplicativo interno de solicitações, mantido por uma equipe estável, usando os seguintes indicadores:  
+  
+I – entrega das funcionalidades dentro do prazo e do orçamento aprovados;  
+II – índice de adoção pelos usuários três meses após o lançamento;  
+III – redução do tempo médio de atendimento das solicitações, atribuída ao aplicativo;  
+IV – aderência ao escopo previsto no plano original.  
+  
+São indicadores característicos da gestão de produto, por medirem valor e resultados, e não a execução do plano, apenas os indicados em
+
+(A) I e IV.  
+(B) I e II.  
+(C) II e III.  
+(D) III e IV.  
+(E) I, II e III.  
+
+### A. Gabarito
+
+**C**
+
+### B. Resolução comentada
+
+A **gestão de projeto** mede a execução do que foi combinado (escopo, prazo, custo, aderência ao plano: **I e IV**). A **gestão de produto** foca **valor e resultados** (*outcomes*) para usuários e negócio: adoção e retenção, redução de tempo de atendimento, receita ou economia (**II e III**). O produto continua após o lançamento, com equipe estável e investimento contínuo.
+
+### C. Análise das alternativas
+
+- **(A)** Incorreta. I (prazo e orçamento) e IV (aderência ao escopo) são indicadores de execução do projeto, a medida típica da gestão de projeto.
+- **(B)** Incorreta. Mistura um indicador de projeto (I) com um de produto (II).
+- **(C)** Correta. Adoção pelos usuários e redução do tempo de atendimento medem valor e resultado (produto).
+- **(D)** Incorreta. Mistura um indicador de produto (III) com um de projeto (IV).
+- **(E)** Incorreta. Inclui o indicador I, de prazo e orçamento, típico da gestão de projeto.
+
+### D. Fundamentação teórica
+
+- **Módulo:** M02 — Gerenciamento de Projetos e Produtos
+- **Assunto:** Gestão de projeto versus gestão de produto
+- **Item do edital:** 2.2 (E5-027)
+- **Arquivo de teoria:** `conteudo/02-projetos-produtos/01-fundamentos.md`
+- **Referência:** Material teórico do projeto (seção 3, comparação entre gestão de projeto e de produto).
+
+### E. Ponto de atenção para a prova
+
+**Projeto**: temporário, mede entrega do combinado (*output*: escopo, prazo, custo). **Produto**: contínuo, mede valor (*outcome*: adoção, resultado de negócio, satisfação).
+
+### F. Revisão rápida
+
+Projeto = aderência ao plano. Produto = valor e resultado ao longo do ciclo de vida.
+
+### G. Tags
+
+`m02` · `projeto-x-produto` · `outcome` · `output` · `item-2.2` · `media` · `aplicacao` · `cenario` · `autoral`
+
+**Verificação do gabarito:** Sem execução (questão conceitual); gabarito conferido contra o arquivo de teoria.  
+**Status de validação:** `validada`  
+**Validação:** Aprovada pelo usuário em 2026-10-31 (lote piloto do M02); sem revisão por terceiros; ressalva: textos do PMI não verificados em fonte primária.
+
+---
+
+## Questão 6 — AUT-000016
+
+**AUT-000016** · SAFe: ART, PI e PI Planning · item 2.3 · Média · Compreensão
+
+*Questão autoral — estilo Cesgranrio.*
+
+Em uma grande empresa, cinco equipes ágeis que trabalham no mesmo fluxo de valor planejam o próximo ciclo de entrega em um evento conjunto. O evento reúne todo o trem de entrega, é facilitado pelo Release Train Engineer, dura cerca de dois dias e ocorre a cada 8 a 12 semanas. Nele, as equipes alinham missão e visão, definem objetivos e identificam dependências e riscos.  
+  
+No SAFe, esse evento é denominado
+
+(A) Inspect & Adapt, realizado ao fim de cada PI, com demonstração, revisão de medições e retrospectiva.  
+(B) System Demo, realizada a cada iteração para demonstrar o incremento integrado do trem.  
+(C) Planejamento da Iteração, em que cada equipe planeja individualmente as próximas duas semanas.  
+(D) PI Planning, em que todo o trem planeja o próximo incremento de programa.  
+(E) Scrum de Scrums, em que representantes das equipes sincronizam dependências com frequência.  
+
+### A. Gabarito
+
+**D**
+
+### B. Resolução comentada
+
+O **PI Planning** é o evento baseado em cadência, de **todo o ART**, tipicamente de **dois dias**, a cada **8 a 12 semanas**, facilitado pelo RTE, em que as equipes alinham-se à missão e à visão, planejam o próximo PI e identificam dependências e riscos. O resultado inclui objetivos do PI de cada equipe.
+
+### C. Análise das alternativas
+
+- **(A)** Incorreta. O Inspect & Adapt ocorre ao **fim** do PI (demonstração do sistema do PI, revisão de medições e retrospectiva com resolução de problemas); não é o evento de planejamento do próximo PI.
+- **(B)** Incorreta. A System Demo ocorre a **cada iteração** e demonstra o incremento integrado; não planeja o próximo PI.
+- **(C)** Incorreta. O Planejamento da Iteração é feito por **cada equipe** para uma iteração (em geral, duas semanas), e não por todo o trem.
+- **(D)** Correta. Evento de planejamento de todo o ART, a cada PI, de cerca de dois dias.
+- **(E)** Incorreta. O Scrum de Scrums é uma sincronização recorrente entre equipes, sem a função de planejar o PI e sem a duração de dois dias.
+
+### D. Fundamentação teórica
+
+- **Módulo:** M02 — Gerenciamento de Projetos e Produtos
+- **Assunto:** Métodos ágeis em escala: SAFe
+- **Item do edital:** 2.3 (E5-028)
+- **Arquivo de teoria:** `conteudo/02-projetos-produtos/04-metodos-ageis-escalados.md`
+- **Referência:** Material teórico do projeto (seções 3 e 4); site oficial do SAFe (conferido na revisão do M02).
+
+### E. Ponto de atenção para a prova
+
+Distinga os eventos por **escopo e momento**: PI Planning (todo o ART, **início** do PI); System Demo (cada iteração); Inspect & Adapt (**fim** do PI).
+
+### F. Revisão rápida
+
+PI = 8–12 semanas. PI Planning: todo o ART, ~2 dias, facilitado pelo RTE. Inspect & Adapt: fim do PI.
+
+### G. Tags
+
+`m02` · `safe` · `art` · `pi-planning` · `agilidade-em-escala` · `item-2.3` · `media` · `compreensao` · `cenario` · `autoral`
+
+**Verificação do gabarito:** Sem execução (questão conceitual); gabarito conferido contra o arquivo de teoria (SAFe conferido no site oficial na revisão do M02).  
+**Status de validação:** `validada`  
+**Validação:** Aprovada pelo usuário em 2026-10-31 (lote piloto do M02); sem revisão por terceiros; ressalva: textos do PMI não verificados em fonte primária.
+
+---
+
+## Questão 7 — AUT-000017
+
+**AUT-000017** · PMBOK 7ª edição: Estrutura Analítica do Projeto (EAP) · item 2.4 · Fácil · Compreensão
+
+*Questão autoral — estilo Cesgranrio.*
+
+Ao planejar o escopo de um projeto, a equipe elabora a Estrutura Analítica do Projeto (EAP).  
+  
+Sobre a EAP, é correto afirmar que ela
+
+(A) decompõe hierarquicamente o escopo em pacotes de trabalho, incluindo todo o trabalho previsto e somente ele.  
+(B) é o cronograma do projeto, pois define a sequência e as dependências entre as atividades e os seus respectivos prazos.  
+(C) organiza o trabalho por atividades e datas de início e término, servindo para o controle do tempo.  
+(D) é uma técnica de estimativa de custos, pois calcula o valor de cada atividade pela análise de dados históricos de projetos.  
+(E) consolida os riscos identificados, classificando-os por probabilidade e por impacto sobre os objetivos do projeto.  
+
+### A. Gabarito
+
+**A**
+
+### B. Resolução comentada
+
+A **EAP (WBS)** é a decomposição hierárquica do **escopo total** do trabalho em partes menores e gerenciáveis, até os **pacotes de trabalho**. Segue a **regra dos 100%** (inclui todo o trabalho do escopo, e somente ele) e é orientada a **entregas**, não a atividades ou tempo. Serve de base para estimativas de custo e prazo, alocação de recursos e riscos.
+
+### C. Análise das alternativas
+
+- **(A)** Correta. Decomposição do escopo em pacotes de trabalho, com a regra dos 100%.
+- **(B)** Incorreta. O cronograma sequencia atividades e dependências e define prazos; a EAP define o que será entregue.
+- **(C)** Incorreta. A EAP é orientada a entregas e escopo; a organização por atividades e datas é característica do cronograma.
+- **(D)** Incorreta. Estimativa de custos é outro processo; a EAP é um dos insumos dessa estimativa, mas não é a técnica.
+- **(E)** Incorreta. A classificação de riscos por probabilidade e impacto é a análise (matriz) de riscos, que não se confunde com a EAP.
+
+### D. Fundamentação teórica
+
+- **Módulo:** M02 — Gerenciamento de Projetos e Produtos
+- **Assunto:** PMBOK 7ª edição: modelos, métodos e artefatos (EAP)
+- **Item do edital:** 2.4 (E5-029)
+- **Arquivo de teoria:** `conteudo/02-projetos-produtos/05-pmbok-7.md`
+- **Referência:** Material teórico do projeto (seção 7.1). Textos do PMI não verificados em fonte primária (pmi.org bloqueado, HTTP 403).
+
+### E. Ponto de atenção para a prova
+
+EAP = **o que** será entregue (escopo). Cronograma = **quando** e em que sequência. Regra dos 100% e **pacote de trabalho** (menor nível) são palavras-chave.
+
+### F. Revisão rápida
+
+EAP: decomposição hierárquica do escopo em pacotes; regra dos 100%; orientada a entregas; não é cronograma, estimativa de custo nem análise de risco.
+
+### G. Tags
+
+`m02` · `pmbok-7` · `eap` · `wbs` · `escopo` · `item-2.4` · `facil` · `compreensao` · `conceitual` · `autoral`
+
+**Verificação do gabarito:** Sem execução (questão conceitual); gabarito conferido contra o arquivo de teoria. Conteúdo do PMI de memória (não verificado em fonte primária).  
+**Status de validação:** `validada`  
+**Validação:** Aprovada pelo usuário em 2026-10-31 (lote piloto do M02); sem revisão por terceiros; ressalva: textos do PMI não verificados em fonte primária.
+
+---
+
+## Questão 8 — AUT-000018
+
+**AUT-000018** · Projetos e a organização: estruturas organizacionais · item 2.5 · Média · Análise
+
+*Questão autoral — estilo Cesgranrio.*
+
+Uma consultoria compara estruturas organizacionais quanto ao seu efeito sobre projetos. Considerando a literatura de gestão de projetos, a afirmação correta é:
+
+(A) A estrutura funcional favorece o foco total da equipe no projeto e a comunicação rápida, pois a equipe fica alocada ao gerente de projetos.  
+(B) A estrutura projetizada garante a especialização e a clareza de carreira dos membros da equipe, pois mantém o trabalho dentro dos departamentos.  
+(C) A estrutura matricial compartilha especialistas entre projetos, mas gera dupla subordinação e possíveis conflitos entre os gerentes envolvidos.  
+(D) Na estrutura projetizada, o gerente funcional administra o orçamento do projeto, e o gerente de projetos tem autoridade baixa sobre os recursos.  
+(E) Na estrutura matricial forte, o gerente de projetos tem pouca ou nenhuma autoridade, e a disponibilidade de recursos para o projeto é baixa.  
+
+### A. Gabarito
+
+**C**
+
+### B. Resolução comentada
+
+Na **estrutura matricial**, especialistas são compartilhados entre projetos, o que traz flexibilidade, mas surge a **dupla subordinação** (ao gerente funcional e ao gerente de projetos) e possíveis conflitos. A estrutura **funcional** privilegia especialização e carreira, com pouca ou nenhuma autoridade do gerente de projetos; na **projetizada**, a equipe é alocada ao gerente de projetos (alta autoridade, foco total).
+
+### C. Análise das alternativas
+
+- **(A)** Incorreta. Foco total e comunicação rápida, com equipe alocada ao gerente de projetos, são vantagens da estrutura projetizada, não da funcional.
+- **(B)** Incorreta. Especialização e clareza de carreira, com o trabalho nos departamentos, são vantagens da estrutura funcional; na projetizada, as equipes são organizadas por projeto.
+- **(C)** Correta. Vantagem (compartilhamento de especialistas) e limitação (dupla subordinação) da estrutura matricial.
+- **(D)** Incorreta. Descreve a estrutura funcional ou a matricial fraca. Na projetizada, o gerente de projetos tem autoridade alta a quase total e administra o orçamento.
+- **(E)** Incorreta. Na matricial forte, o gerente de projetos tem autoridade moderada a alta e maior disponibilidade de recursos; pouca ou nenhuma autoridade caracteriza a estrutura funcional.
+
+### D. Fundamentação teórica
+
+- **Módulo:** M02 — Gerenciamento de Projetos e Produtos
+- **Assunto:** Projetos e a organização: estruturas organizacionais
+- **Item do edital:** 2.5 (E5-030)
+- **Arquivo de teoria:** `conteudo/02-projetos-produtos/01-fundamentos.md`
+- **Referência:** Material teórico do projeto (seção 4.3). Textos do PMI não verificados em fonte primária (pmi.org bloqueado, HTTP 403); interpretação do item 2.5 a confirmar.
+
+### E. Ponto de atenção para a prova
+
+Associe **estrutura → autoridade do gerente de projetos**: funcional (pouca), matricial fraca (baixa), balanceada (baixa a moderada), forte (moderada a alta), projetizada (alta a quase total). **Dupla subordinação** é o problema da matriz.
+
+### F. Revisão rápida
+
+Funcional: especialização. Matricial: compartilha especialistas, dupla subordinação. Projetizada: foco total, equipe alocada ao gerente.
+
+### G. Tags
+
+`m02` · `estruturas-organizacionais` · `matricial` · `projetizada` · `funcional` · `item-2.5` · `media` · `analise` · `comparativa` · `autoral`
+
+**Verificação do gabarito:** Sem execução (questão conceitual); gabarito conferido contra o arquivo de teoria. Conteúdo do PMI de memória (não verificado em fonte primária).  
+**Status de validação:** `validada`  
+**Validação:** Aprovada pelo usuário em 2026-10-31 (lote piloto do M02); sem revisão por terceiros; ressalva: textos do PMI não verificados em fonte primária.
+
+---
+
+## Questão 9 — AUT-000019
+
+**AUT-000019** · Escritório de projetos (PMO): modelos · item 2.6 · Média · Aplicação
+
+*Questão autoral — estilo Cesgranrio.*
+
+O escritório de projetos de uma empresa define a metodologia, os modelos de documentos e as ferramentas e exige que todos os projetos os adotem, verificando a aderência por meio de auditorias periódicas. Ele não assume a gestão direta dos projetos nem tem os gerentes de projetos subordinados à sua estrutura.  
+  
+Segundo a classificação do PMO por grau de controle, trata-se de um PMO
+
+(A) de suporte, de baixo controle, que oferece modelos e treinamento com adoção voluntária pelos projetos.  
+(B) diretivo, de alto controle, que assume a gestão dos projetos e a subordinação dos gerentes de projetos.  
+(C) corporativo, que responde pelo alinhamento do portfólio à estratégia e pela governança global da organização.  
+(D) ágil, voltado à facilitação e à transparência das equipes e à remoção de impedimentos nos fluxos de valor.  
+(E) de controle, de grau moderado, que exige a conformidade com métodos, modelos e ferramentas e verifica a aderência.  
+
+### A. Gabarito
+
+**E**
+
+### B. Resolução comentada
+
+Na classificação por grau de controle, o PMO **de suporte** tem baixo controle (consultivo, adoção voluntária), o **de controle** tem grau moderado (**exige conformidade** com métodos, modelos, ferramentas e governança, com auditorias, sem assumir a gestão dos projetos) e o **diretivo** tem alto controle (**assume** a gestão e os gerentes de projetos pertencem ao PMO). O cenário descreve exigência de conformidade e auditoria, sem assumir projetos: PMO de controle.
+
+### C. Análise das alternativas
+
+- **(A)** Incorreta. O PMO de suporte é consultivo, com adoção voluntária; no cenário, a adoção é exigida e auditada.
+- **(B)** Incorreta. O PMO diretivo assume o controle dos projetos e tem os gerentes de projetos a ele subordinados; o enunciado exclui as duas coisas.
+- **(C)** Incorreta. A classificação por escopo (corporativo/estratégico) é outra; o enunciado se refere ao grau de controle, e o corporativo tem foco em portfólio e estratégia, não em auditoria de conformidade de projetos.
+- **(D)** Incorreta. O PMO ágil (escritório de valor) atua pela facilitação e transparência, e não pela exigência de conformidade e auditorias.
+- **(E)** Correta. Grau moderado de controle: exige conformidade e verifica a aderência, sem assumir os projetos.
+
+### D. Fundamentação teórica
+
+- **Módulo:** M02 — Gerenciamento de Projetos e Produtos
+- **Assunto:** Escritório de projetos; modelos de PMO
+- **Item do edital:** 2.6 (E5-031) · itens secundários: 2.7
+- **Arquivo de teoria:** `conteudo/02-projetos-produtos/07-modelos-de-gestao.md`
+- **Referência:** Material teórico do projeto (seção 2); PMO por grau de controle conferido em fontes secundárias na revisão do M02; interpretação do item 2.7 a confirmar.
+
+### E. Ponto de atenção para a prova
+
+Grau de controle: **suporte** (baixo, voluntário) < **controle** (moderado, exige conformidade e audita) < **diretivo** (alto, assume a gestão e os gerentes). Pergunte: o PMO **exige**? **assume**?
+
+### F. Revisão rápida
+
+Suporte: consultivo. Controle: exige conformidade e audita. Diretivo: assume projetos e gerentes.
+
+### G. Tags
+
+`m02` · `pmo` · `escritorio-de-projetos` · `modelos-de-pmo` · `item-2.6` · `item-2.7` · `media` · `aplicacao` · `cenario` · `autoral`
+
+**Verificação do gabarito:** Sem execução (questão conceitual); gabarito conferido contra o arquivo de teoria. Classificação do PMI de memória e fontes secundárias; PMI não verificado em fonte primária.  
+**Status de validação:** `validada`  
+**Validação:** Aprovada pelo usuário em 2026-10-31 (lote piloto do M02); sem revisão por terceiros; ressalva: textos do PMI não verificados em fonte primária.
+
+---
+
+## Questão 10 — AUT-000020
+
+**AUT-000020** · PMBOK 7ª edição: domínios de desempenho · item 2.4 · Difícil · Análise
+
+*Questão autoral — estilo Cesgranrio.*
+
+A 7ª edição do PMBOK Guide mudou a estrutura de referência em relação à 6ª edição, que se organizava em grupos de processos e áreas de conhecimento. Um gerente de projetos experiente, ao estudar a nova edição, precisa compreender o papel dos domínios de desempenho.  
+  
+Segundo a 7ª edição, os domínios de desempenho são
+
+(A) fases sequenciais do ciclo de vida do projeto, que devem ser concluídas em ordem, da iniciação ao encerramento.  
+(B) grupos de atividades correlatas, críticas para os resultados, que interagem, se sobrepõem e ocorrem simultaneamente.  
+(C) as dez áreas de conhecimento, que agrupam processos por tema, como escopo, cronograma, custos, riscos e aquisições.  
+(D) os cinco grupos de processos, que organizam os processos de gerenciamento da iniciação ao encerramento do projeto.  
+(E) os doze princípios, que orientam o comportamento e as decisões das pessoas envolvidas no projeto e na organização.  
+
+### A. Gabarito
+
+**B**
+
+### B. Resolução comentada
+
+Na 7ª edição, os **oito domínios de desempenho** (partes interessadas, equipe, abordagem de desenvolvimento e ciclo de vida, planejamento, trabalho do projeto, entrega, mensuração e incerteza) são **grupos de atividades correlatas** críticas para a entrega efetiva dos resultados; eles **interagem, sobrepõem-se e ocorrem simultaneamente**, e não em sequência. Os **princípios** orientam o comportamento; os grupos de processos e as áreas de conhecimento pertencem à 6ª edição.
+
+### C. Análise das alternativas
+
+- **(A)** Incorreta. Domínios não são fases sequenciais. A ideia de sequência da iniciação ao encerramento remete aos grupos de processos da 6ª edição.
+- **(B)** Correta. Definição de domínios de desempenho na 7ª edição.
+- **(C)** Incorreta. As dez áreas de conhecimento fazem parte da 6ª edição; a 7ª edição não as adota como estrutura.
+- **(D)** Incorreta. Os cinco grupos de processos (iniciação, planejamento, execução, monitoramento e controle e encerramento) são da 6ª edição.
+- **(E)** Incorreta. Os 12 princípios são outro elemento da 7ª edição, que orienta comportamentos e decisões; não são os domínios.
+
+### D. Fundamentação teórica
+
+- **Módulo:** M02 — Gerenciamento de Projetos e Produtos
+- **Assunto:** PMBOK 7ª edição: princípios e domínios de desempenho
+- **Item do edital:** 2.4 (E5-029)
+- **Arquivo de teoria:** `conteudo/02-projetos-produtos/05-pmbok-7.md`
+- **Referência:** Material teórico do projeto (seções 2, 4 e 5). Textos do PMI não verificados em fonte primária (pmi.org bloqueado, HTTP 403).
+
+### E. Ponto de atenção para a prova
+
+**6ª edição**: processos (grupos e áreas de conhecimento). **7ª edição**: sistema de entrega de valor, **12 princípios** e **8 domínios** que ocorrem **simultaneamente**. O enunciado costuma testar essa troca.
+
+### F. Revisão rápida
+
+PMBOK 7: 12 princípios (orientam comportamento) + 8 domínios (atividades correlatas e simultâneas). PMBOK 6: 5 grupos de processos e 10 áreas.
+
+### G. Tags
+
+`m02` · `pmbok-7` · `dominios-de-desempenho` · `principios` · `item-2.4` · `dificil` · `analise` · `conceitual` · `autoral`
+
+**Verificação do gabarito:** Sem execução (questão conceitual); gabarito conferido contra o arquivo de teoria. Conteúdo do PMI de memória (não verificado em fonte primária).  
+**Status de validação:** `validada`  
+**Validação:** Aprovada pelo usuário em 2026-10-31 (lote piloto do M02); sem revisão por terceiros; ressalva: textos do PMI não verificados em fonte primária.
+
+---
+

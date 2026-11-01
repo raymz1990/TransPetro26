@@ -1,0 +1,906 @@
+{
+ "gerado_de": "conteudo/ e conteudo-gerais/",
+ "grupos": [
+  {
+   "id": "e01",
+   "tipo": "especifico",
+   "numero": "01",
+   "pasta": "01-arquitetura-dados",
+   "titulo": "Arquitetura de dados",
+   "assuntos": [
+    {
+     "id": "e01-01-fundamentos",
+     "titulo": "Fundamentos de Dados e Bancos de Dados",
+     "arquivo": "conteudo/01-arquitetura-dados/01-fundamentos.md",
+     "itens_edital": [
+      "1 (título do item) — Arquitetura de Dados",
+      "1.1 a 1.5 e 1.13 (apoio conceitual; desenvolvidos nos arquivos 02, 03 e 05)"
+     ],
+     "status": "VALIDADO"
+    },
+    {
+     "id": "e01-02-modelagem-dados",
+     "titulo": "Modelagem de Dados: Conceitual, Lógica e Física; Avaliação e Engenharia Reversa",
+     "arquivo": "conteudo/01-arquitetura-dados/02-modelagem-dados.md",
+     "itens_edital": [
+      "1.1 Modelagem de dados (conceitual, lógica e física)",
+      "1.2 Criação e alteração dos modelos lógico e físico de dados",
+      "1.8 Avaliação de modelos de dados",
+      "1.9 Técnicas de engenharia reversa para criação e atualização de modelos de dados"
+     ],
+     "status": "VALIDADO"
+    },
+    {
+     "id": "e01-03-modelo-relacional",
+     "titulo": "O Modelo Relacional e a Integridade Referencial",
+     "arquivo": "conteudo/01-arquitetura-dados/03-modelo-relacional.md",
+     "itens_edital": [
+      "1.3 O modelo Relacional",
+      "1.5 Integridade referencial"
+     ],
+     "status": "VALIDADO"
+    },
+    {
+     "id": "e01-04-normalizacao",
+     "titulo": "Normalização das Estruturas de Dados",
+     "arquivo": "conteudo/01-arquitetura-dados/04-normalizacao.md",
+     "itens_edital": [
+      "1.4 Normalização das estruturas de dados"
+     ],
+     "status": "VALIDADO"
+    },
+    {
+     "id": "e01-05-sql-e-sgbd",
+     "titulo": "SQL (DDL e DML), SGBD, Independência de Dados e Desempenho",
+     "arquivo": "conteudo/01-arquitetura-dados/05-sql-e-sgbd.md",
+     "itens_edital": [
+      "1.10 Linguagem de consulta estruturada (SQL)",
+      "1.11 Linguagem de definição de dados (DDL)",
+      "1.12 Linguagem de manipulação de dados (DML)",
+      "1.13 Sistema Gerenciador de Banco de Dados (SGBD)",
+      "1.15 Independência de dados",
+      "1.17 Melhoria de performance de banco de dados"
+     ],
+     "status": "VALIDADO"
+    },
+    {
+     "id": "e01-06-transacoes-e-acid",
+     "titulo": "Transações e Propriedades ACID",
+     "arquivo": "conteudo/01-arquitetura-dados/06-transacoes-e-acid.md",
+     "itens_edital": [
+      "1.14 Propriedades de banco de dados: atomicidade, consistência, isolamento e durabilidade",
+      "1.16 Transações de bancos de dados"
+     ],
+     "status": "VALIDADO"
+    },
+    {
+     "id": "e01-07-bancos-nao-relacionais",
+     "titulo": "Bancos NoSQL, Bancos em Memória e Diferenciação entre Tipos de Bancos",
+     "arquivo": "conteudo/01-arquitetura-dados/07-bancos-nao-relacionais.md",
+     "itens_edital": [
+      "1.18 Bancos de dados NoSQL",
+      "1.20 Banco de dados em memória",
+      "1.23 Diferenciação entre bancos relacionais, multidimensionais, documentos e grafos."
+     ],
+     "status": "VALIDADO"
+    },
+    {
+     "id": "e01-08-integracao-e-etl",
+     "titulo": "Integração de Dados: ETL, Transferência de Arquivos e Integração via Base de Dados",
+     "arquivo": "conteudo/01-arquitetura-dados/08-integracao-e-etl.md",
+     "itens_edital": [
+      "1.19 Integração dos dados (ETL, Transferência de Arquivos e Integração via Base de Dados)"
+     ],
+     "status": "VALIDADO"
+    },
+    {
+     "id": "e01-09-data-warehouse-e-big-data",
+     "titulo": "Modelagem Dimensional, Data Lakes e Soluções para Big Data",
+     "arquivo": "conteudo/01-arquitetura-dados/09-data-warehouse-e-big-data.md",
+     "itens_edital": [
+      "1.7 Modelagem dimensional",
+      "1.22 Data Lakes e Soluções para Big Data"
+     ],
+     "status": "VALIDADO"
+    },
+    {
+     "id": "e01-10-qualidade-e-governanca-dados",
+     "titulo": "Metadados, Qualidade de Dados e Gestão de Dados Mestres e de Referência",
+     "arquivo": "conteudo/01-arquitetura-dados/10-qualidade-e-governanca-dados.md",
+     "itens_edital": [
+      "1.6 Metadados",
+      "1.21 Qualidade de dados e gestão de dados mestres e de referência"
+     ],
+     "status": "VALIDADO"
+    }
+   ]
+  },
+  {
+   "id": "e02",
+   "tipo": "especifico",
+   "numero": "02",
+   "pasta": "02-projetos-produtos",
+   "titulo": "Gerenciamento de projetos e produtos",
+   "assuntos": [
+    {
+     "id": "e02-01-fundamentos",
+     "titulo": "Fundamentos: Projeto, Produto e Organização",
+     "arquivo": "conteudo/02-projetos-produtos/01-fundamentos.md",
+     "itens_edital": [
+      "2.2 Gestão de projeto versus gestão de produto",
+      "2.5 Projetos e a organização"
+     ],
+     "status": "VALIDADO"
+    },
+    {
+     "id": "e02-02-scrum",
+     "titulo": "Scrum (e Fundamentos do Pensamento Ágil)",
+     "arquivo": "conteudo/02-projetos-produtos/02-scrum.md",
+     "itens_edital": [
+      "2.1 Scrum e Kanban"
+     ],
+     "status": "VALIDADO"
+    },
+    {
+     "id": "e02-03-kanban",
+     "titulo": "Kanban",
+     "arquivo": "conteudo/02-projetos-produtos/03-kanban.md",
+     "itens_edital": [
+      "2.1 Scrum e Kanban"
+     ],
+     "status": "VALIDADO"
+    },
+    {
+     "id": "e02-04-metodos-ageis-escalados",
+     "titulo": "Práticas Ágeis em Escala e SAFe: Portfólio Alinhado à Estratégia e Entregas Incrementais",
+     "arquivo": "conteudo/02-projetos-produtos/04-metodos-ageis-escalados.md",
+     "itens_edital": [
+      "2.3 Impulso de práticas ágeis em escala, gestão de portfólio alinhada à estratégia de negócios e realização de entregas incrementais utilizando a metodologia safe"
+     ],
+     "status": "VALIDADO"
+    },
+    {
+     "id": "e02-05-pmbok-7",
+     "titulo": "PMBOK Guide — 7ª Edição",
+     "arquivo": "conteudo/02-projetos-produtos/05-pmbok-7.md",
+     "itens_edital": [
+      "2.4 PMBOK 7ª edição"
+     ],
+     "status": "VALIDADO"
+    },
+    {
+     "id": "e02-06-pmo-e-governanca-projetos",
+     "titulo": "Escritório de Projetos (PMO) e Governança de Projetos",
+     "arquivo": "conteudo/02-projetos-produtos/06-pmo-e-governanca-projetos.md",
+     "itens_edital": [
+      "2.6 Escritório de projetos"
+     ],
+     "status": "VALIDADO"
+    },
+    {
+     "id": "e02-07-modelos-de-gestao",
+     "titulo": "Modelos e Características: Modelos de PMO e Modelos de Gestão de Projetos e Produtos",
+     "arquivo": "conteudo/02-projetos-produtos/07-modelos-de-gestao.md",
+     "itens_edital": [
+      "2.7 Modelos e características."
+     ],
+     "status": "VALIDADO"
+    }
+   ]
+  },
+  {
+   "id": "e03",
+   "tipo": "especifico",
+   "numero": "03",
+   "pasta": "03-processos-gerenciamento",
+   "titulo": "Processos e seu gerenciamento",
+   "assuntos": [
+    {
+     "id": "e03-01-fundamentos-processos",
+     "titulo": "Fundamentos: Processos no Gerenciamento de Projetos",
+     "arquivo": "conteudo/03-processos-gerenciamento/01-fundamentos-processos.md",
+     "itens_edital": [
+      "3 Processos, grupos de processos e área de conhecimento."
+     ],
+     "status": "VALIDADO"
+    },
+    {
+     "id": "e03-02-grupos-de-processos",
+     "titulo": "Os Cinco Grupos de Processos de Gerenciamento de Projetos",
+     "arquivo": "conteudo/03-processos-gerenciamento/02-grupos-de-processos.md",
+     "itens_edital": [
+      "3 Processos, grupos de processos e área de conhecimento."
+     ],
+     "status": "VALIDADO"
+    },
+    {
+     "id": "e03-03-areas-de-conhecimento",
+     "titulo": "As Dez Áreas de Conhecimento do Gerenciamento de Projetos",
+     "arquivo": "conteudo/03-processos-gerenciamento/03-areas-de-conhecimento.md",
+     "itens_edital": [
+      "3 Processos, grupos de processos e área de conhecimento."
+     ],
+     "status": "VALIDADO"
+    },
+    {
+     "id": "e03-04-gerenciamento-processos",
+     "titulo": "Complemento (escopo C): Gestão de Processos de Negócio (BPM)",
+     "arquivo": "conteudo/03-processos-gerenciamento/04-gerenciamento-processos.md",
+     "itens_edital": [
+      "Sem item literal. Relação indireta: 3 Processos, grupos de processos e área de conhecimento. (BPM como complemento)"
+     ],
+     "status": "EM_REVISAO"
+    }
+   ]
+  },
+  {
+   "id": "e04",
+   "tipo": "especifico",
+   "numero": "04",
+   "pasta": "04-governanca-ti",
+   "titulo": "Gestão e governança de TI",
+   "assuntos": [
+    {
+     "id": "e04-01-fundamentos-ti",
+     "titulo": "Fundamentos de TI: Conceitos, Segmentos, Mercado e Governança",
+     "arquivo": "conteudo/04-governanca-ti/01-fundamentos-ti.md",
+     "itens_edital": [
+      "4 Gestão e governança em TI:",
+      "4.1 Conceitos, segmentos e mercado de tecnologia da informação"
+     ],
+     "status": "VALIDADO"
+    },
+    {
+     "id": "e04-02-inovacao-e-tecnologia",
+     "titulo": "Princípios de Economia da Inovação e Conceitos e Perspectivas da Tecnologia",
+     "arquivo": "conteudo/04-governanca-ti/02-inovacao-e-tecnologia.md",
+     "itens_edital": [
+      "4.2 Princípios de economia da inovação",
+      "4.3 Conceitos e perspectivas da tecnologia"
+     ],
+     "status": "VALIDADO"
+    },
+    {
+     "id": "e04-03-ciencia-pesquisa-e-desenvolvimento",
+     "titulo": "Ciência, Pesquisa, Desenvolvimento e Indústria",
+     "arquivo": "conteudo/04-governanca-ti/03-ciencia-pesquisa-e-desenvolvimento.md",
+     "itens_edital": [
+      "4.4 Ciência, pesquisa, desenvolvimento e indústria"
+     ],
+     "status": "VALIDADO"
+    },
+    {
+     "id": "e04-04-itsm",
+     "titulo": "Gerenciamento de Serviços de TI (ITSM): Conceitos, Disciplinas, Técnicas e Ferramentas",
+     "arquivo": "conteudo/04-governanca-ti/04-itsm.md",
+     "itens_edital": [
+      "4.5 Conceitos, disciplinas, técnicas e ferramentas de gerenciamento de serviços de TI"
+     ],
+     "status": "VALIDADO"
+    },
+    {
+     "id": "e04-05-lgpd",
+     "titulo": "Lei Geral de Proteção de Dados Pessoais (LGPD) — Lei nº 13.709/2018",
+     "arquivo": "conteudo/04-governanca-ti/05-lgpd.md",
+     "itens_edital": [
+      "4.6 Lei Geral de Proteção de Dados Pessoais - LGPD (Lei nº 13.709, de 14 de agosto de 2018, e suas alterações)."
+     ],
+     "status": "VALIDADO"
+    }
+   ]
+  },
+  {
+   "id": "e05",
+   "tipo": "especifico",
+   "numero": "05",
+   "pasta": "05-engenharia-software",
+   "titulo": "Engenharia de software",
+   "assuntos": [
+    {
+     "id": "e05-01-fundamentos",
+     "titulo": "Fundamentos de Engenharia de Software",
+     "arquivo": "conteudo/05-engenharia-software/01-fundamentos.md",
+     "itens_edital": [
+      "5 Engenharia de software:"
+     ],
+     "status": "VALIDADO"
+    },
+    {
+     "id": "e05-02-requisitos-software",
+     "titulo": "Levantamento, Análise e Gerenciamento de Requisitos",
+     "arquivo": "conteudo/05-engenharia-software/02-requisitos-software.md",
+     "itens_edital": [
+      "5.1 Levantamento, análise e gerenciamento de requisitos"
+     ],
+     "status": "VALIDADO"
+    },
+    {
+     "id": "e05-03-ciclo-de-vida",
+     "titulo": "Ciclo de Vida de Sistemas e seus Paradigmas",
+     "arquivo": "conteudo/05-engenharia-software/03-ciclo-de-vida.md",
+     "itens_edital": [
+      "5.2 Ciclo de vida de sistemas e seus paradigmas"
+     ],
+     "status": "VALIDADO"
+    },
+    {
+     "id": "e05-04-paradigmas",
+     "titulo": "Paradigmas: Estruturado e Orientado a Objetos",
+     "arquivo": "conteudo/05-engenharia-software/04-paradigmas.md",
+     "itens_edital": [
+      "5.3 Uso de modelos, metodologias, técnicas e ferramentas de análise e projeto de sistemas (paradigma estruturado e paradigma orientado a objetos)"
+     ],
+     "status": "VALIDADO"
+    },
+    {
+     "id": "e05-05-analise-e-projeto",
+     "titulo": "Análise e Projeto de Sistemas: Modelos, Metodologias, Técnicas e Ferramentas",
+     "arquivo": "conteudo/05-engenharia-software/05-analise-e-projeto.md",
+     "itens_edital": [
+      "5.3 Uso de modelos, metodologias, técnicas e ferramentas de análise e projeto de sistemas (paradigma estruturado e paradigma orientado a objetos)"
+     ],
+     "status": "VALIDADO"
+    },
+    {
+     "id": "e05-06-verificacao-e-validacao",
+     "titulo": "Verificação, Validação e Teste de Software",
+     "arquivo": "conteudo/05-engenharia-software/06-verificacao-e-validacao.md",
+     "itens_edital": [
+      "5.4 Verificação, validação e teste"
+     ],
+     "status": "VALIDADO"
+    },
+    {
+     "id": "e05-07-testes-e-ambientes",
+     "titulo": "Ambientes de Desenvolvimento de Software (e Ambientes de Teste)",
+     "arquivo": "conteudo/05-engenharia-software/07-testes-e-ambientes.md",
+     "itens_edital": [
+      "5.5 Ambientes de desenvolvimento de software."
+     ],
+     "status": "VALIDADO"
+    }
+   ]
+  },
+  {
+   "id": "e06",
+   "tipo": "especifico",
+   "numero": "06",
+   "pasta": "06-experiencia-usuario",
+   "titulo": "Experiência do usuário (UX)",
+   "assuntos": [
+    {
+     "id": "e06-01-usabilidade-e-acessibilidade",
+     "titulo": "Experiência do Usuário (UX), Usabilidade e Acessibilidade",
+     "arquivo": "conteudo/06-experiencia-usuario/01-usabilidade-e-acessibilidade.md",
+     "itens_edital": [
+      "6 User experience (UX):",
+      "6.1 Conceitos de acessibilidade e usabilidade"
+     ],
+     "status": "VALIDADO"
+    },
+    {
+     "id": "e06-02-user-stories",
+     "titulo": "Histórias do Usuário (*User Stories*)",
+     "arquivo": "conteudo/06-experiencia-usuario/02-user-stories.md",
+     "itens_edital": [
+      "6.2 Histórias do usuário"
+     ],
+     "status": "VALIDADO"
+    },
+    {
+     "id": "e06-03-interacao-web",
+     "titulo": "Desenho e Planejamento de Interação em Aplicações Web",
+     "arquivo": "conteudo/06-experiencia-usuario/03-interacao-web.md",
+     "itens_edital": [
+      "6.3 Desenho e planejamento de interação em aplicações web"
+     ],
+     "status": "VALIDADO"
+    },
+    {
+     "id": "e06-04-design-centrado-no-usuario",
+     "titulo": "Projeto Centrado no Usuário de Software",
+     "arquivo": "conteudo/06-experiencia-usuario/04-design-centrado-no-usuario.md",
+     "itens_edital": [
+      "6.4 Projeto centrado no usuário de software"
+     ],
+     "status": "VALIDADO"
+    },
+    {
+     "id": "e06-05-data-storytelling",
+     "titulo": "Storytelling com Dados (*Data Storytelling*)",
+     "arquivo": "conteudo/06-experiencia-usuario/05-data-storytelling.md",
+     "itens_edital": [
+      "6.5 Storytelling com dados"
+     ],
+     "status": "VALIDADO"
+    },
+    {
+     "id": "e06-06-dashboards-e-relatorios",
+     "titulo": "Organização e Apresentação de Dados em Relatórios e Dashboards",
+     "arquivo": "conteudo/06-experiencia-usuario/06-dashboards-e-relatorios.md",
+     "itens_edital": [
+      "6.6 Organização e apresentação de dados em relatórios e dashboards"
+     ],
+     "status": "VALIDADO"
+    },
+    {
+     "id": "e06-07-interoperabilidade",
+     "titulo": "Interoperabilidade de Interfaces Web entre Diversos Navegadores",
+     "arquivo": "conteudo/06-experiencia-usuario/07-interoperabilidade.md",
+     "itens_edital": [
+      "6.7 Interoperabilidade de interfaces web entre diversos navegadores"
+     ],
+     "status": "VALIDADO"
+    },
+    {
+     "id": "e06-08-mvp-e-prototipacao",
+     "titulo": "Mínimo Produto Viável (MVP) e Prototipação",
+     "arquivo": "conteudo/06-experiencia-usuario/08-mvp-e-prototipacao.md",
+     "itens_edital": [
+      "6.8 Mínimo Produto Viável (MVP)",
+      "6.9 Prototipação"
+     ],
+     "status": "VALIDADO"
+    },
+    {
+     "id": "e06-09-design-thinking-e-personas",
+     "titulo": "Design Thinking e Análise de Personas",
+     "arquivo": "conteudo/06-experiencia-usuario/09-design-thinking-e-personas.md",
+     "itens_edital": [
+      "6.10 Design thinking",
+      "6.11 Análise de personas (papéis, perfis etc.) de usuários de software."
+     ],
+     "status": "VALIDADO"
+    }
+   ]
+  },
+  {
+   "id": "e07",
+   "tipo": "especifico",
+   "numero": "07",
+   "pasta": "07-analise-dados",
+   "titulo": "Análise de dados e informações",
+   "assuntos": [
+    {
+     "id": "e07-01-dados-informacao-conhecimento",
+     "titulo": "Dado, Informação, Conhecimento e Inteligência",
+     "arquivo": "conteudo/07-analise-dados/01-dados-informacao-conhecimento.md",
+     "itens_edital": [
+      "7 Análise de dados e informações:",
+      "7.1 Dado, informação, conhecimento e inteligência"
+     ],
+     "status": "VALIDADO"
+    },
+    {
+     "id": "e07-02-business-intelligence",
+     "titulo": "Business Intelligence (BI): Conceitos, Fundamentos, Características, Técnicas e Métodos",
+     "arquivo": "conteudo/07-analise-dados/02-business-intelligence.md",
+     "itens_edital": [
+      "7.2 Conceitos, fundamentos, características, técnicas e métodos de business intelligence (BI)"
+     ],
+     "status": "VALIDADO"
+    },
+    {
+     "id": "e07-03-fontes-e-mapeamento-dados",
+     "titulo": "Mapeamento de Fontes de Dados",
+     "arquivo": "conteudo/07-analise-dados/03-fontes-e-mapeamento-dados.md",
+     "itens_edital": [
+      "7.3 Mapeamento de fontes de dados"
+     ],
+     "status": "VALIDADO"
+    },
+    {
+     "id": "e07-04-dados-estruturados-e-nao-estruturados",
+     "titulo": "Dados Estruturados e Dados Não Estruturados",
+     "arquivo": "conteudo/07-analise-dados/04-dados-estruturados-e-nao-estruturados.md",
+     "itens_edital": [
+      "7.4 Dados estruturados e dados não estruturados"
+     ],
+     "status": "VALIDADO"
+    },
+    {
+     "id": "e07-05-olap-e-data-warehouse",
+     "titulo": "OLAP e Data Warehouse",
+     "arquivo": "conteudo/07-analise-dados/05-olap-e-data-warehouse.md",
+     "itens_edital": [
+      "7.5 Conceitos de OLAP e suas operações",
+      "7.6 Conceitos de data warehouse"
+     ],
+     "status": "VALIDADO"
+    },
+    {
+     "id": "e07-06-modelagem-multidimensional",
+     "titulo": "Técnicas de Modelagem e Otimização de Bases Multidimensionais",
+     "arquivo": "conteudo/07-analise-dados/06-modelagem-multidimensional.md",
+     "itens_edital": [
+      "7.7 Técnicas de modelagem e otimização de bases de dados multidimensionais"
+     ],
+     "status": "VALIDADO"
+    },
+    {
+     "id": "e07-07-dashboards-e-planilhas",
+     "titulo": "Construção de Relatórios e Dashboards em Ferramentas de BI; Manipulação de Dados em Planilhas",
+     "arquivo": "conteudo/07-analise-dados/07-dashboards-e-planilhas.md",
+     "itens_edital": [
+      "7.8 Construção de relatórios e dashboards interativos em ferramentas de BI",
+      "7.9 Manipulação de dados em planilhas"
+     ],
+     "status": "VALIDADO"
+    },
+    {
+     "id": "e07-08-insights-e-tomada-de-decisao",
+     "titulo": "Geração de Insights e BI como Suporte à Tomada de Decisão",
+     "arquivo": "conteudo/07-analise-dados/08-insights-e-tomada-de-decisao.md",
+     "itens_edital": [
+      "7.10 Geração de insights a partir de relatórios e dashboards",
+      "7.11 BI como suporte a processos de tomada decisão."
+     ],
+     "status": "VALIDADO"
+    }
+   ]
+  },
+  {
+   "id": "e08",
+   "tipo": "especifico",
+   "numero": "08",
+   "pasta": "08-logica-matematica",
+   "titulo": "Lógica matemática",
+   "assuntos": [
+    {
+     "id": "e08-01-proposicoes-e-conectivos",
+     "titulo": "Proposições e Conectivos Lógicos",
+     "arquivo": "conteudo/08-logica-matematica/01-proposicoes-e-conectivos.md",
+     "itens_edital": [
+      "8 Lógica Matemática:",
+      "8.1 Sentido lógico-matemático convencional dos conectivos"
+     ],
+     "status": "VALIDADO"
+    },
+    {
+     "id": "e08-02-tabelas-verdade",
+     "titulo": "Valores-Verdade e Tabelas-Verdade",
+     "arquivo": "conteudo/08-logica-matematica/02-tabelas-verdade.md",
+     "itens_edital": [
+      "8.8 Valores-verdade"
+     ],
+     "status": "VALIDADO"
+    },
+    {
+     "id": "e08-03-argumentacao-logica",
+     "titulo": "Argumentos",
+     "arquivo": "conteudo/08-logica-matematica/03-argumentacao-logica.md",
+     "itens_edital": [
+      "8.2 Argumentos"
+     ],
+     "status": "VALIDADO"
+    },
+    {
+     "id": "e08-04-logica-proposicional",
+     "titulo": "A Lógica Sentencial (Proposicional)",
+     "arquivo": "conteudo/08-logica-matematica/04-logica-proposicional.md",
+     "itens_edital": [
+      "8.3 A lógica sentencial"
+     ],
+     "status": "VALIDADO"
+    },
+    {
+     "id": "e08-05-logica-de-predicados",
+     "titulo": "A Lógica de Predicados de Primeira Ordem",
+     "arquivo": "conteudo/08-logica-matematica/05-logica-de-predicados.md",
+     "itens_edital": [
+      "8.4 A lógica de predicados de primeira ordem"
+     ],
+     "status": "VALIDADO"
+    },
+    {
+     "id": "e08-06-formulas-e-sistemas-dedutivos",
+     "titulo": "Regras de Formação de Fórmulas e Sistemas Dedutivos",
+     "arquivo": "conteudo/08-logica-matematica/06-formulas-e-sistemas-dedutivos.md",
+     "itens_edital": [
+      "8.5 Regras de formação de fórmulas",
+      "8.6 Sistemas dedutivos"
+     ],
+     "status": "VALIDADO"
+    },
+    {
+     "id": "e08-07-decidibilidade-e-funcoes-avaliacao",
+     "titulo": "Decidibilidade da Lógica Sentencial e Funções de Avaliação",
+     "arquivo": "conteudo/08-logica-matematica/07-decidibilidade-e-funcoes-avaliacao.md",
+     "itens_edital": [
+      "8.7 Decidibilidade da lógica sentencial",
+      "8.9 Funções de avaliação."
+     ],
+     "status": "VALIDADO"
+    }
+   ]
+  },
+  {
+   "id": "e09",
+   "tipo": "especifico",
+   "numero": "09",
+   "pasta": "09-seguranca-informacao",
+   "titulo": "Segurança da informação",
+   "assuntos": [
+    {
+     "id": "e09-01-fundamentos-seguranca",
+     "titulo": "Fundamentos de Segurança da Informação",
+     "arquivo": "conteudo/09-seguranca-informacao/01-fundamentos-seguranca.md",
+     "itens_edital": [
+      "9 Segurança da Informação:"
+     ],
+     "status": "VALIDADO"
+    },
+    {
+     "id": "e09-02-seguranca-fisica-e-logica",
+     "titulo": "Segurança Física e Lógica",
+     "arquivo": "conteudo/09-seguranca-informacao/02-seguranca-fisica-e-logica.md",
+     "itens_edital": [
+      "9.1 Segurança física e lógica"
+     ],
+     "status": "VALIDADO"
+    },
+    {
+     "id": "e09-03-ameacas-e-malwares",
+     "titulo": "Softwares Maliciosos e Ataques",
+     "arquivo": "conteudo/09-seguranca-informacao/03-ameacas-e-malwares.md",
+     "itens_edital": [
+      "9.3 Softwares maliciosos (ransomware, vírus, worms, spywares, rootkit etc.)",
+      "9.4 Ataques (DDoS, SQL Injection, XSS, CSRF, Path Traversal etc.)"
+     ],
+     "status": "VALIDADO"
+    },
+    {
+     "id": "e09-04-desenvolvimento-seguro",
+     "titulo": "Técnicas de Desenvolvimento Seguro; SAST, DAST e IAST",
+     "arquivo": "conteudo/09-seguranca-informacao/04-desenvolvimento-seguro.md",
+     "itens_edital": [
+      "9.5 Técnicas de desenvolvimento seguro, SAST/DAST/IAST"
+     ],
+     "status": "VALIDADO"
+    },
+    {
+     "id": "e09-05-vpn-mdm-sso-mfa-iam",
+     "titulo": "VPN, MDM, SSO, MFA e Gestão de Identidade e Acesso (IAM)",
+     "arquivo": "conteudo/09-seguranca-informacao/05-vpn-mdm-sso-mfa-iam.md",
+     "itens_edital": [
+      "9.6 VPN",
+      "9.7 MDM",
+      "9.8 SSO",
+      "9.9 MFA",
+      "9.10 Gestão de Identidade e acesso (autenticação, autorização e auditoria), RBAC e ABAC"
+     ],
+     "status": "VALIDADO"
+    },
+    {
+     "id": "e09-06-gestao-incidentes",
+     "titulo": "Gerenciamento de Resposta a Incidentes (NIST SP 800-61)",
+     "arquivo": "conteudo/09-seguranca-informacao/06-gestao-incidentes.md",
+     "itens_edital": [
+      "9.11 Conceitos gerais: Gerenciamento de resposta a incidente (NIST SP 800-61)"
+     ],
+     "status": "VALIDADO"
+    },
+    {
+     "id": "e09-07-inteligencia-de-ameacas",
+     "titulo": "Inteligência de Ameaças (*Threat Intelligence*) e Caça a Ameaças (*Threat Hunting*)",
+     "arquivo": "conteudo/09-seguranca-informacao/07-inteligencia-de-ameacas.md",
+     "itens_edital": [
+      "9.12 Threat intel, threat hunting"
+     ],
+     "status": "VALIDADO"
+    },
+    {
+     "id": "e09-08-pentest-stride-mitre",
+     "titulo": "Testes de Penetração, Modelagem de Ameaças (STRIDE) e Táticas do MITRE ATT&CK",
+     "arquivo": "conteudo/09-seguranca-informacao/08-pentest-stride-mitre.md",
+     "itens_edital": [
+      "9.13 Testes de penetração",
+      "9.14 Modelagem de ameaças (STRIDE etc.)",
+      "9.15 conhecimento das Táticas do framework Mitre ATT&CK"
+     ],
+     "status": "VALIDADO"
+    },
+    {
+     "id": "e09-09-gestao-riscos-e-continuidade",
+     "titulo": "Gestão de Riscos (ISO 31000), Continuidade de Negócios (ISO 22301) e Lei Sarbanes-Oxley",
+     "arquivo": "conteudo/09-seguranca-informacao/09-gestao-riscos-e-continuidade.md",
+     "itens_edital": [
+      "9.16 Gestão de riscos (ISO 31000), Gestão de Continuidade de Negócios (ISO 22301) e Lei Sarbannes-Oxley"
+     ],
+     "status": "VALIDADO"
+    },
+    {
+     "id": "e09-10-politicas-e-classificacao",
+     "titulo": "Políticas de Segurança da Informação e Classificação de Informações",
+     "arquivo": "conteudo/09-seguranca-informacao/10-politicas-e-classificacao.md",
+     "itens_edital": [
+      "9.17 Políticas de Segurança de Informação",
+      "9.18 Classificação de informações"
+     ],
+     "status": "VALIDADO"
+    },
+    {
+     "id": "e09-11-iso-27002",
+     "titulo": "Norma ISO/IEC 27002",
+     "arquivo": "conteudo/09-seguranca-informacao/11-iso-27002.md",
+     "itens_edital": [
+      "9.19 Norma ISO 27002, Criptografia, certificação digital e assinatura digital"
+     ],
+     "status": "VALIDADO"
+    },
+    {
+     "id": "e09-12-criptografia-e-certificados",
+     "titulo": "Criptografia, Certificação Digital e Assinatura Digital",
+     "arquivo": "conteudo/09-seguranca-informacao/12-criptografia-e-certificados.md",
+     "itens_edital": [
+      "9.19 Norma ISO 27002, Criptografia, certificação digital e assinatura digital"
+     ],
+     "status": "VALIDADO"
+    },
+    {
+     "id": "e09-13-seguranca-cloud-e-iot",
+     "titulo": "Segurança em Nuvem e em IoT",
+     "arquivo": "conteudo/09-seguranca-informacao/13-seguranca-cloud-e-iot.md",
+     "itens_edital": [
+      "9.20 Conceitos de segurança em nuvem",
+      "9.21 Segurança em IoT."
+     ],
+     "status": "VALIDADO"
+    },
+    {
+     "id": "e09-14-operacao-de-seguranca",
+     "titulo": "Operação de Segurança",
+     "arquivo": "conteudo/09-seguranca-informacao/14-operacao-de-seguranca.md",
+     "itens_edital": [
+      "9.2 Operação de segurança (Firewall, Proxy, IPS/IDS, DLP, CASB, SIEM, Antivírus, EDR, WAF, Gestão de vulnerabilidades, Monitoração, Backup)"
+     ],
+     "status": "VALIDADO"
+    }
+   ]
+  },
+  {
+   "id": "g01",
+   "tipo": "geral",
+   "numero": "01",
+   "pasta": "01-lingua-portuguesa",
+   "titulo": "Língua Portuguesa",
+   "assuntos": [
+    {
+     "id": "g01-01-compreensao-de-textos",
+     "titulo": "Compreensão de Textos",
+     "arquivo": "conteudo-gerais/01-lingua-portuguesa/01-compreensao-de-textos.md",
+     "itens_edital": [
+      "1 Compreensão de textos."
+     ],
+     "status": "VALIDADO"
+    },
+    {
+     "id": "g01-02-ortografia-oficial",
+     "titulo": "Ortografia Oficial",
+     "arquivo": "conteudo-gerais/01-lingua-portuguesa/02-ortografia-oficial.md",
+     "itens_edital": [
+      "2 Ortografia oficial."
+     ],
+     "status": "VALIDADO"
+    },
+    {
+     "id": "g01-03-coesao-textual",
+     "titulo": "Mecanismos de Coesão Textual",
+     "arquivo": "conteudo-gerais/01-lingua-portuguesa/03-coesao-textual.md",
+     "itens_edital": [
+      "3 Mecanismos de coesão textual."
+     ],
+     "status": "VALIDADO"
+    },
+    {
+     "id": "g01-04-significacao-das-palavras",
+     "titulo": "Significação das Palavras",
+     "arquivo": "conteudo-gerais/01-lingua-portuguesa/04-significacao-das-palavras.md",
+     "itens_edital": [
+      "4 Significação das palavras."
+     ],
+     "status": "VALIDADO"
+    },
+    {
+     "id": "g01-05-tempos-e-modos-verbais",
+     "titulo": "Emprego de Tempos e Modos Verbais",
+     "arquivo": "conteudo-gerais/01-lingua-portuguesa/05-tempos-e-modos-verbais.md",
+     "itens_edital": [
+      "5 Emprego de tempos e modos verbais."
+     ],
+     "status": "VALIDADO"
+    },
+    {
+     "id": "g01-06-classes-de-palavras",
+     "titulo": "Emprego das Classes de Palavras",
+     "arquivo": "conteudo-gerais/01-lingua-portuguesa/06-classes-de-palavras.md",
+     "itens_edital": [
+      "6 Emprego das classes de palavras."
+     ],
+     "status": "VALIDADO"
+    },
+    {
+     "id": "g01-07-coordenacao-e-subordinacao",
+     "titulo": "Coordenação e Subordinação",
+     "arquivo": "conteudo-gerais/01-lingua-portuguesa/07-coordenacao-e-subordinacao.md",
+     "itens_edital": [
+      "7 Coordenação e de subordinação."
+     ],
+     "status": "VALIDADO"
+    },
+    {
+     "id": "g01-08-pontuacao",
+     "titulo": "Emprego dos Sinais de Pontuação",
+     "arquivo": "conteudo-gerais/01-lingua-portuguesa/08-pontuacao.md",
+     "itens_edital": [
+      "8 Emprego dos sinais de pontuação."
+     ],
+     "status": "VALIDADO"
+    },
+    {
+     "id": "g01-09-concordancia",
+     "titulo": "Concordância Verbal e Nominal",
+     "arquivo": "conteudo-gerais/01-lingua-portuguesa/09-concordancia.md",
+     "itens_edital": [
+      "9 Concordância verbal e nominal."
+     ],
+     "status": "VALIDADO"
+    },
+    {
+     "id": "g01-10-regencia",
+     "titulo": "Regência Verbal e Nominal",
+     "arquivo": "conteudo-gerais/01-lingua-portuguesa/10-regencia.md",
+     "itens_edital": [
+      "10 Regência verbal e nominal."
+     ],
+     "status": "VALIDADO"
+    },
+    {
+     "id": "g01-11-crase",
+     "titulo": "Emprego do Sinal Indicativo de Crase",
+     "arquivo": "conteudo-gerais/01-lingua-portuguesa/11-crase.md",
+     "itens_edital": [
+      "11 Emprego do sinal indicativo de crase."
+     ],
+     "status": "VALIDADO"
+    },
+    {
+     "id": "g01-12-colocacao-pronominal",
+     "titulo": "Colocação dos Pronomes Átonos",
+     "arquivo": "conteudo-gerais/01-lingua-portuguesa/12-colocacao-pronominal.md",
+     "itens_edital": [
+      "12 Colocação dos pronomes átonos."
+     ],
+     "status": "VALIDADO"
+    }
+   ]
+  },
+  {
+   "id": "g02",
+   "tipo": "geral",
+   "numero": "02",
+   "pasta": "02-lingua-inglesa",
+   "titulo": "Língua Inglesa",
+   "assuntos": [
+    {
+     "id": "g02-01-compreensao-de-texto",
+     "titulo": "Compreensão de Texto Escrito em Língua Inglesa",
+     "arquivo": "conteudo-gerais/02-lingua-inglesa/01-compreensao-de-texto.md",
+     "itens_edital": [
+      "1 Compreensão de texto escrito em língua inglesa."
+     ],
+     "status": "VALIDADO"
+    },
+    {
+     "id": "g02-02-itens-gramaticais",
+     "titulo": "Itens Gramaticais Relevantes para a Compreensão dos Conteúdos Semânticos",
+     "arquivo": "conteudo-gerais/02-lingua-inglesa/02-itens-gramaticais.md",
+     "itens_edital": [
+      "2 Itens gramaticais relevantes para a compreensão dos conteúdos semânticos."
+     ],
+     "status": "VALIDADO"
+    }
+   ]
+  }
+ ]
+}

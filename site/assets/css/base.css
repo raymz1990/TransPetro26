@@ -1,0 +1,19 @@
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 "Segoe UI",system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif}
+h1,h2,h3,h4{font-family:Georgia,"Times New Roman",serif;font-weight:700;line-height:1.25;margin:1.6em 0 .5em}
+h1{font-size:1.9rem;margin-top:0}
+h2{font-size:1.4rem;border-bottom:1px solid var(--line);padding-bottom:.25em}
+h3{font-size:1.15rem}
+h4{font-size:1rem}
+a{color:var(--petrol)}
+a:hover{color:var(--amber)}
+p,ul,ol{margin:.7em 0}
+code{font:.88em Consolas,"Courier New",monospace;background:var(--code-bg);padding:.1em .35em;border:1px solid var(--line)}
+pre{background:var(--code-bg);border:1px solid var(--line);padding:12px 14px;overflow:auto;line-height:1.45}
+pre code{background:none;border:0;padding:0}
+hr{border:0;border-top:1px solid var(--line);margin:1.6em 0}
+blockquote{margin:1em 0;padding:.2em 1em;border-left:3px solid var(--amber);background:var(--surface);color:var(--text-2)}
+:focus-visible{outline:2px solid var(--amber);outline-offset:2px}
+button,select,input,textarea{font:inherit;color:inherit}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}

@@ -1,0 +1,247 @@
+TRANSPETRO 2026.4 — ÊNFASE 5
+ANÁLISE DE SISTEMAS: PROCESSOS DE NEGÓCIOS
+ESTRUTURA OFICIAL DO PROJETO
+============================================================
+
+Transpetro/
+│
+├── CLAUDE.md
+├── PROMPT-MESTRE.md
+├── README.md
+├── ESTRUTURA.txt
+│
+├── .claude/
+│   └── skills/
+│       │
+│       ├── edital-e-cobertura/
+│       │   └── SKILL.md
+│       │
+│       ├── conteudo-didatico/
+│       │   └── SKILL.md
+│       │
+│       ├── questoes-cesgranrio/
+│       │   └── SKILL.md
+│       │
+│       ├── analise-banca/
+│       │   └── SKILL.md
+│       │
+│       ├── notebooklm-export/
+│       │   └── SKILL.md
+│       │
+│       ├── simulados/
+│       │   └── SKILL.md
+│       │
+│       └── site-estatico/
+│           └── SKILL.md
+│
+├── docs/
+│   │
+│   ├── edital/
+│   │   ├── matriz-conteudo.md
+│   │   ├── controle-cobertura.md
+│   │   └── estrutura-prova.md
+│   │
+│   ├── estrategia/
+│   │   ├── estrategia-cesgranrio.md
+│   │   ├── prioridades.md
+│   │   └── metodologia-estudo.md
+│   │
+│   └── qualidade/
+│       ├── checklist-conteudo.md
+│       ├── checklist-questoes.md
+│       ├── checklist-simulados.md
+│       └── checklist-site.md
+│
+├── prompts/
+│   ├── 01-auditoria-edital.md
+│   ├── 02-criacao-conteudo.md
+│   ├── 03-analise-cesgranrio.md
+│   ├── 04-questoes-comentadas.md
+│   ├── 05-simulado.md
+│   ├── 06-material-notebooklm.md
+│   ├── 07-revisao-e-flashcards.md
+│   ├── 08-validacao-conteudo.md
+│   └── 09-atualizacao-site.md
+│
+├── conteudo/
+│   │
+│   ├── 01-arquitetura-dados/
+│   │   ├── 01-fundamentos.md
+│   │   ├── 02-modelagem-dados.md
+│   │   ├── 03-modelo-relacional.md
+│   │   ├── 04-normalizacao.md
+│   │   ├── 05-sql-e-sgbd.md
+│   │   ├── 06-transacoes-e-acid.md
+│   │   ├── 07-bancos-nao-relacionais.md
+│   │   ├── 08-integracao-e-etl.md
+│   │   ├── 09-data-warehouse-e-big-data.md
+│   │   └── 10-qualidade-e-governanca-dados.md
+│   │
+│   ├── 02-projetos-produtos/
+│   │   ├── 01-fundamentos.md
+│   │   ├── 02-scrum.md
+│   │   ├── 03-kanban.md
+│   │   ├── 04-metodos-ageis-escalados.md
+│   │   ├── 05-pmbok-7.md
+│   │   ├── 06-pmo-e-governanca-projetos.md
+│   │   └── 07-modelos-de-gestao.md
+│   │
+│   ├── 03-processos-gerenciamento/
+│   │   ├── 01-fundamentos-processos.md
+│   │   ├── 02-grupos-de-processos.md
+│   │   ├── 03-areas-de-conhecimento.md
+│   │   └── 04-gerenciamento-processos.md
+│   │
+│   ├── 04-governanca-ti/
+│   │   ├── 01-fundamentos-ti.md
+│   │   ├── 02-inovacao-e-tecnologia.md
+│   │   ├── 03-ciencia-pesquisa-e-desenvolvimento.md
+│   │   ├── 04-itsm.md
+│   │   └── 05-lgpd.md
+│   │
+│   ├── 05-engenharia-software/
+│   │   ├── 01-fundamentos.md
+│   │   ├── 02-requisitos-software.md
+│   │   ├── 03-ciclo-de-vida.md
+│   │   ├── 04-paradigmas.md
+│   │   ├── 05-analise-e-projeto.md
+│   │   ├── 06-verificacao-e-validacao.md
+│   │   └── 07-testes-e-ambientes.md
+│   │
+│   ├── 06-experiencia-usuario/
+│   │   ├── 01-usabilidade-e-acessibilidade.md
+│   │   ├── 02-user-stories.md
+│   │   ├── 03-interacao-web.md
+│   │   ├── 04-design-centrado-no-usuario.md
+│   │   ├── 05-data-storytelling.md
+│   │   ├── 06-dashboards-e-relatorios.md
+│   │   ├── 07-interoperabilidade.md
+│   │   ├── 08-mvp-e-prototipacao.md
+│   │   └── 09-design-thinking-e-personas.md
+│   │
+│   ├── 07-analise-dados/
+│   │   ├── 01-dados-informacao-conhecimento.md
+│   │   ├── 02-business-intelligence.md
+│   │   ├── 03-fontes-e-mapeamento-dados.md
+│   │   ├── 04-dados-estruturados-e-nao-estruturados.md
+│   │   ├── 05-olap-e-data-warehouse.md
+│   │   ├── 06-modelagem-multidimensional.md
+│   │   ├── 07-dashboards-e-planilhas.md
+│   │   └── 08-insights-e-tomada-de-decisao.md
+│   │
+│   ├── 08-logica-matematica/
+│   │   ├── 01-proposicoes-e-conectivos.md
+│   │   ├── 02-tabelas-verdade.md
+│   │   ├── 03-argumentacao-logica.md
+│   │   ├── 04-logica-proposicional.md
+│   │   ├── 05-logica-de-predicados.md
+│   │   ├── 06-formulas-e-sistemas-dedutivos.md
+│   │   └── 07-decidibilidade-e-funcoes-avaliacao.md
+│   │
+│   └── 09-seguranca-informacao/
+│       ├── 01-fundamentos-seguranca.md
+│       ├── 02-seguranca-fisica-e-logica.md
+│       ├── 03-ameacas-e-malwares.md
+│       ├── 04-desenvolvimento-seguro.md
+│       ├── 05-vpn-mdm-sso-mfa-iam.md
+│       ├── 06-gestao-incidentes.md
+│       ├── 07-inteligencia-de-ameacas.md
+│       ├── 08-pentest-stride-mitre.md
+│       ├── 09-gestao-riscos-e-continuidade.md
+│       ├── 10-politicas-e-classificacao.md
+│       ├── 11-iso-27002.md
+│       ├── 12-criptografia-e-certificados.md
+│       ├── 13-seguranca-cloud-e-iot.md
+│       └── 14-operacao-de-seguranca.md
+│
+├── banco-questoes/
+│   │
+│   ├── oficiais/
+│   │   ├── por-assunto/
+│   │   └── catalogo-provas.md
+│   │
+│   ├── adaptadas/
+│   │   └── por-assunto/
+│   │
+│   ├── autorais/
+│   │   └── por-assunto/
+│   │
+│   └── simulados/
+│       ├── por-assunto/
+│       ├── especificos-50-questoes/
+│       ├── completos-70-questoes/
+│       └── gabaritos-comentados/
+│
+├── conteudo-gerais/                      # Conhecimentos Gerais (Fase 2): fora dos 9 módulos da Ênfase 5
+│   ├── 01-lingua-portuguesa/            # 12 arquivos (LP-01 a LP-12)
+│   └── 02-lingua-inglesa/               # 2 arquivos (LI-01 e LI-02)
+│
+├── notebooklm/
+│   │
+│   ├── fontes/
+│   │   ├── 01-arquitetura-dados/
+│   │   ├── 02-projetos-produtos/
+│   │   ├── 03-processos-gerenciamento/
+│   │   ├── 04-governanca-ti/
+│   │   ├── 05-engenharia-software/
+│   │   ├── 06-experiencia-usuario/
+│   │   ├── 07-analise-dados/
+│   │   ├── 08-logica-matematica/
+│   │   └── 09-seguranca-informacao/
+│   │
+│   ├── mapas-mentais/
+│   ├── roteiros-podcast/
+│   ├── resumos/
+│   └── prompts/
+│
+├── site/
+│   │
+│   ├── index.html
+│   ├── .nojekyll
+│   │
+│   ├── assets/
+│   │   ├── css/
+│   │   │   ├── base.css
+│   │   │   ├── layout.css
+│   │   │   ├── components.css
+│   │   │   ├── themes.css
+│   │   │   └── responsive.css
+│   │   │
+│   │   ├── js/
+│   │   │   ├── app.js
+│   │   │   ├── theme.js
+│   │   │   ├── navigation.js
+│   │   │   ├── storage.js
+│   │   │   ├── progress.js
+│   │   │   ├── questions.js
+│   │   │   ├── simulations.js
+│   │   │   ├── flashcards.js
+│   │   │   ├── reviews.js
+│   │   │   ├── error-notebook.js
+│   │   │   └── timer.js
+│   │   │
+│   │   └── data/
+│   │       ├── edital.json
+│   │       ├── conteudo.json
+│   │       ├── questoes.json
+│   │       ├── simulados.json
+│   │       └── flashcards.json
+│   │
+│   ├── paginas/
+│   │   ├── plano-estudos.html
+│   │   ├── conteudo.html
+│   │   ├── questoes.html
+│   │   ├── simulados.html
+│   │   ├── flashcards.html
+│   │   ├── revisoes.html
+│   │   ├── caderno-erros.html
+│   │   └── desempenho.html
+│   │
+│   └── componentes/
+│       ├── header.html
+│       ├── sidebar.html
+│       └── footer.html
+│
+└── .github/
+    └── workflows/
+        └── deploy-pages.yml

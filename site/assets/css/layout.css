@@ -1,0 +1,15 @@
+.app{display:grid;grid-template-columns:260px 1fr;grid-template-rows:auto 1fr auto;min-height:100vh}
+.topbar{grid-column:1/-1;display:flex;align-items:center;gap:14px;padding:10px 20px;background:var(--bg-2);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}
+.brand{font:700 1rem Georgia,serif;letter-spacing:.06em;color:var(--text);text-decoration:none;text-transform:uppercase}
+.brand span{color:var(--amber);margin-left:8px}
+.spacer{flex:1}
+.sidebar{background:var(--bg-2);border-right:1px solid var(--line);padding:16px 0;overflow-y:auto;position:sticky;top:51px;height:calc(100vh - 51px)}
+.sidebar h2{font:600 .72rem "Segoe UI",sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--text-3);border:0;margin:16px 20px 6px;padding:0}
+.sidebar a,.sidebar .soon{display:flex;justify-content:space-between;gap:8px;padding:7px 20px;color:var(--text-2);text-decoration:none;border-left:3px solid transparent;font-size:.94rem}
+.sidebar a:hover{background:var(--surface);color:var(--text)}
+.sidebar a[aria-current="page"]{border-left-color:var(--amber);background:var(--surface);color:var(--text)}
+.sidebar .soon{color:var(--text-3)}
+.sidebar .tag{font-size:.7rem;color:var(--text-3);text-transform:uppercase;letter-spacing:.06em}
+.main{padding:28px clamp(16px,4vw,48px) 48px;min-width:0;max-width:1000px;width:100%}
+.footer{grid-column:1/-1;border-top:1px solid var(--line);padding:14px 20px;color:var(--text-3);font-size:.82rem;background:var(--bg-2)}
+.menu-btn{display:none}
