@@ -3,7 +3,7 @@
 
 **Atualizado:** 2026-10-31 · **Questões catalogadas:** 100 (2 provas): PRV-005 (Transpetro 2023, Prova 6) e PRV-006 (Transpetro 2018, Prova 15). Ver `base-provas.md` e `comparativo-2018-2023.md`.
 
-> **Ampliação (2026-11-04):** o catálogo passou a 170 questões (4 provas): PRV-005 e PRV-006 (Transpetro 2023 e 2018), PRV-007 (Petrobras 2006, 40 específicas) e PRV-008 (Caixa 2021 TI, 30 específicas, fonte oficial). As duas novas estão ao fim do arquivo. Amostra continua pequena e heterogênea (cargos e épocas diferentes): **não** permite tendências sobre a banca.
+> **Ampliação (2026-11-04):** o catálogo passou a 235 questões (6 provas): PRV-005 e PRV-006 (Transpetro 2023 e 2018), PRV-007 (Petrobras 2006, 40 específicas) e PRV-008 (Caixa 2021 TI, 30 específicas, fonte oficial), PRV-009 (Suape 2012, 30) e PRV-010 (BNDES 2024 Cibersegurança, 35). As quatro novas estão ao fim do arquivo. Amostra continua pequena e heterogênea (cargos e épocas diferentes): **não** permite tendências sobre a banca.
 
 > **Reclassificação (2026-11-04):** com a regra de fontes ampliada para toda a Cesgranrio (ver `banco-questoes/oficiais/catalogo-provas.md`), as 100 questões abaixo continuam válidas como catálogo. Aderente e Parcialmente aderente = candidatas a `OFI-`/`ADP-`; Fora do edital e Indeterminado = somente catálogo. Nenhuma prova de outro concurso foi catalogada ainda.
 
@@ -214,3 +214,83 @@ Numeração conferida visualmente nas páginas 8–12 e 14–21 do caderno (a p�
 | HIS-000168 | PRV-008 | 58 | M01 | 1.13 (E5-014) | SGBD distribuído federado | C | válida | Aderente | sec. 1.18, 1.23 |
 | HIS-000169 | PRV-008 | 59 | — | — | Kotlin: val e Int | A | válida | Fora do edital | linguagem de programação |
 | HIS-000170 | PRV-008 | 60 | M09 | 9.17 (E5-098) | Res. CMN 4.893: revisão da política de segurança cibernética | C | válida | Parcialmente aderente | norma do setor bancário; relação com 9.11 e 9.17 |
+
+
+## PRV-009 — Petroquímica Suape, PSP nº 1/2012, Analista de Sistemas Júnior — Ênfase em Negócio (Cesgranrio; 30 questões específicas)
+
+**Catalogada em 2026-11-04.** Prova 6 de 22/04/2012; 60 questões (31–60 específicas). Gabarito "após recursos" (espelho Estude Grátis), conferido na imagem da coluna da Prova 6: **Q49 anulada; Q36 e Q57 com gabarito alterado** (destacadas no documento). Programa de 2012, não confrontado com o edital da época. Nível superior, cargo de negócio: aderentes 12, parciais 7, fora 9, indeterminadas 1, anulada 1 (29 válidas + 1 anulada). Conferidas por cálculo ou execução: Q32, Q56, Q58; demais não conferidas. Nenhuma questão transcrita.
+
+| ID | Prova | Nº | Mód. | Item (matriz) | Assunto | Gab. | Situação | Aderência 2026 | Obs. |
+|---|---|---|---|---|---|---|---|---|---|
+| HIS-000171 | PRV-009 | 31 | M05 | 5.1 (E5-042) | Casos de uso e histórias de usuário: finalidade | C | válida | Aderente | sec. 6.2 |
+| HIS-000172 | PRV-009 | 32 | — | — | Pilha (TAD): somatório após operações | C | válida | Fora do edital | resultado conferido por execução |
+| HIS-000173 | PRV-009 | 33 | M05 | 5.3 (E5-044) | Modelo de classes UML 2.3: propagação de mensagens | A | válida | Aderente | figura; não conferida |
+| HIS-000174 | PRV-009 | 34 | M05 | 5.3 (E5-044) | Projeto: coesão e acoplamento | B | válida | Aderente | — |
+| HIS-000175 | PRV-009 | 35 | M05 | 5.3 (E5-044) | Diagrama de atividades (modelagem de negócios): caminhos | A | válida | Aderente | figura; não conferida |
+| HIS-000176 | PRV-009 | 36 | M05 | 5.1 (E5-042) | Engenharia de requisitos: propósito da validação | B | válida | Aderente | gabarito alterado após recursos |
+| HIS-000177 | PRV-009 | 37 | M05 | 5.3 (E5-044) | Casos de uso x decomposição funcional x classes conceituais | E | válida | Aderente | sec. 5.1 |
+| HIS-000178 | PRV-009 | 38 | M05 | 5.3 (E5-044) | IDEF1X, diagrama de comunicação, DFD, visão geral de interação | D | válida | Aderente | — |
+| HIS-000179 | PRV-009 | 39 | — | — | Endereçamento IP: classes | E | válida | Fora do edital | redes |
+| HIS-000180 | PRV-009 | 40 | — | — | Modelo OSI: responsabilidades das camadas | B | válida | Fora do edital | redes |
+| HIS-000181 | PRV-009 | 41 | M01 | 1.2 (E5-003) | Esquema relacional mapeado de classes UML | A | válida | Aderente | sec. 1.3 |
+| HIS-000182 | PRV-009 | 42 | M01 | 1.10 (E5-011) | SQL: GRANT/REVOKE e WITH GRANT OPTION | B | válida | Aderente | controle de acesso em SQL |
+| HIS-000183 | PRV-009 | 43 | — | — | Memória cache | B | válida | Fora do edital | arquitetura de computadores |
+| HIS-000184 | PRV-009 | 44 | M04 | 4.1 (E5-035) | Implantação de ERP: big bang, small bang, em fases | D | válida | Indeterminado | depende de interpretação de 4.1 |
+| HIS-000185 | PRV-009 | 45 | M05 | 5.3 (E5-044) | Diagrama de classes UML: o que não se deduz | A | válida | Aderente | figura; não conferida |
+| HIS-000186 | PRV-009 | 46 | — | — | RAID (assertiva e razão) | B | válida | Fora do edital | SO/armazenamento |
+| HIS-000187 | PRV-009 | 47 | — | — | Script shell UNIX (compactação) | C | válida | Fora do edital | código em figura; não conferida |
+| HIS-000188 | PRV-009 | 48 | — | — | CISC x RISC (assertiva e razão) | D | válida | Fora do edital | arquitetura |
+| HIS-000189 | PRV-009 | 49 | M07 | 7.5 (E5-064) | OLAP: operações básicas | ANULADA | anulada | Aderente | ANULADA no gabarito após recursos |
+| HIS-000190 | PRV-009 | 50 | M04 | 4.5 (E5-039) | Maturidade de processos e relacionamento de TI | B | válida | Parcialmente aderente | relação com governança de TI; sem referencial citado |
+| HIS-000191 | PRV-009 | 51 | M09 | 9.16 (E5-097) | Risco, ameaça e vulnerabilidade (assertiva e razão) | E | válida | Aderente | — |
+| HIS-000192 | PRV-009 | 52 | — | — | BPMN 2.0: análise de modelo | A | válida | Fora do edital | BPMN consta da Ênfase 6, não da 5; figura |
+| HIS-000193 | PRV-009 | 53 | M03 | 3 (E5-033) | Método do caminho crítico: duração | D | válida | Parcialmente aderente | item 3 por interpretação; tabela de dependências não conferida |
+| HIS-000194 | PRV-009 | 54 | M04 | 4.5 (E5-039) | ITIL: objetivo do gerenciamento de incidentes | A | válida | Aderente | — |
+| HIS-000195 | PRV-009 | 55 | M09 | 9.17 (E5-098) | PDCA em segurança da informação | C | válida | Parcialmente aderente | ISO 27001 não é citada literalmente |
+| HIS-000196 | PRV-009 | 56 | M05 | 5.1 (E5-042) | Contagem de pontos de função (PF não ajustados) | B | válida | Parcialmente aderente | métrica/estimativa; 62 conferido por cálculo |
+| HIS-000197 | PRV-009 | 57 | M04 | 4.5 (E5-039) | COBIT 4.1: processos de governança de TI | E | válida | Parcialmente aderente | COBIT não citado; gabarito alterado após recursos |
+| HIS-000198 | PRV-009 | 58 | — | — | Eficiência e eficácia de processo (indicadores) | C | válida | Fora do edital | 90% e 96% conferidos por cálculo |
+| HIS-000199 | PRV-009 | 59 | M03 | 3 (E5-033) | Ciclo BPM: ferramentas de modelagem (EPC/ARIS, atividades UML) | E | válida | Parcialmente aderente | BPM é complemento no projeto, não exigência expressa |
+| HIS-000200 | PRV-009 | 60 | M03 | 3 (E5-033) | Gerenciamento de riscos do projeto: objetivo | D | válida | Parcialmente aderente | item 3 (área de riscos), por interpretação |
+
+## PRV-010 — BNDES, Edital 1/2024, Analista — Análise de Sistemas: Cibersegurança (Prova 2, Cesgranrio; 35 questões específicas)
+
+**Catalogada em 2026-11-04.** Prova de 13/10/2024 (manhã); caderno "PROVA 2 — Analista / Análise de Sistemas — Cibersegurança"; questões 36–70 específicas. **Gabarito final após recursos** (documento da banca, obtido em espelho do QConcursos); **nenhuma anulação na Prova 2** (houve em outras provas do mesmo documento). Aderentes 18, parciais 17, fora 0, indeterminadas 0 (35). A prova é de **um cargo diferente** (cibersegurança) e tem muitas questões "parciais" por citarem normas e frameworks (ISO 27001/27005/27035/22313, CIS, NIST CSF) que o Anexo IV de 2026 não nomeia. A amostra de uma prova não permite inferir o peso de cada tema na Transpetro. Nenhuma questão transcrita.
+
+| ID | Prova | Nº | Mód. | Item (matriz) | Assunto | Gab. | Situação | Aderência 2026 | Obs. |
+|---|---|---|---|---|---|---|---|---|---|
+| HIS-000201 | PRV-010 | 36 | M09 | 9.3 (E5-084) | Malware: tipo indicado para implantar spyware | A | válida | Aderente | — |
+| HIS-000202 | PRV-010 | 37 | M09 | 9.13 (E5-094) | Varredura (SCAN) como etapa de ataque; CERT.br | E | válida | Parcialmente aderente | reconhecimento; CERT.br não citado |
+| HIS-000203 | PRV-010 | 38 | M09 | 9.19 (E5-100) | Criptografia: confidencialidade, integridade e autenticidade (hash + chaves) | D | válida | Aderente | — |
+| HIS-000204 | PRV-010 | 39 | M09 | 9.2 (E5-083) | NVD e gestão de vulnerabilidades | E | válida | Aderente | — |
+| HIS-000205 | PRV-010 | 40 | M09 | 9.11 (E5-092) | NIST CSF: níveis (tiers) de maturidade | B | válida | Parcialmente aderente | NIST CSF não é citado; só a SP 800-61 |
+| HIS-000206 | PRV-010 | 41 | M09 | 9.17 (E5-098) | ISO 27001:2022: ciclo PDCA no SGSI | D | válida | Parcialmente aderente | ISO 27001 não citada literalmente |
+| HIS-000207 | PRV-010 | 42 | M04 | 4.6 (E5-040) | ISO 29100: princípios de privacidade | B | válida | Parcialmente aderente | relação com LGPD (4.6); norma não citada |
+| HIS-000208 | PRV-010 | 43 | M09 | 9.16 (E5-097) | ISO 27005: definição de vulnerabilidade | B | válida | Parcialmente aderente | gestão de riscos (ISO 31000 citada); 27005 não |
+| HIS-000209 | PRV-010 | 44 | M09 | 9.16 (E5-097) | ISO 22313: elementos de gestão de continuidade (AIN) | A | válida | Parcialmente aderente | ISO 22301 citada; 22313 não |
+| HIS-000210 | PRV-010 | 45 | M09 | 9.11 (E5-092) | ISO 27035-1: fases de gestão de incidentes | E | válida | Parcialmente aderente | item cita NIST SP 800-61; relação por tema |
+| HIS-000211 | PRV-010 | 46 | M09 | 9.16 (E5-097) | ISO 22301: benefícios de um SGCN | B | válida | Aderente | — |
+| HIS-000212 | PRV-010 | 47 | M09 | 9.4 (E5-085) | Ataques ativos e passivos: disfarce (masquerade) | E | válida | Aderente | — |
+| HIS-000213 | PRV-010 | 48 | M09 | 9.13 (E5-094) | Varredura TCP furtiva com zumbi (idle scan) | C | válida | Parcialmente aderente | técnica de reconhecimento; sem citação literal |
+| HIS-000214 | PRV-010 | 49 | M09 | 9.4 (E5-085) | Ataque DHCP: rogue server | A | válida | Aderente | sec. 9.2 |
+| HIS-000215 | PRV-010 | 50 | M09 | 9.4 (E5-085) | ARP spoofing em ataque man-in-the-middle | B | válida | Aderente | — |
+| HIS-000216 | PRV-010 | 51 | M09 | 9.3 (E5-084) | Código malicioso: formjacking | B | válida | Aderente | — |
+| HIS-000217 | PRV-010 | 52 | M09 | 9.1 (E5-082) | Engenharia social presencial: tailgating | D | válida | Aderente | sec. 9.4 |
+| HIS-000218 | PRV-010 | 53 | M09 | 9.13 (E5-094) | Ferramenta OSINT para reconhecimento (theHarvester) | E | válida | Parcialmente aderente | ferramentas de pentest; sem citação literal |
+| HIS-000219 | PRV-010 | 54 | M09 | 9.2 (E5-083) | Firewall proxy na defesa em profundidade | A | válida | Aderente | — |
+| HIS-000220 | PRV-010 | 55 | M09 | 9.4 (E5-085) | OWASP Top 10 (2021): falhas criptográficas | B | válida | Aderente | sec. 9.5; edição de 2021 |
+| HIS-000221 | PRV-010 | 56 | M09 | 9.19 (E5-100) | Irretratabilidade (não repúdio) | D | válida | Aderente | sec. 9.1 |
+| HIS-000222 | PRV-010 | 57 | M09 | 9.10 (E5-091) | IEEE 802.1X: protocolo do suplicante (EAP) | A | válida | Parcialmente aderente | controle de acesso; 802.1X não citado |
+| HIS-000223 | PRV-010 | 58 | M09 | 9.2 (E5-083) | Controles CIS: defesas contra malware | D | válida | Parcialmente aderente | CIS não citado |
+| HIS-000224 | PRV-010 | 59 | M09 | 9.2 (E5-083) | SOAR: automação de resposta | E | válida | Parcialmente aderente | SOAR não consta da lista literal de 9.2 |
+| HIS-000225 | PRV-010 | 60 | M09 | 9.19 (E5-100) | TLS 1.3 x TLS 1.2 | A | válida | Aderente | sec. 9.1 |
+| HIS-000226 | PRV-010 | 61 | M09 | 9.1 (E5-082) | CIS Benchmark RHEL: opções de montagem de /tmp | A | válida | Parcialmente aderente | hardening; Benchmarks CIS não citados |
+| HIS-000227 | PRV-010 | 62 | M09 | 9.2 (E5-083) | Controles CIS v8: Grupos de Implementação (IG3) | C | válida | Parcialmente aderente | CIS não citado |
+| HIS-000228 | PRV-010 | 63 | M09 | 9.10 (E5-091) | CIS Windows Server: tamanho mínimo de senha | E | válida | Parcialmente aderente | política de senhas; Benchmark CIS não citado |
+| HIS-000229 | PRV-010 | 64 | M09 | 9.19 (E5-100) | Mecanismo de integridade: resumo de mensagem (hash) | E | válida | Aderente | — |
+| HIS-000230 | PRV-010 | 65 | M09 | 9.11 (E5-092) | FIRST CSIRT Services Framework | E | válida | Parcialmente aderente | resposta a incidentes; framework não citado |
+| HIS-000231 | PRV-010 | 66 | M09 | 9.15 (E5-096) | ATT&CK: técnica da tática de evasão de defesa | C | válida | Aderente | prova de 2024 (lista com 14 táticas); ver nota da v19 (15) |
+| HIS-000232 | PRV-010 | 67 | M09 | 9.4 (E5-085) | CWE Top 25: SSRF | A | válida | Aderente | — |
+| HIS-000233 | PRV-010 | 68 | M09 | 9.2 (E5-083) | CVSS 4.0: grupos de métricas | C | válida | Aderente | gestão de vulnerabilidades |
+| HIS-000234 | PRV-010 | 69 | M09 | 9.19 (E5-100) | ISO 27002:2022: atributo de domínios de segurança | D | válida | Aderente | — |
+| HIS-000235 | PRV-010 | 70 | M09 | 9.17 (E5-098) | ISO 27001:2022: itens de melhoria do SGSI | C | válida | Parcialmente aderente | ISO 27001 não citada literalmente |
