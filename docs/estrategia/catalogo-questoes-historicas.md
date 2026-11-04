@@ -3,6 +3,8 @@
 
 **Atualizado:** 2026-10-31 · **Questões catalogadas:** 100 (2 provas): PRV-005 (Transpetro 2023, Prova 6) e PRV-006 (Transpetro 2018, Prova 15). Ver `base-provas.md` e `comparativo-2018-2023.md`.
 
+> **Reclassificação (2026-11-04):** com a regra de fontes ampliada para toda a Cesgranrio (ver `banco-questoes/oficiais/catalogo-provas.md`), as 100 questões abaixo continuam válidas como catálogo. Aderente e Parcialmente aderente = candidatas a `OFI-`/`ADP-`; Fora do edital e Indeterminado = somente catálogo. Nenhuma prova de outro concurso foi catalogada ainda.
+
 ## Critérios e limites
 
 - Catalogados **metadados**; enunciados e alternativas não são reproduzidos (consultar os PDFs em `banco-questoes/oficiais/fontes-brutas/`).

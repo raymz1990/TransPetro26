@@ -13,24 +13,59 @@
   /* ---------- Início ---------- */
   TP.rota("", function (main) {
     var c = TP.resumoConteudo(), q = TP.resumoQuestoes();
-    main.appendChild(h("p", { class: "eyebrow" }, "Processo Seletivo Público TRANSPETRO 2026.4 · Fundação Cesgranrio"));
+    var pct = q.respondidas ? Math.round(100 * q.acertos / q.respondidas) + "%" : "—";
+
+    /* Identificação do concurso (fatos do edital 04/2026, conforme docs/CONTEXTO-ATUAL.md) */
+    main.appendChild(h("p", { class: "eyebrow" }, "Processo Seletivo Público TRANSPETRO 2026.4"));
     main.appendChild(h("h1", {}, "Ênfase 5 — Análise de Sistemas: Processos de Negócios"));
-    main.appendChild(h("p", { class: "lead" }, "Teoria organizada pelo Anexo IV do edital e banco de questões comentadas. O edital oficial é a referência para delimitar o conteúdo."));
+    main.appendChild(h("dl", { class: "ident" },
+      h("div", {}, h("dt", {}, "Banca"), h("dd", {}, "Fundação Cesgranrio")),
+      h("div", {}, h("dt", {}, "Prova"), h("dd", {}, "70 questões: 50 específicas + 10 Português + 10 Inglês")),
+      h("div", {}, h("dt", {}, "Formato"), h("dd", {}, "5 alternativas, 1 ponto cada, 4h30")),
+      h("div", {}, h("dt", {}, "Corte"), h("dd", {}, "mínimo de 50% em Específicos e em Gerais"))));
+
+    /* Progresso geral */
     main.appendChild(h("div", { class: "stats" },
-      h("div", { class: "stat" }, h("b", {}, c.estudados + "/" + c.total), h("span", {}, "assuntos marcados como estudados"), TP.barra(c.estudados, c.total)),
+      h("div", { class: "stat" }, h("b", {}, c.estudados + "/" + c.total), h("span", {}, "assuntos estudados"), TP.barra(c.estudados, c.total)),
       h("div", { class: "stat" }, h("b", {}, q.respondidas + "/" + q.total), h("span", {}, "questões respondidas"), TP.barra(q.respondidas, q.total)),
-      h("div", { class: "stat" }, h("b", {}, q.respondidas ? Math.round(100 * q.acertos / q.respondidas) + "%" : "—"), h("span", {}, q.respondidas ? "acertos (última tentativa de cada questão)" : "sem dados ainda"))));
+      h("div", { class: "stat" }, h("b", {}, pct), h("span", {}, q.respondidas ? "acertos (última tentativa)" : "sem respostas ainda"))));
+
+    /* Atalhos */
     main.appendChild(h("div", { class: "row" },
       h("a", { class: "btn primary", href: "#/conteudo" }, "Estudar conteúdo"),
       h("a", { class: "btn", href: "#/questoes" }, "Resolver questões"),
-      h("a", { class: "btn", href: "#/erros" }, "Caderno de erros")));
+      h("a", { class: "btn", href: "#/erros" }, "Caderno de erros"),
+      h("a", { class: "btn", href: "#/busca" }, "Buscar")));
+
+    /* Painéis: rotina, revisões e simulado (o que ainda não existe é dito como tal) */
+    var erros = TP.dados().erros ? Object.keys(TP.dados().erros).length : null;
+    main.appendChild(h("div", { class: "panels" },
+      h("section", { class: "panel" }, h("h3", {}, "Rotina de estudos"),
+        h("p", { class: "muted" }, "Plano diário, semanal e mensal: ainda não implementado. Por ora, use a lista de conteúdo e marque o que estudou.")),
+      h("section", { class: "panel" }, h("h3", {}, "Próximas revisões"),
+        h("p", { class: "muted" }, "Revisão espaçada: ainda não implementada." + (erros ? " Há " + erros + " item(ns) no caderno de erros." : ""))),
+      h("section", { class: "panel" }, h("h3", {}, "Último simulado"),
+        h("p", { class: "muted" }, "Simulados: ainda não implementados."))));
+
+    /* Cobertura por módulo */
+    main.appendChild(h("h2", {}, "Progresso por módulo"));
+    var tb = h("tbody", {});
+    TP.data.conteudo.grupos.forEach(function (g) {
+      var gr = c.grupos[g.id];
+      var nome = g.tipo === "especifico" ? "M" + parseInt(g.numero, 10) + " · " + g.titulo : "Gerais · " + g.titulo;
+      var qm = g.tipo === "especifico" ? (q.porModulo[g.pasta] || { total: 0, respondidas: 0, acertos: 0 }) : null;
+      tb.appendChild(h("tr", {},
+        h("td", {}, h("a", { href: "#/conteudo" }, nome)),
+        h("td", {}, gr.estudados + "/" + gr.total, TP.barra(gr.estudados, gr.total)),
+        h("td", {}, qm ? String(qm.total) : "—"),
+        h("td", {}, qm && qm.respondidas ? qm.acertos + "/" + qm.respondidas : "—")));
+    });
+    main.appendChild(h("div", { class: "tscroll" }, h("table", { class: "table" },
+      h("thead", {}, h("tr", {}, h("th", {}, "Módulo"), h("th", {}, "Estudados"), h("th", {}, "Questões"), h("th", {}, "Acertos"))), tb)));
+
     main.appendChild(h("div", { class: "notice" }, "Seus dados (progresso, respostas, erros) ficam armazenados apenas neste navegador e neste dispositivo; não são sincronizados. Limpar os dados do navegador apaga o progresso: faça backup em ",
-      h("a", { href: "#/dados" }, "Meus dados"), "."));
-    main.appendChild(h("h2", {}, "Situação da plataforma"));
-    main.appendChild(h("ul", {},
-      h("li", {}, "Disponível: leitura do conteúdo (módulos 1 a 9 e Conhecimentos Gerais), questões autorais com correção comentada, caderno de erros, desempenho, exportação e importação de dados."),
-      h("li", {}, "Ainda não implementado: plano de estudos, simulados com cronômetro, flashcards e revisão espaçada."),
-      h("li", {}, "Ainda não produzido: questões oficiais e adaptadas, questões de Conhecimentos Gerais, simulados e flashcards.")));
+      h("a", { href: "#/dados" }, "Meus dados"), ". O edital oficial prevalece sobre qualquer material deste site."));
+    main.appendChild(h("p", { class: "muted" }, "Disponível: teoria (módulos 1 a 9 e Gerais), 90 questões autorais, caderno de erros, desempenho, busca e backup. Ainda não implementado: plano de estudos, simulados, flashcards e revisão espaçada. As questões são autorais, não da Cesgranrio."));
   });
 
   /* ---------- Conteúdo ---------- */
@@ -163,6 +198,7 @@
     document.getElementById("menu-btn").addEventListener("click", function (e) {
       var ab = menu.classList.toggle("open"); e.currentTarget.setAttribute("aria-expanded", String(ab));
     });
+    TP.iniciarBuscaTopo(document.getElementById("topsearch"));
     TP.carregar();
     var main = document.getElementById("app");
     Promise.all([carregarJson("assets/data/conteudo.json"), carregarJson("assets/data/questoes.json")]).then(function (r) {

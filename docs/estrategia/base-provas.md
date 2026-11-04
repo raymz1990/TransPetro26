@@ -3,6 +3,10 @@
 
 **Atualizado:** 2026-10-31 · **Etapa de análise Cesgranrio concluída (2 provas, com ressalvas)** · **Provas catalogadas questão a questão:** 2 (PRV-005, PRV-006) · 100 questões
 
+## 0. Regra de fontes (vigente desde 2026-11-04)
+
+A base deixou de se limitar a Transpetro/Petrobras. Entra qualquer prova da **Fundação Cesgranrio** cujo assunto conste do Anexo IV da Ênfase 5 (2026) e cujo caderno e gabarito sejam verificáveis. Provas de outras bancas são excluídas. Candidatas, provas excluídas e o esquema (concurso, cargo, ano, aderência) estão em `banco-questoes/oficiais/catalogo-provas.md`. Candidata não obtida não é prova catalogada.
+
 ## 1. Fontes oficiais (resultado da busca)
 
 Cesgranrio, Transpetro e Petrobras hospedam editais, retificações e resultados, mas **não** cadernos nem gabaritos das provas abaixo (portal `concursos.cesgranrio.org.br` renderiza por JavaScript; `transpetro.cesgranrio.org.br/portal/avaliacoes/12` retornou 404). Todos os documentos obtidos são **espelhos de sites de terceiros**; nenhum foi confrontado com o documento da banca.

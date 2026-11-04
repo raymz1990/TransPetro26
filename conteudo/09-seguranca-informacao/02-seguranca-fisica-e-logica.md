@@ -71,6 +71,18 @@ Modelos (visão geral; detalhes em `05`): **DAC** (discricionário: o dono decid
 
 Remover serviços e contas desnecessários, alterar credenciais padrão, aplicar *baselines* (por exemplo, referências do CIS Benchmarks; de memória), manter inventário e gestão de mudanças, atualizar sistemas (gestão de patches e de vulnerabilidades — `14`).
 
+### 3.4 Mapeamento à ISO/IEC 27002:2022 (item 9.1 ampliado — decisão de 2026-11-04)
+
+O item 9.1 tem redação genérica. A interpretação adotada: controles **físicos, ambientais e lógicos**, mais o **mapeamento aos temas da ISO/IEC 27002:2022**, que organiza 93 controles em quatro temas (organizacionais, de pessoas, **físicos** e **tecnológicos**). *Numeração de memória; conferir na norma (não consultada).*
+
+| Controles deste arquivo | Tema da ISO 27002:2022 | Exemplos de controles do tema (de memória) |
+|---|---|---|
+| Perímetro, acesso físico, vigilância, áreas seguras, mesa e tela limpas, proteção de equipamentos, mídias, utilidades, cabeamento, manutenção, descarte | **Físicos** (7.1 a 7.14) | Perímetros de segurança física; entrada física; monitoramento de segurança física; proteção contra ameaças físicas e ambientais; trabalho em áreas seguras; mesa limpa e tela limpa; localização e proteção de equipamentos; utilidades de suporte; segurança do cabeamento; manutenção; descarte ou reutilização segura |
+| Controle de acesso lógico, autenticação, privilégios, antimalware, backup, registros, criptografia, hardening | **Tecnológicos** (8.1 a 8.34) | Direitos de acesso privilegiado; autenticação segura; proteção contra *malware*; cópias de segurança; registro de eventos (*logging*); uso de criptografia; gestão de configuração |
+| Políticas, papéis, classificação, inventário | Organizacionais (5.x) | Ver `11-iso-27002.md` e `10-politicas-e-classificacao.md` |
+
+Uso na prova: a ISO 27002:2022 **separa** controles físicos (tema 7) e tecnológicos (tema 8); a revisão de 2022 reduziu de 114 controles em 14 domínios (2013) para **93 em 4 temas**.
+
 ## 4. Defesa em profundidade
 
 Camadas **independentes** (física, perímetro, rede, host, aplicação, dados, pessoas): a falha de uma não compromete as demais. Exemplo: data center com acesso físico restrito (física), segmentação de rede (rede), servidores atualizados e com EDR (host), dados criptografados (dados), MFA e treinamento (pessoas).

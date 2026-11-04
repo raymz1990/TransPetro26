@@ -51,6 +51,16 @@ Toda questão deverá ser identificada por uma das seguintes categorias:
 
 Nunca atribua autoria à Cesgranrio para questões criadas pelo projeto.
 
+## Fonte de questões oficiais (regra vigente desde 2026-11-04)
+
+Questões oficiais e adaptadas podem vir de **qualquer prova da Fundação Cesgranrio** (não apenas Transpetro/Petrobras), desde que cumpram **todos** os critérios:
+
+1. **Banca:** Fundação Cesgranrio (provas de outras bancas, como Cebraspe, ficam fora).
+2. **Aderência:** o assunto da questão corresponde a um item do Anexo IV da Ênfase 5 (edital 2026). Java/J2EE e assuntos de outras ênfases continuam fora.
+3. **Verificabilidade:** prova e gabarito identificáveis (concurso, cargo, ano, prova, número) e acessíveis para conferência; situação do gabarito (definitivo, alterado, anulada) registrada.
+
+Cada questão registra `concurso`, `cargo`, `ano` e `aderencia_edital`. Provas de outros concursos não indicam, por si, o peso dos assuntos na prova da Transpetro: não afirmar tendência sem amostra suficiente, e nunca inventar questão, gabarito ou ano.
+
 # 3. PADRÃO DIDÁTICO
 
 Utilize português brasileiro, linguagem objetiva e tecnicamente correta.

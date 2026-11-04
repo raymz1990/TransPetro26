@@ -35,7 +35,11 @@ ultima_atualizacao: "2026-10-31"
 | **Rev. 2** (agosto de 2012) | **Retirada em 3/4/2025**, substituída pela Rev. 3 | Ciclo de vida em **quatro fases** (seção 3) |
 | **Rev. 3** (abril de 2025) | Vigente; subtítulo "A CSF 2.0 Community Profile" | Integra a resposta a incidentes ao **gerenciamento de risco de cibersegurança**, com as funções do CSF 2.0 (Govern, Identify, Protect, Detect, Respond, Recover); estrutura detalhada **não lida** |
 
-O edital cita "NIST SP 800-61" sem a revisão. As questões catalogadas (2023) são anteriores à Rev. 3; **o ciclo de quatro fases da Rev. 2 permanece a referência clássica** nas provas, mas o candidato deve conhecer também a mudança de enfoque da Rev. 3. Use a revisão indicada no enunciado.
+**Decisão do usuário (2026-11-04):** a **Rev. 3 (vigente) é a referência principal**; a **Rev. 2** é mantida como **comparação**, porque as provas catalogadas (2018 e 2023) são anteriores à Rev. 3 e usam o ciclo de quatro fases. O edital cita "NIST SP 800-61" sem a revisão: use a revisão indicada no enunciado.
+
+**O que muda na Rev. 3** (fonte: página do NIST e resumos de terceiros; **corpo não lido**): o documento passa a ser organizado pelas subcategorias do **CSF 2.0**; o ciclo de vida de resposta a incidentes é descrito com as **seis funções do CSF 2.0** (Govern, Identify, Protect, Detect, Respond, Recover), integrando a resposta a incidentes ao gerenciamento de riscos, e deixa de ser tratado como sequência linear e reativa. A classificação de prioridade (alta, média, baixa) das atividades, citada em resumos de terceiros, **não foi confirmada**.
+
+**Estratégia de estudo:** (1) entenda o **modelo da Rev. 3** (resposta e recuperação dependem de governar, identificar e proteger); (2) domine as **quatro fases da Rev. 2** (seção 3), porque a prova pode usá-las; (3) leia o enunciado para ver qual revisão ele cita.
 
 ## 3. Ciclo de vida da resposta a incidentes — Rev. 2 (fases e atividades **verificadas** no PDF do NIST)
 
@@ -87,7 +91,7 @@ O SIEM alerta uma sequência de falhas de login seguida de um acesso bem-sucedid
 
 *Inferência técnica e recomendação pedagógica; sem atribuir frequência à banca.*
 
-- Memorizar as **quatro fases da Rev. 2** e a **ordem**: preparação; detecção e análise; contenção, erradicação e recuperação; atividade pós-incidente.
+- **Referência principal: Rev. 3** (decisão de 2026-11-04). Mesmo assim, memorizar as **quatro fases da Rev. 2** (comparativo) e a **ordem**: preparação; detecção e análise; contenção, erradicação e recuperação; atividade pós-incidente.
 - Saber que a **Rev. 3 (2025)** substituiu a Rev. 2; a prova pode seguir qualquer das duas — observar o enunciado.
 - *Evidência histórica (amostra de duas provas):* a Prova 6 de 2023 trouxe **Q42** (ciclo de resposta a incidentes NIST SP 800-61; gabarito C, de terceiros, não validado). Duas provas não permitem inferir frequência.
 

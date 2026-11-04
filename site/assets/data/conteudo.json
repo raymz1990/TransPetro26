@@ -611,6 +611,13 @@
       "8.9 Funções de avaliação."
      ],
      "status": "VALIDADO"
+    },
+    {
+     "id": "e08-08-raciocinio-logico-complementar",
+     "titulo": "Raciocínio Lógico: Ordenações, Associações e Verdade/Mentira (complemento)",
+     "arquivo": "conteudo/08-logica-matematica/08-raciocinio-logico-complementar.md",
+     "itens_edital": [],
+     "status": "RASCUNHO"
     }
    ]
   },

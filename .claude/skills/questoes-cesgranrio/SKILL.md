@@ -102,6 +102,16 @@ Ao pesquisar questões anteriores:
 - Verifique se o gabarito corresponde à versão definitiva.
 - Identifique eventuais anulações e alterações de gabarito.
 
+### 4.1 Fontes admitidas (regra vigente desde 2026-11-04)
+
+Além das provas da Transpetro e da Petrobras, são admitidas provas da **Fundação Cesgranrio de outros concursos** (por exemplo, TI em bancos, autarquias e estatais), desde que:
+
+1. a banca seja a Cesgranrio;
+2. o assunto da questão tenha item no Anexo IV da Ênfase 5 do edital 2026 (Java/J2EE e outras ênfases continuam fora);
+3. prova e gabarito sejam verificáveis (concurso, cargo, ano, prova, número, fonte, situação do gabarito e anulações).
+
+Registrar `concurso`, `cargo`, `ano` e `aderencia_edital` (Aderente, Parcialmente aderente, Fora do edital, Indeterminado). Questões "Fora do edital" são catalogadas, mas não entram no banco de estudo. Provas candidatas ficam em `banco-questoes/oficiais/catalogo-provas.md` com situação (obtida, não obtida, excluída). Sem amostra suficiente, não afirmar tendência; nunca inventar questão, gabarito ou ano.
+
 Não invente:
 
 - Questões.

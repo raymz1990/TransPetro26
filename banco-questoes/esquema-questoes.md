@@ -35,6 +35,23 @@ Os identificadores são sequenciais por categoria, **não são reutilizados** e 
 
 Somente questões `validada` poderão compor simulados oficiais do projeto.
 
+## Campos de origem (v1.1, 2026-11-04)
+
+Para `OFI-` e `ADP-`, o objeto `fonte_origem` passa a ter os campos abaixo. Em `AUT-` (autorais) `fonte_origem` continua **nulo** e nada aqui é preenchido; as 90 questões existentes não mudam.
+
+| Campo | Descrição |
+|---|---|
+| `banca` | Deve ser `Fundação Cesgranrio` (regra de fontes) |
+| `concurso` | Por exemplo, `Transpetro PSP/Terra 002/2023` |
+| `cargo` | Cargo/ênfase como no caderno |
+| `ano` | Ano da aplicação (nunca estimado) |
+| `prova`, `numero_original` | Caderno e número da questão |
+| `id_prova` | `PRV-nnn` do `catalogo-provas.md` |
+| `situacao_gabarito` | `definitivo`, `alterado`, `anulada` ou `nao_verificado`, mais a origem (oficial ou de terceiros) |
+| `aderencia_edital` | `aderente`, `parcial`, `fora` ou `indeterminado`; `fora` e `indeterminado` não entram no banco de estudo |
+| `url`, `sha256` | Fonte e hash do arquivo conferido |
+| `alteracoes` | Somente `ADP-`: o que mudou e por quê |
+
 ## Campos reservados para o caderno de erros (preenchidos pelo estudante, futuramente)
 
 `resposta_selecionada`, `resposta_correta`, `data_resolucao`, `tempo_gasto`, `resultado`, `tipo_erro`, `justificativa_erro`, `necessita_revisao`, `proxima_revisao`.

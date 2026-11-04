@@ -50,3 +50,18 @@
 textarea{width:100%;background:var(--surface);border:1px solid var(--line-strong);padding:6px 8px;min-height:60px}
 .errcard{border:1px solid var(--line);background:var(--surface);padding:12px 16px;margin:12px 0}
 .row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.ident{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));margin:14px 0 0;border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.ident>div{padding:10px 14px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.ident dt{font:600 .7rem "Segoe UI",sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--text-3)}
+.ident dd{margin:2px 0 0;font-size:.95rem}
+.panels{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));margin:22px 0;border-top:2px solid var(--line-strong);border-left:1px solid var(--line)}
+.panel{padding:4px 16px 12px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.panel h3{margin:10px 0 4px;font:600 .8rem "Segoe UI",sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--amber)}
+.table td .bar{margin-top:4px;min-width:90px}
+.topsearch input{background:var(--surface);border:1px solid var(--line-strong);padding:6px 10px;border-radius:2px;width:190px;max-width:36vw}
+.topsearch input:focus{border-color:var(--amber);outline:none}
+.searchform{display:flex;gap:8px;margin:14px 0}
+.searchform input{flex:1;min-width:0;background:var(--surface);border:1px solid var(--line-strong);padding:8px 10px;border-radius:2px}
+.results .res{flex:1;min-width:0}
+.results .snip{font-size:.9rem;color:var(--text-2);margin-top:2px}
+mark{background:var(--amber-bg);color:var(--amber);padding:0 2px}
