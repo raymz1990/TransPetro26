@@ -1,6 +1,6 @@
 # Catálogo de provas — fonte de questões oficiais e adaptadas
 
-**Atualizado:** 2026-11-04 (6 provas catalogadas) · **Regra vigente:** ver `CLAUDE.md` (seção 2, "Fonte de questões oficiais") e `.claude/skills/questoes-cesgranrio/SKILL.md` (§4.1).
+**Atualizado:** 2026-11-04 (8 provas catalogadas) · **Regra vigente:** ver `CLAUDE.md` (seção 2, "Fonte de questões oficiais") e `.claude/skills/questoes-cesgranrio/SKILL.md` (§4.1).
 
 ## Critério de inclusão
 
@@ -29,22 +29,23 @@ Provas de outras bancas são **excluídas**. Candidata encontrada em busca **nã
 | PRV-008 | Cesgranrio | Caixa Econômica Federal, Edital 1/2021/NM (aplicação 31/10/2021) | Técnico Bancário Novo — Tecnologia da Informação (nível médio) | 2021 | 30 específicas (31–60) | **oficial** (portal da Cesgranrio); recursos: sem alteração nem anulação | 9 | 3 | 17 | 1 | 0 |
 | PRV-009 | Cesgranrio | Petroquímica Suape PSP nº 1/2012 (22/04/2012) | Analista de Sistemas Júnior — Ênfase em Negócio (Prova 6) | 2012 | 30 específicas (31–60) | de espelho (Estude Grátis), **após recursos**: Q49 anulada, Q36 e Q57 alteradas | 12 | 7 | 9 | 1 | 1 |
 | PRV-010 | Cesgranrio | BNDES Edital 1/2024 (13/10/2024) | Analista — Análise de Sistemas: Cibersegurança (Prova 2) | 2024 | 35 específicas (36–70) | **final após recursos** (documento da banca, via espelho QConcursos); sem anulação na Prova 2 | 18 | 17 | 0 | 0 | 0 |
+| PRV-011 | Cesgranrio | Petrobras PSP RH 2017.2 (prova de 18/03/2018) | Analista de Sistemas Júnior — Processos de Negócio (Prova 3) | 2018 | 50 (21–70) | de espelho (PCI), fornecido pelo usuário; preliminar/definitivo não indicado; anulações não verificadas | 18 | 7 | 18 | 7 | 0 conhecidas |
+| PRV-012 | Cesgranrio | Banco do Brasil Seleção Externa 2021/001 (26/09/2021) | Escriturário — Agente de Tecnologia, Microrregião 16 DF-TI (nível médio) | 2021 | 35 de TI (36–70), caderno "Gabarito 1" | de espelho (PCI), fornecido pelo usuário; preliminar/definitivo não indicado; anulações não verificadas | 11 | 1 | 23 | 0 | 0 conhecidas |
+| PRV-013 | Cesgranrio | Petrobras PSP RH 2018.1 (08/04/2018) | Técnico(a) de Administração e Controle Júnior (Prova 16; nível médio) | 2018 | 60 | de espelho (PCI) | — | — | — | — | **não catalogada: cargo administrativo, sem TI** |
 
-Contagens por questão em `docs/estrategia/catalogo-questoes-historicas.md` (2023: 45/2/0/1 sobre as 48 válidas). Fontes, URLs e SHA-256: `docs/estrategia/base-provas.md`. Totais (PRV-005 a PRV-010; HIS-000001 a 000235): **235 questões catalogadas**; 126 aderentes, 46 parciais, 54 fora, 6 indeterminadas e 3 anuladas (2 em 2023, 1 em 2012). **Candidatas a estudo (T04): 172 (aderentes + parciais).**
+Contagens por questão em `docs/estrategia/catalogo-questoes-historicas.md` (2023: 45/2/0/1 sobre as 48 válidas). Fontes, URLs e SHA-256: `docs/estrategia/base-provas.md`. Totais (PRV-005 a PRV-012; HIS-000001 a 000320): **320 questões catalogadas**; 155 aderentes, 54 parciais, 95 fora, 13 indeterminadas e 3 anuladas (2 em 2023, 1 em 2012). **Candidatas a estudo (T04): 209 (aderentes + parciais).**
 
 **Efeito da reclassificação:** as 100 questões já catalogadas continuam as mesmas (já eram da Cesgranrio). A regra muda o **destino**: Aderente e Parcial = candidatas a `OFI-`/`ADP-` (T04); Fora do edital e Indeterminado = somente catálogo.
 
 ## 2. Provas candidatas pendentes
 
-Petrobras 2006, Caixa 2021, Petroquímica Suape 2012 e BNDES 2024 (Cibersegurança) saíram desta lista em 2026-11-04 e estão catalogadas (seção 1). Petrobras 2018 (bloqueio do QConcursos; PCI exige CAPTCHA, não contornado) e Petrobras 2008/2010 **não foram obtidas**.
+Petrobras 2006, Caixa 2021, Petroquímica Suape 2012, BNDES 2024 (Cibersegurança), Banco do Brasil 2021 e Petrobras 2018 (Analista de Sistemas Jr.) saíram desta lista em 2026-11-04 e estão catalogadas (seção 1). BB 2021 e Petrobras 2018 foram **fornecidos pelo usuário** (arquivos do PCI Concursos). Petrobras 2008/2010 **não foram obtidas**.
 
 Origem: buscas na web em 2026-11-04. São indícios de listagens de terceiros; **banca, cargo, ano e gabarito de cada uma ainda precisam ser confirmados no próprio caderno antes de qualquer catalogação**.
 
 | Candidata | Indício | Pendência de verificação | Programa |
 |---|---|---|---|
-| Petrobras 2018 — Analista de Sistemas Júnior, Processos de Negócio (Cesgranrio; 70 questões, aplicação em 18/03/2018 segundo a listagem) | [QConcursos](https://www.qconcursos.com/questoes-de-concursos/provas/cesgranrio-2018-petrobras-analista-de-sistemas-junior-processos-de-negocio) (HTTP 403 em tentativa anterior) | Obter caderno e gabarito; ler o programa do edital | Mesma área; programa de 2018 difere do de 2026 |
 | Petrobras 2010 e 2008 — Analista de Sistemas Júnior, Processos de Negócio (listagens da PCI) | [PCI](https://www.pciconcursos.com.br/provas/analista-de-negocio-abrangente) | Confirmar banca, cargo exato e ano; obter caderno e gabarito | Programas antigos; aderência provavelmente baixa |
-| Banco do Brasil 2021 — Escriturário, Agente de Tecnologia (Cesgranrio; Edital 1/2021/001 BB, aplicação 26/09/2021) | Caderno obtido (`bb-2021-agente-tecnologia-prova.pdf`, espelho Direção Concursos; 70 questões, "Gabarito 1" = versão do caderno) | **Gabarito não obtido**; não catalogada | Tecnologia geral |
 | BNDES 2024 — Análise de Sistemas: Desenvolvimento (Prova 3, manhã) | Caderno obtido (`bndes-2024-desenvolvimento-manha-prova.pdf`); gabarito final já está no documento combinado do BNDES (Prova 3: Q36 e Q55 anuladas) | **Não catalogada** (leitura e classificação pendentes); Cibersegurança foi catalogada (PRV-010) | A verificar |
 
 Outras provas de TI da Cesgranrio (por exemplo, outras ênfases da Petrobras e da Transpetro) só servem **para os assuntos que constem do Anexo IV da Ênfase 5**; nenhuma foi localizada ainda.

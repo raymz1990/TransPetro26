@@ -3,7 +3,7 @@
 
 **Atualizado:** 2026-10-31 · **Questões catalogadas:** 100 (2 provas): PRV-005 (Transpetro 2023, Prova 6) e PRV-006 (Transpetro 2018, Prova 15). Ver `base-provas.md` e `comparativo-2018-2023.md`.
 
-> **Ampliação (2026-11-04):** o catálogo passou a 235 questões (6 provas): PRV-005 e PRV-006 (Transpetro 2023 e 2018), PRV-007 (Petrobras 2006, 40 específicas) e PRV-008 (Caixa 2021 TI, 30 específicas, fonte oficial), PRV-009 (Suape 2012, 30) e PRV-010 (BNDES 2024 Cibersegurança, 35). As quatro novas estão ao fim do arquivo. Amostra continua pequena e heterogênea (cargos e épocas diferentes): **não** permite tendências sobre a banca.
+> **Ampliação (2026-11-04):** o catálogo passou a 320 questões (8 provas catalogadas): PRV-005 e PRV-006 (Transpetro 2023 e 2018), PRV-007 (Petrobras 2006, 40 específicas) e PRV-008 (Caixa 2021 TI, 30 específicas, fonte oficial), PRV-009 (Suape 2012, 30) e PRV-010 (BNDES 2024 Cibersegurança, 35), PRV-011 (Petrobras 2018, Analista de Sistemas Jr., 50) e PRV-012 (BB 2021 Agente de Tecnologia, 35). As seis novas estão ao fim do arquivo. Amostra continua pequena e heterogênea (cargos e épocas diferentes): **não** permite tendências sobre a banca.
 
 > **Reclassificação (2026-11-04):** com a regra de fontes ampliada para toda a Cesgranrio (ver `banco-questoes/oficiais/catalogo-provas.md`), as 100 questões abaixo continuam válidas como catálogo. Aderente e Parcialmente aderente = candidatas a `OFI-`/`ADP-`; Fora do edital e Indeterminado = somente catálogo. Nenhuma prova de outro concurso foi catalogada ainda.
 
@@ -294,3 +294,107 @@ Numeração conferida visualmente nas páginas 8–12 e 14–21 do caderno (a p�
 | HIS-000233 | PRV-010 | 68 | M09 | 9.2 (E5-083) | CVSS 4.0: grupos de métricas | C | válida | Aderente | gestão de vulnerabilidades |
 | HIS-000234 | PRV-010 | 69 | M09 | 9.19 (E5-100) | ISO 27002:2022: atributo de domínios de segurança | D | válida | Aderente | — |
 | HIS-000235 | PRV-010 | 70 | M09 | 9.17 (E5-098) | ISO 27001:2022: itens de melhoria do SGSI | C | válida | Parcialmente aderente | ISO 27001 não citada literalmente |
+
+
+## PRV-011 — Petrobras PSP RH 2017.2 (prova de 18/03/2018), Analista de Sistemas Júnior — Processos de Negócio (Prova 3; Cesgranrio; 50 questões específicas)
+
+**Catalogada em 2026-11-04** a partir de caderno e gabarito fornecidos pelo usuário (espelho PCI Concursos). Edital nº 1 — PETROBRAS/PSP RH 2017.2, de 28/12/2017; 70 questões (21–70 específicas, em "Bloco 1, 2 e 3"). O gabarito lido é o da coluna "3 — Analista de Sistemas Júnior — Processos de Negócio" do documento "Gabarito — prova realizada em 18/03/2018" (conferido na imagem); o documento não indica se é preliminar ou definitivo e **não foi verificada anulação**. Não confundir com a PRV-006 (Transpetro 2018, Prova 15, outro concurso). Conferidas por cálculo ou execução: Q21, Q22, Q38, Q40, Q57, Q61, Q62 (sem divergência). Aderentes 18, parciais 7, fora 18, indeterminadas 7 (50). O programa de 2018 trazia legislação (Leis 13.303 e 12.846) e gestão, que o Anexo IV de 2026 não tem. Nenhuma questão transcrita.
+
+| ID | Prova | Nº | Mód. | Item (matriz) | Assunto | Gab. | Situação | Aderência 2026 | Obs. |
+|---|---|---|---|---|---|---|---|---|---|
+| HIS-000236 | PRV-011 | 21 | M03 | 3 (E5-033) | Caminho crítico de projeto (tabela de atividades) | A | válida | Parcialmente aderente | item 3 por interpretação; A conferida por cálculo |
+| HIS-000237 | PRV-011 | 22 | M02 | 2.4 (E5-029) | Valor agregado: variação de custo | A | válida | Parcialmente aderente | EVM é do PMBOK 6ª; VC = −200.000 conferido por cálculo |
+| HIS-000238 | PRV-011 | 23 | M03 | 3 (E5-033) | Monitorar e controlar: atividade de medição | D | válida | Parcialmente aderente | item 3 por interpretação |
+| HIS-000239 | PRV-011 | 24 | M03 | 3 (E5-033) | Estrutura analítica do projeto (EAP) | C | válida | Parcialmente aderente | item 3 (escopo), por interpretação |
+| HIS-000240 | PRV-011 | 25 | M02 | 2.2 (E5-027) | Contexto de iniciação de projeto | C | válida | Parcialmente aderente | relação com gestão de projeto (2.2); PMBOK não citado nessa edição |
+| HIS-000241 | PRV-011 | 26 | — | — | Lei 13.303/2016: notória especialização | E | válida | Fora do edital | legislação |
+| HIS-000242 | PRV-011 | 27 | — | — | Lei 13.303/2016: melhor técnica | E | válida | Fora do edital | legislação |
+| HIS-000243 | PRV-011 | 28 | — | — | Lei 13.303/2016: demonstrações contábeis | E | válida | Fora do edital | legislação |
+| HIS-000244 | PRV-011 | 29 | — | — | Lei 12.846/2013: sanção administrativa | D | válida | Fora do edital | legislação |
+| HIS-000245 | PRV-011 | 30 | — | — | Lei 12.846/2013: mecanismos de integridade | E | válida | Fora do edital | legislação |
+| HIS-000246 | PRV-011 | 31 | — | — | Lei 12.846/2013: prazo de proibição de incentivos | D | válida | Fora do edital | legislação |
+| HIS-000247 | PRV-011 | 32 | — | — | Lei 13.303/2016: cadastro de empresas inidôneas | C | válida | Fora do edital | legislação |
+| HIS-000248 | PRV-011 | 33 | — | — | Produção puxada x empurrada | D | válida | Fora do edital | gestão de operações |
+| HIS-000249 | PRV-011 | 34 | — | — | Planejamento de negociação | B | válida | Fora do edital | gestão |
+| HIS-000250 | PRV-011 | 35 | M04 | 4.1 (E5-035) | Arquitetura empresarial: ordem das camadas | C | válida | Indeterminado | depende de interpretação de 4.1 |
+| HIS-000251 | PRV-011 | 36 | M07 | 7.8 (E5-067) | KPIs bem configurados | E | válida | Indeterminado | indicadores de processo; sem item literal |
+| HIS-000252 | PRV-011 | 37 | — | — | Cadeia de valor de Porter e sistemas de informação | C | válida | Fora do edital | gestão |
+| HIS-000253 | PRV-011 | 38 | — | — | Matemática financeira: montante de depósitos | C | válida | Fora do edital | 20,8 conferido por cálculo |
+| HIS-000254 | PRV-011 | 39 | M07 | 7.10 (E5-069) | Indicadores direcionadores de desempenho | B | válida | Indeterminado | sem item literal |
+| HIS-000255 | PRV-011 | 40 | — | — | Eficácia de processo (percentual) | B | válida | Fora do edital | 88% conferido por cálculo |
+| HIS-000256 | PRV-011 | 41 | — | — | Aprendizado de máquina supervisionado (SVM) | A | válida | Fora do edital | ML não consta do Anexo IV |
+| HIS-000257 | PRV-011 | 42 | M01 | 1.22 (E5-023) | Big Data: os 3 V (velocidade) | A | válida | Aderente | sec. 7.6 |
+| HIS-000258 | PRV-011 | 43 | M07 | 7.6 (E5-065) | Inmon: modelos relacional x multidimensional em DW | D | válida | Aderente | sec. 1.7 |
+| HIS-000259 | PRV-011 | 44 | M07 | 7.7 (E5-066) | Modelo estrela: tabela fato e dimensões | A | válida | Aderente | sec. 1.7 |
+| HIS-000260 | PRV-011 | 45 | M05 | 5.4 (E5-045) | Verificação x validação | E | válida | Aderente | — |
+| HIS-000261 | PRV-011 | 46 | M05 | 5.3 (E5-044) | Diagrama UML para fluxo de tarefas (atividades) | A | válida | Aderente | — |
+| HIS-000262 | PRV-011 | 47 | M03 | 3 (E5-033) | Tipos de workflow (produção) | B | válida | Parcialmente aderente | por interpretação do item 3 |
+| HIS-000263 | PRV-011 | 48 | M04 | 4.1 (E5-035) | ERP: recursos | C | válida | Indeterminado | depende de interpretação de 4.1 |
+| HIS-000264 | PRV-011 | 49 | M04 | 4.1 (E5-035) | TI no século XXI: virtualização, mashup, nuvem privada, MDM | B | válida | Indeterminado | temas de 1.21, 4.1 e 9.20 sem item único |
+| HIS-000265 | PRV-011 | 50 | M05 | 5.1 (E5-042) | Requisitos não funcionais (exemplos) | D | válida | Aderente | — |
+| HIS-000266 | PRV-011 | 51 | M05 | 5.2 (E5-043) | Escolha do modelo de processo: incremental | B | válida | Aderente | — |
+| HIS-000267 | PRV-011 | 52 | M04 | 4.1 (E5-035) | Sistemas de informações gerenciais: lista correta | B | válida | Indeterminado | sem item literal |
+| HIS-000268 | PRV-011 | 53 | M06 | 6.7 (E5-054) | XML em arquitetura orientada a serviços | B | válida | Indeterminado | XML/SOA não citados |
+| HIS-000269 | PRV-011 | 54 | M07 | 7.2 (E5-061) | Mineração de dados: regras de associação (suporte e confiança) | B | válida | Parcialmente aderente | técnica de BI; sem citação literal; tabela de dados não conferida |
+| HIS-000270 | PRV-011 | 55 | M05 | 5.1 (E5-042) | Engenharia de requisitos: prática da etapa de análise | B | válida | Aderente | — |
+| HIS-000271 | PRV-011 | 56 | M01 | 1.10 (E5-011) | SQL: consulta com junções externas e agregação | B | válida | Aderente | — |
+| HIS-000272 | PRV-011 | 57 | — | — | Ordenação por inserção (estado do vetor) | D | válida | Fora do edital | estruturas de dados; D conferida por execução |
+| HIS-000273 | PRV-011 | 58 | M01 | 1.4 (E5-005) | Normalização: o que falta para a 3FN | E | válida | Aderente | — |
+| HIS-000274 | PRV-011 | 59 | — | — | TCP Reno: partida lenta e prevenção de congestionamento | A | válida | Fora do edital | redes; gráfico não conferido |
+| HIS-000275 | PRV-011 | 60 | — | — | Redes sociais e privacidade | B | válida | Fora do edital | atualidades |
+| HIS-000276 | PRV-011 | 61 | — | — | Selection sort: estado após cinco passagens | B | válida | Fora do edital | B confere com variante que seleciona o maior elemento (conferido por execução) |
+| HIS-000277 | PRV-011 | 62 | — | — | Árvore de busca binária: percurso em pré-ordem | B | válida | Fora do edital | B conferido por execução |
+| HIS-000278 | PRV-011 | 63 | M09 | 9.19 (E5-100) | Assinatura digital ICP-Brasil: finalidade do hash | B | válida | Aderente | — |
+| HIS-000279 | PRV-011 | 64 | M09 | 9.4 (E5-085) | Ataques passivos e requisito ameaçado (confidencialidade) | A | válida | Aderente | sec. 9.1 |
+| HIS-000280 | PRV-011 | 65 | M09 | 9.18 (E5-099) | ISO 27002: diretrizes de classificação da informação | E | válida | Aderente | sec. 9.19 |
+| HIS-000281 | PRV-011 | 66 | M09 | 9.8 (E5-089) | Single Sign-On | B | válida | Aderente | — |
+| HIS-000282 | PRV-011 | 67 | M08 | 8.1 (E5-072) | Equivalência lógica (contrapositiva) | C | válida | Aderente | sec. 8.2 |
+| HIS-000283 | PRV-011 | 68 | M08 | 8.8 (E5-079) | Valor lógico de proposições compostas | E | válida | Aderente | símbolos perdidos na extração: não conferida |
+| HIS-000284 | PRV-011 | 69 | M08 | 8.2 (E5-073) | Argumento: conclusão que o torna válido | A | válida | Aderente | símbolos perdidos na extração: não conferida |
+| HIS-000285 | PRV-011 | 70 | M08 | 8.6 (E5-077) | Regras de inferência de um argumento | D | válida | Aderente | sec. 8.2 |
+
+## PRV-012 — Banco do Brasil, Seleção Externa 2021/001, Escriturário — Agente de Tecnologia (Microrregião 16 DF-TI; Cesgranrio; 35 questões de Tecnologia da Informação)
+
+**Catalogada em 2026-11-04** a partir do caderno e do gabarito fornecidos pelo usuário (espelho PCI Concursos). Edital nº 01 — 2021/001 BB, de 23/06/2021; prova de 26/09/2021, 70 questões (36–70 de Tecnologia da Informação). O caderno é a versão **"Gabarito 1"** e o gabarito usado é o da seção "Prova Agente de Tecnologia — Microrregião 16 DF-TI, Gabarito 1" (o arquivo traz também as versões 2 a 5 e a Prova A de Agente Comercial, não usadas). O documento não indica se é preliminar ou definitivo; **anulações não verificadas**. Cargo de nível médio, centrado em programação e estruturas de dados: aderentes 11, parciais 1, fora 23, indeterminadas 0 (35). Conferidas por cálculo ou execução mental: Q36, Q40, Q42, Q43, Q47, Q50, Q54, Q58, Q62, Q63, Q64, Q68, Q69, Q70 (sem divergência). Nenhuma questão transcrita.
+
+| ID | Prova | Nº | Mód. | Item (matriz) | Assunto | Gab. | Situação | Aderência 2026 | Obs. |
+|---|---|---|---|---|---|---|---|---|---|
+| HIS-000286 | PRV-012 | 36 | — | — | Aprendizado de máquina: matriz de confusão e acurácia | C | válida | Fora do edital | 1780 conferido por cálculo |
+| HIS-000287 | PRV-012 | 37 | M01 | 1.4 (E5-005) | Normalização: esquema na 3FN a partir de dependências | A | válida | Aderente | alternativas longas; não conferida |
+| HIS-000288 | PRV-012 | 38 | M01 | 1.10 (E5-011) | SQL: LEFT JOIN x JOIN e número de linhas | D | válida | Aderente | — |
+| HIS-000289 | PRV-012 | 39 | — | — | Python/Pandas: seleção de colunas | B | válida | Fora do edital | linguagem de programação |
+| HIS-000290 | PRV-012 | 40 | M01 | 1.11 (E5-012) | DDL: restrição CHECK | A | válida | Aderente | — |
+| HIS-000291 | PRV-012 | 41 | — | — | TypeScript: tipos genéricos | D | válida | Fora do edital | linguagem de programação |
+| HIS-000292 | PRV-012 | 42 | — | — | Python/NumPy: indexação booleana | E | válida | Fora do edital | E conferida por execução mental |
+| HIS-000293 | PRV-012 | 43 | — | — | Python/NumPy: produto elemento a elemento | C | válida | Fora do edital | — |
+| HIS-000294 | PRV-012 | 44 | — | — | Aprendizado de máquina: algoritmo para classificação (K-NN) | B | válida | Fora do edital | ML não consta do Anexo IV |
+| HIS-000295 | PRV-012 | 45 | M01 | 1.11 (E5-012) | DDL: CREATE TABLE com restrições | B | válida | Aderente | — |
+| HIS-000296 | PRV-012 | 46 | M01 | 1.10 (E5-011) | Visões x triggers x dump para manter protótipo atualizado | A | válida | Aderente | sec. 1.17 |
+| HIS-000297 | PRV-012 | 47 | — | — | HTML e TypeScript: seletor DOM | B | válida | Fora do edital | B conferida |
+| HIS-000298 | PRV-012 | 48 | — | — | TypeScript: função redutora | E | válida | Fora do edital | — |
+| HIS-000299 | PRV-012 | 49 | M01 | 1.7 (E5-008) | Modelagem dimensional: atributos da tabela fato | E | válida | Aderente | sec. 7.7 |
+| HIS-000300 | PRV-012 | 50 | — | — | Java: herança, método estático e polimorfismo | E | válida | Fora do edital | Java fora do escopo; E conferida por execução mental |
+| HIS-000301 | PRV-012 | 51 | — | — | Árvore binária: reconstruir a partir do pós-ordem | E | válida | Fora do edital | alternativas são figuras; não conferida |
+| HIS-000302 | PRV-012 | 52 | M01 | 1.2 (E5-003) | E-R para relacional com especialização | B | válida | Aderente | alternativas em figura/notação; não conferida |
+| HIS-000303 | PRV-012 | 53 | — | — | Busca sequencial x binária conforme a estrutura | B | válida | Fora do edital | — |
+| HIS-000304 | PRV-012 | 54 | — | — | Java: ordem de inicialização | C | válida | Fora do edital | Java fora do escopo; 24 conferido por execução mental |
+| HIS-000305 | PRV-012 | 55 | — | — | Algoritmos de ordenação: identificar por saída | C | válida | Fora do edital | — |
+| HIS-000306 | PRV-012 | 56 | M01 | 1.4 (E5-005) | Normalização: único esquema na 3FN | B | válida | Aderente | alternativas são figuras; não conferida |
+| HIS-000307 | PRV-012 | 57 | M01 | 1.22 (E5-023) | Big Data: suavização de dados ruidosos | C | válida | Parcialmente aderente | preparação de dados; sem citação literal |
+| HIS-000308 | PRV-012 | 58 | — | — | Swift: execução de trecho | B | válida | Fora do edital | B conferida por execução mental |
+| HIS-000309 | PRV-012 | 59 | — | — | Xcode: Interface Builder | A | válida | Fora do edital | — |
+| HIS-000310 | PRV-012 | 60 | — | — | Ansible: playbook | C | válida | Fora do edital | — |
+| HIS-000311 | PRV-012 | 61 | — | — | Kotlin: classe equivalente | E | válida | Fora do edital | — |
+| HIS-000312 | PRV-012 | 62 | — | — | Busca binária: iterações no pior caso | B | válida | Fora do edital | — |
+| HIS-000313 | PRV-012 | 63 | — | — | Busca sequencial: menor número de comparações | A | válida | Fora do edital | A conferida |
+| HIS-000314 | PRV-012 | 64 | — | — | Ordenação por inserção: melhor caso | D | válida | Fora do edital | — |
+| HIS-000315 | PRV-012 | 65 | M01 | 1.23 (E5-024) | NoSQL orientado a grafos | D | válida | Aderente | sec. 1.18 |
+| HIS-000316 | PRV-012 | 66 | M01 | 1.18 (E5-019) | MongoDB: consulta distinct | E | válida | Aderente | — |
+| HIS-000317 | PRV-012 | 67 | M07 | 7.5 (E5-064) | Big Data: organização em cubo de dados (fato) | A | válida | Aderente | sec. 1.7 |
+| HIS-000318 | PRV-012 | 68 | — | — | Pilhas: sequência de saída possível | E | válida | Fora do edital | E conferida |
+| HIS-000319 | PRV-012 | 69 | — | — | Bubble sort: número de trocas | C | válida | Fora do edital | 16 conferido por cálculo (inversões) |
+| HIS-000320 | PRV-012 | 70 | — | — | Fila: estado após operações | B | válida | Fora do edital | B conferida por execução |
+
+## PRV-013 — Petrobras PSP RH 2018.1 (prova de 08/04/2018), Técnico(a) de Administração e Controle Júnior (Prova 16; nível médio) — **não catalogada**
+
+Caderno e gabarito (fornecidos pelo usuário) estão em `fontes-brutas/candidatas-2026-11-04/`. O cargo é administrativo; uma busca por termos (banco de dados, SQL, UML, software, criptografia, workflow, segurança da informação) encontrou apenas quatro ocorrências genéricas da palavra "software"/"requisitos" em contexto de gestão, sem questões de Tecnologia da Informação. **Excluída por cargo/área**, sem leitura integral das 60 questões nem classificação por item; se o usuário quiser a classificação completa, ela pode ser feita sem custo de fonte.
