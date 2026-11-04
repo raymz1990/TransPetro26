@@ -33,7 +33,7 @@ Cada task lista objetivo, entregáveis e critério de pronto.
 Ativar Pages (Settings → Pages → Source: GitHub Actions); conferir o endereço publicado (caminhos, JSON, navegação, persistência, tema); revisar o menu mobile e as telas em desktop; registrar o resultado no `checklist-site.md`.
 Pronto quando: o site abre no endereço do Pages sem erro de console e o progresso persiste após recarregar.
 
-**T02 — Ampliar a fonte de questões reais: provas da Cesgranrio compatíveis com o edital** *(PARCIAL: itens 1, 4 e 5 feitos em 2026-11-04; itens 2 e 3 com candidatas listadas e NÃO obtidas — ver `banco-questoes/oficiais/catalogo-provas.md`)*
+**T02 — Ampliar a fonte de questões reais: provas da Cesgranrio compatíveis com o edital** *(QUASE FEITO, 2026-11-04: itens 1, 4 e 5 prontos; itens 2 e 3 feitos para Petrobras 2006 e Caixa 2021 (170 questões catalogadas); restam Petrobras 2018, 2008/2010, Suape 2012, BB 2021 e BNDES 2024 — ver `banco-questoes/oficiais/catalogo-provas.md`)*
 Hoje o catálogo só usa Transpetro/Petrobras (2023 e 2018). Expandir para **provas da Fundação Cesgranrio de outros concursos** (por exemplo, TI/Análise de Sistemas de outras empresas e órgãos) **desde que o assunto da questão esteja no Anexo IV da Ênfase 5**.
 Escopo da task:
 1. Atualizar a regra de fontes (`CLAUDE.md`, skill `questoes-cesgranrio`, `docs/estrategia/base-provas.md`): critério de inclusão = banca Cesgranrio + item do edital 2026 + prova e gabarito verificáveis.

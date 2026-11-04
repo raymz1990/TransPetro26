@@ -3,6 +3,8 @@
 
 **Atualizado:** 2026-10-31 · **Questões catalogadas:** 100 (2 provas): PRV-005 (Transpetro 2023, Prova 6) e PRV-006 (Transpetro 2018, Prova 15). Ver `base-provas.md` e `comparativo-2018-2023.md`.
 
+> **Ampliação (2026-11-04):** o catálogo passou a 170 questões (4 provas): PRV-005 e PRV-006 (Transpetro 2023 e 2018), PRV-007 (Petrobras 2006, 40 específicas) e PRV-008 (Caixa 2021 TI, 30 específicas, fonte oficial). As duas novas estão ao fim do arquivo. Amostra continua pequena e heterogênea (cargos e épocas diferentes): **não** permite tendências sobre a banca.
+
 > **Reclassificação (2026-11-04):** com a regra de fontes ampliada para toda a Cesgranrio (ver `banco-questoes/oficiais/catalogo-provas.md`), as 100 questões abaixo continuam válidas como catálogo. Aderente e Parcialmente aderente = candidatas a `OFI-`/`ADP-`; Fora do edital e Indeterminado = somente catálogo. Nenhuma prova de outro concurso foi catalogada ainda.
 
 ## Critérios e limites
@@ -125,3 +127,90 @@ Numeração conferida visualmente nas páginas 8–12 e 14–21 do caderno (a p�
 | HIS-000098 | PRV-006 | 68 | — | — | — | BPMN: swimlane | Conceitual direto | Recordação | Fácil | Conceitual | C | válida | Fora do edital | BPMN consta da Ênfase 6, não da 5 |
 | HIS-000099 | PRV-006 | 69 | M08 | 8.4 (E5-075) | — | Lógica de predicados: tradução de sentença | Lógica/cálculo | Aplicação | Média | Conceitual | A | válida | Aderente | — |
 | HIS-000100 | PRV-006 | 70 | M08 | 8.8 (E5-079) | 8.3 (E5-074) | Contradição entre proposições | Lógica/cálculo | Aplicação | Média | Conceitual | C | válida | Aderente | — |
+
+
+## PRV-007 — Petrobras PSP RH-1/2006, Analista de Sistemas Pleno — Processos (Cesgranrio; 40 questões específicas)
+
+**Catalogada em 2026-11-04.** Caderno e gabarito conferidos visualmente (capa, instruções e coluna "Analista de Sistemas Pleno – Processos" do gabarito de 07/05/2006). Aplicação em 07/05/2006; 60 questões (1–10 Português, 11–20 Inglês, 21–60 específicos). **Gabarito de espelho (Estude Grátis), sem anulações ou alterações verificadas**: o arquivo é o de 07/05/2006, sem documento de recursos. **Programa de 2006** (edital em `fontes-brutas/candidatas-2026-11-04/`, não confrontado item a item). Aderentes 18, parciais 9, fora 11, indeterminadas 2 (total 40). Nenhuma questão transcrita; apenas metadados.
+
+**Divergências a investigar (não corrigidas):** Q50 (gabarito B, "II e III") e Q53 (gabarito A, "5, crescente"). Na execução, a inserção das chaves em árvore de busca confirma apenas o percurso em nível (III), e o algoritmo da Q53 faz 4 trocas em ordem crescente. Pode haver alteração/anulação posterior não incluída neste arquivo, ou erro de extração; nenhuma foi usada como gabarito confiável. As duas são "Fora do edital" e não afetam o banco de estudo.
+
+| ID | Prova | Nº | Mód. | Item (matriz) | Assunto | Gab. | Situação | Aderência 2026 | Obs. |
+|---|---|---|---|---|---|---|---|---|---|
+| HIS-000101 | PRV-007 | 21 | M01 | 1.1 (E5-002) | E-R: entidade fraca, ternário, especialização, associativa | B | válida | Aderente | — |
+| HIS-000102 | PRV-007 | 22 | M01 | 1.14 (E5-015) | ACID: propriedade violada por escrita concorrente (isolamento) | E | válida | Aderente | sec. 1.16; gabarito coerente com a resolução |
+| HIS-000103 | PRV-007 | 23 | M01 | 1.2 (E5-003) | Mapeamento E-R para relacional (cardinalidades, 3FN) | B | válida | Aderente | sec. 1.4; figura |
+| HIS-000104 | PRV-007 | 24 | M01 | 1.10 (E5-011) | SQL-99: visões atualizáveis, SOME/ALL, isolamento, HAVING, junções | A | válida | Aderente | sec. 1.16 |
+| HIS-000105 | PRV-007 | 25 | M06 | 6.3 (E5-050) | Arquitetura web: estado HTTP, cookies, afinidade de sessão | D | válida | Parcialmente aderente | relação só pelo tema aplicações web; figura |
+| HIS-000106 | PRV-007 | 26 | M02 | 2.4 (E5-029) | Estimativa no término (EVM) | B | válida | Parcialmente aderente | EVM é do PMBOK 6ª; resultado 338,00 conferido por cálculo |
+| HIS-000107 | PRV-007 | 27 | M06 | 6.7 (E5-054) | Recursos web: HTML 4, META refresh, DTD, XSLT | D | válida | Indeterminado | depende de interpretação de 6.7; XSLT/DTD sem item literal |
+| HIS-000108 | PRV-007 | 28 | M03 | 3 (E5-033) | Cronograma: GERT, PERT, CPM | A | válida | Parcialmente aderente | item 3 sem subitens; interpretação de grupos/áreas |
+| HIS-000109 | PRV-007 | 29 | M03 | 3 (E5-033) | Matriz de probabilidade e impacto de riscos | E | válida | Parcialmente aderente | item 3 (área de riscos), por interpretação |
+| HIS-000110 | PRV-007 | 30 | — | — | VPL de projeto | C | válida | Fora do edital | matemática financeira; resultado 1.244,17 conferido por cálculo |
+| HIS-000111 | PRV-007 | 31 | — | — | Combinatória: permutação circular | C | válida | Fora do edital | resultado 480 conferido por cálculo |
+| HIS-000112 | PRV-007 | 32 | — | — | Combinatória: anagramas sem A juntas | E | válida | Fora do edital | resultado 70.560 conferido por cálculo |
+| HIS-000113 | PRV-007 | 33 | — | — | Contagem: divisibilidade (inclusão-exclusão) | A | válida | Fora do edital | 233 e 295 conferidos por script |
+| HIS-000114 | PRV-007 | 34 | M08 | 8.1 (E5-072) | Valor lógico de proposições compostas | D | válida | Aderente | sec. 8.8; símbolos perdidos na extração: não conferida |
+| HIS-000115 | PRV-007 | 35 | M09 | 9.2 (E5-083) | Segurança: DR, firewall/IDS, criptografia simétrica | A | válida | Aderente | sec. 9.1; gabarito coerente com a resolução |
+| HIS-000116 | PRV-007 | 36 | M09 | 9.17 (E5-098) | Política de segurança e classificação de ativos | E | válida | Aderente | sec. 9.18 |
+| HIS-000117 | PRV-007 | 37 | M03 | 3 (E5-033) | Modelagem de processos: atas, UML, IDEF0/IDEF3, workflow | C | válida | Parcialmente aderente | BPM é complemento no projeto, não exigência expressa |
+| HIS-000118 | PRV-007 | 38 | M05 | 5.3 (E5-044) | UML 2.0 em modelagem de negócios: estereótipos, OCL | D | válida | Aderente | — |
+| HIS-000119 | PRV-007 | 39 | M07 | 7.8 (E5-067) | Indicadores de desempenho e painéis de controle | A | válida | Parcialmente aderente | relação por indicadores/dashboards (7.8, 7.10) |
+| HIS-000120 | PRV-007 | 40 | — | — | Balanced Scorecard | B | válida | Fora do edital | BSC não consta do Anexo IV |
+| HIS-000121 | PRV-007 | 41 | M03 | 3 (E5-033) | Workflow e WfMS | E | válida | Parcialmente aderente | por interpretação do item 3 |
+| HIS-000122 | PRV-007 | 42 | — | — | Rede de Petri (contagem de caminhos) | E | válida | Fora do edital | figura; sem item |
+| HIS-000123 | PRV-007 | 43 | M04 | 4.1 (E5-035) | Sistemas integrados: ERP, SCM, BPM, CRM (identificação) | A | válida | Indeterminado | depende de interpretação de 4.1 (segmentos e mercado de TI) |
+| HIS-000124 | PRV-007 | 44 | M07 | 7.7 (E5-066) | Modelo multidimensional x relacional operacional | C | válida | Aderente | sec. 1.7, 1.23 |
+| HIS-000125 | PRV-007 | 45 | M07 | 7.7 (E5-066) | Esquema estrela | C | válida | Aderente | sec. 1.7 |
+| HIS-000126 | PRV-007 | 46 | M07 | 7.7 (E5-066) | Processo de modelagem multidimensional (afirmação incorreta) | A | válida | Aderente | sec. 1.7 |
+| HIS-000127 | PRV-007 | 47 | M05 | 5.2 (E5-043) | RUP: objetivos da fase de Elaboração | C | válida | Aderente | — |
+| HIS-000128 | PRV-007 | 48 | M05 | 5.1 (E5-042) | Técnicas de levantamento de requisitos | E | válida | Aderente | — |
+| HIS-000129 | PRV-007 | 49 | M05 | 5.1 (E5-042) | Análise e gerenciamento de requisitos (afirmação falsa) | C | válida | Aderente | — |
+| HIS-000130 | PRV-007 | 50 | — | — | Árvore binária de busca: percursos | B | válida | Fora do edital | DIVERGÊNCIA: ao executar a inserção, só o percurso em nível (III) confere; nenhuma alternativa é 'só III' (ver nota) |
+| HIS-000131 | PRV-007 | 51 | M05 | 5.4 (E5-045) | Análise de Pontos de Teste (TPA) | B | válida | Parcialmente aderente | métrica de teste; sem citação literal |
+| HIS-000132 | PRV-007 | 52 | — | — | Complexidade e notação assintótica | E | válida | Fora do edital | — |
+| HIS-000133 | PRV-007 | 53 | — | — | Algoritmo de ordenação: nº de trocas e sentido | A | válida | Fora do edital | DIVERGÊNCIA: a execução do algoritmo impresso dá 4 trocas, ordem crescente; não há essa alternativa (ver nota) |
+| HIS-000134 | PRV-007 | 54 | M05 | 5.4 (E5-045) | Estratégias de teste: caixa-preta/branca, integração, recuperação, alfa/beta | D | válida | Aderente | — |
+| HIS-000135 | PRV-007 | 55 | M05 | 5.3 (E5-044) | UML 1.4 x 2.0: novos diagramas | A | válida | Aderente | — |
+| HIS-000136 | PRV-007 | 56 | — | — | Complexidade de buscas e inserção | B | válida | Fora do edital | — |
+| HIS-000137 | PRV-007 | 57 | — | — | Recorrência e complexidade de algoritmo | D | válida | Fora do edital | — |
+| HIS-000138 | PRV-007 | 58 | M05 | 5.2 (E5-043) | Métodos ágeis: ASD, DSDM, FDD, XP | B | válida | Parcialmente aderente | 2.1 cita só Scrum e Kanban; relação por ciclo de vida e paradigmas |
+| HIS-000139 | PRV-007 | 59 | M07 | 7.5 (E5-064) | Cubo de dados: roll-up, drill-down, pivoteamento | B | válida | Aderente | sec. 7.7 |
+| HIS-000140 | PRV-007 | 60 | M07 | 7.7 (E5-066) | Esquemas floco de neve/constelação de fatos | C | válida | Aderente | sec. 1.7 |
+
+## PRV-008 — Caixa Econômica Federal, Concurso 1/2021/NM, Técnico Bancário Novo — Tecnologia da Informação (Cesgranrio; 30 questões específicas)
+
+**Catalogada em 2026-11-04, com fontes oficiais da Cesgranrio.** Prova de 31/10/2021, 60 questões objetivas (1–30 básicos, 31–60 Tecnologia da Informação). Caderno e gabarito obtidos do portal da Cesgranrio (`inscricao.cesgranrio.com.br`); o gabarito é o preliminar de 01/11/2021 e o documento "Respostas aos Recursos" (17/11/2021) informa: **"Não houve alteração de gabarito nem anulação de questão"** (logo, gabarito definitivo = preliminar). Cargo de **nível médio**; muitas questões fogem do Anexo IV da Ênfase 5 (Java, redes, arquitetura, SO). Aderentes 9, parciais 3, fora 17, indeterminadas 1 (total 30). Nenhuma questão transcrita; apenas metadados.
+
+| ID | Prova | Nº | Mód. | Item (matriz) | Assunto | Gab. | Situação | Aderência 2026 | Obs. |
+|---|---|---|---|---|---|---|---|---|---|
+| HIS-000141 | PRV-008 | 31 | M05 | 5.4 (E5-045) | DevOps: shift left testing | D | válida | Aderente | — |
+| HIS-000142 | PRV-008 | 32 | M05 | 5.3 (E5-044) | UML: generalização (sobreposição de papéis) | C | válida | Aderente | alternativas são diagramas; não conferida |
+| HIS-000143 | PRV-008 | 33 | M05 | 5.1 (E5-042) | Processo Unificado: fases da disciplina de requisitos | A | válida | Aderente | sec. 5.2 |
+| HIS-000144 | PRV-008 | 34 | — | — | Java: construtores e herança | D | válida | Fora do edital | Java fora do escopo |
+| HIS-000145 | PRV-008 | 35 | — | — | Pilhas em Python (recursão) | B | válida | Fora do edital | programação; B conferida por execução mental |
+| HIS-000146 | PRV-008 | 36 | M05 | 5.3 (E5-044) | Padrão de projeto Proxy | C | válida | Parcialmente aderente | padrões de projeto não são citados literalmente em 5.3 |
+| HIS-000147 | PRV-008 | 37 | — | — | Árvore binária de busca (identificar por figura) | C | válida | Fora do edital | estrutura de dados; figuras, não conferida |
+| HIS-000148 | PRV-008 | 38 | M01 | 1.3 (E5-004) | Modelo relacional: chaves primária e estrangeira | E | válida | Aderente | sec. 1.5 |
+| HIS-000149 | PRV-008 | 39 | M01 | 1.6 (E5-007) | Metadados em SGBD | E | válida | Aderente | sec. 1.13 |
+| HIS-000150 | PRV-008 | 40 | M05 | 5.1 (E5-042) | Pontos de função (item a considerar) | D | válida | Parcialmente aderente | métrica/estimativa; sem citação literal |
+| HIS-000151 | PRV-008 | 41 | — | — | Java: inicializadores estáticos e de instância | E | válida | Fora do edital | Java fora do escopo |
+| HIS-000152 | PRV-008 | 42 | — | — | Memória virtual: MMU | C | válida | Fora do edital | arquitetura/SO |
+| HIS-000153 | PRV-008 | 43 | — | — | Sistema de arquivos ext2: i-node | A | válida | Fora do edital | SO |
+| HIS-000154 | PRV-008 | 44 | — | — | UCP: unidade lógica e aritmética | D | válida | Fora do edital | arquitetura de computadores |
+| HIS-000155 | PRV-008 | 45 | — | — | Conversão decimal para binário (16.383) | D | válida | Fora do edital | 0011 1111 1111 1111 confere |
+| HIS-000156 | PRV-008 | 46 | — | — | Modos de endereçamento: imediato | A | válida | Fora do edital | — |
+| HIS-000157 | PRV-008 | 47 | — | — | Sincronização: semáforo mutex | E | válida | Fora do edital | SO |
+| HIS-000158 | PRV-008 | 48 | — | — | TCP/IP: camada inter-redes (ICMP e IP) | C | válida | Fora do edital | redes |
+| HIS-000159 | PRV-008 | 49 | — | — | Meios de transmissão guiados | E | válida | Fora do edital | redes |
+| HIS-000160 | PRV-008 | 50 | — | — | E-mail: SMTP e IMAP | D | válida | Fora do edital | redes |
+| HIS-000161 | PRV-008 | 51 | M06 | 6.7 (E5-054) | XML bem-formado x válido | A | válida | Indeterminado | depende de interpretação de 6.7; XML não é citado; marcação do exemplo não conferida |
+| HIS-000162 | PRV-008 | 52 | — | — | Java EE: Front Controller | D | válida | Fora do edital | Java EE fora do escopo |
+| HIS-000163 | PRV-008 | 53 | M05 | 5.4 (E5-045) | Desenvolvimento dirigido por testes (TDD) | D | válida | Aderente | — |
+| HIS-000164 | PRV-008 | 54 | M05 | 5.5 (E5-046) | Controle de versão: commit | B | válida | Aderente | — |
+| HIS-000165 | PRV-008 | 55 | — | — | CMMI 2.0: categoria de IRP | C | válida | Fora do edital | CMMI não consta do Anexo IV |
+| HIS-000166 | PRV-008 | 56 | — | — | Feeds RSS (formato XML) | E | válida | Fora do edital | — |
+| HIS-000167 | PRV-008 | 57 | M05 | 5.4 (E5-045) | Teste de unidade | A | válida | Aderente | — |
+| HIS-000168 | PRV-008 | 58 | M01 | 1.13 (E5-014) | SGBD distribuído federado | C | válida | Aderente | sec. 1.18, 1.23 |
+| HIS-000169 | PRV-008 | 59 | — | — | Kotlin: val e Int | A | válida | Fora do edital | linguagem de programação |
+| HIS-000170 | PRV-008 | 60 | M09 | 9.17 (E5-098) | Res. CMN 4.893: revisão da política de segurança cibernética | C | válida | Parcialmente aderente | norma do setor bancário; relação com 9.11 e 9.17 |
