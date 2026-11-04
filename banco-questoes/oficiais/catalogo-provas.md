@@ -1,6 +1,6 @@
 # Catálogo de provas — fonte de questões oficiais e adaptadas
 
-**Atualizado:** 2026-11-04 (8 provas catalogadas) · **Regra vigente:** ver `CLAUDE.md` (seção 2, "Fonte de questões oficiais") e `.claude/skills/questoes-cesgranrio/SKILL.md` (§4.1).
+**Atualizado:** 2026-11-04 (9 provas catalogadas; fontes concluídas) · **Regra vigente:** ver `CLAUDE.md` (seção 2, "Fonte de questões oficiais") e `.claude/skills/questoes-cesgranrio/SKILL.md` (§4.1).
 
 ## Critério de inclusão
 
@@ -32,21 +32,21 @@ Provas de outras bancas são **excluídas**. Candidata encontrada em busca **nã
 | PRV-011 | Cesgranrio | Petrobras PSP RH 2017.2 (prova de 18/03/2018) | Analista de Sistemas Júnior — Processos de Negócio (Prova 3) | 2018 | 50 (21–70) | de espelho (PCI), fornecido pelo usuário; preliminar/definitivo não indicado; anulações não verificadas | 18 | 7 | 18 | 7 | 0 conhecidas |
 | PRV-012 | Cesgranrio | Banco do Brasil Seleção Externa 2021/001 (26/09/2021) | Escriturário — Agente de Tecnologia, Microrregião 16 DF-TI (nível médio) | 2021 | 35 de TI (36–70), caderno "Gabarito 1" | de espelho (PCI), fornecido pelo usuário; preliminar/definitivo não indicado; anulações não verificadas | 11 | 1 | 23 | 0 | 0 conhecidas |
 | PRV-013 | Cesgranrio | Petrobras PSP RH 2018.1 (08/04/2018) | Técnico(a) de Administração e Controle Júnior (Prova 16; nível médio) | 2018 | 60 | de espelho (PCI) | — | — | — | — | **não catalogada: cargo administrativo, sem TI** |
+| PRV-014 | Cesgranrio | BNDES Edital 1/2024 (13/10/2024) | Analista — Análise de Sistemas: Desenvolvimento (Prova 3) | 2024 | 35 específicas (36–70) | **final após recursos** (documento da banca, via espelho QConcursos); Q36 e Q55 anuladas | 16 | 4 | 13 | 0 | 2 |
 
-Contagens por questão em `docs/estrategia/catalogo-questoes-historicas.md` (2023: 45/2/0/1 sobre as 48 válidas). Fontes, URLs e SHA-256: `docs/estrategia/base-provas.md`. Totais (PRV-005 a PRV-012; HIS-000001 a 000320): **320 questões catalogadas**; 155 aderentes, 54 parciais, 95 fora, 13 indeterminadas e 3 anuladas (2 em 2023, 1 em 2012). **Candidatas a estudo (T04): 209 (aderentes + parciais).**
+Contagens por questão em `docs/estrategia/catalogo-questoes-historicas.md` (2023: 45/2/0/1 sobre as 48 válidas). Fontes, URLs e SHA-256: `docs/estrategia/base-provas.md`. Totais (PRV-005 a PRV-012 e PRV-014; HIS-000001 a 000355): **355 questões catalogadas**; 171 aderentes, 58 parciais, 108 fora, 13 indeterminadas e 5 anuladas (2 em 2023, 1 em 2012, 2 no BNDES 2024). **Candidatas a estudo (T04): 229 (aderentes + parciais).**
 
 **Efeito da reclassificação:** as 100 questões já catalogadas continuam as mesmas (já eram da Cesgranrio). A regra muda o **destino**: Aderente e Parcial = candidatas a `OFI-`/`ADP-` (T04); Fora do edital e Indeterminado = somente catálogo.
 
-## 2. Provas candidatas pendentes
+## 2. Provas candidatas pendentes (nenhuma)
 
-Petrobras 2006, Caixa 2021, Petroquímica Suape 2012, BNDES 2024 (Cibersegurança), Banco do Brasil 2021 e Petrobras 2018 (Analista de Sistemas Jr.) saíram desta lista em 2026-11-04 e estão catalogadas (seção 1). BB 2021 e Petrobras 2018 foram **fornecidos pelo usuário** (arquivos do PCI Concursos). Petrobras 2008/2010 **não foram obtidas**.
+Petrobras 2006, Caixa 2021, Petroquímica Suape 2012, BNDES 2024 (Cibersegurança e Desenvolvimento), Banco do Brasil 2021 e Petrobras 2018 (Analista de Sistemas Jr.) saíram desta lista em 2026-11-04 e estão catalogadas (seção 1). BB 2021 e Petrobras 2018 foram **fornecidos pelo usuário** (arquivos do PCI Concursos). Petrobras 2008/2010 foram **descartadas por decisão do usuário (2026-11-04)**; nenhuma candidata pendente.
 
 Origem: buscas na web em 2026-11-04. São indícios de listagens de terceiros; **banca, cargo, ano e gabarito de cada uma ainda precisam ser confirmados no próprio caderno antes de qualquer catalogação**.
 
 | Candidata | Indício | Pendência de verificação | Programa |
 |---|---|---|---|
 | Petrobras 2010 e 2008 — Analista de Sistemas Júnior, Processos de Negócio (listagens da PCI) | [PCI](https://www.pciconcursos.com.br/provas/analista-de-negocio-abrangente) | Confirmar banca, cargo exato e ano; obter caderno e gabarito | Programas antigos; aderência provavelmente baixa |
-| BNDES 2024 — Análise de Sistemas: Desenvolvimento (Prova 3, manhã) | Caderno obtido (`bndes-2024-desenvolvimento-manha-prova.pdf`); gabarito final já está no documento combinado do BNDES (Prova 3: Q36 e Q55 anuladas) | **Não catalogada** (leitura e classificação pendentes); Cibersegurança foi catalogada (PRV-010) | A verificar |
 
 Outras provas de TI da Cesgranrio (por exemplo, outras ênfases da Petrobras e da Transpetro) só servem **para os assuntos que constem do Anexo IV da Ênfase 5**; nenhuma foi localizada ainda.
 

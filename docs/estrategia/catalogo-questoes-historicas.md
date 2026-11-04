@@ -3,7 +3,7 @@
 
 **Atualizado:** 2026-10-31 · **Questões catalogadas:** 100 (2 provas): PRV-005 (Transpetro 2023, Prova 6) e PRV-006 (Transpetro 2018, Prova 15). Ver `base-provas.md` e `comparativo-2018-2023.md`.
 
-> **Ampliação (2026-11-04):** o catálogo passou a 320 questões (8 provas catalogadas): PRV-005 e PRV-006 (Transpetro 2023 e 2018), PRV-007 (Petrobras 2006, 40 específicas) e PRV-008 (Caixa 2021 TI, 30 específicas, fonte oficial), PRV-009 (Suape 2012, 30) e PRV-010 (BNDES 2024 Cibersegurança, 35), PRV-011 (Petrobras 2018, Analista de Sistemas Jr., 50) e PRV-012 (BB 2021 Agente de Tecnologia, 35). As seis novas estão ao fim do arquivo. Amostra continua pequena e heterogênea (cargos e épocas diferentes): **não** permite tendências sobre a banca.
+> **Ampliação (2026-11-04):** o catálogo passou a 355 questões (9 provas catalogadas): PRV-005 e PRV-006 (Transpetro 2023 e 2018), PRV-007 (Petrobras 2006, 40 específicas) e PRV-008 (Caixa 2021 TI, 30 específicas, fonte oficial), PRV-009 (Suape 2012, 30) e PRV-010 (BNDES 2024 Cibersegurança, 35), PRV-011 (Petrobras 2018, Analista de Sistemas Jr., 50) e PRV-012 (BB 2021 Agente de Tecnologia, 35). PRV-014 (BNDES 2024 Desenvolvimento, 35). As sete novas estão ao fim do arquivo. Amostra continua pequena e heterogênea (cargos e épocas diferentes): **não** permite tendências sobre a banca.
 
 > **Reclassificação (2026-11-04):** com a regra de fontes ampliada para toda a Cesgranrio (ver `banco-questoes/oficiais/catalogo-provas.md`), as 100 questões abaixo continuam válidas como catálogo. Aderente e Parcialmente aderente = candidatas a `OFI-`/`ADP-`; Fora do edital e Indeterminado = somente catálogo. Nenhuma prova de outro concurso foi catalogada ainda.
 
@@ -398,3 +398,46 @@ Numeração conferida visualmente nas páginas 8–12 e 14–21 do caderno (a p�
 ## PRV-013 — Petrobras PSP RH 2018.1 (prova de 08/04/2018), Técnico(a) de Administração e Controle Júnior (Prova 16; nível médio) — **não catalogada**
 
 Caderno e gabarito (fornecidos pelo usuário) estão em `fontes-brutas/candidatas-2026-11-04/`. O cargo é administrativo; uma busca por termos (banco de dados, SQL, UML, software, criptografia, workflow, segurança da informação) encontrou apenas quatro ocorrências genéricas da palavra "software"/"requisitos" em contexto de gestão, sem questões de Tecnologia da Informação. **Excluída por cargo/área**, sem leitura integral das 60 questões nem classificação por item; se o usuário quiser a classificação completa, ela pode ser feita sem custo de fonte.
+
+
+## PRV-014 — BNDES, Edital 1/2024, Analista — Análise de Sistemas: Desenvolvimento (Prova 3, Cesgranrio; 35 questões específicas)
+
+**Catalogada em 2026-11-04** (numeração PRV-014 por ordem de catalogação). Prova de 13/10/2024 (manhã); questões 36–70 específicas. **Gabarito final após recursos** (mesmo documento da PRV-010, coluna "Prova 3 — Desenvolvimento", conferida na imagem): **Q36 e Q55 anuladas**. Aderentes 16, parciais 4, fora 13, indeterminadas 0, anuladas 2 (33 válidas + 2 anuladas). A prova tem muitas questões de programação (Java, Python, JavaScript), estruturas de dados e aprendizado de máquina, fora do Anexo IV; as aderentes concentram-se em banco de dados (M01), com algumas de segurança, engenharia de software e ITIL. Conferidas por cálculo ou execução: Q46, Q49 e Q51 (sem divergência). Nenhuma questão transcrita.
+
+| ID | Prova | Nº | Mód. | Item (matriz) | Assunto | Gab. | Situação | Aderência 2026 | Obs. |
+|---|---|---|---|---|---|---|---|---|---|
+| HIS-000321 | PRV-014 | 36 | — | — | Java: classe genérica com limite superior | ANULADA | anulada | Fora do edital | ANULADA; Java fora do escopo |
+| HIS-000322 | PRV-014 | 37 | — | — | Java 21: enum público | C | válida | Fora do edital | Java fora do escopo |
+| HIS-000323 | PRV-014 | 38 | — | — | JavaScript: Temporal API | B | válida | Fora do edital | linguagem de programação |
+| HIS-000324 | PRV-014 | 39 | — | — | Concorrência: mutex | C | válida | Fora do edital | programação concorrente |
+| HIS-000325 | PRV-014 | 40 | M05 | 5.1 (E5-042) | Pontos de função: tipo de transação (saída externa) | E | válida | Parcialmente aderente | métrica/estimativa; sem citação literal |
+| HIS-000326 | PRV-014 | 41 | M05 | 5.5 (E5-046) | Contêineres e orquestração (Docker, Kubernetes) | A | válida | Parcialmente aderente | ambientes de desenvolvimento; sem citação literal |
+| HIS-000327 | PRV-014 | 42 | M09 | 9.10 (E5-091) | RBAC e autenticação multifator | C | válida | Aderente | sec. 9.9 |
+| HIS-000328 | PRV-014 | 43 | M05 | 5.3 (E5-044) | Padrões de projeto: Mediator x Facade | D | válida | Parcialmente aderente | padrões de projeto não citados literalmente em 5.3 |
+| HIS-000329 | PRV-014 | 44 | M05 | 5.4 (E5-045) | Teste de unidade para isolar a origem de falhas | E | válida | Aderente | — |
+| HIS-000330 | PRV-014 | 45 | M05 | 5.3 (E5-044) | Acoplamento de conteúdo | B | válida | Aderente | projeto estruturado/OO |
+| HIS-000331 | PRV-014 | 46 | — | — | Python: dicionário, conjunto e ordenação | E | válida | Fora do edital | E conferida por execução |
+| HIS-000332 | PRV-014 | 47 | M09 | 9.2 (E5-083) | Proxy reverso | D | válida | Aderente | — |
+| HIS-000333 | PRV-014 | 48 | M02 | 2.3 (E5-028) | Nexus: papel adicional (escala de Scrum) | E | válida | Parcialmente aderente | 2.3 cita SAFe; Nexus relacionado por agilidade em escala |
+| HIS-000334 | PRV-014 | 49 | — | — | Aritmética hexadecimal | D | válida | Fora do edital | 10423 conferido por cálculo |
+| HIS-000335 | PRV-014 | 50 | — | — | Algoritmo de caminho mínimo (Dijkstra) | B | válida | Fora do edital | grafos/algoritmos |
+| HIS-000336 | PRV-014 | 51 | — | — | ROI de investimento em software | D | válida | Fora do edital | 292,2% conferido por cálculo (custos do projeto) |
+| HIS-000337 | PRV-014 | 52 | M04 | 4.5 (E5-039) | ITIL: KPIs de transição de serviço (CAB, RFC) | B | válida | Aderente | — |
+| HIS-000338 | PRV-014 | 53 | M09 | 9.20 (E5-101) | Recuperação de desastres como serviço (DRaaS) | C | válida | Aderente | sec. 9.16 (continuidade) |
+| HIS-000339 | PRV-014 | 54 | — | — | Lógica fuzzy | B | válida | Fora do edital | lógica difusa não consta de 8.x |
+| HIS-000340 | PRV-014 | 55 | — | — | Algoritmos O(n): menos eficiente (constantes) | ANULADA | anulada | Fora do edital | ANULADA |
+| HIS-000341 | PRV-014 | 56 | — | — | Tabela hash e colisões | D | válida | Fora do edital | estruturas de dados |
+| HIS-000342 | PRV-014 | 57 | — | — | Escopo de variáveis (linguagem hipotética) | B | válida | Fora do edital | — |
+| HIS-000343 | PRV-014 | 58 | — | — | Semidistribuição de Solomonoff (aprendizado de máquina) | E | válida | Fora do edital | ML não consta do Anexo IV |
+| HIS-000344 | PRV-014 | 59 | — | — | Passagem por valor e por referência | A | válida | Fora do edital | — |
+| HIS-000345 | PRV-014 | 60 | — | — | Redes neurais: funcionamento e modelagem | C | válida | Fora do edital | ML não consta do Anexo IV |
+| HIS-000346 | PRV-014 | 61 | M01 | 1.3 (E5-004) | Modelo relacional: chave primária ao incluir atributo | C | válida | Aderente | — |
+| HIS-000347 | PRV-014 | 62 | M01 | 1.16 (E5-017) | Transação em SGBD: atomicidade | B | válida | Aderente | sec. 1.14 |
+| HIS-000348 | PRV-014 | 63 | M01 | 1.1 (E5-002) | DER: relacionamentos | D | válida | Aderente | — |
+| HIS-000349 | PRV-014 | 64 | M01 | 1.7 (E5-008) | Modelo dimensional: identificação da tabela fato | D | válida | Aderente | sec. 7.7 |
+| HIS-000350 | PRV-014 | 65 | M01 | 1.7 (E5-008) | Modelo dimensional: medidas aditivas | E | válida | Aderente | sec. 7.7 |
+| HIS-000351 | PRV-014 | 66 | M01 | 1.22 (E5-023) | Data lake: metadados | E | válida | Aderente | sec. 1.6 |
+| HIS-000352 | PRV-014 | 67 | M01 | 1.21 (E5-022) | Governança de dados: monitoramento da qualidade | E | válida | Aderente | — |
+| HIS-000353 | PRV-014 | 68 | M01 | 1.1 (E5-002) | DER: especialização total e sobreposta | A | válida | Aderente | — |
+| HIS-000354 | PRV-014 | 69 | M01 | 1.14 (E5-015) | Nível de isolamento SERIALIZABLE | C | válida | Aderente | sec. 1.16 |
+| HIS-000355 | PRV-014 | 70 | M01 | 1.11 (E5-012) | DDL: cláusula CHECK | B | válida | Aderente | — |
