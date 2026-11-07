@@ -199,6 +199,8 @@ Podem ser disponibilizados:
 - Perguntas e respostas.
 - Prompts de estudo.
 
+Os arquivos são gerados por `python tools/build_notebooklm.py` (ver `notebooklm/README.md`).
+
 Os materiais devem ser derivados do conteúdo revisado e validado do projeto.
 
 ---
