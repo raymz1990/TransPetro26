@@ -7,7 +7,7 @@ Prompt 02 (produção didática) concluído; **Prompt 04 (banco de questões) em
 Banco de questões — lote piloto do M09: 10 questões autorais (`AUT-000081` a `AUT-000090`, aprovado; lote piloto M01 a M09 completo) em `banco-questoes/autorais/por-assunto/` (JSON, questões e gabaritos comentados); M01 (`AUT-000001` a `010`), M02 (`011` a `020`) e M03 (`021` a `030`) e M04 (`031` a `040`) e M05 (`041` a `050`) e M06 (`051` a `060`) e M07 (`061` a `070`) aprovados. Ver `banco-questoes/esquema-questoes.md`, `catalogo-questoes.md` e `relatorio-cobertura-questoes.md`. Relatórios: `docs/qualidade/relatorio-banco-questoes-m01.md`, `...-m02.md`, `...-m03.md`, `...-m04.md`, `...-m05.md`, `...-m06.md`, `...-m07.md`, `...-m08.md` e `...-m09.md`.
 
 ## Site (MVP, 2026-11-01)
-Site estático em `site/` (hash routing, sem dependências), autorizado pelo usuário como MVP: conteúdo (85 arquivos, módulos 1–9 e Gerais), 90 questões autorais com correção comentada, caderno de erros, desempenho, exportar/importar dados, tema escuro/claro. Dados gerados por `python tools/build_site_data.py` (rodar após alterar conteudo/ ou o banco de questões). **Não implementados:** plano de estudos, simulados, cronômetro, flashcards, revisão espaçada. Publicação: `.github/workflows/deploy-pages.yml` (publica `site/`); ativar Pages (Source: GitHub Actions) no repositório raymz1990/TransPetro26.
+Site estático em `site/` (hash routing, sem dependências), autorizado pelo usuário como MVP: conteúdo (85 arquivos, módulos 1–9 e Gerais), 90 questões autorais com correção comentada, caderno de erros, desempenho, exportar/importar dados, tema escuro/claro. Dados gerados por `python tools/build_site_data.py` (rodar após alterar conteudo/ ou o banco de questões). **Implementados depois (T08 a T12):** simulados, cronômetro, flashcards, revisão espaçada, plano de estudos e desempenho avançado. Publicação: `.github/workflows/deploy-pages.yml` (publica `site/`); ativar Pages (Source: GitHub Actions) no repositório raymz1990/TransPetro26.
 
 ## Decisões do usuário (2026-10-31)
 1. C5-001 a C5-004 mantidos como material complementar, fora da cobertura oficial.
@@ -74,8 +74,17 @@ Autorizada pelo usuário em bloco. Detalhes: `docs/qualidade/relatorio-p1.md`.
 - **Status das questões novas: `em_revisao`** (T04 a T06 = 194 questões). O usuário ainda precisa validá-las; só `validada` entra em simulado "oficial" do projeto.
 - Ferramentas: `tools/qlib.py` (autoria), `tools/lotes/*.py` (fonte de cada lote), `tools/validar_banco.py`, `tools/cobertura.py`, `tools/gerar_docs_banco.py`, `tools/build_site_data.py`.
 
+## Sessão de 2026-11-06 (P2: T09 a T12)
+Autorizada pelo usuário em bloco. Detalhes, limitações e testes: `docs/qualidade/relatorio-p2.md`.
+- **T09:** `tools/build_flashcards.py` (chamado por `build_site_data.py`) gera `site/assets/data/flashcards.json`: 2.879 cartões extraídos das tabelas da teoria (conceitos e comparações) e da revisão rápida/ponto de atenção das 284 questões. **Não foram revisados um a um.** Telas em `#/flashcards`.
+- **T10:** motor em `reviews.js` (escada 1/7/15/30 d da metodologia + 60 d, ajuste do projeto) e fila em `#/revisoes` (teoria estudada, erros em aberto, flashcards).
+- **T11:** `#/plano` (hoje, semana, mês, metas/ajustes). Padrão 90 min nos dias úteis e 180 no fim de semana (metodologia); **a data da prova não consta do material e deve ser informada pelo usuário**.
+- **T12:** `#/desempenho` refeito (`performance.js`, `charts.js`). O tempo por questão só passa a ser medido a partir de agora.
+- `site/assets/data/simulados.json` foi ressincronizado com `banco-questoes/simulados/` (estava defasado).
+- Dados novos no `localStorage` (todos exportáveis): `flashcards`, `revisoes`, `atividade`, `config`, `plano`, `sessoes`.
+
 ## Próxima ação
-Validação, pelo usuário, das 194 questões `em_revisao`; concluir a T04 (100 candidatas); depois P2 (T09 a T12), com autorização explícita. Flashcards, revisão espaçada, plano de estudos e NotebookLM não foram iniciados.
+Validação, pelo usuário, das 194 questões `em_revisao`; concluir a T04 (100 candidatas); informar data da prova e capacidade real de estudo (T11); depois P3 (T13 a T15), com autorização explícita. NotebookLM (T14) não foi iniciado.
 
 ## Regras
 - Não repetir tarefas concluídas.

@@ -149,24 +149,6 @@
       i < lista.length - 1 ? h("a", { class: "btn primary", href: "#/conteudo/" + lista[i + 1].id }, lista[i + 1].titulo + " →") : h("a", { class: "btn", href: "#/conteudo" }, "Índice")));
   }
 
-  /* ---------- Desempenho ---------- */
-  TP.rota("desempenho", function (main) {
-    var q = TP.resumoQuestoes(), c = TP.resumoConteudo();
-    main.appendChild(h("p", { class: "eyebrow" }, "Acompanhamento"));
-    main.appendChild(h("h1", {}, "Desempenho"));
-    if (!q.respondidas) { main.appendChild(h("div", { class: "notice" }, "Ainda não há respostas registradas. Resolva questões para ver seu desempenho.")); }
-    else if (q.respondidas < 30) main.appendChild(h("div", { class: "notice" }, "Amostra pequena (" + q.respondidas + " questões respondidas): os percentuais abaixo são apenas indicativos."));
-    var tb = h("tbody", {});
-    Object.keys(TP.NOMES_MOD).forEach(function (m) {
-      var x = q.porModulo[m] || { total: 0, respondidas: 0, acertos: 0 };
-      tb.appendChild(h("tr", {}, h("td", {}, TP.NOMES_MOD[m]), h("td", {}, String(x.total)), h("td", {}, String(x.respondidas)),
-        h("td", {}, x.respondidas ? x.acertos + " (" + Math.round(100 * x.acertos / x.respondidas) + "%)" : "—")));
-    });
-    main.appendChild(h("div", { class: "tscroll" }, h("table", { class: "table" },
-      h("thead", {}, h("tr", {}, h("th", {}, "Módulo"), h("th", {}, "Questões"), h("th", {}, "Respondidas"), h("th", {}, "Acertos"))), tb)));
-    main.appendChild(h("p", { class: "muted" }, "Considera a última tentativa de cada questão. Conteúdo estudado: " + c.estudados + "/" + c.total + ". Histórico de simulados, evolução temporal e tempo por questão ainda não estão disponíveis."));
-  });
-
   /* ---------- Dados ---------- */
   TP.rota("dados", function (main) {
     main.appendChild(h("p", { class: "eyebrow" }, "Sistema"));

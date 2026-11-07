@@ -88,6 +88,7 @@
     if (!q) { main.appendChild(h("p", {}, "Questão inexistente.")); return; }
     var pos = qs.indexOf(q);
     var respondida = null;           /* resposta desta sessão de tela */
+    var abertaEm = Date.now();       /* para medir o tempo de resolução (Desempenho) */
     main.appendChild(h("p", { class: "eyebrow" }, TP.NOMES_MOD[q.modulo] + " · item " + q.item_edital));
     main.appendChild(h("h1", {}, q.id));
     main.appendChild(h("div", { class: "qhead" },
@@ -111,7 +112,7 @@
       respondida = l;
       var ok = l === q.gabarito;
       var d = TP.dados();
-      (d.respostas[q.id] = d.respostas[q.id] || []).push({ r: l, ok: ok, t: Date.now() });
+      (d.respostas[q.id] = d.respostas[q.id] || []).push({ r: l, ok: ok, t: Date.now(), d: Math.min(1800, Math.round((Date.now() - abertaEm) / 1000)) });
       if (!ok) TP.registrarErro(q.id);
       TP.salvar();
       Object.keys(botoes).forEach(function (k) {

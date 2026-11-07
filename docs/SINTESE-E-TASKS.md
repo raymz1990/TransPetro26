@@ -70,18 +70,18 @@ Pronto quando: `banco-questoes/simulados/` com JSON validado (IDs existentes, ta
 `simulations.js`, `timer.js`; navegação entre questões, marcação, confirmação de entrega, resultado detalhado, tentativas independentes salvas em localStorage.
 Pronto quando: simulado completo executável, com histórico e sem revelar gabarito durante a prova.
 
-### P2 — Estudo ativo e acompanhamento
+### P2 — Estudo ativo e acompanhamento *(ENCERRADA em 2026-11-06: T09 a T12 concluídas)*
 
-**T09 — Flashcards (conteúdo e site)**
+**T09 — Flashcards (conteúdo e site)** *(FEITO, 2026-11-06: 2.879 cartões extraídos da teoria e das questões por `tools/build_flashcards.py`, não revisados um a um; painel, sessão e treino livre — ver `docs/qualidade/relatorio-p2.md`)*
 Produzir cartões vinculados aos itens do edital a partir da teoria e das revisões rápidas das questões; tela com revelar, classificar dificuldade, filtros.
 
-**T10 — Revisão espaçada**
+**T10 — Revisão espaçada** *(FEITO, 2026-11-06: escada 24 h/7/15/30 d + 60 d de ajuste do projeto; fila ligada a teoria estudada, erros e flashcards)*
 Fila de revisões (hoje, atrasadas, futuras) segundo `docs/estrategia/metodologia-estudo.md`, ligada a conteúdo estudado, erros e flashcards.
 
-**T11 — Plano de estudos**
+**T11 — Plano de estudos** *(FEITO, 2026-11-06: hoje, semana, mês, metas, cronômetro e sessões; data da prova e capacidade real de estudo ainda a informar em Metas e ajustes)*
 Visão diária, semanal e mensal, sessões e tempo estudado, conforme a metodologia; depende de você informar a capacidade real de estudo (horas por dia e data da prova).
 
-**T12 — Desempenho avançado**
+**T12 — Desempenho avançado** *(FEITO, 2026-11-06: evolução, simulados, módulos, itens, tempo, erros, retenção e cobertura, com gráficos SVG e aviso de amostra pequena; tempo por questão só a partir de agora)*
 Evolução temporal, tempo por questão, por assunto, histórico de simulados, gráficos leves sem dependências; mostrar limitações quando a amostra for pequena.
 
 ### P3 — Qualidade e distribuição

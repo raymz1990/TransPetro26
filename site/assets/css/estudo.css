@@ -47,3 +47,19 @@
 .cal .dia-prova{display:block;color:var(--amber);font-weight:700}
 .table tr.hoje td{background:var(--surface-2)}
 @media (max-width:640px){.table.cal td{height:64px;padding:3px 3px;font-size:.7rem}}
+.grafico{margin:16px 0;max-width:680px}
+.grafico figcaption{font:600 .8rem "Segoe UI",sans-serif;color:var(--text-2);margin-bottom:4px}
+.grafico .g-svg{width:100%;height:auto;display:block;background:var(--surface);border:1px solid var(--line)}
+.grafico text{fill:var(--text-3);font:11px "Segoe UI",sans-serif}
+.g-grade{stroke:var(--line);stroke-width:1}
+.g-eixo{stroke:var(--line-strong);stroke-width:1}
+.g-ref{stroke:var(--amber);stroke-width:1.5;stroke-dasharray:5 4}
+.grafico text.g-reft{fill:var(--amber)}
+.g-linha{fill:none;stroke:var(--petrol);stroke-width:2.2;stroke-linejoin:round}
+.g-ponto{fill:var(--petrol);stroke:var(--petrol);stroke-width:2}
+.g-ponto.pq{fill:var(--surface)}
+.g-barra{fill:var(--petrol)}
+.grafico details{font-size:.85rem;margin-top:4px}
+.grafico summary{cursor:pointer;color:var(--text-3)}
+.ancoras{display:flex;flex-wrap:wrap;gap:6px 14px;margin:14px 0 4px;font-size:.88rem}
+section[id^="d-"]{scroll-margin-top:64px}
