@@ -1,0 +1,654 @@
+{
+ "modulo": "Questões oficiais — m01-arquitetura-dados",
+ "lote": "T04 — Transpetro 2023 (Prova 6)",
+ "data": "2026-11-06",
+ "total": 11,
+ "questoes": [
+  {
+   "id": "OFI-000001",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 26.",
+   "modulo": "01-arquitetura-dados",
+   "assunto": "Álgebra relacional: operador unário",
+   "item_edital": "1.3",
+   "id_matriz": "E5-004",
+   "itens_secundarios": [],
+   "dificuldade": "facil",
+   "habilidade": "memorizacao",
+   "tipo_questao": "conceitual",
+   "enunciado": "A Álgebra Relacional possui vários operadores binários.\nDentre os operadores listados abaixo, o único NÃO binário é a(o)",
+   "alternativas": {
+    "A": "divisão",
+    "B": "projeção",
+    "C": "junção natural",
+    "D": "junção externa esquerda",
+    "E": "produto cartesiano"
+   },
+   "gabarito": "B",
+   "resolucao": "Operadores **binários** recebem duas relações; os **unários** recebem uma. Projeção (π) e seleção (σ) são unários; divisão, junções, produto cartesiano, união, interseção e diferença são binários.",
+   "analise_alternativas": {
+    "A": "Incorreta. Divisão relaciona duas relações (dividendo e divisor); é binária.",
+    "B": "Correta. Projeção escolhe colunas de **uma** relação; é unária (assim como a seleção e o renomear).",
+    "C": "Incorreta. A junção natural combina duas relações por atributos comuns; é binária.",
+    "D": "Incorreta. A junção externa esquerda combina duas relações preservando as linhas da esquerda; é binária.",
+    "E": "Incorreta. O produto cartesiano combina todas as linhas de duas relações; é binário."
+   },
+   "fundamentacao": {
+    "item": "1.3",
+    "arquivo_teoria": "conteudo/01-arquitetura-dados/03-modelo-relacional.md"
+   },
+   "ponto_atencao": "Fixe os unários: **seleção, projeção e renomeação**. Todo o restante da álgebra relacional básica é binário.",
+   "revisao_rapida": "Unários: σ, π, ρ. Binários: ∪, ∩, −, ×, ⋈ e ÷.",
+   "tags": [
+    "algebra-relacional",
+    "transpetro-2023",
+    "oficial",
+    "facil",
+    "memorizacao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Transpetro PSP/Terra 002/2023 (Edital nº 2)",
+    "cargo": "Análise de Sistemas — Processos de Negócios",
+    "ano": 2023,
+    "prova": "Prova 6",
+    "numero_original": 26,
+    "id_prova": "PRV-005",
+    "situacao_gabarito": "de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/transpetro-2023-psp002-prova06-analise-sistemas-processos-negocios.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000002",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 45.",
+   "modulo": "01-arquitetura-dados",
+   "assunto": "Desempenho de banco de dados: desnormalização controlada",
+   "item_edital": "1.17",
+   "id_matriz": "E5-018",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "avaliacao",
+   "tipo_questao": "conceitual",
+   "enunciado": "Para melhorar o desempenho de um banco de dados, um Administrador de Banco de Dados (DBA) pode realizar uma série de ações.\n\nUma ação que pode contribuir significativamente para a otimização do desempenho de um sistema de banco de dados relacionais é",
+   "alternativas": {
+    "A": "executar todas as transações de maneira sequencial ou serial, pois é a única forma de garantir a correção da execução concorrente.",
+    "B": "desnormalizar as tabelas envolvidas em operações de junção interna frequentes.",
+    "C": "substituir todos os SELECT por SELECT DISTINCT, evitando repetições.",
+    "D": "usar sempre a cláusula ORDER BY para ordenar os resultados exibidos.",
+    "E": "fragmentar os índices existentes nas colunas mais acessadas."
+   },
+   "gabarito": "B",
+   "resolucao": "A **desnormalização controlada** reduz o número de junções em consultas frequentes (trocando redundância por leitura mais rápida), e é uma técnica reconhecida de ajuste de desempenho. Todas as outras ações pioram o desempenho ou não garantem o que afirmam.",
+   "analise_alternativas": {
+    "A": "Incorreta. Execução estritamente serial elimina a concorrência e derruba o desempenho; a correção é garantida por controle de concorrência (isolamento, bloqueios, MVCC), não por serialização total.",
+    "B": "Correta. Reduz junções custosas em consultas muito frequentes; tem custo em redundância e manutenção, mas melhora o desempenho de leitura.",
+    "C": "Incorreta. DISTINCT acrescenta ordenação ou *hash* para eliminar duplicatas e pode alterar o resultado; trocar todos os SELECT por ele é prejudicial.",
+    "D": "Incorreta. ORDER BY adiciona custo de ordenação; deve ser usado só quando a ordem for necessária.",
+    "E": "Incorreta. Fragmentação de índice **degrada** o desempenho; o ajuste correto é reorganizar ou reconstruir índices."
+   },
+   "fundamentacao": {
+    "item": "1.17",
+    "arquivo_teoria": "conteudo/01-arquitetura-dados/05-sql-e-sgbd.md"
+   },
+   "ponto_atencao": "Desempenho tem *trade-offs*: desnormalizar melhora leitura e piora escrita/consistência. Cuidado com alternativas que usam \"todos\", \"sempre\" e \"única forma\".",
+   "revisao_rapida": "Ajuste: índices adequados, consultas sargáveis, desnormalização controlada, estatísticas atualizadas.",
+   "tags": [
+    "desempenho",
+    "desnormalizacao",
+    "transpetro-2023",
+    "oficial",
+    "media",
+    "avaliacao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Transpetro PSP/Terra 002/2023 (Edital nº 2)",
+    "cargo": "Análise de Sistemas — Processos de Negócios",
+    "ano": 2023,
+    "prova": "Prova 6",
+    "numero_original": 45,
+    "id_prova": "PRV-005",
+    "situacao_gabarito": "de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/transpetro-2023-psp002-prova06-analise-sistemas-processos-negocios.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000003",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 46.",
+   "modulo": "01-arquitetura-dados",
+   "assunto": "Bancos de documentos x relacionais x grafos",
+   "item_edital": "1.23",
+   "id_matriz": "E5-024",
+   "itens_secundarios": [],
+   "dificuldade": "facil",
+   "habilidade": "compreensao",
+   "tipo_questao": "comparativa",
+   "enunciado": "Cada tipo de sistema de gerenciamento de banco de dados — relacional, orientado a documentos e orientado a grafos — possui características únicas que os tornam mais adequados para certos tipos de aplicações.\n\nA esse respeito, é uma característica típica dos bancos de dados orientados a documentos",
+   "alternativas": {
+    "A": "utilizar a linguagem SQL para realização de consultas, sendo estruturados em relações matemáticas.",
+    "B": "utilizar a estrutura de vértices e arestas para representar as entidades e os relacionamentos entre elas, permitindo uma navegação eficiente entre os nós relacionados.",
+    "C": "ser otimizados para consultas que exploram as relações entre entidades, por meio de nós e arestas.",
+    "D": "armazenar os dados no formato JSON ou BSON, permitindo que dados semiestruturados sejam armazenados e consultados de forma flexível.",
+    "E": "enfatizar, prioritariamente, a normalização de dados, segregando dados relacionados em tabelas distintas interligadas através de chaves estrangeiras."
+   },
+   "gabarito": "D",
+   "resolucao": "Bancos de documentos (MongoDB, CouchDB) guardam documentos **JSON/BSON**, de esquema flexível, adequados a dados semiestruturados. SQL e relações são do modelo relacional; vértices e arestas são dos grafos.",
+   "analise_alternativas": {
+    "A": "Incorreta. SQL e relações matemáticas caracterizam o modelo relacional.",
+    "B": "Incorreta. Vértices e arestas caracterizam o modelo de grafos.",
+    "C": "Incorreta. A otimização para consultas por relacionamentos (travessias) é típica de grafos.",
+    "D": "Correta. Documentos em JSON/BSON com esquema flexível são a característica central dos bancos de documentos.",
+    "E": "Incorreta. Normalização com chaves estrangeiras é característica do modelo relacional; documentos favorecem agregados embutidos."
+   },
+   "fundamentacao": {
+    "item": "1.23",
+    "arquivo_teoria": "conteudo/01-arquitetura-dados/07-bancos-nao-relacionais.md"
+   },
+   "ponto_atencao": "Associe cada família à sua estrutura: **tabelas/SQL** (relacional), **JSON/BSON** (documentos), **nós e arestas** (grafos), **chave-valor** e **colunar**.",
+   "revisao_rapida": "Documentos = JSON/BSON, esquema flexível; grafos = nós/arestas; relacional = tabelas/SQL.",
+   "tags": [
+    "nosql",
+    "documentos",
+    "grafos",
+    "transpetro-2023",
+    "oficial",
+    "facil",
+    "compreensao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Transpetro PSP/Terra 002/2023 (Edital nº 2)",
+    "cargo": "Análise de Sistemas — Processos de Negócios",
+    "ano": 2023,
+    "prova": "Prova 6",
+    "numero_original": 46,
+    "id_prova": "PRV-005",
+    "situacao_gabarito": "de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/transpetro-2023-psp002-prova06-analise-sistemas-processos-negocios.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000004",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 48.",
+   "modulo": "01-arquitetura-dados",
+   "assunto": "Banco de grafos: consulta em Cypher",
+   "item_edital": "1.18",
+   "id_matriz": "E5-019",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "aplicacao",
+   "tipo_questao": "aplicada",
+   "enunciado": "Considere um banco de dados orientado a grafos que contém nós que representam Pessoas e nós que representam relacionamentos AMIGO_DE, ligando pessoas amigas entre si.\n\nQual das consultas, em linguagem Cypher, retorna todos os amigos de uma pessoa chamada Alice?",
+   "alternativas": {
+    "A": "`MATCH (p:Pessoa)-[:AMIGO_DE]->(amigo) WHERE p.nome = 'Alice' RETURN amigo`",
+    "B": "`MATCH (p:Pessoa)<-[:AMIGO_DE]-(amigo) WHERE p.nome = 'Alice' RETURN amigo`",
+    "C": "`MATCH (p:Pessoa {nome: 'Alice'})-[:INIMIGO_DE]->(inimigo) RETURN inimigo`",
+    "D": "`SELECT * FROM Pessoas WHERE nome = 'Alice'`",
+    "E": "`FIND (p:Pessoa {nome: 'Alice'})-[:AMIGO_DE]->(amigo) RETURN amigo`"
+   },
+   "gabarito": "A",
+   "resolucao": "Em Cypher, `MATCH` descreve um padrão; `(p)-[:TIPO]->(x)` segue a relação de `p` para `x`, e `WHERE` filtra. A consulta A localiza a pessoa de nome Alice e retorna os nós ligados por `AMIGO_DE` a partir dela.",
+   "analise_alternativas": {
+    "A": "Correta. Padrão válido: Alice como origem, relação `AMIGO_DE` saindo dela e retorno dos amigos.",
+    "B": "Incorreta. Inverte a direção da seta, retornando quem aponta para Alice; com a relação modelada de Alice para o amigo, não retorna os amigos dela.",
+    "C": "Incorreta. Usa a relação `INIMIGO_DE`; retorna inimigos, não amigos.",
+    "D": "Incorreta. É SQL relacional e não se aplica a um banco de grafos.",
+    "E": "Incorreta. `FIND` não é cláusula do Cypher; a sintaxe é inválida."
+   },
+   "fundamentacao": {
+    "item": "1.18",
+    "arquivo_teoria": "conteudo/01-arquitetura-dados/07-bancos-nao-relacionais.md"
+   },
+   "ponto_atencao": "O edital não cita Cypher: a questão exige apenas **ler um padrão de grafo** (nó, seta, tipo de relação). Direção da seta e tipo de relação são os distratores. Aderência: o item 1.18 trata de NoSQL, e o Cypher foi cobrado como exemplo.",
+   "revisao_rapida": "Cypher: `MATCH (a)-[:REL]->(b) WHERE ... RETURN b`.",
+   "tags": [
+    "cypher",
+    "grafos",
+    "transpetro-2023",
+    "oficial",
+    "media",
+    "aplicacao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Transpetro PSP/Terra 002/2023 (Edital nº 2)",
+    "cargo": "Análise de Sistemas — Processos de Negócios",
+    "ano": 2023,
+    "prova": "Prova 6",
+    "numero_original": 48,
+    "id_prova": "PRV-005",
+    "situacao_gabarito": "de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/transpetro-2023-psp002-prova06-analise-sistemas-processos-negocios.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000005",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 49.",
+   "modulo": "01-arquitetura-dados",
+   "assunto": "SQL: autojunção em tabela de hierarquia",
+   "item_edital": "1.10",
+   "id_matriz": "E5-011",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "aplicacao",
+   "tipo_questao": "calculo",
+   "enunciado": "Considere a tabela Familia, apresentada abaixo, que possui as colunas Pai e Filho e uma instância exemplo que permite ilustrar as informações contidas nessa tabela.\n\n| Pai | Filho |\n|---|---|\n| Andre | Carlos |\n| Andre | Claudio |\n| Bruno | Diego |\n| Bruno | Daniel |\n| Carlos | Eriko |\n| Carlos | Fabio |\n| Daniel | Gustavo |\n| Diego | Heleno |\n| Eriko | Isidoro |\n| Fabio | João |\n\nUma consulta SQL feita para exibir os nomes dos netos de Carlos retorna os nomes Isidoro e João.\n\nA expressão, em linguagem SQL, dessa consulta é",
+   "alternativas": {
+    "A": "```sql\nSELECT f2.filho\nFROM Familia f1 INNER JOIN Familia f2 ON f1.filho = f2.pai\nWHERE f1.pai = 'Carlos';\n```",
+    "B": "```sql\nSELECT f1.pai\nFROM Familia f1 INNER JOIN Familia f2 ON f1.pai = f2.filho\nWHERE f1.filho = 'Carlos';\n```",
+    "C": "```sql\nSELECT f1.pai\nFROM Familia f1 INNER JOIN Familia f2 ON f1.filho = f2.pai\nWHERE f1.pai = 'Carlos';\n```",
+    "D": "```sql\nSELECT f2.filho\nFROM Familia f1 INNER JOIN Familia f2 ON f1.pai = f2.pai\nWHERE f1.pai = 'Carlos';\n```",
+    "E": "```sql\nSELECT f2.filho\nFROM Familia f1 INNER JOIN Familia f2 ON f1.filho = f2.filho\nWHERE f1.pai = 'Carlos';\n```"
+   },
+   "gabarito": "A",
+   "resolucao": "Neto de Carlos = filho de um filho de Carlos. Na **autojunção**, `f1` representa a geração dos filhos (`f1.pai = 'Carlos'`) e `f2` a dos netos, ligando o filho de `f1` ao pai de `f2` (`f1.filho = f2.pai`). Filhos de Carlos: Eriko e Fabio; seus filhos: Isidoro e João (`f2.filho`).",
+   "analise_alternativas": {
+    "A": "Correta. Junção filho→pai com filtro em Carlos; projeta `f2.filho`, retornando Isidoro e João.",
+    "B": "Incorreta. Procura o **pai do pai** de Carlos (avô), com a junção invertida; retornaria Andre.",
+    "C": "Incorreta. Faz a junção correta, mas projeta `f1.pai`, que é sempre Carlos; retorna 'Carlos' (duas vezes).",
+    "D": "Incorreta. Junta linhas com o mesmo pai (irmãos); retornaria Eriko e Fabio (filhos), incluindo o próprio.",
+    "E": "Incorreta. Junta linhas com o mesmo filho; devolve apenas os próprios filhos de Carlos."
+   },
+   "fundamentacao": {
+    "item": "1.10",
+    "arquivo_teoria": "conteudo/01-arquitetura-dados/05-sql-e-sgbd.md"
+   },
+   "ponto_atencao": "Em autojunção, defina o **papel de cada alias** (f1 = pai, f2 = filho) antes de montar o `ON`. Conferir a saída com a tabela de exemplo elimina os distratores.",
+   "revisao_rapida": "Neto = `f1.filho = f2.pai`; projeta-se `f2.filho`.",
+   "tags": [
+    "sql",
+    "autojuncao",
+    "transpetro-2023",
+    "oficial",
+    "media",
+    "aplicacao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Transpetro PSP/Terra 002/2023 (Edital nº 2)",
+    "cargo": "Análise de Sistemas — Processos de Negócios",
+    "ano": 2023,
+    "prova": "Prova 6",
+    "numero_original": 49,
+    "id_prova": "PRV-005",
+    "situacao_gabarito": "de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/transpetro-2023-psp002-prova06-analise-sistemas-processos-negocios.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Resolvida sobre a tabela de exemplo do enunciado (A retorna Isidoro e João).",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000006",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 50.",
+   "modulo": "01-arquitetura-dados",
+   "assunto": "Metadados em SGBD relacional",
+   "item_edital": "1.6",
+   "id_matriz": "E5-007",
+   "itens_secundarios": [],
+   "dificuldade": "facil",
+   "habilidade": "compreensao",
+   "tipo_questao": "conceitual",
+   "enunciado": "Em um Sistema de Gerenciamento de Banco de Dados (SGBD) relacional, um banco de metadados é um repositório especializado que armazena informações sobre os dados que estão armazenados no banco de dados propriamente dito. Em geral, os metadados ajudam os desenvolvedores, os administradores de banco de dados e outras partes interessadas a entender, a gerenciar e a trabalhar eficientemente com o banco de dados.\n\nDentre as informações típicas que são encontradas nos metadados de um banco de dados relacional, está(ão)",
+   "alternativas": {
+    "A": "a quantidade total de vendas realizadas, registrada pelas transações.",
+    "B": "as senhas de usuários e suas permissões de sistema operacional.",
+    "C": "o código-fonte dos aplicativos que acessam o banco de dados.",
+    "D": "os backups dos dados armazenados nas tabelas.",
+    "E": "os esquemas de tabelas, incluindo os tipos de dados e as restrições de colunas."
+   },
+   "gabarito": "E",
+   "resolucao": "Metadados são **dados sobre dados**: o catálogo (dicionário de dados) guarda definições de tabelas, colunas, tipos, chaves, restrições, índices e permissões do banco.",
+   "analise_alternativas": {
+    "A": "Incorreta. Total de vendas é **dado** de negócio, não metadado.",
+    "B": "Incorreta. Senhas e permissões de sistema operacional estão fora do catálogo do SGBD (o catálogo guarda usuários e privilégios do banco, e não senhas em claro).",
+    "C": "Incorreta. Código-fonte de aplicativos não é armazenado no catálogo.",
+    "D": "Incorreta. Backups são cópias dos dados, não metadados.",
+    "E": "Correta. Esquemas, tipos de dados e restrições são o conteúdo típico do dicionário de dados."
+   },
+   "fundamentacao": {
+    "item": "1.6",
+    "arquivo_teoria": "conteudo/01-arquitetura-dados/10-qualidade-e-governanca-dados.md"
+   },
+   "ponto_atencao": "Pergunte: a informação descreve a **estrutura** (metadado) ou é o **conteúdo** (dado)?",
+   "revisao_rapida": "Metadado = dado sobre os dados (catálogo/dicionário).",
+   "tags": [
+    "metadados",
+    "transpetro-2023",
+    "oficial",
+    "facil",
+    "compreensao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Transpetro PSP/Terra 002/2023 (Edital nº 2)",
+    "cargo": "Análise de Sistemas — Processos de Negócios",
+    "ano": 2023,
+    "prova": "Prova 6",
+    "numero_original": 50,
+    "id_prova": "PRV-005",
+    "situacao_gabarito": "de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/transpetro-2023-psp002-prova06-analise-sistemas-processos-negocios.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000007",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 51.",
+   "modulo": "01-arquitetura-dados",
+   "assunto": "SGBD: otimizador de consultas (alternativa NÃO)",
+   "item_edital": "1.13",
+   "id_matriz": "E5-014",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "compreensao",
+   "tipo_questao": "conceitual",
+   "enunciado": "Em um Sistema Gerenciador de Banco de Dados Relacional (SGBD-R), o otimizador de consultas é um componente que possui uma série de tarefas e de atividades cruciais para assegurar que as consultas sejam processadas de maneira eficiente.\n\nNÃO representa uma funcionalidade típica do otimizador de consultas",
+   "alternativas": {
+    "A": "escolher o plano de execução mais eficiente para uma consulta, a partir de vários planos possíveis.",
+    "B": "escolher entre diferentes métodos de acesso a dados (por exemplo, varredura sequencial, uso de índice) para processar uma consulta.",
+    "C": "utilizar estatísticas sobre os dados armazenados para avaliar a seletividade de diferentes predicados em uma consulta.",
+    "D": "ser responsável por criar novas tabelas no banco de dados, com base nas consultas mais realizadas.",
+    "E": "avaliar frequentemente diferentes estratégias de junção para decidir a ordem em que as relações são acessadas e combinadas."
+   },
+   "gabarito": "D",
+   "resolucao": "O otimizador **não altera o esquema**: ele escolhe o melhor plano de execução (métodos de acesso, ordem e algoritmo de junção) com base em estatísticas e custo. Criar tabelas é papel do DBA ou da aplicação.",
+   "analise_alternativas": {
+    "A": "Incorreta. Escolher o plano de menor custo é a função central do otimizador.",
+    "B": "Incorreta. Decidir entre varredura sequencial e uso de índice é escolha de método de acesso, tarefa do otimizador.",
+    "C": "Incorreta. Estatísticas (cardinalidade, seletividade) alimentam o modelo de custo.",
+    "D": "Correta. Criação de tabelas não é função do otimizador; é a alternativa que **não** representa sua funcionalidade.",
+    "E": "Incorreta. Escolher ordem e algoritmo de junção é típico do otimizador."
+   },
+   "fundamentacao": {
+    "item": "1.13",
+    "arquivo_teoria": "conteudo/01-arquitetura-dados/05-sql-e-sgbd.md"
+   },
+   "ponto_atencao": "Em questões \"NÃO\", localize a única afirmativa **fora do papel** do componente. O otimizador atua sobre o **plano**, nunca sobre o esquema.",
+   "revisao_rapida": "Otimizador: gera planos, estima custo com estatísticas, escolhe o menor.",
+   "tags": [
+    "otimizador",
+    "sgbd",
+    "transpetro-2023",
+    "oficial",
+    "media",
+    "compreensao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Transpetro PSP/Terra 002/2023 (Edital nº 2)",
+    "cargo": "Análise de Sistemas — Processos de Negócios",
+    "ano": 2023,
+    "prova": "Prova 6",
+    "numero_original": 51,
+    "id_prova": "PRV-005",
+    "situacao_gabarito": "de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/transpetro-2023-psp002-prova06-analise-sistemas-processos-negocios.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000008",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 52.",
+   "modulo": "01-arquitetura-dados",
+   "assunto": "Data lakes e Big Data",
+   "item_edital": "1.22",
+   "id_matriz": "E5-023",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "compreensao",
+   "tipo_questao": "conceitual",
+   "enunciado": "A respeito do uso de Data Lakes como solução para o gerenciamento e análise de Big Data, constata-se que eles",
+   "alternativas": {
+    "A": "convertem dados não estruturados em estruturados durante o processo de ingestão.",
+    "B": "permitem o armazenamento de dados em formatos estruturados, semiestruturados e não estruturados, oferecendo flexibilidade na análise e no processamento de diferentes tipos de dados.",
+    "C": "são geralmente implementados usando apenas sistemas de arquivos convencionais devido à sua eficiência em armazenar grandes volumes de dados.",
+    "D": "são adequados apenas para armazenar grandes volumes de dados não estruturados.",
+    "E": "são inadequados em soluções de Big Data por não suportarem alguns tipos de dados."
+   },
+   "gabarito": "B",
+   "resolucao": "Um data lake guarda dados **brutos em qualquer formato**, aplicando o esquema na leitura (*schema-on-read*), o que dá flexibilidade a análises diversas.",
+   "analise_alternativas": {
+    "A": "Incorreta. O data lake mantém o dado bruto; a estruturação ocorre na leitura ou em etapas posteriores, não na ingestão.",
+    "B": "Correta. Aceita estruturados, semiestruturados e não estruturados, com flexibilidade de processamento.",
+    "C": "Incorreta. Costumam usar armazenamento distribuído/de objetos (HDFS, S3 etc.) e não \"apenas sistemas de arquivos convencionais\".",
+    "D": "Incorreta. Aceitam também dados estruturados e semiestruturados.",
+    "E": "Incorreta. São justamente indicados para Big Data pela variedade de tipos suportados."
+   },
+   "fundamentacao": {
+    "item": "1.22",
+    "arquivo_teoria": "conteudo/01-arquitetura-dados/09-data-warehouse-e-big-data.md"
+   },
+   "ponto_atencao": "\"Apenas\" e \"somente\" são sinais de alternativa errada. Compare com o DW: **esquema na escrita** (DW) × **esquema na leitura** (lake).",
+   "revisao_rapida": "Lake = dado bruto, todos os formatos, schema-on-read.",
+   "tags": [
+    "data-lake",
+    "big-data",
+    "transpetro-2023",
+    "oficial",
+    "media",
+    "compreensao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Transpetro PSP/Terra 002/2023 (Edital nº 2)",
+    "cargo": "Análise de Sistemas — Processos de Negócios",
+    "ano": 2023,
+    "prova": "Prova 6",
+    "numero_original": 52,
+    "id_prova": "PRV-005",
+    "situacao_gabarito": "de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/transpetro-2023-psp002-prova06-analise-sistemas-processos-negocios.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000009",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 53.",
+   "modulo": "01-arquitetura-dados",
+   "assunto": "Propriedades ACID",
+   "item_edital": "1.14",
+   "id_matriz": "E5-015",
+   "itens_secundarios": [],
+   "dificuldade": "facil",
+   "habilidade": "memorizacao",
+   "tipo_questao": "comparativa",
+   "enunciado": "As propriedades ACID são cruciais para garantir a confiabilidade das transações em um Sistema Gerenciador de Banco de Dados Relacional (SGBD-R). Cada letra da sigla ACID refere-se a uma propriedade específica.\n\nA descrição das quatro propriedades ACID é a seguinte:",
+   "alternativas": {
+    "A": "Atomicidade: o banco de dados deve permanecer em um estado consistente após a transação. Consistência: uma transação é dividida em várias subtransações menores. Isolamento: os resultados de uma transação são permanentes. Durabilidade: as transações simultâneas são isoladas umas das outras.",
+    "B": "Atomicidade: uma transação é dividida em várias subtransações menores. Consistência: o banco de dados não necessita manter a integridade após cada transação. Isolamento: as transações podem ser misturadas entre si. Durabilidade: os resultados de uma transação podem ser desfeitos quando necessário.",
+    "C": "Atomicidade: uma transação deve ser tratada como uma única unidade, que é executada completamente ou não é executada de todo. Consistência: o banco de dados deve permanecer em um estado consistente após a transação. Isolamento: as transações simultâneas são isoladas umas das outras. Durabilidade: os efeitos de uma transação executada com sucesso são permanentes e persistem mesmo em caso de falha do sistema.",
+    "D": "Atomicidade: as transações simultâneas são isoladas umas das outras. Consistência: uma transação deve ser tratada como uma única unidade, que é executada completamente ou não é executada de todo. Isolamento: o banco de dados deve permanecer em um estado consistente após a transação. Durabilidade: uma transação é dividida em várias subtransações menores.",
+    "E": "Atomicidade: os resultados de uma transação são permanentes. Consistência: as transações simultâneas são isoladas umas das outras. Isolamento: uma transação deve ser tratada como uma única unidade, que é executada completamente ou não é executada de todo. Durabilidade: o banco de dados deve permanecer em um estado consistente após a transação."
+   },
+   "gabarito": "C",
+   "resolucao": "**A**tomicidade = tudo ou nada; **C**onsistência = o banco sai de um estado válido para outro válido; **I**solamento = transações concorrentes não se interferem; **D**urabilidade = o que foi confirmado persiste, mesmo com falha.",
+   "analise_alternativas": {
+    "A": "Incorreta. Todas as definições estão trocadas entre as propriedades (a definição dada para atomicidade é a de consistência, e assim por diante).",
+    "B": "Incorreta. Contradiz as quatro propriedades: subdivide a atomicidade, dispensa a integridade, mistura transações e admite desfazer o que foi confirmado.",
+    "C": "Correta. Todas as quatro definições estão corretas.",
+    "D": "Incorreta. Define atomicidade como isolamento, consistência como atomicidade, isolamento como consistência e durabilidade como subtransações; todas trocadas.",
+    "E": "Incorreta. Define atomicidade como durabilidade, consistência como isolamento, isolamento como atomicidade e durabilidade como consistência; todas trocadas."
+   },
+   "fundamentacao": {
+    "item": "1.14",
+    "arquivo_teoria": "conteudo/01-arquitetura-dados/06-transacoes-e-acid.md"
+   },
+   "ponto_atencao": "O banco troca as definições entre as letras: **memorize a definição de cada letra**, e não a lista de frases. Basta uma definição trocada para eliminar a alternativa.",
+   "revisao_rapida": "ACID: tudo-ou-nada, válido→válido, sem interferência, confirmado persiste.",
+   "tags": [
+    "acid",
+    "transacoes",
+    "transpetro-2023",
+    "oficial",
+    "facil",
+    "memorizacao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Transpetro PSP/Terra 002/2023 (Edital nº 2)",
+    "cargo": "Análise de Sistemas — Processos de Negócios",
+    "ano": 2023,
+    "prova": "Prova 6",
+    "numero_original": 53,
+    "id_prova": "PRV-005",
+    "situacao_gabarito": "de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/transpetro-2023-psp002-prova06-analise-sistemas-processos-negocios.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000010",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 63.",
+   "modulo": "01-arquitetura-dados",
+   "assunto": "Modelagem conceitual",
+   "item_edital": "1.1",
+   "id_matriz": "E5-002",
+   "itens_secundarios": [],
+   "dificuldade": "facil",
+   "habilidade": "compreensao",
+   "tipo_questao": "conceitual",
+   "enunciado": "A modelagem de dados é uma etapa importante e essencial em qualquer projeto de desenvolvimento ou de manutenção de software.\n\nDentre as modelagens utilizadas em projetos de banco de dados, está a modelagem conceitual, que",
+   "alternativas": {
+    "A": "descreve detalhes técnicos de implementação, como índices e partições de tabelas.",
+    "B": "envolve a otimização de consultas e a escolha de índices apropriados para melhorar o desempenho.",
+    "C": "prioriza o projeto da estrutura física das tabelas e dos relacionamentos no banco de dados.",
+    "D": "é uma representação visual dos detalhes internos de armazenamento de dados em disco.",
+    "E": "é independente do Sistema de Gerenciamento de Banco de Dados (SGBD), envolvendo a definição de entidades, de atributos e de relacionamentos."
+   },
+   "gabarito": "E",
+   "resolucao": "O modelo **conceitual** (ex.: MER/DER) é o mais abstrato: define entidades, atributos e relacionamentos do negócio, sem depender de SGBD. Índices, partições e armazenamento pertencem ao modelo **físico**; tabelas e chaves, ao **lógico**.",
+   "analise_alternativas": {
+    "A": "Incorreta. Índices e partições são do nível físico.",
+    "B": "Incorreta. Otimização e índices são do nível físico.",
+    "C": "Incorreta. A estrutura física das tabelas é do nível físico (ou lógico, no caso das tabelas).",
+    "D": "Incorreta. Detalhes de armazenamento em disco são do nível físico.",
+    "E": "Correta. Independência do SGBD e definição de entidades, atributos e relacionamentos caracterizam o nível conceitual."
+   },
+   "fundamentacao": {
+    "item": "1.1",
+    "arquivo_teoria": "conteudo/01-arquitetura-dados/02-modelagem-dados.md"
+   },
+   "ponto_atencao": "Conceitual = negócio e independência de tecnologia; lógico = modelo de dados (relacional); físico = SGBD, armazenamento e desempenho.",
+   "revisao_rapida": "Conceitual → lógico → físico, do mais abstrato ao mais próximo do SGBD.",
+   "tags": [
+    "modelagem",
+    "transpetro-2023",
+    "oficial",
+    "facil",
+    "compreensao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Transpetro PSP/Terra 002/2023 (Edital nº 2)",
+    "cargo": "Análise de Sistemas — Processos de Negócios",
+    "ano": 2023,
+    "prova": "Prova 6",
+    "numero_original": 63,
+    "id_prova": "PRV-005",
+    "situacao_gabarito": "de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/transpetro-2023-psp002-prova06-analise-sistemas-processos-negocios.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000011",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 64.",
+   "modulo": "01-arquitetura-dados",
+   "assunto": "Normalização: objetivo",
+   "item_edital": "1.4",
+   "id_matriz": "E5-005",
+   "itens_secundarios": [],
+   "dificuldade": "facil",
+   "habilidade": "compreensao",
+   "tipo_questao": "conceitual",
+   "enunciado": "A normalização é um processo muito utilizado na organização de bancos de dados.\n\nA esse respeito, o objetivo principal da normalização das estruturas de dados em bancos de dados relacionais é",
+   "alternativas": {
+    "A": "eliminar as duplicações de dados e garantir que cada informação seja armazenada em uma única tabela.",
+    "B": "aumentar a redundância dos dados, garantindo que informações essenciais sejam armazenadas em várias tabelas.",
+    "C": "reduzir a quantidade de dados armazenados no banco de dados, resultando em uma economia de espaço de armazenamento.",
+    "D": "simplificar as consultas complexas e otimizar a recuperação de informações do banco de dados, resultando em um melhor desempenho.",
+    "E": "criar uma representação visual da estrutura física dos dados no disco, facilitando o acesso direto e rápido às informações armazenadas."
+   },
+   "gabarito": "A",
+   "resolucao": "A normalização busca **reduzir a redundância** e evitar anomalias de inserção, atualização e exclusão, de modo que cada fato seja registrado em um único lugar.",
+   "analise_alternativas": {
+    "A": "Correta. Elimina duplicações e concentra cada informação em um só lugar; é o objetivo central.",
+    "B": "Incorreta. Inverte o objetivo: a normalização reduz a redundância.",
+    "C": "Incorreta. A economia de espaço é efeito colateral, não o objetivo principal.",
+    "D": "Incorreta. Normalizar costuma aumentar o número de junções; ganho de desempenho de leitura é objetivo da desnormalização.",
+    "E": "Incorreta. Descrição visual da estrutura física não tem relação com normalização."
+   },
+   "fundamentacao": {
+    "item": "1.4",
+    "arquivo_teoria": "conteudo/01-arquitetura-dados/04-normalizacao.md"
+   },
+   "ponto_atencao": "Cuidado com a confusão entre normalização (consistência, menos redundância) e desnormalização (desempenho de leitura).",
+   "revisao_rapida": "Normalizar = menos redundância e menos anomalias.",
+   "tags": [
+    "normalizacao",
+    "transpetro-2023",
+    "oficial",
+    "facil",
+    "compreensao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Transpetro PSP/Terra 002/2023 (Edital nº 2)",
+    "cargo": "Análise de Sistemas — Processos de Negócios",
+    "ano": 2023,
+    "prova": "Prova 6",
+    "numero_original": 64,
+    "id_prova": "PRV-005",
+    "situacao_gabarito": "de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/transpetro-2023-psp002-prova06-analise-sistemas-processos-negocios.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  }
+ ]
+}

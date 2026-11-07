@@ -1,126 +1,204 @@
 # Catálogo geral de questões — Banco de questões
 
-**Atualizado em:** 2026-10-31. **Totais:** oficiais 0 (no banco) · adaptadas 0 · autorais 90 (validadas 90 · em revisão 0) · reprovadas 0.
-As **100 questões históricas** classificadas de 2018 e 2023 estão em `docs/estrategia/catalogo-questoes-historicas.md` (análise da banca, **sem reprodução** de enunciados); o banco oficial (`OFI`) **não foi iniciado**. Validada = aprovada pelo usuário (lote), **sem revisão por terceiros**.
+**Atualizado em:** 2026-11-06 (gerado por `python tools/gerar_docs_banco.py`). **Totais:** 196 questões — oficiais 41 · adaptadas 0 · autorais 155 (Específicos 120, Gerais 35). Validadas 90 · em revisão 106.
 
-| ID | Tipo | Módulo | Item | Assunto | Dificuldade | Habilidade | Gabarito | Status |
-|---|---|---|---|---|---|---|---|---|
-| AUT-000001 | autoral | M01 | 1.1 | Modelagem de dados: níveis conceitual, lógico e físico | Fácil | Compreensão | C | validada |
-| AUT-000002 | autoral | M01 | 1.4 | Normalização: dependência parcial e 2FN | Média | Análise | E | validada |
-| AUT-000003 | autoral | M01 | 1.5 | Integridade referencial: ações ON DELETE e ON UPDATE | Média | Aplicação | B | validada |
-| AUT-000004 | autoral | M01 | 1.10 | SQL: junção externa, agregação e HAVING | Difícil | Resolução de problemas | A | validada |
-| AUT-000005 | autoral | M01 | 1.14 | Propriedades ACID e transações | Fácil | Compreensão | D | validada |
-| AUT-000006 | autoral | M01 | 1.18 | Bancos NoSQL e diferenciação entre tipos de bancos: grafos | Média | Aplicação | B | validada |
-| AUT-000007 | autoral | M01 | 1.19 | Integração de dados: ETL e ELT | Média | Compreensão | C | validada |
-| AUT-000008 | autoral | M01 | 1.7 | Modelagem dimensional: tipos de medida e grão da tabela fato | Difícil | Análise | E | validada |
-| AUT-000009 | autoral | M01 | 1.21 | Qualidade de dados, dados mestres e dados de referência | Fácil | Compreensão | A | validada |
-| AUT-000010 | autoral | M01 | 1.17 | Melhoria de performance: índices e predicados sargáveis | Média | Avaliação | D | validada |
-| AUT-000011 | autoral | M02 | 2.1 | Scrum: responsabilidades e cancelamento da Sprint | Fácil | Compreensão | B | validada |
-| AUT-000012 | autoral | M02 | 2.1 | Scrum: artefatos e compromissos; Definição de Pronto | Difícil | Análise | D | validada |
-| AUT-000013 | autoral | M02 | 2.1 | Scrum: Sprint Review | Fácil | Compreensão | A | validada |
-| AUT-000014 | autoral | M02 | 2.1 | Kanban: limite de WIP e Lei de Little | Média | Resolução de problemas | E | validada |
-| AUT-000015 | autoral | M02 | 2.2 | Gestão de projeto versus gestão de produto | Média | Aplicação | C | validada |
-| AUT-000016 | autoral | M02 | 2.3 | SAFe: ART, PI e PI Planning | Média | Compreensão | D | validada |
-| AUT-000017 | autoral | M02 | 2.4 | PMBOK 7ª edição: Estrutura Analítica do Projeto (EAP) | Fácil | Compreensão | A | validada |
-| AUT-000018 | autoral | M02 | 2.5 | Projetos e a organização: estruturas organizacionais | Média | Análise | C | validada |
-| AUT-000019 | autoral | M02 | 2.6 | Escritório de projetos (PMO): modelos | Média | Aplicação | E | validada |
-| AUT-000020 | autoral | M02 | 2.4 | PMBOK 7ª edição: domínios de desempenho | Difícil | Análise | B | validada |
-| AUT-000021 | autoral | M03 | 3 | Grupo de Iniciação | Fácil | Memorização | B | validada |
-| AUT-000022 | autoral | M03 | 3 | Validar o escopo e grupo de Monitoramento e Controle | Média | Compreensão | D | validada |
-| AUT-000023 | autoral | M03 | 3 | Grupos de processos: quantidade de processos | Fácil | Memorização | A | validada |
-| AUT-000024 | autoral | M03 | 3 | Grupos de processos, fases e interação entre processos | Difícil | Análise | E | validada |
-| AUT-000025 | autoral | M03 | 3 | Área de Custos: processos por grupo | Média | Aplicação | C | validada |
-| AUT-000026 | autoral | M03 | 3 | Grupo de Execução: Partes interessadas | Fácil | Compreensão | D | validada |
-| AUT-000027 | autoral | M03 | 3 | Áreas de conhecimento: Integração e matriz grupos × áreas | Média | Análise | A | validada |
-| AUT-000028 | autoral | M03 | 3 | Controle integrado de mudanças | Difícil | Aplicação | C | validada |
-| AUT-000029 | autoral | M03 | 3 | Área de Escopo: sequência de processos do Planejamento | Média | Aplicação | E | validada |
-| AUT-000030 | autoral | M03 | 3 | Área de Riscos: processos por grupo | Média | Análise | B | validada |
-| AUT-000031 | autoral | M04 | 4.6 | LGPD: agentes de tratamento e encarregado | Fácil | Compreensão | B | validada |
-| AUT-000032 | autoral | M04 | 4.6 | LGPD: aplicação e alcance territorial | Fácil | Aplicação | D | validada |
-| AUT-000033 | autoral | M04 | 4.6 | LGPD: hipóteses de tratamento (bases legais) | Média | Aplicação | A | validada |
-| AUT-000034 | autoral | M04 | 4.6 | LGPD: sanções administrativas (art. 52) | Difícil | Análise | E | validada |
-| AUT-000035 | autoral | M04 | 4.5 | ITSM: gerenciamento de incidentes e de problemas | Média | Aplicação | C | validada |
-| AUT-000036 | autoral | M04 | 4.5 | ITSM: acordos de nível de serviço (SLA, OLA e UC) | Média | Compreensão | D | validada |
-| AUT-000037 | autoral | M04 | 4.5 | ITSM: tipos de mudança no ITIL 4 | Fácil | Compreensão | A | validada |
-| AUT-000038 | autoral | M04 | 4.1 | Mercado de TI: modelos de serviço em nuvem | Média | Aplicação | C | validada |
-| AUT-000039 | autoral | M04 | 4.2 | Economia da inovação: tipos de inovação | Difícil | Análise | E | validada |
-| AUT-000040 | autoral | M04 | 4.4 | Ciência, pesquisa e desenvolvimento: níveis de prontidão tecnológica (TRL) | Fácil | Compreensão | B | validada |
-| AUT-000041 | autoral | M05 | 5.1 | Requisitos funcionais e não funcionais | Fácil | Compreensão | B | validada |
-| AUT-000042 | autoral | M05 | 5.1 | Priorização de requisitos: MoSCoW | Fácil | Aplicação | D | validada |
-| AUT-000043 | autoral | M05 | 5.2 | Ciclo de vida: modelo em V | Fácil | Memorização | A | validada |
-| AUT-000044 | autoral | M05 | 5.2 | Ciclo de vida: modelo em espiral | Média | Aplicação | E | validada |
-| AUT-000045 | autoral | M05 | 5.3 | Paradigma orientado a objetos: herança e ligação dinâmica | Difícil | Resolução de problemas | C | validada |
-| AUT-000046 | autoral | M05 | 5.3 | UML: diagrama de casos de uso (include e extend) | Média | Aplicação | D | validada |
-| AUT-000047 | autoral | M05 | 5.4 | Teste de software: complexidade ciclomática | Difícil | Resolução de problemas | A | validada |
-| AUT-000048 | autoral | M05 | 5.4 | Teste de software: análise do valor limite | Média | Aplicação | C | validada |
-| AUT-000049 | autoral | M05 | 5.4 | Verificação e validação | Média | Análise | E | validada |
-| AUT-000050 | autoral | M05 | 5.5 | Ambientes de desenvolvimento: CI/CD | Média | Compreensão | B | validada |
-| AUT-000051 | autoral | M06 | 6.1 | Acessibilidade: princípios do WCAG (POUR) | Média | Análise | B | validada |
-| AUT-000052 | autoral | M06 | 6.2 | Histórias do usuário: critério INVEST | Fácil | Aplicação | D | validada |
-| AUT-000053 | autoral | M06 | 6.3 | Interação web: arquitetura da informação e classificação de cartões | Fácil | Compreensão | A | validada |
-| AUT-000054 | autoral | M06 | 6.4 | Projeto centrado no usuário: avaliação heurística e teste de usabilidade | Média | Análise | E | validada |
-| AUT-000055 | autoral | M06 | 6.5 | Storytelling com dados: escolha de gráficos e boas práticas | Difícil | Análise | C | validada |
-| AUT-000056 | autoral | M06 | 6.6 | Relatórios e dashboards: tipos de dashboard | Fácil | Aplicação | D | validada |
-| AUT-000057 | autoral | M06 | 6.7 | Interoperabilidade entre navegadores: detecção de recursos e melhoria progressiva | Média | Aplicação | A | validada |
-| AUT-000058 | autoral | M06 | 6.8 | MVP e prototipação: distinção entre MVP e protótipo | Difícil | Análise | C | validada |
-| AUT-000059 | autoral | M06 | 6.10 | Design thinking: etapas do processo | Fácil | Memorização | E | validada |
-| AUT-000060 | autoral | M06 | 6.11 | Análise de personas: persona, perfil e papel | Média | Compreensão | B | validada |
-| AUT-000061 | autoral | M07 | 7.1 | Dado, informação, conhecimento e inteligência | Fácil | Aplicação | B | validada |
-| AUT-000062 | autoral | M07 | 7.2 | Business intelligence: tipos de análise | Média | Aplicação | D | validada |
-| AUT-000063 | autoral | M07 | 7.3 | Mapeamento de fontes de dados | Fácil | Aplicação | A | validada |
-| AUT-000064 | autoral | M07 | 7.4 | Dados estruturados, semiestruturados e não estruturados | Média | Compreensão | E | validada |
-| AUT-000065 | autoral | M07 | 7.5 | OLAP: operações de slice e dice | Difícil | Resolução de problemas | C | validada |
-| AUT-000066 | autoral | M07 | 7.6 | Data warehouse: características | Média | Análise | D | validada |
-| AUT-000067 | autoral | M07 | 7.7 | Modelagem multidimensional: tipos de tabela fato | Fácil | Aplicação | A | validada |
-| AUT-000068 | autoral | M07 | 7.9 | Manipulação de dados em planilhas: SOMASES | Média | Resolução de problemas | C | validada |
-| AUT-000069 | autoral | M07 | 7.8 | Ferramentas de BI: medidas, colunas calculadas e interatividade | Média | Compreensão | E | validada |
-| AUT-000070 | autoral | M07 | 7.10 | Insights e BI na tomada de decisão: correlação e causalidade | Difícil | Avaliação | B | validada |
-| AUT-000071 | autoral | M08 | 8.1 | Negação de proposição condicional | Fácil | Aplicação | B | validada |
-| AUT-000072 | autoral | M08 | 8.6 | Sistemas dedutivos: correção e completude | Média | Compreensão | D | validada |
-| AUT-000073 | autoral | M08 | 8.8 | Valores-verdade de proposições compostas | Média | Resolução de problemas | A | validada |
-| AUT-000074 | autoral | M08 | 8.8 | Tautologia, contradição e contingência | Média | Análise | E | validada |
-| AUT-000075 | autoral | M08 | 8.2 | Argumentos: validade | Difícil | Análise | C | validada |
-| AUT-000076 | autoral | M08 | 8.3 | Lógica sentencial: equivalência lógica do condicional | Média | Aplicação | D | validada |
-| AUT-000077 | autoral | M08 | 8.4 | Lógica de predicados: negação de sentenças quantificadas | Média | Aplicação | A | validada |
-| AUT-000078 | autoral | M08 | 8.4 | Lógica de predicados: ordem dos quantificadores | Difícil | Análise | C | validada |
-| AUT-000079 | autoral | M08 | 8.5 | Regras de formação de fórmulas | Fácil | Memorização | E | validada |
-| AUT-000080 | autoral | M08 | 8.7 | Decidibilidade da lógica sentencial e funções de avaliação | Fácil | Compreensão | B | validada |
-| AUT-000081 | autoral | M09 | 9.4 | Ataques: injeção de SQL e consulta parametrizada | Média | Aplicação | B | validada |
-| AUT-000082 | autoral | M09 | 9.2 | Operação de segurança: backup completo e diferencial | Média | Resolução de problemas | D | validada |
-| AUT-000083 | autoral | M09 | 9.3 | Softwares maliciosos: classificação pelo comportamento | Fácil | Aplicação | A | validada |
-| AUT-000084 | autoral | M09 | 9.9 | Autenticação multifator (MFA): fatores de autenticação | Média | Análise | E | validada |
-| AUT-000085 | autoral | M09 | 9.12 | Inteligência de ameaças: IoC, TTP e níveis | Média | Compreensão | C | validada |
-| AUT-000086 | autoral | M09 | 9.11 | Resposta a incidentes: fases do ciclo (NIST SP 800-61 Rev. 2) | Fácil | Aplicação | D | validada |
-| AUT-000087 | autoral | M09 | 9.14 | Modelagem de ameaças: categorias do STRIDE | Difícil | Análise | A | validada |
-| AUT-000088 | autoral | M09 | 9.16 | Gestão de riscos: perda esperada anual (SLE e ALE) | Difícil | Resolução de problemas | C | validada |
-| AUT-000089 | autoral | M09 | 9.19 | Assinatura digital: propriedades garantidas | Média | Análise | E | validada |
-| AUT-000090 | autoral | M09 | 9.20 | Segurança em nuvem: responsabilidade compartilhada | Fácil | Compreensão | B | validada |
+`validada` = aprovada pelo usuário (sem revisão por terceiros). `em_revisao` = produzida na fase P1 (T04 a T06) e **ainda não validada pelo usuário**. Questões oficiais trazem prova e número no campo `fonte_origem`; gabaritos de 2023 são de espelho de terceiros, **não validados contra a banca**. O catálogo das provas (metadados, sem enunciados) está em `docs/estrategia/catalogo-questoes-historicas.md`.
 
-Arquivos:
-- `autorais/por-assunto/m01-arquitetura-dados-gabaritos-comentados.md`
-- `autorais/por-assunto/m01-arquitetura-dados-questoes.md`
-- `autorais/por-assunto/m01-arquitetura-dados.json`
-- `autorais/por-assunto/m02-projetos-produtos-gabaritos-comentados.md`
-- `autorais/por-assunto/m02-projetos-produtos-questoes.md`
-- `autorais/por-assunto/m02-projetos-produtos.json`
-- `autorais/por-assunto/m03-processos-gerenciamento-gabaritos-comentados.md`
-- `autorais/por-assunto/m03-processos-gerenciamento-questoes.md`
-- `autorais/por-assunto/m03-processos-gerenciamento.json`
-- `autorais/por-assunto/m04-governanca-ti-gabaritos-comentados.md`
-- `autorais/por-assunto/m04-governanca-ti-questoes.md`
-- `autorais/por-assunto/m04-governanca-ti.json`
-- `autorais/por-assunto/m05-engenharia-software-gabaritos-comentados.md`
-- `autorais/por-assunto/m05-engenharia-software-questoes.md`
-- `autorais/por-assunto/m05-engenharia-software.json`
-- `autorais/por-assunto/m06-experiencia-usuario-gabaritos-comentados.md`
-- `autorais/por-assunto/m06-experiencia-usuario-questoes.md`
-- `autorais/por-assunto/m06-experiencia-usuario.json`
-- `autorais/por-assunto/m07-analise-dados-gabaritos-comentados.md`
-- `autorais/por-assunto/m07-analise-dados-questoes.md`
-- `autorais/por-assunto/m07-analise-dados.json`
-- `autorais/por-assunto/m08-logica-matematica-gabaritos-comentados.md`
-- `autorais/por-assunto/m08-logica-matematica-questoes.md`
-- `autorais/por-assunto/m08-logica-matematica.json`
-- `autorais/por-assunto/m09-seguranca-informacao-gabaritos-comentados.md`
-- `autorais/por-assunto/m09-seguranca-informacao-questoes.md`
-- `autorais/por-assunto/m09-seguranca-informacao.json`
+| ID | Tipo | Módulo | Item | Assunto | Dificuldade | Habilidade | Gabarito | Status | Origem |
+|---|---|---|---|---|---|---|---|---|---|
+| AUT-000001 | autoral | M01 | 1.1 | Modelagem de dados: níveis conceitual, lógico e físico | Fácil | compreensao | C | validada | — |
+| AUT-000002 | autoral | M01 | 1.4 | Normalização: dependência parcial e 2FN | Média | analise | E | validada | — |
+| AUT-000003 | autoral | M01 | 1.5 | Integridade referencial: ações ON DELETE e ON UPDATE | Média | aplicacao | B | validada | — |
+| AUT-000004 | autoral | M01 | 1.10 | SQL: junção externa, agregação e HAVING | Difícil | resolucao_problemas | A | validada | — |
+| AUT-000005 | autoral | M01 | 1.14 | Propriedades ACID e transações | Fácil | compreensao | D | validada | — |
+| AUT-000006 | autoral | M01 | 1.18 | Bancos NoSQL e diferenciação entre tipos de bancos: grafos | Média | aplicacao | B | validada | — |
+| AUT-000007 | autoral | M01 | 1.19 | Integração de dados: ETL e ELT | Média | compreensao | C | validada | — |
+| AUT-000008 | autoral | M01 | 1.7 | Modelagem dimensional: tipos de medida e grão da tabela fato | Difícil | analise | E | validada | — |
+| AUT-000009 | autoral | M01 | 1.21 | Qualidade de dados, dados mestres e dados de referência | Fácil | compreensao | A | validada | — |
+| AUT-000010 | autoral | M01 | 1.17 | Melhoria de performance: índices e predicados sargáveis | Média | avaliacao | D | validada | — |
+| AUT-000011 | autoral | M02 | 2.1 | Scrum: responsabilidades e cancelamento da Sprint | Fácil | compreensao | B | validada | — |
+| AUT-000012 | autoral | M02 | 2.1 | Scrum: artefatos e compromissos; Definição de Pronto | Difícil | analise | D | validada | — |
+| AUT-000013 | autoral | M02 | 2.1 | Scrum: Sprint Review | Fácil | compreensao | A | validada | — |
+| AUT-000014 | autoral | M02 | 2.1 | Kanban: limite de WIP e Lei de Little | Média | resolucao_problemas | E | validada | — |
+| AUT-000015 | autoral | M02 | 2.2 | Gestão de projeto versus gestão de produto | Média | aplicacao | C | validada | — |
+| AUT-000016 | autoral | M02 | 2.3 | SAFe: ART, PI e PI Planning | Média | compreensao | D | validada | — |
+| AUT-000017 | autoral | M02 | 2.4 | PMBOK 7ª edição: Estrutura Analítica do Projeto (EAP) | Fácil | compreensao | A | validada | — |
+| AUT-000018 | autoral | M02 | 2.5 | Projetos e a organização: estruturas organizacionais | Média | analise | C | validada | — |
+| AUT-000019 | autoral | M02 | 2.6 | Escritório de projetos (PMO): modelos | Média | aplicacao | E | validada | — |
+| AUT-000020 | autoral | M02 | 2.4 | PMBOK 7ª edição: domínios de desempenho | Difícil | analise | B | validada | — |
+| AUT-000021 | autoral | M03 | 3 | Grupo de Iniciação | Fácil | memorizacao | B | validada | — |
+| AUT-000022 | autoral | M03 | 3 | Validar o escopo e grupo de Monitoramento e Controle | Média | compreensao | D | validada | — |
+| AUT-000023 | autoral | M03 | 3 | Grupos de processos: quantidade de processos | Fácil | memorizacao | A | validada | — |
+| AUT-000024 | autoral | M03 | 3 | Grupos de processos, fases e interação entre processos | Difícil | analise | E | validada | — |
+| AUT-000025 | autoral | M03 | 3 | Área de Custos: processos por grupo | Média | aplicacao | C | validada | — |
+| AUT-000026 | autoral | M03 | 3 | Grupo de Execução: Partes interessadas | Fácil | compreensao | D | validada | — |
+| AUT-000027 | autoral | M03 | 3 | Áreas de conhecimento: Integração e matriz grupos × áreas | Média | analise | A | validada | — |
+| AUT-000028 | autoral | M03 | 3 | Controle integrado de mudanças | Difícil | aplicacao | C | validada | — |
+| AUT-000029 | autoral | M03 | 3 | Área de Escopo: sequência de processos do Planejamento | Média | aplicacao | E | validada | — |
+| AUT-000030 | autoral | M03 | 3 | Área de Riscos: processos por grupo | Média | analise | B | validada | — |
+| AUT-000031 | autoral | M04 | 4.6 | LGPD: agentes de tratamento e encarregado | Fácil | compreensao | B | validada | — |
+| AUT-000032 | autoral | M04 | 4.6 | LGPD: aplicação e alcance territorial | Fácil | aplicacao | D | validada | — |
+| AUT-000033 | autoral | M04 | 4.6 | LGPD: hipóteses de tratamento (bases legais) | Média | aplicacao | A | validada | — |
+| AUT-000034 | autoral | M04 | 4.6 | LGPD: sanções administrativas (art. 52) | Difícil | analise | E | validada | — |
+| AUT-000035 | autoral | M04 | 4.5 | ITSM: gerenciamento de incidentes e de problemas | Média | aplicacao | C | validada | — |
+| AUT-000036 | autoral | M04 | 4.5 | ITSM: acordos de nível de serviço (SLA, OLA e UC) | Média | compreensao | D | validada | — |
+| AUT-000037 | autoral | M04 | 4.5 | ITSM: tipos de mudança no ITIL 4 | Fácil | compreensao | A | validada | — |
+| AUT-000038 | autoral | M04 | 4.1 | Mercado de TI: modelos de serviço em nuvem | Média | aplicacao | C | validada | — |
+| AUT-000039 | autoral | M04 | 4.2 | Economia da inovação: tipos de inovação | Difícil | analise | E | validada | — |
+| AUT-000040 | autoral | M04 | 4.4 | Ciência, pesquisa e desenvolvimento: níveis de prontidão tecnológica (TRL) | Fácil | compreensao | B | validada | — |
+| AUT-000041 | autoral | M05 | 5.1 | Requisitos funcionais e não funcionais | Fácil | compreensao | B | validada | — |
+| AUT-000042 | autoral | M05 | 5.1 | Priorização de requisitos: MoSCoW | Fácil | aplicacao | D | validada | — |
+| AUT-000043 | autoral | M05 | 5.2 | Ciclo de vida: modelo em V | Fácil | memorizacao | A | validada | — |
+| AUT-000044 | autoral | M05 | 5.2 | Ciclo de vida: modelo em espiral | Média | aplicacao | E | validada | — |
+| AUT-000045 | autoral | M05 | 5.3 | Paradigma orientado a objetos: herança e ligação dinâmica | Difícil | resolucao_problemas | C | validada | — |
+| AUT-000046 | autoral | M05 | 5.3 | UML: diagrama de casos de uso (include e extend) | Média | aplicacao | D | validada | — |
+| AUT-000047 | autoral | M05 | 5.4 | Teste de software: complexidade ciclomática | Difícil | resolucao_problemas | A | validada | — |
+| AUT-000048 | autoral | M05 | 5.4 | Teste de software: análise do valor limite | Média | aplicacao | C | validada | — |
+| AUT-000049 | autoral | M05 | 5.4 | Verificação e validação | Média | analise | E | validada | — |
+| AUT-000050 | autoral | M05 | 5.5 | Ambientes de desenvolvimento: CI/CD | Média | compreensao | B | validada | — |
+| AUT-000051 | autoral | M06 | 6.1 | Acessibilidade: princípios do WCAG (POUR) | Média | analise | B | validada | — |
+| AUT-000052 | autoral | M06 | 6.2 | Histórias do usuário: critério INVEST | Fácil | aplicacao | D | validada | — |
+| AUT-000053 | autoral | M06 | 6.3 | Interação web: arquitetura da informação e classificação de cartões | Fácil | compreensao | A | validada | — |
+| AUT-000054 | autoral | M06 | 6.4 | Projeto centrado no usuário: avaliação heurística e teste de usabilidade | Média | analise | E | validada | — |
+| AUT-000055 | autoral | M06 | 6.5 | Storytelling com dados: escolha de gráficos e boas práticas | Difícil | analise | C | validada | — |
+| AUT-000056 | autoral | M06 | 6.6 | Relatórios e dashboards: tipos de dashboard | Fácil | aplicacao | D | validada | — |
+| AUT-000057 | autoral | M06 | 6.7 | Interoperabilidade entre navegadores: detecção de recursos e melhoria progressiva | Média | aplicacao | A | validada | — |
+| AUT-000058 | autoral | M06 | 6.8 | MVP e prototipação: distinção entre MVP e protótipo | Difícil | analise | C | validada | — |
+| AUT-000059 | autoral | M06 | 6.10 | Design thinking: etapas do processo | Fácil | memorizacao | E | validada | — |
+| AUT-000060 | autoral | M06 | 6.11 | Análise de personas: persona, perfil e papel | Média | compreensao | B | validada | — |
+| AUT-000061 | autoral | M07 | 7.1 | Dado, informação, conhecimento e inteligência | Fácil | aplicacao | B | validada | — |
+| AUT-000062 | autoral | M07 | 7.2 | Business intelligence: tipos de análise | Média | aplicacao | D | validada | — |
+| AUT-000063 | autoral | M07 | 7.3 | Mapeamento de fontes de dados | Fácil | aplicacao | A | validada | — |
+| AUT-000064 | autoral | M07 | 7.4 | Dados estruturados, semiestruturados e não estruturados | Média | compreensao | E | validada | — |
+| AUT-000065 | autoral | M07 | 7.5 | OLAP: operações de slice e dice | Difícil | resolucao_problemas | C | validada | — |
+| AUT-000066 | autoral | M07 | 7.6 | Data warehouse: características | Média | analise | D | validada | — |
+| AUT-000067 | autoral | M07 | 7.7 | Modelagem multidimensional: tipos de tabela fato | Fácil | aplicacao | A | validada | — |
+| AUT-000068 | autoral | M07 | 7.9 | Manipulação de dados em planilhas: SOMASES | Média | resolucao_problemas | C | validada | — |
+| AUT-000069 | autoral | M07 | 7.8 | Ferramentas de BI: medidas, colunas calculadas e interatividade | Média | compreensao | E | validada | — |
+| AUT-000070 | autoral | M07 | 7.10 | Insights e BI na tomada de decisão: correlação e causalidade | Difícil | avaliacao | B | validada | — |
+| AUT-000071 | autoral | M08 | 8.1 | Negação de proposição condicional | Fácil | aplicacao | B | validada | — |
+| AUT-000072 | autoral | M08 | 8.6 | Sistemas dedutivos: correção e completude | Média | compreensao | D | validada | — |
+| AUT-000073 | autoral | M08 | 8.8 | Valores-verdade de proposições compostas | Média | resolucao_problemas | A | validada | — |
+| AUT-000074 | autoral | M08 | 8.8 | Tautologia, contradição e contingência | Média | analise | E | validada | — |
+| AUT-000075 | autoral | M08 | 8.2 | Argumentos: validade | Difícil | analise | C | validada | — |
+| AUT-000076 | autoral | M08 | 8.3 | Lógica sentencial: equivalência lógica do condicional | Média | aplicacao | D | validada | — |
+| AUT-000077 | autoral | M08 | 8.4 | Lógica de predicados: negação de sentenças quantificadas | Média | aplicacao | A | validada | — |
+| AUT-000078 | autoral | M08 | 8.4 | Lógica de predicados: ordem dos quantificadores | Difícil | analise | C | validada | — |
+| AUT-000079 | autoral | M08 | 8.5 | Regras de formação de fórmulas | Fácil | memorizacao | E | validada | — |
+| AUT-000080 | autoral | M08 | 8.7 | Decidibilidade da lógica sentencial e funções de avaliação | Fácil | compreensao | B | validada | — |
+| AUT-000081 | autoral | M09 | 9.4 | Ataques: injeção de SQL e consulta parametrizada | Média | aplicacao | B | validada | — |
+| AUT-000082 | autoral | M09 | 9.2 | Operação de segurança: backup completo e diferencial | Média | resolucao_problemas | D | validada | — |
+| AUT-000083 | autoral | M09 | 9.3 | Softwares maliciosos: classificação pelo comportamento | Fácil | aplicacao | A | validada | — |
+| AUT-000084 | autoral | M09 | 9.9 | Autenticação multifator (MFA): fatores de autenticação | Média | analise | E | validada | — |
+| AUT-000085 | autoral | M09 | 9.12 | Inteligência de ameaças: IoC, TTP e níveis | Média | compreensao | C | validada | — |
+| AUT-000086 | autoral | M09 | 9.11 | Resposta a incidentes: fases do ciclo (NIST SP 800-61 Rev. 2) | Fácil | aplicacao | D | validada | — |
+| AUT-000087 | autoral | M09 | 9.14 | Modelagem de ameaças: categorias do STRIDE | Difícil | analise | A | validada | — |
+| AUT-000088 | autoral | M09 | 9.16 | Gestão de riscos: perda esperada anual (SLE e ALE) | Difícil | resolucao_problemas | C | validada | — |
+| AUT-000089 | autoral | M09 | 9.19 | Assinatura digital: propriedades garantidas | Média | analise | E | validada | — |
+| AUT-000090 | autoral | M09 | 9.20 | Segurança em nuvem: responsabilidade compartilhada | Fácil | compreensao | B | validada | — |
+| AUT-000091 | autoral | M01 | 1.2 | Mapeamento do DER para o modelo relacional: relacionamento N:N com atributo | Média | aplicacao | C | em_revisao | — |
+| AUT-000092 | autoral | M01 | 1.8 | Avaliação de modelos: redundância e atributos derivados | Média | avaliacao | A | em_revisao | — |
+| AUT-000093 | autoral | M01 | 1.9 | Engenharia reversa de banco de dados legado | Média | analise | E | em_revisao | — |
+| AUT-000094 | autoral | M01 | 1.11 | DDL: classificação dos comandos SQL | Fácil | memorizacao | B | em_revisao | — |
+| AUT-000095 | autoral | M01 | 1.12 | DML: UPDATE, DELETE e INSERT em sequência | Média | resolucao_problemas | D | em_revisao | — |
+| AUT-000096 | autoral | M01 | 1.15 | Independência de dados: lógica x física | Média | compreensao | B | em_revisao | — |
+| AUT-000097 | autoral | M01 | 1.16 | Transações: COMMIT, ROLLBACK e SAVEPOINT | Difícil | resolucao_problemas | E | em_revisao | — |
+| AUT-000098 | autoral | M01 | 1.20 | Banco de dados em memória | Média | compreensao | C | em_revisao | — |
+| AUT-000099 | autoral | M01 | 1.16 | Transações concorrentes: leitura fantasma | Difícil | analise | D | em_revisao | — |
+| AUT-000100 | autoral | M02 | 2.7 | Modelos de gestão: escolha do modelo e abordagem híbrida | Média | avaliacao | A | em_revisao | — |
+| AUT-000101 | autoral | M02 | 2.6 | Escritório de projetos: modelo de suporte, controle e diretivo | Média | compreensao | E | em_revisao | — |
+| AUT-000102 | autoral | M03 | 3 | Grupos de processos: associação de processos aos grupos | Média | memorizacao | B | em_revisao | — |
+| AUT-000103 | autoral | M03 | 3 | Áreas de conhecimento do PMBOK (6ª edição) | Fácil | memorizacao | C | em_revisao | — |
+| AUT-000104 | autoral | M04 | 4.6 | LGPD: controlador, operador e encarregado | Média | aplicacao | D | em_revisao | — |
+| AUT-000105 | autoral | M04 | 4.5 | ITSM: gerenciamento de incidentes x problemas | Média | aplicacao | A | em_revisao | — |
+| AUT-000106 | autoral | M05 | 5.4 | Complexidade ciclomática e testes de caminho básico | Média | resolucao_problemas | B | em_revisao | — |
+| AUT-000107 | autoral | M05 | 5.5 | Ambientes de desenvolvimento: integração contínua | Fácil | compreensao | E | em_revisao | — |
+| AUT-000108 | autoral | M06 | 6.2 | Histórias de usuário: critérios INVEST | Média | analise | C | em_revisao | — |
+| AUT-000109 | autoral | M06 | 6.11 | Personas em projeto centrado no usuário | Média | compreensao | D | em_revisao | — |
+| AUT-000110 | autoral | M07 | 7.11 | BI como suporte à tomada de decisão | Média | avaliacao | A | em_revisao | — |
+| AUT-000111 | autoral | M07 | 7.5 | OLAP: roll-up, slice e pivot | Média | compreensao | B | em_revisao | — |
+| AUT-000112 | autoral | M08 | 8.9 | Funções de avaliação (valoração) | Média | aplicacao | C | em_revisao | — |
+| AUT-000113 | autoral | M09 | 9.1 | Segurança física e lógica: classificação de controles | Fácil | compreensao | D | em_revisao | — |
+| AUT-000114 | autoral | M09 | 9.6 | VPN: IPsec em modo túnel | Média | compreensao | E | em_revisao | — |
+| AUT-000115 | autoral | M09 | 9.7 | MDM: gerenciamento de dispositivos móveis | Média | aplicacao | A | em_revisao | — |
+| AUT-000116 | autoral | M09 | 9.8 | SSO: vantagens e riscos | Média | analise | B | em_revisao | — |
+| AUT-000117 | autoral | M09 | 9.13 | Teste de penetração: autorização e escopo | Média | aplicacao | C | em_revisao | — |
+| AUT-000118 | autoral | M09 | 9.17 | Política de segurança da informação | Média | compreensao | D | em_revisao | — |
+| AUT-000119 | autoral | M09 | 9.18 | Classificação das informações | Média | compreensao | E | em_revisao | — |
+| AUT-000120 | autoral | M09 | 9.21 | Segurança em IoT: credenciais padrão e atualização | Média | aplicacao | A | em_revisao | — |
+| AUT-000121 | autoral | Gerais · Port. | LP-01 | Compreensão: ideia central do texto | Fácil | compreensao | B | em_revisao | — |
+| AUT-000122 | autoral | Gerais · Port. | LP-01 | Compreensão: inferência | Média | interpretacao | D | em_revisao | — |
+| AUT-000123 | autoral | Gerais · Port. | LP-02 | Ortografia: grafia correta de palavras | Média | memorizacao | A | em_revisao | — |
+| AUT-000124 | autoral | Gerais · Port. | LP-02 | Ortografia: acentuação gráfica após o Acordo Ortográfico | Média | memorizacao | C | em_revisao | — |
+| AUT-000125 | autoral | Gerais · Port. | LP-03 | Coesão: valor do conector "Por isso" | Média | compreensao | A | em_revisao | — |
+| AUT-000126 | autoral | Gerais · Port. | LP-03 | Coesão: referência e retomada | Média | compreensao | C | em_revisao | — |
+| AUT-000127 | autoral | Gerais · Port. | LP-04 | Significação: paráfrase de expressão concessiva | Média | compreensao | E | em_revisao | — |
+| AUT-000128 | autoral | Gerais · Port. | LP-04 | Significação: parônimos infringir e infligir | Média | memorizacao | B | em_revisao | — |
+| AUT-000129 | autoral | Gerais · Port. | LP-05 | Tempos e modos verbais: correlação imperfeito do subjuntivo e futuro do pretérito | Média | aplicacao | D | em_revisao | — |
+| AUT-000130 | autoral | Gerais · Port. | LP-05 | Tempos e modos verbais: futuro do subjuntivo do verbo "propor" | Média | aplicacao | B | em_revisao | — |
+| AUT-000131 | autoral | Gerais · Port. | LP-06 | Classes de palavras: valor do "que" | Média | analise | D | em_revisao | — |
+| AUT-000132 | autoral | Gerais · Port. | LP-06 | Classes de palavras: mau, mal | Fácil | aplicacao | A | em_revisao | — |
+| AUT-000133 | autoral | Gerais · Port. | LP-07 | Coordenação: oração coordenada sindética conclusiva | Média | analise | C | em_revisao | — |
+| AUT-000134 | autoral | Gerais · Port. | LP-07 | Subordinação: oração subordinada adverbial concessiva | Média | analise | E | em_revisao | — |
+| AUT-000135 | autoral | Gerais · Port. | LP-08 | Pontuação: uso da vírgula | Média | aplicacao | C | em_revisao | — |
+| AUT-000136 | autoral | Gerais · Port. | LP-08 | Pontuação: oração adjetiva restritiva e explicativa | Difícil | analise | E | em_revisao | — |
+| AUT-000137 | autoral | Gerais · Port. | LP-09 | Concordância verbal: verbos "existir" e "haver" | Média | aplicacao | B | em_revisao | — |
+| AUT-000138 | autoral | Gerais · Port. | LP-09 | Concordância nominal: anexo, meio | Média | aplicacao | D | em_revisao | — |
+| AUT-000139 | autoral | Gerais · Port. | LP-10 | Regência verbal: obedecer, assistir, aspirar, esquecer | Média | aplicacao | A | em_revisao | — |
+| AUT-000140 | autoral | Gerais · Port. | LP-10 | Regência nominal: contrário a, favorável a | Média | aplicacao | D | em_revisao | — |
+| AUT-000141 | autoral | Gerais · Port. | LP-11 | Crase: emprego correto do acento grave | Média | aplicacao | A | em_revisao | — |
+| AUT-000142 | autoral | Gerais · Port. | LP-11 | Crase: nome de lugar modificado | Difícil | aplicacao | C | em_revisao | — |
+| AUT-000143 | autoral | Gerais · Port. | LP-12 | Colocação pronominal: ênclise e próclise | Média | aplicacao | E | em_revisao | — |
+| AUT-000144 | autoral | Gerais · Port. | LP-12 | Colocação pronominal: palavra atrativa "que" | Média | aplicacao | B | em_revisao | — |
+| AUT-000145 | autoral | Gerais · Ing. | LI-01 | Compreensão (inglês): ideia principal do texto | Média | compreensao | E | em_revisao | — |
+| AUT-000146 | autoral | Gerais · Ing. | LI-01 | Compreensão (inglês): finalidade do uso de gêmeos digitais | Média | compreensao | B | em_revisao | — |
+| AUT-000147 | autoral | Gerais · Ing. | LI-01 | Compreensão (inglês): referência do pronome "which" | Difícil | interpretacao | D | em_revisao | — |
+| AUT-000148 | autoral | Gerais · Ing. | LI-01 | Compreensão (inglês): vocabulário em contexto | Média | compreensao | A | em_revisao | — |
+| AUT-000149 | autoral | Gerais · Ing. | LI-01 | Compreensão (inglês): ideia central sobre phishing | Média | compreensao | C | em_revisao | — |
+| AUT-000150 | autoral | Gerais · Ing. | LI-01 | Compreensão (inglês): conectivo "Although" | Média | analise | A | em_revisao | — |
+| AUT-000151 | autoral | Gerais · Ing. | LI-02 | Gramática (inglês): oração condicional hipotética | Média | aplicacao | C | em_revisao | — |
+| AUT-000152 | autoral | Gerais · Ing. | LI-02 | Gramática (inglês): voz passiva | Média | aplicacao | E | em_revisao | — |
+| AUT-000153 | autoral | Gerais · Ing. | LI-02 | Gramática (inglês): pronomes relativos | Fácil | aplicacao | B | em_revisao | — |
+| AUT-000154 | autoral | Gerais · Ing. | LI-02 | Gramática (inglês): comparativo de superioridade | Fácil | aplicacao | D | em_revisao | — |
+| AUT-000155 | autoral | Gerais · Ing. | LI-02 | Gramática (inglês): modal "don't have to" | Média | compreensao | B | em_revisao | — |
+| OFI-000001 | oficial | M01 | 1.3 | Álgebra relacional: operador unário | Fácil | memorizacao | B | em_revisao | Transpetro PSP/Terra 002/2023 2023, Prova 6, Q26 (PRV-005) |
+| OFI-000002 | oficial | M01 | 1.17 | Desempenho de banco de dados: desnormalização controlada | Média | avaliacao | B | em_revisao | Transpetro PSP/Terra 002/2023 2023, Prova 6, Q45 (PRV-005) |
+| OFI-000003 | oficial | M01 | 1.23 | Bancos de documentos x relacionais x grafos | Fácil | compreensao | D | em_revisao | Transpetro PSP/Terra 002/2023 2023, Prova 6, Q46 (PRV-005) |
+| OFI-000004 | oficial | M01 | 1.18 | Banco de grafos: consulta em Cypher | Média | aplicacao | A | em_revisao | Transpetro PSP/Terra 002/2023 2023, Prova 6, Q48 (PRV-005) |
+| OFI-000005 | oficial | M01 | 1.10 | SQL: autojunção em tabela de hierarquia | Média | aplicacao | A | em_revisao | Transpetro PSP/Terra 002/2023 2023, Prova 6, Q49 (PRV-005) |
+| OFI-000006 | oficial | M01 | 1.6 | Metadados em SGBD relacional | Fácil | compreensao | E | em_revisao | Transpetro PSP/Terra 002/2023 2023, Prova 6, Q50 (PRV-005) |
+| OFI-000007 | oficial | M01 | 1.13 | SGBD: otimizador de consultas (alternativa NÃO) | Média | compreensao | D | em_revisao | Transpetro PSP/Terra 002/2023 2023, Prova 6, Q51 (PRV-005) |
+| OFI-000008 | oficial | M01 | 1.22 | Data lakes e Big Data | Média | compreensao | B | em_revisao | Transpetro PSP/Terra 002/2023 2023, Prova 6, Q52 (PRV-005) |
+| OFI-000009 | oficial | M01 | 1.14 | Propriedades ACID | Fácil | memorizacao | C | em_revisao | Transpetro PSP/Terra 002/2023 2023, Prova 6, Q53 (PRV-005) |
+| OFI-000010 | oficial | M01 | 1.1 | Modelagem conceitual | Fácil | compreensao | E | em_revisao | Transpetro PSP/Terra 002/2023 2023, Prova 6, Q63 (PRV-005) |
+| OFI-000011 | oficial | M01 | 1.4 | Normalização: objetivo | Fácil | compreensao | A | em_revisao | Transpetro PSP/Terra 002/2023 2023, Prova 6, Q64 (PRV-005) |
+| OFI-000012 | oficial | M02 | 2.4 | Ciclos de vida: modelo em cascata | Fácil | compreensao | E | em_revisao | Transpetro PSP/Terra 002/2023 2023, Prova 6, Q54 (PRV-005) |
+| OFI-000013 | oficial | M02 | 2.1 | Scrum x Kanban | Média | compreensao | A | em_revisao | Transpetro PSP/Terra 002/2023 2023, Prova 6, Q65 (PRV-005) |
+| OFI-000014 | oficial | M02 | 2.4 | EAP (Estrutura Analítica do Projeto) | Fácil | memorizacao | D | em_revisao | Transpetro PSP/Terra 002/2023 2023, Prova 6, Q67 (PRV-005) |
+| OFI-000015 | oficial | M02 | 2.3 | SAFe: Program Increment (PI) | Média | compreensao | C | em_revisao | Transpetro PSP/Terra 002/2023 2023, Prova 6, Q68 (PRV-005) |
+| OFI-000016 | oficial | M02 | 2.5 | Estruturas organizacionais: matriz forte | Fácil | memorizacao | C | em_revisao | Transpetro PSP/Terra 002/2023 2023, Prova 6, Q69 (PRV-005) |
+| OFI-000017 | oficial | M03 | 3 | Sequência dos grupos de processos | Fácil | compreensao | B | em_revisao | Transpetro PSP/Terra 002/2023 2023, Prova 6, Q55 (PRV-005) |
+| OFI-000018 | oficial | M03 | 3 | Grupo de monitoramento e controle | Fácil | compreensao | A | em_revisao | Transpetro PSP/Terra 002/2023 2023, Prova 6, Q70 (PRV-005) |
+| OFI-000019 | oficial | M04 | 4.6 | LGPD: âmbito de aplicação e consentimento | Média | analise | B | em_revisao | Transpetro PSP/Terra 002/2023 2023, Prova 6, Q57 (PRV-005) |
+| OFI-000020 | oficial | M04 | 4 | Governança corporativa e de TI | Fácil | compreensao | C | em_revisao | Transpetro PSP/Terra 002/2023 2023, Prova 6, Q59 (PRV-005) |
+| OFI-000021 | oficial | M04 | 4.2 | Economia da inovação: custo de oportunidade | Média | compreensao | B | em_revisao | Transpetro PSP/Terra 002/2023 2023, Prova 6, Q60 (PRV-005) |
+| OFI-000022 | oficial | M04 | 4.3 | Internet das Coisas | Fácil | compreensao | C | em_revisao | Transpetro PSP/Terra 002/2023 2023, Prova 6, Q61 (PRV-005) |
+| OFI-000023 | oficial | M04 | 4.5 | KPIs em gerenciamento de serviços de TI | Média | compreensao | D | em_revisao | Transpetro PSP/Terra 002/2023 2023, Prova 6, Q66 (PRV-005) |
+| OFI-000024 | oficial | M05 | 5.1 | Requisitos funcionais x não funcionais | Média | analise | A | em_revisao | Transpetro PSP/Terra 002/2023 2023, Prova 6, Q24 (PRV-005) |
+| OFI-000025 | oficial | M05 | 5.2 | Ciclos de vida sequenciais | Fácil | compreensao | D | em_revisao | Transpetro PSP/Terra 002/2023 2023, Prova 6, Q25 (PRV-005) |
+| OFI-000026 | oficial | M05 | 5.4 | Testes de aceitação | Fácil | compreensao | B | em_revisao | Transpetro PSP/Terra 002/2023 2023, Prova 6, Q31 (PRV-005) |
+| OFI-000027 | oficial | M05 | 5.3 | Orientação a objetos: sobrecarga | Fácil | memorizacao | D | em_revisao | Transpetro PSP/Terra 002/2023 2023, Prova 6, Q32 (PRV-005) |
+| OFI-000028 | oficial | M06 | 6.9 | Prototipação de alta fidelidade | Média | compreensao | E | em_revisao | Transpetro PSP/Terra 002/2023 2023, Prova 6, Q29 (PRV-005) |
+| OFI-000029 | oficial | M06 | 6.1 | Acessibilidade e usabilidade no processo de desenvolvimento | Média | analise | E | em_revisao | Transpetro PSP/Terra 002/2023 2023, Prova 6, Q33 (PRV-005) |
+| OFI-000030 | oficial | M06 | 6.10 | Design Thinking: mapa de empatia | Fácil | memorizacao | D | em_revisao | Transpetro PSP/Terra 002/2023 2023, Prova 6, Q34 (PRV-005) |
+| OFI-000031 | oficial | M06 | 6.8 | MVP: Mínimo Produto Viável | Média | compreensao | A | em_revisao | Transpetro PSP/Terra 002/2023 2023, Prova 6, Q58 (PRV-005) |
+| OFI-000032 | oficial | M07 | 7.6 | Data warehouse: característica | Média | compreensao | B | em_revisao | Transpetro PSP/Terra 002/2023 2023, Prova 6, Q56 (PRV-005) |
+| OFI-000033 | oficial | M08 | 8.2 | Argumento válido: conclusão a partir das premissas | Média | resolucao_problemas | D | em_revisao | Transpetro PSP/Terra 002/2023 2023, Prova 6, Q28 (PRV-005) |
+| OFI-000034 | oficial | M08 | 8.4 | Consequência lógica de sentença quantificada | Média | analise | B | em_revisao | Transpetro PSP/Terra 002/2023 2023, Prova 6, Q35 (PRV-005) |
+| OFI-000035 | oficial | M09 | 9.5 | SDL: testes SAST x DAST | Média | compreensao | B | em_revisao | Transpetro PSP/Terra 002/2023 2023, Prova 6, Q38 (PRV-005) |
+| OFI-000036 | oficial | M09 | 9.10 | Controle de acesso: ABAC x RBAC | Média | aplicacao | A | em_revisao | Transpetro PSP/Terra 002/2023 2023, Prova 6, Q39 (PRV-005) |
+| OFI-000037 | oficial | M09 | 9.15 | MITRE ATT&CK: táticas | Média | memorizacao | E | em_revisao | Transpetro PSP/Terra 002/2023 2023, Prova 6, Q40 (PRV-005) |
+| OFI-000038 | oficial | M09 | 9.19 | Criptografia híbrida: envelope digital | Média | compreensao | D | em_revisao | Transpetro PSP/Terra 002/2023 2023, Prova 6, Q41 (PRV-005) |
+| OFI-000039 | oficial | M09 | 9.11 | Resposta a incidentes: NIST SP 800-61 | Fácil | memorizacao | C | em_revisao | Transpetro PSP/Terra 002/2023 2023, Prova 6, Q42 (PRV-005) |
+| OFI-000040 | oficial | M09 | 9.2 | SIEM | Fácil | compreensao | D | em_revisao | Transpetro PSP/Terra 002/2023 2023, Prova 6, Q43 (PRV-005) |
+| OFI-000041 | oficial | M09 | 9.19 | ISO/IEC 27002: proteção contra malware | Média | memorizacao | A | em_revisao | Transpetro PSP/Terra 002/2023 2023, Prova 6, Q44 (PRV-005) |

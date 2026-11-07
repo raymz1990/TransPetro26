@@ -1,0 +1,452 @@
+{
+ "modulo": "Questões autorais — m01-arquitetura-dados (expansão T05)",
+ "lote": "T05 — expansão",
+ "data": "2026-11-06",
+ "total": 9,
+ "questoes": [
+  {
+   "id": "AUT-000091",
+   "tipo": "autoral",
+   "rotulo": "Questão autoral — estilo Cesgranrio.",
+   "modulo": "01-arquitetura-dados",
+   "assunto": "Mapeamento do DER para o modelo relacional: relacionamento N:N com atributo",
+   "item_edital": "1.2",
+   "id_matriz": "E5-003",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "aplicacao",
+   "tipo_questao": "aplicada",
+   "enunciado": "Em um diagrama entidade-relacionamento, as entidades ALUNO (matricula, nome) e DISCIPLINA (codigo, nome) se relacionam por meio do relacionamento MATRICULA_EM, de cardinalidade N:N, que possui o atributo nota.\n\nNo mapeamento para o modelo relacional, a solução que preserva as regras do diagrama é",
+   "alternativas": {
+    "A": "incluir em ALUNO as colunas codigo (chave estrangeira para DISCIPLINA) e nota, pois cada aluno cursa uma disciplina por vez.",
+    "B": "incluir em DISCIPLINA as colunas matricula (chave estrangeira para ALUNO) e nota, de modo que cada disciplina registre o seu aluno.",
+    "C": "criar a tabela MATRICULA_EM (matricula, codigo, nota), com chave primária composta (matricula, codigo) e chaves estrangeiras para ALUNO e DISCIPLINA.",
+    "D": "unir ALUNO e DISCIPLINA em uma só tabela, com as colunas disciplina1, disciplina2 e disciplina3, cada uma acompanhada de sua nota.",
+    "E": "criar a tabela MATRICULA_EM (matricula, codigo, nota) com chave primária apenas em matricula, para impedir registros duplicados."
+   },
+   "gabarito": "C",
+   "resolucao": "Relacionamento **N:N** vira **tabela associativa**, cuja chave primária é composta pelas chaves das duas entidades e que carrega os atributos do relacionamento (aqui, `nota`). Cada coluna de chave é também chave estrangeira.",
+   "analise_alternativas": {
+    "A": "Incorreta. Impõe que cada aluno tenha uma só disciplina (relação 1:N no sentido contrário) e coloca `nota` em ALUNO, perdendo a associação com a disciplina.",
+    "B": "Incorreta. Impõe que cada disciplina tenha um só aluno e coloca `nota` fora de contexto.",
+    "C": "Correta. Tabela associativa com PK composta e duas FKs, com `nota` na tabela de associação, é o mapeamento correto.",
+    "D": "Incorreta. Colunas repetidas (disciplina1, disciplina2...) violam a 1FN e limitam o número de disciplinas.",
+    "E": "Incorreta. PK apenas em `matricula` permitiria uma única matrícula por aluno, o que contradiz a cardinalidade N:N."
+   },
+   "fundamentacao": {
+    "item": "1.2",
+    "arquivo_teoria": "conteudo/01-arquitetura-dados/02-modelagem-dados.md"
+   },
+   "ponto_atencao": "Regra de ouro do mapeamento: **N:N ⇒ nova tabela**; atributos do relacionamento ficam na nova tabela; PK composta = (PK de A, PK de B).",
+   "revisao_rapida": "N:N → tabela associativa (PK composta + 2 FKs).",
+   "tags": [
+    "mapeamento-der",
+    "modelo-relacional",
+    "m01",
+    "item-1.2",
+    "autoral",
+    "media",
+    "aplicacao"
+   ],
+   "fonte_origem": null,
+   "verificacao": "Resolução conferida pela teoria do projeto.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "AUT-000092",
+   "tipo": "autoral",
+   "rotulo": "Questão autoral — estilo Cesgranrio.",
+   "modulo": "01-arquitetura-dados",
+   "assunto": "Avaliação de modelos: redundância e atributos derivados",
+   "item_edital": "1.8",
+   "id_matriz": "E5-009",
+   "itens_secundarios": [
+    "1.4"
+   ],
+   "dificuldade": "media",
+   "habilidade": "avaliacao",
+   "tipo_questao": "cenario",
+   "enunciado": "Ao avaliar o modelo lógico de um sistema de vendas, um analista observa que a tabela ITEM_PEDIDO (id_pedido, id_produto, quantidade, preco_unitario, valor_total_pedido) repete, em cada linha do mesmo pedido, o valor total do pedido, que é a soma de quantidade × preco_unitario de todos os itens.\n\nSob os critérios usuais de avaliação de modelos de dados, o principal problema dessa estrutura é",
+   "alternativas": {
+    "A": "a presença de um atributo derivado e redundante, que gera risco de inconsistência quando um item muda e o total não é atualizado.",
+    "B": "a ausência de integridade referencial entre ITEM_PEDIDO e PRODUTO, pois nenhuma chave estrangeira foi declarada no modelo avaliado.",
+    "C": "a cardinalidade incorreta entre pedido e item, pois um pedido deveria ter exatamente um item.",
+    "D": "o uso de nomes longos para as colunas, que prejudica a legibilidade e a aderência ao padrão de nomenclatura.",
+    "E": "a falta de índices sobre id_produto, que compromete o desempenho físico das consultas de vendas."
+   },
+   "gabarito": "A",
+   "resolucao": "`valor_total_pedido` é **derivado** (calculável a partir dos itens) e está **repetido** em várias linhas. Isso viola o critério de **ausência de redundância** e provoca **anomalias de atualização**: alterar um item sem atualizar todas as repetições deixa o banco inconsistente. Alternativas: calcular o total em consulta/visão, ou, se for armazenado por desempenho, guardá-lo no cabeçalho do pedido, com mecanismo de atualização.",
+   "analise_alternativas": {
+    "A": "Correta. É o problema apresentado no enunciado: redundância de dado derivado e risco de inconsistência.",
+    "B": "Incorreta. O enunciado não informa a ausência de chaves estrangeiras; a descrição trata da repetição do total.",
+    "C": "Incorreta. Um pedido tem vários itens; a cardinalidade 1:N é correta e não é o problema.",
+    "D": "Incorreta. Nomes de colunas não são problema no trecho apresentado.",
+    "E": "Incorreta. Índices são questão de desempenho físico e não são mencionados; o defeito é do modelo lógico."
+   },
+   "fundamentacao": {
+    "item": "1.8",
+    "arquivo_teoria": "conteudo/01-arquitetura-dados/02-modelagem-dados.md"
+   },
+   "ponto_atencao": "Aplique a lista de critérios (negócio, completude, cardinalidades, **redundância**, normalização, integridade, legibilidade, desempenho) ao que o enunciado **mostra**, e não ao que você poderia imaginar.",
+   "revisao_rapida": "Atributo derivado repetido = redundância = anomalia de atualização.",
+   "tags": [
+    "avaliacao-modelos",
+    "redundancia",
+    "m01",
+    "item-1.8",
+    "autoral",
+    "media",
+    "avaliacao"
+   ],
+   "fonte_origem": null,
+   "verificacao": "Resolução conferida pela teoria do projeto.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "AUT-000093",
+   "tipo": "autoral",
+   "rotulo": "Questão autoral — estilo Cesgranrio.",
+   "modulo": "01-arquitetura-dados",
+   "assunto": "Engenharia reversa de banco de dados legado",
+   "item_edital": "1.9",
+   "id_matriz": "E5-010",
+   "itens_secundarios": [
+    "1.6"
+   ],
+   "dificuldade": "media",
+   "habilidade": "analise",
+   "tipo_questao": "comparativa",
+   "enunciado": "Uma empresa possui um banco de dados legado sem documentação e sem chaves estrangeiras declaradas. O analista decide aplicar engenharia reversa para elaborar o modelo do banco.\n\nConsidere as afirmativas a seguir.\n\nI – O catálogo do SGBD permite extrair tabelas, colunas, tipos de dados, chaves primárias e índices existentes.\nII – Na ausência de chaves estrangeiras, os relacionamentos podem ser deduzidos, com incerteza, pela convenção de nomes, pela compatibilidade de tipos, pela análise dos dados e pelo código das aplicações.\nIII – A engenharia reversa recupera integralmente as regras de negócio, como as cardinalidades mínimas e as especializações, pois elas estão registradas no catálogo.\n\nEstá correto o que se afirma em",
+   "alternativas": {
+    "A": "I, somente.",
+    "B": "III, somente.",
+    "C": "II e III, somente.",
+    "D": "I, II e III.",
+    "E": "I e II, somente."
+   },
+   "gabarito": "E",
+   "resolucao": "A engenharia reversa **reconstrói o modelo a partir do banco existente**. As afirmativas I e II descrevem técnicas válidas (extração do esquema pelo catálogo e dedução de relacionamentos). A III é falsa: o catálogo **não guarda a semântica do negócio** (cardinalidade mínima, especializações, significado das colunas), que precisa ser reconstruída com análise humana.",
+   "analise_alternativas": {
+    "A": "Incorreta. Omite a II, que também é verdadeira.",
+    "B": "Incorreta. A III é falsa; o catálogo não registra regras de negócio não implementadas no banco.",
+    "C": "Incorreta. Inclui a III, falsa.",
+    "D": "Incorreta. Inclui a III, falsa.",
+    "E": "Correta. I e II são verdadeiras e III é falsa: alternativa correta."
+   },
+   "fundamentacao": {
+    "item": "1.9",
+    "arquivo_teoria": "conteudo/01-arquitetura-dados/02-modelagem-dados.md"
+   },
+   "ponto_atencao": "Limite da engenharia reversa: recupera a **estrutura física**; a **semântica** do negócio exige validação com especialistas.",
+   "revisao_rapida": "Reversa: catálogo + inferência; não recupera regras de negócio.",
+   "tags": [
+    "engenharia-reversa",
+    "m01",
+    "item-1.9",
+    "autoral",
+    "media",
+    "analise"
+   ],
+   "fonte_origem": null,
+   "verificacao": "Resolução conferida pela teoria do projeto.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "AUT-000094",
+   "tipo": "autoral",
+   "rotulo": "Questão autoral — estilo Cesgranrio.",
+   "modulo": "01-arquitetura-dados",
+   "assunto": "DDL: classificação dos comandos SQL",
+   "item_edital": "1.11",
+   "id_matriz": "E5-012",
+   "itens_secundarios": [],
+   "dificuldade": "facil",
+   "habilidade": "memorizacao",
+   "tipo_questao": "conceitual",
+   "enunciado": "Um DBA preparou um script para criar a estrutura de um novo banco de dados, alterar uma tabela existente e remover uma tabela obsoleta.\n\nOs comandos SQL que devem constar do script, todos pertencentes à linguagem de definição de dados (DDL), são",
+   "alternativas": {
+    "A": "INSERT, UPDATE e DELETE.",
+    "B": "CREATE, ALTER e DROP.",
+    "C": "ALTER, UPDATE e DROP.",
+    "D": "SELECT, INSERT e CREATE.",
+    "E": "COMMIT, ROLLBACK e SAVEPOINT."
+   },
+   "gabarito": "B",
+   "resolucao": "A **DDL** define e altera a **estrutura** (esquema): `CREATE`, `ALTER`, `DROP`. A **DML** manipula os dados (`INSERT`, `UPDATE`, `DELETE`, `SELECT` em muitas classificações). Os comandos de controle de transação (`COMMIT`, `ROLLBACK`, `SAVEPOINT`) formam a TCL.",
+   "analise_alternativas": {
+    "A": "Incorreta. São comandos de manipulação de dados (DML).",
+    "B": "Correta. CREATE, ALTER e DROP são comandos DDL.",
+    "C": "Incorreta. UPDATE é DML; a mistura torna a alternativa incorreta.",
+    "D": "Incorreta. SELECT e INSERT não são DDL.",
+    "E": "Incorreta. São comandos de controle de transações (TCL)."
+   },
+   "fundamentacao": {
+    "item": "1.11",
+    "arquivo_teoria": "conteudo/01-arquitetura-dados/05-sql-e-sgbd.md"
+   },
+   "ponto_atencao": "DDL altera a **estrutura**; DML altera os **dados**; TCL controla **transações**; DCL controla **permissões**.",
+   "revisao_rapida": "DDL: CREATE, ALTER, DROP.",
+   "tags": [
+    "ddl",
+    "sql",
+    "m01",
+    "item-1.11",
+    "autoral",
+    "facil",
+    "memorizacao"
+   ],
+   "fonte_origem": null,
+   "verificacao": "Resolução conferida pela teoria do projeto.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "AUT-000095",
+   "tipo": "autoral",
+   "rotulo": "Questão autoral — estilo Cesgranrio.",
+   "modulo": "01-arquitetura-dados",
+   "assunto": "DML: UPDATE, DELETE e INSERT em sequência",
+   "item_edital": "1.12",
+   "id_matriz": "E5-013",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "resolucao_problemas",
+   "tipo_questao": "calculo",
+   "enunciado": "A tabela PRODUTO (id, nome, preco), com a coluna preco do tipo numérico exato, contém as linhas (1, 'A', 50), (2, 'B', 100), (3, 'C', 80) e (4, 'D', 120). Em seguida, são executados, nesta ordem, os comandos abaixo, cada um confirmado.\n\n```sql\nUPDATE produto SET preco = preco * 1.10 WHERE preco < 100;\nDELETE FROM produto WHERE preco > 110;\nINSERT INTO produto VALUES (5, 'E', 40);\nSELECT SUM(preco) FROM produto;\n```\n\nO resultado da consulta final é",
+   "alternativas": {
+    "A": "243",
+    "B": "270",
+    "C": "293",
+    "D": "283",
+    "E": "403"
+   },
+   "gabarito": "D",
+   "resolucao": "**1) UPDATE** (preco < 100): A passa de 50 para 55 e C de 80 para 88; B (100) e D (120) não mudam. **2) DELETE** (preco > 110): remove D (120). **3) INSERT**: entra E (40). Linhas finais: A=55, B=100, C=88, E=40. **SUM = 55 + 100 + 88 + 40 = 283.**",
+   "analise_alternativas": {
+    "A": "Incorreta. 243 = 55 + 100 + 88: esquece o INSERT.",
+    "B": "Incorreta. 270 = 50 + 100 + 80 + 40: ignora o UPDATE.",
+    "C": "Incorreta. 293: trata o UPDATE como `preco <= 100` (B iria a 110) ou erra a conta do reajuste.",
+    "D": "Correta. 283: resultado correto.",
+    "E": "Incorreta. 403 = 55 + 100 + 88 + 120 + 40: esquece o DELETE."
+   },
+   "fundamentacao": {
+    "item": "1.12",
+    "arquivo_teoria": "conteudo/01-arquitetura-dados/05-sql-e-sgbd.md"
+   },
+   "ponto_atencao": "Em sequências de DML, **refaça o estado da tabela após cada comando**. A ordem importa: o UPDATE precede o DELETE, e o filtro do DELETE usa o preço já reajustado.",
+   "revisao_rapida": "Estado final: A=55, B=100, C=88, E=40 → 283.",
+   "tags": [
+    "dml",
+    "update",
+    "delete",
+    "m01",
+    "item-1.12",
+    "autoral",
+    "media",
+    "resolucao_problemas"
+   ],
+   "fonte_origem": null,
+   "verificacao": "Executada em SQLite (precos inteiros equivalentes): SUM = 283.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "AUT-000096",
+   "tipo": "autoral",
+   "rotulo": "Questão autoral — estilo Cesgranrio.",
+   "modulo": "01-arquitetura-dados",
+   "assunto": "Independência de dados: lógica x física",
+   "item_edital": "1.15",
+   "id_matriz": "E5-016",
+   "itens_secundarios": [
+    "1.17"
+   ],
+   "dificuldade": "media",
+   "habilidade": "compreensao",
+   "tipo_questao": "cenario",
+   "enunciado": "Para acelerar as consultas de um sistema, a equipe de banco de dados criou novos índices e reorganizou os arquivos de armazenamento da tabela de pedidos. Nenhum programa aplicativo precisou ser alterado, e o esquema conceitual permaneceu o mesmo.\n\nO fato de os programas não terem sido afetados exemplifica a",
+   "alternativas": {
+    "A": "independência lógica de dados, que protege os programas de mudanças no esquema conceitual, como a inclusão de uma nova tabela ou coluna.",
+    "B": "independência física de dados, que permite alterar a estrutura de armazenamento sem mudar o esquema conceitual nem os programas.",
+    "C": "integridade referencial, que impede a existência de linhas órfãs ao reorganizar os arquivos da tabela.",
+    "D": "atomicidade, que assegura que a criação dos índices seja concluída por completo ou desfeita.",
+    "E": "normalização, que elimina redundâncias ao reorganizar a estrutura física das tabelas."
+   },
+   "gabarito": "B",
+   "resolucao": "A **independência física** é a capacidade de mudar o **nível interno** (arquivos, índices, organização) sem alterar o esquema conceitual nem as aplicações. A **independência lógica** é a capacidade de mudar o **esquema conceitual** (por exemplo, acrescentar uma coluna) sem alterar os **esquemas externos (visões)** e programas; é mais difícil de obter.",
+   "analise_alternativas": {
+    "A": "Incorreta. Descreve a independência lógica, que trata de mudanças no esquema conceitual; o caso do enunciado envolve apenas a estrutura de armazenamento.",
+    "B": "Correta. A mudança de índices e arquivos sem afetar o esquema conceitual e as aplicações é independência física.",
+    "C": "Incorreta. Integridade referencial trata de consistência entre chaves, não de isolamento entre programas e armazenamento.",
+    "D": "Incorreta. Atomicidade é propriedade de transações, e não explica a ausência de impacto nos programas.",
+    "E": "Incorreta. Normalização atua no projeto lógico e não se refere à organização física."
+   },
+   "fundamentacao": {
+    "item": "1.15",
+    "arquivo_teoria": "conteudo/01-arquitetura-dados/05-sql-e-sgbd.md"
+   },
+   "ponto_atencao": "Pergunte: **o que mudou?** Armazenamento (índices, arquivos) = física; esquema conceitual (tabelas, colunas) = lógica. Arquitetura de três níveis: externo, conceitual, interno.",
+   "revisao_rapida": "Física: nível interno muda; lógica: nível conceitual muda.",
+   "tags": [
+    "independencia-de-dados",
+    "tres-niveis",
+    "m01",
+    "item-1.15",
+    "autoral",
+    "media",
+    "compreensao"
+   ],
+   "fonte_origem": null,
+   "verificacao": "Resolução conferida pela teoria do projeto.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "AUT-000097",
+   "tipo": "autoral",
+   "rotulo": "Questão autoral — estilo Cesgranrio.",
+   "modulo": "01-arquitetura-dados",
+   "assunto": "Transações: COMMIT, ROLLBACK e SAVEPOINT",
+   "item_edital": "1.16",
+   "id_matriz": "E5-017",
+   "itens_secundarios": [
+    "1.12"
+   ],
+   "dificuldade": "dificil",
+   "habilidade": "resolucao_problemas",
+   "tipo_questao": "calculo",
+   "enunciado": "A tabela CONTA (id, saldo) contém a linha (1, 100). Em uma única transação, são executados os comandos a seguir.\n\n```sql\nBEGIN;\nUPDATE conta SET saldo = saldo + 50 WHERE id = 1;\nSAVEPOINT s1;\nUPDATE conta SET saldo = saldo * 2 WHERE id = 1;\nROLLBACK TO s1;\nUPDATE conta SET saldo = saldo - 30 WHERE id = 1;\nCOMMIT;\n```\n\nApós o COMMIT, o saldo da conta é",
+   "alternativas": {
+    "A": "100",
+    "B": "150",
+    "C": "90",
+    "D": "270",
+    "E": "120"
+   },
+   "gabarito": "E",
+   "resolucao": "Início: 100. Após o primeiro UPDATE: 150. `SAVEPOINT s1` marca esse estado. O segundo UPDATE leva a 300, mas `ROLLBACK TO s1` **desfaz apenas o que veio depois do savepoint**, retornando a 150 (a transação continua aberta). O terceiro UPDATE leva a 120, e o COMMIT confirma **120**.",
+   "analise_alternativas": {
+    "A": "Incorreta. 100 corresponderia a um ROLLBACK total, o que não ocorre: o rollback é parcial.",
+    "B": "Incorreta. 150 ignora o último UPDATE (−30).",
+    "C": "Incorreta. 90 seria 100 − 30, desfazendo também o primeiro UPDATE (+50).",
+    "D": "Incorreta. 270 = 300 − 30, como se o ROLLBACK TO não tivesse efeito.",
+    "E": "Correta. 120 = 150 − 30: resultado correto."
+   },
+   "fundamentacao": {
+    "item": "1.16",
+    "arquivo_teoria": "conteudo/01-arquitetura-dados/06-transacoes-e-acid.md"
+   },
+   "ponto_atencao": "`ROLLBACK TO savepoint` é **parcial** e mantém a transação aberta; `ROLLBACK` sem savepoint desfaz tudo. O que foi desfeito não volta com o COMMIT.",
+   "revisao_rapida": "Saldo: 100 → 150 → (300 desfeito) → 150 → 120.",
+   "tags": [
+    "transacao",
+    "savepoint",
+    "m01",
+    "item-1.16",
+    "autoral",
+    "dificil",
+    "resolucao_problemas"
+   ],
+   "fonte_origem": null,
+   "verificacao": "Executada em SQLite: saldo final = 120.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "AUT-000098",
+   "tipo": "autoral",
+   "rotulo": "Questão autoral — estilo Cesgranrio.",
+   "modulo": "01-arquitetura-dados",
+   "assunto": "Banco de dados em memória",
+   "item_edital": "1.20",
+   "id_matriz": "E5-021",
+   "itens_secundarios": [
+    "1.18"
+   ],
+   "dificuldade": "media",
+   "habilidade": "compreensao",
+   "tipo_questao": "conceitual",
+   "enunciado": "Uma plataforma de jogos on-line precisa atualizar e consultar um ranking de milhões de jogadores em tempo real, com latência de submilissegundos. A equipe avalia usar um banco de dados em memória, como o Redis.\n\nSobre esse tipo de banco, constata-se que",
+   "alternativas": {
+    "A": "dispensa qualquer mecanismo de persistência, pois a RAM é não volátil e mantém os dados mesmo após falta de energia no servidor.",
+    "B": "não permite estruturas de dados além de tabelas relacionais, o que o torna inadequado a rankings.",
+    "C": "mantém os dados na memória principal, reduzindo a latência, e pode ter durabilidade por snapshots, log ou réplica.",
+    "D": "é sempre mais lento que os bancos em disco, pois a memória principal tem capacidade bem menor que a dos discos e custa mais caro.",
+    "E": "só pode ser usado como cache de um banco relacional e jamais como repositório principal de dados em qualquer cenário de negócio."
+   },
+   "gabarito": "C",
+   "resolucao": "Bancos em memória evitam o gargalo do disco, mantendo os dados na **RAM**. Como a RAM é **volátil**, a durabilidade exige mecanismos adicionais: **snapshots**, **log de operações** (como o AOF do Redis) ou **replicação**. Há estruturas específicas (conjuntos ordenados para rankings, listas, hashes).",
+   "analise_alternativas": {
+    "A": "Incorreta. A RAM é volátil; sem persistência, os dados se perdem com a queda do servidor.",
+    "B": "Incorreta. O Redis, por exemplo, oferece várias estruturas (hashes, listas, conjuntos ordenados) e é adequado a rankings.",
+    "C": "Correta. Resume as características do banco em memória: baixa latência e durabilidade opcional por snapshot, log ou réplica.",
+    "D": "Incorreta. É tipicamente **mais rápido** que o acesso a disco.",
+    "E": "Incorreta. Pode ser usado como cache, mas também como repositório principal em cenários adequados."
+   },
+   "fundamentacao": {
+    "item": "1.20",
+    "arquivo_teoria": "conteudo/01-arquitetura-dados/07-bancos-nao-relacionais.md"
+   },
+   "ponto_atencao": "Banco em memória = **velocidade com custo e risco de volatilidade** (RAM mais cara e volátil). Persistência é opcional e configurável.",
+   "revisao_rapida": "In-memory: RAM, baixa latência, durabilidade por snapshot/log/réplica.",
+   "tags": [
+    "em-memoria",
+    "redis",
+    "m01",
+    "item-1.20",
+    "autoral",
+    "media",
+    "compreensao"
+   ],
+   "fonte_origem": null,
+   "verificacao": "Resolução conferida pela teoria do projeto.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "AUT-000099",
+   "tipo": "autoral",
+   "rotulo": "Questão autoral — estilo Cesgranrio.",
+   "modulo": "01-arquitetura-dados",
+   "assunto": "Transações concorrentes: leitura fantasma",
+   "item_edital": "1.16",
+   "id_matriz": "E5-017",
+   "itens_secundarios": [
+    "1.14"
+   ],
+   "dificuldade": "dificil",
+   "habilidade": "analise",
+   "tipo_questao": "cenario",
+   "enunciado": "Uma transação T1, em um sistema de pedidos, executa duas vezes a consulta `SELECT COUNT(*) FROM pedido WHERE status = 'ABERTO'`. Entre as duas execuções, outra transação, T2, insere um novo pedido com status 'ABERTO' e confirma a operação. A segunda execução da consulta em T1 devolve um valor maior que a primeira, sem que T1 tenha alterado nada.\n\nO fenômeno descrito é conhecido como",
+   "alternativas": {
+    "A": "leitura suja (dirty read).",
+    "B": "leitura não repetível (non-repeatable read).",
+    "C": "perda de atualização (lost update).",
+    "D": "leitura fantasma (phantom read).",
+    "E": "impasse (deadlock)."
+   },
+   "gabarito": "D",
+   "resolucao": "A **leitura fantasma** ocorre quando uma transação repete uma consulta com um **predicado** e encontra **novas linhas** inseridas (ou removidas) por outra transação confirmada. Na **leitura não repetível**, a mesma linha lida duas vezes apresenta valores diferentes. Na **leitura suja**, lê-se dado ainda não confirmado.",
+   "analise_alternativas": {
+    "A": "Incorreta. Na leitura suja, o dado lido não estava confirmado; aqui T2 confirmou.",
+    "B": "Incorreta. Na leitura não repetível, uma linha já lida muda de valor; aqui apareceu uma linha nova.",
+    "C": "Incorreta. Perda de atualização é a sobreposição de duas escritas concorrentes.",
+    "D": "Correta. Novas linhas que satisfazem o predicado entre duas leituras caracterizam a leitura fantasma.",
+    "E": "Incorreta. Deadlock é a espera circular por bloqueios, que não ocorreu."
+   },
+   "fundamentacao": {
+    "item": "1.16",
+    "arquivo_teoria": "conteudo/01-arquitetura-dados/06-transacoes-e-acid.md"
+   },
+   "ponto_atencao": "Distinga: **suja** (dado não confirmado), **não repetível** (linha existente muda), **fantasma** (conjunto de linhas muda).",
+   "revisao_rapida": "Fantasma = linhas novas no resultado repetido.",
+   "tags": [
+    "isolamento",
+    "anomalias",
+    "m01",
+    "item-1.16",
+    "autoral",
+    "dificil",
+    "analise"
+   ],
+   "fonte_origem": null,
+   "verificacao": "Resolução conferida pela teoria do projeto.",
+   "status_validacao": "em_revisao"
+  }
+ ]
+}

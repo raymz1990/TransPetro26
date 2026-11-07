@@ -1,0 +1,108 @@
+{
+ "modulo": "Questões autorais — m06-experiencia-usuario (expansão T05)",
+ "lote": "T05 — expansão",
+ "data": "2026-11-06",
+ "total": 2,
+ "questoes": [
+  {
+   "id": "AUT-000108",
+   "tipo": "autoral",
+   "rotulo": "Questão autoral — estilo Cesgranrio.",
+   "modulo": "06-experiencia-usuario",
+   "assunto": "Histórias de usuário: critérios INVEST",
+   "item_edital": "6.2",
+   "id_matriz": "E5-049",
+   "itens_secundarios": [
+    "2.1"
+   ],
+   "dificuldade": "media",
+   "habilidade": "analise",
+   "tipo_questao": "aplicada",
+   "enunciado": "Em um backlog, consta a seguinte história: \"Como diretor, quero um sistema completo de gestão de contratos, com cadastro, aprovação, renovação, relatórios e integração com o ERP, para controlar todos os contratos da empresa.\"\n\nEntre os critérios INVEST para boas histórias de usuário, o que essa história descumpre de forma mais evidente é o",
+   "alternativas": {
+    "A": "Independente (*Independent*), pois não pode depender de nenhuma outra história.",
+    "B": "Negociável (*Negotiable*), pois os detalhes nunca podem ser discutidos com o time.",
+    "C": "Pequeno (*Small*), pois a história é grande demais para uma única iteração.",
+    "D": "Valioso (*Valuable*), pois não gera valor algum para qualquer parte interessada.",
+    "E": "Testável (*Testable*), pois nenhuma história permite a verificação de seu resultado."
+   },
+   "gabarito": "C",
+   "resolucao": "INVEST: **I**ndependente, **N**egociável, **V**alioso, **E**stimável, **P**equena (*Small*), **T**estável. A história descreve um **épico**: cadastro, aprovação, renovação, relatórios e integração são várias funcionalidades, impossíveis de concluir em uma iteração; deve ser **dividida** em histórias menores.",
+   "analise_alternativas": {
+    "A": "Incorreta. Nada no enunciado mostra dependência entre histórias.",
+    "B": "Incorreta. Os detalhes continuam negociáveis; o problema é o tamanho.",
+    "C": "Correta. É um épico, grande demais para uma iteração: viola o critério Pequena.",
+    "D": "Incorreta. A história declara valor (controlar os contratos), embora ele seja amplo.",
+    "E": "Incorreta. Pode-se escrever critérios de aceite por funcionalidade; o problema é o tamanho."
+   },
+   "fundamentacao": {
+    "item": "6.2",
+    "arquivo_teoria": "conteudo/06-experiencia-usuario/02-user-stories.md"
+   },
+   "ponto_atencao": "Sinais de história **grande**: muitas funcionalidades na mesma frase, palavras como \"completo\", \"todos\", \"gestão de\". Solução: **dividir** por fluxo, regra ou papel.",
+   "revisao_rapida": "INVEST: história boa é Pequena; épico deve ser quebrado.",
+   "tags": [
+    "user-stories",
+    "invest",
+    "m06",
+    "item-6.2",
+    "autoral",
+    "media",
+    "analise"
+   ],
+   "fonte_origem": null,
+   "verificacao": "Resolução conferida pela teoria do projeto.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "AUT-000109",
+   "tipo": "autoral",
+   "rotulo": "Questão autoral — estilo Cesgranrio.",
+   "modulo": "06-experiencia-usuario",
+   "assunto": "Personas em projeto centrado no usuário",
+   "item_edital": "6.11",
+   "id_matriz": "E5-058",
+   "itens_secundarios": [
+    "6.10"
+   ],
+   "dificuldade": "media",
+   "habilidade": "compreensao",
+   "tipo_questao": "conceitual",
+   "enunciado": "Em um projeto centrado no usuário, a equipe de design elaborou três personas para orientar as decisões de interface de um sistema.\n\nEm relação ao conceito de persona, verifica-se que ela",
+   "alternativas": {
+    "A": "é um usuário real, entrevistado durante a pesquisa e identificado por seu nome verdadeiro e por seus dados pessoais completos.",
+    "B": "substitui a pesquisa com usuários, dispensando entrevistas e observações.",
+    "C": "é o perfil estatístico médio de todos os usuários, calculado exclusivamente a partir de dados demográficos da base de clientes.",
+    "D": "é um arquétipo fictício, baseado em pesquisa, que sintetiza objetivos, comportamentos e necessidades de um grupo de usuários.",
+    "E": "é a lista de requisitos funcionais do sistema, organizada por prioridade."
+   },
+   "gabarito": "D",
+   "resolucao": "**Persona** é um **arquétipo fictício** construído a partir de **dados de pesquisa** (entrevistas, observação, analytics), que representa um grupo de usuários com objetivos, comportamentos, necessidades, dores e contexto semelhantes. Ela **ajuda a empatizar e a decidir**, mas não substitui a pesquisa.",
+   "analise_alternativas": {
+    "A": "Incorreta. Persona é fictícia; usar dados de pessoas reais identificadas fere a privacidade e a própria técnica.",
+    "B": "Incorreta. Persona é produto da pesquisa; não a dispensa.",
+    "C": "Incorreta. Não é média estatística: representa um arquétipo com narrativa e objetivos.",
+    "D": "Correta. Define corretamente a persona.",
+    "E": "Incorreta. Requisitos funcionais são outro artefato; a persona alimenta, mas não é a lista de requisitos."
+   },
+   "fundamentacao": {
+    "item": "6.11",
+    "arquivo_teoria": "conteudo/06-experiencia-usuario/09-design-thinking-e-personas.md"
+   },
+   "ponto_atencao": "Persona ≠ usuário real ≠ média estatística ≠ lista de requisitos. Mapa de empatia descreve o que o usuário **pensa e sente, ouve, vê, fala e faz**; persona descreve **quem ele é**.",
+   "revisao_rapida": "Persona: arquétipo fictício baseado em pesquisa.",
+   "tags": [
+    "persona",
+    "ux",
+    "m06",
+    "item-6.11",
+    "autoral",
+    "media",
+    "compreensao"
+   ],
+   "fonte_origem": null,
+   "verificacao": "Resolução conferida pela teoria do projeto.",
+   "status_validacao": "em_revisao"
+  }
+ ]
+}

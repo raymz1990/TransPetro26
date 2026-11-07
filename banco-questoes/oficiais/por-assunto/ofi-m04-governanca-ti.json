@@ -1,0 +1,300 @@
+{
+ "modulo": "Questões oficiais — m04-governanca-ti",
+ "lote": "T04 — Transpetro 2023 (Prova 6)",
+ "data": "2026-11-06",
+ "total": 5,
+ "questoes": [
+  {
+   "id": "OFI-000019",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 57.",
+   "modulo": "04-governanca-ti",
+   "assunto": "LGPD: âmbito de aplicação e consentimento",
+   "item_edital": "4.6",
+   "id_matriz": "E5-040",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "analise",
+   "tipo_questao": "normativa",
+   "enunciado": "A necessidade de proteção de dados gerou a necessidade de legislação sobre o assunto por todo o mundo. No Brasil, a Lei Geral de Proteção de Dados (LGPD) regulamenta esse tema.\n\nA respeito da LGPD, tem-se que ela",
+   "alternativas": {
+    "A": "é aplicada apenas a empresas localizadas no Brasil, não tendo extraterritorialidade.",
+    "B": "é aplicada ao tratamento de dados pessoais coletados tanto por pessoas físicas quanto por pessoas jurídicas em território nacional.",
+    "C": "é aplicada ao tratamento de dados pessoais, incluindo aqueles coletados por pessoa natural, para fins exclusivamente particulares e não econômicos.",
+    "D": "exige o consentimento do titular apenas para tratamento dos dados pessoais sensíveis.",
+    "E": "estabelece que a revogação do consentimento é sumária, e que os dados não devem ser mantidos, mesmo que anonimizados e para fins de pesquisa."
+   },
+   "gabarito": "B",
+   "resolucao": "A LGPD (Lei 13.709/2018) aplica-se a **qualquer operação de tratamento** feita por **pessoa natural ou jurídica**, de direito público ou privado, desde que o tratamento ocorra no território nacional, os dados sejam coletados no Brasil, ou a atividade vise ofertar bens ou serviços a pessoas no Brasil (art. 3º).",
+   "analise_alternativas": {
+    "A": "Incorreta. A lei tem **extraterritorialidade** (art. 3º, II e III).",
+    "B": "Correta. Aplica-se a pessoas físicas e jurídicas, com a ressalva dos arts. 3º e 4º; é a melhor formulação entre as opções.",
+    "C": "Incorreta. Tratamento por pessoa natural para fins **exclusivamente particulares e não econômicos** está **fora** da lei (art. 4º, I).",
+    "D": "Incorreta. O consentimento é **uma** das bases legais (art. 7º) e há outras; ele é exigido, em regra, também para dados comuns quando for a base utilizada, e não só para sensíveis.",
+    "E": "Incorreta. Dados **anonimizados** podem ser conservados, inclusive para estudo por órgão de pesquisa (art. 16, II e IV)."
+   },
+   "fundamentacao": {
+    "item": "4.6",
+    "arquivo_teoria": "conteudo/04-governanca-ti/05-lgpd.md"
+   },
+   "ponto_atencao": "Ponto-chave: exceções do **art. 4º** (fins particulares, jornalísticos, segurança pública etc.) e a **extraterritorialidade** do art. 3º.",
+   "revisao_rapida": "LGPD: pessoa natural ou jurídica; extraterritorial; consentimento é uma entre várias bases legais.",
+   "tags": [
+    "lgpd",
+    "transpetro-2023",
+    "oficial",
+    "media",
+    "analise"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Transpetro PSP/Terra 002/2023 (Edital nº 2)",
+    "cargo": "Análise de Sistemas — Processos de Negócios",
+    "ano": 2023,
+    "prova": "Prova 6",
+    "numero_original": 57,
+    "id_prova": "PRV-005",
+    "situacao_gabarito": "de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/transpetro-2023-psp002-prova06-analise-sistemas-processos-negocios.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000020",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 59.",
+   "modulo": "04-governanca-ti",
+   "assunto": "Governança corporativa e de TI",
+   "item_edital": "4",
+   "id_matriz": "E5-034",
+   "itens_secundarios": [],
+   "dificuldade": "facil",
+   "habilidade": "compreensao",
+   "tipo_questao": "conceitual",
+   "enunciado": "Em uma organização, é fundamental que a TI atenda aos objetivos e às necessidades da organização, alinhando-se aos seus requisitos regulatórios e éticos.\nO conceito que se refere ao conjunto de processos, políticas e estratégias para garantir que isso ocorra é a(o)",
+   "alternativas": {
+    "A": "estratégia de marketing",
+    "B": "gestão de serviços de TI",
+    "C": "governança corporativa",
+    "D": "gerenciamento de projetos",
+    "E": "planejamento de recursos humanos"
+   },
+   "gabarito": "C",
+   "resolucao": "A **governança** (corporativa, e a de TI como parte dela) é o conjunto de processos, políticas e estruturas para assegurar que a organização, e sua TI, sirvam aos objetivos, com conformidade regulatória e ética. A gestão executa; a governança dirige e monitora.",
+   "analise_alternativas": {
+    "A": "Incorreta. Marketing trata de mercado e posicionamento.",
+    "B": "Incorreta. Gestão de serviços de TI cuida da entrega e do suporte de serviços (ITIL), e não do alinhamento estratégico e regulatório global.",
+    "C": "Correta. Governança é o conceito descrito.",
+    "D": "Incorreta. Gerenciamento de projetos organiza entregas temporárias.",
+    "E": "Incorreta. Planejamento de RH trata de pessoas."
+   },
+   "fundamentacao": {
+    "item": "4",
+    "arquivo_teoria": "conteudo/04-governanca-ti/"
+   },
+   "ponto_atencao": "Governança (direcionar e monitorar) ≠ gestão (planejar e executar). Aderência parcial: o item 4 do edital não cita \"governança\" literalmente.",
+   "revisao_rapida": "Governança: direcionar, avaliar, monitorar (ISO 38500).",
+   "tags": [
+    "governanca",
+    "transpetro-2023",
+    "oficial",
+    "facil",
+    "compreensao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Transpetro PSP/Terra 002/2023 (Edital nº 2)",
+    "cargo": "Análise de Sistemas — Processos de Negócios",
+    "ano": 2023,
+    "prova": "Prova 6",
+    "numero_original": 59,
+    "id_prova": "PRV-005",
+    "situacao_gabarito": "de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/transpetro-2023-psp002-prova06-analise-sistemas-processos-negocios.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000021",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 60.",
+   "modulo": "04-governanca-ti",
+   "assunto": "Economia da inovação: custo de oportunidade",
+   "item_edital": "4.2",
+   "id_matriz": "E5-036",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "compreensao",
+   "tipo_questao": "conceitual",
+   "enunciado": "Existe uma prática de atribuir um valor monetário aos recursos utilizados na produção de inovações, considerando-se fatores como tempo, esforço, conhecimento e riscos.\n\nO conceito referente a essa prática é o de",
+   "alternativas": {
+    "A": "economia circular",
+    "B": "custo de oportunidade",
+    "C": "externalidade negativa",
+    "D": "elasticidade da demanda",
+    "E": "oferta e demanda"
+   },
+   "gabarito": "B",
+   "resolucao": "**Custo de oportunidade** é o valor da melhor alternativa abandonada ao se empregar recursos (tempo, esforço, conhecimento) em uma escolha; na inovação, valora os recursos dedicados e os riscos assumidos.",
+   "analise_alternativas": {
+    "A": "Incorreta. Economia circular trata de reaproveitamento e redução de resíduos.",
+    "B": "Correta. Atribuir valor aos recursos empregados e às alternativas preteridas é custo de oportunidade (gabarito da banca).",
+    "C": "Incorreta. Externalidade negativa é custo imposto a terceiros sem compensação.",
+    "D": "Incorreta. Elasticidade mede a sensibilidade da demanda a variações de preço.",
+    "E": "Incorreta. Oferta e demanda explica a formação de preços, não a valoração dos recursos de inovação."
+   },
+   "fundamentacao": {
+    "item": "4.2",
+    "arquivo_teoria": "conteudo/04-governanca-ti/02-inovacao-e-tecnologia.md"
+   },
+   "ponto_atencao": "Enunciado vago: o gabarito parte da ideia de valorar os recursos aplicados. Elimine as opções claramente de outro tema (circular, externalidade, elasticidade, preço).",
+   "revisao_rapida": "Custo de oportunidade = valor da melhor alternativa sacrificada.",
+   "tags": [
+    "economia-da-inovacao",
+    "transpetro-2023",
+    "oficial",
+    "media",
+    "compreensao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Transpetro PSP/Terra 002/2023 (Edital nº 2)",
+    "cargo": "Análise de Sistemas — Processos de Negócios",
+    "ano": 2023,
+    "prova": "Prova 6",
+    "numero_original": 60,
+    "id_prova": "PRV-005",
+    "situacao_gabarito": "de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/transpetro-2023-psp002-prova06-analise-sistemas-processos-negocios.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000022",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 61.",
+   "modulo": "04-governanca-ti",
+   "assunto": "Internet das Coisas",
+   "item_edital": "4.3",
+   "id_matriz": "E5-037",
+   "itens_secundarios": [],
+   "dificuldade": "facil",
+   "habilidade": "compreensao",
+   "tipo_questao": "conceitual",
+   "enunciado": "Atualmente é comum a integração de dispositivos físicos, sensores, software e outras tecnologias para criar uma rede de objetos conectados que podem trocar dados e informações entre si, permitindo a coleta, análise e tomada de decisões baseadas em dados.\n\nTal integração está associada ao conceito de",
+   "alternativas": {
+    "A": "blockchain",
+    "B": "inteligência artificial",
+    "C": "internet das coisas",
+    "D": "processamento paralelo",
+    "E": "realidade aumentada"
+   },
+   "gabarito": "C",
+   "resolucao": "**Internet das Coisas (IoT)** é a rede de objetos físicos com sensores, software e conectividade que coletam e trocam dados.",
+   "analise_alternativas": {
+    "A": "Incorreta. Blockchain é um livro-razão distribuído e imutável.",
+    "B": "Incorreta. IA simula capacidades cognitivas; pode analisar os dados de IoT, mas não define a rede de objetos.",
+    "C": "Correta. Descreve exatamente a IoT.",
+    "D": "Incorreta. Processamento paralelo executa tarefas simultaneamente.",
+    "E": "Incorreta. Realidade aumentada sobrepõe informação digital ao mundo real."
+   },
+   "fundamentacao": {
+    "item": "4.3",
+    "arquivo_teoria": "conteudo/04-governanca-ti/02-inovacao-e-tecnologia.md"
+   },
+   "ponto_atencao": "Palavras-chave: **objetos físicos + sensores + conectividade + troca de dados** = IoT.",
+   "revisao_rapida": "IoT: dispositivos conectados que coletam e trocam dados.",
+   "tags": [
+    "iot",
+    "tecnologia",
+    "transpetro-2023",
+    "oficial",
+    "facil",
+    "compreensao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Transpetro PSP/Terra 002/2023 (Edital nº 2)",
+    "cargo": "Análise de Sistemas — Processos de Negócios",
+    "ano": 2023,
+    "prova": "Prova 6",
+    "numero_original": 61,
+    "id_prova": "PRV-005",
+    "situacao_gabarito": "de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/transpetro-2023-psp002-prova06-analise-sistemas-processos-negocios.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000023",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 66.",
+   "modulo": "04-governanca-ti",
+   "assunto": "KPIs em gerenciamento de serviços de TI",
+   "item_edital": "4.5",
+   "id_matriz": "E5-039",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "compreensao",
+   "tipo_questao": "conceitual",
+   "enunciado": "No contexto do gerenciamento de serviços de TI, os Indicadores-Chave de Desempenho (KPIs) desempenham um papel crucial na avaliação e otimização dos serviços.\n\nA respeito dos KPIs, verifica-se que são",
+   "alternativas": {
+    "A": "métricas técnicas específicas usadas apenas para avaliar o desempenho de hardware.",
+    "B": "usados exclusivamente para monitorar a disponibilidade de serviços, não estando relacionados à qualidade.",
+    "C": "aplicados apenas em organizações de pequeno porte.",
+    "D": "selecionados com base nas necessidades de negócios e ajudam a medir o sucesso do serviço.",
+    "E": "isentos da influência de ferramentas de monitoramento em sua definição ou em seu rastreamento."
+   },
+   "gabarito": "D",
+   "resolucao": "KPIs são indicadores **escolhidos conforme os objetivos de negócio** para medir o sucesso e a qualidade do serviço (disponibilidade, tempo de resposta, satisfação, cumprimento de SLA etc.).",
+   "analise_alternativas": {
+    "A": "Incorreta. Não se limitam a hardware; cobrem processos, serviços e experiência.",
+    "B": "Incorreta. Não se restringem à disponibilidade; abrangem qualidade, tempo de resolução, satisfação etc.",
+    "C": "Incorreta. Aplicam-se a organizações de qualquer porte.",
+    "D": "Correta. Os KPIs derivam das necessidades do negócio e medem o sucesso do serviço.",
+    "E": "Incorreta. A definição e o rastreamento dependem de dados coletados por ferramentas de monitoramento."
+   },
+   "fundamentacao": {
+    "item": "4.5",
+    "arquivo_teoria": "conteudo/04-governanca-ti/04-itsm.md"
+   },
+   "ponto_atencao": "\"Apenas\", \"exclusivamente\" e \"isentos\" denunciam as erradas. KPI bom = alinhado ao objetivo de negócio.",
+   "revisao_rapida": "KPI: métrica escolhida a partir do objetivo de negócio.",
+   "tags": [
+    "kpi",
+    "itil",
+    "transpetro-2023",
+    "oficial",
+    "media",
+    "compreensao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Transpetro PSP/Terra 002/2023 (Edital nº 2)",
+    "cargo": "Análise de Sistemas — Processos de Negócios",
+    "ano": 2023,
+    "prova": "Prova 6",
+    "numero_original": 66,
+    "id_prova": "PRV-005",
+    "situacao_gabarito": "de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/transpetro-2023-psp002-prova06-analise-sistemas-processos-negocios.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  }
+ ]
+}

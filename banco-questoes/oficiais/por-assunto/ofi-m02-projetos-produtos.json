@@ -1,0 +1,304 @@
+{
+ "modulo": "Questões oficiais — m02-projetos-produtos",
+ "lote": "T04 — Transpetro 2023 (Prova 6)",
+ "data": "2026-11-06",
+ "total": 5,
+ "questoes": [
+  {
+   "id": "OFI-000012",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 54.",
+   "modulo": "02-projetos-produtos",
+   "assunto": "Ciclos de vida: modelo em cascata",
+   "item_edital": "2.4",
+   "id_matriz": "E5-029",
+   "itens_secundarios": [
+    "5.2"
+   ],
+   "dificuldade": "facil",
+   "habilidade": "compreensao",
+   "tipo_questao": "conceitual",
+   "enunciado": "Em gerenciamento de projetos e produtos, os modelos de ciclo de vida descrevem como um projeto ou produto é planejado, desenvolvido, executado e encerrado.\n\nDentre os modelos de ciclo de vida mais comuns, há o modelo em cascata, em que",
+   "alternativas": {
+    "A": "é adotada a filosofia de que as mudanças nos requisitos são inevitáveis, e que a equipe deve estar preparada para se adaptar a elas.",
+    "B": "é adotada uma abordagem iterativa, e as fases são executadas de forma sequencial, permitindo revisões e ajustes contínuos ao longo do processo.",
+    "C": "é dividido o projeto em uma série de iterações curtas e fixas, chamadas de sprints, e cada iteração resulta em um incremento do produto.",
+    "D": "é realizada a fase de levantamento de requisitos durante todo o projeto, permitindo que as suas definições sejam revisadas e revisitadas constantemente.",
+    "E": "são realizadas fases do projeto de forma sequencial e linear, com cada fase dependendo da conclusão da fase anterior."
+   },
+   "gabarito": "E",
+   "resolucao": "No **cascata (waterfall)**, as fases (requisitos, projeto, implementação, testes, manutenção) são **sequenciais e lineares**, cada uma dependendo da conclusão da anterior; é um ciclo de vida preditivo.",
+   "analise_alternativas": {
+    "A": "Incorreta. Aceitar mudanças como inevitáveis é postura dos métodos ágeis.",
+    "B": "Incorreta. Mistura iteração com sequência; o cascata não é iterativo.",
+    "C": "Incorreta. Sprints são do Scrum.",
+    "D": "Incorreta. Requisitos revisitados o tempo todo são característica ágil/iterativa.",
+    "E": "Correta. Descreve corretamente o cascata: fases sequenciais e lineares."
+   },
+   "fundamentacao": {
+    "item": "2.4",
+    "arquivo_teoria": "conteudo/02-projetos-produtos/05-pmbok-7.md"
+   },
+   "ponto_atencao": "Cascata = preditivo, sequencial, mudança cara; ágil = adaptativo, iterativo, mudança bem-vinda.",
+   "revisao_rapida": "Cascata: fases em sequência, sem retorno planejado.",
+   "tags": [
+    "cascata",
+    "ciclo-de-vida",
+    "transpetro-2023",
+    "oficial",
+    "facil",
+    "compreensao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Transpetro PSP/Terra 002/2023 (Edital nº 2)",
+    "cargo": "Análise de Sistemas — Processos de Negócios",
+    "ano": 2023,
+    "prova": "Prova 6",
+    "numero_original": 54,
+    "id_prova": "PRV-005",
+    "situacao_gabarito": "de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/transpetro-2023-psp002-prova06-analise-sistemas-processos-negocios.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000013",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 65.",
+   "modulo": "02-projetos-produtos",
+   "assunto": "Scrum x Kanban",
+   "item_edital": "2.1",
+   "id_matriz": "E5-026",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "compreensao",
+   "tipo_questao": "comparativa",
+   "enunciado": "Em ambientes ágeis de gerenciamento de projetos, tanto o Scrum quanto o Kanban têm como objetivo aprimorar a eficiência e a colaboração da equipe.\n\nUma diferença marcante, porém, entre as duas abordagens é que o",
+   "alternativas": {
+    "A": "Scrum utiliza iterações fixas de tempo (sprints), enquanto o Kanban não possui limite de tempo fixo.",
+    "B": "Scrum organiza as tarefas em listas individuais, enquanto o Kanban utiliza burndown charts para rastrear o progresso.",
+    "C": "Scrum prioriza a entrega a partir dos requisitos acordados em contrato, enquanto o Kanban foca em iterações bem definidas para alcançar os objetivos do projeto.",
+    "D": "Kanban enfatiza reuniões diárias (daily stand-ups), enquanto o Scrum não faz uso desse tipo de reunião.",
+    "E": "Kanban requer um Product Owner responsável pela definição das histórias de usuário, enquanto o Scrum não tem essa função."
+   },
+   "gabarito": "A",
+   "resolucao": "O Scrum trabalha em **Sprints** de duração fixa; o Kanban é um fluxo **contínuo**, sem iterações obrigatórias, controlado por **limites de trabalho em andamento (WIP)**.",
+   "analise_alternativas": {
+    "A": "Correta. Diferença marcante correta: Sprints fixas no Scrum; fluxo contínuo no Kanban.",
+    "B": "Incorreta. Inverte os instrumentos: burndown é típico do Scrum, e o Kanban usa quadro, WIP e gráficos de fluxo.",
+    "C": "Incorreta. Troca os métodos: Scrum não se baseia em escopo contratual fechado e é o Scrum que tem iterações definidas.",
+    "D": "Incorreta. A Daily Scrum é evento do Scrum; o Kanban não a exige.",
+    "E": "Incorreta. O Product Owner é papel do Scrum; o Kanban não prescreve papéis."
+   },
+   "fundamentacao": {
+    "item": "2.1",
+    "arquivo_teoria": "conteudo/02-projetos-produtos/02-scrum.md"
+   },
+   "ponto_atencao": "Distratores trocam as características entre os dois métodos. Retenha: **Scrum = timebox, papéis, eventos; Kanban = fluxo, WIP, sem papéis prescritos**.",
+   "revisao_rapida": "Scrum: Sprint fixa. Kanban: fluxo contínuo e WIP.",
+   "tags": [
+    "scrum",
+    "kanban",
+    "transpetro-2023",
+    "oficial",
+    "media",
+    "compreensao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Transpetro PSP/Terra 002/2023 (Edital nº 2)",
+    "cargo": "Análise de Sistemas — Processos de Negócios",
+    "ano": 2023,
+    "prova": "Prova 6",
+    "numero_original": 65,
+    "id_prova": "PRV-005",
+    "situacao_gabarito": "de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/transpetro-2023-psp002-prova06-analise-sistemas-processos-negocios.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000014",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 67.",
+   "modulo": "02-projetos-produtos",
+   "assunto": "EAP (Estrutura Analítica do Projeto)",
+   "item_edital": "2.4",
+   "id_matriz": "E5-029",
+   "itens_secundarios": [],
+   "dificuldade": "facil",
+   "habilidade": "memorizacao",
+   "tipo_questao": "conceitual",
+   "enunciado": "Uma ferramenta muito utilizada no contexto de gerenciamento de projetos é a Estrutura Analítica do Projeto (EAP).\n\nDe acordo com o PMBOK, a EAP é um(a)",
+   "alternativas": {
+    "A": "documento que descreve a sequência e as dependências lógicas entre as atividades do projeto.",
+    "B": "plano estratégico que define os objetivos e as metas do projeto, juntamente com as estratégias para alcançá-los.",
+    "C": "análise detalhada dos riscos identificados em um projeto, incluindo sua probabilidade e impacto.",
+    "D": "representação hierárquica do escopo do trabalho do projeto, dividido em partes menores e mais gerenciáveis.",
+    "E": "técnica de estimativa de custos que leva em consideração os recursos humanos e materiais necessários para o projeto."
+   },
+   "gabarito": "D",
+   "resolucao": "A **EAP (WBS)** é a decomposição **hierárquica** do escopo total do trabalho em entregas e pacotes de trabalho menores e mais gerenciáveis.",
+   "analise_alternativas": {
+    "A": "Incorreta. Sequência e dependências entre atividades são o **diagrama de rede/cronograma**.",
+    "B": "Incorreta. Objetivos e estratégia compõem o plano de projeto ou o termo de abertura.",
+    "C": "Incorreta. Probabilidade e impacto de riscos fazem parte da análise de riscos.",
+    "D": "Correta. É a definição correta de EAP.",
+    "E": "Incorreta. Estimativa de custos é outra técnica (analógica, paramétrica, *bottom-up*), embora a EAP a apoie."
+   },
+   "fundamentacao": {
+    "item": "2.4",
+    "arquivo_teoria": "conteudo/02-projetos-produtos/05-pmbok-7.md"
+   },
+   "ponto_atencao": "EAP decompõe **escopo** (o quê), e não atividades (quando) nem riscos.",
+   "revisao_rapida": "EAP = decomposição hierárquica do escopo em pacotes de trabalho.",
+   "tags": [
+    "eap",
+    "wbs",
+    "transpetro-2023",
+    "oficial",
+    "facil",
+    "memorizacao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Transpetro PSP/Terra 002/2023 (Edital nº 2)",
+    "cargo": "Análise de Sistemas — Processos de Negócios",
+    "ano": 2023,
+    "prova": "Prova 6",
+    "numero_original": 67,
+    "id_prova": "PRV-005",
+    "situacao_gabarito": "de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/transpetro-2023-psp002-prova06-analise-sistemas-processos-negocios.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000015",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 68.",
+   "modulo": "02-projetos-produtos",
+   "assunto": "SAFe: Program Increment (PI)",
+   "item_edital": "2.3",
+   "id_matriz": "E5-028",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "compreensao",
+   "tipo_questao": "conceitual",
+   "enunciado": "A abordagem SAFe (Scaled Agile Framework) pode ser fundamental para garantir o sucesso de um projeto.\nNessa abordagem, o Program Increment (PI) refere-se a um(a)",
+   "alternativas": {
+    "A": "conjunto de rituais diários que as equipes Agile realizam para sincronizar suas atividades.",
+    "B": "evento periódico que fornece uma oportunidade para a revisão e o ajuste do backlog do produto.",
+    "C": "período fixo de tempo durante o qual um conjunto de equipes entrega ao cliente um valor.",
+    "D": "plano detalhado de entregas que documenta todas as etapas de um projeto em escala.",
+    "E": "prática de planejamento estratégico para alinhar os projetos do portfólio com a estratégia de negócios."
+   },
+   "gabarito": "C",
+   "resolucao": "O **PI** é a *timebox* do SAFe (tipicamente 8 a 12 semanas) em que as equipes de um **Agile Release Train (ART)** planejam e entregam valor incremental; começa com o **PI Planning**.",
+   "analise_alternativas": {
+    "A": "Incorreta. Rituais diários são do nível da equipe (daily).",
+    "B": "Incorreta. O PI Planning é o evento de planejamento; o PI em si é o período, não o evento.",
+    "C": "Correta. Descreve o PI: período fixo em que equipes do ART entregam valor.",
+    "D": "Incorreta. O PI não é um plano que documenta todas as etapas, e o SAFe evita planejamento detalhado de longo prazo.",
+    "E": "Incorreta. Alinhamento de portfólio com a estratégia é função da gestão de portfólio (Lean Portfolio Management)."
+   },
+   "fundamentacao": {
+    "item": "2.3",
+    "arquivo_teoria": "conteudo/02-projetos-produtos/04-metodos-ageis-escalados.md"
+   },
+   "ponto_atencao": "PI ≠ PI Planning ≠ Sprint. PI é a *timebox* maior (≈10 semanas), composta por várias iterações.",
+   "revisao_rapida": "PI: 8–12 semanas, ART entrega valor incremental.",
+   "tags": [
+    "safe",
+    "pi",
+    "transpetro-2023",
+    "oficial",
+    "media",
+    "compreensao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Transpetro PSP/Terra 002/2023 (Edital nº 2)",
+    "cargo": "Análise de Sistemas — Processos de Negócios",
+    "ano": 2023,
+    "prova": "Prova 6",
+    "numero_original": 68,
+    "id_prova": "PRV-005",
+    "situacao_gabarito": "de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/transpetro-2023-psp002-prova06-analise-sistemas-processos-negocios.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000016",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 69.",
+   "modulo": "02-projetos-produtos",
+   "assunto": "Estruturas organizacionais: matriz forte",
+   "item_edital": "2.5",
+   "id_matriz": "E5-030",
+   "itens_secundarios": [],
+   "dificuldade": "facil",
+   "habilidade": "memorizacao",
+   "tipo_questao": "conceitual",
+   "enunciado": "No contexto de gerenciamento de projetos, a matriz organizacional tem um papel importante na definição da autoridade do gerente de projeto e na influência que ele pode exercer sobre o projeto.\nCaracteriza-se por um alto grau de influência do gerente de projeto sobre o projeto a matriz",
+   "alternativas": {
+    "A": "composta",
+    "B": "fraca",
+    "C": "forte",
+    "D": "balanceada",
+    "E": "invertida"
+   },
+   "gabarito": "C",
+   "resolucao": "Nas estruturas matriciais: na **matriz fraca**, predomina o gerente funcional; na **balanceada**, há equilíbrio; na **forte**, o gerente de projeto tem **alta autoridade e influência**, com mais recursos dedicados.",
+   "analise_alternativas": {
+    "A": "Incorreta. \"Composta\" refere-se à combinação de estruturas, não a um grau de influência.",
+    "B": "Incorreta. Na matriz fraca, a autoridade do gerente de projeto é baixa.",
+    "C": "Correta. Na matriz forte, o gerente de projeto tem alto grau de autoridade e influência.",
+    "D": "Incorreta. Na balanceada, a autoridade é compartilhada entre o gerente de projeto e o funcional.",
+    "E": "Incorreta. \"Invertida\" não é tipo padrão de matriz."
+   },
+   "fundamentacao": {
+    "item": "2.5",
+    "arquivo_teoria": "conteudo/02-projetos-produtos/01-fundamentos.md"
+   },
+   "ponto_atencao": "Gradiente de autoridade do gerente de projeto: funcional < matriz fraca < balanceada < matriz forte < projetizada.",
+   "revisao_rapida": "Matriz forte = gerente de projeto com alta autoridade.",
+   "tags": [
+    "estruturas-organizacionais",
+    "transpetro-2023",
+    "oficial",
+    "facil",
+    "memorizacao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Transpetro PSP/Terra 002/2023 (Edital nº 2)",
+    "cargo": "Análise de Sistemas — Processos de Negócios",
+    "ano": 2023,
+    "prova": "Prova 6",
+    "numero_original": 69,
+    "id_prova": "PRV-005",
+    "situacao_gabarito": "de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/transpetro-2023-psp002-prova06-analise-sistemas-processos-negocios.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  }
+ ]
+}

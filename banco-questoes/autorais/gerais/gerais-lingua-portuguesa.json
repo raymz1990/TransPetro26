@@ -1,0 +1,1140 @@
+{
+ "modulo": "Questões autorais — Língua Portuguesa (Gerais)",
+ "lote": "T06",
+ "data": "2026-11-06",
+ "total": 24,
+ "questoes": [
+  {
+   "id": "AUT-000121",
+   "tipo": "autoral",
+   "rotulo": "Questão autoral — estilo Cesgranrio.",
+   "modulo": "gerais-lingua-portuguesa",
+   "assunto": "Compreensão: ideia central do texto",
+   "item_edital": "LP-01",
+   "id_matriz": "LP-01",
+   "itens_secundarios": [],
+   "dificuldade": "facil",
+   "habilidade": "compreensao",
+   "tipo_questao": "interpretativa",
+   "enunciado": "Leia o texto a seguir.\n\nA transição energética costuma ser apresentada como uma corrida tecnológica, mas ela é, antes de tudo, um problema de organização. Novas fontes de energia exigem redes de transmissão adaptadas, regras de mercado claras e, principalmente, trabalhadores capacitados para operá-las. Sem esses elementos, a inovação, por mais promissora que seja, permanece restrita aos laboratórios e às apresentações de resultados.\n\nPor isso, as empresas do setor têm investido em programas de formação contínua. Esses programas, no entanto, só funcionam quando acompanhados de mudanças nos processos internos: de nada adianta treinar equipes se as decisões continuam concentradas em poucas mãos. Assim, a tecnologia deixa de ser o fim e passa a ser o meio de uma gestão mais transparente.\n\nA ideia central do texto é a de que",
+   "alternativas": {
+    "A": "as empresas do setor devem substituir a formação de pessoal por novas tecnologias de transmissão.",
+    "B": "o sucesso da transição energética depende de pessoas, regras e processos, e não apenas de avanços tecnológicos.",
+    "C": "a inovação tecnológica é irrelevante para a transição energética, que depende apenas de regras de mercado.",
+    "D": "a transição energética é uma corrida tecnológica em que vencem as empresas com mais laboratórios.",
+    "E": "os programas de formação contínua bastam para tornar a gestão das empresas mais transparente."
+   },
+   "gabarito": "B",
+   "resolucao": "A **ideia central** costuma aparecer na tese que o autor opõe a uma visão comum (\"mas ela é, antes de tudo...\").",
+   "analise_alternativas": {
+    "A": "Incorreta. O texto defende a capacitação de trabalhadores, e não sua substituição.",
+    "B": "Correta. Resume o argumento do texto: a transição é, \"antes de tudo, um problema de organização\", e a tecnologia é meio.",
+    "C": "Incorreta. O texto não considera a inovação irrelevante; afirma que ela fica restrita sem organização.",
+    "D": "Incorreta. Reproduz a visão que o autor contesta (\"costuma ser apresentada\"), e não a sua tese.",
+    "E": "Incorreta. O texto afirma que os programas só funcionam se acompanhados de mudanças nos processos, ou seja, não bastam."
+   },
+   "fundamentacao": {
+    "item": "LP-01",
+    "arquivo_teoria": "conteudo-gerais/01-lingua-portuguesa/01-compreensao-de-textos.md"
+   },
+   "ponto_atencao": "Cuidado com alternativas que repetem a visão **contestada** pelo texto ou usam \"apenas\" e \"bastam\".",
+   "revisao_rapida": "Ideia central = tese do autor, não a opinião que ele refuta.",
+   "tags": [
+    "interpretacao",
+    "lp-01",
+    "autoral",
+    "facil",
+    "compreensao"
+   ],
+   "fonte_origem": null,
+   "verificacao": "Conferida pela teoria do projeto e pela norma-padrão; sem consulta a VOLP/gramática de referência.",
+   "status_validacao": "em_revisao",
+   "titulo_item": "Compreensão de textos"
+  },
+  {
+   "id": "AUT-000122",
+   "tipo": "autoral",
+   "rotulo": "Questão autoral — estilo Cesgranrio.",
+   "modulo": "gerais-lingua-portuguesa",
+   "assunto": "Compreensão: inferência",
+   "item_edital": "LP-01",
+   "id_matriz": "LP-01",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "interpretacao",
+   "tipo_questao": "interpretativa",
+   "enunciado": "Leia o texto a seguir.\n\nA transição energética costuma ser apresentada como uma corrida tecnológica, mas ela é, antes de tudo, um problema de organização. Novas fontes de energia exigem redes de transmissão adaptadas, regras de mercado claras e, principalmente, trabalhadores capacitados para operá-las. Sem esses elementos, a inovação, por mais promissora que seja, permanece restrita aos laboratórios e às apresentações de resultados.\n\nPor isso, as empresas do setor têm investido em programas de formação contínua. Esses programas, no entanto, só funcionam quando acompanhados de mudanças nos processos internos: de nada adianta treinar equipes se as decisões continuam concentradas em poucas mãos. Assim, a tecnologia deixa de ser o fim e passa a ser o meio de uma gestão mais transparente.\n\nDe acordo com o texto, treinar equipes é insuficiente quando",
+   "alternativas": {
+    "A": "os trabalhadores treinados não dominam as novas fontes de energia.",
+    "B": "as regras de mercado são claras e estáveis para todas as empresas.",
+    "C": "a inovação tecnológica é apresentada em laboratórios e em eventos.",
+    "D": "as decisões permanecem concentradas em poucas pessoas, sem mudança nos processos internos.",
+    "E": "os programas de formação contínua são oferecidos a todos os funcionários."
+   },
+   "gabarito": "D",
+   "resolucao": "Resposta localizada no texto (trecho após os dois-pontos).",
+   "analise_alternativas": {
+    "A": "Incorreta. A insuficiência do treinamento decorre da concentração das decisões, e não da falta de domínio técnico.",
+    "B": "Incorreta. Regras de mercado claras são tratadas como elemento necessário, e não como obstáculo.",
+    "C": "Incorreta. A restrição da inovação aos laboratórios é consequência da falta de elementos de organização, e não o motivo da insuficiência do treinamento.",
+    "D": "Correta. O texto afirma: \"de nada adianta treinar equipes se as decisões continuam concentradas em poucas mãos\".",
+    "E": "Incorreta. A oferta a todos os funcionários não é apontada como problema."
+   },
+   "fundamentacao": {
+    "item": "LP-01",
+    "arquivo_teoria": "conteudo-gerais/01-lingua-portuguesa/01-compreensao-de-textos.md"
+   },
+   "ponto_atencao": "Em questões de compreensão, **volte ao trecho** e compare, palavra a palavra, com a alternativa.",
+   "revisao_rapida": "\"De nada adianta... se...\" = condição de ineficácia.",
+   "tags": [
+    "inferencia",
+    "lp-01",
+    "autoral",
+    "media",
+    "interpretacao"
+   ],
+   "fonte_origem": null,
+   "verificacao": "Conferida pela teoria do projeto e pela norma-padrão; sem consulta a VOLP/gramática de referência.",
+   "status_validacao": "em_revisao",
+   "titulo_item": "Compreensão de textos"
+  },
+  {
+   "id": "AUT-000123",
+   "tipo": "autoral",
+   "rotulo": "Questão autoral — estilo Cesgranrio.",
+   "modulo": "gerais-lingua-portuguesa",
+   "assunto": "Ortografia: grafia correta de palavras",
+   "item_edital": "LP-02",
+   "id_matriz": "LP-02",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "memorizacao",
+   "tipo_questao": "conceitual",
+   "enunciado": "Em qual alternativa todas as palavras estão grafadas de acordo com a ortografia oficial?",
+   "alternativas": {
+    "A": "exceção – ascensão – privilégio – beneficente",
+    "B": "excessão – ascensão – privilégio – beneficente",
+    "C": "exceção – assenção – privilégio – beneficiente",
+    "D": "exceção – ascensão – previlégio – beneficente",
+    "E": "excessão – assenção – previlégio – beneficiente"
+   },
+   "gabarito": "A",
+   "resolucao": "Atenção às palavras de uso frequente: **exceção** (≠ excesso), **ascensão** (subida) × **assunção** (ato de assumir), **privilégio**, **beneficente** (≠ beneficiente).",
+   "analise_alternativas": {
+    "A": "Correta. Todas as grafias estão corretas: exceção (de *excetuar*), ascensão (subida), privilégio e beneficente.",
+    "B": "Incorreta. \"Excessão\" está errada; o correto é \"exceção\" (*excesso* é outra palavra).",
+    "C": "Incorreta. \"Assenção\" e \"beneficiente\" estão erradas; os corretos são \"ascensão\" e \"beneficente\".",
+    "D": "Incorreta. \"Previlégio\" está errada; o correto é \"privilégio\".",
+    "E": "Incorreta. As quatro palavras estão grafadas de forma incorreta."
+   },
+   "fundamentacao": {
+    "item": "LP-02",
+    "arquivo_teoria": "conteudo-gerais/01-lingua-portuguesa/02-ortografia-oficial.md"
+   },
+   "ponto_atencao": "Palavras de memória: exceção, ascensão, privilégio, beneficente.",
+   "revisao_rapida": "Uma letra trocada elimina a alternativa.",
+   "tags": [
+    "grafia",
+    "lp-02",
+    "autoral",
+    "media",
+    "memorizacao"
+   ],
+   "fonte_origem": null,
+   "verificacao": "Conferida pela teoria do projeto e pela norma-padrão; sem consulta a VOLP/gramática de referência.",
+   "status_validacao": "em_revisao",
+   "titulo_item": "Ortografia oficial"
+  },
+  {
+   "id": "AUT-000124",
+   "tipo": "autoral",
+   "rotulo": "Questão autoral — estilo Cesgranrio.",
+   "modulo": "gerais-lingua-portuguesa",
+   "assunto": "Ortografia: acentuação gráfica após o Acordo Ortográfico",
+   "item_edital": "LP-02",
+   "id_matriz": "LP-02",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "memorizacao",
+   "tipo_questao": "conceitual",
+   "enunciado": "De acordo com o Acordo Ortográfico em vigor, a alternativa em que todas as palavras estão corretamente acentuadas ou não acentuadas é",
+   "alternativas": {
+    "A": "idéia – joia – voo – herói",
+    "B": "ideia – jóia – voo – herói",
+    "C": "ideia – joia – voo – herói",
+    "D": "ideia – joia – vôo – herói",
+    "E": "ideia – joia – voo – heroi"
+   },
+   "gabarito": "C",
+   "resolucao": "Memorize: **perdem** o acento *ideia, joia, assembleia, paranoico, voo, enjoo*; **mantêm** *herói, papéis, troféu, céu*.",
+   "analise_alternativas": {
+    "A": "Incorreta. \"Idéia\" não é mais acentuada.",
+    "B": "Incorreta. \"Jóia\" não é mais acentuada.",
+    "C": "Correta. Desde 2009, os ditongos abertos *ei* e *oi* de palavras paroxítonas perdem o acento (ideia, joia), o hiato *oo* perde o acento (voo) e a oxítona terminada em *-oi* conserva o acento (herói).",
+    "D": "Incorreta. \"Vôo\" não é mais acentuada: o hiato *oo* perdeu o acento.",
+    "E": "Incorreta. \"Herói\" é oxítona terminada em ditongo aberto *-oi* e mantém o acento."
+   },
+   "fundamentacao": {
+    "item": "LP-02",
+    "arquivo_teoria": "conteudo-gerais/01-lingua-portuguesa/02-ortografia-oficial.md"
+   },
+   "ponto_atencao": "Paroxítonas: ei/oi abertos sem acento; oxítonas em éi, éu, ói: com acento.",
+   "revisao_rapida": "Regra do acento depende da posição da sílaba tônica.",
+   "tags": [
+    "acentuacao",
+    "lp-02",
+    "autoral",
+    "media",
+    "memorizacao"
+   ],
+   "fonte_origem": null,
+   "verificacao": "Conferida pela teoria do projeto e pela norma-padrão; sem consulta a VOLP/gramática de referência.",
+   "status_validacao": "em_revisao",
+   "titulo_item": "Ortografia oficial"
+  },
+  {
+   "id": "AUT-000125",
+   "tipo": "autoral",
+   "rotulo": "Questão autoral — estilo Cesgranrio.",
+   "modulo": "gerais-lingua-portuguesa",
+   "assunto": "Coesão: valor do conector \"Por isso\"",
+   "item_edital": "LP-03",
+   "id_matriz": "LP-03",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "compreensao",
+   "tipo_questao": "interpretativa",
+   "enunciado": "Leia o texto a seguir.\n\nA transição energética costuma ser apresentada como uma corrida tecnológica, mas ela é, antes de tudo, um problema de organização. Novas fontes de energia exigem redes de transmissão adaptadas, regras de mercado claras e, principalmente, trabalhadores capacitados para operá-las. Sem esses elementos, a inovação, por mais promissora que seja, permanece restrita aos laboratórios e às apresentações de resultados.\n\nPor isso, as empresas do setor têm investido em programas de formação contínua. Esses programas, no entanto, só funcionam quando acompanhados de mudanças nos processos internos: de nada adianta treinar equipes se as decisões continuam concentradas em poucas mãos. Assim, a tecnologia deixa de ser o fim e passa a ser o meio de uma gestão mais transparente.\n\nNo início do segundo parágrafo, a expressão \"Por isso\" estabelece, em relação ao primeiro parágrafo, uma relação de",
+   "alternativas": {
+    "A": "conclusão (consequência).",
+    "B": "oposição.",
+    "C": "concessão.",
+    "D": "comparação.",
+    "E": "alternância."
+   },
+   "gabarito": "A",
+   "resolucao": "Conectores mais cobrados: **conclusão** (portanto, logo, por isso), **oposição** (mas, porém, no entanto), **concessão** (embora, apesar de), **causa** (porque, pois), **adição** (e, além disso).",
+   "analise_alternativas": {
+    "A": "Correta. \"Por isso\" retoma o que foi dito antes como causa e apresenta a consequência: as empresas investem em formação porque, sem pessoas capacitadas, a inovação fica restrita.",
+    "B": "Incorreta. Oposição seria marcada por \"mas\" ou \"no entanto\".",
+    "C": "Incorreta. Concessão seria marcada por \"embora\" ou \"ainda que\".",
+    "D": "Incorreta. Comparação seria marcada por \"como\" ou \"assim como\".",
+    "E": "Incorreta. Alternância seria marcada por \"ou\" ou \"ora... ora\"."
+   },
+   "fundamentacao": {
+    "item": "LP-03",
+    "arquivo_teoria": "conteudo-gerais/01-lingua-portuguesa/03-coesao-textual.md"
+   },
+   "ponto_atencao": "\"Por isso\" = conclusão/consequência, não causa.",
+   "revisao_rapida": "Troque o conector por outro de sentido conhecido e verifique se o sentido se mantém.",
+   "tags": [
+    "conectores",
+    "lp-03",
+    "autoral",
+    "media",
+    "compreensao"
+   ],
+   "fonte_origem": null,
+   "verificacao": "Conferida pela teoria do projeto e pela norma-padrão; sem consulta a VOLP/gramática de referência.",
+   "status_validacao": "em_revisao",
+   "titulo_item": "Mecanismos de coesão textual"
+  },
+  {
+   "id": "AUT-000126",
+   "tipo": "autoral",
+   "rotulo": "Questão autoral — estilo Cesgranrio.",
+   "modulo": "gerais-lingua-portuguesa",
+   "assunto": "Coesão: referência e retomada",
+   "item_edital": "LP-03",
+   "id_matriz": "LP-03",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "compreensao",
+   "tipo_questao": "interpretativa",
+   "enunciado": "Leia o texto a seguir.\n\nA transição energética costuma ser apresentada como uma corrida tecnológica, mas ela é, antes de tudo, um problema de organização. Novas fontes de energia exigem redes de transmissão adaptadas, regras de mercado claras e, principalmente, trabalhadores capacitados para operá-las. Sem esses elementos, a inovação, por mais promissora que seja, permanece restrita aos laboratórios e às apresentações de resultados.\n\nPor isso, as empresas do setor têm investido em programas de formação contínua. Esses programas, no entanto, só funcionam quando acompanhados de mudanças nos processos internos: de nada adianta treinar equipes se as decisões continuam concentradas em poucas mãos. Assim, a tecnologia deixa de ser o fim e passa a ser o meio de uma gestão mais transparente.\n\nNo segundo parágrafo, a expressão \"Esses programas\" retoma, no primeiro período do mesmo parágrafo, os(as)",
+   "alternativas": {
+    "A": "empresas do setor.",
+    "B": "redes de transmissão adaptadas.",
+    "C": "programas de formação contínua.",
+    "D": "regras de mercado claras.",
+    "E": "apresentações de resultados."
+   },
+   "gabarito": "C",
+   "resolucao": "Mecanismos de coesão referencial: **anáfora** (retoma o que veio antes) e **catáfora** (antecipa). Procure o termo **mais próximo** com o mesmo gênero e número.",
+   "analise_alternativas": {
+    "A": "Incorreta. \"As empresas do setor\" são as que investem, e não os programas.",
+    "B": "Incorreta. As redes de transmissão são mencionadas no primeiro parágrafo e não são \"programas\".",
+    "C": "Correta. O pronome demonstrativo \"Esses\" retoma o termo mais próximo anterior que pode ser designado como \"programas\": \"programas de formação contínua\".",
+    "D": "Incorreta. As regras de mercado não são retomadas por \"programas\".",
+    "E": "Incorreta. As apresentações de resultados não são retomadas por \"programas\"."
+   },
+   "fundamentacao": {
+    "item": "LP-03",
+    "arquivo_teoria": "conteudo-gerais/01-lingua-portuguesa/03-coesao-textual.md"
+   },
+   "ponto_atencao": "Pronome demonstrativo anafórico: o antecedente está **antes**.",
+   "revisao_rapida": "Teste de substituição: troque a expressão pelo antecedente e releia.",
+   "tags": [
+    "referenciacao",
+    "lp-03",
+    "autoral",
+    "media",
+    "compreensao"
+   ],
+   "fonte_origem": null,
+   "verificacao": "Conferida pela teoria do projeto e pela norma-padrão; sem consulta a VOLP/gramática de referência.",
+   "status_validacao": "em_revisao",
+   "titulo_item": "Mecanismos de coesão textual"
+  },
+  {
+   "id": "AUT-000127",
+   "tipo": "autoral",
+   "rotulo": "Questão autoral — estilo Cesgranrio.",
+   "modulo": "gerais-lingua-portuguesa",
+   "assunto": "Significação: paráfrase de expressão concessiva",
+   "item_edital": "LP-04",
+   "id_matriz": "LP-04",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "compreensao",
+   "tipo_questao": "interpretativa",
+   "enunciado": "Leia o texto a seguir.\n\nA transição energética costuma ser apresentada como uma corrida tecnológica, mas ela é, antes de tudo, um problema de organização. Novas fontes de energia exigem redes de transmissão adaptadas, regras de mercado claras e, principalmente, trabalhadores capacitados para operá-las. Sem esses elementos, a inovação, por mais promissora que seja, permanece restrita aos laboratórios e às apresentações de resultados.\n\nPor isso, as empresas do setor têm investido em programas de formação contínua. Esses programas, no entanto, só funcionam quando acompanhados de mudanças nos processos internos: de nada adianta treinar equipes se as decisões continuam concentradas em poucas mãos. Assim, a tecnologia deixa de ser o fim e passa a ser o meio de uma gestão mais transparente.\n\nA expressão \"por mais promissora que seja\" (1º parágrafo) pode ser substituída, sem alteração de sentido, por",
+   "alternativas": {
+    "A": "porque é muito promissora.",
+    "B": "desde que seja muito promissora.",
+    "C": "uma vez que é muito promissora.",
+    "D": "logo que seja muito promissora.",
+    "E": "ainda que seja muito promissora."
+   },
+   "gabarito": "E",
+   "resolucao": "Substituir conectores exige reconhecer a **relação lógica**: concessão (embora, ainda que, por mais que), condição (se, desde que, caso), causa (porque, já que, uma vez que), tempo (quando, logo que).",
+   "analise_alternativas": {
+    "A": "Incorreta. \"Porque\" indica causa, e não concessão.",
+    "B": "Incorreta. \"Desde que\" indica condição.",
+    "C": "Incorreta. \"Uma vez que\" indica causa.",
+    "D": "Incorreta. \"Logo que\" indica tempo.",
+    "E": "Correta. \"Por mais ... que\" introduz uma **concessão**: a inovação, mesmo sendo muito promissora, fica restrita sem organização. \"Ainda que\" é conjunção concessiva."
+   },
+   "fundamentacao": {
+    "item": "LP-04",
+    "arquivo_teoria": "conteudo-gerais/01-lingua-portuguesa/04-significacao-das-palavras.md"
+   },
+   "ponto_atencao": "\"Por mais que\" = ainda que = embora.",
+   "revisao_rapida": "Reconheça a relação, e não só a palavra.",
+   "tags": [
+    "sinonimia",
+    "concessao",
+    "lp-04",
+    "autoral",
+    "media",
+    "compreensao"
+   ],
+   "fonte_origem": null,
+   "verificacao": "Conferida pela teoria do projeto e pela norma-padrão; sem consulta a VOLP/gramática de referência.",
+   "status_validacao": "em_revisao",
+   "titulo_item": "Significação das palavras"
+  },
+  {
+   "id": "AUT-000128",
+   "tipo": "autoral",
+   "rotulo": "Questão autoral — estilo Cesgranrio.",
+   "modulo": "gerais-lingua-portuguesa",
+   "assunto": "Significação: parônimos infringir e infligir",
+   "item_edital": "LP-04",
+   "id_matriz": "LP-04",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "memorizacao",
+   "tipo_questao": "conceitual",
+   "enunciado": "Complete as lacunas da frase: \"A empresa foi multada por ______ as normas ambientais, e o órgão fiscalizador ______ a pena prevista em lei.\"",
+   "alternativas": {
+    "A": "infligir – infringiu",
+    "B": "infringir – infligiu",
+    "C": "infringir – infringiu",
+    "D": "infligir – infligiu",
+    "E": "infringir – infligiram"
+   },
+   "gabarito": "B",
+   "resolucao": "Parônimos clássicos: **infringir** (violar) × **infligir** (aplicar); **iminente** (prestes a ocorrer) × **eminente** (notável); **descrição** × **discrição**.",
+   "analise_alternativas": {
+    "A": "Incorreta. Troca os verbos: violar normas é *infringir*, e aplicar pena é *infligir*.",
+    "B": "Correta. **Infringir** = violar, descumprir (normas, leis); **infligir** = aplicar, impor (pena, castigo). Violar as normas = infringir; aplicar a pena = infligir. O verbo concorda com \"o órgão\" (singular): infligiu.",
+    "C": "Incorreta. \"Infringiu a pena\" está incorreto; pena se *inflige*.",
+    "D": "Incorreta. \"Infligir as normas\" está incorreto; norma se *infringe*.",
+    "E": "Incorreta. A concordância está errada: o sujeito (\"o órgão\") é singular."
+   },
+   "fundamentacao": {
+    "item": "LP-04",
+    "arquivo_teoria": "conteudo-gerais/01-lingua-portuguesa/04-significacao-das-palavras.md"
+   },
+   "ponto_atencao": "Infringir a lei; infligir a pena.",
+   "revisao_rapida": "Memorize o par pelo objeto: lei/norma (infringir); pena/castigo (infligir).",
+   "tags": [
+    "paronimos",
+    "lp-04",
+    "autoral",
+    "media",
+    "memorizacao"
+   ],
+   "fonte_origem": null,
+   "verificacao": "Conferida pela teoria do projeto e pela norma-padrão; sem consulta a VOLP/gramática de referência.",
+   "status_validacao": "em_revisao",
+   "titulo_item": "Significação das palavras"
+  },
+  {
+   "id": "AUT-000129",
+   "tipo": "autoral",
+   "rotulo": "Questão autoral — estilo Cesgranrio.",
+   "modulo": "gerais-lingua-portuguesa",
+   "assunto": "Tempos e modos verbais: correlação imperfeito do subjuntivo e futuro do pretérito",
+   "item_edital": "LP-05",
+   "id_matriz": "LP-05",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "aplicacao",
+   "tipo_questao": "aplicada",
+   "enunciado": "Complete a frase de acordo com a norma-padrão: \"Se o sistema ______ a falha a tempo, a equipe a corrigiria antes do início do expediente.\"",
+   "alternativas": {
+    "A": "detectar",
+    "B": "detectou",
+    "C": "detectará",
+    "D": "detectasse",
+    "E": "detectaria"
+   },
+   "gabarito": "D",
+   "resolucao": "Correlação: **se + imperfeito do subjuntivo → futuro do pretérito** (hipótese); **se + presente do indicativo → futuro do presente** (possibilidade real); **se + mais-que-perfeito do subjuntivo → futuro do pretérito composto** (hipótese passada).",
+   "analise_alternativas": {
+    "A": "Incorreta. \"Detectar\" (infinitivo) não pode ser empregado nessa construção condicional.",
+    "B": "Incorreta. \"Detectou\" (indicativo) não expressa a hipótese correlata ao futuro do pretérito.",
+    "C": "Incorreta. \"Detectará\" (futuro do presente) não combina com \"corrigiria\".",
+    "D": "Correta. A oração principal está no **futuro do pretérito** (\"corrigiria\"); a condição hipotética correspondente é expressa pelo **pretérito imperfeito do subjuntivo**: \"se o sistema detectasse\".",
+    "E": "Incorreta. \"Detectaria\" (futuro do pretérito) não pode aparecer na oração com \"se\"."
+   },
+   "fundamentacao": {
+    "item": "LP-05",
+    "arquivo_teoria": "conteudo-gerais/01-lingua-portuguesa/05-tempos-e-modos-verbais.md"
+   },
+   "ponto_atencao": "Se detectasse → corrigiria.",
+   "revisao_rapida": "Identifique o tempo da oração principal para escolher o da subordinada.",
+   "tags": [
+    "periodo-hipotetico",
+    "lp-05",
+    "autoral",
+    "media",
+    "aplicacao"
+   ],
+   "fonte_origem": null,
+   "verificacao": "Conferida pela teoria do projeto e pela norma-padrão; sem consulta a VOLP/gramática de referência.",
+   "status_validacao": "em_revisao",
+   "titulo_item": "Tempos e modos verbais"
+  },
+  {
+   "id": "AUT-000130",
+   "tipo": "autoral",
+   "rotulo": "Questão autoral — estilo Cesgranrio.",
+   "modulo": "gerais-lingua-portuguesa",
+   "assunto": "Tempos e modos verbais: futuro do subjuntivo do verbo \"propor\"",
+   "item_edital": "LP-05",
+   "id_matriz": "LP-05",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "aplicacao",
+   "tipo_questao": "aplicada",
+   "enunciado": "Complete a frase de acordo com a norma-padrão: \"Quando o gerente ______ a alteração do cronograma, a equipe a avaliará.\"",
+   "alternativas": {
+    "A": "propor",
+    "B": "propuser",
+    "C": "propôs",
+    "D": "proporá",
+    "E": "proponha"
+   },
+   "gabarito": "B",
+   "resolucao": "Verbos derivados de **pôr** seguem o primitivo: **propuser, repuser, compuser, dispuser**. Após *quando, se, assim que, logo que* (ação futura): futuro do subjuntivo.",
+   "analise_alternativas": {
+    "A": "Incorreta. O infinitivo não completa a frase.",
+    "B": "Correta. A conjunção **\"quando\"**, com ideia de ação futura, pede o **futuro do subjuntivo**. O verbo *propor* (derivado de *pôr*) conjuga-se como *pôr*: eu puser → ele propuser.",
+    "C": "Incorreta. \"Propôs\" é pretérito perfeito do indicativo; a ação ainda não ocorreu.",
+    "D": "Incorreta. \"Proporá\" é futuro do presente do indicativo, que não é empregado após \"quando\" nesse sentido.",
+    "E": "Incorreta. \"Proponha\" é presente do subjuntivo, que não se usa após \"quando\" com referência futura."
+   },
+   "fundamentacao": {
+    "item": "LP-05",
+    "arquivo_teoria": "conteudo-gerais/01-lingua-portuguesa/05-tempos-e-modos-verbais.md"
+   },
+   "ponto_atencao": "Quando/se/assim que + ação futura → futuro do subjuntivo (propuser).",
+   "revisao_rapida": "Conjugue o verbo primitivo e acrescente o prefixo.",
+   "tags": [
+    "subjuntivo",
+    "verbo-por",
+    "lp-05",
+    "autoral",
+    "media",
+    "aplicacao"
+   ],
+   "fonte_origem": null,
+   "verificacao": "Conferida pela teoria do projeto e pela norma-padrão; sem consulta a VOLP/gramática de referência.",
+   "status_validacao": "em_revisao",
+   "titulo_item": "Tempos e modos verbais"
+  },
+  {
+   "id": "AUT-000131",
+   "tipo": "autoral",
+   "rotulo": "Questão autoral — estilo Cesgranrio.",
+   "modulo": "gerais-lingua-portuguesa",
+   "assunto": "Classes de palavras: valor do \"que\"",
+   "item_edital": "LP-06",
+   "id_matriz": "LP-06",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "analise",
+   "tipo_questao": "conceitual",
+   "enunciado": "Em qual das frases a palavra \"que\" é um pronome relativo?",
+   "alternativas": {
+    "A": "Sabemos que o prazo terminou.",
+    "B": "O arquivo era tão grande que não coube no disco.",
+    "C": "Que bom que você chegou!",
+    "D": "O sistema que adotamos é seguro.",
+    "E": "Trabalhou mais que ele."
+   },
+   "gabarito": "D",
+   "resolucao": "Teste: se **\"o qual / a qual / os quais\"** substitui o \"que\", ele é **pronome relativo**; se introduz uma oração que completa o verbo, é **conjunção integrante**.",
+   "analise_alternativas": {
+    "A": "Incorreta. Conjunção integrante, que introduz oração subordinada substantiva objetiva direta.",
+    "B": "Incorreta. Conjunção subordinativa consecutiva, que liga a consequência à intensidade (\"tão ... que\").",
+    "C": "Incorreta. O primeiro \"que\" é advérbio de intensidade (\"Que bom!\") e o segundo, conjunção integrante.",
+    "D": "Correta. No pronome relativo, \"que\" **retoma um antecedente** (\"sistema\") e pode ser substituído por \"o qual\": \"O sistema **o qual** adotamos...\".",
+    "E": "Incorreta. Conjunção subordinativa comparativa (\"mais ... que\")."
+   },
+   "fundamentacao": {
+    "item": "LP-06",
+    "arquivo_teoria": "conteudo-gerais/01-lingua-portuguesa/06-classes-de-palavras.md"
+   },
+   "ponto_atencao": "Que relativo = o qual; que integrante = não substituível.",
+   "revisao_rapida": "Substituição por \"o qual\" resolve a maioria dos casos.",
+   "tags": [
+    "que",
+    "pronome-relativo",
+    "lp-06",
+    "autoral",
+    "media",
+    "analise"
+   ],
+   "fonte_origem": null,
+   "verificacao": "Conferida pela teoria do projeto e pela norma-padrão; sem consulta a VOLP/gramática de referência.",
+   "status_validacao": "em_revisao",
+   "titulo_item": "Classes de palavras"
+  },
+  {
+   "id": "AUT-000132",
+   "tipo": "autoral",
+   "rotulo": "Questão autoral — estilo Cesgranrio.",
+   "modulo": "gerais-lingua-portuguesa",
+   "assunto": "Classes de palavras: mau, mal",
+   "item_edital": "LP-06",
+   "id_matriz": "LP-06",
+   "itens_secundarios": [],
+   "dificuldade": "facil",
+   "habilidade": "aplicacao",
+   "tipo_questao": "aplicada",
+   "enunciado": "Complete as lacunas: \"O funcionário saiu-se ______ na prova, pois estava de ______ humor.\"",
+   "alternativas": {
+    "A": "mal – mau",
+    "B": "mau – mal",
+    "C": "mal – mal",
+    "D": "mau – mau",
+    "E": "mal – meu"
+   },
+   "gabarito": "A",
+   "resolucao": "Teste de substituição: troque por **bem/bom**. Se couber \"bem\", use **mal**; se couber \"bom\", use **mau**.",
+   "analise_alternativas": {
+    "A": "Correta. **Mal** é advérbio (oposto de *bem*; modifica o verbo *sair-se*) ou substantivo; **mau** é adjetivo (oposto de *bom*; modifica o substantivo *humor*): \"saiu-se mal\" (bem), \"de mau humor\" (bom).",
+    "B": "Incorreta. Troca as palavras: advérbio no primeiro caso e adjetivo no segundo.",
+    "C": "Incorreta. \"Mal humor\" é incorreto; *humor* pede o adjetivo *mau*.",
+    "D": "Incorreta. \"Saiu-se mau\" é incorreto; o verbo pede advérbio (*mal*).",
+    "E": "Incorreta. \"Meu humor\" muda o sentido, e a combinação não faz sentido na frase."
+   },
+   "fundamentacao": {
+    "item": "LP-06",
+    "arquivo_teoria": "conteudo-gerais/01-lingua-portuguesa/06-classes-de-palavras.md"
+   },
+   "ponto_atencao": "Mal ↔ bem (advérbio); mau ↔ bom (adjetivo).",
+   "revisao_rapida": "Substitua pelo antônimo.",
+   "tags": [
+    "mal-mau",
+    "lp-06",
+    "autoral",
+    "facil",
+    "aplicacao"
+   ],
+   "fonte_origem": null,
+   "verificacao": "Conferida pela teoria do projeto e pela norma-padrão; sem consulta a VOLP/gramática de referência.",
+   "status_validacao": "em_revisao",
+   "titulo_item": "Classes de palavras"
+  },
+  {
+   "id": "AUT-000133",
+   "tipo": "autoral",
+   "rotulo": "Questão autoral — estilo Cesgranrio.",
+   "modulo": "gerais-lingua-portuguesa",
+   "assunto": "Coordenação: oração coordenada sindética conclusiva",
+   "item_edital": "LP-07",
+   "id_matriz": "LP-07",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "analise",
+   "tipo_questao": "conceitual",
+   "enunciado": "Leia o período: \"O prazo terminou; portanto, não aceitaremos novos pedidos.\"\n\nA segunda oração é classificada como coordenada sindética",
+   "alternativas": {
+    "A": "adversativa.",
+    "B": "aditiva.",
+    "C": "conclusiva.",
+    "D": "explicativa.",
+    "E": "alternativa."
+   },
+   "gabarito": "C",
+   "resolucao": "Conjunções coordenativas: **aditivas** (e, nem), **adversativas** (mas, porém, contudo, todavia), **alternativas** (ou, ora), **conclusivas** (logo, portanto, por isso, pois posposto), **explicativas** (porque, pois anteposto, que).",
+   "analise_alternativas": {
+    "A": "Incorreta. Adversativas usam *mas, porém, contudo*.",
+    "B": "Incorreta. Aditivas usam *e, nem, também*.",
+    "C": "Correta. \"Portanto\" é conjunção **conclusiva**: a segunda oração apresenta a conclusão decorrente da primeira.",
+    "D": "Incorreta. Explicativas usam *pois* (anteposto ao verbo), *porque*, *que*, justificando a primeira.",
+    "E": "Incorreta. Alternativas usam *ou, ora... ora, quer... quer*."
+   },
+   "fundamentacao": {
+    "item": "LP-07",
+    "arquivo_teoria": "conteudo-gerais/01-lingua-portuguesa/07-coordenacao-e-subordinacao.md"
+   },
+   "ponto_atencao": "Portanto, logo, por conseguinte = conclusão.",
+   "revisao_rapida": "Pergunte: a segunda oração é conclusão ou explicação da primeira?",
+   "tags": [
+    "coordenacao",
+    "lp-07",
+    "autoral",
+    "media",
+    "analise"
+   ],
+   "fonte_origem": null,
+   "verificacao": "Conferida pela teoria do projeto e pela norma-padrão; sem consulta a VOLP/gramática de referência.",
+   "status_validacao": "em_revisao",
+   "titulo_item": "Coordenação e subordinação"
+  },
+  {
+   "id": "AUT-000134",
+   "tipo": "autoral",
+   "rotulo": "Questão autoral — estilo Cesgranrio.",
+   "modulo": "gerais-lingua-portuguesa",
+   "assunto": "Subordinação: oração subordinada adverbial concessiva",
+   "item_edital": "LP-07",
+   "id_matriz": "LP-07",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "analise",
+   "tipo_questao": "conceitual",
+   "enunciado": "Leia o texto a seguir.\n\nA transição energética costuma ser apresentada como uma corrida tecnológica, mas ela é, antes de tudo, um problema de organização. Novas fontes de energia exigem redes de transmissão adaptadas, regras de mercado claras e, principalmente, trabalhadores capacitados para operá-las. Sem esses elementos, a inovação, por mais promissora que seja, permanece restrita aos laboratórios e às apresentações de resultados.\n\nPor isso, as empresas do setor têm investido em programas de formação contínua. Esses programas, no entanto, só funcionam quando acompanhados de mudanças nos processos internos: de nada adianta treinar equipes se as decisões continuam concentradas em poucas mãos. Assim, a tecnologia deixa de ser o fim e passa a ser o meio de uma gestão mais transparente.\n\nNo trecho \"a inovação, por mais promissora que seja, permanece restrita aos laboratórios\", a oração \"por mais promissora que seja\" é classificada como subordinada adverbial",
+   "alternativas": {
+    "A": "causal.",
+    "B": "condicional.",
+    "C": "consecutiva.",
+    "D": "temporal.",
+    "E": "concessiva."
+   },
+   "gabarito": "E",
+   "resolucao": "Construções concessivas: **embora, ainda que, mesmo que, por mais que, apesar de que, conquanto**. O verbo costuma estar no **subjuntivo**.",
+   "analise_alternativas": {
+    "A": "Incorreta. A causal indicaria a razão (porque, já que).",
+    "B": "Incorreta. A condicional indicaria a condição (se, caso, desde que).",
+    "C": "Incorreta. A consecutiva indicaria a consequência da intensidade (tão ... que).",
+    "D": "Incorreta. A temporal indicaria o momento (quando, assim que).",
+    "E": "Correta. A oração apresenta um fato que **poderia impedir**, mas **não impede**, o que se afirma na principal: ideia de **concessão**."
+   },
+   "fundamentacao": {
+    "item": "LP-07",
+    "arquivo_teoria": "conteudo-gerais/01-lingua-portuguesa/07-coordenacao-e-subordinacao.md"
+   },
+   "ponto_atencao": "Por mais que / ainda que = concessiva.",
+   "revisao_rapida": "Procure o fato \"que seria esperado impedir\" a ação principal.",
+   "tags": [
+    "subordinacao",
+    "lp-07",
+    "autoral",
+    "media",
+    "analise"
+   ],
+   "fonte_origem": null,
+   "verificacao": "Conferida pela teoria do projeto e pela norma-padrão; sem consulta a VOLP/gramática de referência.",
+   "status_validacao": "em_revisao",
+   "titulo_item": "Coordenação e subordinação"
+  },
+  {
+   "id": "AUT-000135",
+   "tipo": "autoral",
+   "rotulo": "Questão autoral — estilo Cesgranrio.",
+   "modulo": "gerais-lingua-portuguesa",
+   "assunto": "Pontuação: uso da vírgula",
+   "item_edital": "LP-08",
+   "id_matriz": "LP-08",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "aplicacao",
+   "tipo_questao": "conceitual",
+   "enunciado": "A vírgula está empregada de acordo com a norma-padrão em",
+   "alternativas": {
+    "A": "O diretor da empresa, anunciou o novo plano.",
+    "B": "Os trabalhadores que cumprem as metas, receberão bônus.",
+    "C": "Na reunião de ontem, o gerente apresentou os resultados.",
+    "D": "O gerente apresentou, os resultados na reunião.",
+    "E": "Quando chegou o relatório, não havia mais tempo, para corrigi-lo."
+   },
+   "gabarito": "C",
+   "resolucao": "**Nunca** se separa sujeito de verbo, nem verbo de complemento, com vírgula simples. Usa-se vírgula para **adjuntos deslocados, vocativos, apostos, enumerações e orações adverbiais antepostas**.",
+   "analise_alternativas": {
+    "A": "Incorreta. Separa o sujeito (\"O diretor da empresa\") do verbo.",
+    "B": "Incorreta. Separa o sujeito (\"Os trabalhadores que cumprem as metas\") do verbo.",
+    "C": "Correta. A vírgula isola o **adjunto adverbial deslocado** (\"Na reunião de ontem\"), antes do sujeito. Não separa sujeito de verbo nem verbo de complemento.",
+    "D": "Incorreta. Separa o verbo (\"apresentou\") de seu complemento.",
+    "E": "Incorreta. A segunda vírgula separa a oração principal da subordinada final reduzida, sem necessidade."
+   },
+   "fundamentacao": {
+    "item": "LP-08",
+    "arquivo_teoria": "conteudo-gerais/01-lingua-portuguesa/08-pontuacao.md"
+   },
+   "ponto_atencao": "Sem vírgula entre sujeito e verbo, nem entre verbo e objeto.",
+   "revisao_rapida": "Faça a ordem direta (sujeito, verbo, complemento) e veja onde a vírgula separa termos ligados.",
+   "tags": [
+    "virgula",
+    "lp-08",
+    "autoral",
+    "media",
+    "aplicacao"
+   ],
+   "fonte_origem": null,
+   "verificacao": "Conferida pela teoria do projeto e pela norma-padrão; sem consulta a VOLP/gramática de referência.",
+   "status_validacao": "em_revisao",
+   "titulo_item": "Pontuação"
+  },
+  {
+   "id": "AUT-000136",
+   "tipo": "autoral",
+   "rotulo": "Questão autoral — estilo Cesgranrio.",
+   "modulo": "gerais-lingua-portuguesa",
+   "assunto": "Pontuação: oração adjetiva restritiva e explicativa",
+   "item_edital": "LP-08",
+   "id_matriz": "LP-08",
+   "itens_secundarios": [],
+   "dificuldade": "dificil",
+   "habilidade": "analise",
+   "tipo_questao": "interpretativa",
+   "enunciado": "Compare as frases.\n\nI – \"Os empregados que cumpriram as metas receberam bônus.\"\nII – \"Os empregados, que cumpriram as metas, receberam bônus.\"\n\nDe acordo com o sentido produzido pela pontuação,",
+   "alternativas": {
+    "A": "em I, todos os empregados cumpriram as metas; em II, apenas alguns receberam bônus.",
+    "B": "as duas frases têm o mesmo sentido, pois a vírgula é facultativa.",
+    "C": "em I, nenhum empregado recebeu bônus; em II, todos receberam bônus sem cumprir as metas.",
+    "D": "em I, a oração é explicativa; em II, a oração é restritiva.",
+    "E": "em I, apenas os empregados que cumpriram as metas receberam bônus; em II, todos os empregados cumpriram as metas e receberam bônus."
+   },
+   "gabarito": "E",
+   "resolucao": "**Restritiva** (sem vírgula): limita o antecedente. **Explicativa** (entre vírgulas): informa algo sobre todo o antecedente.",
+   "analise_alternativas": {
+    "A": "Incorreta. Inverte os sentidos.",
+    "B": "Incorreta. A vírgula altera o sentido e não é facultativa nesse caso.",
+    "C": "Incorreta. Nenhuma frase diz isso.",
+    "D": "Incorreta. Inverte a classificação: I é restritiva, e II é explicativa.",
+    "E": "Correta. Sem vírgula, a oração adjetiva é **restritiva**: delimita o grupo (só os que cumpriram). Com vírgulas, é **explicativa**: acrescenta informação sobre todo o grupo (todos cumpriram)."
+   },
+   "fundamentacao": {
+    "item": "LP-08",
+    "arquivo_teoria": "conteudo-gerais/01-lingua-portuguesa/08-pontuacao.md"
+   },
+   "ponto_atencao": "Sem vírgula = alguns; com vírgulas = todos.",
+   "revisao_rapida": "Pontuação muda o sentido: leia as duas versões em voz alta.",
+   "tags": [
+    "adjetiva",
+    "virgula",
+    "lp-08",
+    "autoral",
+    "dificil",
+    "analise"
+   ],
+   "fonte_origem": null,
+   "verificacao": "Conferida pela teoria do projeto e pela norma-padrão; sem consulta a VOLP/gramática de referência.",
+   "status_validacao": "em_revisao",
+   "titulo_item": "Pontuação"
+  },
+  {
+   "id": "AUT-000137",
+   "tipo": "autoral",
+   "rotulo": "Questão autoral — estilo Cesgranrio.",
+   "modulo": "gerais-lingua-portuguesa",
+   "assunto": "Concordância verbal: verbos \"existir\" e \"haver\"",
+   "item_edital": "LP-09",
+   "id_matriz": "LP-09",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "aplicacao",
+   "tipo_questao": "conceitual",
+   "enunciado": "Em qual alternativa a concordância está de acordo com a norma-padrão?",
+   "alternativas": {
+    "A": "Houveram muitos problemas na migração.",
+    "B": "Existem falhas que precisam ser corrigidas.",
+    "C": "Fazem dois meses que o sistema foi implantado.",
+    "D": "Bastam um clique para concluir a operação.",
+    "E": "Alugam-se uma sala comercial no centro."
+   },
+   "gabarito": "B",
+   "resolucao": "Impessoais: **haver** (existir/tempo decorrido) e **fazer** (tempo) ficam no **singular**. Já **existir** concorda com o sujeito.",
+   "analise_alternativas": {
+    "A": "Incorreta. \"Haver\" no sentido de *existir* é impessoal: \"Houve muitos problemas\".",
+    "B": "Correta. **Existir** é verbo pessoal: concorda com o sujeito (\"falhas\"), logo, \"existem\".",
+    "C": "Incorreta. \"Fazer\" indicando tempo decorrido é impessoal: \"Faz dois meses\".",
+    "D": "Incorreta. O sujeito \"um clique\" é singular: \"Basta um clique\".",
+    "E": "Incorreta. O sujeito \"uma sala comercial\" é singular: \"Aluga-se uma sala comercial\"."
+   },
+   "fundamentacao": {
+    "item": "LP-09",
+    "arquivo_teoria": "conteudo-gerais/01-lingua-portuguesa/09-concordancia.md"
+   },
+   "ponto_atencao": "Haver e fazer impessoais: singular. Existir: concorda.",
+   "revisao_rapida": "Reescreva com \"existir\" ou \"ter\" para testar.",
+   "tags": [
+    "concordancia-verbal",
+    "lp-09",
+    "autoral",
+    "media",
+    "aplicacao"
+   ],
+   "fonte_origem": null,
+   "verificacao": "Conferida pela teoria do projeto e pela norma-padrão; sem consulta a VOLP/gramática de referência.",
+   "status_validacao": "em_revisao",
+   "titulo_item": "Concordância verbal e nominal"
+  },
+  {
+   "id": "AUT-000138",
+   "tipo": "autoral",
+   "rotulo": "Questão autoral — estilo Cesgranrio.",
+   "modulo": "gerais-lingua-portuguesa",
+   "assunto": "Concordância nominal: anexo, meio",
+   "item_edital": "LP-09",
+   "id_matriz": "LP-09",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "aplicacao",
+   "tipo_questao": "aplicada",
+   "enunciado": "Complete as lacunas: \"Seguem ______ as planilhas solicitadas, mas a diretora ficou ______ satisfeita com os dados.\"",
+   "alternativas": {
+    "A": "anexo – meio",
+    "B": "anexas – meia",
+    "C": "anexo – meia",
+    "D": "anexas – meio",
+    "E": "anexos – meio"
+   },
+   "gabarito": "D",
+   "resolucao": "**Anexo**, **obrigado**, **mesmo**, **próprio** e **bastante** (adjetivo) variam; **meio** (advérbio) e **menos** não variam. \"Em anexo\" é invariável.",
+   "analise_alternativas": {
+    "A": "Incorreta. \"Anexo\" deve concordar com \"planilhas\" (feminino plural).",
+    "B": "Incorreta. \"Meia\" concordaria com \"satisfeita\", mas \"meio\" é advérbio e não varia.",
+    "C": "Incorreta. Erros nas duas lacunas.",
+    "D": "Correta. **Anexo** é adjetivo e **concorda** com o substantivo (\"as planilhas\" → anexas). **Meio**, no sentido de *um pouco*, é **advérbio** e fica **invariável** (\"meio satisfeita\").",
+    "E": "Incorreta. \"Anexos\" é masculino plural e não concorda com \"as planilhas\"."
+   },
+   "fundamentacao": {
+    "item": "LP-09",
+    "arquivo_teoria": "conteudo-gerais/01-lingua-portuguesa/09-concordancia.md"
+   },
+   "ponto_atencao": "Anexo concorda; meio (advérbio) não varia.",
+   "revisao_rapida": "Pergunte: a palavra qualifica um substantivo (varia) ou intensifica um adjetivo (não varia)?",
+   "tags": [
+    "concordancia-nominal",
+    "lp-09",
+    "autoral",
+    "media",
+    "aplicacao"
+   ],
+   "fonte_origem": null,
+   "verificacao": "Conferida pela teoria do projeto e pela norma-padrão; sem consulta a VOLP/gramática de referência.",
+   "status_validacao": "em_revisao",
+   "titulo_item": "Concordância verbal e nominal"
+  },
+  {
+   "id": "AUT-000139",
+   "tipo": "autoral",
+   "rotulo": "Questão autoral — estilo Cesgranrio.",
+   "modulo": "gerais-lingua-portuguesa",
+   "assunto": "Regência verbal: obedecer, assistir, aspirar, esquecer",
+   "item_edital": "LP-10",
+   "id_matriz": "LP-10",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "aplicacao",
+   "tipo_questao": "conceitual",
+   "enunciado": "Em qual alternativa a regência verbal está de acordo com a norma-padrão?",
+   "alternativas": {
+    "A": "Os funcionários obedecem às normas internas.",
+    "B": "Prefiro mais trabalhar em casa do que no escritório.",
+    "C": "O gerente assistiu o treinamento.",
+    "D": "Aspiramos o cargo de analista.",
+    "E": "Esqueci-me que a reunião foi cancelada."
+   },
+   "gabarito": "A",
+   "resolucao": "Verbos clássicos: **assistir** (a, presenciar), **aspirar** (a, almejar), **obedecer/desobedecer** (a), **preferir** (X a Y), **esquecer-se/lembrar-se** (de), **visar** (a, objetivo).",
+   "analise_alternativas": {
+    "A": "Correta. **Obedecer** é transitivo indireto: \"obedecer **a** alguém/algo\"; a crase aparece pela contração com o artigo (\"às normas\").",
+    "B": "Incorreta. \"Preferir\" pede \"preferir X **a** Y\", sem \"mais\" nem \"do que\".",
+    "C": "Incorreta. \"Assistir\", no sentido de presenciar, é transitivo indireto: \"assistiu **ao** treinamento\".",
+    "D": "Incorreta. \"Aspirar\", no sentido de almejar, é transitivo indireto: \"aspiramos **ao** cargo\".",
+    "E": "Incorreta. \"Esquecer-se\" pede preposição: \"esqueci-me **de que** a reunião...\"."
+   },
+   "fundamentacao": {
+    "item": "LP-10",
+    "arquivo_teoria": "conteudo-gerais/01-lingua-portuguesa/10-regencia.md"
+   },
+   "ponto_atencao": "Assistir a, aspirar a, obedecer a, preferir X a Y.",
+   "revisao_rapida": "Memorize o verbo com a preposição.",
+   "tags": [
+    "regencia-verbal",
+    "lp-10",
+    "autoral",
+    "media",
+    "aplicacao"
+   ],
+   "fonte_origem": null,
+   "verificacao": "Conferida pela teoria do projeto e pela norma-padrão; sem consulta a VOLP/gramática de referência.",
+   "status_validacao": "em_revisao",
+   "titulo_item": "Regência verbal e nominal"
+  },
+  {
+   "id": "AUT-000140",
+   "tipo": "autoral",
+   "rotulo": "Questão autoral — estilo Cesgranrio.",
+   "modulo": "gerais-lingua-portuguesa",
+   "assunto": "Regência nominal: contrário a, favorável a",
+   "item_edital": "LP-10",
+   "id_matriz": "LP-10",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "aplicacao",
+   "tipo_questao": "aplicada",
+   "enunciado": "Complete as lacunas: \"O gerente mostrou-se contrário ______ proposta e favorável ______ revisão do prazo.\"",
+   "alternativas": {
+    "A": "com a – à",
+    "B": "da – na",
+    "C": "à – com a",
+    "D": "à – à",
+    "E": "pela – a"
+   },
+   "gabarito": "D",
+   "resolucao": "Regência nominal usual: **contrário a**, **favorável a**, **necessidade de**, **responsável por/de**, **aversão a/por**, **atento a**.",
+   "analise_alternativas": {
+    "A": "Incorreta. \"Contrário com\" não é a regência do adjetivo.",
+    "B": "Incorreta. \"Contrário da\" e \"favorável na\" são regências inadequadas.",
+    "C": "Incorreta. \"Favorável com a\" é inadequado.",
+    "D": "Correta. **Contrário** e **favorável** regem a preposição **a**. Com os substantivos femininos \"proposta\" e \"revisão\", ocorre a contração da preposição com o artigo: **à** (a + a).",
+    "E": "Incorreta. \"Contrário pela\" é inadequado; \"favorável a\" sem artigo contraído perderia a crase."
+   },
+   "fundamentacao": {
+    "item": "LP-10",
+    "arquivo_teoria": "conteudo-gerais/01-lingua-portuguesa/10-regencia.md"
+   },
+   "ponto_atencao": "Contrário a; favorável a.",
+   "revisao_rapida": "A regência do adjetivo é fixa: aprenda por listas.",
+   "tags": [
+    "regencia-nominal",
+    "lp-10",
+    "autoral",
+    "media",
+    "aplicacao"
+   ],
+   "fonte_origem": null,
+   "verificacao": "Conferida pela teoria do projeto e pela norma-padrão; sem consulta a VOLP/gramática de referência.",
+   "status_validacao": "em_revisao",
+   "titulo_item": "Regência verbal e nominal"
+  },
+  {
+   "id": "AUT-000141",
+   "tipo": "autoral",
+   "rotulo": "Questão autoral — estilo Cesgranrio.",
+   "modulo": "gerais-lingua-portuguesa",
+   "assunto": "Crase: emprego correto do acento grave",
+   "item_edital": "LP-11",
+   "id_matriz": "LP-11",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "aplicacao",
+   "tipo_questao": "conceitual",
+   "enunciado": "O sinal indicativo de crase está empregado corretamente em",
+   "alternativas": {
+    "A": "A reunião começa às 14h.",
+    "B": "Ele chegou à pé.",
+    "C": "Entregue o documento à ela.",
+    "D": "Fomos à Brasília.",
+    "E": "Estamos dispostos à colaborar."
+   },
+   "gabarito": "A",
+   "resolucao": "Sem crase antes de: **palavra masculina, verbo, pronome pessoal, cidades sem artigo, expressões com palavras repetidas** (cara a cara). Com crase: **horas**, locuções femininas (à vista, às vezes), **a + a(s)** do complemento feminino.",
+   "analise_alternativas": {
+    "A": "Correta. Em indicação de **hora determinada** com artigo feminino plural, ocorre crase: \"às 14h\" (a + as).",
+    "B": "Incorreta. Antes de palavra masculina (\"pé\") não há crase.",
+    "C": "Incorreta. Antes de pronome pessoal (\"ela\") não há crase.",
+    "D": "Incorreta. \"Brasília\" não admite artigo; \"Fomos a Brasília\" (sem crase).",
+    "E": "Incorreta. Antes de verbo no infinitivo (\"colaborar\") não há crase."
+   },
+   "fundamentacao": {
+    "item": "LP-11",
+    "arquivo_teoria": "conteudo-gerais/01-lingua-portuguesa/11-crase.md"
+   },
+   "ponto_atencao": "Crase = a (preposição) + a(s) (artigo/pronome).",
+   "revisao_rapida": "Teste da substituição por termo masculino: \"ao\"?",
+   "tags": [
+    "crase",
+    "lp-11",
+    "autoral",
+    "media",
+    "aplicacao"
+   ],
+   "fonte_origem": null,
+   "verificacao": "Conferida pela teoria do projeto e pela norma-padrão; sem consulta a VOLP/gramática de referência.",
+   "status_validacao": "em_revisao",
+   "titulo_item": "Crase"
+  },
+  {
+   "id": "AUT-000142",
+   "tipo": "autoral",
+   "rotulo": "Questão autoral — estilo Cesgranrio.",
+   "modulo": "gerais-lingua-portuguesa",
+   "assunto": "Crase: nome de lugar modificado",
+   "item_edital": "LP-11",
+   "id_matriz": "LP-11",
+   "itens_secundarios": [],
+   "dificuldade": "dificil",
+   "habilidade": "aplicacao",
+   "tipo_questao": "conceitual",
+   "enunciado": "O sinal indicativo de crase está empregado corretamente em",
+   "alternativas": {
+    "A": "Viajamos à Roma.",
+    "B": "Falamos à elas sobre o prazo.",
+    "C": "Viajamos à Roma dos imperadores.",
+    "D": "Começou à chover.",
+    "E": "Estamos frente à frente."
+   },
+   "gabarito": "C",
+   "resolucao": "Teste clássico: **\"volto da...\"** → crase; **\"volto de...\"** → sem crase. \"Volto **da** Roma dos imperadores\", logo, **à**.",
+   "analise_alternativas": {
+    "A": "Incorreta. Sem modificador, \"Roma\" não aceita artigo; não há crase.",
+    "B": "Incorreta. Antes de pronome pessoal não há crase.",
+    "C": "Correta. Nomes de cidades **não admitem artigo** (\"Viajamos a Roma\"), mas, **modificados por adjunto** (\"Roma dos imperadores\"), passam a admiti-lo: \"à Roma dos imperadores\".",
+    "D": "Incorreta. Antes de verbo não há crase.",
+    "E": "Incorreta. Em expressões com palavras repetidas (\"frente a frente\") não há crase."
+   },
+   "fundamentacao": {
+    "item": "LP-11",
+    "arquivo_teoria": "conteudo-gerais/01-lingua-portuguesa/11-crase.md"
+   },
+   "ponto_atencao": "Cidade modificada ganha artigo → crase.",
+   "revisao_rapida": "Substitua \"ir\" por \"voltar\": se aparecer \"da\", há crase.",
+   "tags": [
+    "crase",
+    "lp-11",
+    "autoral",
+    "dificil",
+    "aplicacao"
+   ],
+   "fonte_origem": null,
+   "verificacao": "Conferida pela teoria do projeto e pela norma-padrão; sem consulta a VOLP/gramática de referência.",
+   "status_validacao": "em_revisao",
+   "titulo_item": "Crase"
+  },
+  {
+   "id": "AUT-000143",
+   "tipo": "autoral",
+   "rotulo": "Questão autoral — estilo Cesgranrio.",
+   "modulo": "gerais-lingua-portuguesa",
+   "assunto": "Colocação pronominal: ênclise e próclise",
+   "item_edital": "LP-12",
+   "id_matriz": "LP-12",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "aplicacao",
+   "tipo_questao": "conceitual",
+   "enunciado": "De acordo com a norma-padrão, a colocação do pronome átono está correta em",
+   "alternativas": {
+    "A": "Me avise quando terminar.",
+    "B": "Ninguém avisou-me do atraso.",
+    "C": "Nunca esquecerei-me do prazo.",
+    "D": "Quem avisou-me do atraso?",
+    "E": "Avisaram-me do atraso."
+   },
+   "gabarito": "E",
+   "resolucao": "**Próclise** (antes do verbo) com palavra atrativa: *não, nunca, ninguém, que, quem, quando, se, todos, alguém, advérbios sem pausa*. **Ênclise** com verbo iniciando a frase. **Mesóclise** só com futuro do presente/pretérito sem atrativo.",
+   "analise_alternativas": {
+    "A": "Incorreta. Pronome oblíquo não inicia frase na norma-padrão; seria \"Avise-me\".",
+    "B": "Incorreta. \"Ninguém\" é pronome indefinido que atrai o pronome: \"Ninguém me avisou\".",
+    "C": "Incorreta. O advérbio \"nunca\" atrai o pronome: \"Nunca me esquecerei\".",
+    "D": "Incorreta. O pronome interrogativo \"quem\" atrai o pronome: \"Quem me avisou?\".",
+    "E": "Correta. Sem palavra atrativa antes do verbo, a norma-padrão pede **ênclise**: \"Avisaram-me\"."
+   },
+   "fundamentacao": {
+    "item": "LP-12",
+    "arquivo_teoria": "conteudo-gerais/01-lingua-portuguesa/12-colocacao-pronominal.md"
+   },
+   "ponto_atencao": "Sem atrativo: ênclise; com atrativo: próclise.",
+   "revisao_rapida": "Procure a palavra que vem antes do verbo e veja se atrai o pronome.",
+   "tags": [
+    "colocacao-pronominal",
+    "lp-12",
+    "autoral",
+    "media",
+    "aplicacao"
+   ],
+   "fonte_origem": null,
+   "verificacao": "Conferida pela teoria do projeto e pela norma-padrão; sem consulta a VOLP/gramática de referência.",
+   "status_validacao": "em_revisao",
+   "titulo_item": "Colocação dos pronomes átonos"
+  },
+  {
+   "id": "AUT-000144",
+   "tipo": "autoral",
+   "rotulo": "Questão autoral — estilo Cesgranrio.",
+   "modulo": "gerais-lingua-portuguesa",
+   "assunto": "Colocação pronominal: palavra atrativa \"que\"",
+   "item_edital": "LP-12",
+   "id_matriz": "LP-12",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "aplicacao",
+   "tipo_questao": "conceitual",
+   "enunciado": "De acordo com a norma-padrão, a colocação do pronome átono está correta em",
+   "alternativas": {
+    "A": "Ele disse que esqueceu-se do prazo.",
+    "B": "Ele disse que se esqueceu do prazo.",
+    "C": "Como disse-me o gerente, o prazo acabou.",
+    "D": "Todos esforçaram-se para cumprir as metas.",
+    "E": "Alguém falou-me do prazo."
+   },
+   "gabarito": "B",
+   "resolucao": "Atrativos de próclise: **conjunções subordinativas** (que, se, quando, como), **pronomes relativos, interrogativos e indefinidos**, **advérbios**, **palavras negativas**.",
+   "analise_alternativas": {
+    "A": "Incorreta. Com \"que\" antes do verbo, a próclise é a colocação adequada.",
+    "B": "Correta. A conjunção integrante **\"que\"** atrai o pronome: \"que **se** esqueceu\" (próclise).",
+    "C": "Incorreta. \"Como\" (conjunção) atrai o pronome: \"Como me disse o gerente\".",
+    "D": "Incorreta. \"Todos\" (indefinido) atrai: \"Todos se esforçaram\".",
+    "E": "Incorreta. \"Alguém\" (indefinido) atrai: \"Alguém me falou\"."
+   },
+   "fundamentacao": {
+    "item": "LP-12",
+    "arquivo_teoria": "conteudo-gerais/01-lingua-portuguesa/12-colocacao-pronominal.md"
+   },
+   "ponto_atencao": "Que + verbo → pronome antes do verbo.",
+   "revisao_rapida": "Se há atrativo, próclise.",
+   "tags": [
+    "colocacao-pronominal",
+    "lp-12",
+    "autoral",
+    "media",
+    "aplicacao"
+   ],
+   "fonte_origem": null,
+   "verificacao": "Conferida pela teoria do projeto e pela norma-padrão; sem consulta a VOLP/gramática de referência.",
+   "status_validacao": "em_revisao",
+   "titulo_item": "Colocação dos pronomes átonos"
+  }
+ ]
+}

@@ -1,0 +1,106 @@
+{
+ "modulo": "Questões autorais — m07-analise-dados (expansão T05)",
+ "lote": "T05 — expansão",
+ "data": "2026-11-06",
+ "total": 2,
+ "questoes": [
+  {
+   "id": "AUT-000110",
+   "tipo": "autoral",
+   "rotulo": "Questão autoral — estilo Cesgranrio.",
+   "modulo": "07-analise-dados",
+   "assunto": "BI como suporte à tomada de decisão",
+   "item_edital": "7.11",
+   "id_matriz": "E5-070",
+   "itens_secundarios": [
+    "7.10"
+   ],
+   "dificuldade": "media",
+   "habilidade": "avaliacao",
+   "tipo_questao": "conceitual",
+   "enunciado": "A diretoria de uma distribuidora passou a receber painéis de BI com vendas, margens e estoques integrados de vários sistemas.\n\nSobre o papel do BI nesse contexto, constata-se que ele",
+   "alternativas": {
+    "A": "oferece informação integrada, confiável e oportuna que apoia a decisão, sem substituir o julgamento do decisor.",
+    "B": "garante a decisão ótima, dispensando a análise crítica e o conhecimento do negócio por parte dos gestores.",
+    "C": "elimina a necessidade de qualidade de dados, pois corrige automaticamente todas as inconsistências das fontes de origem.",
+    "D": "atende apenas à decisão operacional, pois os painéis não servem à decisão tática ou estratégica.",
+    "E": "substitui o data warehouse, que se torna dispensável quando os painéis são bem construídos."
+   },
+   "gabarito": "A",
+   "resolucao": "O BI **transforma dados em informação para apoiar decisões** nos níveis estratégico, tático e operacional, entregando visão integrada, histórica e tempestiva. Ele **apoia**, e não **substitui** o decisor, e depende da **qualidade dos dados** e do alinhamento aos indicadores do negócio.",
+   "analise_alternativas": {
+    "A": "Correta. Descreve o papel do BI: apoiar a decisão com informação integrada e confiável.",
+    "B": "Incorreta. Nenhuma ferramenta garante decisão ótima; o decisor continua responsável.",
+    "C": "Incorreta. BI depende de qualidade de dados; \"lixo entra, lixo sai\".",
+    "D": "Incorreta. BI atende aos três níveis decisórios.",
+    "E": "Incorreta. O DW é a base integrada que costuma alimentar os painéis; não é dispensável."
+   },
+   "fundamentacao": {
+    "item": "7.11",
+    "arquivo_teoria": "conteudo/07-analise-dados/08-insights-e-tomada-de-decisao.md"
+   },
+   "ponto_atencao": "\"Garante\", \"elimina\", \"substitui\", \"apenas\": palavras absolutas que sinalizam a alternativa errada.",
+   "revisao_rapida": "BI apoia decisões em todos os níveis; não decide sozinho.",
+   "tags": [
+    "bi",
+    "decisao",
+    "m07",
+    "item-7.11",
+    "autoral",
+    "media",
+    "avaliacao"
+   ],
+   "fonte_origem": null,
+   "verificacao": "Resolução conferida pela teoria do projeto.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "AUT-000111",
+   "tipo": "autoral",
+   "rotulo": "Questão autoral — estilo Cesgranrio.",
+   "modulo": "07-analise-dados",
+   "assunto": "OLAP: roll-up, slice e pivot",
+   "item_edital": "7.5",
+   "id_matriz": "E5-064",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "compreensao",
+   "tipo_questao": "comparativa",
+   "enunciado": "Um analista trabalha com um cubo OLAP de vendas, com as dimensões Produto, Região e Tempo. Ele realiza as seguintes ações:\n\nI – passa a visualizar as vendas por ano, e não mais por mês;\nII – fixa a região em \"Sul\" e passa a ver apenas as dimensões Produto e Tempo dessa região;\nIII – troca as linhas por colunas na tabela exibida, sem alterar os dados.\n\nAs operações OLAP correspondentes às ações I, II e III são, respectivamente,",
+   "alternativas": {
+    "A": "drill-down, dice e pivot.",
+    "B": "roll-up, slice e pivot.",
+    "C": "roll-up, dice e drill-through.",
+    "D": "drill-down, slice e pivot.",
+    "E": "roll-up, pivot e slice."
+   },
+   "gabarito": "B",
+   "resolucao": "**Roll-up** agrega, subindo na hierarquia (mês → ano). **Slice** fixa **um** valor de uma dimensão, resultando em uma fatia do cubo (Região = Sul). **Pivot (rotação)** muda a orientação das dimensões na visualização. **Drill-down** faz o caminho contrário do roll-up; **dice** seleciona subcubo com valores em **várias** dimensões; **drill-through** acessa os dados de detalhe da fonte.",
+   "analise_alternativas": {
+    "A": "Incorreta. Drill-down detalha (ano → mês), o inverso do descrito em I; dice usa mais de uma dimensão.",
+    "B": "Correta. I é roll-up, II é slice e III é pivot.",
+    "C": "Incorreta. Dice exige restrição em duas ou mais dimensões; drill-through acessa a fonte, não troca eixos.",
+    "D": "Incorreta. Drill-down detalha, e I descreve uma agregação.",
+    "E": "Incorreta. Inverte II e III: fixar a região é slice, e girar eixos é pivot."
+   },
+   "fundamentacao": {
+    "item": "7.5",
+    "arquivo_teoria": "conteudo/07-analise-dados/05-olap-e-data-warehouse.md"
+   },
+   "ponto_atencao": "Roll-up ↑ agrega; drill-down ↓ detalha; slice = 1 dimensão fixada; dice = várias; pivot = gira eixos; drill-through = vai ao detalhe na fonte.",
+   "revisao_rapida": "Roll-up agrega, slice fixa, pivot gira.",
+   "tags": [
+    "olap",
+    "cubo",
+    "m07",
+    "item-7.5",
+    "autoral",
+    "media",
+    "compreensao"
+   ],
+   "fonte_origem": null,
+   "verificacao": "Resolução conferida pela teoria do projeto.",
+   "status_validacao": "em_revisao"
+  }
+ ]
+}

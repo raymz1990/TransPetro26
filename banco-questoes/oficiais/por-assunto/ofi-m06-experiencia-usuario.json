@@ -1,0 +1,243 @@
+{
+ "modulo": "Questões oficiais — m06-experiencia-usuario",
+ "lote": "T04 — Transpetro 2023 (Prova 6)",
+ "data": "2026-11-06",
+ "total": 4,
+ "questoes": [
+  {
+   "id": "OFI-000028",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 29.",
+   "modulo": "06-experiencia-usuario",
+   "assunto": "Prototipação de alta fidelidade",
+   "item_edital": "6.9",
+   "id_matriz": "E5-056",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "compreensao",
+   "tipo_questao": "conceitual",
+   "enunciado": "Ao desenvolver protótipos de alta fidelidade de um software, é necessário",
+   "alternativas": {
+    "A": "aplicar a técnica de paper prototyping.",
+    "B": "realizar a primeira validação com algum usuário ou com algum cliente do protótipo criado.",
+    "C": "definir o wireframe das telas do software sem o uso das cores da solução.",
+    "D": "fornecer um layout básico que permita algumas validações iniciais de maneira digital.",
+    "E": "oferecer protótipos de telas que representam de maneira fiel o que é esperado pelos usuários para que assim sejam codificadas."
+   },
+   "gabarito": "E",
+   "resolucao": "Protótipos de **alta fidelidade** reproduzem com fidelidade visual e de interação o produto esperado, servindo de referência para a codificação. Papel, wireframes sem cor e layouts básicos são de **baixa fidelidade**.",
+   "analise_alternativas": {
+    "A": "Incorreta. Paper prototyping é baixa fidelidade.",
+    "B": "Incorreta. A primeira validação com usuário pode ocorrer já em baixa fidelidade; não é característica exclusiva da alta.",
+    "C": "Incorreta. Wireframe sem cores é de baixa fidelidade.",
+    "D": "Incorreta. Layout básico para validações iniciais descreve baixa/média fidelidade.",
+    "E": "Correta. Telas fiéis ao esperado, prontas para guiar a codificação, caracterizam a alta fidelidade."
+   },
+   "fundamentacao": {
+    "item": "6.9",
+    "arquivo_teoria": "conteudo/06-experiencia-usuario/08-mvp-e-prototipacao.md"
+   },
+   "ponto_atencao": "Fidelidade: **baixa** (papel, wireframes, esboços), **média** (layout com navegação), **alta** (visual e interação finais).",
+   "revisao_rapida": "Alta fidelidade = parece o produto final.",
+   "tags": [
+    "prototipacao",
+    "transpetro-2023",
+    "oficial",
+    "media",
+    "compreensao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Transpetro PSP/Terra 002/2023 (Edital nº 2)",
+    "cargo": "Análise de Sistemas — Processos de Negócios",
+    "ano": 2023,
+    "prova": "Prova 6",
+    "numero_original": 29,
+    "id_prova": "PRV-005",
+    "situacao_gabarito": "de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/transpetro-2023-psp002-prova06-analise-sistemas-processos-negocios.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000029",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 33.",
+   "modulo": "06-experiencia-usuario",
+   "assunto": "Acessibilidade e usabilidade no processo de desenvolvimento",
+   "item_edital": "6.1",
+   "id_matriz": "E5-048",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "analise",
+   "tipo_questao": "comparativa",
+   "enunciado": "A respeito de acessibilidade e usabilidade, verifica-se que",
+   "alternativas": {
+    "A": "usabilidade é uma característica voltada a definir o desempenho e a manutenibilidade de uma solução para diferentes dispositivos.",
+    "B": "acessibilidade é uma característica que deve ser pensada a partir do momento em que um software se encontra codificado e pronto para testes com usuários finais.",
+    "C": "acessibilidade e usabilidade devem ser pensadas a partir da fase de codificação de um software.",
+    "D": "acessibilidade e usabilidade são características conflitantes que impedem a aplicação de ambas em um mesmo software.",
+    "E": "acessibilidade e usabilidade são características que devem ser consideradas para a construção de protótipos em um processo de desenvolvimento de software, as quais devem ser testadas antes da codificação."
+   },
+   "gabarito": "E",
+   "resolucao": "Acessibilidade e usabilidade são **requisitos de qualidade** a considerar desde as fases iniciais (pesquisa, prototipação), e **testar antes da codificação** reduz o custo de correção.",
+   "analise_alternativas": {
+    "A": "Incorreta. Usabilidade trata de eficácia, eficiência e satisfação do uso, e não de desempenho técnico ou manutenibilidade.",
+    "B": "Incorreta. Pensar em acessibilidade só com o software pronto encarece e limita as correções.",
+    "C": "Incorreta. Começar na codificação é tarde; ambas nascem no projeto e nos protótipos.",
+    "D": "Incorreta. As características são complementares, não conflitantes.",
+    "E": "Correta. Devem entrar nos protótipos e ser testadas antes da codificação."
+   },
+   "fundamentacao": {
+    "item": "6.1",
+    "arquivo_teoria": "conteudo/06-experiencia-usuario/01-usabilidade-e-acessibilidade.md"
+   },
+   "ponto_atencao": "Princípio **shift-left** também em UX: acessibilidade e usabilidade no início do processo, não no final.",
+   "revisao_rapida": "A11y e usabilidade: complementares e desde o protótipo.",
+   "tags": [
+    "acessibilidade",
+    "usabilidade",
+    "transpetro-2023",
+    "oficial",
+    "media",
+    "analise"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Transpetro PSP/Terra 002/2023 (Edital nº 2)",
+    "cargo": "Análise de Sistemas — Processos de Negócios",
+    "ano": 2023,
+    "prova": "Prova 6",
+    "numero_original": 33,
+    "id_prova": "PRV-005",
+    "situacao_gabarito": "de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/transpetro-2023-psp002-prova06-analise-sistemas-processos-negocios.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000030",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 34.",
+   "modulo": "06-experiencia-usuario",
+   "assunto": "Design Thinking: mapa de empatia",
+   "item_edital": "6.10",
+   "id_matriz": "E5-057",
+   "itens_secundarios": [],
+   "dificuldade": "facil",
+   "habilidade": "memorizacao",
+   "tipo_questao": "conceitual",
+   "enunciado": "O mapa de empatia é uma ferramenta muito utilizada em Design Thinking, e nele há informações importantes sobre o usuário que devem ser consideradas.\n\nQuais são essas informações?",
+   "alternativas": {
+    "A": "idade, nome, desejos, dores, animais preferidos.",
+    "B": "tecnologias preferidas, formação, o que pensa e sente.",
+    "C": "idade, nome, hobbies e dispositivos tecnológicos que possui.",
+    "D": "o que ele pensa e sente, o que ele escuta, o que ele vê, o que ele fala e faz.",
+    "E": "formação acadêmica, necessidades, local em que trabalha, e local em que nasceu."
+   },
+   "gabarito": "D",
+   "resolucao": "O **mapa de empatia** organiza o que o usuário **pensa e sente, ouve, vê, fala e faz**, além de **dores e ganhos**. Dados demográficos (idade, nome, formação) são da **persona**.",
+   "analise_alternativas": {
+    "A": "Incorreta. Mistura dados demográficos e itens sem relação com o mapa.",
+    "B": "Incorreta. Tecnologias preferidas e formação não são quadrantes do mapa.",
+    "C": "Incorreta. Dados demográficos e hobbies são de persona.",
+    "D": "Correta. Reúne os quadrantes do mapa de empatia.",
+    "E": "Incorreta. Dados demográficos e biográficos não compõem o mapa."
+   },
+   "fundamentacao": {
+    "item": "6.10",
+    "arquivo_teoria": "conteudo/06-experiencia-usuario/09-design-thinking-e-personas.md"
+   },
+   "ponto_atencao": "Mapa de empatia = percepção e comportamento (pensa/sente, ouve, vê, fala/faz, dores, ganhos). Persona = perfil demográfico e contexto.",
+   "revisao_rapida": "Mapa: pensa e sente, ouve, vê, fala e faz.",
+   "tags": [
+    "design-thinking",
+    "empatia",
+    "transpetro-2023",
+    "oficial",
+    "facil",
+    "memorizacao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Transpetro PSP/Terra 002/2023 (Edital nº 2)",
+    "cargo": "Análise de Sistemas — Processos de Negócios",
+    "ano": 2023,
+    "prova": "Prova 6",
+    "numero_original": 34,
+    "id_prova": "PRV-005",
+    "situacao_gabarito": "de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/transpetro-2023-psp002-prova06-analise-sistemas-processos-negocios.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000031",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 58.",
+   "modulo": "06-experiencia-usuario",
+   "assunto": "MVP: Mínimo Produto Viável",
+   "item_edital": "6.8",
+   "id_matriz": "E5-055",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "compreensao",
+   "tipo_questao": "conceitual",
+   "enunciado": "Em qualquer negócio, é necessário compreender as necessidades dos usuários de forma a atendê-los adequadamente.\n\nNesse sentido, o conceito de Produto Mínimo Viável (MVP) passou a ser muito utilizado no desenvolvimento de produtos de softwares, sendo que, nessa área, o MVP é",
+   "alternativas": {
+    "A": "a versão mais simples de um produto, que será criada e disponibilizada aos usuários para validar uma ideia e coletar dados imprescindíveis para validar o direcionamento do negócio.",
+    "B": "muito utilizado em startups que desejam criar um novo produto, sendo, porém, inadequado para empresas já estabelecidas testarem novas ideias, pois sua plataforma de usuários já fornece as informações necessárias para o lançamento de novos produtos.",
+    "C": "o primeiro lançamento de um novo produto de software destinado ao grande público, correspondendo à V1.0 desse software lançado no mercado, e os esforços destinados à sua construção devem ser compatíveis para garantir alta manutenibilidade.",
+    "D": "uma versão necessariamente reduzida de um produto de software, implementado com a utilização das mesmas tecnologias que serão usadas no produto final.",
+    "E": "a versão de um produto de software lançado no mercado após uma validação de hipóteses, realizada na etapa de pesquisas, durante o processo de ideação desse produto."
+   },
+   "gabarito": "A",
+   "resolucao": "O **MVP** é a versão mais enxuta que permite **aprender com usuários reais** (ciclo construir–medir–aprender), validando hipóteses e orientando o negócio com o mínimo de esforço.",
+   "analise_alternativas": {
+    "A": "Correta. Define o MVP corretamente: versão simples para validar ideia e coletar dados.",
+    "B": "Incorreta. O MVP também é adequado a empresas estabelecidas, que testam novas ideias.",
+    "C": "Incorreta. MVP não é a V1.0 nem prioriza manutenibilidade; é instrumento de aprendizagem.",
+    "D": "Incorreta. Não precisa usar as mesmas tecnologias do produto final (pode ser até manual ou simulado).",
+    "E": "Incorreta. O MVP é o meio de validar hipóteses, e não resultado de uma validação anterior."
+   },
+   "fundamentacao": {
+    "item": "6.8",
+    "arquivo_teoria": "conteudo/06-experiencia-usuario/08-mvp-e-prototipacao.md"
+   },
+   "ponto_atencao": "MVP ≠ protótipo ≠ versão 1.0. Objetivo: **aprendizagem validada** com o mínimo de esforço.",
+   "revisao_rapida": "MVP: mínimo para validar hipóteses com usuários reais.",
+   "tags": [
+    "mvp",
+    "lean-startup",
+    "transpetro-2023",
+    "oficial",
+    "media",
+    "compreensao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Transpetro PSP/Terra 002/2023 (Edital nº 2)",
+    "cargo": "Análise de Sistemas — Processos de Negócios",
+    "ano": 2023,
+    "prova": "Prova 6",
+    "numero_original": 58,
+    "id_prova": "PRV-005",
+    "situacao_gabarito": "de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/transpetro-2023-psp002-prova06-analise-sistemas-processos-negocios.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  }
+ ]
+}

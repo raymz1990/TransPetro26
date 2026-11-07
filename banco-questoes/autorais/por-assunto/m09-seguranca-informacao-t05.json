@@ -1,0 +1,399 @@
+{
+ "modulo": "Questões autorais — m09-seguranca-informacao (expansão T05)",
+ "lote": "T05 — expansão",
+ "data": "2026-11-06",
+ "total": 8,
+ "questoes": [
+  {
+   "id": "AUT-000113",
+   "tipo": "autoral",
+   "rotulo": "Questão autoral — estilo Cesgranrio.",
+   "modulo": "09-seguranca-informacao",
+   "assunto": "Segurança física e lógica: classificação de controles",
+   "item_edital": "9.1",
+   "id_matriz": null,
+   "itens_secundarios": [],
+   "dificuldade": "facil",
+   "habilidade": "compreensao",
+   "tipo_questao": "conceitual",
+   "enunciado": "Um relatório de auditoria lista controles de segurança implantados em um data center. O auditor precisa separar os controles lógicos dos controles físicos.\n\nA alternativa que apresenta apenas controles de segurança lógica é",
+   "alternativas": {
+    "A": "cerca perimetral, circuito fechado de TV, vigilantes e controle de acesso à portaria do prédio.",
+    "B": "sala-cofre, controle de umidade e temperatura, extintores de incêndio e piso elevado da sala de servidores.",
+    "C": "catraca com crachá, biometria na porta da sala, registro de visitantes e acompanhamento por segurança.",
+    "D": "autenticação multifator, criptografia de disco e listas de controle de acesso em arquivos.",
+    "E": "no-break, geradores e sistemas redundantes de refrigeração e de alimentação elétrica do data center."
+   },
+   "gabarito": "D",
+   "resolucao": "**Controles físicos** protegem instalações e equipamentos (cercas, câmeras, catracas, cofres, extintores, energia e climatização). **Controles lógicos** protegem sistemas e dados por software e configuração: autenticação, criptografia, permissões, firewalls, antivírus. Na ISO/IEC 27002:2022, correspondem aos temas **físicos** e **tecnológicos**.",
+   "analise_alternativas": {
+    "A": "Incorreta. Cercas, câmeras e vigilantes são controles físicos.",
+    "B": "Incorreta. Sala-cofre, umidade e extintores são físicos (ambiente).",
+    "C": "Incorreta. Catraca, biometria na porta e controle de visitantes são físicos.",
+    "D": "Correta. MFA, criptografia de disco e ACL são controles lógicos.",
+    "E": "Incorreta. No-break, geradores e refrigeração são físicos (infraestrutura)."
+   },
+   "fundamentacao": {
+    "item": "9.1",
+    "arquivo_teoria": "conteudo/09-seguranca-informacao/02-seguranca-fisica-e-logica.md"
+   },
+   "ponto_atencao": "Pergunte: o controle protege **o lugar e o equipamento** (físico) ou **o sistema e o dado** (lógico)? Biometria **na porta** é física; biometria **no login** é lógica.",
+   "revisao_rapida": "Físico = lugar/equipamento; lógico = sistema/dado.",
+   "tags": [
+    "seguranca-fisica",
+    "seguranca-logica",
+    "defesa-em-profundidade",
+    "m09",
+    "item-9.1",
+    "autoral",
+    "facil",
+    "compreensao"
+   ],
+   "fonte_origem": null,
+   "verificacao": "Resolução conferida pela teoria do projeto.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "AUT-000114",
+   "tipo": "autoral",
+   "rotulo": "Questão autoral — estilo Cesgranrio.",
+   "modulo": "09-seguranca-informacao",
+   "assunto": "VPN: IPsec em modo túnel",
+   "item_edital": "9.6",
+   "id_matriz": null,
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "compreensao",
+   "tipo_questao": "conceitual",
+   "enunciado": "Duas filiais de uma empresa serão conectadas pela Internet por meio de uma VPN IPsec entre os gateways de cada filial.\n\nSobre essa solução, tem-se que",
+   "alternativas": {
+    "A": "a VPN garante o anonimato total do usuário perante os sites de destino, ocultando por completo a sua identidade e localização.",
+    "B": "a VPN dispensa o uso de firewall, pois o túnel torna seguro todo o tráfego da rede.",
+    "C": "no modo transporte do IPsec, o pacote IP original é inteiramente encapsulado em um novo pacote, com novo cabeçalho IP.",
+    "D": "o ESP não oferece confidencialidade, que é fornecida somente pelo AH.",
+    "E": "no modo túnel, o pacote IP original é protegido e encapsulado em um novo pacote, típico da ligação entre gateways."
+   },
+   "gabarito": "E",
+   "resolucao": "No **IPsec**, o **modo túnel** protege e **encapsula o pacote IP original inteiro** em um novo pacote com novo cabeçalho IP, e é o usual em **VPN site-to-site** (gateway a gateway). No **modo transporte**, protege-se apenas o **payload**, mantendo o cabeçalho original (típico host a host). O **ESP** oferece confidencialidade, autenticação de origem e integridade; o **AH** oferece integridade e autenticação, **sem** confidencialidade.",
+   "analise_alternativas": {
+    "A": "Incorreta. A VPN protege o tráfego no caminho, mas não torna o usuário anônimo.",
+    "B": "Incorreta. A VPN não substitui firewall; as defesas se complementam.",
+    "C": "Incorreta. A descrição corresponde ao modo túnel; o transporte preserva o cabeçalho IP original.",
+    "D": "Incorreta. É o contrário: o ESP oferece confidencialidade, e o AH, não.",
+    "E": "Correta. Descreve corretamente o modo túnel e seu uso entre gateways."
+   },
+   "fundamentacao": {
+    "item": "9.6",
+    "arquivo_teoria": "conteudo/09-seguranca-informacao/05-vpn-mdm-sso-mfa-iam.md"
+   },
+   "ponto_atencao": "Túnel = **pacote inteiro** encapsulado (gateway–gateway); transporte = **só o payload** (host–host). **ESP** cifra; **AH** não cifra.",
+   "revisao_rapida": "IPsec: túnel encapsula tudo; ESP cifra; AH só autentica.",
+   "tags": [
+    "vpn",
+    "ipsec",
+    "m09",
+    "item-9.6",
+    "autoral",
+    "media",
+    "compreensao"
+   ],
+   "fonte_origem": null,
+   "verificacao": "Resolução conferida pela teoria do projeto.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "AUT-000115",
+   "tipo": "autoral",
+   "rotulo": "Questão autoral — estilo Cesgranrio.",
+   "modulo": "09-seguranca-informacao",
+   "assunto": "MDM: gerenciamento de dispositivos móveis",
+   "item_edital": "9.7",
+   "id_matriz": null,
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "aplicacao",
+   "tipo_questao": "cenario",
+   "enunciado": "Um funcionário que utiliza o smartphone pessoal para acessar o e-mail corporativo (política BYOD) perdeu o aparelho. A empresa adota uma solução de MDM (*Mobile Device Management*).\n\nUm recurso típico dessa solução, aplicável ao caso, é",
+   "alternativas": {
+    "A": "aplicar remotamente políticas de segurança (senha, criptografia) e apagar os dados corporativos do aparelho perdido.",
+    "B": "bloquear fisicamente o aparelho por meio de um dispositivo de travamento instalado na rede cabeada da empresa.",
+    "C": "substituir o firewall de borda da empresa, inspecionando todo o tráfego que circula pela rede interna corporativa.",
+    "D": "recuperar as senhas esquecidas dos usuários de qualquer aplicativo instalado no aparelho, inclusive os de terceiros.",
+    "E": "garantir que o aparelho nunca seja infectado por malware, independentemente do comportamento do usuário ao instalar aplicativos."
+   },
+   "gabarito": "A",
+   "resolucao": "O **MDM** permite **inventariar** dispositivos, **impor políticas** (senha, criptografia, aplicativos permitidos), **configurar** acessos corporativos e fazer **bloqueio e limpeza remotos** (inclusive limpeza **seletiva**, que remove só os dados corporativos em cenários BYOD).",
+   "analise_alternativas": {
+    "A": "Correta. Descreve recursos típicos do MDM: política remota e wipe (seletivo) em caso de perda.",
+    "B": "Incorreta. O MDM atua por software e comunicação remota, e não por dispositivo físico de travamento.",
+    "C": "Incorreta. Firewall de borda e MDM têm funções distintas.",
+    "D": "Incorreta. O MDM não recupera senhas de aplicativos de terceiros.",
+    "E": "Incorreta. Nenhum controle garante ausência total de infecção; o MDM reduz riscos."
+   },
+   "fundamentacao": {
+    "item": "9.7",
+    "arquivo_teoria": "conteudo/09-seguranca-informacao/05-vpn-mdm-sso-mfa-iam.md"
+   },
+   "ponto_atencao": "MDM = **gerenciar e proteger o dispositivo e os dados corporativos nele**. BYOD pede **separação** entre dados pessoais e corporativos e limpeza **seletiva**.",
+   "revisao_rapida": "MDM: inventário, políticas, bloqueio e wipe remoto.",
+   "tags": [
+    "mdm",
+    "byod",
+    "m09",
+    "item-9.7",
+    "autoral",
+    "media",
+    "aplicacao"
+   ],
+   "fonte_origem": null,
+   "verificacao": "Resolução conferida pela teoria do projeto.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "AUT-000116",
+   "tipo": "autoral",
+   "rotulo": "Questão autoral — estilo Cesgranrio.",
+   "modulo": "09-seguranca-informacao",
+   "assunto": "SSO: vantagens e riscos",
+   "item_edital": "9.8",
+   "id_matriz": null,
+   "itens_secundarios": [
+    "9.9",
+    "9.10"
+   ],
+   "dificuldade": "media",
+   "habilidade": "analise",
+   "tipo_questao": "conceitual",
+   "enunciado": "Uma organização implantou autenticação única (SSO), de modo que o usuário se autentica uma vez e acessa diversos sistemas corporativos sem informar novamente suas credenciais.\n\nSobre essa solução, tem-se que",
+   "alternativas": {
+    "A": "o SSO elimina a necessidade de autenticar o usuário, pois a identidade passa a ser presumida em todos os sistemas.",
+    "B": "o SSO reduz o número de senhas e centraliza o controle de acesso, mas cria um ponto único de comprometimento, reforçado com MFA.",
+    "C": "o SSO exige que cada sistema mantenha a sua própria base de senhas, replicada manualmente entre as aplicações.",
+    "D": "o SSO é incompatível com o uso de protocolos padronizados de federação, como SAML e OpenID Connect, usados em ambientes corporativos.",
+    "E": "o SSO impede o registro de auditoria, porque os acessos deixam de passar por cada sistema."
+   },
+   "gabarito": "B",
+   "resolucao": "No **SSO**, um **provedor de identidade (IdP)** autentica o usuário e emite **asserções/tokens** (SAML, OpenID Connect/OAuth 2.0, Kerberos) aceitos pelos sistemas. **Vantagens:** menos senhas, melhor experiência, controle e revogação centralizados, auditoria no IdP. **Risco:** o IdP é **ponto único de falha e de comprometimento**, mitigado com **MFA**, monitoramento e alta disponibilidade.",
+   "analise_alternativas": {
+    "A": "Incorreta. A autenticação ocorre uma vez, no IdP; ela não é eliminada.",
+    "B": "Correta. Descreve vantagens e riscos do SSO, e a mitigação por MFA.",
+    "C": "Incorreta. O SSO **reduz** bases de senhas por sistema, e não as replica.",
+    "D": "Incorreta. SAML e OIDC são justamente protocolos usados em SSO.",
+    "E": "Incorreta. O IdP centraliza logs e facilita a auditoria."
+   },
+   "fundamentacao": {
+    "item": "9.8",
+    "arquivo_teoria": "conteudo/09-seguranca-informacao/05-vpn-mdm-sso-mfa-iam.md"
+   },
+   "ponto_atencao": "SSO ≠ MFA ≠ cofre de senhas: SSO = **autenticar uma vez**; MFA = **mais de um fator**; ambos se complementam.",
+   "revisao_rapida": "SSO: IdP + tokens (SAML/OIDC); risco do ponto único → MFA.",
+   "tags": [
+    "sso",
+    "iam",
+    "m09",
+    "item-9.8",
+    "autoral",
+    "media",
+    "analise"
+   ],
+   "fonte_origem": null,
+   "verificacao": "Resolução conferida pela teoria do projeto.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "AUT-000117",
+   "tipo": "autoral",
+   "rotulo": "Questão autoral — estilo Cesgranrio.",
+   "modulo": "09-seguranca-informacao",
+   "assunto": "Teste de penetração: autorização e escopo",
+   "item_edital": "9.13",
+   "id_matriz": null,
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "aplicacao",
+   "tipo_questao": "cenario",
+   "enunciado": "Uma empresa contratou uma consultoria para realizar um teste de penetração em seus sistemas de produção.\n\nAntes de iniciar qualquer atividade técnica, o requisito essencial é",
+   "alternativas": {
+    "A": "executar uma varredura de portas e vulnerabilidades em toda a rede para, só então, definir o escopo do teste.",
+    "B": "comunicar o teste à equipe de TI somente após a conclusão, para que o ataque seja realista.",
+    "C": "obter autorização formal por escrito, com escopo, regras de engajamento, janelas de execução e responsáveis.",
+    "D": "obter as credenciais de administrador de todos os sistemas, pois o teste só é válido com acesso total.",
+    "E": "aplicar apenas técnicas automatizadas, pois as manuais podem ser interpretadas como ataque real."
+   },
+   "gabarito": "C",
+   "resolucao": "O teste de penetração só é legítimo com **autorização formal por escrito** do dono dos ativos. O **planejamento** define **escopo, objetivos, regras de engajamento** (técnicas permitidas, horários, contatos de emergência) e a **abordagem** (caixa-preta, cinza ou branca). Em seguida vêm descoberta, ataque e relatório (NIST SP 800-115).",
+   "analise_alternativas": {
+    "A": "Incorreta. Varredura sem escopo e sem autorização pode ser crime e causar impacto no ambiente de produção.",
+    "B": "Incorreta. Avisar depois é arriscado: incidentes simulados podem acionar respostas reais, e o contratante precisa de pontos de contato.",
+    "C": "Correta. A autorização escrita, o escopo e as regras de engajamento são requisitos prévios.",
+    "D": "Incorreta. O nível de conhecimento prévio (caixa-preta, cinza, branca) é definido no planejamento; acesso administrativo total não é requisito.",
+    "E": "Incorreta. Técnicas manuais fazem parte do pentest, desde que autorizadas no escopo."
+   },
+   "fundamentacao": {
+    "item": "9.13",
+    "arquivo_teoria": "conteudo/09-seguranca-informacao/08-pentest-stride-mitre.md"
+   },
+   "ponto_atencao": "Sem **autorização e escopo escritos**, é ataque, e não teste. Fases (NIST SP 800-115): **planejamento → descoberta → ataque → relatório**.",
+   "revisao_rapida": "Pentest começa por autorização formal, escopo e regras de engajamento.",
+   "tags": [
+    "pentest",
+    "nist-800-115",
+    "m09",
+    "item-9.13",
+    "autoral",
+    "media",
+    "aplicacao"
+   ],
+   "fonte_origem": null,
+   "verificacao": "Resolução conferida pela teoria do projeto.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "AUT-000118",
+   "tipo": "autoral",
+   "rotulo": "Questão autoral — estilo Cesgranrio.",
+   "modulo": "09-seguranca-informacao",
+   "assunto": "Política de segurança da informação",
+   "item_edital": "9.17",
+   "id_matriz": null,
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "compreensao",
+   "tipo_questao": "conceitual",
+   "enunciado": "Uma organização está elaborando sua Política de Segurança da Informação (PSI).\n\nSobre a PSI, tem-se que ela deve",
+   "alternativas": {
+    "A": "ser um documento técnico, restrito à equipe de TI, que detalha as configurações dos equipamentos e dos sistemas.",
+    "B": "ser elaborada pelo departamento de TI e implantada sem aprovação da alta direção, para agilizar o processo de implantação.",
+    "C": "ser definida uma única vez e mantida sem alterações ao longo dos anos, para evitar insegurança jurídica.",
+    "D": "ser aprovada pela direção, comunicada a todos os envolvidos e apoiada por normas e procedimentos que detalham seu cumprimento.",
+    "E": "tratar apenas dos usuários internos, uma vez que os terceiros e prestadores de serviço não têm acesso aos ativos."
+   },
+   "gabarito": "D",
+   "resolucao": "A PSI é um documento de **alto nível**, **aprovado pela alta direção**, **publicado e comunicado** aos funcionários e partes externas relevantes, e **revisada periodicamente**. Ela estabelece diretrizes e responsabilidades; **normas** e **procedimentos** detalham como cumpri-las.",
+   "analise_alternativas": {
+    "A": "Incorreta. Configurações detalhadas pertencem a procedimentos; a PSI é de alto nível e para todos.",
+    "B": "Incorreta. Sem apoio e aprovação da direção, falta autoridade à política.",
+    "C": "Incorreta. A política deve ser **revisada** em intervalos planejados e em caso de mudanças significativas.",
+    "D": "Correta. Política aprovada, comunicada e apoiada por normas e procedimentos é a prática correta.",
+    "E": "Incorreta. A PSI alcança também terceiros e prestadores que acessem os ativos."
+   },
+   "fundamentacao": {
+    "item": "9.17",
+    "arquivo_teoria": "conteudo/09-seguranca-informacao/10-politicas-e-classificacao.md"
+   },
+   "ponto_atencao": "Hierarquia documental: **política** (diretrizes) → **normas** (regras) → **procedimentos** (passo a passo). O compromisso da **direção** é pré-requisito.",
+   "revisao_rapida": "PSI: aprovada pela direção, divulgada, revisada, com normas e procedimentos.",
+   "tags": [
+    "psi",
+    "politicas",
+    "m09",
+    "item-9.17",
+    "autoral",
+    "media",
+    "compreensao"
+   ],
+   "fonte_origem": null,
+   "verificacao": "Resolução conferida pela teoria do projeto.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "AUT-000119",
+   "tipo": "autoral",
+   "rotulo": "Questão autoral — estilo Cesgranrio.",
+   "modulo": "09-seguranca-informacao",
+   "assunto": "Classificação das informações",
+   "item_edital": "9.18",
+   "id_matriz": null,
+   "itens_secundarios": [
+    "9.17"
+   ],
+   "dificuldade": "media",
+   "habilidade": "compreensao",
+   "tipo_questao": "conceitual",
+   "enunciado": "Uma empresa adotou um esquema de classificação das informações com os níveis público, interno, confidencial e restrito.\n\nSobre o processo de classificação, constata-se que",
+   "alternativas": {
+    "A": "a equipe de TI deve classificar todas as informações da empresa, pois é quem detém e administra os sistemas.",
+    "B": "toda informação deve receber o nível mais alto, por precaução, a fim de simplificar o tratamento.",
+    "C": "a classificação é definitiva e não precisa ser reavaliada, ainda que a informação perca a sensibilidade com o passar do tempo.",
+    "D": "a classificação dispensa rótulos, pois o conhecimento informal dos usuários é suficiente para garantir o tratamento correto em toda a empresa.",
+    "E": "o proprietário da informação a classifica com base em valor, sensibilidade e requisitos legais, e o tratamento segue o nível atribuído."
+   },
+   "gabarito": "E",
+   "resolucao": "O **proprietário (dono) da informação** é responsável por classificá-la, considerando **valor, sensibilidade, criticidade e requisitos legais ou contratuais**. A informação é **rotulada** e **tratada conforme o nível** (acesso, armazenamento, transmissão e descarte), e a classificação é **reavaliada** quando o contexto muda.",
+   "analise_alternativas": {
+    "A": "Incorreta. A TI é **custodiante** dos sistemas; a classificação cabe ao proprietário da informação.",
+    "B": "Incorreta. Classificar tudo no nível máximo encarece os controles e dilui a proteção do que é crítico.",
+    "C": "Incorreta. A sensibilidade muda com o tempo; a classificação deve ser revisada.",
+    "D": "Incorreta. A rotulagem é parte do processo e garante tratamento uniforme.",
+    "E": "Correta. Descreve corretamente quem classifica, com quais critérios e como o tratamento decorre do nível."
+   },
+   "fundamentacao": {
+    "item": "9.18",
+    "arquivo_teoria": "conteudo/09-seguranca-informacao/10-politicas-e-classificacao.md"
+   },
+   "ponto_atencao": "**Proprietário** classifica; **custodiante** (TI) protege; **usuário** utiliza conforme as regras. Classificar = **rotular + tratar + reavaliar**.",
+   "revisao_rapida": "Dono classifica por valor e sensibilidade; tratamento segue o nível.",
+   "tags": [
+    "classificacao-informacao",
+    "m09",
+    "item-9.18",
+    "autoral",
+    "media",
+    "compreensao"
+   ],
+   "fonte_origem": null,
+   "verificacao": "Resolução conferida pela teoria do projeto.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "AUT-000120",
+   "tipo": "autoral",
+   "rotulo": "Questão autoral — estilo Cesgranrio.",
+   "modulo": "09-seguranca-informacao",
+   "assunto": "Segurança em IoT: credenciais padrão e atualização",
+   "item_edital": "9.21",
+   "id_matriz": null,
+   "itens_secundarios": [
+    "9.4"
+   ],
+   "dificuldade": "media",
+   "habilidade": "aplicacao",
+   "tipo_questao": "cenario",
+   "enunciado": "Uma empresa instalou centenas de câmeras IP conectadas à rede corporativa, mantendo as senhas de fábrica. Pouco tempo depois, parte dos dispositivos passou a integrar uma botnet que gerou ataques de negação de serviço.\n\nPara reduzir esse risco em dispositivos IoT, as medidas mais adequadas são",
+   "alternativas": {
+    "A": "trocar as credenciais padrão, manter o firmware atualizado e segmentar a rede, isolando os dispositivos IoT.",
+    "B": "manter as credenciais padrão para facilitar o suporte, e confiar no firewall de borda para bloquear qualquer ataque externo.",
+    "C": "desativar todos os registros (logs) dos dispositivos, para reduzir o consumo de armazenamento.",
+    "D": "expor as interfaces de administração diretamente à Internet, para permitir o acesso remoto do fabricante.",
+    "E": "evitar qualquer atualização de firmware, pois novas versões podem alterar o comportamento esperado."
+   },
+   "gabarito": "A",
+   "resolucao": "Os dispositivos IoT são alvos frequentes de botnets (como a Mirai) por **credenciais padrão**, **firmware desatualizado** e **serviços expostos**. As medidas básicas são: **alterar credenciais**, **atualizar firmware**, **desativar serviços desnecessários**, **segmentar a rede** (VLAN/zonas), **monitorar** e usar **autenticação forte**.",
+   "analise_alternativas": {
+    "A": "Correta. Medidas básicas e eficazes: credenciais, atualização e segmentação.",
+    "B": "Incorreta. Credenciais padrão são conhecidas publicamente, e o firewall de borda não protege contra o tráfego interno.",
+    "C": "Incorreta. Logs são essenciais para detecção e investigação.",
+    "D": "Incorreta. Expor a administração à Internet amplia a superfície de ataque.",
+    "E": "Incorreta. Atualizações corrigem vulnerabilidades; evitá-las mantém o risco."
+   },
+   "fundamentacao": {
+    "item": "9.21",
+    "arquivo_teoria": "conteudo/09-seguranca-informacao/13-seguranca-cloud-e-iot.md"
+   },
+   "ponto_atencao": "IoT: **senha padrão + firmware velho + exposição** = receita de botnet. Defesa em camadas: **identidade, atualização, segmentação, monitoramento**.",
+   "revisao_rapida": "IoT: trocar senha, atualizar, segmentar, monitorar.",
+   "tags": [
+    "iot",
+    "botnet",
+    "m09",
+    "item-9.21",
+    "autoral",
+    "media",
+    "aplicacao"
+   ],
+   "fonte_origem": null,
+   "verificacao": "Resolução conferida pela teoria do projeto.",
+   "status_validacao": "em_revisao"
+  }
+ ]
+}

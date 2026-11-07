@@ -1,0 +1,105 @@
+{
+ "modulo": "Questões autorais — m02-projetos-produtos (expansão T05)",
+ "lote": "T05 — expansão",
+ "data": "2026-11-06",
+ "total": 2,
+ "questoes": [
+  {
+   "id": "AUT-000100",
+   "tipo": "autoral",
+   "rotulo": "Questão autoral — estilo Cesgranrio.",
+   "modulo": "02-projetos-produtos",
+   "assunto": "Modelos de gestão: escolha do modelo e abordagem híbrida",
+   "item_edital": "2.7",
+   "id_matriz": "E5-032",
+   "itens_secundarios": [
+    "2.2"
+   ],
+   "dificuldade": "media",
+   "habilidade": "avaliacao",
+   "tipo_questao": "cenario",
+   "enunciado": "Uma empresa vai construir uma unidade industrial. O empreendimento inclui a obra civil e a instalação de equipamentos, com requisitos estáveis, contrato rígido e entregas físicas por marcos, e um sistema de software de supervisão cujos requisitos são incertos e dependem do feedback frequente dos operadores.\n\nConsiderando as características de cada parte, o modelo de gestão mais adequado ao empreendimento é o",
+   "alternativas": {
+    "A": "híbrido, com abordagem preditiva para a obra e adaptativa (ágil) para o software.",
+    "B": "em cascata, aplicado integralmente a toda a obra e ao software, pois o contrato é rígido.",
+    "C": "Scrum, aplicado integralmente à obra e ao software, para que ambos sejam entregues em Sprints.",
+    "D": "Kanban, aplicado integralmente à obra, que deve ter fluxo contínuo sem planejamento prévio.",
+    "E": "em V, aplicado à obra, pois a obra civil exige que cada fase de projeto tenha uma fase de teste correspondente."
+   },
+   "gabarito": "A",
+   "resolucao": "A escolha do modelo depende de **estabilidade dos requisitos, risco de mudança, possibilidade de entregas parciais, contrato e cultura**. A obra e os equipamentos tendem ao **preditivo**; o software, com requisitos incertos e feedback frequente, tende ao **ágil**. Quando há partes distintas no mesmo empreendimento, o **híbrido** costuma ser indicado.",
+   "analise_alternativas": {
+    "A": "Correta. Combina o modelo adequado a cada parte: abordagem híbrida.",
+    "B": "Incorreta. Aplicar cascata ao software incerto aumenta o risco de rejeição tardia.",
+    "C": "Incorreta. Sprints não se aplicam a obras físicas com requisitos estáveis e marcos contratuais.",
+    "D": "Incorreta. Obras exigem planejamento antecipado; fluxo contínuo sem plano não é adequado.",
+    "E": "Incorreta. O modelo em V é um ciclo de desenvolvimento de software; não resolve a divergência de natureza entre as partes e não trata o software incerto."
+   },
+   "fundamentacao": {
+    "item": "2.7",
+    "arquivo_teoria": "conteudo/02-projetos-produtos/07-modelos-de-gestao.md"
+   },
+   "ponto_atencao": "Sem \"um modelo único\": a prova valoriza o **critério de escolha**. Requisito estável + marco físico = preditivo; incerteza + feedback = ágil; mistura = híbrido.",
+   "revisao_rapida": "Partes distintas, natureza distinta: híbrido.",
+   "tags": [
+    "hibrido",
+    "modelos-de-gestao",
+    "m02",
+    "item-2.7",
+    "autoral",
+    "media",
+    "avaliacao"
+   ],
+   "fonte_origem": null,
+   "verificacao": "Resolução conferida pela teoria do projeto.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "AUT-000101",
+   "tipo": "autoral",
+   "rotulo": "Questão autoral — estilo Cesgranrio.",
+   "modulo": "02-projetos-produtos",
+   "assunto": "Escritório de projetos: modelo de suporte, controle e diretivo",
+   "item_edital": "2.6",
+   "id_matriz": "E5-031",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "compreensao",
+   "tipo_questao": "cenario",
+   "enunciado": "Em uma organização de baixa maturidade em gerenciamento de projetos, a diretoria criou um escritório de projetos com a missão de fornecer modelos de documentos, treinamento e boas práticas aos gerentes de projeto, que continuam responsáveis por seus projetos e podem decidir livremente se adotam ou não esses padrões.\n\nO papel desse escritório de projetos corresponde ao modelo",
+   "alternativas": {
+    "A": "diretivo, pois os gerentes de projetos pertencem ao escritório e respondem a ele.",
+    "B": "de controle, pois exige conformidade com métodos, ferramentas e governança.",
+    "C": "estratégico, pois seu objetivo principal é balancear o portfólio de acordo com a estratégia.",
+    "D": "ágil, pois atua exclusivamente na remoção de impedimentos das equipes.",
+    "E": "de suporte, pois exerce papel consultivo, com baixo grau de controle."
+   },
+   "gabarito": "E",
+   "resolucao": "O PMO é classificado pelo **grau de controle**: **suporte** (baixo; consultivo, modelos, treinamento), **controle** (moderado; exige conformidade) e **diretivo** (alto; assume a gestão dos projetos). A adoção voluntária e o papel consultivo caracterizam o PMO de suporte.",
+   "analise_alternativas": {
+    "A": "Incorreta. No diretivo, os gerentes de projetos são subordinados ao PMO, o que não ocorre.",
+    "B": "Incorreta. No de controle, a conformidade é obrigatória; no caso, a adoção é livre.",
+    "C": "Incorreta. O PMO estratégico (EPMO) trata de portfólio e alinhamento estratégico; o enunciado não menciona essa função.",
+    "D": "Incorreta. O PMO ágil trata de facilitação em ambientes ágeis; não é o caso descrito.",
+    "E": "Correta. Papel consultivo, baixo controle e adoção voluntária: PMO de suporte."
+   },
+   "fundamentacao": {
+    "item": "2.6",
+    "arquivo_teoria": "conteudo/02-projetos-produtos/06-pmo-e-governanca-projetos.md"
+   },
+   "ponto_atencao": "Gradiente: **suporte (sugere) → controle (exige) → diretivo (gerencia)**. Verbos do enunciado indicam o grau de controle.",
+   "revisao_rapida": "PMO: suporte = baixo; controle = moderado; diretivo = alto.",
+   "tags": [
+    "pmo",
+    "m02",
+    "item-2.6",
+    "autoral",
+    "media",
+    "compreensao"
+   ],
+   "fonte_origem": null,
+   "verificacao": "Resolução conferida pela teoria do projeto.",
+   "status_validacao": "em_revisao"
+  }
+ ]
+}

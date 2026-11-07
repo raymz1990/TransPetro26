@@ -1,0 +1,126 @@
+{
+ "modulo": "Questões oficiais — m08-logica-matematica",
+ "lote": "T04 — Transpetro 2023 (Prova 6)",
+ "data": "2026-11-06",
+ "total": 2,
+ "questoes": [
+  {
+   "id": "OFI-000033",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 28.",
+   "modulo": "08-logica-matematica",
+   "assunto": "Argumento válido: conclusão a partir das premissas",
+   "item_edital": "8.2",
+   "id_matriz": "E5-073",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "resolucao_problemas",
+   "tipo_questao": "logica",
+   "enunciado": "A seguir são apresentadas as três premissas de um argumento.\n\nPremissa 1: (¬A) → ((¬D) ∨ E)\nPremissa 2: D ∧ (¬E)\nPremissa 3: (¬A) ∨ B\n\nQual conclusão torna válido o argumento?",
+   "alternativas": {
+    "A": "¬D",
+    "B": "E",
+    "C": "¬A",
+    "D": "B",
+    "E": "¬B"
+   },
+   "gabarito": "D",
+   "resolucao": "Para que todas as premissas sejam verdadeiras, a **Premissa 2** exige D verdadeiro e E falso. Na Premissa 1, ¬D ∨ E = F ∨ F = **F**; logo ¬A deve ser falso, isto é, **A é verdadeiro**. Na Premissa 3, ¬A é falso, então **B deve ser verdadeiro**. A conclusão que decorre de todas as premissas é **B**.",
+   "analise_alternativas": {
+    "A": "Incorreta. ¬D contradiz a Premissa 2 (D verdadeiro).",
+    "B": "Incorreta. E é falso pela Premissa 2.",
+    "C": "Incorreta. ¬A é falso, pois A é verdadeiro.",
+    "D": "Correta. B é verdadeiro em toda situação em que as três premissas são verdadeiras: conclusão válida.",
+    "E": "Incorreta. ¬B é falso."
+   },
+   "fundamentacao": {
+    "item": "8.2",
+    "arquivo_teoria": "conteudo/08-logica-matematica/03-argumentacao-logica.md"
+   },
+   "ponto_atencao": "Método: assuma as premissas verdadeiras, comece pela **conjunção** (premissa mais forte) e propague. Argumento válido = não há linha com premissas V e conclusão F.",
+   "revisao_rapida": "Premissas V ⇒ D=V, E=F, A=V, B=V.",
+   "tags": [
+    "argumentos",
+    "tabela-verdade",
+    "transpetro-2023",
+    "oficial",
+    "media",
+    "resolucao_problemas"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Transpetro PSP/Terra 002/2023 (Edital nº 2)",
+    "cargo": "Análise de Sistemas — Processos de Negócios",
+    "ano": 2023,
+    "prova": "Prova 6",
+    "numero_original": 28,
+    "id_prova": "PRV-005",
+    "situacao_gabarito": "de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/transpetro-2023-psp002-prova06-analise-sistemas-processos-negocios.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Verificada por tabela-verdade (único modelo: A=V, B=V, D=V, E=F).",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000034",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 35.",
+   "modulo": "08-logica-matematica",
+   "assunto": "Consequência lógica de sentença quantificada",
+   "item_edital": "8.4",
+   "id_matriz": "E5-075",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "analise",
+   "tipo_questao": "logica",
+   "enunciado": "A seguinte afirmação é consequência lógica de “Todo profissional de um posto de saúde é médico ou enfermeiro.”:",
+   "alternativas": {
+    "A": "Todo médico de um posto de saúde também é enfermeiro.",
+    "B": "Se alguém não é médico e não é enfermeiro, então não é um profissional de um posto de saúde.",
+    "C": "Nenhum enfermeiro de um posto de saúde é um médico.",
+    "D": "Alguns profissionais de um posto de saúde não são médicos e não são enfermeiros.",
+    "E": "Profissionais de um posto de saúde não podem ser médicos e enfermeiros ao mesmo tempo."
+   },
+   "gabarito": "B",
+   "resolucao": "Simbolicamente: ∀x (P(x) → (M(x) ∨ E(x))). A **contrapositiva** é ∀x (¬(M(x) ∨ E(x)) → ¬P(x)), ou seja, quem não é médico nem enfermeiro não é profissional do posto, que é a alternativa B.",
+   "analise_alternativas": {
+    "A": "Incorreta. Confunde \"ou\" com \"e\"; não decorre.",
+    "B": "Correta. É a contrapositiva da sentença original, equivalente a ela.",
+    "C": "Incorreta. A sentença admite quem seja ambos; nada impede.",
+    "D": "Incorreta. Contradiz a sentença, que diz que todos são médicos ou enfermeiros.",
+    "E": "Incorreta. A sentença usa \"ou\" inclusivo e não proíbe quem seja ambos."
+   },
+   "fundamentacao": {
+    "item": "8.4",
+    "arquivo_teoria": "conteudo/08-logica-matematica/05-logica-de-predicados.md"
+   },
+   "ponto_atencao": "Consequência lógica de ∀x(P→Q) ⇒ **contrapositiva** ∀x(¬Q→¬P). \"Ou\" é inclusivo, salvo indicação em contrário.",
+   "revisao_rapida": "P→Q ≡ ¬Q→¬P.",
+   "tags": [
+    "predicados",
+    "contrapositiva",
+    "transpetro-2023",
+    "oficial",
+    "media",
+    "analise"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Transpetro PSP/Terra 002/2023 (Edital nº 2)",
+    "cargo": "Análise de Sistemas — Processos de Negócios",
+    "ano": 2023,
+    "prova": "Prova 6",
+    "numero_original": 35,
+    "id_prova": "PRV-005",
+    "situacao_gabarito": "de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/transpetro-2023-psp002-prova06-analise-sistemas-processos-negocios.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  }
+ ]
+}

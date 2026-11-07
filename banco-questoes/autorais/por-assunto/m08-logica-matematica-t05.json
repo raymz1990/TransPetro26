@@ -1,0 +1,56 @@
+{
+ "modulo": "Questões autorais — m08-logica-matematica (expansão T05)",
+ "lote": "T05 — expansão",
+ "data": "2026-11-06",
+ "total": 1,
+ "questoes": [
+  {
+   "id": "AUT-000112",
+   "tipo": "autoral",
+   "rotulo": "Questão autoral — estilo Cesgranrio.",
+   "modulo": "08-logica-matematica",
+   "assunto": "Funções de avaliação (valoração)",
+   "item_edital": "8.9",
+   "id_matriz": "E5-080",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "aplicacao",
+   "tipo_questao": "logica",
+   "enunciado": "Seja v uma função de avaliação (valoração) que atribui valores-verdade às letras sentenciais p, q e r. Considere a fórmula (p → q) ∧ (q → r).\n\nDentre as valorações apresentadas a seguir (V = verdadeiro, F = falso), a única que atribui o valor F a essa fórmula é",
+   "alternativas": {
+    "A": "v(p) = V, v(q) = V, v(r) = V.",
+    "B": "v(p) = F, v(q) = F, v(r) = F.",
+    "C": "v(p) = V, v(q) = V, v(r) = F.",
+    "D": "v(p) = F, v(q) = V, v(r) = V.",
+    "E": "v(p) = F, v(q) = F, v(r) = V."
+   },
+   "gabarito": "C",
+   "resolucao": "Uma conjunção só é falsa se **ao menos um** conjunto é falso. Em **p = V, q = V, r = F**: p → q = V, mas q → r = (V → F) = **F**; logo a conjunção é F. Nas demais: A (V∧V = V); B (V∧V = V); D (V∧V = V); E (V∧V = V).",
+   "analise_alternativas": {
+    "A": "Incorreta. p→q = V e q→r = V; fórmula V.",
+    "B": "Incorreta. Antecedentes falsos tornam as duas condicionais verdadeiras; fórmula V.",
+    "C": "Correta. q → r = V → F = F; fórmula F.",
+    "D": "Incorreta. p→q = V (antecedente falso) e q→r = V; fórmula V.",
+    "E": "Incorreta. p→q = V e q→r = V (antecedente falso); fórmula V."
+   },
+   "fundamentacao": {
+    "item": "8.9",
+    "arquivo_teoria": "conteudo/08-logica-matematica/07-decidibilidade-e-funcoes-avaliacao.md"
+   },
+   "ponto_atencao": "A condicional só é falsa com **antecedente verdadeiro e consequente falso**. Para avaliar uma conjunção, procure **um** conjunto falso.",
+   "revisao_rapida": "A→B é F só se A=V e B=F.",
+   "tags": [
+    "valoracao",
+    "tabela-verdade",
+    "m08",
+    "item-8.9",
+    "autoral",
+    "media",
+    "aplicacao"
+   ],
+   "fonte_origem": null,
+   "verificacao": "Verificada por enumeração das 8 valorações: falsa em (V,V,F) e (F,V,F); entre as opções, só (V,V,F).",
+   "status_validacao": "em_revisao"
+  }
+ ]
+}

@@ -1,0 +1,104 @@
+{
+ "modulo": "Questões autorais — m03-processos-gerenciamento (expansão T05)",
+ "lote": "T05 — expansão",
+ "data": "2026-11-06",
+ "total": 2,
+ "questoes": [
+  {
+   "id": "AUT-000102",
+   "tipo": "autoral",
+   "rotulo": "Questão autoral — estilo Cesgranrio.",
+   "modulo": "03-processos-gerenciamento",
+   "assunto": "Grupos de processos: associação de processos aos grupos",
+   "item_edital": "3",
+   "id_matriz": "E5-033",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "memorizacao",
+   "tipo_questao": "conceitual",
+   "enunciado": "No PMBOK (6ª edição), os 49 processos de gerenciamento de projetos estão distribuídos em cinco grupos de processos.\n\nA associação correta entre um processo e o seu grupo é:",
+   "alternativas": {
+    "A": "Validar o escopo — Execução.",
+    "B": "Dirigir e gerenciar o trabalho do projeto — Execução.",
+    "C": "Identificar as partes interessadas — Planejamento.",
+    "D": "Identificar os riscos — Execução.",
+    "E": "Controlar os custos — Planejamento."
+   },
+   "gabarito": "B",
+   "resolucao": "Grupos e exemplos: **Iniciação** (desenvolver o termo de abertura; identificar as partes interessadas); **Planejamento** (planejar escopo, cronograma, custos, riscos; identificar riscos); **Execução** (dirigir e gerenciar o trabalho; gerenciar a qualidade; gerenciar a equipe); **Monitoramento e Controle** (validar e controlar o escopo; controlar custos e cronograma); **Encerramento** (encerrar o projeto ou fase).",
+   "analise_alternativas": {
+    "A": "Incorreta. Validar o escopo pertence a Monitoramento e Controle.",
+    "B": "Correta. Dirigir e gerenciar o trabalho do projeto é processo de Execução.",
+    "C": "Incorreta. Identificar as partes interessadas pertence à Iniciação.",
+    "D": "Incorreta. Identificar os riscos pertence ao Planejamento.",
+    "E": "Incorreta. Controlar os custos pertence a Monitoramento e Controle."
+   },
+   "fundamentacao": {
+    "item": "3",
+    "arquivo_teoria": "conteudo/03-processos-gerenciamento/01-fundamentos-processos.md"
+   },
+   "ponto_atencao": "Verbos ajudam: **Desenvolver/Identificar partes interessadas** = iniciação; **Planejar/Definir/Estimar** = planejamento; **Dirigir/Gerenciar** = execução; **Controlar/Validar/Monitorar** = M&C. Exceção: *Identificar os riscos* é planejamento. A 7ª edição abandonou os grupos de processos.",
+   "revisao_rapida": "Controlar e Validar = M&C; Gerenciar/Dirigir = Execução.",
+   "tags": [
+    "grupos-de-processos",
+    "pmbok-6",
+    "m03",
+    "item-3",
+    "autoral",
+    "media",
+    "memorizacao"
+   ],
+   "fonte_origem": null,
+   "verificacao": "Resolução conferida pela teoria do projeto.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "AUT-000103",
+   "tipo": "autoral",
+   "rotulo": "Questão autoral — estilo Cesgranrio.",
+   "modulo": "03-processos-gerenciamento",
+   "assunto": "Áreas de conhecimento do PMBOK (6ª edição)",
+   "item_edital": "3",
+   "id_matriz": "E5-033",
+   "itens_secundarios": [],
+   "dificuldade": "facil",
+   "habilidade": "memorizacao",
+   "tipo_questao": "conceitual",
+   "enunciado": "O PMBOK (6ª edição) organiza os processos de gerenciamento de projetos em dez áreas de conhecimento.\n\nDentre as alternativas abaixo, a que apresenta uma área de conhecimento do PMBOK nessa edição é o gerenciamento de(a)",
+   "alternativas": {
+    "A": "configuração.",
+    "B": "mudanças.",
+    "C": "partes interessadas.",
+    "D": "portfólio.",
+    "E": "benefícios."
+   },
+   "gabarito": "C",
+   "resolucao": "As dez áreas são: **integração, escopo, cronograma, custos, qualidade, recursos, comunicações, riscos, aquisições e partes interessadas**. Configuração, mudanças, portfólio e benefícios aparecem em outros contextos (processos dentro de integração, padrões de portfólio, 7ª edição), mas não são áreas.",
+   "analise_alternativas": {
+    "A": "Incorreta. Gerenciamento de configuração é prática de engenharia de software, e não área do PMBOK.",
+    "B": "Incorreta. O controle de mudanças é um processo da área de integração (*Realizar o controle integrado de mudanças*).",
+    "C": "Correta. Gerenciamento das partes interessadas é a décima área de conhecimento.",
+    "D": "Incorreta. Portfólio é tratado em padrão específico do PMI, e não é área do PMBOK.",
+    "E": "Incorreta. Benefícios são tratados em programas e portfólios; a 6ª edição não os considera área."
+   },
+   "fundamentacao": {
+    "item": "3",
+    "arquivo_teoria": "conteudo/03-processos-gerenciamento/01-fundamentos-processos.md"
+   },
+   "ponto_atencao": "Decore as dez áreas e o fato de a 6ª edição ter **recursos** (antes, *recursos humanos*) e **partes interessadas** (antes, *stakeholders*). Na 7ª edição há **oito domínios de desempenho**, e não áreas.",
+   "revisao_rapida": "10 áreas: ICSC QRC RAP (integração, escopo, cronograma, custos, qualidade, recursos, comunicações, riscos, aquisições, partes interessadas).",
+   "tags": [
+    "areas-de-conhecimento",
+    "pmbok-6",
+    "m03",
+    "item-3",
+    "autoral",
+    "facil",
+    "memorizacao"
+   ],
+   "fonte_origem": null,
+   "verificacao": "Resolução conferida pela teoria do projeto.",
+   "status_validacao": "em_revisao"
+  }
+ ]
+}

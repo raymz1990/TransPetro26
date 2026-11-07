@@ -1,0 +1,241 @@
+{
+ "modulo": "Questões oficiais — m05-engenharia-software",
+ "lote": "T04 — Transpetro 2023 (Prova 6)",
+ "data": "2026-11-06",
+ "total": 4,
+ "questoes": [
+  {
+   "id": "OFI-000024",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 24.",
+   "modulo": "05-engenharia-software",
+   "assunto": "Requisitos funcionais x não funcionais",
+   "item_edital": "5.1",
+   "id_matriz": "E5-042",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "analise",
+   "tipo_questao": "cenario",
+   "enunciado": "Uma empresa está desenvolvendo um software para lançar mísseis de plataformas móveis e rastreá-los até os alvos. A equipe que irá desenvolver esse software criou uma lista contendo vários requisitos que foram obtidos durante um encontro com técnicos da área militar.\n\nDentre os requisitos funcionais dessa lista, está o de que",
+   "alternativas": {
+    "A": "a velocidade planejada de um míssil deve ser calculada segundo a equação v(t) = vo + at.",
+    "B": "a interface com os operadores do centro de controle deve fornecer imagens por meio de câmeras de alta resolução e de infravermelho.",
+    "C": "as novas versões do software não poderão ser carregadas nas plataformas de lançamento enquanto houver mísseis no ar.",
+    "D": "o atraso máximo no envio de um comando tem de ser de um milésimo de segundo.",
+    "E": "os dados devem trafegar de forma criptografada no padrão AES com 256 bits."
+   },
+   "gabarito": "A",
+   "resolucao": "**Requisito funcional** descreve o que o sistema **faz** (cálculos, regras, transformações). **Não funcionais** descrevem qualidades e restrições (desempenho, segurança, interface, operação). Calcular a velocidade com uma equação é uma função do sistema.",
+   "analise_alternativas": {
+    "A": "Correta. É uma função de cálculo do software; requisito funcional.",
+    "B": "Incorreta. Aparenta ser funcional por citar imagens, mas, no gabarito, é tratado como requisito de interface/qualidade (resolução e dispositivos).",
+    "C": "Incorreta. Restrição de implantação/operação (política de atualização); não funcional.",
+    "D": "Incorreta. Restrição de desempenho (tempo de resposta); não funcional.",
+    "E": "Incorreta. Restrição de segurança (criptografia AES-256); não funcional."
+   },
+   "fundamentacao": {
+    "item": "5.1",
+    "arquivo_teoria": "conteudo/05-engenharia-software/02-requisitos-software.md"
+   },
+   "ponto_atencao": "Teste prático: o requisito descreve uma **função/cálculo/regra** (funcional) ou uma **restrição de qualidade** (desempenho, segurança, usabilidade)? A alternativa B é a mais discutível; o gabarito privilegia o cálculo explícito.",
+   "revisao_rapida": "Funcional = o que faz; não funcional = quão bem / sob que restrições.",
+   "tags": [
+    "requisitos",
+    "transpetro-2023",
+    "oficial",
+    "media",
+    "analise"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Transpetro PSP/Terra 002/2023 (Edital nº 2)",
+    "cargo": "Análise de Sistemas — Processos de Negócios",
+    "ano": 2023,
+    "prova": "Prova 6",
+    "numero_original": 24,
+    "id_prova": "PRV-005",
+    "situacao_gabarito": "de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/transpetro-2023-psp002-prova06-analise-sistemas-processos-negocios.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000025",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 25.",
+   "modulo": "05-engenharia-software",
+   "assunto": "Ciclos de vida sequenciais",
+   "item_edital": "5.2",
+   "id_matriz": "E5-043",
+   "itens_secundarios": [],
+   "dificuldade": "facil",
+   "habilidade": "compreensao",
+   "tipo_questao": "conceitual",
+   "enunciado": "Alguns modelos de ciclo de vida de software se caracterizam por serem processos de desenvolvimento sequenciais, isto é, cada fase do processo deve ser concluída antes do início da próxima.\n\nNessa categoria de processos, estão os modelos",
+   "alternativas": {
+    "A": "incremental e em cascata",
+    "B": "iterativo e em espiral",
+    "C": "ágil e em espiral",
+    "D": "em V e em cascata",
+    "E": "em V e incremental"
+   },
+   "gabarito": "D",
+   "resolucao": "**Cascata** e **modelo em V** são sequenciais (o V acrescenta a correspondência entre fases de desenvolvimento e de teste). Incremental, iterativo, espiral e ágil repetem ciclos.",
+   "analise_alternativas": {
+    "A": "Incorreta. Incremental entrega partes sucessivas; não é estritamente sequencial.",
+    "B": "Incorreta. Iterativo e espiral repetem ciclos.",
+    "C": "Incorreta. Ágil e espiral são iterativos.",
+    "D": "Correta. Em V e em cascata são sequenciais.",
+    "E": "Incorreta. Incremental não é sequencial."
+   },
+   "fundamentacao": {
+    "item": "5.2",
+    "arquivo_teoria": "conteudo/05-engenharia-software/03-ciclo-de-vida.md"
+   },
+   "ponto_atencao": "Sequenciais: cascata e V. Iterativos/incrementais: espiral, protótipo, RUP e ágeis.",
+   "revisao_rapida": "Sequencial = cascata e V.",
+   "tags": [
+    "ciclo-de-vida",
+    "transpetro-2023",
+    "oficial",
+    "facil",
+    "compreensao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Transpetro PSP/Terra 002/2023 (Edital nº 2)",
+    "cargo": "Análise de Sistemas — Processos de Negócios",
+    "ano": 2023,
+    "prova": "Prova 6",
+    "numero_original": 25,
+    "id_prova": "PRV-005",
+    "situacao_gabarito": "de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/transpetro-2023-psp002-prova06-analise-sistemas-processos-negocios.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000026",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 31.",
+   "modulo": "05-engenharia-software",
+   "assunto": "Testes de aceitação",
+   "item_edital": "5.4",
+   "id_matriz": "E5-045",
+   "itens_secundarios": [],
+   "dificuldade": "facil",
+   "habilidade": "compreensao",
+   "tipo_questao": "cenario",
+   "enunciado": "Uma equipe de desenvolvimento pretende convidar um conjunto de representantes dos usuários finais de uma solução, que aparentemente está completamente desenvolvida, para testar sua última versão antes de disponibilizá-la no mercado. Caso essa versão seja aprovada, será colocada em produção.\n\nA situação descrita faz referência aos testes",
+   "alternativas": {
+    "A": "unitários",
+    "B": "de aceitação",
+    "C": "de desempenho",
+    "D": "de integração",
+    "E": "de sistema"
+   },
+   "gabarito": "B",
+   "resolucao": "**Teste de aceitação** é realizado pelo usuário ou cliente (por exemplo, alfa/beta ou UAT) para decidir se o produto é aceito e entra em produção.",
+   "analise_alternativas": {
+    "A": "Incorreta. Testes unitários verificam componentes isolados, feitos por desenvolvedores.",
+    "B": "Correta. Usuários finais validando a última versão antes da produção caracterizam testes de aceitação.",
+    "C": "Incorreta. Testes de desempenho avaliam tempo de resposta e carga.",
+    "D": "Incorreta. Testes de integração verificam a interação entre módulos.",
+    "E": "Incorreta. Testes de sistema verificam o sistema completo contra os requisitos, feitos pela equipe de testes."
+   },
+   "fundamentacao": {
+    "item": "5.4",
+    "arquivo_teoria": "conteudo/05-engenharia-software/06-verificacao-e-validacao.md"
+   },
+   "ponto_atencao": "Palavras-chave: **usuários/cliente**, **aprovar**, **colocar em produção** = aceitação (UAT).",
+   "revisao_rapida": "Aceitação: decide se o produto é aceito.",
+   "tags": [
+    "testes",
+    "transpetro-2023",
+    "oficial",
+    "facil",
+    "compreensao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Transpetro PSP/Terra 002/2023 (Edital nº 2)",
+    "cargo": "Análise de Sistemas — Processos de Negócios",
+    "ano": 2023,
+    "prova": "Prova 6",
+    "numero_original": 31,
+    "id_prova": "PRV-005",
+    "situacao_gabarito": "de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/transpetro-2023-psp002-prova06-analise-sistemas-processos-negocios.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000027",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 32.",
+   "modulo": "05-engenharia-software",
+   "assunto": "Orientação a objetos: sobrecarga",
+   "item_edital": "5.3",
+   "id_matriz": "E5-044",
+   "itens_secundarios": [],
+   "dificuldade": "facil",
+   "habilidade": "memorizacao",
+   "tipo_questao": "conceitual",
+   "enunciado": "Um desenvolvedor pretende criar três métodos com o mesmo nome em uma mesma classe, mas com parâmetros diferentes. Para essa tarefa, utilizará uma técnica que faz parte do paradigma de orientação a objetos.\nQual o nome da técnica a ser usada pelo desenvolvedor?",
+   "alternativas": {
+    "A": "Herança",
+    "B": "Interface",
+    "C": "Instanciação",
+    "D": "Sobrecarga",
+    "E": "Sobrescrita"
+   },
+   "gabarito": "D",
+   "resolucao": "**Sobrecarga (*overload*)**: métodos de mesmo nome, mesma classe, assinaturas diferentes. **Sobrescrita (*override*)**: subclasse redefine método herdado com a mesma assinatura.",
+   "analise_alternativas": {
+    "A": "Incorreta. Herança reaproveita atributos e métodos da superclasse.",
+    "B": "Incorreta. Interface define um contrato de métodos.",
+    "C": "Incorreta. Instanciação cria objetos a partir de uma classe.",
+    "D": "Correta. É a técnica descrita: mesmo nome, parâmetros diferentes, mesma classe.",
+    "E": "Incorreta. Sobrescrita redefine, na subclasse, método da superclasse com a mesma assinatura."
+   },
+   "fundamentacao": {
+    "item": "5.3",
+    "arquivo_teoria": "conteudo/05-engenharia-software/05-analise-e-projeto.md"
+   },
+   "ponto_atencao": "Sobrecarga = mesma classe, mesma nome, parâmetros diferentes. Sobrescrita = subclasse, mesma assinatura.",
+   "revisao_rapida": "Overload ≠ override.",
+   "tags": [
+    "oo",
+    "polimorfismo",
+    "transpetro-2023",
+    "oficial",
+    "facil",
+    "memorizacao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Transpetro PSP/Terra 002/2023 (Edital nº 2)",
+    "cargo": "Análise de Sistemas — Processos de Negócios",
+    "ano": 2023,
+    "prova": "Prova 6",
+    "numero_original": 32,
+    "id_prova": "PRV-005",
+    "situacao_gabarito": "de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/transpetro-2023-psp002-prova06-analise-sistemas-processos-negocios.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  }
+ ]
+}

@@ -1,0 +1,105 @@
+{
+ "modulo": "Questões autorais — m04-governanca-ti (expansão T05)",
+ "lote": "T05 — expansão",
+ "data": "2026-11-06",
+ "total": 2,
+ "questoes": [
+  {
+   "id": "AUT-000104",
+   "tipo": "autoral",
+   "rotulo": "Questão autoral — estilo Cesgranrio.",
+   "modulo": "04-governanca-ti",
+   "assunto": "LGPD: controlador, operador e encarregado",
+   "item_edital": "4.6",
+   "id_matriz": "E5-040",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "aplicacao",
+   "tipo_questao": "cenario",
+   "enunciado": "Uma empresa A contratou a empresa B para processar a sua folha de pagamento. A empresa B trata os dados pessoais dos empregados de A exclusivamente conforme as instruções de A. A empresa A indicou uma pessoa para atuar como canal de comunicação entre ela, os titulares dos dados e a Autoridade Nacional de Proteção de Dados (ANPD).\n\nDe acordo com a LGPD, A, B e a pessoa indicada são, respectivamente,",
+   "alternativas": {
+    "A": "operadora, controladora e titular.",
+    "B": "controladora, controladora conjunta e operador.",
+    "C": "operadora, operadora e encarregado.",
+    "D": "controladora, operadora e encarregado.",
+    "E": "titular, operadora e autoridade nacional."
+   },
+   "gabarito": "D",
+   "resolucao": "Pela LGPD (art. 5º): **controlador** é quem **decide** sobre o tratamento; **operador** trata dados **em nome do controlador**; **encarregado** é a pessoa indicada para ser o **canal de comunicação** entre controlador, titulares e ANPD. **Titular** é a pessoa natural a quem os dados se referem.",
+   "analise_alternativas": {
+    "A": "Incorreta. Inverte os papéis de A e B e confunde o encarregado com o titular.",
+    "B": "Incorreta. B atua sob instruções de A; não decide sobre as finalidades, não sendo controladora conjunta.",
+    "C": "Incorreta. A decide sobre o tratamento; é controladora, e não operadora.",
+    "D": "Correta. A é controladora, B é operadora e a pessoa indicada é o encarregado.",
+    "E": "Incorreta. Os empregados são os titulares, e a ANPD é a autoridade; a pessoa indicada é o encarregado."
+   },
+   "fundamentacao": {
+    "item": "4.6",
+    "arquivo_teoria": "conteudo/04-governanca-ti/05-lgpd.md"
+   },
+   "ponto_atencao": "Quem **decide** = controlador; quem **executa em nome de** = operador; quem **comunica** = encarregado; a **pessoa natural dona dos dados** = titular.",
+   "revisao_rapida": "Controlador decide; operador executa; encarregado é o canal; titular é o dono.",
+   "tags": [
+    "lgpd",
+    "agentes-de-tratamento",
+    "m04",
+    "item-4.6",
+    "autoral",
+    "media",
+    "aplicacao"
+   ],
+   "fonte_origem": null,
+   "verificacao": "Resolução conferida pela teoria do projeto.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "AUT-000105",
+   "tipo": "autoral",
+   "rotulo": "Questão autoral — estilo Cesgranrio.",
+   "modulo": "04-governanca-ti",
+   "assunto": "ITSM: gerenciamento de incidentes x problemas",
+   "item_edital": "4.5",
+   "id_matriz": "E5-039",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "aplicacao",
+   "tipo_questao": "cenario",
+   "enunciado": "Em uma empresa, o servidor de aplicação fica indisponível toda semana. A equipe de suporte restabelece o serviço reiniciando o servidor, e o usuário volta a trabalhar em poucos minutos. Após a terceira ocorrência, a gerência pede que seja investigada a causa raiz, a fim de eliminar a recorrência.\n\nO trabalho de investigar a causa raiz e propor uma solução definitiva pertence ao gerenciamento de",
+   "alternativas": {
+    "A": "problemas, que busca as causas dos incidentes e soluções permanentes.",
+    "B": "incidentes, que restabelece o serviço o mais rápido possível, e não procura causas.",
+    "C": "mudanças, que autoriza e controla alterações com risco para o ambiente.",
+    "D": "níveis de serviço, que define e monitora as metas acordadas com o cliente.",
+    "E": "configuração, que registra os itens e seus relacionamentos."
+   },
+   "gabarito": "A",
+   "resolucao": "Em ITSM (ITIL), **incidente** é a interrupção não planejada; o objetivo é **restaurar o serviço** o mais rápido possível (a reinicialização é uma **solução de contorno**). **Problema** é a **causa** de um ou mais incidentes; o gerenciamento de problemas busca a **causa raiz** e a solução permanente. **Mudança** autoriza a alteração que implementará a solução.",
+   "analise_alternativas": {
+    "A": "Correta. Investigação de causa raiz e solução definitiva é função do gerenciamento de problemas.",
+    "B": "Incorreta. O gerenciamento de incidentes foca restaurar o serviço, mesmo por contorno.",
+    "C": "Incorreta. O gerenciamento de mudanças controlará a **implantação** da correção, mas não a investigação da causa.",
+    "D": "Incorreta. Níveis de serviço tratam de metas (SLA), e não de causa raiz.",
+    "E": "Incorreta. A gestão de configuração mantém o registro dos itens e pode apoiar a análise, mas não a conduz."
+   },
+   "fundamentacao": {
+    "item": "4.5",
+    "arquivo_teoria": "conteudo/04-governanca-ti/04-itsm.md"
+   },
+   "ponto_atencao": "Incidente = **restaurar**; problema = **entender e eliminar a causa**; mudança = **implementar com controle**. A reinicialização é *workaround*.",
+   "revisao_rapida": "Incidente restaura; problema elimina a causa; mudança implanta a correção.",
+   "tags": [
+    "itil",
+    "incidente",
+    "problema",
+    "m04",
+    "item-4.5",
+    "autoral",
+    "media",
+    "aplicacao"
+   ],
+   "fonte_origem": null,
+   "verificacao": "Resolução conferida pela teoria do projeto.",
+   "status_validacao": "em_revisao"
+  }
+ ]
+}

@@ -1,0 +1,66 @@
+{
+ "modulo": "Questões oficiais — m07-analise-dados",
+ "lote": "T04 — Transpetro 2023 (Prova 6)",
+ "data": "2026-11-06",
+ "total": 1,
+ "questoes": [
+  {
+   "id": "OFI-000032",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 56.",
+   "modulo": "07-analise-dados",
+   "assunto": "Data warehouse: característica",
+   "item_edital": "7.6",
+   "id_matriz": "E5-065",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "compreensao",
+   "tipo_questao": "conceitual",
+   "enunciado": "Nos tempos atuais, o uso massivo de sistemas de informação em praticamente todas as áreas tem como consequência a geração de muitos dados.\n\nNesse contexto de tecnologia da informação, um Data Warehouse é uma estrutura de armazenamento de dados fundamental que possui a característica de",
+   "alternativas": {
+    "A": "armazenar somente dados brutos não processados, sem permitir a criação de relatórios ou análises.",
+    "B": "consolidar dados de diversas fontes em apenas um local, permitindo análises multidimensionais.",
+    "C": "focar exclusivamente dados operacionais de curto prazo, excluindo dados históricos.",
+    "D": "ser otimizado apenas para transações de alta velocidade, sem suportar consultas complexas.",
+    "E": "trabalhar apenas com dados estruturados, não sendo capaz de lidar com dados semi-estruturados ou não estruturados."
+   },
+   "gabarito": "B",
+   "resolucao": "O **data warehouse** é **orientado a assunto, integrado, histórico e não volátil**, consolidando dados de várias fontes para análise (OLAP), inclusive multidimensional.",
+   "analise_alternativas": {
+    "A": "Incorreta. Dados brutos sem processamento descrevem um data lake; o DW guarda dados tratados e permite análises.",
+    "B": "Correta. Consolida dados de várias fontes e suporta análises multidimensionais.",
+    "C": "Incorreta. O DW é histórico por definição.",
+    "D": "Incorreta. Alta velocidade transacional é característica de OLTP; o DW é otimizado para consultas analíticas.",
+    "E": "Incorreta. A afirmação é absoluta (\"apenas\"); a alternativa B é a que descreve a característica definidora."
+   },
+   "fundamentacao": {
+    "item": "7.6",
+    "arquivo_teoria": "conteudo/07-analise-dados/05-olap-e-data-warehouse.md"
+   },
+   "ponto_atencao": "DW: orientado a assunto, integrado, histórico, não volátil (Inmon). Compare com OLTP e data lake.",
+   "revisao_rapida": "DW = integração + histórico + análise.",
+   "tags": [
+    "data-warehouse",
+    "transpetro-2023",
+    "oficial",
+    "media",
+    "compreensao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Transpetro PSP/Terra 002/2023 (Edital nº 2)",
+    "cargo": "Análise de Sistemas — Processos de Negócios",
+    "ano": 2023,
+    "prova": "Prova 6",
+    "numero_original": 56,
+    "id_prova": "PRV-005",
+    "situacao_gabarito": "de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/transpetro-2023-psp002-prova06-analise-sistemas-processos-negocios.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  }
+ ]
+}

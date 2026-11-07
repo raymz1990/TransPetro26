@@ -1,0 +1,528 @@
+{
+ "modulo": "Questões autorais — Língua Inglesa (Gerais)",
+ "lote": "T06",
+ "data": "2026-11-06",
+ "total": 11,
+ "questoes": [
+  {
+   "id": "AUT-000145",
+   "tipo": "autoral",
+   "rotulo": "Questão autoral — estilo Cesgranrio.",
+   "modulo": "gerais-lingua-inglesa",
+   "assunto": "Compreensão (inglês): ideia principal do texto",
+   "item_edital": "LI-01",
+   "id_matriz": "LI-01",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "compreensao",
+   "tipo_questao": "interpretativa",
+   "enunciado": "Read the text below and answer.\n\nDigital twins are virtual replicas of physical assets, such as pumps, pipelines or entire refineries. Sensors installed on the equipment send data continuously to the model, which is then used to simulate how the asset behaves under different conditions. Engineers can, for example, test a maintenance plan on the virtual copy before applying it in the field, which reduces both costs and risks. However, a digital twin is only as reliable as the data that feeds it: if sensors are poorly calibrated, the simulations may lead teams to wrong decisions. For this reason, companies that adopt the technology usually invest first in data quality and only afterwards in more sophisticated models.\n\nSegundo o texto, o que determina a confiabilidade de um gêmeo digital?",
+   "alternativas": {
+    "A": "o número de refinarias que o utilizam em campo.",
+    "B": "a sofisticação dos modelos de simulação adotados.",
+    "C": "a capacidade de substituir os engenheiros nas decisões de campo.",
+    "D": "a ausência de qualquer teste de planos de manutenção.",
+    "E": "a qualidade dos dados fornecidos pelos sensores que o alimentam."
+   },
+   "gabarito": "E",
+   "resolucao": "Palavras-chave: **only as reliable as the data that feeds it**. Leia o trecho e compare com as alternativas.",
+   "analise_alternativas": {
+    "A": "Incorreta. O texto cita refinarias apenas como exemplo de ativo, e não como critério.",
+    "B": "Incorreta. O texto diz que as empresas investem primeiro em qualidade de dados, e só depois em modelos mais sofisticados.",
+    "C": "Incorreta. O texto não afirma que o gêmeo digital substitui engenheiros; eles o usam para testar planos.",
+    "D": "Incorreta. O texto diz que os engenheiros podem testar planos de manutenção na cópia virtual.",
+    "E": "Correta. O texto afirma que \"a digital twin is only as reliable as the data that feeds it\": a confiabilidade depende da qualidade dos dados dos sensores."
+   },
+   "fundamentacao": {
+    "item": "LI-01",
+    "arquivo_teoria": "conteudo-gerais/02-lingua-inglesa/01-compreensao-de-texto.md"
+   },
+   "ponto_atencao": "\"Only as ... as\" = depende exclusivamente de.",
+   "revisao_rapida": "Em inglês, localize a frase-chave e traduza o trecho antes de ler as opções.",
+   "tags": [
+    "reading",
+    "li-01",
+    "autoral",
+    "media",
+    "compreensao"
+   ],
+   "fonte_origem": null,
+   "verificacao": "Conferida pela teoria do projeto e pela norma-padrão; sem consulta a VOLP/gramática de referência.",
+   "status_validacao": "em_revisao",
+   "titulo_item": "Compreensão de texto em inglês"
+  },
+  {
+   "id": "AUT-000146",
+   "tipo": "autoral",
+   "rotulo": "Questão autoral — estilo Cesgranrio.",
+   "modulo": "gerais-lingua-inglesa",
+   "assunto": "Compreensão (inglês): finalidade do uso de gêmeos digitais",
+   "item_edital": "LI-01",
+   "id_matriz": "LI-01",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "compreensao",
+   "tipo_questao": "interpretativa",
+   "enunciado": "Read the text below and answer.\n\nDigital twins are virtual replicas of physical assets, such as pumps, pipelines or entire refineries. Sensors installed on the equipment send data continuously to the model, which is then used to simulate how the asset behaves under different conditions. Engineers can, for example, test a maintenance plan on the virtual copy before applying it in the field, which reduces both costs and risks. However, a digital twin is only as reliable as the data that feeds it: if sensors are poorly calibrated, the simulations may lead teams to wrong decisions. For this reason, companies that adopt the technology usually invest first in data quality and only afterwards in more sophisticated models.\n\nDe acordo com o texto, uma vantagem de testar planos de manutenção na cópia virtual é",
+   "alternativas": {
+    "A": "o aumento do número de sensores instalados.",
+    "B": "a redução de custos e de riscos.",
+    "C": "a eliminação da necessidade de calibração.",
+    "D": "a certeza de que as simulações nunca falham.",
+    "E": "a dispensa de dados dos equipamentos."
+   },
+   "gabarito": "B",
+   "resolucao": "\"Which\" retoma a ideia de testar o plano na cópia virtual antes de aplicá-lo em campo.",
+   "analise_alternativas": {
+    "A": "Incorreta. O texto não relaciona os testes ao número de sensores.",
+    "B": "Correta. O texto afirma: \"which reduces both costs and risks\".",
+    "C": "Incorreta. O texto, ao contrário, alerta para sensores mal calibrados.",
+    "D": "Incorreta. O texto diz que as simulações podem induzir a erros se os dados forem ruins.",
+    "E": "Incorreta. O modelo depende de dados contínuos dos equipamentos."
+   },
+   "fundamentacao": {
+    "item": "LI-01",
+    "arquivo_teoria": "conteudo-gerais/02-lingua-inglesa/01-compreensao-de-texto.md"
+   },
+   "ponto_atencao": "Both costs and risks = custos e riscos.",
+   "revisao_rapida": "Cuidado com alternativas absolutas (\"nunca\", \"eliminação\").",
+   "tags": [
+    "reading",
+    "li-01",
+    "autoral",
+    "media",
+    "compreensao"
+   ],
+   "fonte_origem": null,
+   "verificacao": "Conferida pela teoria do projeto e pela norma-padrão; sem consulta a VOLP/gramática de referência.",
+   "status_validacao": "em_revisao",
+   "titulo_item": "Compreensão de texto em inglês"
+  },
+  {
+   "id": "AUT-000147",
+   "tipo": "autoral",
+   "rotulo": "Questão autoral — estilo Cesgranrio.",
+   "modulo": "gerais-lingua-inglesa",
+   "assunto": "Compreensão (inglês): referência do pronome \"which\"",
+   "item_edital": "LI-01",
+   "id_matriz": "LI-01",
+   "itens_secundarios": [],
+   "dificuldade": "dificil",
+   "habilidade": "interpretacao",
+   "tipo_questao": "interpretativa",
+   "enunciado": "Read the text below and answer.\n\nDigital twins are virtual replicas of physical assets, such as pumps, pipelines or entire refineries. Sensors installed on the equipment send data continuously to the model, which is then used to simulate how the asset behaves under different conditions. Engineers can, for example, test a maintenance plan on the virtual copy before applying it in the field, which reduces both costs and risks. However, a digital twin is only as reliable as the data that feeds it: if sensors are poorly calibrated, the simulations may lead teams to wrong decisions. For this reason, companies that adopt the technology usually invest first in data quality and only afterwards in more sophisticated models.\n\nNo trecho \"which is then used to simulate how the asset behaves\", a palavra \"which\" refere-se a",
+   "alternativas": {
+    "A": "the equipment.",
+    "B": "the asset.",
+    "C": "the data.",
+    "D": "the model.",
+    "E": "the field."
+   },
+   "gabarito": "D",
+   "resolucao": "Pronomes relativos em inglês retomam o **substantivo imediatamente anterior** (com ressalvas). Teste: substitua \"which\" por \"the model\" e releia.",
+   "analise_alternativas": {
+    "A": "Incorreta. \"The equipment\" é onde os sensores estão instalados; o que é usado na simulação é o modelo.",
+    "B": "Incorreta. \"The asset\" é o objeto simulado, não o que é usado para simular.",
+    "C": "Incorreta. Os dados alimentam o modelo; \"which\" refere-se ao modelo, e não aos dados.",
+    "D": "Correta. \"Which\" retoma \"the model\", mencionado imediatamente antes: o modelo é então usado para simular o comportamento do ativo.",
+    "E": "Incorreta. \"The field\" aparece em outro período e não é retomado por \"which\"."
+   },
+   "fundamentacao": {
+    "item": "LI-01",
+    "arquivo_teoria": "conteudo-gerais/02-lingua-inglesa/01-compreensao-de-texto.md"
+   },
+   "ponto_atencao": "Which → antecedente mais próximo que faz sentido.",
+   "revisao_rapida": "Substituir o pronome pelo antecedente revela erros.",
+   "tags": [
+    "reading",
+    "reference",
+    "li-01",
+    "autoral",
+    "dificil",
+    "interpretacao"
+   ],
+   "fonte_origem": null,
+   "verificacao": "Conferida pela teoria do projeto e pela norma-padrão; sem consulta a VOLP/gramática de referência.",
+   "status_validacao": "em_revisao",
+   "titulo_item": "Compreensão de texto em inglês"
+  },
+  {
+   "id": "AUT-000148",
+   "tipo": "autoral",
+   "rotulo": "Questão autoral — estilo Cesgranrio.",
+   "modulo": "gerais-lingua-inglesa",
+   "assunto": "Compreensão (inglês): vocabulário em contexto",
+   "item_edital": "LI-01",
+   "id_matriz": "LI-01",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "compreensao",
+   "tipo_questao": "interpretativa",
+   "enunciado": "Read the text below and answer.\n\nDigital twins are virtual replicas of physical assets, such as pumps, pipelines or entire refineries. Sensors installed on the equipment send data continuously to the model, which is then used to simulate how the asset behaves under different conditions. Engineers can, for example, test a maintenance plan on the virtual copy before applying it in the field, which reduces both costs and risks. However, a digital twin is only as reliable as the data that feeds it: if sensors are poorly calibrated, the simulations may lead teams to wrong decisions. For this reason, companies that adopt the technology usually invest first in data quality and only afterwards in more sophisticated models.\n\nNo contexto do texto, a expressão \"feeds it\" (\"the data that feeds it\") significa",
+   "alternativas": {
+    "A": "fornece informação a ele continuamente.",
+    "B": "alimenta-o com comida.",
+    "C": "cobra pagamento dele.",
+    "D": "reduz o tamanho dele.",
+    "E": "o substitui por outro modelo."
+   },
+   "gabarito": "A",
+   "resolucao": "Em inglês técnico, **feed** = alimentar com dados; **feedback** = retorno de informação.",
+   "analise_alternativas": {
+    "A": "Correta. \"To feed\" tem, aqui, sentido figurado: **fornecer dados ao modelo**, alimentá-lo com informação.",
+    "B": "Incorreta. Sentido literal, inadequado ao contexto.",
+    "C": "Incorreta. \"To feed\" não significa cobrar.",
+    "D": "Incorreta. Não há ideia de redução.",
+    "E": "Incorreta. Não há ideia de substituição."
+   },
+   "fundamentacao": {
+    "item": "LI-01",
+    "arquivo_teoria": "conteudo-gerais/02-lingua-inglesa/01-compreensao-de-texto.md"
+   },
+   "ponto_atencao": "Feed (data) = alimentar com dados.",
+   "revisao_rapida": "O contexto elimina o sentido literal.",
+   "tags": [
+    "reading",
+    "vocabulary",
+    "li-01",
+    "autoral",
+    "media",
+    "compreensao"
+   ],
+   "fonte_origem": null,
+   "verificacao": "Conferida pela teoria do projeto e pela norma-padrão; sem consulta a VOLP/gramática de referência.",
+   "status_validacao": "em_revisao",
+   "titulo_item": "Compreensão de texto em inglês"
+  },
+  {
+   "id": "AUT-000149",
+   "tipo": "autoral",
+   "rotulo": "Questão autoral — estilo Cesgranrio.",
+   "modulo": "gerais-lingua-inglesa",
+   "assunto": "Compreensão (inglês): ideia central sobre phishing",
+   "item_edital": "LI-01",
+   "id_matriz": "LI-01",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "compreensao",
+   "tipo_questao": "interpretativa",
+   "enunciado": "Read the text below and answer.\n\nPhishing remains one of the most common ways to compromise a company's systems. Attackers send messages that look like they come from a trusted source and urge the reader to click a link or open an attachment. Although many people believe that only inexperienced employees fall for these messages, experience shows that anyone can be deceived when tired or in a hurry. Therefore, the best defence combines technical filters with regular training and a simple procedure to report suspicious emails.\n\nO texto defende que a melhor defesa contra o phishing",
+   "alternativas": {
+    "A": "depende apenas de filtros técnicos, porque o erro humano não é relevante.",
+    "B": "consiste em treinar somente os funcionários inexperientes.",
+    "C": "combina filtros técnicos, treinamento regular e um procedimento simples para relatar e-mails suspeitos.",
+    "D": "é desnecessária, pois o phishing é raro em empresas.",
+    "E": "baseia-se na proibição do uso de e-mail corporativo."
+   },
+   "gabarito": "C",
+   "resolucao": "A **conclusão** vem marcada por \"Therefore\".",
+   "analise_alternativas": {
+    "A": "Incorreta. O texto afirma que qualquer pessoa pode ser enganada; por isso, o treinamento é parte da defesa.",
+    "B": "Incorreta. O texto afirma que qualquer pessoa pode ser enganada, não apenas os inexperientes.",
+    "C": "Correta. Na última frase: \"the best defence combines technical filters with regular training and a simple procedure to report suspicious emails\".",
+    "D": "Incorreta. O texto diz que o phishing continua sendo uma das formas mais comuns de ataque.",
+    "E": "Incorreta. O texto não propõe proibir o e-mail."
+   },
+   "fundamentacao": {
+    "item": "LI-01",
+    "arquivo_teoria": "conteudo-gerais/02-lingua-inglesa/01-compreensao-de-texto.md"
+   },
+   "ponto_atencao": "Therefore = portanto: sinaliza a tese final.",
+   "revisao_rapida": "Leia a frase iniciada por *Therefore*.",
+   "tags": [
+    "reading",
+    "li-01",
+    "autoral",
+    "media",
+    "compreensao"
+   ],
+   "fonte_origem": null,
+   "verificacao": "Conferida pela teoria do projeto e pela norma-padrão; sem consulta a VOLP/gramática de referência.",
+   "status_validacao": "em_revisao",
+   "titulo_item": "Compreensão de texto em inglês"
+  },
+  {
+   "id": "AUT-000150",
+   "tipo": "autoral",
+   "rotulo": "Questão autoral — estilo Cesgranrio.",
+   "modulo": "gerais-lingua-inglesa",
+   "assunto": "Compreensão (inglês): conectivo \"Although\"",
+   "item_edital": "LI-01",
+   "id_matriz": "LI-01",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "analise",
+   "tipo_questao": "interpretativa",
+   "enunciado": "Read the text below and answer.\n\nPhishing remains one of the most common ways to compromise a company's systems. Attackers send messages that look like they come from a trusted source and urge the reader to click a link or open an attachment. Although many people believe that only inexperienced employees fall for these messages, experience shows that anyone can be deceived when tired or in a hurry. Therefore, the best defence combines technical filters with regular training and a simple procedure to report suspicious emails.\n\nNo trecho \"Although many people believe that only inexperienced employees fall for these messages, experience shows that anyone can be deceived\", o conectivo \"Although\" introduz uma ideia de",
+   "alternativas": {
+    "A": "contraste (concessão).",
+    "B": "causa.",
+    "C": "finalidade.",
+    "D": "condição.",
+    "E": "tempo."
+   },
+   "gabarito": "A",
+   "resolucao": "Conectivos: **although/though/even though** (embora), **however/nevertheless** (no entanto), **because/since** (porque), **therefore/thus** (portanto), **if/unless** (se/a menos que).",
+   "analise_alternativas": {
+    "A": "Correta. \"Although\" equivale a \"embora\": apresenta uma crença que **contrasta** com a conclusão da frase principal.",
+    "B": "Incorreta. Causa seria \"because\" ou \"since\".",
+    "C": "Incorreta. Finalidade seria \"so that\" ou \"in order to\".",
+    "D": "Incorreta. Condição seria \"if\" ou \"unless\".",
+    "E": "Incorreta. Tempo seria \"when\" ou \"while\" (no sentido temporal)."
+   },
+   "fundamentacao": {
+    "item": "LI-01",
+    "arquivo_teoria": "conteudo-gerais/02-lingua-inglesa/01-compreensao-de-texto.md"
+   },
+   "ponto_atencao": "Although = embora.",
+   "revisao_rapida": "Aprenda os conectivos por função.",
+   "tags": [
+    "reading",
+    "connectors",
+    "li-01",
+    "autoral",
+    "media",
+    "analise"
+   ],
+   "fonte_origem": null,
+   "verificacao": "Conferida pela teoria do projeto e pela norma-padrão; sem consulta a VOLP/gramática de referência.",
+   "status_validacao": "em_revisao",
+   "titulo_item": "Compreensão de texto em inglês"
+  },
+  {
+   "id": "AUT-000151",
+   "tipo": "autoral",
+   "rotulo": "Questão autoral — estilo Cesgranrio.",
+   "modulo": "gerais-lingua-inglesa",
+   "assunto": "Gramática (inglês): oração condicional hipotética",
+   "item_edital": "LI-02",
+   "id_matriz": "LI-02",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "aplicacao",
+   "tipo_questao": "aplicada",
+   "enunciado": "Choose the alternative that correctly completes the sentence: \"If the main pump ______ , production would stop immediately.\"",
+   "alternativas": {
+    "A": "fails",
+    "B": "will fail",
+    "C": "failed",
+    "D": "had failed",
+    "E": "failing"
+   },
+   "gabarito": "C",
+   "resolucao": "Condicionais: **zero** (if + presente, presente); **1º** (if + presente, will); **2º** (if + past simple, would); **3º** (if + past perfect, would have + particípio).",
+   "analise_alternativas": {
+    "A": "Incorreta. \"Fails\" (presente) pertence ao primeiro condicional, que pede \"will\" na consequência.",
+    "B": "Incorreta. \"Will\" não se usa depois de \"if\" na oração condicional.",
+    "C": "Correta. Para uma situação **hipotética** no presente/futuro (segundo condicional), usa-se **if + past simple** na condição e **would + verbo** na consequência: \"If the pump failed, production would stop\".",
+    "D": "Incorreta. \"Had failed\" (past perfect) pertence ao terceiro condicional, com \"would have stopped\".",
+    "E": "Incorreta. \"Failing\" não completa a estrutura condicional."
+   },
+   "fundamentacao": {
+    "item": "LI-02",
+    "arquivo_teoria": "conteudo-gerais/02-lingua-inglesa/02-itens-gramaticais.md"
+   },
+   "ponto_atencao": "If + past simple → would.",
+   "revisao_rapida": "Identifique o verbo da oração principal para escolher o tempo da condição.",
+   "tags": [
+    "conditionals",
+    "li-02",
+    "autoral",
+    "media",
+    "aplicacao"
+   ],
+   "fonte_origem": null,
+   "verificacao": "Conferida pela teoria do projeto e pela norma-padrão; sem consulta a VOLP/gramática de referência.",
+   "status_validacao": "em_revisao",
+   "titulo_item": "Itens gramaticais em inglês"
+  },
+  {
+   "id": "AUT-000152",
+   "tipo": "autoral",
+   "rotulo": "Questão autoral — estilo Cesgranrio.",
+   "modulo": "gerais-lingua-inglesa",
+   "assunto": "Gramática (inglês): voz passiva",
+   "item_edital": "LI-02",
+   "id_matriz": "LI-02",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "aplicacao",
+   "tipo_questao": "aplicada",
+   "enunciado": "Choose the alternative that correctly completes the sentence: \"The audit report ______ by the compliance team last week.\"",
+   "alternativas": {
+    "A": "reviewed",
+    "B": "is reviewing",
+    "C": "has been reviewing",
+    "D": "were reviewed",
+    "E": "was reviewed"
+   },
+   "gabarito": "E",
+   "resolucao": "Passiva: **to be (no tempo da ação) + particípio**. Concordância do verbo *to be* com o sujeito.",
+   "analise_alternativas": {
+    "A": "Incorreta. \"Reviewed\" (ativa) exigiria que o sujeito praticasse a ação.",
+    "B": "Incorreta. \"Is reviewing\" (presente contínuo ativo) não combina com \"last week\".",
+    "C": "Incorreta. \"Has been reviewing\" (presente perfeito contínuo) não combina com \"last week\".",
+    "D": "Incorreta. \"Were reviewed\" não concorda com o sujeito singular.",
+    "E": "Correta. A ação foi sofrida pelo relatório (sujeito paciente), no passado (\"last week\"): voz passiva no **past simple** = **was/were + particípio** (\"was reviewed\", pois \"report\" é singular)."
+   },
+   "fundamentacao": {
+    "item": "LI-02",
+    "arquivo_teoria": "conteudo-gerais/02-lingua-inglesa/02-itens-gramaticais.md"
+   },
+   "ponto_atencao": "Passive past: was/were + past participle.",
+   "revisao_rapida": "Marcadores de tempo (last week) indicam o tempo verbal.",
+   "tags": [
+    "passive-voice",
+    "li-02",
+    "autoral",
+    "media",
+    "aplicacao"
+   ],
+   "fonte_origem": null,
+   "verificacao": "Conferida pela teoria do projeto e pela norma-padrão; sem consulta a VOLP/gramática de referência.",
+   "status_validacao": "em_revisao",
+   "titulo_item": "Itens gramaticais em inglês"
+  },
+  {
+   "id": "AUT-000153",
+   "tipo": "autoral",
+   "rotulo": "Questão autoral — estilo Cesgranrio.",
+   "modulo": "gerais-lingua-inglesa",
+   "assunto": "Gramática (inglês): pronomes relativos",
+   "item_edital": "LI-02",
+   "id_matriz": "LI-02",
+   "itens_secundarios": [],
+   "dificuldade": "facil",
+   "habilidade": "aplicacao",
+   "tipo_questao": "aplicada",
+   "enunciado": "Choose the alternative that correctly completes the sentence: \"The engineer ______ designed the system has just retired.\"",
+   "alternativas": {
+    "A": "whom",
+    "B": "who",
+    "C": "whose",
+    "D": "which",
+    "E": "what"
+   },
+   "gabarito": "B",
+   "resolucao": "Relativos: **who** (pessoa, sujeito), **whom** (pessoa, objeto), **whose** (posse), **which** (coisa), **that** (pessoa ou coisa, restritivo).",
+   "analise_alternativas": {
+    "A": "Incorreta. \"Whom\" é objeto; aqui o relativo é sujeito.",
+    "B": "Correta. O antecedente é uma **pessoa** (\"the engineer\") e o relativo é **sujeito** de \"designed\": usa-se **who**.",
+    "C": "Incorreta. \"Whose\" indica posse.",
+    "D": "Incorreta. \"Which\" refere-se a coisas.",
+    "E": "Incorreta. \"What\" não é pronome relativo com antecedente expresso."
+   },
+   "fundamentacao": {
+    "item": "LI-02",
+    "arquivo_teoria": "conteudo-gerais/02-lingua-inglesa/02-itens-gramaticais.md"
+   },
+   "ponto_atencao": "Pessoa + sujeito = who.",
+   "revisao_rapida": "Pergunte: o relativo é sujeito ou objeto? Refere-se a pessoa ou a coisa?",
+   "tags": [
+    "relative-pronouns",
+    "li-02",
+    "autoral",
+    "facil",
+    "aplicacao"
+   ],
+   "fonte_origem": null,
+   "verificacao": "Conferida pela teoria do projeto e pela norma-padrão; sem consulta a VOLP/gramática de referência.",
+   "status_validacao": "em_revisao",
+   "titulo_item": "Itens gramaticais em inglês"
+  },
+  {
+   "id": "AUT-000154",
+   "tipo": "autoral",
+   "rotulo": "Questão autoral — estilo Cesgranrio.",
+   "modulo": "gerais-lingua-inglesa",
+   "assunto": "Gramática (inglês): comparativo de superioridade",
+   "item_edital": "LI-02",
+   "id_matriz": "LI-02",
+   "itens_secundarios": [],
+   "dificuldade": "facil",
+   "habilidade": "aplicacao",
+   "tipo_questao": "aplicada",
+   "enunciado": "Choose the alternative that correctly completes the sentence: \"The new valve is ______ the old one.\"",
+   "alternativas": {
+    "A": "durabler than",
+    "B": "most durable than",
+    "C": "as durable than",
+    "D": "more durable than",
+    "E": "more durably than"
+   },
+   "gabarito": "D",
+   "resolucao": "Comparativo: **curtos** (-er than: faster than); **longos** (more ... than). Superlativo: **the -est** / **the most**. Igualdade: **as ... as**.",
+   "analise_alternativas": {
+    "A": "Incorreta. \"Durabler\" não existe; o sufixo *-er* é para adjetivos curtos.",
+    "B": "Incorreta. \"Most\" forma o superlativo, e não o comparativo.",
+    "C": "Incorreta. A comparação de igualdade usa \"as ... as\".",
+    "D": "Correta. Adjetivos longos (três ou mais sílabas, como *durable*) formam o comparativo com **more + adjetivo + than**.",
+    "E": "Incorreta. \"Durably\" é advérbio; aqui se exige adjetivo."
+   },
+   "fundamentacao": {
+    "item": "LI-02",
+    "arquivo_teoria": "conteudo-gerais/02-lingua-inglesa/02-itens-gramaticais.md"
+   },
+   "ponto_atencao": "More + adjetivo longo + than.",
+   "revisao_rapida": "Conte as sílabas do adjetivo.",
+   "tags": [
+    "comparatives",
+    "li-02",
+    "autoral",
+    "facil",
+    "aplicacao"
+   ],
+   "fonte_origem": null,
+   "verificacao": "Conferida pela teoria do projeto e pela norma-padrão; sem consulta a VOLP/gramática de referência.",
+   "status_validacao": "em_revisao",
+   "titulo_item": "Itens gramaticais em inglês"
+  },
+  {
+   "id": "AUT-000155",
+   "tipo": "autoral",
+   "rotulo": "Questão autoral — estilo Cesgranrio.",
+   "modulo": "gerais-lingua-inglesa",
+   "assunto": "Gramática (inglês): modal \"don't have to\"",
+   "item_edital": "LI-02",
+   "id_matriz": "LI-02",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "compreensao",
+   "tipo_questao": "interpretativa",
+   "enunciado": "Na frase \"Employees don't have to change their passwords every month\", a expressão \"don't have to\" indica",
+   "alternativas": {
+    "A": "proibição.",
+    "B": "ausência de obrigação (não é necessário).",
+    "C": "possibilidade remota.",
+    "D": "obrigação.",
+    "E": "habilidade."
+   },
+   "gabarito": "B",
+   "resolucao": "**Must** (obrigação) × **mustn't** (proibição) × **don't have to** (não necessário) × **should** (conselho) × **can** (permissão/capacidade).",
+   "analise_alternativas": {
+    "A": "Incorreta. Proibição é *mustn't* ou *can't*.",
+    "B": "Correta. \"Don't have to\" indica **ausência de necessidade**: os funcionários **podem** mudar a senha, mas **não precisam**. A **proibição** seria expressa por \"must not / mustn't\".",
+    "C": "Incorreta. A possibilidade remota seria expressa por *might* ou *could*.",
+    "D": "Incorreta. Obrigação seria *have to* ou *must*.",
+    "E": "Incorreta. Habilidade seria *can* ou *be able to*."
+   },
+   "fundamentacao": {
+    "item": "LI-02",
+    "arquivo_teoria": "conteudo-gerais/02-lingua-inglesa/02-itens-gramaticais.md"
+   },
+   "ponto_atencao": "Don't have to ≠ mustn't.",
+   "revisao_rapida": "A negação de *have to* não é a negação de *must*.",
+   "tags": [
+    "modals",
+    "li-02",
+    "autoral",
+    "media",
+    "compreensao"
+   ],
+   "fonte_origem": null,
+   "verificacao": "Conferida pela teoria do projeto e pela norma-padrão; sem consulta a VOLP/gramática de referência.",
+   "status_validacao": "em_revisao",
+   "titulo_item": "Itens gramaticais em inglês"
+  }
+ ]
+}

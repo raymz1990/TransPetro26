@@ -1,0 +1,423 @@
+{
+ "modulo": "Questões oficiais — m09-seguranca-informacao",
+ "lote": "T04 — Transpetro 2023 (Prova 6)",
+ "data": "2026-11-06",
+ "total": 7,
+ "questoes": [
+  {
+   "id": "OFI-000035",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 38.",
+   "modulo": "09-seguranca-informacao",
+   "assunto": "SDL: testes SAST x DAST",
+   "item_edital": "9.5",
+   "id_matriz": null,
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "compreensao",
+   "tipo_questao": "conceitual",
+   "enunciado": "As práticas de SDL (Security Development Lifecycle) recomendam ações importantes que devem ser adotadas por projetistas, arquitetos e programadores durante o processo de desenvolvimento de um software. Um teste muito utilizado é a análise em tempo de execução do software totalmente compilado, permitindo a verificação das funcionalidades que podem apenas ser testadas quando todos os componentes estão integrados e em execução.\n\nEsse tipo de teste é conhecido como",
+   "alternativas": {
+    "A": "SAST",
+    "B": "DAST",
+    "C": "VAST",
+    "D": "DREAD",
+    "E": "STRIDE"
+   },
+   "gabarito": "B",
+   "resolucao": "**DAST** (*Dynamic Application Security Testing*) testa a aplicação **em execução**, de fora (caixa-preta). **SAST** analisa o código-fonte, sem executar. DREAD e STRIDE são modelos de ameaças.",
+   "analise_alternativas": {
+    "A": "Incorreta. SAST analisa o código estático, sem executar a aplicação.",
+    "B": "Correta. DAST testa o software compilado em execução; é o descrito.",
+    "C": "Incorreta. VAST é uma metodologia de modelagem de ameaças (*Visual, Agile and Simple Threat modeling*).",
+    "D": "Incorreta. DREAD é um modelo de classificação de risco.",
+    "E": "Incorreta. STRIDE é um modelo de categorização de ameaças."
+   },
+   "fundamentacao": {
+    "item": "9.5",
+    "arquivo_teoria": "conteudo/09-seguranca-informacao/04-desenvolvimento-seguro.md"
+   },
+   "ponto_atencao": "**S**tatic = código parado; **D**ynamic = aplicação rodando. DREAD (classificar) e STRIDE (categorizar) não são testes.",
+   "revisao_rapida": "SAST = código; DAST = execução.",
+   "tags": [
+    "sast",
+    "dast",
+    "sdl",
+    "transpetro-2023",
+    "oficial",
+    "media",
+    "compreensao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Transpetro PSP/Terra 002/2023 (Edital nº 2)",
+    "cargo": "Análise de Sistemas — Processos de Negócios",
+    "ano": 2023,
+    "prova": "Prova 6",
+    "numero_original": 38,
+    "id_prova": "PRV-005",
+    "situacao_gabarito": "de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/transpetro-2023-psp002-prova06-analise-sistemas-processos-negocios.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000036",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 39.",
+   "modulo": "09-seguranca-informacao",
+   "assunto": "Controle de acesso: ABAC x RBAC",
+   "item_edital": "9.10",
+   "id_matriz": null,
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "aplicacao",
+   "tipo_questao": "cenario",
+   "enunciado": "O controle de acesso é um componente crítico de um IAM (Identity and Access Management), que é projetado para controlar recursos que um usuário está autorizado a acessar. Considere uma organização na qual os administradores devem definir permissões com base em uma combinação de atributos, de modo que um usuário possa ter diferentes níveis de acesso com base em sua localização, no recurso que está sendo acessado, no contexto da requisição de acesso e, em alguns casos, nas condições ambientes em relação a políticas, a regras ou a relacionamentos que descrevem as operações permitidas.\nNesse caso, a organização deve optar por um IAM que use a abordagem",
+   "alternativas": {
+    "A": "ABAC",
+    "B": "RBAC",
+    "C": "DAC",
+    "D": "MAC",
+    "E": "ACL"
+   },
+   "gabarito": "A",
+   "resolucao": "**ABAC** (*Attribute-Based Access Control*) decide com base em **atributos** do usuário, do recurso, da ação e do contexto/ambiente (local, horário etc.). RBAC usa papéis; DAC deixa o dono decidir; MAC usa rótulos de classificação; ACL é uma lista de permissões por recurso.",
+   "analise_alternativas": {
+    "A": "Correta. Combinação de atributos (local, recurso, contexto, ambiente) define ABAC.",
+    "B": "Incorreta. RBAC concede acesso por papel, sem considerar contexto e atributos dinâmicos.",
+    "C": "Incorreta. DAC: o proprietário do recurso define as permissões.",
+    "D": "Incorreta. MAC: o sistema impõe regras por rótulos de sensibilidade e níveis de autorização.",
+    "E": "Incorreta. ACL é um mecanismo de lista de permissões, não uma abordagem de decisão por atributos."
+   },
+   "fundamentacao": {
+    "item": "9.10",
+    "arquivo_teoria": "conteudo/09-seguranca-informacao/05-vpn-mdm-sso-mfa-iam.md"
+   },
+   "ponto_atencao": "Palavras-chave: **atributos + contexto + políticas** = ABAC; **papéis** = RBAC; **dono** = DAC; **rótulos** = MAC.",
+   "revisao_rapida": "ABAC: decide por atributos e contexto.",
+   "tags": [
+    "abac",
+    "rbac",
+    "iam",
+    "transpetro-2023",
+    "oficial",
+    "media",
+    "aplicacao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Transpetro PSP/Terra 002/2023 (Edital nº 2)",
+    "cargo": "Análise de Sistemas — Processos de Negócios",
+    "ano": 2023,
+    "prova": "Prova 6",
+    "numero_original": 39,
+    "id_prova": "PRV-005",
+    "situacao_gabarito": "de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/transpetro-2023-psp002-prova06-analise-sistemas-processos-negocios.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000037",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 40.",
+   "modulo": "09-seguranca-informacao",
+   "assunto": "MITRE ATT&CK: táticas",
+   "item_edital": "9.15",
+   "id_matriz": null,
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "memorizacao",
+   "tipo_questao": "conceitual",
+   "enunciado": "A MITRE ATT&CK® é uma referência a respeito de táticas e de técnicas adversárias. Profissionais da área de segurança precisam conhecer essa referência para implantar controles de segurança que assegurem a proteção dos sistemas de informação da organização.\n\nDentre as táticas adversárias listadas na MITRE ATT&CK®, está a(o)",
+   "alternativas": {
+    "A": "verificação de vulnerabilidade",
+    "B": "comunicação entre processos",
+    "C": "manipulação de conta",
+    "D": "evasão do depurador",
+    "E": "acesso à credencial"
+   },
+   "gabarito": "E",
+   "resolucao": "As táticas do ATT&CK Enterprise incluem *Reconnaissance, Resource Development, Initial Access, Execution, Persistence, Privilege Escalation, Defense Evasion, **Credential Access**, Discovery, Lateral Movement, Collection, Command and Control, Exfiltration e Impact* (14 na v14; a v19 tem 15). \"Acesso à credencial\" é uma tática; as demais opções são técnicas ou termos genéricos.",
+   "analise_alternativas": {
+    "A": "Incorreta. Não é tática do ATT&CK (a técnica de varredura de vulnerabilidades está sob Reconnaissance).",
+    "B": "Incorreta. \"Comunicação entre processos\" é técnica (execução por IPC), não tática.",
+    "C": "Incorreta. \"Manipulação de conta\" (*Account Manipulation*) é **técnica** (Persistence/Privilege Escalation).",
+    "D": "Incorreta. \"Evasão do depurador\" é técnica de Defense Evasion/Discovery.",
+    "E": "Correta. *Credential Access* é tática do ATT&CK."
+   },
+   "fundamentacao": {
+    "item": "9.15",
+    "arquivo_teoria": "conteudo/09-seguranca-informacao/08-pentest-stride-mitre.md"
+   },
+   "ponto_atencao": "Distinga **tática** (objetivo: o porquê) de **técnica** (como). A lista das táticas é curta e decorável. Decisão do projeto: referência com 14 táticas + nota sobre a v19 (15).",
+   "revisao_rapida": "Tática = objetivo; técnica = método; subtécnica = detalhe.",
+   "tags": [
+    "mitre-attack",
+    "transpetro-2023",
+    "oficial",
+    "media",
+    "memorizacao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Transpetro PSP/Terra 002/2023 (Edital nº 2)",
+    "cargo": "Análise de Sistemas — Processos de Negócios",
+    "ano": 2023,
+    "prova": "Prova 6",
+    "numero_original": 40,
+    "id_prova": "PRV-005",
+    "situacao_gabarito": "de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/transpetro-2023-psp002-prova06-analise-sistemas-processos-negocios.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000038",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 41.",
+   "modulo": "09-seguranca-informacao",
+   "assunto": "Criptografia híbrida: envelope digital",
+   "item_edital": "9.19",
+   "id_matriz": null,
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "compreensao",
+   "tipo_questao": "conceitual",
+   "enunciado": "O envelope digital é um esquema de criptografia padrão para implementar a confidencialidade de dados durante o envio de uma mensagem para um destinatário. Nesse esquema, criptografam-se os dados utilizando-se um algoritmo de criptografia simétrica.\nJá a chave secreta usada nesse esquema é criptografada utilizando-se um algoritmo de criptografia assimétrica com a chave",
+   "alternativas": {
+    "A": "privada do remetente",
+    "B": "privada do destinatário",
+    "C": "pública do remetente",
+    "D": "pública do destinatário",
+    "E": "pública de um terceiro confiável"
+   },
+   "gabarito": "D",
+   "resolucao": "No **envelope digital**, a mensagem é cifrada com uma **chave de sessão simétrica** (rápida), e essa chave é cifrada com a **chave pública do destinatário**. Somente o destinatário, com sua chave privada, abre o envelope e obtém a chave de sessão.",
+   "analise_alternativas": {
+    "A": "Incorreta. Cifrar com a privada do remetente gera assinatura (autenticidade), e qualquer um com a pública do remetente decifraria; não dá confidencialidade.",
+    "B": "Incorreta. A chave privada do destinatário é usada para **abrir** o envelope, e não para fechá-lo.",
+    "C": "Incorreta. A pública do remetente não restringe a leitura ao destinatário.",
+    "D": "Correta. Cifrar a chave simétrica com a pública do destinatário garante que só ele a recupere.",
+    "E": "Incorreta. Um terceiro confiável não é parte do esquema, e só ele poderia decifrar."
+   },
+   "fundamentacao": {
+    "item": "9.19",
+    "arquivo_teoria": "conteudo/09-seguranca-informacao/11-iso-27002.md"
+   },
+   "ponto_atencao": "Cifrar para alguém = chave **pública do destinatário**; assinar = chave **privada do remetente**.",
+   "revisao_rapida": "Envelope: dados (simétrica) + chave simétrica (pública do destinatário).",
+   "tags": [
+    "criptografia",
+    "envelope-digital",
+    "transpetro-2023",
+    "oficial",
+    "media",
+    "compreensao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Transpetro PSP/Terra 002/2023 (Edital nº 2)",
+    "cargo": "Análise de Sistemas — Processos de Negócios",
+    "ano": 2023,
+    "prova": "Prova 6",
+    "numero_original": 41,
+    "id_prova": "PRV-005",
+    "situacao_gabarito": "de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/transpetro-2023-psp002-prova06-analise-sistemas-processos-negocios.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000039",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 42.",
+   "modulo": "09-seguranca-informacao",
+   "assunto": "Resposta a incidentes: NIST SP 800-61",
+   "item_edital": "9.11",
+   "id_matriz": null,
+   "itens_secundarios": [],
+   "dificuldade": "facil",
+   "habilidade": "memorizacao",
+   "tipo_questao": "normativa",
+   "enunciado": "O processo de resposta a incidentes não é uma atividade linear que se inicia quando um incidente é detectado e que termina com sua erradicação e recuperação. Há uma reação a uma ocorrência identificada e, por meio dessa reação, são feitas a classificação, a investigação e a contenção do incidente.\n\nUm Ciclo de Vida de Resposta a Incidentes está definido na publicação do",
+   "alternativas": {
+    "A": "NIST SP 800-30",
+    "B": "NIST SP 800-34",
+    "C": "NIST SP 800-61",
+    "D": "ISO 27033-5",
+    "E": "ISO 27034-1"
+   },
+   "gabarito": "C",
+   "resolucao": "A **NIST SP 800-61** (*Computer Security Incident Handling Guide*) define o ciclo de vida de resposta a incidentes (Rev. 2: preparação; detecção e análise; contenção, erradicação e recuperação; atividade pós-incidente). A Rev. 3 (2025) alinha a resposta ao NIST CSF 2.0.",
+   "analise_alternativas": {
+    "A": "Incorreta. SP 800-30 trata de avaliação de riscos.",
+    "B": "Incorreta. SP 800-34 trata de planejamento de contingência.",
+    "C": "Correta. SP 800-61 define o ciclo de vida de resposta a incidentes.",
+    "D": "Incorreta. ISO 27033-5 trata de segurança de redes (VPN).",
+    "E": "Incorreta. ISO 27034-1 trata de segurança de aplicações."
+   },
+   "fundamentacao": {
+    "item": "9.11",
+    "arquivo_teoria": "conteudo/09-seguranca-informacao/06-gestao-incidentes.md"
+   },
+   "ponto_atencao": "Decore o **número de cada SP**: 800-30 (riscos), 800-34 (contingência), 800-61 (incidentes), 800-115 (testes de segurança), 800-53 (controles). Decisão do projeto: Rev. 3 como referência, com a Rev. 2 em comparação.",
+   "revisao_rapida": "800-61 = resposta a incidentes.",
+   "tags": [
+    "nist",
+    "incidentes",
+    "transpetro-2023",
+    "oficial",
+    "facil",
+    "memorizacao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Transpetro PSP/Terra 002/2023 (Edital nº 2)",
+    "cargo": "Análise de Sistemas — Processos de Negócios",
+    "ano": 2023,
+    "prova": "Prova 6",
+    "numero_original": 42,
+    "id_prova": "PRV-005",
+    "situacao_gabarito": "de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/transpetro-2023-psp002-prova06-analise-sistemas-processos-negocios.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000040",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 43.",
+   "modulo": "09-seguranca-informacao",
+   "assunto": "SIEM",
+   "item_edital": "9.2",
+   "id_matriz": null,
+   "itens_secundarios": [],
+   "dificuldade": "facil",
+   "habilidade": "compreensao",
+   "tipo_questao": "conceitual",
+   "enunciado": "Organizações constantemente enfrentam ameaças cibernéticas que podem causar danos e prejuízos graves. Há uma solução de software muita utilizada, que fornece uma visão holística da segurança da informação de uma organização, agregando e analisando eventos e logs de segurança de várias fontes em toda a infraestrutura de TI.\n\nA solução de software descrita é o",
+   "alternativas": {
+    "A": "CASB",
+    "B": "WAF",
+    "C": "DLP",
+    "D": "SIEM",
+    "E": "Proxy"
+   },
+   "gabarito": "D",
+   "resolucao": "O **SIEM** (*Security Information and Event Management*) **coleta, correlaciona e analisa** logs e eventos de várias fontes, gerando alertas e visão consolidada.",
+   "analise_alternativas": {
+    "A": "Incorreta. CASB controla o uso de serviços em nuvem.",
+    "B": "Incorreta. WAF protege aplicações web contra ataques HTTP.",
+    "C": "Incorreta. DLP evita vazamento de dados.",
+    "D": "Correta. SIEM agrega e correlaciona eventos e logs de segurança.",
+    "E": "Incorreta. Proxy intermedia o tráfego, aplicando filtros e cache."
+   },
+   "fundamentacao": {
+    "item": "9.2",
+    "arquivo_teoria": "conteudo/09-seguranca-informacao/14-operacao-de-seguranca.md"
+   },
+   "ponto_atencao": "\"Agregar e correlacionar logs e eventos\" = SIEM.",
+   "revisao_rapida": "SIEM: coleta + correlação + alerta.",
+   "tags": [
+    "siem",
+    "transpetro-2023",
+    "oficial",
+    "facil",
+    "compreensao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Transpetro PSP/Terra 002/2023 (Edital nº 2)",
+    "cargo": "Análise de Sistemas — Processos de Negócios",
+    "ano": 2023,
+    "prova": "Prova 6",
+    "numero_original": 43,
+    "id_prova": "PRV-005",
+    "situacao_gabarito": "de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/transpetro-2023-psp002-prova06-analise-sistemas-processos-negocios.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000041",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 44.",
+   "modulo": "09-seguranca-informacao",
+   "assunto": "ISO/IEC 27002: proteção contra malware",
+   "item_edital": "9.19",
+   "id_matriz": null,
+   "itens_secundarios": [
+    "9.1"
+   ],
+   "dificuldade": "media",
+   "habilidade": "memorizacao",
+   "tipo_questao": "normativa",
+   "enunciado": "As organizações podem usar a Norma ABNT ISO 27002 como uma referência para a seleção de controles dentro do processo de um SGSI (Sistema de Gestão de Segurança da Informação).\n\nConforme definido nessa norma, assegurar que as informações e os recursos de processamento da informação estejam protegidos contra malware é um dos objetivos listados para o contexto da segurança",
+   "alternativas": {
+    "A": "nas operações",
+    "B": "nas comunicações",
+    "C": "em recursos humanos",
+    "D": "no controle de acesso",
+    "E": "física e do ambiente"
+   },
+   "gabarito": "A",
+   "resolucao": "Na edição de 2013 da ISO/IEC 27002, a proteção contra malware é um objetivo da seção **12 — Segurança nas operações**. **Atenção:** a edição 2022 reorganizou os controles em quatro temas (organizacionais, pessoas, físicos e tecnológicos), e a proteção contra malware passou ao tema **tecnológico** (controle 8.7). A questão segue a organização por seções da edição anterior.",
+   "analise_alternativas": {
+    "A": "Correta. Segurança nas operações (seção 12 da edição 2013) contém a proteção contra malware.",
+    "B": "Incorreta. Segurança nas comunicações (seção 13) trata de redes e transferência de informações.",
+    "C": "Incorreta. Segurança em recursos humanos (seção 7) trata de contratação, conscientização e desligamento.",
+    "D": "Incorreta. Controle de acesso (seção 9) trata de requisitos, gestão de usuários e responsabilidades.",
+    "E": "Incorreta. Segurança física e do ambiente (seção 11) trata de áreas seguras e equipamentos."
+   },
+   "fundamentacao": {
+    "item": "9.19",
+    "arquivo_teoria": "conteudo/09-seguranca-informacao/11-iso-27002.md"
+   },
+   "ponto_atencao": "**Versão importa**: na 27002:2013, malware = operações (12.2); na 27002:2022, é o controle tecnológico 8.7. Registre a edição ao estudar controles.",
+   "revisao_rapida": "Malware: 27002:2013 → 12.2 (operações); 27002:2022 → 8.7 (tecnológico).",
+   "tags": [
+    "iso-27002",
+    "malware",
+    "transpetro-2023",
+    "oficial",
+    "media",
+    "memorizacao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Transpetro PSP/Terra 002/2023 (Edital nº 2)",
+    "cargo": "Análise de Sistemas — Processos de Negócios",
+    "ano": 2023,
+    "prova": "Prova 6",
+    "numero_original": 44,
+    "id_prova": "PRV-005",
+    "situacao_gabarito": "de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/transpetro-2023-psp002-prova06-analise-sistemas-processos-negocios.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Gabarito do catálogo; seção 12 da edição 2013 conferida de memória (norma não consultada na fonte primária).",
+   "status_validacao": "em_revisao"
+  }
+ ]
+}
