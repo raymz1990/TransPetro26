@@ -34,7 +34,7 @@
 
   var MENU = [
     ["Estudo", [["#/", "Início"], ["#/conteudo", "Conteúdo"], ["#/questoes", "Questões"], ["#/simulados", "Simulados"], ["#/erros", "Caderno de erros"], ["#/desempenho", "Desempenho"]]],
-    ["Estudo ativo", [["#/flashcards", "Flashcards"], ["revisoes", "Revisões"], ["plano", "Plano de estudos"]]],
+    ["Estudo ativo", [["#/flashcards", "Flashcards"], ["#/revisoes", "Revisões"], ["plano", "Plano de estudos"]]],
     ["Sistema", [["#/dados", "Meus dados"], ["#/sobre", "Sobre o projeto"]]]
   ];
 

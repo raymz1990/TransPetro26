@@ -238,7 +238,6 @@
         TP.somaAtividade("fc", 1);
         if (res === "medio" || res === "facil") TP.somaAtividade("fcOk", 1);
         if (novo) TP.somaAtividade("fcNovos", 1);
-        TP.atualizaRevisaoFc && TP.atualizaRevisaoFc();
       }
       TP.salvar();
       /* Errei: o cartão volta ao fim desta sessão (uma vez), além do agendamento de amanhã. */

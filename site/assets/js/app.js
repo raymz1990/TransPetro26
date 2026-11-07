@@ -18,6 +18,17 @@
     return h("p", {}, h("a", { href: "#/simulados/" + t.sim + "/resultado/" + t.id }, t.titulo), h("br"), t.acertos + "/" + t.total + " acertos (" + Math.round(100 * t.acertos / t.total) + "%)");
   }
 
+  function painelRevisoes(erros) {
+    if (TP.revSincronizar()) TP.salvar();
+    var c = TP.revContagem();
+    if (!c.total && !c.fcAgendados) return h("p", { class: "muted" }, "Nada agendado ainda. Marque assuntos como estudados, erre questões ou revise flashcards: a revisão espaçada nasce daí. ", h("a", { href: "#/revisoes" }, "Ver revisões"), ".");
+    var venc = c.atrasadas + c.hoje + c.fcVencidos;
+    return h("div", {},
+      h("p", {}, h("b", {}, String(venc)), venc === 1 ? " revisão pendente hoje" : " revisões pendentes hoje", h("br"),
+        h("span", { class: "muted" }, c.atrasadas + " atrasadas · " + c.hoje + " de hoje · " + c.fcVencidos + " flashcards vencidos")),
+      h("a", { href: "#/revisoes" }, "Abrir fila de revisões"));
+  }
+
   /* ---------- Início ---------- */
   TP.rota("", function (main) {
     var c = TP.resumoConteudo(), q = TP.resumoQuestoes();
@@ -51,8 +62,7 @@
     main.appendChild(h("div", { class: "panels" },
       h("section", { class: "panel" }, h("h3", {}, "Rotina de estudos"),
         h("p", { class: "muted" }, "Plano diário, semanal e mensal: ainda não implementado. Por ora, use a lista de conteúdo e marque o que estudou.")),
-      h("section", { class: "panel" }, h("h3", {}, "Próximas revisões"),
-        h("p", { class: "muted" }, "Revisão espaçada: ainda não implementada." + (erros ? " Há " + erros + " item(ns) no caderno de erros." : ""))),
+      h("section", { class: "panel" }, h("h3", {}, "Próximas revisões"), painelRevisoes(erros)),
       h("section", { class: "panel" }, h("h3", {}, "Último simulado"), ultimoSimulado())));
 
     /* Cobertura por módulo */
@@ -73,7 +83,7 @@
 
     main.appendChild(h("div", { class: "notice" }, "Seus dados (progresso, respostas, erros) ficam armazenados apenas neste navegador e neste dispositivo; não são sincronizados. Limpar os dados do navegador apaga o progresso: faça backup em ",
       h("a", { href: "#/dados" }, "Meus dados"), ". O edital oficial prevalece sobre qualquer material deste site."));
-    main.appendChild(h("p", { class: "muted" }, "Disponível: teoria (módulos 1 a 9 e Gerais), banco de questões (oficiais da Cesgranrio e autorais, com origem identificada), simulados cronometrados, caderno de erros, desempenho, busca e backup. Ainda não implementado: plano de estudos, flashcards e revisão espaçada. Questões autorais não são da Cesgranrio."));
+    main.appendChild(h("p", { class: "muted" }, "Disponível: teoria (módulos 1 a 9 e Gerais), banco de questões (oficiais da Cesgranrio e autorais, com origem identificada), simulados cronometrados, caderno de erros, desempenho, busca e backup. Flashcards e revisão espaçada disponíveis; ainda não implementado: plano de estudos. Questões autorais não são da Cesgranrio."));
   });
 
   /* ---------- Conteúdo ---------- */
@@ -118,7 +128,8 @@
     var chk = h("button", { class: "btn", type: "button", "aria-pressed": String(!!TP.dados().estudados[a.id]) }, TP.dados().estudados[a.id] ? "Estudado ✓ (desmarcar)" : "Marcar como estudado");
     chk.addEventListener("click", function () {
       var e = TP.dados().estudados;
-      if (e[a.id]) delete e[a.id]; else e[a.id] = new Date().toISOString().slice(0, 10);
+      if (e[a.id]) delete e[a.id]; else e[a.id] = TP.hoje();
+      if (TP.revSincronizar) TP.revSincronizar();
       TP.salvar(); chk.textContent = e[a.id] ? "Estudado ✓ (desmarcar)" : "Marcar como estudado"; chk.setAttribute("aria-pressed", String(!!e[a.id]));
     });
     var extras = h("div", { class: "row" });
@@ -196,7 +207,7 @@
       "- As questões **autorais** (\"estilo Cesgranrio\") foram criadas pelo projeto e **não** são questões de prova nem foram elaboradas pela banca. As marcadas como \"em revisão\" aguardam validação do usuário.\n" +
       "- O texto do edital prevalece sobre qualquer material deste site.\n\n" +
       "## Ainda não disponível\n\n" +
-      "Plano de estudos, flashcards, revisão espaçada e questões adaptadas.") }));
+      "Plano de estudos e questões adaptadas.") }));
   });
 
   /* ---------- Inicialização ---------- */

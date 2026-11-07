@@ -6,8 +6,10 @@
 
   TP.registrarErro = function (qid) {
     var e = TP.dados().erros;
-    if (!e[qid]) e[qid] = { tipo: "", obs: "", resolvido: false, data: new Date().toISOString().slice(0, 10) };
+    if (!e[qid]) e[qid] = { tipo: "", obs: "", resolvido: false, data: TP.hoje() };
     else e[qid].resolvido = false;
+    /* Erro (ou erro repetido): a revisão recomeça em R1, 24 h depois (metodologia, 8.3: erro recorrente reduz o intervalo). */
+    if (TP.revErro) TP.revErro(qid);
   };
 
   TP.rota("erros", function (main) {
@@ -26,7 +28,7 @@
         TIPOS.map(function (t) { return h("option", { value: t, selected: e.tipo === t }, t || "Tipo do erro…"); }));
       var obs = h("textarea", { "aria-label": "Observações", placeholder: "O que levar para a revisão?", onchange: function (ev) { e.obs = ev.target.value; TP.salvar(); } });
       obs.value = e.obs;
-      var chk = h("input", { type: "checkbox", id: "r-" + id, onchange: function (ev) { e.resolvido = ev.target.checked; TP.salvar(); } });
+      var chk = h("input", { type: "checkbox", id: "r-" + id, onchange: function (ev) { e.resolvido = ev.target.checked; if (TP.revSincronizar) TP.revSincronizar(); TP.salvar(); } });
       chk.checked = !!e.resolvido;
       main.appendChild(h("div", { class: "errcard" },
         h("div", { class: "row" }, h("a", { href: "#/questoes/" + id }, id + " · " + q.assunto), h("span", { class: "badge" }, TP.NOMES_MOD[q.modulo]), h("span", { class: "muted" }, e.data)),

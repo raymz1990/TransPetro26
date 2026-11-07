@@ -7,7 +7,7 @@
 
   function vazio() {
     return { versao: VERSAO, estudados: {}, respostas: {}, marcadas: {}, erros: {}, simulados: { tentativas: [], andamento: {} },
-      flashcards: {}, atividade: {}, config: {} };
+      flashcards: {}, atividade: {}, config: {}, revisoes: {} };
   }
   function ehObjeto(x) { return x && typeof x === "object" && !Array.isArray(x); }
 
@@ -28,8 +28,8 @@
     if (!ehObjeto(d.simulados)) throw new Error("Campo inválido: simulados");
     if (!Array.isArray(d.simulados.tentativas)) d.simulados.tentativas = [];
     if (!ehObjeto(d.simulados.andamento)) d.simulados.andamento = {};
-    /* Campos acrescentados depois (T09): flashcards, atividade diária e configurações. Backups antigos não os possuem. */
-    ["flashcards", "atividade", "config"].forEach(function (k) {
+    /* Campos acrescentados depois (T09 e T10): flashcards, atividade diária, configurações e revisões. Backups antigos não os possuem. */
+    ["flashcards", "atividade", "config", "revisoes"].forEach(function (k) {
       if (d[k] === undefined) d[k] = {};
       if (!ehObjeto(d[k])) throw new Error("Campo inválido: " + k);
     });
@@ -86,6 +86,10 @@
       Object.keys(novo.flashcards).forEach(function (id) {
         var a = dados.flashcards[id], b = novo.flashcards[id];
         if (!a || (b.ult || "") > (a.ult || "")) dados.flashcards[id] = b;
+      });
+      Object.keys(novo.revisoes).forEach(function (k) {
+        var a = dados.revisoes[k], b = novo.revisoes[k];
+        if (!a || (b.ult || "") > (a.ult || "")) dados.revisoes[k] = b;
       });
       Object.keys(novo.atividade).forEach(function (dia) {
         var a = dados.atividade[dia] = dados.atividade[dia] || {}, b = novo.atividade[dia];
