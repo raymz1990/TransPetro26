@@ -18,7 +18,7 @@ Para que todas as premissas sejam verdadeiras, a **Premissa 2** exige D verdadei
 
 **Revisão rápida:** Premissas V ⇒ D=V, E=F, A=V, B=V.
 
-**Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 28; gabarito: de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca.
+**Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 28; gabarito: oficial (PDF de gabarito da Cesgranrio, alterado em 9/01/2024), conferido na T13.
 
 ## OFI-000034 — Consequência lógica de sentença quantificada
 
@@ -38,7 +38,7 @@ Simbolicamente: ∀x (P(x) → (M(x) ∨ E(x))). A **contrapositiva** é ∀x (�
 
 **Revisão rápida:** P→Q ≡ ¬Q→¬P.
 
-**Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 35; gabarito: de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca.
+**Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 35; gabarito: oficial (PDF de gabarito da Cesgranrio, alterado em 9/01/2024), conferido na T13.
 
 ## OFI-000115 — Equivalência lógica: contrapositiva
 

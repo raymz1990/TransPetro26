@@ -84,15 +84,15 @@ Visão diária, semanal e mensal, sessões e tempo estudado, conforme a metodolo
 **T12 — Desempenho avançado** *(FEITO, 2026-11-06: evolução, simulados, módulos, itens, tempo, erros, retenção e cobertura, com gráficos SVG e aviso de amostra pequena; tempo por questão só a partir de agora)*
 Evolução temporal, tempo por questão, por assunto, histórico de simulados, gráficos leves sem dependências; mostrar limitações quando a amostra for pequena.
 
-### P3 — Qualidade e distribuição
+### P3 — Qualidade e distribuição *(ENCERRADA em 2026-11-07 com pendências registradas em `docs/qualidade/relatorio-p3.md`)*
 
-**T13 — Revisão de qualidade**
+**T13 — Revisão de qualidade** *(FEITO parcialmente, 2026-11-07: 63 gabaritos Transpetro 2018/2023 conferidos com os PDFs da Cesgranrio, 0 divergências; 30 questões resolvidas às cegas, 0 divergências; fontes PMI/ISO/ITIL seguem sem fonte primária — ver `relatorio-t13.md`)*
 Revisão independente por amostragem (resolução às cegas nos módulos que ainda não tiveram), verificação das fontes de memória (PMI, ISO, ITIL, ISTQB) e conferência dos gabaritos 2018/2023 contra fonte oficial quando disponível.
 
-**T14 — NotebookLM**
+**T14 — NotebookLM** *(FEITO, 2026-11-07: `tools/build_notebooklm.py` gera 11 fontes completas, 22 arquivos de questões, resumos, mapas Mermaid e prompts; roteiros de podcast pendentes)*
 Gerar fontes Markdown/PDF por módulo, resumos, mapas mentais e roteiros em `notebooklm/`, respeitando a rastreabilidade ao edital. Depende da estabilização de T03 e T04.
 
-**T15 — Auditoria final do site**
+**T15 — Auditoria final do site** *(FEITO, 2026-11-07: `tools/auditar_site.py`, contraste dos dois temas, link de pular conteúdo, menu móvel sem foco oculto, persistência e rotas testadas no navegador; sem teste em outros navegadores nem leitor de tela)*
 Acessibilidade (teclado, contraste, foco), testes de persistência completos, responsividade (desktop, tablet, celular), `checklist-site.md`, README atualizado.
 
 ## 4. Aditivos que podem ser implementados

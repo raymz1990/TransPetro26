@@ -18,7 +18,7 @@ No **cascata (waterfall)**, as fases (requisitos, projeto, implementação, test
 
 **Revisão rápida:** Cascata: fases em sequência, sem retorno planejado.
 
-**Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 54; gabarito: de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca.
+**Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 54; gabarito: oficial (PDF de gabarito da Cesgranrio, alterado em 9/01/2024), conferido na T13.
 
 ## OFI-000013 — Scrum x Kanban
 
@@ -38,7 +38,7 @@ O Scrum trabalha em **Sprints** de duração fixa; o Kanban é um fluxo **contí
 
 **Revisão rápida:** Scrum: Sprint fixa. Kanban: fluxo contínuo e WIP.
 
-**Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 65; gabarito: de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca.
+**Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 65; gabarito: oficial (PDF de gabarito da Cesgranrio, alterado em 9/01/2024), conferido na T13.
 
 ## OFI-000014 — EAP (Estrutura Analítica do Projeto)
 
@@ -58,7 +58,7 @@ A **EAP (WBS)** é a decomposição **hierárquica** do escopo total do trabalho
 
 **Revisão rápida:** EAP = decomposição hierárquica do escopo em pacotes de trabalho.
 
-**Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 67; gabarito: de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca.
+**Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 67; gabarito: oficial (PDF de gabarito da Cesgranrio, alterado em 9/01/2024), conferido na T13.
 
 ## OFI-000015 — SAFe: Program Increment (PI)
 
@@ -78,7 +78,7 @@ O **PI** é a *timebox* do SAFe (tipicamente 8 a 12 semanas) em que as equipes d
 
 **Revisão rápida:** PI: 8–12 semanas, ART entrega valor incremental.
 
-**Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 68; gabarito: de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca.
+**Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 68; gabarito: oficial (PDF de gabarito da Cesgranrio, alterado em 9/01/2024), conferido na T13.
 
 ## OFI-000016 — Estruturas organizacionais: matriz forte
 
@@ -98,7 +98,7 @@ Nas estruturas matriciais: na **matriz fraca**, predomina o gerente funcional; n
 
 **Revisão rápida:** Matriz forte = gerente de projeto com alta autoridade.
 
-**Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 69; gabarito: de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca.
+**Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 69; gabarito: oficial (PDF de gabarito da Cesgranrio, alterado em 9/01/2024), conferido na T13.
 
 ## OFI-000044 — Scrum: momento da Retrospectiva da Sprint
 
@@ -118,7 +118,7 @@ A **Sprint Retrospective** ocorre **depois da Sprint Review** e **antes do próx
 
 **Revisão rápida:** Revisão (produto) antes da Retrospectiva (processo).
 
-**Fonte:** Fundação Cesgranrio, Transpetro PSP RH 2018.1 (Edital nº 1), Analista de Sistemas Júnior — Processos de Negócio (2018), prova Prova 15, questão 28; gabarito: de terceiros (Ética), alterado em 09/05/2018; não validado contra a banca.
+**Fonte:** Fundação Cesgranrio, Transpetro PSP RH 2018.1 (Edital nº 1), Analista de Sistemas Júnior — Processos de Negócio (2018), prova Prova 15, questão 28; gabarito: oficial (PDF de gabarito da Cesgranrio, alterado em 09/05/2018), conferido na T13.
 
 ## OFI-000045 — Scrum: escala dos Pontos de História (Planning Poker)
 
@@ -138,7 +138,7 @@ O **Planning Poker** usa uma escala **tipo Fibonacci modificada** (0, 1, 2, 3, 5
 
 **Revisão rápida:** Planning Poker: 0, 1, 2, 3, 5, 8, 13, 20, 40, 100.
 
-**Fonte:** Fundação Cesgranrio, Transpetro PSP RH 2018.1 (Edital nº 1), Analista de Sistemas Júnior — Processos de Negócio (2018), prova Prova 15, questão 31; gabarito: de terceiros (Ética), alterado em 09/05/2018; não validado contra a banca.
+**Fonte:** Fundação Cesgranrio, Transpetro PSP RH 2018.1 (Edital nº 1), Analista de Sistemas Júnior — Processos de Negócio (2018), prova Prova 15, questão 31; gabarito: oficial (PDF de gabarito da Cesgranrio, alterado em 09/05/2018), conferido na T13.
 
 ## OFI-000046 — EAP: o que deve conter
 
@@ -158,7 +158,7 @@ A **EAP (WBS)** decompõe hierarquicamente o **escopo total do projeto** em **en
 
 **Revisão rápida:** EAP = escopo e entregas, em hierarquia.
 
-**Fonte:** Fundação Cesgranrio, Transpetro PSP RH 2018.1 (Edital nº 1), Analista de Sistemas Júnior — Processos de Negócio (2018), prova Prova 15, questão 63; gabarito: de terceiros (Ética), alterado em 09/05/2018; não validado contra a banca.
+**Fonte:** Fundação Cesgranrio, Transpetro PSP RH 2018.1 (Edital nº 1), Analista de Sistemas Júnior — Processos de Negócio (2018), prova Prova 15, questão 63; gabarito: oficial (PDF de gabarito da Cesgranrio, alterado em 09/05/2018), conferido na T13.
 
 ## OFI-000098 — Nexus: accountability adicional em Scrum escalado
 

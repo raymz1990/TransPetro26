@@ -18,7 +18,7 @@ Operadores **binários** recebem duas relações; os **unários** recebem uma. P
 
 **Revisão rápida:** Unários: σ, π, ρ. Binários: ∪, ∩, −, ×, ⋈ e ÷.
 
-**Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 26; gabarito: de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca.
+**Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 26; gabarito: oficial (PDF de gabarito da Cesgranrio, alterado em 9/01/2024), conferido na T13.
 
 ## OFI-000002 — Desempenho de banco de dados: desnormalização controlada
 
@@ -38,7 +38,7 @@ A **desnormalização controlada** reduz o número de junções em consultas fre
 
 **Revisão rápida:** Ajuste: índices adequados, consultas sargáveis, desnormalização controlada, estatísticas atualizadas.
 
-**Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 45; gabarito: de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca.
+**Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 45; gabarito: oficial (PDF de gabarito da Cesgranrio, alterado em 9/01/2024), conferido na T13.
 
 ## OFI-000003 — Bancos de documentos x relacionais x grafos
 
@@ -58,7 +58,7 @@ Bancos de documentos (MongoDB, CouchDB) guardam documentos **JSON/BSON**, de esq
 
 **Revisão rápida:** Documentos = JSON/BSON, esquema flexível; grafos = nós/arestas; relacional = tabelas/SQL.
 
-**Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 46; gabarito: de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca.
+**Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 46; gabarito: oficial (PDF de gabarito da Cesgranrio, alterado em 9/01/2024), conferido na T13.
 
 ## OFI-000004 — Banco de grafos: consulta em Cypher
 
@@ -78,7 +78,7 @@ Em Cypher, `MATCH` descreve um padrão; `(p)-[:TIPO]->(x)` segue a relação de 
 
 **Revisão rápida:** Cypher: `MATCH (a)-[:REL]->(b) WHERE ... RETURN b`.
 
-**Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 48; gabarito: de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca.
+**Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 48; gabarito: oficial (PDF de gabarito da Cesgranrio, alterado em 9/01/2024), conferido na T13.
 
 ## OFI-000005 — SQL: autojunção em tabela de hierarquia
 
@@ -98,7 +98,7 @@ Neto de Carlos = filho de um filho de Carlos. Na **autojunção**, `f1` represen
 
 **Revisão rápida:** Neto = `f1.filho = f2.pai`; projeta-se `f2.filho`.
 
-**Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 49; gabarito: de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca.
+**Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 49; gabarito: oficial (PDF de gabarito da Cesgranrio, alterado em 9/01/2024), conferido na T13.
 
 ## OFI-000006 — Metadados em SGBD relacional
 
@@ -118,7 +118,7 @@ Metadados são **dados sobre dados**: o catálogo (dicionário de dados) guarda 
 
 **Revisão rápida:** Metadado = dado sobre os dados (catálogo/dicionário).
 
-**Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 50; gabarito: de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca.
+**Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 50; gabarito: oficial (PDF de gabarito da Cesgranrio, alterado em 9/01/2024), conferido na T13.
 
 ## OFI-000007 — SGBD: otimizador de consultas (alternativa NÃO)
 
@@ -138,7 +138,7 @@ O otimizador **não altera o esquema**: ele escolhe o melhor plano de execução
 
 **Revisão rápida:** Otimizador: gera planos, estima custo com estatísticas, escolhe o menor.
 
-**Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 51; gabarito: de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca.
+**Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 51; gabarito: oficial (PDF de gabarito da Cesgranrio, alterado em 9/01/2024), conferido na T13.
 
 ## OFI-000008 — Data lakes e Big Data
 
@@ -158,7 +158,7 @@ Um data lake guarda dados **brutos em qualquer formato**, aplicando o esquema na
 
 **Revisão rápida:** Lake = dado bruto, todos os formatos, schema-on-read.
 
-**Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 52; gabarito: de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca.
+**Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 52; gabarito: oficial (PDF de gabarito da Cesgranrio, alterado em 9/01/2024), conferido na T13.
 
 ## OFI-000009 — Propriedades ACID
 
@@ -178,7 +178,7 @@ Um data lake guarda dados **brutos em qualquer formato**, aplicando o esquema na
 
 **Revisão rápida:** ACID: tudo-ou-nada, válido→válido, sem interferência, confirmado persiste.
 
-**Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 53; gabarito: de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca.
+**Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 53; gabarito: oficial (PDF de gabarito da Cesgranrio, alterado em 9/01/2024), conferido na T13.
 
 ## OFI-000010 — Modelagem conceitual
 
@@ -198,7 +198,7 @@ O modelo **conceitual** (ex.: MER/DER) é o mais abstrato: define entidades, atr
 
 **Revisão rápida:** Conceitual → lógico → físico, do mais abstrato ao mais próximo do SGBD.
 
-**Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 63; gabarito: de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca.
+**Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 63; gabarito: oficial (PDF de gabarito da Cesgranrio, alterado em 9/01/2024), conferido na T13.
 
 ## OFI-000011 — Normalização: objetivo
 
@@ -218,7 +218,7 @@ A normalização busca **reduzir a redundância** e evitar anomalias de inserç�
 
 **Revisão rápida:** Normalizar = menos redundância e menos anomalias.
 
-**Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 64; gabarito: de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca.
+**Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 64; gabarito: oficial (PDF de gabarito da Cesgranrio, alterado em 9/01/2024), conferido na T13.
 
 ## OFI-000042 — Data warehouse: Data Staging Area (ETL)
 
@@ -238,7 +238,7 @@ A **Data Staging Area** é a área intermediária onde os dados extraídos das f
 
 **Revisão rápida:** Staging area = onde se extrai, limpa e transforma antes de carregar.
 
-**Fonte:** Fundação Cesgranrio, Transpetro PSP RH 2018.1 (Edital nº 1), Analista de Sistemas Júnior — Processos de Negócio (2018), prova Prova 15, questão 22; gabarito: de terceiros (Ética), alterado em 09/05/2018; não validado contra a banca.
+**Fonte:** Fundação Cesgranrio, Transpetro PSP RH 2018.1 (Edital nº 1), Analista de Sistemas Júnior — Processos de Negócio (2018), prova Prova 15, questão 22; gabarito: oficial (PDF de gabarito da Cesgranrio, alterado em 09/05/2018), conferido na T13.
 
 ## OFI-000043 — SQL: fornecedores com venda em intervalo de datas
 
@@ -258,7 +258,7 @@ Procura-se o fornecedor para o qual **exista ao menos uma linha de VENDA com a d
 
 **Revisão rápida:** Intervalo inclusivo: BETWEEN, ou >= AND <=, na mesma linha.
 
-**Fonte:** Fundação Cesgranrio, Transpetro PSP RH 2018.1 (Edital nº 1), Analista de Sistemas Júnior — Processos de Negócio (2018), prova Prova 15, questão 38; gabarito: de terceiros (Ética), alterado em 09/05/2018; não validado contra a banca.
+**Fonte:** Fundação Cesgranrio, Transpetro PSP RH 2018.1 (Edital nº 1), Analista de Sistemas Júnior — Processos de Negócio (2018), prova Prova 15, questão 38; gabarito: oficial (PDF de gabarito da Cesgranrio, alterado em 09/05/2018), conferido na T13.
 
 ## OFI-000067 — Modelo relacional: chaves primária e estrangeira
 

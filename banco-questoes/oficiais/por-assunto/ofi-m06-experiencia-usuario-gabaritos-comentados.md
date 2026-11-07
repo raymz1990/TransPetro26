@@ -18,7 +18,7 @@ Protótipos de **alta fidelidade** reproduzem com fidelidade visual e de intera�
 
 **Revisão rápida:** Alta fidelidade = parece o produto final.
 
-**Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 29; gabarito: de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca.
+**Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 29; gabarito: oficial (PDF de gabarito da Cesgranrio, alterado em 9/01/2024), conferido na T13.
 
 ## OFI-000029 — Acessibilidade e usabilidade no processo de desenvolvimento
 
@@ -38,7 +38,7 @@ Acessibilidade e usabilidade são **requisitos de qualidade** a considerar desde
 
 **Revisão rápida:** A11y e usabilidade: complementares e desde o protótipo.
 
-**Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 33; gabarito: de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca.
+**Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 33; gabarito: oficial (PDF de gabarito da Cesgranrio, alterado em 9/01/2024), conferido na T13.
 
 ## OFI-000030 — Design Thinking: mapa de empatia
 
@@ -58,7 +58,7 @@ O **mapa de empatia** organiza o que o usuário **pensa e sente, ouve, vê, fala
 
 **Revisão rápida:** Mapa: pensa e sente, ouve, vê, fala e faz.
 
-**Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 34; gabarito: de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca.
+**Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 34; gabarito: oficial (PDF de gabarito da Cesgranrio, alterado em 9/01/2024), conferido na T13.
 
 ## OFI-000031 — MVP: Mínimo Produto Viável
 
@@ -78,7 +78,7 @@ O **MVP** é a versão mais enxuta que permite **aprender com usuários reais** 
 
 **Revisão rápida:** MVP: mínimo para validar hipóteses com usuários reais.
 
-**Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 58; gabarito: de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca.
+**Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 58; gabarito: oficial (PDF de gabarito da Cesgranrio, alterado em 9/01/2024), conferido na T13.
 
 ## OFI-000054 — eMAG: recomendações de acessibilidade
 
@@ -98,4 +98,4 @@ O eMAG (alinhado ao WCAG) recomenda **contraste mínimo** entre texto e fundo, *
 
 **Revisão rápida:** eMAG/WCAG: contraste, zoom, não só cor, sem mudança automática de contexto.
 
-**Fonte:** Fundação Cesgranrio, Transpetro PSP RH 2018.1 (Edital nº 1), Analista de Sistemas Júnior — Processos de Negócio (2018), prova Prova 15, questão 35; gabarito: de terceiros (Ética), alterado em 09/05/2018; não validado contra a banca.
+**Fonte:** Fundação Cesgranrio, Transpetro PSP RH 2018.1 (Edital nº 1), Analista de Sistemas Júnior — Processos de Negócio (2018), prova Prova 15, questão 35; gabarito: oficial (PDF de gabarito da Cesgranrio, alterado em 09/05/2018), conferido na T13.

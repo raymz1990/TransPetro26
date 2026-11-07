@@ -18,7 +18,7 @@
 
 **Revisão rápida:** SAST = código; DAST = execução.
 
-**Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 38; gabarito: de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca.
+**Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 38; gabarito: oficial (PDF de gabarito da Cesgranrio, alterado em 9/01/2024), conferido na T13.
 
 ## OFI-000036 — Controle de acesso: ABAC x RBAC
 
@@ -38,7 +38,7 @@
 
 **Revisão rápida:** ABAC: decide por atributos e contexto.
 
-**Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 39; gabarito: de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca.
+**Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 39; gabarito: oficial (PDF de gabarito da Cesgranrio, alterado em 9/01/2024), conferido na T13.
 
 ## OFI-000037 — MITRE ATT&CK: táticas
 
@@ -58,7 +58,7 @@ As táticas do ATT&CK Enterprise incluem *Reconnaissance, Resource Development, 
 
 **Revisão rápida:** Tática = objetivo; técnica = método; subtécnica = detalhe.
 
-**Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 40; gabarito: de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca.
+**Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 40; gabarito: oficial (PDF de gabarito da Cesgranrio, alterado em 9/01/2024), conferido na T13.
 
 ## OFI-000038 — Criptografia híbrida: envelope digital
 
@@ -78,7 +78,7 @@ No **envelope digital**, a mensagem é cifrada com uma **chave de sessão simét
 
 **Revisão rápida:** Envelope: dados (simétrica) + chave simétrica (pública do destinatário).
 
-**Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 41; gabarito: de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca.
+**Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 41; gabarito: oficial (PDF de gabarito da Cesgranrio, alterado em 9/01/2024), conferido na T13.
 
 ## OFI-000039 — Resposta a incidentes: NIST SP 800-61
 
@@ -98,7 +98,7 @@ A **NIST SP 800-61** (*Computer Security Incident Handling Guide*) define o cicl
 
 **Revisão rápida:** 800-61 = resposta a incidentes.
 
-**Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 42; gabarito: de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca.
+**Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 42; gabarito: oficial (PDF de gabarito da Cesgranrio, alterado em 9/01/2024), conferido na T13.
 
 ## OFI-000040 — SIEM
 
@@ -118,7 +118,7 @@ O **SIEM** (*Security Information and Event Management*) **coleta, correlaciona 
 
 **Revisão rápida:** SIEM: coleta + correlação + alerta.
 
-**Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 43; gabarito: de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca.
+**Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 43; gabarito: oficial (PDF de gabarito da Cesgranrio, alterado em 9/01/2024), conferido na T13.
 
 ## OFI-000041 — ISO/IEC 27002: proteção contra malware
 
@@ -138,7 +138,7 @@ Na edição de 2013 da ISO/IEC 27002, a proteção contra malware é um objetivo
 
 **Revisão rápida:** Malware: 27002:2013 → 12.2 (operações); 27002:2022 → 8.7 (tecnológico).
 
-**Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 44; gabarito: de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca.
+**Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 44; gabarito: oficial (PDF de gabarito da Cesgranrio, alterado em 9/01/2024), conferido na T13.
 
 ## OFI-000056 — Classificação da informação: quem decide
 
@@ -158,7 +158,7 @@ A classificação é **decisão de negócio**: quem **conhece o valor e a sensib
 
 **Revisão rápida:** Classificar é decisão de negócio.
 
-**Fonte:** Fundação Cesgranrio, Transpetro PSP RH 2018.1 (Edital nº 1), Analista de Sistemas Júnior — Processos de Negócio (2018), prova Prova 15, questão 45; gabarito: de terceiros (Ética), alterado em 09/05/2018; não validado contra a banca.
+**Fonte:** Fundação Cesgranrio, Transpetro PSP RH 2018.1 (Edital nº 1), Analista de Sistemas Júnior — Processos de Negócio (2018), prova Prova 15, questão 45; gabarito: oficial (PDF de gabarito da Cesgranrio, alterado em 09/05/2018), conferido na T13.
 
 ## OFI-000057 — ISO 27002: controle de acesso à rede
 
@@ -178,7 +178,7 @@ Na ISO/IEC 27002:2005, a seção **11.4 (Controle de acesso à rede)** inclui a 
 
 **Revisão rápida:** Rede: autenticação de acesso remoto, segregação, roteamento.
 
-**Fonte:** Fundação Cesgranrio, Transpetro PSP RH 2018.1 (Edital nº 1), Analista de Sistemas Júnior — Processos de Negócio (2018), prova Prova 15, questão 46; gabarito: de terceiros (Ética), alterado em 09/05/2018; não validado contra a banca.
+**Fonte:** Fundação Cesgranrio, Transpetro PSP RH 2018.1 (Edital nº 1), Analista de Sistemas Júnior — Processos de Negócio (2018), prova Prova 15, questão 46; gabarito: oficial (PDF de gabarito da Cesgranrio, alterado em 09/05/2018), conferido na T13.
 
 ## OFI-000058 — Firewall: listas de controle de acesso
 
@@ -198,7 +198,7 @@ O **firewall** filtra o tráfego conforme **regras** (listas de controle de aces
 
 **Revisão rápida:** Firewall: regras que permitem ou negam pacotes.
 
-**Fonte:** Fundação Cesgranrio, Transpetro PSP RH 2018.1 (Edital nº 1), Analista de Sistemas Júnior — Processos de Negócio (2018), prova Prova 15, questão 47; gabarito: de terceiros (Ética), alterado em 09/05/2018; não validado contra a banca.
+**Fonte:** Fundação Cesgranrio, Transpetro PSP RH 2018.1 (Edital nº 1), Analista de Sistemas Júnior — Processos de Negócio (2018), prova Prova 15, questão 47; gabarito: oficial (PDF de gabarito da Cesgranrio, alterado em 09/05/2018), conferido na T13.
 
 ## OFI-000059 — VPN: tunelamento
 
@@ -218,7 +218,7 @@ O **tunelamento** encapsula um pacote inteiro dentro de outro (com cifragem, na 
 
 **Revisão rápida:** Tunelamento = pacote dentro de pacote.
 
-**Fonte:** Fundação Cesgranrio, Transpetro PSP RH 2018.1 (Edital nº 1), Analista de Sistemas Júnior — Processos de Negócio (2018), prova Prova 15, questão 48; gabarito: de terceiros (Ética), alterado em 09/05/2018; não validado contra a banca.
+**Fonte:** Fundação Cesgranrio, Transpetro PSP RH 2018.1 (Edital nº 1), Analista de Sistemas Júnior — Processos de Negócio (2018), prova Prova 15, questão 48; gabarito: oficial (PDF de gabarito da Cesgranrio, alterado em 09/05/2018), conferido na T13.
 
 ## OFI-000060 — Malware: bot e botnet
 
@@ -238,7 +238,7 @@ O **bot** transforma o computador em "zumbi" de uma **botnet** controlada remota
 
 **Revisão rápida:** Bot = computador zumbi em botnet.
 
-**Fonte:** Fundação Cesgranrio, Transpetro PSP RH 2018.1 (Edital nº 1), Analista de Sistemas Júnior — Processos de Negócio (2018), prova Prova 15, questão 49; gabarito: de terceiros (Ética), alterado em 09/05/2018; não validado contra a banca.
+**Fonte:** Fundação Cesgranrio, Transpetro PSP RH 2018.1 (Edital nº 1), Analista de Sistemas Júnior — Processos de Negócio (2018), prova Prova 15, questão 49; gabarito: oficial (PDF de gabarito da Cesgranrio, alterado em 09/05/2018), conferido na T13.
 
 ## OFI-000061 — Certificado digital: SHA256RSA
 
@@ -258,7 +258,7 @@ O **bot** transforma o computador em "zumbi" de uma **botnet** controlada remota
 
 **Revisão rápida:** SHA256RSA = hash SHA-256 + assinatura RSA.
 
-**Fonte:** Fundação Cesgranrio, Transpetro PSP RH 2018.1 (Edital nº 1), Analista de Sistemas Júnior — Processos de Negócio (2018), prova Prova 15, questão 50; gabarito: de terceiros (Ética), alterado em 09/05/2018; não validado contra a banca.
+**Fonte:** Fundação Cesgranrio, Transpetro PSP RH 2018.1 (Edital nº 1), Analista de Sistemas Júnior — Processos de Negócio (2018), prova Prova 15, questão 50; gabarito: oficial (PDF de gabarito da Cesgranrio, alterado em 09/05/2018), conferido na T13.
 
 ## OFI-000062 — SAML: Artifact Resolution Protocol
 
@@ -278,7 +278,7 @@ No **Artifact Resolution Protocol**, uma mensagem SAML é substituída por um **
 
 **Revisão rápida:** Artifact = referência pequena e fixa para uma mensagem SAML.
 
-**Fonte:** Fundação Cesgranrio, Transpetro PSP RH 2018.1 (Edital nº 1), Analista de Sistemas Júnior — Processos de Negócio (2018), prova Prova 15, questão 51; gabarito: de terceiros (Ética), alterado em 09/05/2018; não validado contra a banca.
+**Fonte:** Fundação Cesgranrio, Transpetro PSP RH 2018.1 (Edital nº 1), Analista de Sistemas Júnior — Processos de Negócio (2018), prova Prova 15, questão 51; gabarito: oficial (PDF de gabarito da Cesgranrio, alterado em 09/05/2018), conferido na T13.
 
 ## OFI-000063 — ICP-Brasil: certificado da AC subordinada à raiz
 
@@ -298,7 +298,7 @@ Na hierarquia da ICP-Brasil, a **AC Raiz** (do ITI) emite e **assina** os certif
 
 **Revisão rápida:** AC de 1º nível: assinada apenas pela AC Raiz.
 
-**Fonte:** Fundação Cesgranrio, Transpetro PSP RH 2018.1 (Edital nº 1), Analista de Sistemas Júnior — Processos de Negócio (2018), prova Prova 15, questão 52; gabarito: de terceiros (Ética), alterado em 09/05/2018; não validado contra a banca.
+**Fonte:** Fundação Cesgranrio, Transpetro PSP RH 2018.1 (Edital nº 1), Analista de Sistemas Júnior — Processos de Negócio (2018), prova Prova 15, questão 52; gabarito: oficial (PDF de gabarito da Cesgranrio, alterado em 09/05/2018), conferido na T13.
 
 ## OFI-000074 — Resolução CMN 4.893: revisão da política de segurança cibernética
 

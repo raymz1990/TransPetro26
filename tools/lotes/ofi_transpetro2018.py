@@ -11,7 +11,7 @@ def fonte(n, ader):
     return {"banca": "Fundação Cesgranrio", "concurso": "Transpetro PSP RH 2018.1 (Edital nº 1)",
             "cargo": "Analista de Sistemas Júnior — Processos de Negócio", "ano": 2018, "prova": "Prova 15",
             "numero_original": n, "id_prova": "PRV-006",
-            "situacao_gabarito": "de terceiros (Ética), alterado em 09/05/2018; não validado contra a banca",
+            "situacao_gabarito": "oficial (PDF de gabarito da Cesgranrio, alterado em 09/05/2018), conferido na T13",
             "aderencia_edital": ader, "url": "banco-questoes/oficiais/fontes-brutas/" + PROVA, "sha256": "ver docs/estrategia/base-provas.md"}
 def rot(n): return "Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão %d." % n
 

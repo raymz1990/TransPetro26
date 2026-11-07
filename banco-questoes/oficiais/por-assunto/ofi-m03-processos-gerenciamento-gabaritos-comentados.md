@@ -18,7 +18,7 @@ A ordem dos grupos de processos (PMBOK 6ª ed.) é **Iniciação → Planejament
 
 **Revisão rápida:** Ordem: Iniciação, Planejamento, Execução, M&C (contínuo), Encerramento.
 
-**Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 55; gabarito: de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca.
+**Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 55; gabarito: oficial (PDF de gabarito da Cesgranrio, alterado em 9/01/2024), conferido na T13.
 
 ## OFI-000018 — Grupo de monitoramento e controle
 
@@ -38,7 +38,7 @@ O grupo que acompanha o desempenho, compara com o plano e aciona ações correti
 
 **Revisão rápida:** M&C: monitorar, analisar, controlar mudanças, ações corretivas.
 
-**Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 70; gabarito: de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca.
+**Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 70; gabarito: oficial (PDF de gabarito da Cesgranrio, alterado em 9/01/2024), conferido na T13.
 
 ## OFI-000047 — Workflow: automação de processos de negócio
 
@@ -58,4 +58,4 @@ A definição clássica (WfMC) descreve **workflow** como a **automação de um 
 
 **Revisão rápida:** Workflow = automação de processo (todo ou parte), tarefas passando entre participantes por regras.
 
-**Fonte:** Fundação Cesgranrio, Transpetro PSP RH 2018.1 (Edital nº 1), Analista de Sistemas Júnior — Processos de Negócio (2018), prova Prova 15, questão 57; gabarito: de terceiros (Ética), alterado em 09/05/2018; não validado contra a banca.
+**Fonte:** Fundação Cesgranrio, Transpetro PSP RH 2018.1 (Edital nº 1), Analista de Sistemas Júnior — Processos de Negócio (2018), prova Prova 15, questão 57; gabarito: oficial (PDF de gabarito da Cesgranrio, alterado em 09/05/2018), conferido na T13.

@@ -18,7 +18,7 @@ A LGPD (Lei 13.709/2018) aplica-se a **qualquer operação de tratamento** feita
 
 **Revisão rápida:** LGPD: pessoa natural ou jurídica; extraterritorial; consentimento é uma entre várias bases legais.
 
-**Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 57; gabarito: de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca.
+**Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 57; gabarito: oficial (PDF de gabarito da Cesgranrio, alterado em 9/01/2024), conferido na T13.
 
 ## OFI-000020 — Governança corporativa e de TI
 
@@ -38,7 +38,7 @@ A **governança** (corporativa, e a de TI como parte dela) é o conjunto de proc
 
 **Revisão rápida:** Governança: direcionar, avaliar, monitorar (ISO 38500).
 
-**Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 59; gabarito: de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca.
+**Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 59; gabarito: oficial (PDF de gabarito da Cesgranrio, alterado em 9/01/2024), conferido na T13.
 
 ## OFI-000021 — Economia da inovação: custo de oportunidade
 
@@ -58,7 +58,7 @@ A **governança** (corporativa, e a de TI como parte dela) é o conjunto de proc
 
 **Revisão rápida:** Custo de oportunidade = valor da melhor alternativa sacrificada.
 
-**Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 60; gabarito: de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca.
+**Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 60; gabarito: oficial (PDF de gabarito da Cesgranrio, alterado em 9/01/2024), conferido na T13.
 
 ## OFI-000022 — Internet das Coisas
 
@@ -78,7 +78,7 @@ A **governança** (corporativa, e a de TI como parte dela) é o conjunto de proc
 
 **Revisão rápida:** IoT: dispositivos conectados que coletam e trocam dados.
 
-**Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 61; gabarito: de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca.
+**Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 61; gabarito: oficial (PDF de gabarito da Cesgranrio, alterado em 9/01/2024), conferido na T13.
 
 ## OFI-000023 — KPIs em gerenciamento de serviços de TI
 
@@ -98,7 +98,7 @@ KPIs são indicadores **escolhidos conforme os objetivos de negócio** para medi
 
 **Revisão rápida:** KPI: métrica escolhida a partir do objetivo de negócio.
 
-**Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 66; gabarito: de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca.
+**Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 66; gabarito: oficial (PDF de gabarito da Cesgranrio, alterado em 9/01/2024), conferido na T13.
 
 ## OFI-000048 — Computação em nuvem (SaaS)
 
@@ -118,7 +118,7 @@ KPIs são indicadores **escolhidos conforme os objetivos de negócio** para medi
 
 **Revisão rápida:** Sob demanda + assinatura + online = nuvem.
 
-**Fonte:** Fundação Cesgranrio, Transpetro PSP RH 2018.1 (Edital nº 1), Analista de Sistemas Júnior — Processos de Negócio (2018), prova Prova 15, questão 56; gabarito: de terceiros (Ética), alterado em 09/05/2018; não validado contra a banca.
+**Fonte:** Fundação Cesgranrio, Transpetro PSP RH 2018.1 (Edital nº 1), Analista de Sistemas Júnior — Processos de Negócio (2018), prova Prova 15, questão 56; gabarito: oficial (PDF de gabarito da Cesgranrio, alterado em 09/05/2018), conferido na T13.
 
 ## OFI-000127 — Maturidade dos processos de TI e relacionamento com o negócio
 

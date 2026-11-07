@@ -11,7 +11,7 @@ def fonte(n):
     return {"banca": "Fundação Cesgranrio", "concurso": "Transpetro PSP/Terra 002/2023 (Edital nº 2)",
             "cargo": "Análise de Sistemas — Processos de Negócios", "ano": 2023, "prova": "Prova 6",
             "numero_original": n, "id_prova": "PRV-005",
-            "situacao_gabarito": "de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca",
+            "situacao_gabarito": "oficial (PDF de gabarito da Cesgranrio, alterado em 9/01/2024), conferido na T13",
             "aderencia_edital": "aderente", "url": "banco-questoes/oficiais/fontes-brutas/" + PROVA, "sha256": "ver docs/estrategia/base-provas.md"}
 def rot(n): return "Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão %d." % n
 

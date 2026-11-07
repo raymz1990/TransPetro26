@@ -225,3 +225,11 @@
     });
   });
 })();
+
+/* Link "Pular para o conteudo": foca o <main> sem alterar o hash da rota. */
+document.addEventListener("click", function (e) {
+  var a = e.target.closest && e.target.closest(".skip-link");
+  if (!a) return;
+  e.preventDefault();
+  var m = document.getElementById("app"); if (m) m.focus();
+});

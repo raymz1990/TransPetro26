@@ -18,7 +18,7 @@ O **data warehouse** é **orientado a assunto, integrado, histórico e não vol�
 
 **Revisão rápida:** DW = integração + histórico + análise.
 
-**Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 56; gabarito: de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca.
+**Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 56; gabarito: oficial (PDF de gabarito da Cesgranrio, alterado em 9/01/2024), conferido na T13.
 
 ## OFI-000055 — Sistema de Suporte à Decisão (tipo de sistema de informação)
 
@@ -38,7 +38,7 @@ O **Sistema de Suporte à Decisão (SSD/DSS)** usa **modelos e dados** para apoi
 
 **Revisão rápida:** SSD = modelos e otimização para decisões semiestruturadas.
 
-**Fonte:** Fundação Cesgranrio, Transpetro PSP RH 2018.1 (Edital nº 1), Analista de Sistemas Júnior — Processos de Negócio (2018), prova Prova 15, questão 54; gabarito: de terceiros (Ética), alterado em 09/05/2018; não validado contra a banca.
+**Fonte:** Fundação Cesgranrio, Transpetro PSP RH 2018.1 (Edital nº 1), Analista de Sistemas Júnior — Processos de Negócio (2018), prova Prova 15, questão 54; gabarito: oficial (PDF de gabarito da Cesgranrio, alterado em 09/05/2018), conferido na T13.
 
 ## OFI-000106 — Modelo estrela: tabela fato e dimensões
 

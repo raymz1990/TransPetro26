@@ -17,3 +17,6 @@ blockquote{margin:1em 0;padding:.2em 1em;border-left:3px solid var(--amber);back
 :focus-visible{outline:2px solid var(--amber);outline-offset:2px}
 button,select,input,textarea{font:inherit;color:inherit}
 .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+.skip-link{position:absolute;left:8px;top:-60px;z-index:100;background:var(--amber);color:#111;padding:8px 12px;font-weight:600}
+.skip-link:focus{top:8px}
