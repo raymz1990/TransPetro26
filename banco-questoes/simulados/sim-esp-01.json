@@ -1,0 +1,244 @@
+{
+ "id": "SIM-ESP-01",
+ "titulo": "Simulado específico 01 — 50 questões (somente questões validadas)",
+ "tipo": "especifico",
+ "tempo_minutos": 193,
+ "total": 50,
+ "criterio_tempo": "proporcional à prova real (270 min para 70 questões): 3.86 min por questão",
+ "status": "questoes_validadas",
+ "observacoes": "Composto apenas por questões autorais com status `validada` (aprovadas pelo usuário). Sem revisão por terceiros.",
+ "criterio_distribuicao": "Distribuição PEDAGÓGICA definida pelo projeto: proporcional ao número de itens do Anexo IV por módulo (M1 23, M2 7, M3 1, M4 6, M5 5, M6 11, M7 11, M8 9, M9 21 de 94), com piso de 3 por módulo; M1 limitado a 10 pelo total de questões validadas. NÃO reproduz nem prevê a distribuição da prova real, que o edital não informa.",
+ "distribuicao_modulos": {
+  "M01": 10,
+  "M02": 4,
+  "M03": 3,
+  "M04": 3,
+  "M05": 3,
+  "M06": 7,
+  "M07": 6,
+  "M08": 4,
+  "M09": 10
+ },
+ "composicao": {
+  "por_tipo": {
+   "autoral": 50
+  },
+  "por_status": {
+   "validada": 50
+  },
+  "por_dificuldade": {
+   "media": 23,
+   "facil": 16,
+   "dificil": 11
+  },
+  "por_gabarito": {
+   "E": 10,
+   "C": 8,
+   "A": 11,
+   "B": 11,
+   "D": 10
+  }
+ },
+ "questoes": [
+  {
+   "ordem": 1,
+   "id": "AUT-000002"
+  },
+  {
+   "ordem": 2,
+   "id": "AUT-000001"
+  },
+  {
+   "ordem": 3,
+   "id": "AUT-000004"
+  },
+  {
+   "ordem": 4,
+   "id": "AUT-000003"
+  },
+  {
+   "ordem": 5,
+   "id": "AUT-000005"
+  },
+  {
+   "ordem": 6,
+   "id": "AUT-000006"
+  },
+  {
+   "ordem": 7,
+   "id": "AUT-000007"
+  },
+  {
+   "ordem": 8,
+   "id": "AUT-000008"
+  },
+  {
+   "ordem": 9,
+   "id": "AUT-000009"
+  },
+  {
+   "ordem": 10,
+   "id": "AUT-000010"
+  },
+  {
+   "ordem": 11,
+   "id": "AUT-000014"
+  },
+  {
+   "ordem": 12,
+   "id": "AUT-000011"
+  },
+  {
+   "ordem": 13,
+   "id": "AUT-000012"
+  },
+  {
+   "ordem": 14,
+   "id": "AUT-000013"
+  },
+  {
+   "ordem": 15,
+   "id": "AUT-000022"
+  },
+  {
+   "ordem": 16,
+   "id": "AUT-000021"
+  },
+  {
+   "ordem": 17,
+   "id": "AUT-000024"
+  },
+  {
+   "ordem": 18,
+   "id": "AUT-000033"
+  },
+  {
+   "ordem": 19,
+   "id": "AUT-000031"
+  },
+  {
+   "ordem": 20,
+   "id": "AUT-000034"
+  },
+  {
+   "ordem": 21,
+   "id": "AUT-000044"
+  },
+  {
+   "ordem": 22,
+   "id": "AUT-000043"
+  },
+  {
+   "ordem": 23,
+   "id": "AUT-000045"
+  },
+  {
+   "ordem": 24,
+   "id": "AUT-000051"
+  },
+  {
+   "ordem": 25,
+   "id": "AUT-000052"
+  },
+  {
+   "ordem": 26,
+   "id": "AUT-000055"
+  },
+  {
+   "ordem": 27,
+   "id": "AUT-000054"
+  },
+  {
+   "ordem": 28,
+   "id": "AUT-000053"
+  },
+  {
+   "ordem": 29,
+   "id": "AUT-000057"
+  },
+  {
+   "ordem": 30,
+   "id": "AUT-000060"
+  },
+  {
+   "ordem": 31,
+   "id": "AUT-000062"
+  },
+  {
+   "ordem": 32,
+   "id": "AUT-000061"
+  },
+  {
+   "ordem": 33,
+   "id": "AUT-000065"
+  },
+  {
+   "ordem": 34,
+   "id": "AUT-000064"
+  },
+  {
+   "ordem": 35,
+   "id": "AUT-000063"
+  },
+  {
+   "ordem": 36,
+   "id": "AUT-000066"
+  },
+  {
+   "ordem": 37,
+   "id": "AUT-000072"
+  },
+  {
+   "ordem": 38,
+   "id": "AUT-000071"
+  },
+  {
+   "ordem": 39,
+   "id": "AUT-000075"
+  },
+  {
+   "ordem": 40,
+   "id": "AUT-000073"
+  },
+  {
+   "ordem": 41,
+   "id": "AUT-000081"
+  },
+  {
+   "ordem": 42,
+   "id": "AUT-000083"
+  },
+  {
+   "ordem": 43,
+   "id": "AUT-000087"
+  },
+  {
+   "ordem": 44,
+   "id": "AUT-000082"
+  },
+  {
+   "ordem": 45,
+   "id": "AUT-000086"
+  },
+  {
+   "ordem": 46,
+   "id": "AUT-000084"
+  },
+  {
+   "ordem": 47,
+   "id": "AUT-000085"
+  },
+  {
+   "ordem": 48,
+   "id": "AUT-000088"
+  },
+  {
+   "ordem": 49,
+   "id": "AUT-000090"
+  },
+  {
+   "ordem": 50,
+   "id": "AUT-000089"
+  }
+ ]
+}

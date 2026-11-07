@@ -1,0 +1,337 @@
+{
+ "id": "SIM-COM-01",
+ "titulo": "Simulado completo 01 — 70 questões",
+ "tipo": "completo",
+ "tempo_minutos": 270,
+ "total": 70,
+ "criterio_tempo": "proporcional à prova real (270 min para 70 questões): 3.86 min por questão",
+ "status": "rascunho",
+ "observacoes": "Estrutura da prova real: 10 Língua Portuguesa + 10 Língua Inglesa + 50 Conhecimentos Específicos (mesmas 50 do SIM-ESP-01). As 20 questões de Gerais são autorais `em_revisao`. O banco de Inglês tem 11 questões, então não há um segundo simulado completo com Inglês inédito.",
+ "criterio_distribuicao": "Específicos: ver SIM-ESP-01. Gerais: 1 questão por item de Português (exceto LP-02, LP-06 e uma de LP-01) e 5 + 5 de Inglês (compreensão e itens gramaticais).",
+ "distribuicao_modulos": {
+  "Português": 10,
+  "Inglês": 10,
+  "Específicos": 50
+ },
+ "composicao": {
+  "por_tipo": {
+   "autoral": 70
+  },
+  "por_status": {
+   "em_revisao": 20,
+   "validada": 50
+  },
+  "por_dificuldade": {
+   "facil": 19,
+   "media": 39,
+   "dificil": 12
+  },
+  "por_gabarito": {
+   "B": 16,
+   "A": 15,
+   "E": 14,
+   "D": 13,
+   "C": 12
+  }
+ },
+ "questoes": [
+  {
+   "ordem": 1,
+   "id": "AUT-000121"
+  },
+  {
+   "ordem": 2,
+   "id": "AUT-000125"
+  },
+  {
+   "ordem": 3,
+   "id": "AUT-000127"
+  },
+  {
+   "ordem": 4,
+   "id": "AUT-000129"
+  },
+  {
+   "ordem": 5,
+   "id": "AUT-000133"
+  },
+  {
+   "ordem": 6,
+   "id": "AUT-000135"
+  },
+  {
+   "ordem": 7,
+   "id": "AUT-000137"
+  },
+  {
+   "ordem": 8,
+   "id": "AUT-000139"
+  },
+  {
+   "ordem": 9,
+   "id": "AUT-000141"
+  },
+  {
+   "ordem": 10,
+   "id": "AUT-000143"
+  },
+  {
+   "ordem": 11,
+   "id": "AUT-000145"
+  },
+  {
+   "ordem": 12,
+   "id": "AUT-000146"
+  },
+  {
+   "ordem": 13,
+   "id": "AUT-000147"
+  },
+  {
+   "ordem": 14,
+   "id": "AUT-000148"
+  },
+  {
+   "ordem": 15,
+   "id": "AUT-000149"
+  },
+  {
+   "ordem": 16,
+   "id": "AUT-000151"
+  },
+  {
+   "ordem": 17,
+   "id": "AUT-000152"
+  },
+  {
+   "ordem": 18,
+   "id": "AUT-000153"
+  },
+  {
+   "ordem": 19,
+   "id": "AUT-000154"
+  },
+  {
+   "ordem": 20,
+   "id": "AUT-000155"
+  },
+  {
+   "ordem": 21,
+   "id": "AUT-000002"
+  },
+  {
+   "ordem": 22,
+   "id": "AUT-000001"
+  },
+  {
+   "ordem": 23,
+   "id": "AUT-000004"
+  },
+  {
+   "ordem": 24,
+   "id": "AUT-000003"
+  },
+  {
+   "ordem": 25,
+   "id": "AUT-000005"
+  },
+  {
+   "ordem": 26,
+   "id": "AUT-000006"
+  },
+  {
+   "ordem": 27,
+   "id": "AUT-000007"
+  },
+  {
+   "ordem": 28,
+   "id": "AUT-000008"
+  },
+  {
+   "ordem": 29,
+   "id": "AUT-000009"
+  },
+  {
+   "ordem": 30,
+   "id": "AUT-000010"
+  },
+  {
+   "ordem": 31,
+   "id": "AUT-000014"
+  },
+  {
+   "ordem": 32,
+   "id": "AUT-000011"
+  },
+  {
+   "ordem": 33,
+   "id": "AUT-000012"
+  },
+  {
+   "ordem": 34,
+   "id": "AUT-000013"
+  },
+  {
+   "ordem": 35,
+   "id": "AUT-000022"
+  },
+  {
+   "ordem": 36,
+   "id": "AUT-000021"
+  },
+  {
+   "ordem": 37,
+   "id": "AUT-000024"
+  },
+  {
+   "ordem": 38,
+   "id": "AUT-000033"
+  },
+  {
+   "ordem": 39,
+   "id": "AUT-000031"
+  },
+  {
+   "ordem": 40,
+   "id": "AUT-000034"
+  },
+  {
+   "ordem": 41,
+   "id": "AUT-000044"
+  },
+  {
+   "ordem": 42,
+   "id": "AUT-000043"
+  },
+  {
+   "ordem": 43,
+   "id": "AUT-000045"
+  },
+  {
+   "ordem": 44,
+   "id": "AUT-000051"
+  },
+  {
+   "ordem": 45,
+   "id": "AUT-000052"
+  },
+  {
+   "ordem": 46,
+   "id": "AUT-000055"
+  },
+  {
+   "ordem": 47,
+   "id": "AUT-000054"
+  },
+  {
+   "ordem": 48,
+   "id": "AUT-000053"
+  },
+  {
+   "ordem": 49,
+   "id": "AUT-000057"
+  },
+  {
+   "ordem": 50,
+   "id": "AUT-000060"
+  },
+  {
+   "ordem": 51,
+   "id": "AUT-000062"
+  },
+  {
+   "ordem": 52,
+   "id": "AUT-000061"
+  },
+  {
+   "ordem": 53,
+   "id": "AUT-000065"
+  },
+  {
+   "ordem": 54,
+   "id": "AUT-000064"
+  },
+  {
+   "ordem": 55,
+   "id": "AUT-000063"
+  },
+  {
+   "ordem": 56,
+   "id": "AUT-000066"
+  },
+  {
+   "ordem": 57,
+   "id": "AUT-000072"
+  },
+  {
+   "ordem": 58,
+   "id": "AUT-000071"
+  },
+  {
+   "ordem": 59,
+   "id": "AUT-000075"
+  },
+  {
+   "ordem": 60,
+   "id": "AUT-000073"
+  },
+  {
+   "ordem": 61,
+   "id": "AUT-000081"
+  },
+  {
+   "ordem": 62,
+   "id": "AUT-000083"
+  },
+  {
+   "ordem": 63,
+   "id": "AUT-000087"
+  },
+  {
+   "ordem": 64,
+   "id": "AUT-000082"
+  },
+  {
+   "ordem": 65,
+   "id": "AUT-000086"
+  },
+  {
+   "ordem": 66,
+   "id": "AUT-000084"
+  },
+  {
+   "ordem": 67,
+   "id": "AUT-000085"
+  },
+  {
+   "ordem": 68,
+   "id": "AUT-000088"
+  },
+  {
+   "ordem": 69,
+   "id": "AUT-000090"
+  },
+  {
+   "ordem": 70,
+   "id": "AUT-000089"
+  }
+ ],
+ "corte_edital": "Mínimo de 50% na Fase 1 (25 de 50) e 50% na Fase 2 (10 de 20); zero em Português ou Inglês elimina (edital item 7.1.4.3).",
+ "blocos": [
+  {
+   "nome": "Língua Portuguesa",
+   "de": 1,
+   "ate": 10
+  },
+  {
+   "nome": "Língua Inglesa",
+   "de": 11,
+   "ate": 20
+  },
+  {
+   "nome": "Conhecimentos Específicos",
+   "de": 21,
+   "ate": 70
+  }
+ ]
+}

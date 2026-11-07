@@ -1,0 +1,118 @@
+{
+ "id": "SIM-GER-01",
+ "titulo": "Simulado de Conhecimentos Gerais 01 — 20 questões",
+ "tipo": "gerais",
+ "tempo_minutos": 77,
+ "total": 20,
+ "criterio_tempo": "proporcional à prova real (270 min para 70 questões): 3.86 min por questão",
+ "status": "rascunho",
+ "observacoes": "10 de Português e 10 de Inglês (as mesmas do SIM-COM-01). Todas autorais `em_revisao`.",
+ "criterio_distribuicao": "1 questão por item de Português, exceto LP-02 e LP-06; Inglês: 5 de compreensão e 5 de gramática.",
+ "distribuicao_modulos": {
+  "Português": 10,
+  "Inglês": 10
+ },
+ "composicao": {
+  "por_tipo": {
+   "autoral": 20
+  },
+  "por_status": {
+   "em_revisao": 20
+  },
+  "por_dificuldade": {
+   "facil": 3,
+   "media": 16,
+   "dificil": 1
+  },
+  "por_gabarito": {
+   "B": 5,
+   "A": 4,
+   "E": 4,
+   "D": 3,
+   "C": 4
+  }
+ },
+ "questoes": [
+  {
+   "ordem": 1,
+   "id": "AUT-000121"
+  },
+  {
+   "ordem": 2,
+   "id": "AUT-000125"
+  },
+  {
+   "ordem": 3,
+   "id": "AUT-000127"
+  },
+  {
+   "ordem": 4,
+   "id": "AUT-000129"
+  },
+  {
+   "ordem": 5,
+   "id": "AUT-000133"
+  },
+  {
+   "ordem": 6,
+   "id": "AUT-000135"
+  },
+  {
+   "ordem": 7,
+   "id": "AUT-000137"
+  },
+  {
+   "ordem": 8,
+   "id": "AUT-000139"
+  },
+  {
+   "ordem": 9,
+   "id": "AUT-000141"
+  },
+  {
+   "ordem": 10,
+   "id": "AUT-000143"
+  },
+  {
+   "ordem": 11,
+   "id": "AUT-000145"
+  },
+  {
+   "ordem": 12,
+   "id": "AUT-000146"
+  },
+  {
+   "ordem": 13,
+   "id": "AUT-000147"
+  },
+  {
+   "ordem": 14,
+   "id": "AUT-000148"
+  },
+  {
+   "ordem": 15,
+   "id": "AUT-000149"
+  },
+  {
+   "ordem": 16,
+   "id": "AUT-000151"
+  },
+  {
+   "ordem": 17,
+   "id": "AUT-000152"
+  },
+  {
+   "ordem": 18,
+   "id": "AUT-000153"
+  },
+  {
+   "ordem": 19,
+   "id": "AUT-000154"
+  },
+  {
+   "ordem": 20,
+   "id": "AUT-000155"
+  }
+ ],
+ "corte_edital": "Mínimo de 10 de 20 (50%) e pelo menos 1 acerto em cada matéria."
+}

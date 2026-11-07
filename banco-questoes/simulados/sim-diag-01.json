@@ -1,0 +1,113 @@
+{
+ "id": "SIM-DIAG-01",
+ "titulo": "Diagnóstico inicial — 20 questões",
+ "tipo": "diagnostico",
+ "tempo_minutos": 77,
+ "total": 20,
+ "criterio_tempo": "proporcional à prova real (270 min para 70 questões): 3.86 min por questão",
+ "status": "questoes_validadas",
+ "observacoes": "Somente questões validadas, fáceis ou médias, para mapear lacunas por módulo antes de iniciar a rotina de estudos.",
+ "criterio_distribuicao": "2 questões por módulo e uma a mais em M1 e M9 (módulos com mais itens). Não gera nota oficial; serve para direcionar a revisão.",
+ "distribuicao_modulos": {},
+ "composicao": {
+  "por_tipo": {
+   "autoral": 20
+  },
+  "por_status": {
+   "validada": 20
+  },
+  "por_dificuldade": {
+   "facil": 9,
+   "media": 11
+  },
+  "por_gabarito": {
+   "C": 1,
+   "E": 3,
+   "B": 8,
+   "D": 5,
+   "A": 3
+  }
+ },
+ "questoes": [
+  {
+   "ordem": 1,
+   "id": "AUT-000001"
+  },
+  {
+   "ordem": 2,
+   "id": "AUT-000002"
+  },
+  {
+   "ordem": 3,
+   "id": "AUT-000003"
+  },
+  {
+   "ordem": 4,
+   "id": "AUT-000011"
+  },
+  {
+   "ordem": 5,
+   "id": "AUT-000014"
+  },
+  {
+   "ordem": 6,
+   "id": "AUT-000021"
+  },
+  {
+   "ordem": 7,
+   "id": "AUT-000022"
+  },
+  {
+   "ordem": 8,
+   "id": "AUT-000031"
+  },
+  {
+   "ordem": 9,
+   "id": "AUT-000033"
+  },
+  {
+   "ordem": 10,
+   "id": "AUT-000043"
+  },
+  {
+   "ordem": 11,
+   "id": "AUT-000044"
+  },
+  {
+   "ordem": 12,
+   "id": "AUT-000051"
+  },
+  {
+   "ordem": 13,
+   "id": "AUT-000052"
+  },
+  {
+   "ordem": 14,
+   "id": "AUT-000061"
+  },
+  {
+   "ordem": 15,
+   "id": "AUT-000062"
+  },
+  {
+   "ordem": 16,
+   "id": "AUT-000071"
+  },
+  {
+   "ordem": 17,
+   "id": "AUT-000072"
+  },
+  {
+   "ordem": 18,
+   "id": "AUT-000081"
+  },
+  {
+   "ordem": 19,
+   "id": "AUT-000082"
+  },
+  {
+   "ordem": 20,
+   "id": "AUT-000083"
+  }
+ ]
+}

@@ -1,0 +1,98 @@
+{
+ "id": "SIM-M04",
+ "titulo": "Simulado do módulo 4 — Gestão e governança de TI",
+ "tipo": "modulo",
+ "tempo_minutos": 58,
+ "total": 15,
+ "criterio_tempo": "proporcional à prova real (270 min para 70 questões): 3.86 min por questão",
+ "status": "rascunho",
+ "observacoes": "Mistura de questões oficiais e autorais do módulo; algumas ainda `em_revisao`.",
+ "criterio_distribuicao": "Até 15 questões por módulo, priorizando itens ainda não usados e mistura de dificuldade 30/50/20% (critério pedagógico).",
+ "distribuicao_modulos": {
+  "M04": 15
+ },
+ "composicao": {
+  "por_tipo": {
+   "oficial": 4,
+   "autoral": 11
+  },
+  "por_status": {
+   "em_revisao": 6,
+   "validada": 9
+  },
+  "por_dificuldade": {
+   "facil": 5,
+   "dificil": 2,
+   "media": 8
+  },
+  "por_gabarito": {
+   "C": 2,
+   "E": 2,
+   "B": 4,
+   "A": 3,
+   "D": 4
+  }
+ },
+ "questoes": [
+  {
+   "ordem": 1,
+   "id": "OFI-000020"
+  },
+  {
+   "ordem": 2,
+   "id": "AUT-000039"
+  },
+  {
+   "ordem": 3,
+   "id": "OFI-000021"
+  },
+  {
+   "ordem": 4,
+   "id": "AUT-000040"
+  },
+  {
+   "ordem": 5,
+   "id": "AUT-000035"
+  },
+  {
+   "ordem": 6,
+   "id": "AUT-000037"
+  },
+  {
+   "ordem": 7,
+   "id": "AUT-000036"
+  },
+  {
+   "ordem": 8,
+   "id": "AUT-000105"
+  },
+  {
+   "ordem": 9,
+   "id": "OFI-000023"
+  },
+  {
+   "ordem": 10,
+   "id": "AUT-000033"
+  },
+  {
+   "ordem": 11,
+   "id": "AUT-000031"
+  },
+  {
+   "ordem": 12,
+   "id": "AUT-000034"
+  },
+  {
+   "ordem": 13,
+   "id": "AUT-000104"
+  },
+  {
+   "ordem": 14,
+   "id": "AUT-000032"
+  },
+  {
+   "ordem": 15,
+   "id": "OFI-000019"
+  }
+ ]
+}

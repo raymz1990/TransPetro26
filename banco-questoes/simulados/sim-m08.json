@@ -1,0 +1,90 @@
+{
+ "id": "SIM-M08",
+ "titulo": "Simulado do módulo 8 — Lógica matemática",
+ "tipo": "modulo",
+ "tempo_minutos": 50,
+ "total": 13,
+ "criterio_tempo": "proporcional à prova real (270 min para 70 questões): 3.86 min por questão",
+ "status": "rascunho",
+ "observacoes": "Mistura de questões oficiais e autorais do módulo; algumas ainda `em_revisao`.",
+ "criterio_distribuicao": "Até 15 questões por módulo, priorizando itens ainda não usados e mistura de dificuldade 30/50/20% (critério pedagógico).",
+ "distribuicao_modulos": {
+  "M08": 13
+ },
+ "composicao": {
+  "por_tipo": {
+   "autoral": 11,
+   "oficial": 2
+  },
+  "por_status": {
+   "validada": 10,
+   "em_revisao": 3
+  },
+  "por_dificuldade": {
+   "facil": 3,
+   "dificil": 2,
+   "media": 8
+  },
+  "por_gabarito": {
+   "B": 3,
+   "C": 3,
+   "D": 3,
+   "A": 2,
+   "E": 2
+  }
+ },
+ "questoes": [
+  {
+   "ordem": 1,
+   "id": "AUT-000071"
+  },
+  {
+   "ordem": 2,
+   "id": "AUT-000075"
+  },
+  {
+   "ordem": 3,
+   "id": "OFI-000033"
+  },
+  {
+   "ordem": 4,
+   "id": "AUT-000076"
+  },
+  {
+   "ordem": 5,
+   "id": "AUT-000078"
+  },
+  {
+   "ordem": 6,
+   "id": "AUT-000077"
+  },
+  {
+   "ordem": 7,
+   "id": "OFI-000034"
+  },
+  {
+   "ordem": 8,
+   "id": "AUT-000079"
+  },
+  {
+   "ordem": 9,
+   "id": "AUT-000072"
+  },
+  {
+   "ordem": 10,
+   "id": "AUT-000080"
+  },
+  {
+   "ordem": 11,
+   "id": "AUT-000073"
+  },
+  {
+   "ordem": 12,
+   "id": "AUT-000074"
+  },
+  {
+   "ordem": 13,
+   "id": "AUT-000112"
+  }
+ ]
+}

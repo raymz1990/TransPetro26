@@ -1,0 +1,98 @@
+{
+ "id": "SIM-M01",
+ "titulo": "Simulado do módulo 1 — Arquitetura de dados",
+ "tipo": "modulo",
+ "tempo_minutos": 58,
+ "total": 15,
+ "criterio_tempo": "proporcional à prova real (270 min para 70 questões): 3.86 min por questão",
+ "status": "rascunho",
+ "observacoes": "Mistura de questões oficiais e autorais do módulo; algumas ainda `em_revisao`.",
+ "criterio_distribuicao": "Até 15 questões por módulo, priorizando itens ainda não usados e mistura de dificuldade 30/50/20% (critério pedagógico).",
+ "distribuicao_modulos": {
+  "M01": 15
+ },
+ "composicao": {
+  "por_tipo": {
+   "autoral": 9,
+   "oficial": 6
+  },
+  "por_status": {
+   "validada": 9,
+   "em_revisao": 6
+  },
+  "por_dificuldade": {
+   "facil": 5,
+   "media": 8,
+   "dificil": 2
+  },
+  "por_gabarito": {
+   "C": 3,
+   "E": 3,
+   "A": 4,
+   "B": 3,
+   "D": 2
+  }
+ },
+ "questoes": [
+  {
+   "ordem": 1,
+   "id": "AUT-000001"
+  },
+  {
+   "ordem": 2,
+   "id": "OFI-000010"
+  },
+  {
+   "ordem": 3,
+   "id": "AUT-000002"
+  },
+  {
+   "ordem": 4,
+   "id": "OFI-000011"
+  },
+  {
+   "ordem": 5,
+   "id": "AUT-000003"
+  },
+  {
+   "ordem": 6,
+   "id": "AUT-000008"
+  },
+  {
+   "ordem": 7,
+   "id": "AUT-000004"
+  },
+  {
+   "ordem": 8,
+   "id": "OFI-000005"
+  },
+  {
+   "ordem": 9,
+   "id": "AUT-000005"
+  },
+  {
+   "ordem": 10,
+   "id": "OFI-000009"
+  },
+  {
+   "ordem": 11,
+   "id": "AUT-000010"
+  },
+  {
+   "ordem": 12,
+   "id": "OFI-000002"
+  },
+  {
+   "ordem": 13,
+   "id": "AUT-000006"
+  },
+  {
+   "ordem": 14,
+   "id": "OFI-000004"
+  },
+  {
+   "ordem": 15,
+   "id": "AUT-000007"
+  }
+ ]
+}

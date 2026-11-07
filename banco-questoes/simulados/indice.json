@@ -1,0 +1,116 @@
+{
+ "simulados": [
+  {
+   "id": "SIM-ESP-01",
+   "titulo": "Simulado específico 01 — 50 questões (somente questões validadas)",
+   "tipo": "especifico",
+   "tempo_minutos": 193,
+   "total": 50,
+   "status": "questoes_validadas"
+  },
+  {
+   "id": "SIM-ESP-02",
+   "titulo": "Simulado específico 02 — 50 questões (oficiais e autorais)",
+   "tipo": "especifico",
+   "tempo_minutos": 193,
+   "total": 50,
+   "status": "rascunho"
+  },
+  {
+   "id": "SIM-COM-01",
+   "titulo": "Simulado completo 01 — 70 questões",
+   "tipo": "completo",
+   "tempo_minutos": 270,
+   "total": 70,
+   "status": "rascunho"
+  },
+  {
+   "id": "SIM-GER-01",
+   "titulo": "Simulado de Conhecimentos Gerais 01 — 20 questões",
+   "tipo": "gerais",
+   "tempo_minutos": 77,
+   "total": 20,
+   "status": "rascunho"
+  },
+  {
+   "id": "SIM-M01",
+   "titulo": "Simulado do módulo 1 — Arquitetura de dados",
+   "tipo": "modulo",
+   "tempo_minutos": 58,
+   "total": 15,
+   "status": "rascunho"
+  },
+  {
+   "id": "SIM-M02",
+   "titulo": "Simulado do módulo 2 — Gerenciamento de projetos e produtos",
+   "tipo": "modulo",
+   "tempo_minutos": 58,
+   "total": 15,
+   "status": "rascunho"
+  },
+  {
+   "id": "SIM-M03",
+   "titulo": "Simulado do módulo 3 — Processos e seu gerenciamento",
+   "tipo": "modulo",
+   "tempo_minutos": 54,
+   "total": 14,
+   "status": "rascunho"
+  },
+  {
+   "id": "SIM-M04",
+   "titulo": "Simulado do módulo 4 — Gestão e governança de TI",
+   "tipo": "modulo",
+   "tempo_minutos": 58,
+   "total": 15,
+   "status": "rascunho"
+  },
+  {
+   "id": "SIM-M05",
+   "titulo": "Simulado do módulo 5 — Engenharia de software",
+   "tipo": "modulo",
+   "tempo_minutos": 58,
+   "total": 15,
+   "status": "rascunho"
+  },
+  {
+   "id": "SIM-M06",
+   "titulo": "Simulado do módulo 6 — Experiência do usuário (UX)",
+   "tipo": "modulo",
+   "tempo_minutos": 58,
+   "total": 15,
+   "status": "rascunho"
+  },
+  {
+   "id": "SIM-M07",
+   "titulo": "Simulado do módulo 7 — Análise de dados e informações",
+   "tipo": "modulo",
+   "tempo_minutos": 50,
+   "total": 13,
+   "status": "rascunho"
+  },
+  {
+   "id": "SIM-M08",
+   "titulo": "Simulado do módulo 8 — Lógica matemática",
+   "tipo": "modulo",
+   "tempo_minutos": 50,
+   "total": 13,
+   "status": "rascunho"
+  },
+  {
+   "id": "SIM-M09",
+   "titulo": "Simulado do módulo 9 — Segurança da informação",
+   "tipo": "modulo",
+   "tempo_minutos": 58,
+   "total": 15,
+   "status": "rascunho"
+  },
+  {
+   "id": "SIM-DIAG-01",
+   "titulo": "Diagnóstico inicial — 20 questões",
+   "tipo": "diagnostico",
+   "tempo_minutos": 77,
+   "total": 20,
+   "status": "questoes_validadas"
+  }
+ ]
+}

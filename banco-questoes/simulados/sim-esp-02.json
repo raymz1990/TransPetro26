@@ -1,0 +1,246 @@
+{
+ "id": "SIM-ESP-02",
+ "titulo": "Simulado específico 02 — 50 questões (oficiais e autorais)",
+ "tipo": "especifico",
+ "tempo_minutos": 193,
+ "total": 50,
+ "criterio_tempo": "proporcional à prova real (270 min para 70 questões): 3.86 min por questão",
+ "status": "rascunho",
+ "observacoes": "Disjunto do SIM-ESP-01. Contém questões oficiais (Transpetro 2023) e autorais da expansão T05, ainda `em_revisao` (aguardam validação do usuário).",
+ "criterio_distribuicao": "Mesma distribuição pedagógica do SIM-ESP-01, com M1 = 11 (há mais questões disponíveis). Até metade das questões de cada módulo é oficial, quando há. Não é distribuição oficial da prova.",
+ "distribuicao_modulos": {
+  "M01": 11,
+  "M02": 4,
+  "M03": 3,
+  "M04": 3,
+  "M05": 3,
+  "M06": 6,
+  "M07": 6,
+  "M08": 4,
+  "M09": 10
+ },
+ "composicao": {
+  "por_tipo": {
+   "oficial": 25,
+   "autoral": 25
+  },
+  "por_status": {
+   "em_revisao": 38,
+   "validada": 12
+  },
+  "por_dificuldade": {
+   "media": 28,
+   "facil": 16,
+   "dificil": 6
+  },
+  "por_gabarito": {
+   "B": 12,
+   "A": 12,
+   "D": 9,
+   "C": 9,
+   "E": 8
+  }
+ },
+ "questoes": [
+  {
+   "ordem": 1,
+   "id": "OFI-000002"
+  },
+  {
+   "ordem": 2,
+   "id": "OFI-000001"
+  },
+  {
+   "ordem": 3,
+   "id": "OFI-000004"
+  },
+  {
+   "ordem": 4,
+   "id": "OFI-000003"
+  },
+  {
+   "ordem": 5,
+   "id": "OFI-000005"
+  },
+  {
+   "ordem": 6,
+   "id": "OFI-000007"
+  },
+  {
+   "ordem": 7,
+   "id": "AUT-000091"
+  },
+  {
+   "ordem": 8,
+   "id": "AUT-000094"
+  },
+  {
+   "ordem": 9,
+   "id": "AUT-000097"
+  },
+  {
+   "ordem": 10,
+   "id": "AUT-000099"
+  },
+  {
+   "ordem": 11,
+   "id": "AUT-000092"
+  },
+  {
+   "ordem": 12,
+   "id": "OFI-000013"
+  },
+  {
+   "ordem": 13,
+   "id": "OFI-000012"
+  },
+  {
+   "ordem": 14,
+   "id": "AUT-000017"
+  },
+  {
+   "ordem": 15,
+   "id": "AUT-000020"
+  },
+  {
+   "ordem": 16,
+   "id": "OFI-000017"
+  },
+  {
+   "ordem": 17,
+   "id": "OFI-000018"
+  },
+  {
+   "ordem": 18,
+   "id": "AUT-000025"
+  },
+  {
+   "ordem": 19,
+   "id": "OFI-000019"
+  },
+  {
+   "ordem": 20,
+   "id": "OFI-000020"
+  },
+  {
+   "ordem": 21,
+   "id": "AUT-000104"
+  },
+  {
+   "ordem": 22,
+   "id": "OFI-000024"
+  },
+  {
+   "ordem": 23,
+   "id": "OFI-000025"
+  },
+  {
+   "ordem": 24,
+   "id": "AUT-000041"
+  },
+  {
+   "ordem": 25,
+   "id": "OFI-000028"
+  },
+  {
+   "ordem": 26,
+   "id": "OFI-000030"
+  },
+  {
+   "ordem": 27,
+   "id": "OFI-000029"
+  },
+  {
+   "ordem": 28,
+   "id": "AUT-000059"
+  },
+  {
+   "ordem": 29,
+   "id": "AUT-000108"
+  },
+  {
+   "ordem": 30,
+   "id": "AUT-000058"
+  },
+  {
+   "ordem": 31,
+   "id": "OFI-000032"
+  },
+  {
+   "ordem": 32,
+   "id": "AUT-000068"
+  },
+  {
+   "ordem": 33,
+   "id": "AUT-000067"
+  },
+  {
+   "ordem": 34,
+   "id": "AUT-000070"
+  },
+  {
+   "ordem": 35,
+   "id": "AUT-000069"
+  },
+  {
+   "ordem": 36,
+   "id": "AUT-000110"
+  },
+  {
+   "ordem": 37,
+   "id": "OFI-000033"
+  },
+  {
+   "ordem": 38,
+   "id": "OFI-000034"
+  },
+  {
+   "ordem": 39,
+   "id": "AUT-000077"
+  },
+  {
+   "ordem": 40,
+   "id": "AUT-000078"
+  },
+  {
+   "ordem": 41,
+   "id": "OFI-000035"
+  },
+  {
+   "ordem": 42,
+   "id": "OFI-000039"
+  },
+  {
+   "ordem": 43,
+   "id": "OFI-000036"
+  },
+  {
+   "ordem": 44,
+   "id": "OFI-000040"
+  },
+  {
+   "ordem": 45,
+   "id": "OFI-000037"
+  },
+  {
+   "ordem": 46,
+   "id": "AUT-000114"
+  },
+  {
+   "ordem": 47,
+   "id": "AUT-000113"
+  },
+  {
+   "ordem": 48,
+   "id": "AUT-000115"
+  },
+  {
+   "ordem": 49,
+   "id": "AUT-000116"
+  },
+  {
+   "ordem": 50,
+   "id": "AUT-000117"
+  }
+ ]
+}

@@ -1,0 +1,98 @@
+{
+ "id": "SIM-M05",
+ "titulo": "Simulado do módulo 5 — Engenharia de software",
+ "tipo": "modulo",
+ "tempo_minutos": 58,
+ "total": 15,
+ "criterio_tempo": "proporcional à prova real (270 min para 70 questões): 3.86 min por questão",
+ "status": "rascunho",
+ "observacoes": "Mistura de questões oficiais e autorais do módulo; algumas ainda `em_revisao`.",
+ "criterio_distribuicao": "Até 15 questões por módulo, priorizando itens ainda não usados e mistura de dificuldade 30/50/20% (critério pedagógico).",
+ "distribuicao_modulos": {
+  "M05": 15
+ },
+ "composicao": {
+  "por_tipo": {
+   "oficial": 4,
+   "autoral": 11
+  },
+  "por_status": {
+   "em_revisao": 6,
+   "validada": 9
+  },
+  "por_dificuldade": {
+   "media": 7,
+   "facil": 6,
+   "dificil": 2
+  },
+  "por_gabarito": {
+   "A": 3,
+   "B": 4,
+   "E": 3,
+   "D": 3,
+   "C": 2
+  }
+ },
+ "questoes": [
+  {
+   "ordem": 1,
+   "id": "OFI-000024"
+  },
+  {
+   "ordem": 2,
+   "id": "AUT-000041"
+  },
+  {
+   "ordem": 3,
+   "id": "AUT-000044"
+  },
+  {
+   "ordem": 4,
+   "id": "AUT-000043"
+  },
+  {
+   "ordem": 5,
+   "id": "OFI-000025"
+  },
+  {
+   "ordem": 6,
+   "id": "AUT-000046"
+  },
+  {
+   "ordem": 7,
+   "id": "AUT-000045"
+  },
+  {
+   "ordem": 8,
+   "id": "OFI-000027"
+  },
+  {
+   "ordem": 9,
+   "id": "AUT-000048"
+  },
+  {
+   "ordem": 10,
+   "id": "AUT-000049"
+  },
+  {
+   "ordem": 11,
+   "id": "AUT-000047"
+  },
+  {
+   "ordem": 12,
+   "id": "AUT-000106"
+  },
+  {
+   "ordem": 13,
+   "id": "OFI-000026"
+  },
+  {
+   "ordem": 14,
+   "id": "AUT-000050"
+  },
+  {
+   "ordem": 15,
+   "id": "AUT-000107"
+  }
+ ]
+}
