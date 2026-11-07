@@ -6,65 +6,9 @@
 
 **Observações:** Mistura de questões oficiais e autorais do módulo; algumas ainda `em_revisao`.
 
-Composição: tipo {'autoral': 6, 'oficial': 9} · status {'validada': 6, 'em_revisao': 9} · dificuldade {'facil': 5, 'media': 8, 'dificil': 2}
+Composição: tipo {'autoral': 4, 'oficial': 11} · status {'validada': 4, 'em_revisao': 11} · dificuldade {'media': 9, 'facil': 3, 'dificil': 3}
 
-## 1. AUT-000041 — Requisitos funcionais e não funcionais
-
-*Questão autoral — estilo Cesgranrio.* · item 5.1 · Fácil · gabarito **B**
-
-**Requisitos funcionais** descrevem **o que o sistema faz** (serviços, funções, cálculos): I (calcular o tempo de parada) e III (cadastrar ordem de serviço). **Requisitos não funcionais** descrevem **como o sistema deve ser**: atributos de qualidade e condições de operação, como desempenho (II: tempo de resposta mensurável) e segurança (IV: criptografia do tráfego).
-
-- **A)** Incorreta. Calcular o tempo de parada (I) e cadastrar a ordem de serviço (III) são funções do sistema: requisitos funcionais.
-- **B)** Correta. II (desempenho) e IV (segurança) são atributos de qualidade: requisitos não funcionais.
-- **C)** Incorreta. Mistura um requisito funcional (I) com um não funcional (II).
-- **D)** Incorreta. Mistura um requisito funcional (III) com um não funcional (IV).
-- **E)** Incorreta. Classifica como não funcionais dois requisitos funcionais (I e III) e um não funcional (II).
-
-**Revisão rápida:** Funcional: serviço/função. Não funcional: atributo de qualidade (desempenho, segurança, usabilidade). Restrição: limitação imposta (tecnologia, prazo, norma).
-
-## 2. OFI-000024 — Requisitos funcionais x não funcionais
-
-*Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 24.* · item 5.1 · Média · gabarito **A**
-
-**Requisito funcional** descreve o que o sistema **faz** (cálculos, regras, transformações). **Não funcionais** descrevem qualidades e restrições (desempenho, segurança, interface, operação). Calcular a velocidade com uma equação é uma função do sistema.
-
-- **A)** Correta. É uma função de cálculo do software; requisito funcional.
-- **B)** Incorreta. Aparenta ser funcional por citar imagens, mas, no gabarito, é tratado como requisito de interface/qualidade (resolução e dispositivos).
-- **C)** Incorreta. Restrição de implantação/operação (política de atualização); não funcional.
-- **D)** Incorreta. Restrição de desempenho (tempo de resposta); não funcional.
-- **E)** Incorreta. Restrição de segurança (criptografia AES-256); não funcional.
-
-**Revisão rápida:** Funcional = o que faz; não funcional = quão bem / sob que restrições.
-
-## 3. AUT-000042 — Priorização de requisitos: MoSCoW
-
-*Questão autoral — estilo Cesgranrio.* · item 5.1 · Fácil · gabarito **D**
-
-No **MoSCoW**, **Must have** é essencial (sem ele o produto não é viável), **Should have** é **importante**, mas não vital (pode haver alternativa temporária), **Could have** é **desejável**, de menor impacto se omitido, e **Won't have** é o que **não será entregue agora**. O requisito importante com alternativa manual é **Should have**.
-
-- **A)** Incorreta. Must have é essencial para a viabilidade do produto; o enunciado informa que o produto pode ser lançado sem ele.
-- **B)** Incorreta. Could have é apenas desejável, com pouco impacto se omitido; o requisito foi considerado importante.
-- **C)** Incorreta. Won't have é o que não será entregue neste ciclo; o requisito é importante e deve ser tratado como candidato à entrega.
-- **D)** Correta. Importante, mas não vital, com alternativa temporária: Should have.
-- **E)** Incorreta. "Need to have" não é categoria do MoSCoW.
-
-**Revisão rápida:** Must: essencial. Should: importante, mas contornável. Could: desejável. Won't: fora deste ciclo.
-
-## 4. OFI-000052 — Casos de uso
-
-*Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 27.* · item 5.1 · Média · gabarito **A**
-
-O **caso de uso** descreve **uma interação entre um ator e o sistema** para atingir um objetivo, do ponto de vista externo, em geral com um fluxo principal e fluxos alternativos e de exceção.
-
-- **A)** Correta. Descreve uma interação ator-sistema, visão externa.
-- **B)** Incorreta. Um caso de uso reúne **vários** cenários (fluxo principal e alternativos); um único cenário é uma instância.
-- **C)** Incorreta. O comportamento interno é tratado em outros modelos (sequência, atividades).
-- **D)** Incorreta. Estados dos objetos são modelados em diagramas de estados.
-- **E)** Incorreta. Interações entre objetos são modeladas em diagramas de sequência/comunicação.
-
-**Revisão rápida:** Caso de uso = interação ator × sistema.
-
-## 5. AUT-000044 — Ciclo de vida: modelo em espiral
+## 1. AUT-000044 — Ciclo de vida: modelo em espiral
 
 *Questão autoral — estilo Cesgranrio.* · item 5.2 · Média · gabarito **E**
 
@@ -78,7 +22,7 @@ O **modelo em espiral** (Boehm) é **orientado a riscos**: cada volta determina 
 
 **Revisão rápida:** Espiral (Boehm): voltas com objetivos/alternativas, avaliação de riscos, desenvolvimento/verificação e planejamento da próxima volta.
 
-## 6. AUT-000043 — Ciclo de vida: modelo em V
+## 2. AUT-000043 — Ciclo de vida: modelo em V
 
 *Questão autoral — estilo Cesgranrio.* · item 5.2 · Fácil · gabarito **A**
 
@@ -92,7 +36,7 @@ No modelo em V, cada fase da descida (desenvolvimento) corresponde a um nível d
 
 **Revisão rápida:** Modelo em V: requisitos↔aceitação; especificação↔sistema; arquitetura↔integração; detalhado↔unidade.
 
-## 7. OFI-000049 — Processo Unificado: fase de elaboração
+## 3. OFI-000049 — Processo Unificado: fase de elaboração
 
 *Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 23.* · item 5.2 · Média · gabarito **A**
 
@@ -106,7 +50,7 @@ Na **elaboração**, o foco é **reduzir os riscos principais** e **estabelecer 
 
 **Revisão rápida:** Elaboração = arquitetura.
 
-## 8. OFI-000025 — Ciclos de vida sequenciais
+## 4. OFI-000025 — Ciclos de vida sequenciais
 
 *Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 25.* · item 5.2 · Fácil · gabarito **D**
 
@@ -120,7 +64,21 @@ Na **elaboração**, o foco é **reduzir os riscos principais** e **estabelecer 
 
 **Revisão rápida:** Sequencial = cascata e V.
 
-## 9. AUT-000045 — Paradigma orientado a objetos: herança e ligação dinâmica
+## 5. OFI-000109 — Escolha do modelo de processo: incremental
+
+*Questão oficial — Fundação Cesgranrio, Petrobras PSP RH 2017.2, Prova 3, questão 51.* · item 5.2 · Média · gabarito **B**
+
+Requisitos ainda incertos, **primeira versão com as funcionalidades mais importantes** e **versões sucessivas mais completas**, com equipe pequena: **modelo incremental**. O **espiral** exige análise de riscos explícita em cada volta, o que o usuário rejeita; o **cascata** exige requisitos fechados.
+
+- **A)** Incorreta. RAD pressupõe ciclos muito curtos, componentes reutilizáveis e equipes maiores, o que não é o caso.
+- **B)** Correta. Entregas sucessivas, cada vez mais completas, com equipe pequena: incremental.
+- **C)** Incorreta. Cascata exige requisitos definidos antes do desenvolvimento.
+- **D)** Incorreta. Espiral depende de análise de riscos em cada iteração, que o usuário recusou.
+- **E)** Incorreta. Desenvolvimento baseado em componentes depende de repositório de componentes reutilizáveis.
+
+**Revisão rápida:** Incremental: entrega por partes, cada vez mais completa.
+
+## 6. AUT-000045 — Paradigma orientado a objetos: herança e ligação dinâmica
 
 *Questão autoral — estilo Cesgranrio.* · item 5.3 · Difícil · gabarito **C**
 
@@ -134,7 +92,7 @@ A ligação do método é **dinâmica**: a versão de `estado()` executada depen
 
 **Revisão rápida:** Chamada a `self.metodo()` é resolvida pelo tipo real. `super().metodo()` executa a versão da superclasse, com o mesmo objeto.
 
-## 10. AUT-000046 — UML: diagrama de casos de uso (include e extend)
+## 7. AUT-000046 — UML: diagrama de casos de uso (include e extend)
 
 *Questão autoral — estilo Cesgranrio.* · item 5.3 · Média · gabarito **D**
 
@@ -148,21 +106,7 @@ Na **inclusão (*include*)**, um caso de uso **sempre** usa o comportamento de o
 
 **Revisão rápida:** Include: uso obrigatório de outro caso de uso. Extend: ampliação opcional. Generalização: especialização. Associação: ator–caso de uso.
 
-## 11. OFI-000053 — Orientação a objetos: polimorfismo
-
-*Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 29.* · item 5.3 · Média · gabarito **E**
-
-**Polimorfismo** permite que operações distintas respondam à mesma mensagem (mesmo nome), cada classe com sua implementação; clientes dependem da interface, reduzindo o acoplamento.
-
-- **A)** Incorreta. Encapsulamento oculta o estado interno.
-- **B)** Incorreta. Especialização cria subclasses mais específicas.
-- **C)** Incorreta. Herança reaproveita características da superclasse.
-- **D)** Incorreta. Padrões de projeto não são propriedade da orientação a objetos.
-- **E)** Correta. Operações diferentes com o mesmo nome: polimorfismo.
-
-**Revisão rápida:** Polimorfismo: mesma operação, formas diferentes.
-
-## 12. OFI-000095 — Padrões de projeto: Mediator x Facade
+## 8. OFI-000095 — Padrões de projeto: Mediator x Facade
 
 *Questão oficial — Fundação Cesgranrio, BNDES, Edital 1/2024, Prova 3, questão 43.* · item 5.3 · Difícil · gabarito **D**
 
@@ -176,7 +120,7 @@ O **Mediator** centraliza a **comunicação entre objetos colegas**, que deixam 
 
 **Revisão rápida:** Mediator: colegas falam com o mediador, não entre si.
 
-## 13. OFI-000027 — Orientação a objetos: sobrecarga
+## 9. OFI-000027 — Orientação a objetos: sobrecarga
 
 *Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 32.* · item 5.3 · Fácil · gabarito **D**
 
@@ -190,7 +134,21 @@ O **Mediator** centraliza a **comunicação entre objetos colegas**, que deixam 
 
 **Revisão rápida:** Overload ≠ override.
 
-## 14. OFI-000066 — Padrão de projeto Proxy
+## 10. OFI-000053 — Orientação a objetos: polimorfismo
+
+*Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 29.* · item 5.3 · Média · gabarito **E**
+
+**Polimorfismo** permite que operações distintas respondam à mesma mensagem (mesmo nome), cada classe com sua implementação; clientes dependem da interface, reduzindo o acoplamento.
+
+- **A)** Incorreta. Encapsulamento oculta o estado interno.
+- **B)** Incorreta. Especialização cria subclasses mais específicas.
+- **C)** Incorreta. Herança reaproveita características da superclasse.
+- **D)** Incorreta. Padrões de projeto não são propriedade da orientação a objetos.
+- **E)** Correta. Operações diferentes com o mesmo nome: polimorfismo.
+
+**Revisão rápida:** Polimorfismo: mesma operação, formas diferentes.
+
+## 11. OFI-000066 — Padrão de projeto Proxy
 
 *Questão oficial — Fundação Cesgranrio, Caixa Econômica Federal, Edital 1/2021/NM, Caderno de Tecnologia da Informação, questão 36.* · item 5.3 · Média · gabarito **C**
 
@@ -204,7 +162,21 @@ O **Proxy** oferece um **substituto** do objeto real, com a **mesma interface**,
 
 **Revisão rápida:** Proxy: representante com a mesma interface.
 
-## 15. OFI-000097 — Acoplamento de conteúdo
+## 12. OFI-000126 — Casos de uso, decomposição funcional e classes conceituais (asserção e razão)
+
+*Questão oficial — Fundação Cesgranrio, Petroquímica Suape PSP nº 1/2012, Prova 6, questão 37.* · item 5.3 · Difícil · gabarito **E**
+
+Segundo o gabarito, as duas são falsas: a **decomposição funcional** é característica do paradigma **estruturado**; casos de uso descrevem **interações ator-sistema** (visão externa), e não uma decomposição funcional. Já o **modelo de classes conceituais** representa conceitos do **domínio** (atributos e relacionamentos), sem **métodos** resultantes de decomposição funcional.
+
+- **A)** Incorreta. A primeira é falsa; logo a segunda não pode justificá-la.
+- **B)** Incorreta. A primeira é falsa.
+- **C)** Incorreta. A segunda é falsa: classes conceituais não resultam de decomposição funcional.
+- **D)** Incorreta. A primeira é falsa (casos de uso não são decomposição funcional).
+- **E)** Correta. As duas afirmações são falsas.
+
+**Revisão rápida:** Caso de uso: interação ator–sistema; classe conceitual: conceito do domínio.
+
+## 13. OFI-000097 — Acoplamento de conteúdo
 
 *Questão oficial — Fundação Cesgranrio, BNDES, Edital 1/2024, Prova 3, questão 45.* · item 5.3 · Média · gabarito **B**
 
@@ -217,3 +189,31 @@ No **acoplamento de conteúdo** um módulo **acessa ou modifica diretamente o co
 - **E)** Incorreta. "Funcional" refere-se à coesão funcional, característica desejável, e não ao tipo de acoplamento.
 
 **Revisão rápida:** Conteúdo: um módulo mexe nos internos de outro.
+
+## 14. OFI-000123 — UML 1.4 x UML 2.0: novos diagramas
+
+*Questão oficial — Fundação Cesgranrio, Petrobras PSP-RH-1/2006, Caderno de Analista de Sistemas Pleno, questão 55.* · item 5.3 · Média · gabarito **A**
+
+A UML 2.0 introduziu, entre os diagramas de **interação**, o de **Visão Geral da Interação** (que mescla atividades com interações) e o de **Tempo** (*timing*, que mostra mudanças de estado ao longo do tempo), além do de **Estrutura de Composição** e do de **Pacotes** como diagrama próprio.
+
+- **A)** Correta. Descreve corretamente os dois novos diagramas de interação.
+- **B)** Incorreta. Estereótipos, valores etiquetados e restrições já existiam na UML 1.x; não são novos mecanismos.
+- **C)** Incorreta. A afirmação mistura a história de diagramas de estados e não descreve uma substituição de "diagrama de Máquina de Estados de Protocolo" da UML 1.4.
+- **D)** Incorreta. O diagrama de Pacotes não foi substituído por uma visão combinada.
+- **E)** Incorreta. O diagrama de Componentes continua existindo na UML 2.0; a Estrutura de Composição é um **acréscimo**.
+
+**Revisão rápida:** UML 2.0 acrescentou Visão Geral da Interação e Tempo.
+
+## 15. OFI-000124 — Projeto de software: encapsulamento, coesão e acoplamento
+
+*Questão oficial — Fundação Cesgranrio, Petroquímica Suape PSP nº 1/2012, Prova 6, questão 34.* · item 5.3 · Média · gabarito **B**
+
+Um bom projeto **maximiza a coesão** (partes com responsabilidade única e focada) e o **encapsulamento** (ocultação de detalhes internos) e **minimiza o acoplamento** (dependência entre partes). Entre as opções, só B apresenta o par correto na ordem pedida (maximizar encapsulamento, minimizar acoplamento).
+
+- **A)** Incorreta. Minimizar a coesão é indesejável.
+- **B)** Correta. Maximizar encapsulamento e minimizar acoplamento: projeto adequado.
+- **C)** Incorreta. Maximizar acoplamento e minimizar coesão é o contrário do desejável.
+- **D)** Incorreta. Maximizar acoplamento é indesejável.
+- **E)** Incorreta. Minimizar encapsulamento é indesejável.
+
+**Revisão rápida:** Maximizar coesão e encapsulamento; minimizar acoplamento.

@@ -1,12 +1,12 @@
 # Simulado do módulo 7 — Análise de dados e informações
 
-**Status:** rascunho · **Tempo:** 54 min · **Questões:** 14
+**Status:** rascunho · **Tempo:** 58 min · **Questões:** 15
 
 **Critério de distribuição:** Até 15 questões por módulo, priorizando itens ainda não usados e mistura de dificuldade 30/50/20% (critério pedagógico).
 
 **Observações:** Mistura de questões oficiais e autorais do módulo; algumas ainda `em_revisao`.
 
-Composição: tipo {'autoral': 12, 'oficial': 2} · status {'validada': 10, 'em_revisao': 4} · dificuldade {'facil': 3, 'media': 9, 'dificil': 2}
+Composição: tipo {'autoral': 11, 'oficial': 4} · status {'validada': 10, 'em_revisao': 5} · dificuldade {'facil': 4, 'media': 9, 'dificil': 2}
 
 ## 1. AUT-000061 — Dado, informação, conhecimento e inteligência
 
@@ -134,7 +134,49 @@ Na tabela fato de **snapshot acumulativo**, há **uma linha por ciclo de process
 
 **Revisão rápida:** Acumulativo: linha por ciclo, atualizada nas etapas. Periódico: retrato por período. Transacional: um evento.
 
-## 10. AUT-000069 — Ferramentas de BI: medidas, colunas calculadas e interatividade
+## 10. OFI-000119 — Esquema estrela: tabelas periféricas desnormalizadas
+
+*Questão oficial — Fundação Cesgranrio, Petrobras PSP-RH-1/2006, Caderno de Analista de Sistemas Pleno, questão 45.* · item 7.7 · Média · gabarito **C**
+
+No **esquema estrela**, uma **tabela fato** central (medidas e chaves) liga-se a **tabelas dimensão** periféricas, em geral **desnormalizadas** (atributos hierárquicos na mesma tabela), o que reduz o número de junções. No **floco de neve**, as dimensões são normalizadas.
+
+- **A)** Incorreta. O esquema é lógico (modelo dimensional) e multidimensional.
+- **B)** Incorreta. Inverte: a tabela central é o fato, e as periféricas são dimensões.
+- **C)** Correta. As dimensões desnormalizadas são característica do estrela.
+- **D)** Incorreta. O estrela é simples de evoluir (novas dimensões e medidas são acrescentadas com facilidade).
+- **E)** Incorreta. O estrela exige **menos** junções que um modelo normalizado, em geral.
+
+**Revisão rápida:** Estrela: fato central + dimensões desnormalizadas.
+
+## 11. OFI-000106 — Modelo estrela: tabela fato e dimensões
+
+*Questão oficial — Fundação Cesgranrio, Petrobras PSP RH 2017.2, Prova 3, questão 44.* · item 7.7 · Fácil · gabarito **A**
+
+A **tabela fato** registra o **evento de negócio mensurável** (a venda, com suas medidas: valor, quantidade); as **dimensões** descrevem o contexto (**quem** comprou, **quem** vendeu, quando, onde). Venda = fato; cliente e vendedor = dimensões.
+
+- **A)** Correta. Venda é o evento medido (fato); cliente e vendedor descrevem o contexto (dimensões).
+- **B)** Incorreta. Inverte: cliente e vendedor são contexto, e não eventos medidos.
+- **C)** Incorreta. Cliente não é evento; a venda também não é dimensão.
+- **D)** Incorreta. Vendedor não é evento mensurável.
+- **E)** Incorreta. Vendedor não é fato, e a venda é o evento central.
+
+**Revisão rápida:** Fato = evento medido; dimensão = contexto.
+
+## 12. OFI-000120 — Modelagem multidimensional (afirmação INCORRETA)
+
+*Questão oficial — Fundação Cesgranrio, Petrobras PSP-RH-1/2006, Caderno de Analista de Sistemas Pleno, questão 46.* · item 7.7 · Média · gabarito **A**
+
+O modelo multidimensional serve a **consultas analíticas** (leitura, agregação), e não a **grandes volumes de atualizações** de usuários, que é característica de sistemas **transacionais (OLTP)**. Os demais itens descrevem corretamente a modelagem.
+
+- **A)** Correta. Incorreta, pois descreve OLTP; o DW é carregado em lote e consultado.
+- **B)** Incorreta. Fatos respondem "o que está sendo medido?".
+- **C)** Incorreta. Pré-agregações aceleram consultas frequentes.
+- **D)** Incorreta. Dimensões respondem a quando, o quê, onde e quem.
+- **E)** Incorreta. O DW (e o modelo multidimensional) é orientado a assunto.
+
+**Revisão rápida:** Multidimensional: consulta analítica, não atualização transacional.
+
+## 13. AUT-000069 — Ferramentas de BI: medidas, colunas calculadas e interatividade
 
 *Questão autoral — estilo Cesgranrio.* · item 7.8 · Média · gabarito **E**
 
@@ -148,7 +190,7 @@ Uma **medida** é um cálculo **dinâmico**, avaliado no **contexto dos filtros*
 
 **Revisão rápida:** Medida: cálculo dinâmico no contexto de filtro. Coluna calculada: valor por linha. Parâmetro: valor ajustável. Filtro: restringe os dados.
 
-## 11. AUT-000068 — Manipulação de dados em planilhas: SOMASES
+## 14. AUT-000068 — Manipulação de dados em planilhas: SOMASES
 
 *Questão autoral — estilo Cesgranrio.* · item 7.9 · Média · gabarito **C**
 
@@ -162,7 +204,7 @@ A função `SOMASES` soma os valores de C que atendem a **todos** os critérios 
 
 **Revisão rápida:** SOMASES(soma; critério1_intervalo; critério1; ...): soma as células que atendem a todos os critérios.
 
-## 12. AUT-000070 — Insights e BI na tomada de decisão: correlação e causalidade
+## 15. AUT-000070 — Insights e BI na tomada de decisão: correlação e causalidade
 
 *Questão autoral — estilo Cesgranrio.* · item 7.10 · Difícil · gabarito **B**
 
@@ -175,31 +217,3 @@ Duas séries que variam juntas têm **correlação**, o que **não implica causa
 - **E)** Incorreta. Esperar sem analisar fatores externos adia a decisão sem testar hipóteses; um bom analista investiga os fatores plausíveis agora.
 
 **Revisão rápida:** Insight: descoberta relevante e acionável. Vieses: correlação×causalidade, confirmação, seleção, cherry-picking.
-
-## 13. AUT-000110 — BI como suporte à tomada de decisão
-
-*Questão autoral — estilo Cesgranrio.* · item 7.11 · Média · gabarito **A**
-
-O BI **transforma dados em informação para apoiar decisões** nos níveis estratégico, tático e operacional, entregando visão integrada, histórica e tempestiva. Ele **apoia**, e não **substitui** o decisor, e depende da **qualidade dos dados** e do alinhamento aos indicadores do negócio.
-
-- **A)** Correta. Descreve o papel do BI: apoiar a decisão com informação integrada e confiável.
-- **B)** Incorreta. Nenhuma ferramenta garante decisão ótima; o decisor continua responsável.
-- **C)** Incorreta. BI depende de qualidade de dados; "lixo entra, lixo sai".
-- **D)** Incorreta. BI atende aos três níveis decisórios.
-- **E)** Incorreta. O DW é a base integrada que costuma alimentar os painéis; não é dispensável.
-
-**Revisão rápida:** BI apoia decisões em todos os níveis; não decide sozinho.
-
-## 14. OFI-000055 — Sistema de Suporte à Decisão (tipo de sistema de informação)
-
-*Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 54.* · item 7.11 · Média · gabarito **D**
-
-O **Sistema de Suporte à Decisão (SSD/DSS)** usa **modelos e dados** para apoiar decisões semiestruturadas, com análise e **otimização** ("quais caminhões alocar para maximizar o lucro?").
-
-- **A)** Incorreta. CRM gerencia o relacionamento com clientes.
-- **B)** Incorreta. SIG produz relatórios gerenciais de rotina, resumindo dados, sem modelagem de otimização.
-- **C)** Incorreta. Sistemas especialistas reproduzem o raciocínio de especialistas com base de regras.
-- **D)** Correta. Modelagem e otimização para apoiar decisões: SSD.
-- **E)** Incorreta. Processamento de transações registra eventos operacionais (vendas, pagamentos).
-
-**Revisão rápida:** SSD = modelos e otimização para decisões semiestruturadas.

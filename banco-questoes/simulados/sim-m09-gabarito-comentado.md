@@ -6,7 +6,7 @@
 
 **Observações:** Mistura de questões oficiais e autorais do módulo; algumas ainda `em_revisao`.
 
-Composição: tipo {'autoral': 6, 'oficial': 9} · status {'validada': 6, 'em_revisao': 9} · dificuldade {'facil': 5, 'media': 7, 'dificil': 3}
+Composição: tipo {'autoral': 5, 'oficial': 10} · status {'validada': 5, 'em_revisao': 10} · dificuldade {'facil': 5, 'media': 7, 'dificil': 3}
 
 ## 1. AUT-000083 — Softwares maliciosos: classificação pelo comportamento
 
@@ -78,7 +78,21 @@ O código **concatena** a entrada do usuário ao texto SQL; com o valor `' OR '1
 
 **Revisão rápida:** SQLi: dado interpretado como comando. Defesa: consultas parametrizadas, validação por lista permitida, menor privilégio.
 
-## 6. OFI-000078 — Ataques ativos e passivos: disfarce (masquerade)
+## 6. OFI-000112 — Ataques passivos e requisito ameaçado
+
+*Questão oficial — Fundação Cesgranrio, Petrobras PSP RH 2017.2, Prova 3, questão 64.* · item 9.4 · Fácil · gabarito **A**
+
+Ataques **passivos** (escuta e análise de tráfego) **observam** sem alterar os dados e ameaçam a **confidencialidade**. Ataques **ativos** (disfarce, modificação, repetição, negação de serviço) ameaçam integridade, autenticidade e disponibilidade.
+
+- **A)** Correta. Observar ou analisar o tráfego compromete o sigilo: confidencialidade.
+- **B)** Incorreta. A irretratabilidade é ameaçada por negação de autoria, em ataques ativos.
+- **C)** Incorreta. A autenticidade é ameaçada por disfarce (ataque ativo).
+- **D)** Incorreta. A disponibilidade é ameaçada por negação de serviço (ataque ativo).
+- **E)** Incorreta. A integridade é ameaçada por modificação de dados (ataque ativo).
+
+**Revisão rápida:** Passivo ameaça confidencialidade.
+
+## 7. OFI-000078 — Ataques ativos e passivos: disfarce (masquerade)
 
 *Questão oficial — Fundação Cesgranrio, BNDES, Edital 1/2024, Prova 2, questão 47.* · item 9.4 · Média · gabarito **E**
 
@@ -92,7 +106,7 @@ No **ataque de disfarce (*masquerade*)**, o atacante **se faz passar** por uma e
 
 **Revisão rápida:** Masquerade = personificar entidade autorizada.
 
-## 7. OFI-000083 — OWASP Top 10 (2021): falhas criptográficas
+## 8. OFI-000083 — OWASP Top 10 (2021): falhas criptográficas
 
 *Questão oficial — Fundação Cesgranrio, BNDES, Edital 1/2024, Prova 2, questão 55.* · item 9.4 · Média · gabarito **B**
 
@@ -106,7 +120,7 @@ No OWASP Top 10 **2021**, **A02 — Cryptographic Failures** (antes "Exposição
 
 **Revisão rápida:** A02:2021 Cryptographic Failures: sem TLS, algoritmos fracos, chaves mal geridas.
 
-## 8. OFI-000089 — CWE Top 25: SSRF
+## 9. OFI-000089 — CWE Top 25: SSRF
 
 *Questão oficial — Fundação Cesgranrio, BNDES, Edital 1/2024, Prova 2, questão 67.* · item 9.4 · Média · gabarito **A**
 
@@ -120,7 +134,7 @@ No OWASP Top 10 **2021**, **A02 — Cryptographic Failures** (antes "Exposição
 
 **Revisão rápida:** SSRF: servidor usado como proxy para alcançar a rede interna.
 
-## 9. AUT-000086 — Resposta a incidentes: fases do ciclo (NIST SP 800-61 Rev. 2)
+## 10. AUT-000086 — Resposta a incidentes: fases do ciclo (NIST SP 800-61 Rev. 2)
 
 *Questão autoral — estilo Cesgranrio.* · item 9.11 · Fácil · gabarito **D**
 
@@ -134,7 +148,7 @@ O ciclo da Rev. 2 tem **quatro fases**: **preparação**; **detecção e anális
 
 **Revisão rápida:** NIST 800-61 Rev. 2: 4 fases. Contenção, erradicação e recuperação formam uma só fase.
 
-## 10. OFI-000087 — FIRST CSIRT Services Framework
+## 11. OFI-000087 — FIRST CSIRT Services Framework
 
 *Questão oficial — Fundação Cesgranrio, BNDES, Edital 1/2024, Prova 2, questão 65.* · item 9.11 · Difícil · gabarito **E**
 
@@ -148,7 +162,7 @@ O **FIRST CSIRT Services Framework** organiza os serviços em áreas: gestão de
 
 **Revisão rápida:** Mitigação e recuperação: área de gestão de incidentes.
 
-## 11. OFI-000039 — Resposta a incidentes: NIST SP 800-61
+## 12. OFI-000039 — Resposta a incidentes: NIST SP 800-61
 
 *Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 42.* · item 9.11 · Fácil · gabarito **C**
 
@@ -161,20 +175,6 @@ A **NIST SP 800-61** (*Computer Security Incident Handling Guide*) define o cicl
 - **E)** Incorreta. ISO 27034-1 trata de segurança de aplicações.
 
 **Revisão rápida:** 800-61 = resposta a incidentes.
-
-## 12. OFI-000077 — ISO/IEC 27035-1: fase de resposta a incidentes
-
-*Questão oficial — Fundação Cesgranrio, BNDES, Edital 1/2024, Prova 2, questão 45.* · item 9.11 · Média · gabarito **E**
-
-As cinco fases da ISO/IEC 27035-1:2023 são **planejar e preparar; detectar e reportar; avaliar e decidir; responder; lições aprendidas**. Na fase **responder** ocorrem contenção, erradicação e recuperação e, se o incidente excede os limites das equipes, o acionamento de **continuidade de negócios e recuperação de desastres**.
-
-- **A)** Incorreta. Avaliar e decidir classifica o evento como incidente e decide como tratá-lo.
-- **B)** Incorreta. Detectar e reportar identifica e comunica eventos.
-- **C)** Incorreta. Lições aprendidas revisa e melhora o processo após o incidente.
-- **D)** Incorreta. Planejar e preparar estabelece políticas, equipe e planos antes dos incidentes.
-- **E)** Correta. Na resposta é que se executam as ações, inclusive o acionamento de continuidade e recuperação.
-
-**Revisão rápida:** 27035-1: preparar, detectar, avaliar, responder, aprender.
 
 ## 13. AUT-000087 — Modelagem de ameaças: categorias do STRIDE
 
@@ -204,16 +204,16 @@ As cinco fases da ISO/IEC 27035-1:2023 são **planejar e preparar; detectar e re
 
 **Revisão rápida:** SLE: perda por evento. ARO: ocorrências por ano. ALE = SLE × ARO. Vale a pena se (ALE antes − ALE depois) > custo.
 
-## 15. AUT-000090 — Segurança em nuvem: responsabilidade compartilhada
+## 15. OFI-000128 — Risco, ameaça e vulnerabilidade (asserção e razão)
 
-*Questão autoral — estilo Cesgranrio.* · item 9.20 · Fácil · gabarito **B**
+*Questão oficial — Fundação Cesgranrio, Petroquímica Suape PSP nº 1/2012, Prova 6, questão 51.* · item 9.16 · Média · gabarito **E**
 
-No **modelo de responsabilidade compartilhada**, o provedor é responsável pela segurança **da** nuvem (instalações físicas, hosts, rede e, no SaaS, a maior parte da pilha), e o cliente, pela segurança **na** nuvem. **Dados, identidades e configurações** permanecem **sempre** com o cliente, em IaaS, PaaS e SaaS.
+O **risco** cresce com o **aumento** das **ameaças** e das **vulnerabilidades** (e do impacto). Reduzir ameaças **diminui** o risco, e aumentar vulnerabilidades **o aumenta**. As duas afirmações estão invertidas, portanto, **ambas falsas**.
 
-- **A)** Incorreta. A segurança física dos datacenters é do provedor em todos os modelos.
-- **B)** Correta. Dados, identidades e configurações de acesso são sempre do cliente.
-- **C)** Incorreta. No SaaS, o sistema operacional é gerenciado pelo provedor.
-- **D)** Incorreta. A virtualização e os servidores são responsabilidade do provedor.
-- **E)** Incorreta. A rede física e os equipamentos de conectividade do provedor são do provedor.
+- **A)** Incorreta. Ambas são falsas.
+- **B)** Incorreta. Ambas são falsas.
+- **C)** Incorreta. A segunda também é falsa.
+- **D)** Incorreta. A primeira é falsa, mas a segunda também.
+- **E)** Correta. Risco ∝ ameaça × vulnerabilidade × impacto: as duas afirmações contrariam a relação.
 
-**Revisão rápida:** Dados, identidades e configuração: sempre do cliente. Instalações físicas, hosts e rede do provedor: do provedor. SO: cliente em IaaS; provedor em PaaS e SaaS.
+**Revisão rápida:** Risco cresce com ameaças e vulnerabilidades.

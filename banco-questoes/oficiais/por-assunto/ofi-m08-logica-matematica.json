@@ -2,7 +2,7 @@
  "modulo": "Questões oficiais — m08-logica-matematica",
  "lote": "T04 — Transpetro 2023 (Prova 6) e 2018 (Prova 15)",
  "data": "2026-11-06",
- "total": 2,
+ "total": 6,
  "questoes": [
   {
    "id": "OFI-000033",
@@ -120,6 +120,245 @@
     "sha256": "ver docs/estrategia/base-provas.md"
    },
    "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000115",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Petrobras PSP RH 2017.2, Prova 3, questão 67.",
+   "modulo": "08-logica-matematica",
+   "assunto": "Equivalência lógica: contrapositiva",
+   "item_edital": "8.1",
+   "id_matriz": "E5-072",
+   "itens_secundarios": [
+    "8.2"
+   ],
+   "dificuldade": "media",
+   "habilidade": "analise",
+   "tipo_questao": "logica",
+   "enunciado": "Dado um número inteiro qualquer, então, ou ele é par, ou é ímpar.\nDiante dessa premissa, considere a seguinte sentença:\nSe dois números inteiros são pares, então a soma desses números é um número inteiro par.\nEssa sentença é logicamente equivalente à sentença",
+   "alternativas": {
+    "A": "Se dois números inteiros são ímpares, então, a soma desses números é um número inteiro ímpar.",
+    "B": "Se algum entre dois números é ímpar, então, a soma desses números é ímpar.",
+    "C": "Se a soma de dois números inteiros é ímpar, então, algum desses números é ímpar.",
+    "D": "Se a soma de dois números é ímpar, então, esses dois números são ímpares.",
+    "E": "Se a soma de dois números é par, então, esses dois números são pares."
+   },
+   "gabarito": "C",
+   "resolucao": "Sentença: **P → Q**, com P = \"os dois são pares\" e Q = \"a soma é par\". Sua equivalente é a **contrapositiva ¬Q → ¬P**: \"a soma **não é par** (é ímpar) → **não** são os dois pares\". Como todo inteiro é par ou ímpar, \"não são os dois pares\" equivale a \"**algum é ímpar**\".",
+   "analise_alternativas": {
+    "A": "Incorreta. Mantém a forma \"se...então\" com termos trocados por ímpar; não é a contrapositiva (e é falsa: 3 + 5 = 8 é par).",
+    "B": "Incorreta. A frase é falsa (3 e 4 são ímpar/par e somam 7, mas 3 e 5 somam 8, par).",
+    "C": "Correta. É a contrapositiva, com ¬P escrito como \"algum é ímpar\" usando a premissa par/ímpar.",
+    "D": "Incorreta. Exige que os dois sejam ímpares, o que é mais forte que o negado (¬P é \"algum é ímpar\").",
+    "E": "Incorreta. É a recíproca (Q → P), não equivalente à original."
+   },
+   "fundamentacao": {
+    "item": "8.1",
+    "arquivo_teoria": "conteudo/08-logica-matematica/01-proposicoes-e-conectivos.md"
+   },
+   "ponto_atencao": "**P→Q ≡ ¬Q→¬P**. A recíproca (Q→P) e a inversa (¬P→¬Q) **não** são equivalentes. A premissa \"par ou ímpar\" permite trocar \"não par\" por \"ímpar\".",
+   "revisao_rapida": "Equivalente de P→Q: ¬Q→¬P.",
+   "tags": [
+    "contrapositiva",
+    "petrobras-2018",
+    "oficial",
+    "media",
+    "analise"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Petrobras PSP RH 2017.2 (prova de 18/03/2018)",
+    "cargo": "Analista de Sistemas Júnior — Processos de Negócio",
+    "ano": 2018,
+    "prova": "Prova 3",
+    "numero_original": 67,
+    "id_prova": "PRV-011",
+    "situacao_gabarito": "de espelho (PCI), fornecido pelo usuário; preliminar/definitivo não indicado; anulações não verificadas; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/candidatas-2026-11-04/petrobras-2018-analista-sistemas-jr-processos-negocio-prova.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000116",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Petrobras PSP RH 2017.2, Prova 3, questão 68.",
+   "modulo": "08-logica-matematica",
+   "assunto": "Valor lógico de proposições compostas",
+   "item_edital": "8.8",
+   "id_matriz": "E5-079",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "resolucao_problemas",
+   "tipo_questao": "logica",
+   "enunciado": "Sejam p e q duas proposições lógicas simples tais que o valor lógico da implicação (~p) → (~q) é FALSO.\nO valor lógico da proposição p ˅ (~q) é igual ao valor lógico da proposição",
+   "alternativas": {
+    "A": "(~q) → p",
+    "B": "(~q) → (~p)",
+    "C": "(~p) ˅ (~q)",
+    "D": "(~p) ˄ q",
+    "E": "p ˄ q"
+   },
+   "gabarito": "E",
+   "resolucao": "Uma condicional só é falsa com **antecedente V e consequente F**: ~p = V e ~q = F, logo **p = F** e **q = V**. Então p ˅ ~q = F ˅ F = **F**. Entre as opções, só **p ˄ q = F ˄ V = F** tem o mesmo valor; as demais resultam V.",
+   "analise_alternativas": {
+    "A": "Incorreta. (~q) → p = F → F = V.",
+    "B": "Incorreta. (~q) → (~p) = F → V = V.",
+    "C": "Incorreta. (~p) ˅ (~q) = V ˅ F = V.",
+    "D": "Incorreta. (~p) ˄ q = V ˄ V = V.",
+    "E": "Correta. p ˄ q = F ˄ V = F: mesmo valor lógico."
+   },
+   "fundamentacao": {
+    "item": "8.8",
+    "arquivo_teoria": "conteudo/08-logica-matematica/02-tabelas-verdade.md"
+   },
+   "ponto_atencao": "Primeiro **descubra os valores de p e q** (condicional falsa fixa tudo), depois avalie cada opção.",
+   "revisao_rapida": "(~p)→(~q) falsa ⇒ p = F, q = V.",
+   "tags": [
+    "valoracao",
+    "condicional",
+    "petrobras-2018",
+    "oficial",
+    "media",
+    "resolucao_problemas"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Petrobras PSP RH 2017.2 (prova de 18/03/2018)",
+    "cargo": "Analista de Sistemas Júnior — Processos de Negócio",
+    "ano": 2018,
+    "prova": "Prova 3",
+    "numero_original": 68,
+    "id_prova": "PRV-011",
+    "situacao_gabarito": "de espelho (PCI), fornecido pelo usuário; preliminar/definitivo não indicado; anulações não verificadas; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/candidatas-2026-11-04/petrobras-2018-analista-sistemas-jr-processos-negocio-prova.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Verificada por enumeração: p = F, q = V; p∨~q = F e só p∧q é F.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000117",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Petrobras PSP RH 2017.2, Prova 3, questão 69.",
+   "modulo": "08-logica-matematica",
+   "assunto": "Argumento válido: conclusão que decorre das premissas",
+   "item_edital": "8.2",
+   "id_matriz": "E5-073",
+   "itens_secundarios": [],
+   "dificuldade": "dificil",
+   "habilidade": "resolucao_problemas",
+   "tipo_questao": "logica",
+   "enunciado": "Considere o seguinte argumento, no qual a conclusão foi omitida:\nPremissa 1: p → [(~r) ˅ (~s)]\nPremissa 2: [p ˅ (~q)] ˄ [q ˅ (~p)]\nPremissa 3: r ˄ s\nConclusão: XXXXXXXXXX\nUma conclusão que torna o argumento acima válido é",
+   "alternativas": {
+    "A": "~(p ˅ q)",
+    "B": "(~q) ˄ p",
+    "C": "(~p) ˄ q",
+    "D": "p ˄ q",
+    "E": "p ˅ q"
+   },
+   "gabarito": "A",
+   "resolucao": "Premissa 3: **r = V e s = V**, logo (~r) ˅ (~s) = F. Pela premissa 1, p → F exige **p = F**. Na premissa 2, com p = F: (p ˅ ~q) = ~q deve ser V, então **q = F**; e (q ˅ ~p) = V ˅ ... = V. Logo p = F e q = F, e a conclusão que decorre é **~(p ˅ q)** (V).",
+   "analise_alternativas": {
+    "A": "Correta. Com p = F e q = F, p ˅ q = F e ~(p ˅ q) = V: decorre das premissas.",
+    "B": "Incorreta. (~q) ˄ p exige p = V, mas p = F.",
+    "C": "Incorreta. (~p) ˄ q exige q = V, mas q = F.",
+    "D": "Incorreta. p ˄ q exige p = V.",
+    "E": "Incorreta. p ˅ q é F."
+   },
+   "fundamentacao": {
+    "item": "8.2",
+    "arquivo_teoria": "conteudo/08-logica-matematica/03-argumentacao-logica.md"
+   },
+   "ponto_atencao": "Método: **premissa mais simples (conjunção)** → propague valores → verifique qual conclusão é verdadeira **no único modelo**.",
+   "revisao_rapida": "Único modelo: r, s verdadeiros; p, q falsos.",
+   "tags": [
+    "argumentos",
+    "tabela-verdade",
+    "petrobras-2018",
+    "oficial",
+    "dificil",
+    "resolucao_problemas"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Petrobras PSP RH 2017.2 (prova de 18/03/2018)",
+    "cargo": "Analista de Sistemas Júnior — Processos de Negócio",
+    "ano": 2018,
+    "prova": "Prova 3",
+    "numero_original": 69,
+    "id_prova": "PRV-011",
+    "situacao_gabarito": "de espelho (PCI), fornecido pelo usuário; preliminar/definitivo não indicado; anulações não verificadas; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/candidatas-2026-11-04/petrobras-2018-analista-sistemas-jr-processos-negocio-prova.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Verificada por enumeração das 16 valorações: único modelo das premissas p = F, q = F, r = V, s = V.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000118",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Petrobras PSP RH 2017.2, Prova 3, questão 70.",
+   "modulo": "08-logica-matematica",
+   "assunto": "Regras de inferência de um argumento",
+   "item_edital": "8.6",
+   "id_matriz": "E5-077",
+   "itens_secundarios": [
+    "8.2"
+   ],
+   "dificuldade": "media",
+   "habilidade": "analise",
+   "tipo_questao": "logica",
+   "enunciado": "Considere o seguinte argumento:\nPremissa 1: [(~A) ˄ (~G)] → (~P)\nPremissa 2: P\nConclusão: A ˅ G\nA validade do argumento pode ser deduzida, respectivamente, a partir da aplicação das regras de inferência",
+   "alternativas": {
+    "A": "Paradoxo e Contingência",
+    "B": "Contraposição e Absurdo",
+    "C": "Modus Ponnens e Contradição",
+    "D": "Modus Tollens e Lei de De Morgan",
+    "E": "Silogismo Conjuntivo e Silogismo hipotético"
+   },
+   "gabarito": "D",
+   "resolucao": "Da premissa 1 e da premissa 2 (P verdadeiro, logo ~P falso), por **Modus Tollens** (de X → Y e ~Y conclui-se ~X) obtém-se **~[(~A) ˄ (~G)]**. Pela **Lei de De Morgan**, ~[(~A) ˄ (~G)] ≡ **A ˅ G**.",
+   "analise_alternativas": {
+    "A": "Incorreta. Paradoxo e contingência não são regras de inferência.",
+    "B": "Incorreta. Contraposição é equivalência, e \"absurdo\" é redução ao absurdo; a dedução direta é por Modus Tollens.",
+    "C": "Incorreta. Modus Ponens (de X → Y e X conclui-se Y) não se aplica: P é o consequente negado.",
+    "D": "Correta. Modus Tollens e De Morgan produzem exatamente a conclusão.",
+    "E": "Incorreta. Silogismo conjuntivo e hipotético não se aplicam a essa estrutura."
+   },
+   "fundamentacao": {
+    "item": "8.6",
+    "arquivo_teoria": "conteudo/08-logica-matematica/06-formulas-e-sistemas-dedutivos.md"
+   },
+   "ponto_atencao": "Modus Ponens: X→Y, X ⊢ Y. **Modus Tollens: X→Y, ~Y ⊢ ~X.** De Morgan: ~(A∧B) ≡ ~A ∨ ~B.",
+   "revisao_rapida": "Tollens + De Morgan.",
+   "tags": [
+    "inferencia",
+    "modus-tollens",
+    "petrobras-2018",
+    "oficial",
+    "media",
+    "analise"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Petrobras PSP RH 2017.2 (prova de 18/03/2018)",
+    "cargo": "Analista de Sistemas Júnior — Processos de Negócio",
+    "ano": 2018,
+    "prova": "Prova 3",
+    "numero_original": 70,
+    "id_prova": "PRV-011",
+    "situacao_gabarito": "de espelho (PCI), fornecido pelo usuário; preliminar/definitivo não indicado; anulações não verificadas; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/candidatas-2026-11-04/petrobras-2018-analista-sistemas-jr-processos-negocio-prova.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Dedução conferida: ~[(~A)∧(~G)] ≡ A∨G; argumento válido por tabela-verdade.",
    "status_validacao": "em_revisao"
   }
  ]

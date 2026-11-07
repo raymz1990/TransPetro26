@@ -1,6 +1,6 @@
 # Catálogo geral de questões — Banco de questões
 
-**Atualizado em:** 2026-11-06 (gerado por `python tools/gerar_docs_banco.py`). **Totais:** 260 questões — oficiais 105 · adaptadas 0 · autorais 155 (Específicos 120, Gerais 35). Validadas 90 · em revisão 170.
+**Atualizado em:** 2026-11-06 (gerado por `python tools/gerar_docs_banco.py`). **Totais:** 284 questões — oficiais 129 · adaptadas 0 · autorais 155 (Específicos 120, Gerais 35). Validadas 90 · em revisão 194.
 
 `validada` = aprovada pelo usuário (sem revisão por terceiros). `em_revisao` = produzida na fase P1 (T04 a T06) e **ainda não validada pelo usuário**. Questões oficiais trazem prova e número no campo `fonte_origem`; gabaritos de 2023 são de espelho de terceiros, **não validados contra a banca**. O catálogo das provas (metadados, sem enunciados) está em `docs/estrategia/catalogo-questoes-historicas.md`.
 
@@ -266,3 +266,27 @@
 | OFI-000103 | oficial | M01 | 1.1 | DER: especialização total e sobreposta | Média | analise | A | em_revisao | BNDES, Edital 1/2024 2024, Prova 3 (manhã), Q68 (PRV-014) |
 | OFI-000104 | oficial | M01 | 1.14 | Nível de isolamento SERIALIZABLE | Média | compreensao | C | em_revisao | BNDES, Edital 1/2024 2024, Prova 3 (manhã), Q69 (PRV-014) |
 | OFI-000105 | oficial | M01 | 1.11 | DDL: cláusula CHECK | Média | compreensao | B | em_revisao | BNDES, Edital 1/2024 2024, Prova 3 (manhã), Q70 (PRV-014) |
+| OFI-000106 | oficial | M07 | 7.7 | Modelo estrela: tabela fato e dimensões | Fácil | aplicacao | A | em_revisao | Petrobras PSP RH 2017.2 2018, Prova 3, Q44 (PRV-011) |
+| OFI-000107 | oficial | M05 | 5.4 | Verificação x validação | Média | compreensao | E | em_revisao | Petrobras PSP RH 2017.2 2018, Prova 3, Q45 (PRV-011) |
+| OFI-000108 | oficial | M05 | 5.1 | Requisitos não funcionais (alternativa NÃO) | Média | analise | D | em_revisao | Petrobras PSP RH 2017.2 2018, Prova 3, Q50 (PRV-011) |
+| OFI-000109 | oficial | M05 | 5.2 | Escolha do modelo de processo: incremental | Média | avaliacao | B | em_revisao | Petrobras PSP RH 2017.2 2018, Prova 3, Q51 (PRV-011) |
+| OFI-000110 | oficial | M05 | 5.1 | Engenharia de requisitos: prática da etapa de análise | Média | compreensao | B | em_revisao | Petrobras PSP RH 2017.2 2018, Prova 3, Q55 (PRV-011) |
+| OFI-000111 | oficial | M09 | 9.19 | Assinatura digital: finalidade do hash | Média | compreensao | B | em_revisao | Petrobras PSP RH 2017.2 2018, Prova 3, Q63 (PRV-011) |
+| OFI-000112 | oficial | M09 | 9.4 | Ataques passivos e requisito ameaçado | Fácil | compreensao | A | em_revisao | Petrobras PSP RH 2017.2 2018, Prova 3, Q64 (PRV-011) |
+| OFI-000113 | oficial | M09 | 9.18 | ISO 27002: diretrizes de classificação da informação | Média | memorizacao | E | em_revisao | Petrobras PSP RH 2017.2 2018, Prova 3, Q65 (PRV-011) |
+| OFI-000114 | oficial | M09 | 9.8 | Single Sign-On | Fácil | compreensao | B | em_revisao | Petrobras PSP RH 2017.2 2018, Prova 3, Q66 (PRV-011) |
+| OFI-000115 | oficial | M08 | 8.1 | Equivalência lógica: contrapositiva | Média | analise | C | em_revisao | Petrobras PSP RH 2017.2 2018, Prova 3, Q67 (PRV-011) |
+| OFI-000116 | oficial | M08 | 8.8 | Valor lógico de proposições compostas | Média | resolucao_problemas | E | em_revisao | Petrobras PSP RH 2017.2 2018, Prova 3, Q68 (PRV-011) |
+| OFI-000117 | oficial | M08 | 8.2 | Argumento válido: conclusão que decorre das premissas | Difícil | resolucao_problemas | A | em_revisao | Petrobras PSP RH 2017.2 2018, Prova 3, Q69 (PRV-011) |
+| OFI-000118 | oficial | M08 | 8.6 | Regras de inferência de um argumento | Média | analise | D | em_revisao | Petrobras PSP RH 2017.2 2018, Prova 3, Q70 (PRV-011) |
+| OFI-000119 | oficial | M07 | 7.7 | Esquema estrela: tabelas periféricas desnormalizadas | Média | compreensao | C | em_revisao | Petrobras PSP-RH-1/2006 2006, Caderno de Analista de Sistemas Pleno (questões 21 a 60), Q45 (PRV-007) |
+| OFI-000120 | oficial | M07 | 7.7 | Modelagem multidimensional (afirmação INCORRETA) | Média | analise | A | em_revisao | Petrobras PSP-RH-1/2006 2006, Caderno de Analista de Sistemas Pleno (questões 21 a 60), Q46 (PRV-007) |
+| OFI-000121 | oficial | M05 | 5.1 | Análise e gerenciamento de requisitos (afirmação FALSA) | Média | analise | C | em_revisao | Petrobras PSP-RH-1/2006 2006, Caderno de Analista de Sistemas Pleno (questões 21 a 60), Q49 (PRV-007) |
+| OFI-000122 | oficial | M05 | 5.4 | Estratégias de teste: caixa-preta, caixa-branca, integração, recuperação, alfa e beta | Difícil | analise | D | em_revisao | Petrobras PSP-RH-1/2006 2006, Caderno de Analista de Sistemas Pleno (questões 21 a 60), Q54 (PRV-007) |
+| OFI-000123 | oficial | M05 | 5.3 | UML 1.4 x UML 2.0: novos diagramas | Média | memorizacao | A | em_revisao | Petrobras PSP-RH-1/2006 2006, Caderno de Analista de Sistemas Pleno (questões 21 a 60), Q55 (PRV-007) |
+| OFI-000124 | oficial | M05 | 5.3 | Projeto de software: encapsulamento, coesão e acoplamento | Média | compreensao | B | em_revisao | Petroquímica Suape PSP nº 1/2012 2012, Prova 6, Q34 (PRV-009) |
+| OFI-000125 | oficial | M05 | 5.1 | Engenharia de requisitos: propósito da validação | Média | compreensao | B | em_revisao | Petroquímica Suape PSP nº 1/2012 2012, Prova 6, Q36 (PRV-009) |
+| OFI-000126 | oficial | M05 | 5.3 | Casos de uso, decomposição funcional e classes conceituais (asserção e razão) | Difícil | analise | E | em_revisao | Petroquímica Suape PSP nº 1/2012 2012, Prova 6, Q37 (PRV-009) |
+| OFI-000127 | oficial | M04 | 4.5 | Maturidade dos processos de TI e relacionamento com o negócio | Média | analise | B | em_revisao | Petroquímica Suape PSP nº 1/2012 2012, Prova 6, Q50 (PRV-009) |
+| OFI-000128 | oficial | M09 | 9.16 | Risco, ameaça e vulnerabilidade (asserção e razão) | Média | analise | E | em_revisao | Petroquímica Suape PSP nº 1/2012 2012, Prova 6, Q51 (PRV-009) |
+| OFI-000129 | oficial | M04 | 4.5 | ITIL: objetivo do gerenciamento de incidentes | Fácil | memorizacao | A | em_revisao | Petroquímica Suape PSP nº 1/2012 2012, Prova 6, Q54 (PRV-009) |

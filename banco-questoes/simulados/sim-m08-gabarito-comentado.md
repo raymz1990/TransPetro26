@@ -1,12 +1,12 @@
 # Simulado do módulo 8 — Lógica matemática
 
-**Status:** rascunho · **Tempo:** 50 min · **Questões:** 13
+**Status:** rascunho · **Tempo:** 58 min · **Questões:** 15
 
 **Critério de distribuição:** Até 15 questões por módulo, priorizando itens ainda não usados e mistura de dificuldade 30/50/20% (critério pedagógico).
 
 **Observações:** Mistura de questões oficiais e autorais do módulo; algumas ainda `em_revisao`.
 
-Composição: tipo {'autoral': 11, 'oficial': 2} · status {'validada': 10, 'em_revisao': 3} · dificuldade {'facil': 3, 'dificil': 2, 'media': 8}
+Composição: tipo {'autoral': 9, 'oficial': 6} · status {'validada': 9, 'em_revisao': 6} · dificuldade {'facil': 3, 'media': 9, 'dificil': 3}
 
 ## 1. AUT-000071 — Negação de proposição condicional
 
@@ -22,7 +22,21 @@ Seja p: "o alarme soa" e q: "o operador interrompe a bomba". A proposição é p
 
 **Revisão rápida:** ¬(p → q) ≡ p ∧ ¬q. Contrapositiva ≡ condicional. Conversa e inversa não são equivalentes ao condicional.
 
-## 2. AUT-000075 — Argumentos: validade
+## 2. OFI-000115 — Equivalência lógica: contrapositiva
+
+*Questão oficial — Fundação Cesgranrio, Petrobras PSP RH 2017.2, Prova 3, questão 67.* · item 8.1 · Média · gabarito **C**
+
+Sentença: **P → Q**, com P = "os dois são pares" e Q = "a soma é par". Sua equivalente é a **contrapositiva ¬Q → ¬P**: "a soma **não é par** (é ímpar) → **não** são os dois pares". Como todo inteiro é par ou ímpar, "não são os dois pares" equivale a "**algum é ímpar**".
+
+- **A)** Incorreta. Mantém a forma "se...então" com termos trocados por ímpar; não é a contrapositiva (e é falsa: 3 + 5 = 8 é par).
+- **B)** Incorreta. A frase é falsa (3 e 4 são ímpar/par e somam 7, mas 3 e 5 somam 8, par).
+- **C)** Correta. É a contrapositiva, com ¬P escrito como "algum é ímpar" usando a premissa par/ímpar.
+- **D)** Incorreta. Exige que os dois sejam ímpares, o que é mais forte que o negado (¬P é "algum é ímpar").
+- **E)** Incorreta. É a recíproca (Q → P), não equivalente à original.
+
+**Revisão rápida:** Equivalente de P→Q: ¬Q→¬P.
+
+## 3. AUT-000075 — Argumentos: validade
 
 *Questão autoral — estilo Cesgranrio.* · item 8.2 · Difícil · gabarito **C**
 
@@ -36,7 +50,21 @@ Um argumento é **válido** quando não existe valoração com **premissas verda
 
 **Revisão rápida:** Válidos: modus ponens, modus tollens, silogismos hipotético e disjuntivo. Inválidos: afirmação do consequente; negação do antecedente.
 
-## 3. OFI-000033 — Argumento válido: conclusão a partir das premissas
+## 4. OFI-000117 — Argumento válido: conclusão que decorre das premissas
+
+*Questão oficial — Fundação Cesgranrio, Petrobras PSP RH 2017.2, Prova 3, questão 69.* · item 8.2 · Difícil · gabarito **A**
+
+Premissa 3: **r = V e s = V**, logo (~r) ˅ (~s) = F. Pela premissa 1, p → F exige **p = F**. Na premissa 2, com p = F: (p ˅ ~q) = ~q deve ser V, então **q = F**; e (q ˅ ~p) = V ˅ ... = V. Logo p = F e q = F, e a conclusão que decorre é **~(p ˅ q)** (V).
+
+- **A)** Correta. Com p = F e q = F, p ˅ q = F e ~(p ˅ q) = V: decorre das premissas.
+- **B)** Incorreta. (~q) ˄ p exige p = V, mas p = F.
+- **C)** Incorreta. (~p) ˄ q exige q = V, mas q = F.
+- **D)** Incorreta. p ˄ q exige p = V.
+- **E)** Incorreta. p ˅ q é F.
+
+**Revisão rápida:** Único modelo: r, s verdadeiros; p, q falsos.
+
+## 5. OFI-000033 — Argumento válido: conclusão a partir das premissas
 
 *Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 28.* · item 8.2 · Média · gabarito **D**
 
@@ -50,21 +78,7 @@ Para que todas as premissas sejam verdadeiras, a **Premissa 2** exige D verdadei
 
 **Revisão rápida:** Premissas V ⇒ D=V, E=F, A=V, B=V.
 
-## 4. AUT-000076 — Lógica sentencial: equivalência lógica do condicional
-
-*Questão autoral — estilo Cesgranrio.* · item 8.3 · Média · gabarito **D**
-
-Seja p: "a carga é perigosa" e q: "a carga é inspecionada". A proposição é p → q, equivalente à sua **contrapositiva**, ¬q → ¬p: "se a carga não é inspecionada, então ela não é perigosa". Também é equivalente a ¬p ∨ q. A conversa (q → p) e a inversa (¬p → ¬q) **não** são equivalentes ao condicional.
-
-- **A)** Incorreta. É a **conversa** (q → p), que não é equivalente a p → q.
-- **B)** Incorreta. É a **inversa** (¬p → ¬q), equivalente à conversa, e não ao condicional.
-- **C)** Incorreta. É p ∧ ¬q, a **negação** do condicional, e não uma proposição equivalente a ele.
-- **D)** Correta. Contrapositiva: ¬q → ¬p.
-- **E)** Incorreta. É ¬p ∨ ¬q, equivalente a ¬(p ∧ q), e não a p → q (que equivale a ¬p ∨ q).
-
-**Revisão rápida:** p → q ≡ ¬q → ¬p ≡ ¬p ∨ q. Conversa ≡ inversa, mas ≢ condicional.
-
-## 5. AUT-000078 — Lógica de predicados: ordem dos quantificadores
+## 6. AUT-000078 — Lógica de predicados: ordem dos quantificadores
 
 *Questão autoral — estilo Cesgranrio.* · item 8.4 · Difícil · gabarito **C**
 
@@ -78,7 +92,7 @@ Se existe um supervisor de **todos** (II), então **todo** técnico tem **algum*
 
 **Revisão rápida:** ∃y∀x R ⇒ ∀x∃y R, mas não o contrário. Contraexemplo: cada técnico com um supervisor distinto.
 
-## 6. AUT-000077 — Lógica de predicados: negação de sentenças quantificadas
+## 7. AUT-000077 — Lógica de predicados: negação de sentenças quantificadas
 
 *Questão autoral — estilo Cesgranrio.* · item 8.4 · Média · gabarito **A**
 
@@ -92,7 +106,7 @@ A negação de **∀x P(x)** é **∃x ¬P(x)**. Assim, ¬∀x (C(x) → S(x)) �
 
 **Revisão rápida:** ¬∀x(C→S) ≡ ∃x(C ∧ ¬S). Traduzir: ∀ com →, ∃ com ∧.
 
-## 7. OFI-000034 — Consequência lógica de sentença quantificada
+## 8. OFI-000034 — Consequência lógica de sentença quantificada
 
 *Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 35.* · item 8.4 · Média · gabarito **B**
 
@@ -106,7 +120,7 @@ Simbolicamente: ∀x (P(x) → (M(x) ∨ E(x))). A **contrapositiva** é ∀x (�
 
 **Revisão rápida:** P→Q ≡ ¬Q→¬P.
 
-## 8. AUT-000079 — Regras de formação de fórmulas
+## 9. AUT-000079 — Regras de formação de fórmulas
 
 *Questão autoral — estilo Cesgranrio.* · item 8.5 · Fácil · gabarito **E**
 
@@ -120,7 +134,7 @@ Pelas regras de formação: toda letra sentencial é fórmula; se A é fórmula,
 
 **Revisão rápida:** Fórmula: átomo; ¬A; (A∧B); (A∨B); (A→B); (A↔B); nada mais. Conectivo principal = último introduzido.
 
-## 9. AUT-000072 — Sistemas dedutivos: correção e completude
+## 10. AUT-000072 — Sistemas dedutivos: correção e completude
 
 *Questão autoral — estilo Cesgranrio.* · item 8.6 · Média · gabarito **D**
 
@@ -134,7 +148,21 @@ Pelas regras de formação: toda letra sentencial é fórmula; se A é fórmula,
 
 **Revisão rápida:** Correção: ⊢ ⇒ ⊨. Completude: ⊨ ⇒ ⊢. Sentencial clássica: correta, completa e decidível. LPO: correta, completa e indecidível.
 
-## 10. AUT-000080 — Decidibilidade da lógica sentencial e funções de avaliação
+## 11. OFI-000118 — Regras de inferência de um argumento
+
+*Questão oficial — Fundação Cesgranrio, Petrobras PSP RH 2017.2, Prova 3, questão 70.* · item 8.6 · Média · gabarito **D**
+
+Da premissa 1 e da premissa 2 (P verdadeiro, logo ~P falso), por **Modus Tollens** (de X → Y e ~Y conclui-se ~X) obtém-se **~[(~A) ˄ (~G)]**. Pela **Lei de De Morgan**, ~[(~A) ˄ (~G)] ≡ **A ˅ G**.
+
+- **A)** Incorreta. Paradoxo e contingência não são regras de inferência.
+- **B)** Incorreta. Contraposição é equivalência, e "absurdo" é redução ao absurdo; a dedução direta é por Modus Tollens.
+- **C)** Incorreta. Modus Ponens (de X → Y e X conclui-se Y) não se aplica: P é o consequente negado.
+- **D)** Correta. Modus Tollens e De Morgan produzem exatamente a conclusão.
+- **E)** Incorreta. Silogismo conjuntivo e hipotético não se aplicam a essa estrutura.
+
+**Revisão rápida:** Tollens + De Morgan.
+
+## 12. AUT-000080 — Decidibilidade da lógica sentencial e funções de avaliação
 
 *Questão autoral — estilo Cesgranrio.* · item 8.7 · Fácil · gabarito **B**
 
@@ -148,7 +176,7 @@ Com **n** letras sentenciais há **2ⁿ** valorações; com 5 letras, **2⁵ = 3
 
 **Revisão rápida:** Sentencial: decidível (tabela-verdade, 2ⁿ linhas). LPO: indecidível, semidecidível. Valoração = função de avaliação das letras.
 
-## 11. AUT-000073 — Valores-verdade de proposições compostas
+## 13. AUT-000073 — Valores-verdade de proposições compostas
 
 *Questão autoral — estilo Cesgranrio.* · item 8.8 · Média · gabarito **A**
 
@@ -162,7 +190,7 @@ Com **n** letras sentenciais há **2ⁿ** valorações; com 5 letras, **2⁵ = 3
 
 **Revisão rápida:** Condicional: falso só em V→F. Bicondicional: verdadeiro se os valores coincidem. Disjunção: falsa só em F∨F.
 
-## 12. AUT-000074 — Tautologia, contradição e contingência
+## 14. AUT-000074 — Tautologia, contradição e contingência
 
 *Questão autoral — estilo Cesgranrio.* · item 8.8 · Média · gabarito **E**
 
@@ -176,16 +204,16 @@ Com **n** letras sentenciais há **2ⁿ** valorações; com 5 letras, **2⁵ = 3
 
 **Revisão rápida:** Tabela com 2ⁿ linhas. Tautologia (todas V), contradição (todas F), contingência (misto).
 
-## 13. AUT-000112 — Funções de avaliação (valoração)
+## 15. OFI-000116 — Valor lógico de proposições compostas
 
-*Questão autoral — estilo Cesgranrio.* · item 8.9 · Média · gabarito **C**
+*Questão oficial — Fundação Cesgranrio, Petrobras PSP RH 2017.2, Prova 3, questão 68.* · item 8.8 · Média · gabarito **E**
 
-Uma conjunção só é falsa se **ao menos um** conjunto é falso. Em **p = V, q = V, r = F**: p → q = V, mas q → r = (V → F) = **F**; logo a conjunção é F. Nas demais: A (V∧V = V); B (V∧V = V); D (V∧V = V); E (V∧V = V).
+Uma condicional só é falsa com **antecedente V e consequente F**: ~p = V e ~q = F, logo **p = F** e **q = V**. Então p ˅ ~q = F ˅ F = **F**. Entre as opções, só **p ˄ q = F ˄ V = F** tem o mesmo valor; as demais resultam V.
 
-- **A)** Incorreta. p→q = V e q→r = V; fórmula V.
-- **B)** Incorreta. Antecedentes falsos tornam as duas condicionais verdadeiras; fórmula V.
-- **C)** Correta. q → r = V → F = F; fórmula F.
-- **D)** Incorreta. p→q = V (antecedente falso) e q→r = V; fórmula V.
-- **E)** Incorreta. p→q = V e q→r = V (antecedente falso); fórmula V.
+- **A)** Incorreta. (~q) → p = F → F = V.
+- **B)** Incorreta. (~q) → (~p) = F → V = V.
+- **C)** Incorreta. (~p) ˅ (~q) = V ˅ F = V.
+- **D)** Incorreta. (~p) ˄ q = V ˄ V = V.
+- **E)** Correta. p ˄ q = F ˄ V = F: mesmo valor lógico.
 
-**Revisão rápida:** A→B é F só se A=V e B=F.
+**Revisão rápida:** (~p)→(~q) falsa ⇒ p = F, q = V.

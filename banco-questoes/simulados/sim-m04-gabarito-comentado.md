@@ -6,23 +6,9 @@
 
 **Observações:** Mistura de questões oficiais e autorais do módulo; algumas ainda `em_revisao`.
 
-Composição: tipo {'oficial': 4, 'autoral': 11} · status {'em_revisao': 6, 'validada': 9} · dificuldade {'facil': 5, 'dificil': 2, 'media': 8}
+Composição: tipo {'autoral': 10, 'oficial': 5} · status {'validada': 8, 'em_revisao': 7} · dificuldade {'dificil': 2, 'media': 9, 'facil': 4}
 
-## 1. OFI-000020 — Governança corporativa e de TI
-
-*Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 59.* · item 4 · Fácil · gabarito **C**
-
-A **governança** (corporativa, e a de TI como parte dela) é o conjunto de processos, políticas e estruturas para assegurar que a organização, e sua TI, sirvam aos objetivos, com conformidade regulatória e ética. A gestão executa; a governança dirige e monitora.
-
-- **A)** Incorreta. Marketing trata de mercado e posicionamento.
-- **B)** Incorreta. Gestão de serviços de TI cuida da entrega e do suporte de serviços (ITIL), e não do alinhamento estratégico e regulatório global.
-- **C)** Correta. Governança é o conceito descrito.
-- **D)** Incorreta. Gerenciamento de projetos organiza entregas temporárias.
-- **E)** Incorreta. Planejamento de RH trata de pessoas.
-
-**Revisão rápida:** Governança: direcionar, avaliar, monitorar (ISO 38500).
-
-## 2. AUT-000039 — Economia da inovação: tipos de inovação
+## 1. AUT-000039 — Economia da inovação: tipos de inovação
 
 *Questão autoral — estilo Cesgranrio.* · item 4.2 · Difícil · gabarito **E**
 
@@ -36,7 +22,7 @@ A **inovação disruptiva** (Christensen) começa com um produto ou serviço **i
 
 **Revisão rápida:** Disruptiva: inicialmente inferior e simples, conquista nichos e desloca líderes. Sustentadora: melhora produtos existentes. Incremental/radical: grau de novidade.
 
-## 3. OFI-000021 — Economia da inovação: custo de oportunidade
+## 2. OFI-000021 — Economia da inovação: custo de oportunidade
 
 *Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 60.* · item 4.2 · Média · gabarito **B**
 
@@ -50,21 +36,7 @@ A **inovação disruptiva** (Christensen) começa com um produto ou serviço **i
 
 **Revisão rápida:** Custo de oportunidade = valor da melhor alternativa sacrificada.
 
-## 4. AUT-000040 — Ciência, pesquisa e desenvolvimento: níveis de prontidão tecnológica (TRL)
-
-*Questão autoral — estilo Cesgranrio.* · item 4.4 · Fácil · gabarito **B**
-
-Na escala TRL: **TRL 4** – validação em laboratório; **TRL 5** – validação em ambiente relevante; **TRL 6** – demonstração em ambiente relevante; **TRL 7** – **demonstração de protótipo em ambiente operacional**; **TRL 8** – sistema completo e qualificado; **TRL 9** – sistema comprovado em operação real. O cenário (protótipo em duto real, sem qualificação do sistema completo) corresponde ao **TRL 7**.
-
-- **A)** Incorreta. TRL 6 é a demonstração em ambiente relevante, que o protótipo já superou; agora a demonstração é em ambiente operacional.
-- **B)** Correta. Demonstração de protótipo em ambiente operacional: TRL 7.
-- **C)** Incorreta. TRL 8 exige sistema completo e qualificado; o enunciado informa que a qualificação ainda não ocorreu.
-- **D)** Incorreta. TRL 9 exige sistema comprovado em operação real; aqui o protótipo está sendo demonstrado.
-- **E)** Incorreta. TRL 4 é a validação em laboratório, etapa anterior, já concluída.
-
-**Revisão rápida:** TRL: 1 princípios; 2 conceito; 3 prova de conceito; 4 laboratório; 5 validação em ambiente relevante; 6 demonstração em ambiente relevante; 7 protótipo em ambiente operacional; 8 sistema qualificado; 9 comprovado em operação.
-
-## 5. AUT-000035 — ITSM: gerenciamento de incidentes e de problemas
+## 3. AUT-000035 — ITSM: gerenciamento de incidentes e de problemas
 
 *Questão autoral — estilo Cesgranrio.* · item 4.5 · Média · gabarito **C**
 
@@ -78,7 +50,7 @@ O **incidente** é a interrupção não planejada ou degradação do serviço, e
 
 **Revisão rápida:** Incidente: restaurar rápido (workaround). Problema: investigar a causa raiz e eliminar a recorrência. Erro conhecido: causa conhecida com solução de contorno.
 
-## 6. AUT-000037 — ITSM: tipos de mudança no ITIL 4
+## 4. AUT-000037 — ITSM: tipos de mudança no ITIL 4
 
 *Questão autoral — estilo Cesgranrio.* · item 4.5 · Fácil · gabarito **A**
 
@@ -92,7 +64,7 @@ No ITIL 4, as mudanças são classificadas em **padrão** (pré-autorizada, de b
 
 **Revisão rápida:** Padrão: pré-autorizada, baixo risco. Normal: avaliada e autorizada. Emergencial: urgente.
 
-## 7. AUT-000036 — ITSM: acordos de nível de serviço (SLA, OLA e UC)
+## 5. AUT-000036 — ITSM: acordos de nível de serviço (SLA, OLA e UC)
 
 *Questão autoral — estilo Cesgranrio.* · item 4.5 · Média · gabarito **D**
 
@@ -106,7 +78,21 @@ O **SLA** (*Service Level Agreement*) é firmado entre **provedor e cliente** e 
 
 **Revisão rápida:** SLA: provedor e cliente. OLA: equipes internas. UC: provedor e fornecedor externo.
 
-## 8. AUT-000105 — ITSM: gerenciamento de incidentes x problemas
+## 6. OFI-000129 — ITIL: objetivo do gerenciamento de incidentes
+
+*Questão oficial — Fundação Cesgranrio, Petroquímica Suape PSP nº 1/2012, Prova 6, questão 54.* · item 4.5 · Fácil · gabarito **A**
+
+O **gerenciamento de incidentes** visa **restaurar a operação normal do serviço o mais rápido possível**, minimizando o impacto no negócio. Prevenir recorrência é objetivo do **gerenciamento de problemas**; controlar versões, de **liberação**; impacto de mudanças, de **mudanças**; ativos e itens de configuração, de **configuração**.
+
+- **A)** Correta. Restaurar o serviço rapidamente: incidentes.
+- **B)** Incorreta. Instalações de versões seguras e testadas: gerenciamento de liberação e implantação.
+- **C)** Incorreta. Prevenir incidentes recorrentes: gerenciamento de problemas.
+- **D)** Incorreta. Impacto das mudanças: gerenciamento de mudanças.
+- **E)** Incorreta. Ativos e itens de configuração: gerenciamento de configuração e ativos.
+
+**Revisão rápida:** Incidentes: restaurar o serviço rapidamente.
+
+## 7. AUT-000105 — ITSM: gerenciamento de incidentes x problemas
 
 *Questão autoral — estilo Cesgranrio.* · item 4.5 · Média · gabarito **A**
 
@@ -120,7 +106,7 @@ Em ITSM (ITIL), **incidente** é a interrupção não planejada; o objetivo é *
 
 **Revisão rápida:** Incidente restaura; problema elimina a causa; mudança implanta a correção.
 
-## 9. OFI-000023 — KPIs em gerenciamento de serviços de TI
+## 8. OFI-000023 — KPIs em gerenciamento de serviços de TI
 
 *Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 66.* · item 4.5 · Média · gabarito **D**
 
@@ -133,6 +119,20 @@ KPIs são indicadores **escolhidos conforme os objetivos de negócio** para medi
 - **E)** Incorreta. A definição e o rastreamento dependem de dados coletados por ferramentas de monitoramento.
 
 **Revisão rápida:** KPI: métrica escolhida a partir do objetivo de negócio.
+
+## 9. OFI-000127 — Maturidade dos processos de TI e relacionamento com o negócio
+
+*Questão oficial — Fundação Cesgranrio, Petroquímica Suape PSP nº 1/2012, Prova 6, questão 50.* · item 4.5 · Média · gabarito **B**
+
+Processos **sem planejamento coordenado**, decisões tomadas fora da TI e atuação reativa caracterizam o **nível inicial (ad hoc)** dos modelos de maturidade (como CMMI e COBIT): resultados dependem de iniciativas individuais, sem padronização.
+
+- **A)** Incorreta. "Implícito e flexível" não é nível de maturidade padrão.
+- **B)** Correta. Atuação reativa, sem coordenação e sem padrão: nível inicial/ad hoc.
+- **C)** Incorreta. Otimizado e ágil seria o estágio mais alto, com melhoria contínua.
+- **D)** Incorreta. Gerenciado supõe medição e controle, o que não ocorre.
+- **E)** Incorreta. "Repetível, porém improvável" não é nível padrão.
+
+**Revisão rápida:** Ad hoc: sem processo, reativo.
 
 ## 10. AUT-000033 — LGPD: hipóteses de tratamento (bases legais)
 

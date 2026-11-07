@@ -2,7 +2,7 @@
  "modulo": "Questões oficiais — m07-analise-dados",
  "lote": "T04 — Transpetro 2023 (Prova 6) e 2018 (Prova 15)",
  "data": "2026-11-06",
- "total": 2,
+ "total": 5,
  "questoes": [
   {
    "id": "OFI-000032",
@@ -118,6 +118,188 @@
     "situacao_gabarito": "de terceiros (Ética), alterado em 09/05/2018; não validado contra a banca",
     "aderencia_edital": "parcial",
     "url": "banco-questoes/oficiais/fontes-brutas/transpetro-2018-prova15-analista-sistemas-jr-processos-negocio.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000106",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Petrobras PSP RH 2017.2, Prova 3, questão 44.",
+   "modulo": "07-analise-dados",
+   "assunto": "Modelo estrela: tabela fato e dimensões",
+   "item_edital": "7.7",
+   "id_matriz": "E5-066",
+   "itens_secundarios": [
+    "1.7"
+   ],
+   "dificuldade": "facil",
+   "habilidade": "aplicacao",
+   "tipo_questao": "cenario",
+   "enunciado": "Ao construir um modelo de dados para um data warehouse de sua empresa, um desenvolvedor viu-se às voltas com três tabelas relacionais: venda, cliente e vendedor.\nAo fazer uma transformação para o modelo estrela, ele deve organizar:",
+   "alternativas": {
+    "A": "venda, como tabela fato; cliente e vendedor, como tabelas dimensão",
+    "B": "cliente e vendedor, como tabelas fato; venda, como tabela dimensão",
+    "C": "cliente, como tabela fato; venda e vendedor, como tabelas dimensão",
+    "D": "vendedor e venda, como tabelas fato; cliente, como tabela dimensão",
+    "E": "vendedor, como tabela fato; cliente e venda, como tabelas dimensão"
+   },
+   "gabarito": "A",
+   "resolucao": "A **tabela fato** registra o **evento de negócio mensurável** (a venda, com suas medidas: valor, quantidade); as **dimensões** descrevem o contexto (**quem** comprou, **quem** vendeu, quando, onde). Venda = fato; cliente e vendedor = dimensões.",
+   "analise_alternativas": {
+    "A": "Correta. Venda é o evento medido (fato); cliente e vendedor descrevem o contexto (dimensões).",
+    "B": "Incorreta. Inverte: cliente e vendedor são contexto, e não eventos medidos.",
+    "C": "Incorreta. Cliente não é evento; a venda também não é dimensão.",
+    "D": "Incorreta. Vendedor não é evento mensurável.",
+    "E": "Incorreta. Vendedor não é fato, e a venda é o evento central."
+   },
+   "fundamentacao": {
+    "item": "7.7",
+    "arquivo_teoria": "conteudo/07-analise-dados/06-modelagem-multidimensional.md"
+   },
+   "ponto_atencao": "Pergunta-guia: **\"o que está sendo medido?\"** (fato). As dimensões respondem a **quem, o quê, onde, quando**.",
+   "revisao_rapida": "Fato = evento medido; dimensão = contexto.",
+   "tags": [
+    "modelo-estrela",
+    "tabela-fato",
+    "petrobras-2018",
+    "oficial",
+    "facil",
+    "aplicacao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Petrobras PSP RH 2017.2 (prova de 18/03/2018)",
+    "cargo": "Analista de Sistemas Júnior — Processos de Negócio",
+    "ano": 2018,
+    "prova": "Prova 3",
+    "numero_original": 44,
+    "id_prova": "PRV-011",
+    "situacao_gabarito": "de espelho (PCI), fornecido pelo usuário; preliminar/definitivo não indicado; anulações não verificadas; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/candidatas-2026-11-04/petrobras-2018-analista-sistemas-jr-processos-negocio-prova.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000119",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Petrobras PSP-RH-1/2006, Caderno de Analista de Sistemas Pleno, questão 45.",
+   "modulo": "07-analise-dados",
+   "assunto": "Esquema estrela: tabelas periféricas desnormalizadas",
+   "item_edital": "7.7",
+   "id_matriz": "E5-066",
+   "itens_secundarios": [
+    "1.7"
+   ],
+   "dificuldade": "media",
+   "habilidade": "compreensao",
+   "tipo_questao": "conceitual",
+   "enunciado": "Bases de dados de sistemas de informações gerenciais são projetadas, muitas vezes, em um esquema denominado estrela que:",
+   "alternativas": {
+    "A": "é uma arquitetura física que permite definir somente estruturas unidimensionais de dados.",
+    "B": "é composta por uma tabela central, denominada de dimensão, e várias tabelas periféricas a ela relacionadas, denominadas fatos.",
+    "C": "apresenta tabelas periféricas que se encontram desnormalizadas.",
+    "D": "faz com que a expansão e a evolução da base de dados necessite de grande atividade de manutenção.",
+    "E": "é um esquema onde o número de junções realizadas é relativamente maior que o realizado em bases de dados relacionais convencionais."
+   },
+   "gabarito": "C",
+   "resolucao": "No **esquema estrela**, uma **tabela fato** central (medidas e chaves) liga-se a **tabelas dimensão** periféricas, em geral **desnormalizadas** (atributos hierárquicos na mesma tabela), o que reduz o número de junções. No **floco de neve**, as dimensões são normalizadas.",
+   "analise_alternativas": {
+    "A": "Incorreta. O esquema é lógico (modelo dimensional) e multidimensional.",
+    "B": "Incorreta. Inverte: a tabela central é o fato, e as periféricas são dimensões.",
+    "C": "Correta. As dimensões desnormalizadas são característica do estrela.",
+    "D": "Incorreta. O estrela é simples de evoluir (novas dimensões e medidas são acrescentadas com facilidade).",
+    "E": "Incorreta. O estrela exige **menos** junções que um modelo normalizado, em geral."
+   },
+   "fundamentacao": {
+    "item": "7.7",
+    "arquivo_teoria": "conteudo/07-analise-dados/06-modelagem-multidimensional.md"
+   },
+   "ponto_atencao": "Estrela: dimensões **desnormalizadas**, poucas junções. Floco de neve: dimensões **normalizadas**, mais junções, menos redundância.",
+   "revisao_rapida": "Estrela: fato central + dimensões desnormalizadas.",
+   "tags": [
+    "esquema-estrela",
+    "petrobras-2006",
+    "oficial",
+    "media",
+    "compreensao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Petrobras PSP-RH-1/2006 (aplicação em 07/05/2006)",
+    "cargo": "Analista de Sistemas Pleno — Processos",
+    "ano": 2006,
+    "prova": "Caderno de Analista de Sistemas Pleno (questões 21 a 60)",
+    "numero_original": 45,
+    "id_prova": "PRV-007",
+    "situacao_gabarito": "de espelho (Estude Grátis); recursos não verificados; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/candidatas-2026-11-04/petrobras-2006-analista-sistemas-pleno-processos-prova.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000120",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Petrobras PSP-RH-1/2006, Caderno de Analista de Sistemas Pleno, questão 46.",
+   "modulo": "07-analise-dados",
+   "assunto": "Modelagem multidimensional (afirmação INCORRETA)",
+   "item_edital": "7.7",
+   "id_matriz": "E5-066",
+   "itens_secundarios": [
+    "1.7"
+   ],
+   "dificuldade": "media",
+   "habilidade": "analise",
+   "tipo_questao": "conceitual",
+   "enunciado": "Sobre o processo de modelagem multidimensional, assinale a afirmação INCORRETA.",
+   "alternativas": {
+    "A": "Busca-se obter um modelo que possibilite a realização, pelos usuários, de grandes quantidades de operações de atualização dos dados.",
+    "B": "A definição dos fatos em um modelo pode ser obtida através da identificação da resposta à pergunta \"o que está sendo medido?\".",
+    "C": "A identificação de padrões de acesso pode levar a realização de pré-sumarizações (pré-agregação) dos dados, de forma a acelerar à realização de consultas.",
+    "D": "As dimensões, usualmente, estão relacionadas com as respostas a perguntas como: \"quando?\", \"o que?\", \"onde?\" e \"quem?\".",
+    "E": "O modelo multidimensional é orientado a assuntos."
+   },
+   "gabarito": "A",
+   "resolucao": "O modelo multidimensional serve a **consultas analíticas** (leitura, agregação), e não a **grandes volumes de atualizações** de usuários, que é característica de sistemas **transacionais (OLTP)**. Os demais itens descrevem corretamente a modelagem.",
+   "analise_alternativas": {
+    "A": "Correta. Incorreta, pois descreve OLTP; o DW é carregado em lote e consultado.",
+    "B": "Incorreta. Fatos respondem \"o que está sendo medido?\".",
+    "C": "Incorreta. Pré-agregações aceleram consultas frequentes.",
+    "D": "Incorreta. Dimensões respondem a quando, o quê, onde e quem.",
+    "E": "Incorreta. O DW (e o modelo multidimensional) é orientado a assunto."
+   },
+   "fundamentacao": {
+    "item": "7.7",
+    "arquivo_teoria": "conteudo/07-analise-dados/06-modelagem-multidimensional.md"
+   },
+   "ponto_atencao": "OLTP: muitas **escritas** curtas; OLAP/DW: **leituras** analíticas, cargas em lote.",
+   "revisao_rapida": "Multidimensional: consulta analítica, não atualização transacional.",
+   "tags": [
+    "multidimensional",
+    "dw",
+    "petrobras-2006",
+    "oficial",
+    "media",
+    "analise"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Petrobras PSP-RH-1/2006 (aplicação em 07/05/2006)",
+    "cargo": "Analista de Sistemas Pleno — Processos",
+    "ano": 2006,
+    "prova": "Caderno de Analista de Sistemas Pleno (questões 21 a 60)",
+    "numero_original": 46,
+    "id_prova": "PRV-007",
+    "situacao_gabarito": "de espelho (Estude Grátis); recursos não verificados; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/candidatas-2026-11-04/petrobras-2006-analista-sistemas-pleno-processos-prova.pdf",
     "sha256": "ver docs/estrategia/base-provas.md"
    },
    "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",

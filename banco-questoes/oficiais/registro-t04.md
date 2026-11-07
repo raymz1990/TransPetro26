@@ -1,11 +1,11 @@
 # Registro da T04 — questões oficiais transcritas
 
-**Atualizado:** 2026-11-06. 105 questões transcritas dos cadernos em `fontes-brutas/` (texto e alternativas conferidos), com comentário de cada alternativa. Lotes: **Transpetro 2023, Prova 6** (PRV-005, 41), **Transpetro 2018, Prova 15** (PRV-006, 22), **Caixa 2021, TI** (PRV-008, 11; gabarito **oficial**), **BNDES 2024 Cibersegurança** (PRV-010, 17) e **BNDES 2024 Desenvolvimento** (PRV-014, 14) (gabarito final após recursos). Status `em_revisao`: aguardam validação do usuário.
+**Atualizado:** 2026-11-06. 129 questões transcritas dos cadernos em `fontes-brutas/` (texto e alternativas conferidos), com comentário de cada alternativa. Lotes: Transpetro 2023 (PRV-005, 41), Transpetro 2018 (PRV-006, 22), **Caixa 2021 TI** (PRV-008, 11; gabarito **oficial**), **BNDES 2024** Cibersegurança (PRV-010, 17) e Desenvolvimento (PRV-014, 14) (final após recursos), Petrobras 2018 (PRV-011, 13), Petrobras 2006 (PRV-007, 5) e Suape 2012 (PRV-009, 6). Status `em_revisao`: aguardam validação do usuário.
 
 
 ## Limites
 
-- Gabaritos: 2023 e 2018 são **espelhos de terceiros** (QConcursos; Ética), **não validados contra a banca**; Caixa 2021 é **oficial** (portal da Cesgranrio); BNDES 2024 é o **final após recursos** (documento da banca, via espelho).
+- Gabaritos: 2023 e 2018 são **espelhos de terceiros** (QConcursos; Ética), **não validados contra a banca**; Caixa 2021 é **oficial** (portal da Cesgranrio); BNDES 2024 é o **final após recursos** (documento da banca, via espelho); Petrobras 2006 e 2018 e Suape 2012 são espelhos de terceiros, **não validados contra a banca**.
 - Os comentários são do projeto; enunciado e alternativas são da prova. Aderência por questão está em `fonte_origem.aderencia_edital`.
 - **Pontos de atenção** nas próprias questões: 2023 Q55 (alternativa B incompleta, por exclusão), Q70, Q44 (ISO 27002:2013 × 2022), Q24 e Q60; 2018 Q46 (numeração da ISO 27002:2005 de memória), Q38 (consultas não executadas, dialeto Oracle), Q27 e Q57 (alternativas próximas).
 - Pontos de atenção do lote 3: BNDES Q55 é da edição 2021 do OWASP Top 10 (há edição 2025); Q66 usa a lista de 14 táticas do ATT&CK (a v19 tem 15); Caixa Q60 (periodicidade da Res. CMN 4.893) sem consulta ao texto da norma; BNDES Q38 e Q43 exigem leitura atenta das justificativas.
@@ -119,14 +119,41 @@
 | OFI-000103 | PRV-014 | 68 | HIS-000353 | 1.1 | DER: especialização total e sobreposta | A |
 | OFI-000104 | PRV-014 | 69 | HIS-000354 | 1.14 | Nível de isolamento SERIALIZABLE | C |
 | OFI-000105 | PRV-014 | 70 | HIS-000355 | 1.11 | DDL: cláusula CHECK | B |
+| OFI-000106 | PRV-011 | 44 | HIS-000259 | 7.7 | Modelo estrela: tabela fato e dimensões | A |
+| OFI-000107 | PRV-011 | 45 | HIS-000260 | 5.4 | Verificação x validação | E |
+| OFI-000108 | PRV-011 | 50 | HIS-000265 | 5.1 | Requisitos não funcionais (alternativa NÃO) | D |
+| OFI-000109 | PRV-011 | 51 | HIS-000266 | 5.2 | Escolha do modelo de processo: incremental | B |
+| OFI-000110 | PRV-011 | 55 | HIS-000270 | 5.1 | Engenharia de requisitos: prática da etapa de análise | B |
+| OFI-000111 | PRV-011 | 63 | HIS-000278 | 9.19 | Assinatura digital: finalidade do hash | B |
+| OFI-000112 | PRV-011 | 64 | HIS-000279 | 9.4 | Ataques passivos e requisito ameaçado | A |
+| OFI-000113 | PRV-011 | 65 | HIS-000280 | 9.18 | ISO 27002: diretrizes de classificação da informação | E |
+| OFI-000114 | PRV-011 | 66 | HIS-000281 | 9.8 | Single Sign-On | B |
+| OFI-000115 | PRV-011 | 67 | HIS-000282 | 8.1 | Equivalência lógica: contrapositiva | C |
+| OFI-000116 | PRV-011 | 68 | HIS-000283 | 8.8 | Valor lógico de proposições compostas | E |
+| OFI-000117 | PRV-011 | 69 | HIS-000284 | 8.2 | Argumento válido: conclusão que decorre das premissas | A |
+| OFI-000118 | PRV-011 | 70 | HIS-000285 | 8.6 | Regras de inferência de um argumento | D |
+| OFI-000119 | PRV-007 | 45 | HIS-000125 | 7.7 | Esquema estrela: tabelas periféricas desnormalizadas | C |
+| OFI-000120 | PRV-007 | 46 | HIS-000126 | 7.7 | Modelagem multidimensional (afirmação INCORRETA) | A |
+| OFI-000121 | PRV-007 | 49 | HIS-000129 | 5.1 | Análise e gerenciamento de requisitos (afirmação FALSA) | C |
+| OFI-000122 | PRV-007 | 54 | HIS-000134 | 5.4 | Estratégias de teste: caixa-preta, caixa-branca, integração, recuperação, alfa e beta | D |
+| OFI-000123 | PRV-007 | 55 | HIS-000135 | 5.3 | UML 1.4 x UML 2.0: novos diagramas | A |
+| OFI-000124 | PRV-009 | 34 | HIS-000174 | 5.3 | Projeto de software: encapsulamento, coesão e acoplamento | B |
+| OFI-000125 | PRV-009 | 36 | HIS-000176 | 5.1 | Engenharia de requisitos: propósito da validação | B |
+| OFI-000126 | PRV-009 | 37 | HIS-000177 | 5.3 | Casos de uso, decomposição funcional e classes conceituais (asserção e razão) | E |
+| OFI-000127 | PRV-009 | 50 | HIS-000190 | 4.5 | Maturidade dos processos de TI e relacionamento com o negócio | B |
+| OFI-000128 | PRV-009 | 51 | HIS-000191 | 9.16 | Risco, ameaça e vulnerabilidade (asserção e razão) | E |
+| OFI-000129 | PRV-009 | 54 | HIS-000194 | 4.5 | ITIL: objetivo do gerenciamento de incidentes | A |
 
 ## Candidatas ainda não transcritas
 
 - **PRV-005:** Q21, Q22 e Q27 (diagramas), Q23 (enunciado incompleto na extração), Q30 (parcial), Q62 (duas alternativas defensáveis).
 - **PRV-006:** Q34 (gabarito a verificar), Q39 a Q42 (figuras e tabelas), Q62 e Q66 (PMBOK 6, gabarito discutível), Q67 (alternativa A ausente na extração), Q69 (símbolos perdidos).
-- **PRV-008, PRV-010, PRV-014:** as com figuras, as de código (Java, Python) fora do escopo já excluídas, e algumas com alternativas cortadas na extração (por exemplo, BNDES Cibersegurança Q37, Q39, Q46, Q49, Q57, Q60, Q64; Desenvolvimento Q47, Q61 a Q64).
-- **PRV-007 (Petrobras 2006), PRV-009 (Suape 2012), PRV-011 (Petrobras 2018) e PRV-012 (BB 2021):** não iniciadas.
+- **PRV-008, PRV-010, PRV-014:** as com figuras, as de código fora do escopo e algumas com alternativas cortadas na extração.
+- **PRV-011 (Petrobras 2018):** Q21 a Q25 (projetos, com tabelas ou dados em figura), Q42 e Q43 (gabarito de espelho duvidoso: a "velocidade" do Big Data costuma ser definida como o fluxo de dados, e a Q43 cita Inmon), Q54 (tabela de transações ausente), Q56 e Q58 (diagrama/tabelas).
+- **PRV-007 (Petrobras 2006):** Q47 e Q48 (gabarito de espelho incoerente com a bibliografia usual do RUP e das técnicas de levantamento), Q21 a Q26, Q28, Q29, Q34 a Q39, Q41, Q44, Q51, Q58 a Q60 (figuras, símbolos perdidos ou dependência de esquemas).
+- **PRV-009 (Suape 2012):** as com diagramas (Q33, Q35, Q41, Q45), Q38, Q42, Q53 (tabela ambígua), Q55 a Q57, Q59 e Q60.
+- **PRV-012 (BB 2021):** **nenhuma transcrita**. O arquivo de gabarito traz mais de um bloco (Agente Comercial e Agente de Tecnologia) e não foi possível confirmar qual coluna vale para o caderno "Gabarito 1"; além disso, a Q38 consta como D no catálogo, mas a resolução (214 linhas no LEFT JOIN contra 190 no JOIN) indica que **T1 tem linhas sem correspondente em T2 (alternativa C)**. Conferir o gabarito oficial antes de usar.
 
 ## Pendências da T04
 
-Das **229 candidatas**, **105 foram transcritas**; **124 continuam pendentes**. A T04 **continua parcial**. Questões adaptadas (`ADP-`) não foram criadas. Provas com gabarito de espelho (2006, 2012, 2018 e BB 2021) exigem conferência do gabarito na T13.
+Das **229 candidatas**, **129 foram transcritas**; **100 continuam pendentes**. A T04 **continua parcial**. Questões adaptadas (`ADP-`) não foram criadas. Provas com gabarito de espelho (2006, 2012, 2018 e BB 2021) exigem conferência do gabarito na T13.

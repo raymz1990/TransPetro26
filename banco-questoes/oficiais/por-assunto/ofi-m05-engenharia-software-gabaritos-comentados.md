@@ -419,3 +419,203 @@ No **acoplamento de conteúdo** um módulo **acessa ou modifica diretamente o co
 **Revisão rápida:** Conteúdo: um módulo mexe nos internos de outro.
 
 **Fonte:** Fundação Cesgranrio, BNDES, Edital 1/2024, Analista — Análise de Sistemas: Desenvolvimento (2024), prova Prova 3 (manhã), questão 45; gabarito: final após recursos (documento da banca, via espelho QConcursos).
+
+## OFI-000107 — Verificação x validação
+
+*Questão oficial — Fundação Cesgranrio, Petrobras PSP RH 2017.2, Prova 3, questão 45.*
+
+**Gabarito: E**
+
+**Verificação** confirma, com evidência objetiva, que os **requisitos especificados foram cumpridos** ("estamos construindo o produto corretamente?"). **Validação** confirma que o produto atende ao **uso pretendido** e às necessidades do usuário ("estamos construindo o produto certo?").
+
+- **A)** Incorreta. Auditoria avalia conformidade com processos e padrões, de forma independente.
+- **B)** Incorreta. Garantia de qualidade assegura que processos e padrões sejam seguidos, sem testar os requisitos em si.
+- **C)** Incorreta. Resolução de problemas trata do registro e da solução de problemas detectados.
+- **D)** Incorreta. Validação confere o uso pretendido no ambiente do usuário, e não o cumprimento dos requisitos especificados.
+- **E)** Correta. Confirmar requisitos especificados com evidência objetiva: verificação.
+
+**Ponto de atenção:** Texto de **ISO/IEC 12207**: verificação = requisitos **especificados** cumpridos; validação = requisitos para o **uso pretendido** cumpridos.
+
+**Revisão rápida:** Verificação: produto conforme a especificação.
+
+**Fonte:** Fundação Cesgranrio, Petrobras PSP RH 2017.2 (prova de 18/03/2018), Analista de Sistemas Júnior — Processos de Negócio (2018), prova Prova 3, questão 45; gabarito: de espelho (PCI), fornecido pelo usuário; preliminar/definitivo não indicado; anulações não verificadas; não validado contra a banca.
+
+## OFI-000108 — Requisitos não funcionais (alternativa NÃO)
+
+*Questão oficial — Fundação Cesgranrio, Petrobras PSP RH 2017.2, Prova 3, questão 50.*
+
+**Gabarito: D**
+
+Requisitos **não funcionais** descrevem **qualidades e restrições**: desempenho, disponibilidade, conformidade legal, portabilidade. "O usuário deve selecionar o cinema" descreve **uma função** (interação do sistema): requisito **funcional**.
+
+- **A)** Incorreta. Restrição de desempenho (tempo de resposta): não funcional.
+- **B)** Incorreta. Disponibilidade (99,5%): não funcional.
+- **C)** Incorreta. Conformidade com a legislação (formato do bilhete): restrição não funcional.
+- **D)** Correta. Escolha do cinema é funcionalidade do sistema: requisito funcional, ou seja, a sentença que NÃO atende ao pedido.
+- **E)** Incorreta. Compatibilidade com smartphone (portabilidade/plataforma): não funcional.
+
+**Ponto de atenção:** Em questões "NÃO", o alvo é o **requisito funcional**. Teste: a frase descreve **o que o sistema faz** (funcional) ou **quão bem/sob que restrição** (não funcional)?
+
+**Revisão rápida:** Funcional = função; não funcional = qualidade ou restrição.
+
+**Fonte:** Fundação Cesgranrio, Petrobras PSP RH 2017.2 (prova de 18/03/2018), Analista de Sistemas Júnior — Processos de Negócio (2018), prova Prova 3, questão 50; gabarito: de espelho (PCI), fornecido pelo usuário; preliminar/definitivo não indicado; anulações não verificadas; não validado contra a banca.
+
+## OFI-000109 — Escolha do modelo de processo: incremental
+
+*Questão oficial — Fundação Cesgranrio, Petrobras PSP RH 2017.2, Prova 3, questão 51.*
+
+**Gabarito: B**
+
+Requisitos ainda incertos, **primeira versão com as funcionalidades mais importantes** e **versões sucessivas mais completas**, com equipe pequena: **modelo incremental**. O **espiral** exige análise de riscos explícita em cada volta, o que o usuário rejeita; o **cascata** exige requisitos fechados.
+
+- **A)** Incorreta. RAD pressupõe ciclos muito curtos, componentes reutilizáveis e equipes maiores, o que não é o caso.
+- **B)** Correta. Entregas sucessivas, cada vez mais completas, com equipe pequena: incremental.
+- **C)** Incorreta. Cascata exige requisitos definidos antes do desenvolvimento.
+- **D)** Incorreta. Espiral depende de análise de riscos em cada iteração, que o usuário recusou.
+- **E)** Incorreta. Desenvolvimento baseado em componentes depende de repositório de componentes reutilizáveis.
+
+**Ponto de atenção:** Palavras-chave: **"versões sucessivas e cada vez mais completas"** = incremental. Procure também o que **elimina** os outros modelos (risco recusado elimina o espiral).
+
+**Revisão rápida:** Incremental: entrega por partes, cada vez mais completa.
+
+**Fonte:** Fundação Cesgranrio, Petrobras PSP RH 2017.2 (prova de 18/03/2018), Analista de Sistemas Júnior — Processos de Negócio (2018), prova Prova 3, questão 51; gabarito: de espelho (PCI), fornecido pelo usuário; preliminar/definitivo não indicado; anulações não verificadas; não validado contra a banca.
+
+## OFI-000110 — Engenharia de requisitos: prática da etapa de análise
+
+*Questão oficial — Fundação Cesgranrio, Petrobras PSP RH 2017.2, Prova 3, questão 55.*
+
+**Gabarito: B**
+
+Na **análise**, os requisitos elicitados são **estruturados e modelados**, e os conflitos são resolvidos; **identificar e modelar casos de uso** é prática de análise. Protótipos servem à elicitação e à validação; inspeção de documentos e critérios de aceitação, à validação; registrar regras, à especificação.
+
+- **A)** Incorreta. Protótipos auxiliam a elicitação e a validação.
+- **B)** Correta. Identificar e modelar casos de uso organiza e analisa os requisitos.
+- **C)** Incorreta. Inspecionar documentos é prática de validação.
+- **D)** Incorreta. Critérios de aceitação ligam-se à especificação e à validação.
+- **E)** Incorreta. Registrar regras de negócio é parte da especificação.
+
+**Ponto de atenção:** Etapas: **elicitação** (obter), **análise** (modelar, priorizar, negociar), **especificação** (documentar), **validação** (confirmar com o cliente). A fronteira entre análise e especificação pode variar entre autores; o gabarito privilegia a modelagem.
+
+**Revisão rápida:** Análise: modelar e negociar requisitos (casos de uso).
+
+**Fonte:** Fundação Cesgranrio, Petrobras PSP RH 2017.2 (prova de 18/03/2018), Analista de Sistemas Júnior — Processos de Negócio (2018), prova Prova 3, questão 55; gabarito: de espelho (PCI), fornecido pelo usuário; preliminar/definitivo não indicado; anulações não verificadas; não validado contra a banca.
+
+## OFI-000121 — Análise e gerenciamento de requisitos (afirmação FALSA)
+
+*Questão oficial — Fundação Cesgranrio, Petrobras PSP-RH-1/2006, Caderno de Analista de Sistemas Pleno, questão 49.*
+
+**Gabarito: C**
+
+As melhores práticas de engenharia de requisitos são aplicadas pelo **analista/engenheiro de requisitos**, e não pelo **cliente**, que descreve suas necessidades. As demais afirmações estão corretas.
+
+- **A)** Incorreta. Verdadeira: o custo de correção cresce com o tempo.
+- **B)** Incorreta. Verdadeira: elicitação identifica; especificação formaliza.
+- **C)** Correta. Falsa: quem aplica as práticas é a equipe de engenharia de requisitos.
+- **D)** Incorreta. Verdadeira: define o gerenciamento de requisitos (rastreabilidade e controle de mudanças).
+- **E)** Incorreta. Verdadeira: mudanças de requisitos têm impacto em prazo, recursos e tecnologia.
+
+**Ponto de atenção:** Em questões "FALSO", procure o **sujeito trocado** (quem faz o quê). A afirmação A é a base do argumento de **shift left**.
+
+**Revisão rápida:** Práticas de requisitos: aplicadas pela equipe técnica.
+
+**Fonte:** Fundação Cesgranrio, Petrobras PSP-RH-1/2006 (aplicação em 07/05/2006), Analista de Sistemas Pleno — Processos (2006), prova Caderno de Analista de Sistemas Pleno (questões 21 a 60), questão 49; gabarito: de espelho (Estude Grátis); recursos não verificados; não validado contra a banca.
+
+## OFI-000122 — Estratégias de teste: caixa-preta, caixa-branca, integração, recuperação, alfa e beta
+
+*Questão oficial — Fundação Cesgranrio, Petrobras PSP-RH-1/2006, Caderno de Analista de Sistemas Pleno, questão 54.*
+
+**Gabarito: D**
+
+O **teste de recuperação** (*recovery testing*) é um **teste de sistema** que força o software a falhar de várias maneiras e verifica se a recuperação ocorre corretamente, de forma automática ou com intervenção humana. As outras alternativas contêm trocas conceituais.
+
+- **A)** Incorreta. Descreve a **caixa-branca** (estrutura de controle, caminho básico) e atribui a ela técnicas de caixa-preta e vice-versa.
+- **B)** Incorreta. Atribui à caixa-branca técnicas de **caixa-preta** (particionamento de equivalência, matriz ortogonal), e a define como validação funcional.
+- **C)** Incorreta. Descreve o **teste de unidade** como se fosse o de integração.
+- **D)** Correta. Define corretamente o teste de recuperação como teste de sistema.
+- **E)** Incorreta. O **beta** é feito **no ambiente do cliente**, sem controle do desenvolvedor; e "gama" não é fase padrão descrita assim.
+
+**Ponto de atenção:** Caixa-preta: **funcional** (equivalência, valor-limite, matriz ortogonal). Caixa-branca: **estrutural** (caminho básico, cobertura). Alfa: no desenvolvedor; beta: no cliente, sem controle do desenvolvedor.
+
+**Revisão rápida:** Recuperação: força falhas e verifica o restabelecimento.
+
+**Fonte:** Fundação Cesgranrio, Petrobras PSP-RH-1/2006 (aplicação em 07/05/2006), Analista de Sistemas Pleno — Processos (2006), prova Caderno de Analista de Sistemas Pleno (questões 21 a 60), questão 54; gabarito: de espelho (Estude Grátis); recursos não verificados; não validado contra a banca.
+
+## OFI-000123 — UML 1.4 x UML 2.0: novos diagramas
+
+*Questão oficial — Fundação Cesgranrio, Petrobras PSP-RH-1/2006, Caderno de Analista de Sistemas Pleno, questão 55.*
+
+**Gabarito: A**
+
+A UML 2.0 introduziu, entre os diagramas de **interação**, o de **Visão Geral da Interação** (que mescla atividades com interações) e o de **Tempo** (*timing*, que mostra mudanças de estado ao longo do tempo), além do de **Estrutura de Composição** e do de **Pacotes** como diagrama próprio.
+
+- **A)** Correta. Descreve corretamente os dois novos diagramas de interação.
+- **B)** Incorreta. Estereótipos, valores etiquetados e restrições já existiam na UML 1.x; não são novos mecanismos.
+- **C)** Incorreta. A afirmação mistura a história de diagramas de estados e não descreve uma substituição de "diagrama de Máquina de Estados de Protocolo" da UML 1.4.
+- **D)** Incorreta. O diagrama de Pacotes não foi substituído por uma visão combinada.
+- **E)** Incorreta. O diagrama de Componentes continua existindo na UML 2.0; a Estrutura de Composição é um **acréscimo**.
+
+**Ponto de atenção:** UML 2.x: **14 diagramas** (7 estruturais e 7 comportamentais). Novos na 2.0: **Visão Geral da Interação, Tempo, Estrutura de Composição** (e Comunicação, renomeado de Colaboração).
+
+**Revisão rápida:** UML 2.0 acrescentou Visão Geral da Interação e Tempo.
+
+**Fonte:** Fundação Cesgranrio, Petrobras PSP-RH-1/2006 (aplicação em 07/05/2006), Analista de Sistemas Pleno — Processos (2006), prova Caderno de Analista de Sistemas Pleno (questões 21 a 60), questão 55; gabarito: de espelho (Estude Grátis); recursos não verificados; não validado contra a banca.
+
+## OFI-000124 — Projeto de software: encapsulamento, coesão e acoplamento
+
+*Questão oficial — Fundação Cesgranrio, Petroquímica Suape PSP nº 1/2012, Prova 6, questão 34.*
+
+**Gabarito: B**
+
+Um bom projeto **maximiza a coesão** (partes com responsabilidade única e focada) e o **encapsulamento** (ocultação de detalhes internos) e **minimiza o acoplamento** (dependência entre partes). Entre as opções, só B apresenta o par correto na ordem pedida (maximizar encapsulamento, minimizar acoplamento).
+
+- **A)** Incorreta. Minimizar a coesão é indesejável.
+- **B)** Correta. Maximizar encapsulamento e minimizar acoplamento: projeto adequado.
+- **C)** Incorreta. Maximizar acoplamento e minimizar coesão é o contrário do desejável.
+- **D)** Incorreta. Maximizar acoplamento é indesejável.
+- **E)** Incorreta. Minimizar encapsulamento é indesejável.
+
+**Ponto de atenção:** **Alta coesão, baixo acoplamento.** A questão não oferece "coesão e acoplamento": a opção B é a única sem erro.
+
+**Revisão rápida:** Maximizar coesão e encapsulamento; minimizar acoplamento.
+
+**Fonte:** Fundação Cesgranrio, Petroquímica Suape PSP nº 1/2012 (22/04/2012), Analista de Sistemas Júnior — Ênfase em Negócio (2012), prova Prova 6, questão 34; gabarito: de espelho (Estude Grátis), após recursos; não validado contra a banca.
+
+## OFI-000125 — Engenharia de requisitos: propósito da validação
+
+*Questão oficial — Fundação Cesgranrio, Petroquímica Suape PSP nº 1/2012, Prova 6, questão 36.*
+
+**Gabarito: B**
+
+A **validação de requisitos** verifica se os requisitos especificados **correspondem às necessidades reais dos usuários** ("o produto certo"), por revisões, protótipos e testes de aceitação. Rastreabilidade (D) e priorização por risco (A) são outras atividades.
+
+- **A)** Incorreta. Priorização por risco é atividade de gerenciamento, e não propósito da validação.
+- **B)** Correta. Conformidade com as necessidades dos usuários é o propósito da validação.
+- **C)** Incorreta. Aumentar a abstração na comunicação não é o propósito.
+- **D)** Incorreta. Rastrear requisitos é atividade de gerenciamento de requisitos.
+- **E)** Incorreta. Reúso de requisitos voláteis não é propósito da validação.
+
+**Ponto de atenção:** Gabarito alterado após recursos (a alternativa indicada é B). **Validação** = necessidades do usuário; **verificação** = conformidade com a especificação.
+
+**Revisão rápida:** Validação de requisitos: atendem ao que o usuário precisa?
+
+**Fonte:** Fundação Cesgranrio, Petroquímica Suape PSP nº 1/2012 (22/04/2012), Analista de Sistemas Júnior — Ênfase em Negócio (2012), prova Prova 6, questão 36; gabarito: de espelho (Estude Grátis), após recursos; não validado contra a banca.
+
+## OFI-000126 — Casos de uso, decomposição funcional e classes conceituais (asserção e razão)
+
+*Questão oficial — Fundação Cesgranrio, Petroquímica Suape PSP nº 1/2012, Prova 6, questão 37.*
+
+**Gabarito: E**
+
+Segundo o gabarito, as duas são falsas: a **decomposição funcional** é característica do paradigma **estruturado**; casos de uso descrevem **interações ator-sistema** (visão externa), e não uma decomposição funcional. Já o **modelo de classes conceituais** representa conceitos do **domínio** (atributos e relacionamentos), sem **métodos** resultantes de decomposição funcional.
+
+- **A)** Incorreta. A primeira é falsa; logo a segunda não pode justificá-la.
+- **B)** Incorreta. A primeira é falsa.
+- **C)** Incorreta. A segunda é falsa: classes conceituais não resultam de decomposição funcional.
+- **D)** Incorreta. A primeira é falsa (casos de uso não são decomposição funcional).
+- **E)** Correta. As duas afirmações são falsas.
+
+**Ponto de atenção:** Em asserção e razão, avalie **cada afirmação sozinha** antes de julgar a relação. Casos de uso ≠ decomposição funcional (estruturado); classes conceituais ≠ classes de projeto com métodos.
+
+**Revisão rápida:** Caso de uso: interação ator–sistema; classe conceitual: conceito do domínio.
+
+**Fonte:** Fundação Cesgranrio, Petroquímica Suape PSP nº 1/2012 (22/04/2012), Analista de Sistemas Júnior — Ênfase em Negócio (2012), prova Prova 6, questão 37; gabarito: de espelho (Estude Grátis), após recursos; não validado contra a banca.

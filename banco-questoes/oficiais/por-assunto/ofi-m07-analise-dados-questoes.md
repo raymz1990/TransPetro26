@@ -32,3 +32,40 @@ Com base na descrição acima, o tipo de Sistema de Informação utilizado por e
 (C) Sistema Especialista
 (D) Sistema de Suporte à Decisão
 (E) Sistema de Processamento de Transações
+
+## OFI-000106 — Modelo estrela: tabela fato e dimensões
+
+*Questão oficial — Fundação Cesgranrio, Petrobras PSP RH 2017.2, Prova 3, questão 44.* · item 7.7 · Fácil
+
+Ao construir um modelo de dados para um data warehouse de sua empresa, um desenvolvedor viu-se às voltas com três tabelas relacionais: venda, cliente e vendedor.
+Ao fazer uma transformação para o modelo estrela, ele deve organizar:
+
+(A) venda, como tabela fato; cliente e vendedor, como tabelas dimensão
+(B) cliente e vendedor, como tabelas fato; venda, como tabela dimensão
+(C) cliente, como tabela fato; venda e vendedor, como tabelas dimensão
+(D) vendedor e venda, como tabelas fato; cliente, como tabela dimensão
+(E) vendedor, como tabela fato; cliente e venda, como tabelas dimensão
+
+## OFI-000119 — Esquema estrela: tabelas periféricas desnormalizadas
+
+*Questão oficial — Fundação Cesgranrio, Petrobras PSP-RH-1/2006, Caderno de Analista de Sistemas Pleno, questão 45.* · item 7.7 · Média
+
+Bases de dados de sistemas de informações gerenciais são projetadas, muitas vezes, em um esquema denominado estrela que:
+
+(A) é uma arquitetura física que permite definir somente estruturas unidimensionais de dados.
+(B) é composta por uma tabela central, denominada de dimensão, e várias tabelas periféricas a ela relacionadas, denominadas fatos.
+(C) apresenta tabelas periféricas que se encontram desnormalizadas.
+(D) faz com que a expansão e a evolução da base de dados necessite de grande atividade de manutenção.
+(E) é um esquema onde o número de junções realizadas é relativamente maior que o realizado em bases de dados relacionais convencionais.
+
+## OFI-000120 — Modelagem multidimensional (afirmação INCORRETA)
+
+*Questão oficial — Fundação Cesgranrio, Petrobras PSP-RH-1/2006, Caderno de Analista de Sistemas Pleno, questão 46.* · item 7.7 · Média
+
+Sobre o processo de modelagem multidimensional, assinale a afirmação INCORRETA.
+
+(A) Busca-se obter um modelo que possibilite a realização, pelos usuários, de grandes quantidades de operações de atualização dos dados.
+(B) A definição dos fatos em um modelo pode ser obtida através da identificação da resposta à pergunta "o que está sendo medido?".
+(C) A identificação de padrões de acesso pode levar a realização de pré-sumarizações (pré-agregação) dos dados, de forma a acelerar à realização de consultas.
+(D) As dimensões, usualmente, estão relacionadas com as respostas a perguntas como: "quando?", "o que?", "onde?" e "quem?".
+(E) O modelo multidimensional é orientado a assuntos.

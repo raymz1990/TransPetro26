@@ -6,7 +6,7 @@
 
 **Observações:** Disjunto do SIM-ESP-01. Contém questões oficiais (Transpetro 2023) e autorais da expansão T05, ainda `em_revisao` (aguardam validação do usuário).
 
-Composição: tipo {'oficial': 26, 'autoral': 24} · status {'em_revisao': 39, 'validada': 11} · dificuldade {'media': 28, 'facil': 15, 'dificil': 7}
+Composição: tipo {'oficial': 27, 'autoral': 23} · status {'em_revisao': 39, 'validada': 11} · dificuldade {'media': 26, 'facil': 17, 'dificil': 7}
 
 ## 1. OFI-000002 — Desempenho de banco de dados: desnormalização controlada
 
@@ -442,33 +442,33 @@ O **data warehouse** é **orientado a assunto, integrado, histórico e não vol�
 
 **Revisão rápida:** DW = integração + histórico + análise.
 
-## 32. OFI-000055 — Sistema de Suporte à Decisão (tipo de sistema de informação)
+## 32. OFI-000106 — Modelo estrela: tabela fato e dimensões
 
-*Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 54.* · item 7.11 · Média · gabarito **D**
+*Questão oficial — Fundação Cesgranrio, Petrobras PSP RH 2017.2, Prova 3, questão 44.* · item 7.7 · Fácil · gabarito **A**
 
-O **Sistema de Suporte à Decisão (SSD/DSS)** usa **modelos e dados** para apoiar decisões semiestruturadas, com análise e **otimização** ("quais caminhões alocar para maximizar o lucro?").
+A **tabela fato** registra o **evento de negócio mensurável** (a venda, com suas medidas: valor, quantidade); as **dimensões** descrevem o contexto (**quem** comprou, **quem** vendeu, quando, onde). Venda = fato; cliente e vendedor = dimensões.
 
-- **A)** Incorreta. CRM gerencia o relacionamento com clientes.
-- **B)** Incorreta. SIG produz relatórios gerenciais de rotina, resumindo dados, sem modelagem de otimização.
-- **C)** Incorreta. Sistemas especialistas reproduzem o raciocínio de especialistas com base de regras.
-- **D)** Correta. Modelagem e otimização para apoiar decisões: SSD.
-- **E)** Incorreta. Processamento de transações registra eventos operacionais (vendas, pagamentos).
+- **A)** Correta. Venda é o evento medido (fato); cliente e vendedor descrevem o contexto (dimensões).
+- **B)** Incorreta. Inverte: cliente e vendedor são contexto, e não eventos medidos.
+- **C)** Incorreta. Cliente não é evento; a venda também não é dimensão.
+- **D)** Incorreta. Vendedor não é evento mensurável.
+- **E)** Incorreta. Vendedor não é fato, e a venda é o evento central.
 
-**Revisão rápida:** SSD = modelos e otimização para decisões semiestruturadas.
+**Revisão rápida:** Fato = evento medido; dimensão = contexto.
 
-## 33. AUT-000110 — BI como suporte à tomada de decisão
+## 33. OFI-000119 — Esquema estrela: tabelas periféricas desnormalizadas
 
-*Questão autoral — estilo Cesgranrio.* · item 7.11 · Média · gabarito **A**
+*Questão oficial — Fundação Cesgranrio, Petrobras PSP-RH-1/2006, Caderno de Analista de Sistemas Pleno, questão 45.* · item 7.7 · Média · gabarito **C**
 
-O BI **transforma dados em informação para apoiar decisões** nos níveis estratégico, tático e operacional, entregando visão integrada, histórica e tempestiva. Ele **apoia**, e não **substitui** o decisor, e depende da **qualidade dos dados** e do alinhamento aos indicadores do negócio.
+No **esquema estrela**, uma **tabela fato** central (medidas e chaves) liga-se a **tabelas dimensão** periféricas, em geral **desnormalizadas** (atributos hierárquicos na mesma tabela), o que reduz o número de junções. No **floco de neve**, as dimensões são normalizadas.
 
-- **A)** Correta. Descreve o papel do BI: apoiar a decisão com informação integrada e confiável.
-- **B)** Incorreta. Nenhuma ferramenta garante decisão ótima; o decisor continua responsável.
-- **C)** Incorreta. BI depende de qualidade de dados; "lixo entra, lixo sai".
-- **D)** Incorreta. BI atende aos três níveis decisórios.
-- **E)** Incorreta. O DW é a base integrada que costuma alimentar os painéis; não é dispensável.
+- **A)** Incorreta. O esquema é lógico (modelo dimensional) e multidimensional.
+- **B)** Incorreta. Inverte: a tabela central é o fato, e as periféricas são dimensões.
+- **C)** Correta. As dimensões desnormalizadas são característica do estrela.
+- **D)** Incorreta. O estrela é simples de evoluir (novas dimensões e medidas são acrescentadas com facilidade).
+- **E)** Incorreta. O estrela exige **menos** junções que um modelo normalizado, em geral.
 
-**Revisão rápida:** BI apoia decisões em todos os níveis; não decide sozinho.
+**Revisão rápida:** Estrela: fato central + dimensões desnormalizadas.
 
 ## 34. AUT-000067 — Modelagem multidimensional: tipos de tabela fato
 
@@ -484,21 +484,7 @@ Na tabela fato de **snapshot acumulativo**, há **uma linha por ciclo de process
 
 **Revisão rápida:** Acumulativo: linha por ciclo, atualizada nas etapas. Periódico: retrato por período. Transacional: um evento.
 
-## 35. AUT-000070 — Insights e BI na tomada de decisão: correlação e causalidade
-
-*Questão autoral — estilo Cesgranrio.* · item 7.10 · Difícil · gabarito **B**
-
-Duas séries que variam juntas têm **correlação**, o que **não implica causalidade**: pode haver um **fator comum** (sazonalidade, chuvas e maior volume de pedidos). Um bom **insight** é uma descoberta **relevante e acionável**, obtida com a verificação de hipóteses e a validação da qualidade e do contexto; o BI **apoia** a decisão, mas não a substitui, e exige cuidado com vieses (como correlação × causalidade).
-
-- **A)** Incorreta. A coincidência temporal não comprova causa e efeito; aceitar a conclusão seria cair na falácia da correlação como causalidade.
-- **B)** Correta. Reconhece o limite da correlação e propõe investigar fatores comuns antes da decisão.
-- **C)** Incorreta. Dashboards e *drill-down* servem justamente à investigação; rejeitar sem análise ignora o papel do BI na geração de insights.
-- **D)** Incorreta. O BI sustenta decisões baseadas em dados, com os devidos cuidados; trocar a análise por uma pesquisa não resolve a dúvida causal.
-- **E)** Incorreta. Esperar sem analisar fatores externos adia a decisão sem testar hipóteses; um bom analista investiga os fatores plausíveis agora.
-
-**Revisão rápida:** Insight: descoberta relevante e acionável. Vieses: correlação×causalidade, confirmação, seleção, cherry-picking.
-
-## 36. AUT-000068 — Manipulação de dados em planilhas: SOMASES
+## 35. AUT-000068 — Manipulação de dados em planilhas: SOMASES
 
 *Questão autoral — estilo Cesgranrio.* · item 7.9 · Média · gabarito **C**
 
@@ -511,6 +497,20 @@ A função `SOMASES` soma os valores de C que atendem a **todos** os critérios 
 - **E)** Incorreta. 170 é a soma da região Sul (80 + 90), que o critério não seleciona.
 
 **Revisão rápida:** SOMASES(soma; critério1_intervalo; critério1; ...): soma as células que atendem a todos os critérios.
+
+## 36. AUT-000070 — Insights e BI na tomada de decisão: correlação e causalidade
+
+*Questão autoral — estilo Cesgranrio.* · item 7.10 · Difícil · gabarito **B**
+
+Duas séries que variam juntas têm **correlação**, o que **não implica causalidade**: pode haver um **fator comum** (sazonalidade, chuvas e maior volume de pedidos). Um bom **insight** é uma descoberta **relevante e acionável**, obtida com a verificação de hipóteses e a validação da qualidade e do contexto; o BI **apoia** a decisão, mas não a substitui, e exige cuidado com vieses (como correlação × causalidade).
+
+- **A)** Incorreta. A coincidência temporal não comprova causa e efeito; aceitar a conclusão seria cair na falácia da correlação como causalidade.
+- **B)** Correta. Reconhece o limite da correlação e propõe investigar fatores comuns antes da decisão.
+- **C)** Incorreta. Dashboards e *drill-down* servem justamente à investigação; rejeitar sem análise ignora o papel do BI na geração de insights.
+- **D)** Incorreta. O BI sustenta decisões baseadas em dados, com os devidos cuidados; trocar a análise por uma pesquisa não resolve a dúvida causal.
+- **E)** Incorreta. Esperar sem analisar fatores externos adia a decisão sem testar hipóteses; um bom analista investiga os fatores plausíveis agora.
+
+**Revisão rápida:** Insight: descoberta relevante e acionável. Vieses: correlação×causalidade, confirmação, seleção, cherry-picking.
 
 ## 37. OFI-000033 — Argumento válido: conclusão a partir das premissas
 
@@ -526,47 +526,47 @@ Para que todas as premissas sejam verdadeiras, a **Premissa 2** exige D verdadei
 
 **Revisão rápida:** Premissas V ⇒ D=V, E=F, A=V, B=V.
 
-## 38. OFI-000034 — Consequência lógica de sentença quantificada
+## 38. OFI-000117 — Argumento válido: conclusão que decorre das premissas
 
-*Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 35.* · item 8.4 · Média · gabarito **B**
+*Questão oficial — Fundação Cesgranrio, Petrobras PSP RH 2017.2, Prova 3, questão 69.* · item 8.2 · Difícil · gabarito **A**
 
-Simbolicamente: ∀x (P(x) → (M(x) ∨ E(x))). A **contrapositiva** é ∀x (¬(M(x) ∨ E(x)) → ¬P(x)), ou seja, quem não é médico nem enfermeiro não é profissional do posto, que é a alternativa B.
+Premissa 3: **r = V e s = V**, logo (~r) ˅ (~s) = F. Pela premissa 1, p → F exige **p = F**. Na premissa 2, com p = F: (p ˅ ~q) = ~q deve ser V, então **q = F**; e (q ˅ ~p) = V ˅ ... = V. Logo p = F e q = F, e a conclusão que decorre é **~(p ˅ q)** (V).
 
-- **A)** Incorreta. Confunde "ou" com "e"; não decorre.
-- **B)** Correta. É a contrapositiva da sentença original, equivalente a ela.
-- **C)** Incorreta. A sentença admite quem seja ambos; nada impede.
-- **D)** Incorreta. Contradiz a sentença, que diz que todos são médicos ou enfermeiros.
-- **E)** Incorreta. A sentença usa "ou" inclusivo e não proíbe quem seja ambos.
+- **A)** Correta. Com p = F e q = F, p ˅ q = F e ~(p ˅ q) = V: decorre das premissas.
+- **B)** Incorreta. (~q) ˄ p exige p = V, mas p = F.
+- **C)** Incorreta. (~p) ˄ q exige q = V, mas q = F.
+- **D)** Incorreta. p ˄ q exige p = V.
+- **E)** Incorreta. p ˅ q é F.
 
-**Revisão rápida:** P→Q ≡ ¬Q→¬P.
+**Revisão rápida:** Único modelo: r, s verdadeiros; p, q falsos.
 
-## 39. AUT-000077 — Lógica de predicados: negação de sentenças quantificadas
+## 39. AUT-000074 — Tautologia, contradição e contingência
 
-*Questão autoral — estilo Cesgranrio.* · item 8.4 · Média · gabarito **A**
+*Questão autoral — estilo Cesgranrio.* · item 8.8 · Média · gabarito **E**
 
-A negação de **∀x P(x)** é **∃x ¬P(x)**. Assim, ¬∀x (C(x) → S(x)) ≡ ∃x ¬(C(x) → S(x)) ≡ **∃x (C(x) ∧ ¬S(x))**: "existe equipamento crítico que não possui sensor". A negação de "todos" não é "nenhum".
+**I:** é falsa quando p ou q é verdadeira e a conjunção é falsa (por exemplo, p = V e q = F) e é verdadeira quando p = q = V: **contingência**. **II:** (p → q) exige que não ocorra p ∧ ¬q, mas a segunda parte exige exatamente p ∧ ¬q: nunca é verdadeira, **contradição**. **III:** se p ∧ q é verdadeira, p ∨ q também é: o condicional nunca é falso, **tautologia**.
 
-- **A)** Correta. ∃x (C(x) ∧ ¬S(x)).
-- **B)** Incorreta. "Nenhum equipamento crítico possui sensor" é ∀x (C(x) → ¬S(x)), mais forte que a negação; a negação de "todos" é "algum não".
-- **C)** Incorreta. "Todo equipamento crítico não possui sensor" tem o mesmo sentido da alternativa B (∀x (C(x) → ¬S(x))) e afirma mais do que a negação exige.
-- **D)** Incorreta. Trata de equipamento **não** crítico; o que nega a sentença é a existência de um equipamento crítico sem sensor.
-- **E)** Incorreta. Um equipamento crítico com sensor é compatível com a sentença original; não a nega.
+- **A)** Incorreta. A fórmula I não é tautologia (é falsa para p = V e q = F) e a III não é contingência (nunca é falsa).
+- **B)** Incorreta. A fórmula II não é tautologia (nunca é verdadeira) e a III não é contradição.
+- **C)** Incorreta. A fórmula I não é contradição (é verdadeira para p = q = V) e a II não é contingência.
+- **D)** Incorreta. A fórmula I não é tautologia, e a III não é contradição (é sempre verdadeira).
+- **E)** Correta. I: contingência; II: contradição; III: tautologia.
 
-**Revisão rápida:** ¬∀x(C→S) ≡ ∃x(C ∧ ¬S). Traduzir: ∀ com →, ∃ com ∧.
+**Revisão rápida:** Tabela com 2ⁿ linhas. Tautologia (todas V), contradição (todas F), contingência (misto).
 
-## 40. AUT-000078 — Lógica de predicados: ordem dos quantificadores
+## 40. AUT-000079 — Regras de formação de fórmulas
 
-*Questão autoral — estilo Cesgranrio.* · item 8.4 · Difícil · gabarito **C**
+*Questão autoral — estilo Cesgranrio.* · item 8.5 · Fácil · gabarito **E**
 
-Se existe um supervisor de **todos** (II), então **todo** técnico tem **algum** supervisor (I): II ⇒ I. A recíproca é falsa: cada técnico pode ter o seu próprio supervisor, sem que um único seja supervisor de todos (por exemplo, dois técnicos e dois supervisores, cada um supervisionando um técnico). Quantificadores de **tipos diferentes não comutam**.
+Pelas regras de formação: toda letra sentencial é fórmula; se A é fórmula, ¬A é fórmula; se A e B são fórmulas, (A ∧ B), (A ∨ B) e (A → B) são fórmulas; **nada mais** é fórmula. A expressão **((p ∧ q) → ¬r)** é construída por essas regras: (p ∧ q) é fórmula; ¬r é fórmula; o condicional entre elas é fórmula.
 
-- **A)** Incorreta. A ordem de ∀ e ∃ altera o significado: "cada um tem um" é mais fraco que "um para todos".
-- **B)** Incorreta. Inverte a implicação: II implica I, e não o contrário.
-- **C)** Correta. II ⇒ I, mas I ⇏ II.
-- **D)** Incorreta. Há implicação de II para I; a vinculação existe em um sentido.
-- **E)** Incorreta. A negação de I seria ∃x ∀y ¬S(y, x); II não é a negação de I (pode haver modelos em que ambas são verdadeiras).
+- **A)** Incorreta. Tem dois conectivos binários seguidos (∧ ∨), sem que haja fórmula entre eles.
+- **B)** Incorreta. Tem parênteses desbalanceados (abre e não fecha).
+- **C)** Incorreta. A disjunção está sem o segundo argumento (falta uma fórmula depois de ∨).
+- **D)** Incorreta. Faltam o conectivo entre p e q; duas letras justapostas não formam fórmula.
+- **E)** Correta. Construída pelas regras: ¬ aplicado a r; ∧ entre p e q; → entre as duas fórmulas.
 
-**Revisão rápida:** ∃y∀x R ⇒ ∀x∃y R, mas não o contrário. Contraexemplo: cada técnico com um supervisor distinto.
+**Revisão rápida:** Fórmula: átomo; ¬A; (A∧B); (A∨B); (A→B); (A↔B); nada mais. Conectivo principal = último introduzido.
 
 ## 41. OFI-000035 — SDL: testes SAST x DAST
 

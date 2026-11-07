@@ -2,7 +2,7 @@
  "modulo": "Questões oficiais — m09-seguranca-informacao",
  "lote": "T04 — Transpetro 2023 (Prova 6) e 2018 (Prova 15)",
  "data": "2026-11-06",
- "total": 35,
+ "total": 40,
  "questoes": [
   {
    "id": "OFI-000035",
@@ -2081,6 +2081,304 @@
     "situacao_gabarito": "final após recursos (documento da banca, via espelho QConcursos)",
     "aderencia_edital": "aderente",
     "url": "banco-questoes/oficiais/fontes-brutas/candidatas-2026-11-04/bndes-2024-desenvolvimento-manha-prova.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000111",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Petrobras PSP RH 2017.2, Prova 3, questão 63.",
+   "modulo": "09-seguranca-informacao",
+   "assunto": "Assinatura digital: finalidade do hash",
+   "item_edital": "9.19",
+   "id_matriz": null,
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "compreensao",
+   "tipo_questao": "conceitual",
+   "enunciado": "A Infraestrutura de Chaves Públicas Brasileira regula a validação de uma assinatura digital ICP-Brasil, realizada sobre um documento eletrônico, com o estabelecimento de alguns critérios.\nUm desses critérios utiliza resultados hash do documento, que têm como uma de suas finalidades",
+   "alternativas": {
+    "A": "facilitar a criptografia do documento original.",
+    "B": "assegurar a integridade do conteúdo digital, mostrando que não houve alteração desse conteúdo desde a criação da assinatura digital pelo signatário.",
+    "C": "assegurar a autoria, decifrando a assinatura digital com a chave criptográfica secreta, contida no certificado digital do signatário.",
+    "D": "proporcionar a recuperação do documento original com a aplicação da chave secreta do destinatário sobre o hash.",
+    "E": "proporcionar a recuperação do documento original com a aplicação da chave pública do remetente sobre o hash."
+   },
+   "gabarito": "B",
+   "resolucao": "O **hash** é um **resumo de tamanho fixo** do documento. Na assinatura digital, o signatário cifra o hash com sua **chave privada**; o verificador recalcula o hash e compara com o decifrado (com a **chave pública**): se coincidem, o conteúdo **não foi alterado** (integridade). O hash **não permite recuperar** o documento (função unidirecional).",
+   "analise_alternativas": {
+    "A": "Incorreta. O hash não facilita a criptografia do documento.",
+    "B": "Correta. O hash comprova a integridade desde a assinatura.",
+    "C": "Incorreta. A decifragem usa a chave **pública** do signatário (a secreta nunca consta do certificado).",
+    "D": "Incorreta. O hash não permite recuperar o documento original, nem com chave secreta.",
+    "E": "Incorreta. O hash não permite recuperar o documento, nem com a chave pública."
+   },
+   "fundamentacao": {
+    "item": "9.19",
+    "arquivo_teoria": "conteudo/09-seguranca-informacao/11-iso-27002.md"
+   },
+   "ponto_atencao": "Hash: **unidirecional**, serve para **integridade**. A autoria decorre da **chave privada** do signatário usada para cifrar o hash.",
+   "revisao_rapida": "Hash = integridade; não reversível.",
+   "tags": [
+    "assinatura-digital",
+    "hash",
+    "petrobras-2018",
+    "oficial",
+    "media",
+    "compreensao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Petrobras PSP RH 2017.2 (prova de 18/03/2018)",
+    "cargo": "Analista de Sistemas Júnior — Processos de Negócio",
+    "ano": 2018,
+    "prova": "Prova 3",
+    "numero_original": 63,
+    "id_prova": "PRV-011",
+    "situacao_gabarito": "de espelho (PCI), fornecido pelo usuário; preliminar/definitivo não indicado; anulações não verificadas; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/candidatas-2026-11-04/petrobras-2018-analista-sistemas-jr-processos-negocio-prova.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000112",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Petrobras PSP RH 2017.2, Prova 3, questão 64.",
+   "modulo": "09-seguranca-informacao",
+   "assunto": "Ataques passivos e requisito ameaçado",
+   "item_edital": "9.4",
+   "id_matriz": null,
+   "itens_secundarios": [
+    "9.1"
+   ],
+   "dificuldade": "facil",
+   "habilidade": "compreensao",
+   "tipo_questao": "conceitual",
+   "enunciado": "Os sistemas computacionais estão sujeitos a ataques tanto passivos quanto ativos.\nAtaques passivos, tais como o monitoramento ou a análise de tráfego, ameaçam principalmente os requisitos de",
+   "alternativas": {
+    "A": "confidencialidade",
+    "B": "irretratabilidade",
+    "C": "autenticidade",
+    "D": "disponibilidade",
+    "E": "integridade"
+   },
+   "gabarito": "A",
+   "resolucao": "Ataques **passivos** (escuta e análise de tráfego) **observam** sem alterar os dados e ameaçam a **confidencialidade**. Ataques **ativos** (disfarce, modificação, repetição, negação de serviço) ameaçam integridade, autenticidade e disponibilidade.",
+   "analise_alternativas": {
+    "A": "Correta. Observar ou analisar o tráfego compromete o sigilo: confidencialidade.",
+    "B": "Incorreta. A irretratabilidade é ameaçada por negação de autoria, em ataques ativos.",
+    "C": "Incorreta. A autenticidade é ameaçada por disfarce (ataque ativo).",
+    "D": "Incorreta. A disponibilidade é ameaçada por negação de serviço (ataque ativo).",
+    "E": "Incorreta. A integridade é ameaçada por modificação de dados (ataque ativo)."
+   },
+   "fundamentacao": {
+    "item": "9.4",
+    "arquivo_teoria": "conteudo/09-seguranca-informacao/03-ameacas-e-malwares.md"
+   },
+   "ponto_atencao": "Passivo = **escuta** → confidencialidade. Ativo = **altera ou interrompe** → integridade, autenticidade, disponibilidade.",
+   "revisao_rapida": "Passivo ameaça confidencialidade.",
+   "tags": [
+    "ataques-passivos",
+    "petrobras-2018",
+    "oficial",
+    "facil",
+    "compreensao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Petrobras PSP RH 2017.2 (prova de 18/03/2018)",
+    "cargo": "Analista de Sistemas Júnior — Processos de Negócio",
+    "ano": 2018,
+    "prova": "Prova 3",
+    "numero_original": 64,
+    "id_prova": "PRV-011",
+    "situacao_gabarito": "de espelho (PCI), fornecido pelo usuário; preliminar/definitivo não indicado; anulações não verificadas; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/candidatas-2026-11-04/petrobras-2018-analista-sistemas-jr-processos-negocio-prova.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000113",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Petrobras PSP RH 2017.2, Prova 3, questão 65.",
+   "modulo": "09-seguranca-informacao",
+   "assunto": "ISO 27002: diretrizes de classificação da informação",
+   "item_edital": "9.18",
+   "id_matriz": null,
+   "itens_secundarios": [
+    "9.19"
+   ],
+   "dificuldade": "media",
+   "habilidade": "memorizacao",
+   "tipo_questao": "normativa",
+   "enunciado": "A norma ISO 27002 estabelece que o objetivo da classificação das informações (atribuição de grau de confidencialidade) é a garantia de que os ativos de informação receberão um nível de proteção adequado. Ainda segundo a norma, as informações devem ser classificadas para indicar a necessidade, as prioridades e o grau de proteção.\nCom base nesse objetivo, a norma estabelece diretrizes para essa classificação, entre as quais se inclui a de",
+   "alternativas": {
+    "A": "atribuir o processo de revisão do nível de confidencialidade de um documento à alta gerência.",
+    "B": "manter a responsabilidade pela atribuição do nível de confidencialidade de um documento com o setor de TI.",
+    "C": "manter os rótulos de classificação originais nos documentos oriundos de outras organizações.",
+    "D": "manter o princípio de equidade que garante aos funcionários com funções similares o mesmo direito de acesso às informações classificadas.",
+    "E": "rotular as informações e as saídas geradas pelos sistemas que tratam dados confidenciais, segundo seu valor e sensibilidade para a organização."
+   },
+   "gabarito": "E",
+   "resolucao": "A ISO/IEC 27002 (seção de **classificação e rotulagem**) recomenda que as informações e as **saídas dos sistemas que tratam dados sensíveis** sejam **rotuladas** conforme **valor, requisitos legais, sensibilidade e criticidade**; o **proprietário** do ativo classifica e a classificação é **revisada periodicamente**.",
+   "analise_alternativas": {
+    "A": "Incorreta. A revisão fica com o proprietário da informação, e não necessariamente com a alta gerência.",
+    "B": "Incorreta. A atribuição cabe ao **proprietário** da informação, e a TI é custodiante.",
+    "C": "Incorreta. Informação oriunda de outra organização pode ter esquema de classificação diferente e exige **mapeamento**, e não manutenção cega dos rótulos.",
+    "D": "Incorreta. A norma não prescreve \"princípio de equidade\" para a classificação.",
+    "E": "Correta. A rotulagem de informações e saídas dos sistemas, conforme valor e sensibilidade, é diretriz da norma."
+   },
+   "fundamentacao": {
+    "item": "9.18",
+    "arquivo_teoria": "conteudo/09-seguranca-informacao/10-politicas-e-classificacao.md"
+   },
+   "ponto_atencao": "Palavras-chave: **rotular + valor + sensibilidade**. Quem classifica: **proprietário**; TI: custodiante.",
+   "revisao_rapida": "27002: classificar e rotular conforme valor e sensibilidade.",
+   "tags": [
+    "classificacao",
+    "iso-27002",
+    "petrobras-2018",
+    "oficial",
+    "media",
+    "memorizacao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Petrobras PSP RH 2017.2 (prova de 18/03/2018)",
+    "cargo": "Analista de Sistemas Júnior — Processos de Negócio",
+    "ano": 2018,
+    "prova": "Prova 3",
+    "numero_original": 65,
+    "id_prova": "PRV-011",
+    "situacao_gabarito": "de espelho (PCI), fornecido pelo usuário; preliminar/definitivo não indicado; anulações não verificadas; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/candidatas-2026-11-04/petrobras-2018-analista-sistemas-jr-processos-negocio-prova.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000114",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Petrobras PSP RH 2017.2, Prova 3, questão 66.",
+   "modulo": "09-seguranca-informacao",
+   "assunto": "Single Sign-On",
+   "item_edital": "9.8",
+   "id_matriz": null,
+   "itens_secundarios": [],
+   "dificuldade": "facil",
+   "habilidade": "compreensao",
+   "tipo_questao": "conceitual",
+   "enunciado": "Em ambientes computacionais, muitas aplicações que oferecem funcionalidades distintas são usadas simultaneamente pelos usuários.\nPara possibilitar esse uso simultâneo, sem que o usuário tenha de fazer autenticações distintas em cada uma das aplicações, os administradores podem implantar uma infraestrutura de autenticação com suporte a",
+   "alternativas": {
+    "A": "Unique Login Control (ULC)",
+    "B": "Single Sign-On (SSO)",
+    "C": "One-Time Password (OTP)",
+    "D": "One-Time Token (OTT)",
+    "E": "Unique-Auth Database (UAD)"
+   },
+   "gabarito": "B",
+   "resolucao": "No **SSO**, o usuário se autentica **uma vez** e acessa várias aplicações sem novas autenticações. OTP e OTT são senhas e tokens de uso único (segundo fator), e ULC e UAD não são mecanismos conhecidos.",
+   "analise_alternativas": {
+    "A": "Incorreta. \"Unique Login Control\" não é padrão conhecido.",
+    "B": "Correta. Autenticar uma vez e acessar várias aplicações: SSO.",
+    "C": "Incorreta. OTP é senha descartável, usada como fator de autenticação.",
+    "D": "Incorreta. OTT é token de uso único.",
+    "E": "Incorreta. \"Unique-Auth Database\" não é padrão conhecido."
+   },
+   "fundamentacao": {
+    "item": "9.8",
+    "arquivo_teoria": "conteudo/09-seguranca-informacao/05-vpn-mdm-sso-mfa-iam.md"
+   },
+   "ponto_atencao": "SSO ≠ MFA ≠ OTP: SSO reduz **autenticações repetidas**; OTP/MFA reforçam **a autenticação**.",
+   "revisao_rapida": "SSO: uma autenticação, vários sistemas.",
+   "tags": [
+    "sso",
+    "petrobras-2018",
+    "oficial",
+    "facil",
+    "compreensao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Petrobras PSP RH 2017.2 (prova de 18/03/2018)",
+    "cargo": "Analista de Sistemas Júnior — Processos de Negócio",
+    "ano": 2018,
+    "prova": "Prova 3",
+    "numero_original": 66,
+    "id_prova": "PRV-011",
+    "situacao_gabarito": "de espelho (PCI), fornecido pelo usuário; preliminar/definitivo não indicado; anulações não verificadas; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/candidatas-2026-11-04/petrobras-2018-analista-sistemas-jr-processos-negocio-prova.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000128",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Petroquímica Suape PSP nº 1/2012, Prova 6, questão 51.",
+   "modulo": "09-seguranca-informacao",
+   "assunto": "Risco, ameaça e vulnerabilidade (asserção e razão)",
+   "item_edital": "9.16",
+   "id_matriz": null,
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "analise",
+   "tipo_questao": "conceitual",
+   "enunciado": "Os riscos de segurança da informação crescem com a redução das ameaças.\nPORQUE\nOs riscos de segurança da informação diminuem com o aumento das vulnerabilidades.\n\nAnalisando-se as afirmações acima, conclui-se que",
+   "alternativas": {
+    "A": "as duas afirmações são verdadeiras, e a segunda justifica a primeira.",
+    "B": "as duas afirmações são verdadeiras, e a segunda não justifica a primeira.",
+    "C": "a primeira afirmação é verdadeira, e a segunda é falsa.",
+    "D": "a primeira afirmação é falsa, e a segunda é verdadeira.",
+    "E": "as duas afirmações são falsas."
+   },
+   "gabarito": "E",
+   "resolucao": "O **risco** cresce com o **aumento** das **ameaças** e das **vulnerabilidades** (e do impacto). Reduzir ameaças **diminui** o risco, e aumentar vulnerabilidades **o aumenta**. As duas afirmações estão invertidas, portanto, **ambas falsas**.",
+   "analise_alternativas": {
+    "A": "Incorreta. Ambas são falsas.",
+    "B": "Incorreta. Ambas são falsas.",
+    "C": "Incorreta. A segunda também é falsa.",
+    "D": "Incorreta. A primeira é falsa, mas a segunda também.",
+    "E": "Correta. Risco ∝ ameaça × vulnerabilidade × impacto: as duas afirmações contrariam a relação."
+   },
+   "fundamentacao": {
+    "item": "9.16",
+    "arquivo_teoria": "conteudo/09-seguranca-informacao/09-gestao-riscos-e-continuidade.md"
+   },
+   "ponto_atencao": "**Risco = probabilidade (ameaça × vulnerabilidade) × impacto.** Mais ameaça ou mais vulnerabilidade, mais risco.",
+   "revisao_rapida": "Risco cresce com ameaças e vulnerabilidades.",
+   "tags": [
+    "risco",
+    "ameaca",
+    "vulnerabilidade",
+    "suape-2012",
+    "oficial",
+    "media",
+    "analise"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Petroquímica Suape PSP nº 1/2012 (22/04/2012)",
+    "cargo": "Analista de Sistemas Júnior — Ênfase em Negócio",
+    "ano": 2012,
+    "prova": "Prova 6",
+    "numero_original": 51,
+    "id_prova": "PRV-009",
+    "situacao_gabarito": "de espelho (Estude Grátis), após recursos; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/candidatas-2026-11-04/suape-2012-prova.pdf",
     "sha256": "ver docs/estrategia/base-provas.md"
    },
    "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",

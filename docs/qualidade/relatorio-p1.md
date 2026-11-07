@@ -4,17 +4,17 @@
 
 | Task | Estado | Entrega |
 |---|---|---|
-| T04 — Oficiais e adaptadas | **Parcial** | 105 `OFI-` (Transpetro, Caixa e BNDES), 9 módulos; 124 das 229 candidatas pendentes; 0 `ADP-` |
+| T04 — Oficiais e adaptadas | **Parcial** | 129 `OFI-` (Transpetro, Caixa, BNDES, Petrobras e Suape), 9 módulos; 100 das 229 candidatas pendentes; 0 `ADP-` |
 | T05 — Autorais para cobrir os itens sem questão | Feita | 30 `AUT-` (091 a 120); **94 de 94 itens** com questão principal; todos os módulos com mais de 10 autorais |
 | T06 — Conhecimentos Gerais | Feita | 35 `AUT-` (121 a 155): 24 de Português (12 de 12 itens), 11 de Inglês (2 de 2 itens) |
 | T07 — Simulados (dados) | Feita | 14 simulados: ESP-01, ESP-02, COM-01 (70), GER-01, M01 a M09, DIAG-01 |
 | T08 — Simulados no site | Feita | `timer.js`, `simulations.js`, CSS, rotas `#/simulados`, histórico, integração com caderno de erros e desempenho |
 
-Banco total: **260 questões** (105 oficiais, 155 autorais); 90 `validada` (lote piloto, aprovadas pelo usuário) e **170 `em_revisao`** (T04 a T06, aguardam o usuário).
+Banco total: **284 questões** (129 oficiais, 155 autorais); 90 `validada` (lote piloto, aprovadas pelo usuário) e **194 `em_revisao`** (T04 a T06, aguardam o usuário).
 
 ## Verificações realizadas
 
-- `python tools/validar_banco.py`: 260 questões, 0 erros (IDs únicos, 5 alternativas, gabarito e análise coerentes, `fonte_origem` completa em oficiais, rótulo de autoral, arquivo de teoria existente).
+- `python tools/validar_banco.py`: 284 questões, 0 erros (IDs únicos, 5 alternativas, gabarito e análise coerentes, `fonte_origem` completa em oficiais, rótulo de autoral, arquivo de teoria existente).
 - `python tools/cobertura.py`: 0 itens sem questão principal.
 - Conferência por execução: SQL (T05: UPDATE/DELETE/INSERT = 283; SAVEPOINT = 120) em SQLite; valoração lógica por enumeração; argumento da OFI Q28 por tabela-verdade; complexidade ciclomática contada à mão.
 - Simulados: IDs existentes, sem repetição dentro do simulado, tamanhos 50/70/20, ESP-01 e ESP-02 disjuntos; `build_site_data.py` aborta se algum simulado citar ID inexistente.
@@ -32,7 +32,7 @@ Banco total: **260 questões** (105 oficiais, 155 autorais); 90 `validada` (lote
 
 ## Pendências
 
-- Usuário validar as 170 questões `em_revisao` (ou apontar reprovadas).
-- T04: 124 candidatas (prioridade: Petrobras 2018, Petrobras 2006, Suape 2012 e BB 2021, cujos gabaritos são de espelho) e `ADP-`.
+- Usuário validar as 194 questões `em_revisao` (ou apontar reprovadas).
+- T04: 100 candidatas (BB 2021 sem transcrição: gabarito a conferir; Q38 com gabarito do catálogo incoerente com a resolução) e `ADP-`.
 - Conferência dos gabaritos 2018/2023 contra a fonte oficial (T13).
 - P2 e P3 inalteradas.

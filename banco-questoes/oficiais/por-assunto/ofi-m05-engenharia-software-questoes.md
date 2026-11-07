@@ -278,3 +278,143 @@ Essa forma de acoplamento é conhecida como acoplamento
 (C) de controle
 (D) externo
 (E) funcional
+
+## OFI-000107 — Verificação x validação
+
+*Questão oficial — Fundação Cesgranrio, Petrobras PSP RH 2017.2, Prova 3, questão 45.* · item 5.4 · Média
+
+Ao longo do desenvolvimento de um software, um gerente de projeto percebeu que havia dificuldades para garantir que os produtos gerados refletissem adequadamente os requisitos especificados. Investigando mais, concluiu que seu processo de desenvolvimento precisaria ser melhorado. Decidiu, então, implantar em sua equipe um processo de suporte de software que realizasse atividades específicas para confirmar, com evidência objetiva, que os requisitos especificados fossem cumpridos.
+O processo implantado por esse gerente é o de
+
+(A) auditoria
+(B) garantia de qualidade
+(C) resolução de problemas
+(D) validação
+(E) verificação
+
+## OFI-000108 — Requisitos não funcionais (alternativa NÃO)
+
+*Questão oficial — Fundação Cesgranrio, Petrobras PSP RH 2017.2, Prova 3, questão 50.* · item 5.1 · Média
+
+Um analista em treinamento apresenta a seguinte descrição para alguns requisitos de um sistema on-line para venda de bilhetes de uma rede de cinemas em que cada cinema apresenta mais de um filme, e cada filme é apresentado em mais de um cinema com lugares marcados.
+
+Quando o usuário entrar no site da rede, um menu é apresentado com os filmes e cinemas disponíveis. O usuário seleciona o filme a que deseja assistir e entra com o número de cartão de crédito. A validade do cartão é verificada e o bilhete é emitido. O sistema encerra a operação com a mensagem: obrigado, divirta-se.
+
+Embora haja falhas nessa descrição ainda incipiente, o instrutor solicitou que o analista a estendesse com exemplos de possíveis requisitos não funcionais para o sistema.
+Qual é a sentença que NÃO atende à solicitação do instrutor?
+
+(A) O tempo máximo de espera do sistema para a inserção do número do cartão de crédito deve ser maior do que oito segundos e menor do que 15 segundos.
+(B) O sistema deve estar disponível por 99,5% do tempo durante as 24 horas do dia, sete dias por semana.
+(C) O formato do bilhete deve seguir o padrão definido na legislação municipal pertinente.
+(D) O usuário deve selecionar o cinema em que deseja assistir ao filme.
+(E) O sistema deve ser compatível com operação em smartphone.
+
+## OFI-000109 — Escolha do modelo de processo: incremental
+
+*Questão oficial — Fundação Cesgranrio, Petrobras PSP RH 2017.2, Prova 3, questão 51.* · item 5.2 · Média
+
+O chefe dos desenvolvedores de sistemas de uma empresa acompanhou o seguinte diálogo entre um de seus subordinados, um usuário e o diretor de operações.
+
+Diretor – Acho que já poderíamos começar o desenvolvimento daquele sistema que o departamento de esportes pediu.
+Usuário – Não é cedo demais? Ainda não temos todas as funcionalidades bem definidas.
+Desenvolvedor – É verdade, mas acho que já é possível especificar e implementar algumas funcionalidades mais importantes e construir uma primeira versão até o final do mês. Depois acrescentaríamos outras funcionalidades à medida que as fôssemos construindo, gerando, a partir da experiência do uso, versões sucessivas e cada vez mais completas.
+Diretor – Acho isso ótimo, assim já teremos uma noção do impacto que o sistema poderá causar no desempenho dos atletas. Comecemos logo, não temos um efetivo tão grande em TI.
+Usuário – OK, vamos em frente, mas não contem nada para aquele especialista em risco. Já temos muito trabalho pela frente. Nossa estrutura ainda não suporta esse tipo de cuidado; se entrarmos nessa, o projeto vai atrasar. E mantenham o contato e o foco no objetivo: um produto simples, mas de qualidade.
+
+A partir desse episódio e refletindo sobre o que ouvira, o chefe dos desenvolvedores deverá optar pelo modelo de processo de software
+
+(A) RAD
+(B) incremental
+(C) cascata
+(D) espiral
+(E) baseado em componentes
+
+## OFI-000110 — Engenharia de requisitos: prática da etapa de análise
+
+*Questão oficial — Fundação Cesgranrio, Petrobras PSP RH 2017.2, Prova 3, questão 55.* · item 5.1 · Média
+
+O processo de desenvolvimento de requisitos pode ser dividido em 4 etapas: elicitação, análise, especificação e validação.
+Qual prática da Engenharia de Requisitos está associada à etapa de análise?
+
+(A) Criar protótipos.
+(B) Identificar casos de uso.
+(C) Inspecionar documentos de requisitos.
+(D) Definir critérios de aceitação.
+(E) Registrar regras de negócio.
+
+## OFI-000121 — Análise e gerenciamento de requisitos (afirmação FALSA)
+
+*Questão oficial — Fundação Cesgranrio, Petrobras PSP-RH-1/2006, Caderno de Analista de Sistemas Pleno, questão 49.* · item 5.1 · Média
+
+Sobre a Análise e o Gerenciamento de Requisitos, é FALSO afirmar que:
+
+(A) quanto mais tarde for identificado um problema na análise de requisitos, maior será o custo com o retrabalho.
+(B) a elicitação é o processo de identificação e entendimento das necessidades e restrições dos usuários, enquanto que a especificação é o processo de formalização das necessidades e restrições dos usuários em requisitos funcionais de software.
+(C) na análise de requisitos o cliente utiliza as melhores práticas de engenharia de requisitos na tarefa de descrever suas necessidades.
+(D) o gerenciamento de requisitos corresponde ao conjunto de atividades que auxilia a equipe do projeto a identificar, controlar e rastrear os requisitos, bem como a fazer as alterações nos requisitos durante o projeto.
+(E) o gerenciamento de requisitos implica a alteração, inclusão e/ou exclusão de requisitos ao produto de software, o que pode levar a alterações de prazos, de recursos humanos, de equipamentos e de tecnologia.
+
+## OFI-000122 — Estratégias de teste: caixa-preta, caixa-branca, integração, recuperação, alfa e beta
+
+*Questão oficial — Fundação Cesgranrio, Petrobras PSP-RH-1/2006, Caderno de Analista de Sistemas Pleno, questão 54.* · item 5.4 · Difícil
+
+Uma estratégia de teste de software integra métodos de projeto de casos de teste em uma série bem planejada de passos, que resultam na construção bem sucedida de um software. O objetivo principal do projeto de casos de teste é originar um conjunto de testes que tenha a maior probabilidade de detectar erros no software. Sobre as estratégias e técnicas de teste de software, assinale a afirmativa correta.
+
+(A) O teste de caixa-preta enfoca a estrutura de controle do programa, tendo como exemplos o teste de caminho básico, que faz uso de grafos de para originar um conjunto de testes linearmente independentes que vão garantir a cobertura e a análise de valor-limite, que investiga a habilidade do programa de manipular dados no limite de aceitabilidade.
+(B) O teste de caixa-branca são projetados para validar os requisitos funcionais de funcionamento interno de um programa, tendo como exemplos o particionamento de equivalência, que divide o domínio de entrada em classes de dados que provavelmente exercitam função específica do software e o teste de matriz ortogonal, que fornece um método eficiente e sistemático para testar sistemas com pequeno número de parâmetros de entrada.
+(C) O teste de integração focaliza o esforço de verificação na menor unidade de projeto do software e, usando a descrição de projeto no nível de componente como guia, caminhos de controle importantes são testados para descobrir erros dentro dos limites do módulo. O teste fumaça é um exemplo de abordagem de teste de integração.
+(D) O teste de recuperação é um teste de sistema que força o software a falhar de diversos modos e verifica se a recuperação é adequadamente realizada, seja ela feita de forma automática (realizada pelo próprio sistema) ou requerendo intervenção humana.
+(E) A fase alpha de testes é realizada ainda no processo de desenvolvimento, nas instalações do desenvolvedor com os usuários finais e utilizando um ambiente controlado, enquanto a beta é realizada entre o término do desenvolvimento e a entrega do produto, nas instalações do desenvolvedor com um ambiente controlado pelo usuário final. Na fase gama são gerados pela equipe de desenvolvimento casos de teste que são realizados por grupos restritos de usuários finais.
+
+## OFI-000123 — UML 1.4 x UML 2.0: novos diagramas
+
+*Questão oficial — Fundação Cesgranrio, Petrobras PSP-RH-1/2006, Caderno de Analista de Sistemas Pleno, questão 55.* · item 5.3 · Média
+
+Fazendo uma comparação entre os recursos disponíveis na UML 1.4 e UML 2.0, conclui-se que a UML 2.0:
+
+(A) acrescentou dois novos diagramas de Interação: o diagrama Visão Geral da Interação e o diagrama de Tempo, sendo que o primeiro combina o fluxo de controle de um diagrama de Atividades com interações e ocorrências de interação e o segundo modela as mudanças de estado por uma linha de tempo para cada objeto em uma interação.
+(B) acrescentou três novos mecanismos de extensibilidade: estereótipos, que identificam um conjunto de qualidades que podem aparecer em diversos elementos dos diagramas; tagged values, que permitem acrescentar novos recursos a um elemento do diagrama; restrições, que definem regras para proteger a integridade de um elemento do diagrama.
+(C) substituiu o diagrama de Máquina de Estados de Protocolo e o diagrama Statechart, ambos da UML 1.4, pelo diagrama Máquina de Estados, que contém uma série de estados, as transições conectando os estados, o trigger para as transições, as atividades realizadas na execução das transições e as atividades realizadas no decorrer da duração de cada estado.
+(D) substituiu o diagrama de Pacotes da UML 1.4 por uma visão combinada dos diagramas de Componentes e de Implantação, em que os componentes são representados por artefatos e os nós e as conexões oferecem os locais de implantação e execução para os artefatos.
+(E) substituiu o diagrama de Componentes da UML 1.4 pelo diagrama Estrutura de Composição que modela as partes de uma classe, componente ou colaboração, incluindo os pontos de interação (portas) usados para acessar recursos da estrutura.
+
+## OFI-000124 — Projeto de software: encapsulamento, coesão e acoplamento
+
+*Questão oficial — Fundação Cesgranrio, Petroquímica Suape PSP nº 1/2012, Prova 6, questão 34.* · item 5.3 · Média
+
+Um dos objetos da fase de projeto de sistemas de software é definir e organizar as partes desse sistema da maneira mais adequada possível. Relativamente a essas partes, devem ser maximizada e minimizada, respectivamente, as medidas
+
+(A) encapsulamento e coesão
+(B) encapsulamento e acoplamento
+(C) acoplamento e coesão
+(D) acoplamento e encapsulamento
+(E) coesão e encapsulamento
+
+## OFI-000125 — Engenharia de requisitos: propósito da validação
+
+*Questão oficial — Fundação Cesgranrio, Petroquímica Suape PSP nº 1/2012, Prova 6, questão 36.* · item 5.1 · Média
+
+Na modelagem de sistemas, há um conjunto de atividades denominado Engenharia de Requisitos.
+Nesse contexto, o propósito da validação de requisitos é
+
+(A) assegurar que os requisitos menos arriscados sejam considerados inicialmente no desenvolvimento.
+(B) assegurar que o produto de software sendo especificado está em conformidade com as necessidades dos usuários.
+(C) aumentar o nível de abstração na comunicação entre especialistas do domínio e engenheiros de requisitos.
+(D) definir formas de rastrear os requisitos a partir dos correspondentes artefatos de modelagem e de código eventualmente existentes.
+(E) maximizar o reúso de requisitos voláteis identificados em outros sistemas.
+
+## OFI-000126 — Casos de uso, decomposição funcional e classes conceituais (asserção e razão)
+
+*Questão oficial — Fundação Cesgranrio, Petroquímica Suape PSP nº 1/2012, Prova 6, questão 37.* · item 5.3 · Difícil
+
+A modelagem de casos de uso é uma técnica adequada para detalhar requisitos funcionais de um sistema de software orientado a objetos através da decomposição funcional do comportamento desse sistema.
+PORQUE
+Na modelagem orientada a objetos, um modelo de classes conceituais apresenta classes que correspondem a conceitos do domínio do problema e que são compostas de atributos e métodos resultantes do processo de decomposição funcional.
+
+Analisando-se as afirmações acima, conclui-se que
+
+(A) as duas afirmações são verdadeiras, e a segunda justifica a primeira.
+(B) as duas afirmações são verdadeiras, e a segunda não justifica a primeira.
+(C) a primeira afirmação é verdadeira, e a segunda é falsa.
+(D) a primeira afirmação é falsa, e a segunda é verdadeira.
+(E) as duas afirmações são falsas.

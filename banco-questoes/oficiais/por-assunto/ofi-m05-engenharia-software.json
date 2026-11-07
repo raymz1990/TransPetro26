@@ -2,7 +2,7 @@
  "modulo": "Questões oficiais — m05-engenharia-software",
  "lote": "T04 — Transpetro 2023 (Prova 6) e 2018 (Prova 15)",
  "data": "2026-11-06",
- "total": 21,
+ "total": 31,
  "questoes": [
   {
    "id": "OFI-000024",
@@ -1230,6 +1230,596 @@
     "situacao_gabarito": "final após recursos (documento da banca, via espelho QConcursos)",
     "aderencia_edital": "aderente",
     "url": "banco-questoes/oficiais/fontes-brutas/candidatas-2026-11-04/bndes-2024-desenvolvimento-manha-prova.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000107",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Petrobras PSP RH 2017.2, Prova 3, questão 45.",
+   "modulo": "05-engenharia-software",
+   "assunto": "Verificação x validação",
+   "item_edital": "5.4",
+   "id_matriz": "E5-045",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "compreensao",
+   "tipo_questao": "cenario",
+   "enunciado": "Ao longo do desenvolvimento de um software, um gerente de projeto percebeu que havia dificuldades para garantir que os produtos gerados refletissem adequadamente os requisitos especificados. Investigando mais, concluiu que seu processo de desenvolvimento precisaria ser melhorado. Decidiu, então, implantar em sua equipe um processo de suporte de software que realizasse atividades específicas para confirmar, com evidência objetiva, que os requisitos especificados fossem cumpridos.\nO processo implantado por esse gerente é o de",
+   "alternativas": {
+    "A": "auditoria",
+    "B": "garantia de qualidade",
+    "C": "resolução de problemas",
+    "D": "validação",
+    "E": "verificação"
+   },
+   "gabarito": "E",
+   "resolucao": "**Verificação** confirma, com evidência objetiva, que os **requisitos especificados foram cumpridos** (\"estamos construindo o produto corretamente?\"). **Validação** confirma que o produto atende ao **uso pretendido** e às necessidades do usuário (\"estamos construindo o produto certo?\").",
+   "analise_alternativas": {
+    "A": "Incorreta. Auditoria avalia conformidade com processos e padrões, de forma independente.",
+    "B": "Incorreta. Garantia de qualidade assegura que processos e padrões sejam seguidos, sem testar os requisitos em si.",
+    "C": "Incorreta. Resolução de problemas trata do registro e da solução de problemas detectados.",
+    "D": "Incorreta. Validação confere o uso pretendido no ambiente do usuário, e não o cumprimento dos requisitos especificados.",
+    "E": "Correta. Confirmar requisitos especificados com evidência objetiva: verificação."
+   },
+   "fundamentacao": {
+    "item": "5.4",
+    "arquivo_teoria": "conteudo/05-engenharia-software/06-verificacao-e-validacao.md"
+   },
+   "ponto_atencao": "Texto de **ISO/IEC 12207**: verificação = requisitos **especificados** cumpridos; validação = requisitos para o **uso pretendido** cumpridos.",
+   "revisao_rapida": "Verificação: produto conforme a especificação.",
+   "tags": [
+    "verificacao",
+    "validacao",
+    "petrobras-2018",
+    "oficial",
+    "media",
+    "compreensao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Petrobras PSP RH 2017.2 (prova de 18/03/2018)",
+    "cargo": "Analista de Sistemas Júnior — Processos de Negócio",
+    "ano": 2018,
+    "prova": "Prova 3",
+    "numero_original": 45,
+    "id_prova": "PRV-011",
+    "situacao_gabarito": "de espelho (PCI), fornecido pelo usuário; preliminar/definitivo não indicado; anulações não verificadas; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/candidatas-2026-11-04/petrobras-2018-analista-sistemas-jr-processos-negocio-prova.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000108",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Petrobras PSP RH 2017.2, Prova 3, questão 50.",
+   "modulo": "05-engenharia-software",
+   "assunto": "Requisitos não funcionais (alternativa NÃO)",
+   "item_edital": "5.1",
+   "id_matriz": "E5-042",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "analise",
+   "tipo_questao": "cenario",
+   "enunciado": "Um analista em treinamento apresenta a seguinte descrição para alguns requisitos de um sistema on-line para venda de bilhetes de uma rede de cinemas em que cada cinema apresenta mais de um filme, e cada filme é apresentado em mais de um cinema com lugares marcados.\n\nQuando o usuário entrar no site da rede, um menu é apresentado com os filmes e cinemas disponíveis. O usuário seleciona o filme a que deseja assistir e entra com o número de cartão de crédito. A validade do cartão é verificada e o bilhete é emitido. O sistema encerra a operação com a mensagem: obrigado, divirta-se.\n\nEmbora haja falhas nessa descrição ainda incipiente, o instrutor solicitou que o analista a estendesse com exemplos de possíveis requisitos não funcionais para o sistema.\nQual é a sentença que NÃO atende à solicitação do instrutor?",
+   "alternativas": {
+    "A": "O tempo máximo de espera do sistema para a inserção do número do cartão de crédito deve ser maior do que oito segundos e menor do que 15 segundos.",
+    "B": "O sistema deve estar disponível por 99,5% do tempo durante as 24 horas do dia, sete dias por semana.",
+    "C": "O formato do bilhete deve seguir o padrão definido na legislação municipal pertinente.",
+    "D": "O usuário deve selecionar o cinema em que deseja assistir ao filme.",
+    "E": "O sistema deve ser compatível com operação em smartphone."
+   },
+   "gabarito": "D",
+   "resolucao": "Requisitos **não funcionais** descrevem **qualidades e restrições**: desempenho, disponibilidade, conformidade legal, portabilidade. \"O usuário deve selecionar o cinema\" descreve **uma função** (interação do sistema): requisito **funcional**.",
+   "analise_alternativas": {
+    "A": "Incorreta. Restrição de desempenho (tempo de resposta): não funcional.",
+    "B": "Incorreta. Disponibilidade (99,5%): não funcional.",
+    "C": "Incorreta. Conformidade com a legislação (formato do bilhete): restrição não funcional.",
+    "D": "Correta. Escolha do cinema é funcionalidade do sistema: requisito funcional, ou seja, a sentença que NÃO atende ao pedido.",
+    "E": "Incorreta. Compatibilidade com smartphone (portabilidade/plataforma): não funcional."
+   },
+   "fundamentacao": {
+    "item": "5.1",
+    "arquivo_teoria": "conteudo/05-engenharia-software/02-requisitos-software.md"
+   },
+   "ponto_atencao": "Em questões \"NÃO\", o alvo é o **requisito funcional**. Teste: a frase descreve **o que o sistema faz** (funcional) ou **quão bem/sob que restrição** (não funcional)?",
+   "revisao_rapida": "Funcional = função; não funcional = qualidade ou restrição.",
+   "tags": [
+    "requisitos",
+    "petrobras-2018",
+    "oficial",
+    "media",
+    "analise"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Petrobras PSP RH 2017.2 (prova de 18/03/2018)",
+    "cargo": "Analista de Sistemas Júnior — Processos de Negócio",
+    "ano": 2018,
+    "prova": "Prova 3",
+    "numero_original": 50,
+    "id_prova": "PRV-011",
+    "situacao_gabarito": "de espelho (PCI), fornecido pelo usuário; preliminar/definitivo não indicado; anulações não verificadas; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/candidatas-2026-11-04/petrobras-2018-analista-sistemas-jr-processos-negocio-prova.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000109",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Petrobras PSP RH 2017.2, Prova 3, questão 51.",
+   "modulo": "05-engenharia-software",
+   "assunto": "Escolha do modelo de processo: incremental",
+   "item_edital": "5.2",
+   "id_matriz": "E5-043",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "avaliacao",
+   "tipo_questao": "cenario",
+   "enunciado": "O chefe dos desenvolvedores de sistemas de uma empresa acompanhou o seguinte diálogo entre um de seus subordinados, um usuário e o diretor de operações.\n\nDiretor – Acho que já poderíamos começar o desenvolvimento daquele sistema que o departamento de esportes pediu.\nUsuário – Não é cedo demais? Ainda não temos todas as funcionalidades bem definidas.\nDesenvolvedor – É verdade, mas acho que já é possível especificar e implementar algumas funcionalidades mais importantes e construir uma primeira versão até o final do mês. Depois acrescentaríamos outras funcionalidades à medida que as fôssemos construindo, gerando, a partir da experiência do uso, versões sucessivas e cada vez mais completas.\nDiretor – Acho isso ótimo, assim já teremos uma noção do impacto que o sistema poderá causar no desempenho dos atletas. Comecemos logo, não temos um efetivo tão grande em TI.\nUsuário – OK, vamos em frente, mas não contem nada para aquele especialista em risco. Já temos muito trabalho pela frente. Nossa estrutura ainda não suporta esse tipo de cuidado; se entrarmos nessa, o projeto vai atrasar. E mantenham o contato e o foco no objetivo: um produto simples, mas de qualidade.\n\nA partir desse episódio e refletindo sobre o que ouvira, o chefe dos desenvolvedores deverá optar pelo modelo de processo de software",
+   "alternativas": {
+    "A": "RAD",
+    "B": "incremental",
+    "C": "cascata",
+    "D": "espiral",
+    "E": "baseado em componentes"
+   },
+   "gabarito": "B",
+   "resolucao": "Requisitos ainda incertos, **primeira versão com as funcionalidades mais importantes** e **versões sucessivas mais completas**, com equipe pequena: **modelo incremental**. O **espiral** exige análise de riscos explícita em cada volta, o que o usuário rejeita; o **cascata** exige requisitos fechados.",
+   "analise_alternativas": {
+    "A": "Incorreta. RAD pressupõe ciclos muito curtos, componentes reutilizáveis e equipes maiores, o que não é o caso.",
+    "B": "Correta. Entregas sucessivas, cada vez mais completas, com equipe pequena: incremental.",
+    "C": "Incorreta. Cascata exige requisitos definidos antes do desenvolvimento.",
+    "D": "Incorreta. Espiral depende de análise de riscos em cada iteração, que o usuário recusou.",
+    "E": "Incorreta. Desenvolvimento baseado em componentes depende de repositório de componentes reutilizáveis."
+   },
+   "fundamentacao": {
+    "item": "5.2",
+    "arquivo_teoria": "conteudo/05-engenharia-software/03-ciclo-de-vida.md"
+   },
+   "ponto_atencao": "Palavras-chave: **\"versões sucessivas e cada vez mais completas\"** = incremental. Procure também o que **elimina** os outros modelos (risco recusado elimina o espiral).",
+   "revisao_rapida": "Incremental: entrega por partes, cada vez mais completa.",
+   "tags": [
+    "incremental",
+    "ciclo-de-vida",
+    "petrobras-2018",
+    "oficial",
+    "media",
+    "avaliacao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Petrobras PSP RH 2017.2 (prova de 18/03/2018)",
+    "cargo": "Analista de Sistemas Júnior — Processos de Negócio",
+    "ano": 2018,
+    "prova": "Prova 3",
+    "numero_original": 51,
+    "id_prova": "PRV-011",
+    "situacao_gabarito": "de espelho (PCI), fornecido pelo usuário; preliminar/definitivo não indicado; anulações não verificadas; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/candidatas-2026-11-04/petrobras-2018-analista-sistemas-jr-processos-negocio-prova.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000110",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Petrobras PSP RH 2017.2, Prova 3, questão 55.",
+   "modulo": "05-engenharia-software",
+   "assunto": "Engenharia de requisitos: prática da etapa de análise",
+   "item_edital": "5.1",
+   "id_matriz": "E5-042",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "compreensao",
+   "tipo_questao": "conceitual",
+   "enunciado": "O processo de desenvolvimento de requisitos pode ser dividido em 4 etapas: elicitação, análise, especificação e validação.\nQual prática da Engenharia de Requisitos está associada à etapa de análise?",
+   "alternativas": {
+    "A": "Criar protótipos.",
+    "B": "Identificar casos de uso.",
+    "C": "Inspecionar documentos de requisitos.",
+    "D": "Definir critérios de aceitação.",
+    "E": "Registrar regras de negócio."
+   },
+   "gabarito": "B",
+   "resolucao": "Na **análise**, os requisitos elicitados são **estruturados e modelados**, e os conflitos são resolvidos; **identificar e modelar casos de uso** é prática de análise. Protótipos servem à elicitação e à validação; inspeção de documentos e critérios de aceitação, à validação; registrar regras, à especificação.",
+   "analise_alternativas": {
+    "A": "Incorreta. Protótipos auxiliam a elicitação e a validação.",
+    "B": "Correta. Identificar e modelar casos de uso organiza e analisa os requisitos.",
+    "C": "Incorreta. Inspecionar documentos é prática de validação.",
+    "D": "Incorreta. Critérios de aceitação ligam-se à especificação e à validação.",
+    "E": "Incorreta. Registrar regras de negócio é parte da especificação."
+   },
+   "fundamentacao": {
+    "item": "5.1",
+    "arquivo_teoria": "conteudo/05-engenharia-software/02-requisitos-software.md"
+   },
+   "ponto_atencao": "Etapas: **elicitação** (obter), **análise** (modelar, priorizar, negociar), **especificação** (documentar), **validação** (confirmar com o cliente). A fronteira entre análise e especificação pode variar entre autores; o gabarito privilegia a modelagem.",
+   "revisao_rapida": "Análise: modelar e negociar requisitos (casos de uso).",
+   "tags": [
+    "requisitos",
+    "petrobras-2018",
+    "oficial",
+    "media",
+    "compreensao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Petrobras PSP RH 2017.2 (prova de 18/03/2018)",
+    "cargo": "Analista de Sistemas Júnior — Processos de Negócio",
+    "ano": 2018,
+    "prova": "Prova 3",
+    "numero_original": 55,
+    "id_prova": "PRV-011",
+    "situacao_gabarito": "de espelho (PCI), fornecido pelo usuário; preliminar/definitivo não indicado; anulações não verificadas; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/candidatas-2026-11-04/petrobras-2018-analista-sistemas-jr-processos-negocio-prova.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000121",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Petrobras PSP-RH-1/2006, Caderno de Analista de Sistemas Pleno, questão 49.",
+   "modulo": "05-engenharia-software",
+   "assunto": "Análise e gerenciamento de requisitos (afirmação FALSA)",
+   "item_edital": "5.1",
+   "id_matriz": "E5-042",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "analise",
+   "tipo_questao": "conceitual",
+   "enunciado": "Sobre a Análise e o Gerenciamento de Requisitos, é FALSO afirmar que:",
+   "alternativas": {
+    "A": "quanto mais tarde for identificado um problema na análise de requisitos, maior será o custo com o retrabalho.",
+    "B": "a elicitação é o processo de identificação e entendimento das necessidades e restrições dos usuários, enquanto que a especificação é o processo de formalização das necessidades e restrições dos usuários em requisitos funcionais de software.",
+    "C": "na análise de requisitos o cliente utiliza as melhores práticas de engenharia de requisitos na tarefa de descrever suas necessidades.",
+    "D": "o gerenciamento de requisitos corresponde ao conjunto de atividades que auxilia a equipe do projeto a identificar, controlar e rastrear os requisitos, bem como a fazer as alterações nos requisitos durante o projeto.",
+    "E": "o gerenciamento de requisitos implica a alteração, inclusão e/ou exclusão de requisitos ao produto de software, o que pode levar a alterações de prazos, de recursos humanos, de equipamentos e de tecnologia."
+   },
+   "gabarito": "C",
+   "resolucao": "As melhores práticas de engenharia de requisitos são aplicadas pelo **analista/engenheiro de requisitos**, e não pelo **cliente**, que descreve suas necessidades. As demais afirmações estão corretas.",
+   "analise_alternativas": {
+    "A": "Incorreta. Verdadeira: o custo de correção cresce com o tempo.",
+    "B": "Incorreta. Verdadeira: elicitação identifica; especificação formaliza.",
+    "C": "Correta. Falsa: quem aplica as práticas é a equipe de engenharia de requisitos.",
+    "D": "Incorreta. Verdadeira: define o gerenciamento de requisitos (rastreabilidade e controle de mudanças).",
+    "E": "Incorreta. Verdadeira: mudanças de requisitos têm impacto em prazo, recursos e tecnologia."
+   },
+   "fundamentacao": {
+    "item": "5.1",
+    "arquivo_teoria": "conteudo/05-engenharia-software/02-requisitos-software.md"
+   },
+   "ponto_atencao": "Em questões \"FALSO\", procure o **sujeito trocado** (quem faz o quê). A afirmação A é a base do argumento de **shift left**.",
+   "revisao_rapida": "Práticas de requisitos: aplicadas pela equipe técnica.",
+   "tags": [
+    "requisitos",
+    "gerenciamento-de-requisitos",
+    "petrobras-2006",
+    "oficial",
+    "media",
+    "analise"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Petrobras PSP-RH-1/2006 (aplicação em 07/05/2006)",
+    "cargo": "Analista de Sistemas Pleno — Processos",
+    "ano": 2006,
+    "prova": "Caderno de Analista de Sistemas Pleno (questões 21 a 60)",
+    "numero_original": 49,
+    "id_prova": "PRV-007",
+    "situacao_gabarito": "de espelho (Estude Grátis); recursos não verificados; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/candidatas-2026-11-04/petrobras-2006-analista-sistemas-pleno-processos-prova.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000122",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Petrobras PSP-RH-1/2006, Caderno de Analista de Sistemas Pleno, questão 54.",
+   "modulo": "05-engenharia-software",
+   "assunto": "Estratégias de teste: caixa-preta, caixa-branca, integração, recuperação, alfa e beta",
+   "item_edital": "5.4",
+   "id_matriz": "E5-045",
+   "itens_secundarios": [],
+   "dificuldade": "dificil",
+   "habilidade": "analise",
+   "tipo_questao": "comparativa",
+   "enunciado": "Uma estratégia de teste de software integra métodos de projeto de casos de teste em uma série bem planejada de passos, que resultam na construção bem sucedida de um software. O objetivo principal do projeto de casos de teste é originar um conjunto de testes que tenha a maior probabilidade de detectar erros no software. Sobre as estratégias e técnicas de teste de software, assinale a afirmativa correta.",
+   "alternativas": {
+    "A": "O teste de caixa-preta enfoca a estrutura de controle do programa, tendo como exemplos o teste de caminho básico, que faz uso de grafos de para originar um conjunto de testes linearmente independentes que vão garantir a cobertura e a análise de valor-limite, que investiga a habilidade do programa de manipular dados no limite de aceitabilidade.",
+    "B": "O teste de caixa-branca são projetados para validar os requisitos funcionais de funcionamento interno de um programa, tendo como exemplos o particionamento de equivalência, que divide o domínio de entrada em classes de dados que provavelmente exercitam função específica do software e o teste de matriz ortogonal, que fornece um método eficiente e sistemático para testar sistemas com pequeno número de parâmetros de entrada.",
+    "C": "O teste de integração focaliza o esforço de verificação na menor unidade de projeto do software e, usando a descrição de projeto no nível de componente como guia, caminhos de controle importantes são testados para descobrir erros dentro dos limites do módulo. O teste fumaça é um exemplo de abordagem de teste de integração.",
+    "D": "O teste de recuperação é um teste de sistema que força o software a falhar de diversos modos e verifica se a recuperação é adequadamente realizada, seja ela feita de forma automática (realizada pelo próprio sistema) ou requerendo intervenção humana.",
+    "E": "A fase alpha de testes é realizada ainda no processo de desenvolvimento, nas instalações do desenvolvedor com os usuários finais e utilizando um ambiente controlado, enquanto a beta é realizada entre o término do desenvolvimento e a entrega do produto, nas instalações do desenvolvedor com um ambiente controlado pelo usuário final. Na fase gama são gerados pela equipe de desenvolvimento casos de teste que são realizados por grupos restritos de usuários finais."
+   },
+   "gabarito": "D",
+   "resolucao": "O **teste de recuperação** (*recovery testing*) é um **teste de sistema** que força o software a falhar de várias maneiras e verifica se a recuperação ocorre corretamente, de forma automática ou com intervenção humana. As outras alternativas contêm trocas conceituais.",
+   "analise_alternativas": {
+    "A": "Incorreta. Descreve a **caixa-branca** (estrutura de controle, caminho básico) e atribui a ela técnicas de caixa-preta e vice-versa.",
+    "B": "Incorreta. Atribui à caixa-branca técnicas de **caixa-preta** (particionamento de equivalência, matriz ortogonal), e a define como validação funcional.",
+    "C": "Incorreta. Descreve o **teste de unidade** como se fosse o de integração.",
+    "D": "Correta. Define corretamente o teste de recuperação como teste de sistema.",
+    "E": "Incorreta. O **beta** é feito **no ambiente do cliente**, sem controle do desenvolvedor; e \"gama\" não é fase padrão descrita assim."
+   },
+   "fundamentacao": {
+    "item": "5.4",
+    "arquivo_teoria": "conteudo/05-engenharia-software/06-verificacao-e-validacao.md"
+   },
+   "ponto_atencao": "Caixa-preta: **funcional** (equivalência, valor-limite, matriz ortogonal). Caixa-branca: **estrutural** (caminho básico, cobertura). Alfa: no desenvolvedor; beta: no cliente, sem controle do desenvolvedor.",
+   "revisao_rapida": "Recuperação: força falhas e verifica o restabelecimento.",
+   "tags": [
+    "testes",
+    "caixa-preta",
+    "caixa-branca",
+    "petrobras-2006",
+    "oficial",
+    "dificil",
+    "analise"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Petrobras PSP-RH-1/2006 (aplicação em 07/05/2006)",
+    "cargo": "Analista de Sistemas Pleno — Processos",
+    "ano": 2006,
+    "prova": "Caderno de Analista de Sistemas Pleno (questões 21 a 60)",
+    "numero_original": 54,
+    "id_prova": "PRV-007",
+    "situacao_gabarito": "de espelho (Estude Grátis); recursos não verificados; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/candidatas-2026-11-04/petrobras-2006-analista-sistemas-pleno-processos-prova.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000123",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Petrobras PSP-RH-1/2006, Caderno de Analista de Sistemas Pleno, questão 55.",
+   "modulo": "05-engenharia-software",
+   "assunto": "UML 1.4 x UML 2.0: novos diagramas",
+   "item_edital": "5.3",
+   "id_matriz": "E5-044",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "memorizacao",
+   "tipo_questao": "comparativa",
+   "enunciado": "Fazendo uma comparação entre os recursos disponíveis na UML 1.4 e UML 2.0, conclui-se que a UML 2.0:",
+   "alternativas": {
+    "A": "acrescentou dois novos diagramas de Interação: o diagrama Visão Geral da Interação e o diagrama de Tempo, sendo que o primeiro combina o fluxo de controle de um diagrama de Atividades com interações e ocorrências de interação e o segundo modela as mudanças de estado por uma linha de tempo para cada objeto em uma interação.",
+    "B": "acrescentou três novos mecanismos de extensibilidade: estereótipos, que identificam um conjunto de qualidades que podem aparecer em diversos elementos dos diagramas; tagged values, que permitem acrescentar novos recursos a um elemento do diagrama; restrições, que definem regras para proteger a integridade de um elemento do diagrama.",
+    "C": "substituiu o diagrama de Máquina de Estados de Protocolo e o diagrama Statechart, ambos da UML 1.4, pelo diagrama Máquina de Estados, que contém uma série de estados, as transições conectando os estados, o trigger para as transições, as atividades realizadas na execução das transições e as atividades realizadas no decorrer da duração de cada estado.",
+    "D": "substituiu o diagrama de Pacotes da UML 1.4 por uma visão combinada dos diagramas de Componentes e de Implantação, em que os componentes são representados por artefatos e os nós e as conexões oferecem os locais de implantação e execução para os artefatos.",
+    "E": "substituiu o diagrama de Componentes da UML 1.4 pelo diagrama Estrutura de Composição que modela as partes de uma classe, componente ou colaboração, incluindo os pontos de interação (portas) usados para acessar recursos da estrutura."
+   },
+   "gabarito": "A",
+   "resolucao": "A UML 2.0 introduziu, entre os diagramas de **interação**, o de **Visão Geral da Interação** (que mescla atividades com interações) e o de **Tempo** (*timing*, que mostra mudanças de estado ao longo do tempo), além do de **Estrutura de Composição** e do de **Pacotes** como diagrama próprio.",
+   "analise_alternativas": {
+    "A": "Correta. Descreve corretamente os dois novos diagramas de interação.",
+    "B": "Incorreta. Estereótipos, valores etiquetados e restrições já existiam na UML 1.x; não são novos mecanismos.",
+    "C": "Incorreta. A afirmação mistura a história de diagramas de estados e não descreve uma substituição de \"diagrama de Máquina de Estados de Protocolo\" da UML 1.4.",
+    "D": "Incorreta. O diagrama de Pacotes não foi substituído por uma visão combinada.",
+    "E": "Incorreta. O diagrama de Componentes continua existindo na UML 2.0; a Estrutura de Composição é um **acréscimo**."
+   },
+   "fundamentacao": {
+    "item": "5.3",
+    "arquivo_teoria": "conteudo/05-engenharia-software/05-analise-e-projeto.md"
+   },
+   "ponto_atencao": "UML 2.x: **14 diagramas** (7 estruturais e 7 comportamentais). Novos na 2.0: **Visão Geral da Interação, Tempo, Estrutura de Composição** (e Comunicação, renomeado de Colaboração).",
+   "revisao_rapida": "UML 2.0 acrescentou Visão Geral da Interação e Tempo.",
+   "tags": [
+    "uml",
+    "diagramas",
+    "petrobras-2006",
+    "oficial",
+    "media",
+    "memorizacao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Petrobras PSP-RH-1/2006 (aplicação em 07/05/2006)",
+    "cargo": "Analista de Sistemas Pleno — Processos",
+    "ano": 2006,
+    "prova": "Caderno de Analista de Sistemas Pleno (questões 21 a 60)",
+    "numero_original": 55,
+    "id_prova": "PRV-007",
+    "situacao_gabarito": "de espelho (Estude Grátis); recursos não verificados; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/candidatas-2026-11-04/petrobras-2006-analista-sistemas-pleno-processos-prova.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000124",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Petroquímica Suape PSP nº 1/2012, Prova 6, questão 34.",
+   "modulo": "05-engenharia-software",
+   "assunto": "Projeto de software: encapsulamento, coesão e acoplamento",
+   "item_edital": "5.3",
+   "id_matriz": "E5-044",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "compreensao",
+   "tipo_questao": "conceitual",
+   "enunciado": "Um dos objetos da fase de projeto de sistemas de software é definir e organizar as partes desse sistema da maneira mais adequada possível. Relativamente a essas partes, devem ser maximizada e minimizada, respectivamente, as medidas",
+   "alternativas": {
+    "A": "encapsulamento e coesão",
+    "B": "encapsulamento e acoplamento",
+    "C": "acoplamento e coesão",
+    "D": "acoplamento e encapsulamento",
+    "E": "coesão e encapsulamento"
+   },
+   "gabarito": "B",
+   "resolucao": "Um bom projeto **maximiza a coesão** (partes com responsabilidade única e focada) e o **encapsulamento** (ocultação de detalhes internos) e **minimiza o acoplamento** (dependência entre partes). Entre as opções, só B apresenta o par correto na ordem pedida (maximizar encapsulamento, minimizar acoplamento).",
+   "analise_alternativas": {
+    "A": "Incorreta. Minimizar a coesão é indesejável.",
+    "B": "Correta. Maximizar encapsulamento e minimizar acoplamento: projeto adequado.",
+    "C": "Incorreta. Maximizar acoplamento e minimizar coesão é o contrário do desejável.",
+    "D": "Incorreta. Maximizar acoplamento é indesejável.",
+    "E": "Incorreta. Minimizar encapsulamento é indesejável."
+   },
+   "fundamentacao": {
+    "item": "5.3",
+    "arquivo_teoria": "conteudo/05-engenharia-software/05-analise-e-projeto.md"
+   },
+   "ponto_atencao": "**Alta coesão, baixo acoplamento.** A questão não oferece \"coesão e acoplamento\": a opção B é a única sem erro.",
+   "revisao_rapida": "Maximizar coesão e encapsulamento; minimizar acoplamento.",
+   "tags": [
+    "coesao",
+    "acoplamento",
+    "suape-2012",
+    "oficial",
+    "media",
+    "compreensao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Petroquímica Suape PSP nº 1/2012 (22/04/2012)",
+    "cargo": "Analista de Sistemas Júnior — Ênfase em Negócio",
+    "ano": 2012,
+    "prova": "Prova 6",
+    "numero_original": 34,
+    "id_prova": "PRV-009",
+    "situacao_gabarito": "de espelho (Estude Grátis), após recursos; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/candidatas-2026-11-04/suape-2012-prova.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000125",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Petroquímica Suape PSP nº 1/2012, Prova 6, questão 36.",
+   "modulo": "05-engenharia-software",
+   "assunto": "Engenharia de requisitos: propósito da validação",
+   "item_edital": "5.1",
+   "id_matriz": "E5-042",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "compreensao",
+   "tipo_questao": "conceitual",
+   "enunciado": "Na modelagem de sistemas, há um conjunto de atividades denominado Engenharia de Requisitos.\nNesse contexto, o propósito da validação de requisitos é",
+   "alternativas": {
+    "A": "assegurar que os requisitos menos arriscados sejam considerados inicialmente no desenvolvimento.",
+    "B": "assegurar que o produto de software sendo especificado está em conformidade com as necessidades dos usuários.",
+    "C": "aumentar o nível de abstração na comunicação entre especialistas do domínio e engenheiros de requisitos.",
+    "D": "definir formas de rastrear os requisitos a partir dos correspondentes artefatos de modelagem e de código eventualmente existentes.",
+    "E": "maximizar o reúso de requisitos voláteis identificados em outros sistemas."
+   },
+   "gabarito": "B",
+   "resolucao": "A **validação de requisitos** verifica se os requisitos especificados **correspondem às necessidades reais dos usuários** (\"o produto certo\"), por revisões, protótipos e testes de aceitação. Rastreabilidade (D) e priorização por risco (A) são outras atividades.",
+   "analise_alternativas": {
+    "A": "Incorreta. Priorização por risco é atividade de gerenciamento, e não propósito da validação.",
+    "B": "Correta. Conformidade com as necessidades dos usuários é o propósito da validação.",
+    "C": "Incorreta. Aumentar a abstração na comunicação não é o propósito.",
+    "D": "Incorreta. Rastrear requisitos é atividade de gerenciamento de requisitos.",
+    "E": "Incorreta. Reúso de requisitos voláteis não é propósito da validação."
+   },
+   "fundamentacao": {
+    "item": "5.1",
+    "arquivo_teoria": "conteudo/05-engenharia-software/02-requisitos-software.md"
+   },
+   "ponto_atencao": "Gabarito alterado após recursos (a alternativa indicada é B). **Validação** = necessidades do usuário; **verificação** = conformidade com a especificação.",
+   "revisao_rapida": "Validação de requisitos: atendem ao que o usuário precisa?",
+   "tags": [
+    "validacao-de-requisitos",
+    "suape-2012",
+    "oficial",
+    "media",
+    "compreensao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Petroquímica Suape PSP nº 1/2012 (22/04/2012)",
+    "cargo": "Analista de Sistemas Júnior — Ênfase em Negócio",
+    "ano": 2012,
+    "prova": "Prova 6",
+    "numero_original": 36,
+    "id_prova": "PRV-009",
+    "situacao_gabarito": "de espelho (Estude Grátis), após recursos; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/candidatas-2026-11-04/suape-2012-prova.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Gabarito do catálogo (após recursos); conferido pela teoria.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000126",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Petroquímica Suape PSP nº 1/2012, Prova 6, questão 37.",
+   "modulo": "05-engenharia-software",
+   "assunto": "Casos de uso, decomposição funcional e classes conceituais (asserção e razão)",
+   "item_edital": "5.3",
+   "id_matriz": "E5-044",
+   "itens_secundarios": [
+    "5.1"
+   ],
+   "dificuldade": "dificil",
+   "habilidade": "analise",
+   "tipo_questao": "conceitual",
+   "enunciado": "A modelagem de casos de uso é uma técnica adequada para detalhar requisitos funcionais de um sistema de software orientado a objetos através da decomposição funcional do comportamento desse sistema.\nPORQUE\nNa modelagem orientada a objetos, um modelo de classes conceituais apresenta classes que correspondem a conceitos do domínio do problema e que são compostas de atributos e métodos resultantes do processo de decomposição funcional.\n\nAnalisando-se as afirmações acima, conclui-se que",
+   "alternativas": {
+    "A": "as duas afirmações são verdadeiras, e a segunda justifica a primeira.",
+    "B": "as duas afirmações são verdadeiras, e a segunda não justifica a primeira.",
+    "C": "a primeira afirmação é verdadeira, e a segunda é falsa.",
+    "D": "a primeira afirmação é falsa, e a segunda é verdadeira.",
+    "E": "as duas afirmações são falsas."
+   },
+   "gabarito": "E",
+   "resolucao": "Segundo o gabarito, as duas são falsas: a **decomposição funcional** é característica do paradigma **estruturado**; casos de uso descrevem **interações ator-sistema** (visão externa), e não uma decomposição funcional. Já o **modelo de classes conceituais** representa conceitos do **domínio** (atributos e relacionamentos), sem **métodos** resultantes de decomposição funcional.",
+   "analise_alternativas": {
+    "A": "Incorreta. A primeira é falsa; logo a segunda não pode justificá-la.",
+    "B": "Incorreta. A primeira é falsa.",
+    "C": "Incorreta. A segunda é falsa: classes conceituais não resultam de decomposição funcional.",
+    "D": "Incorreta. A primeira é falsa (casos de uso não são decomposição funcional).",
+    "E": "Correta. As duas afirmações são falsas."
+   },
+   "fundamentacao": {
+    "item": "5.3",
+    "arquivo_teoria": "conteudo/05-engenharia-software/05-analise-e-projeto.md"
+   },
+   "ponto_atencao": "Em asserção e razão, avalie **cada afirmação sozinha** antes de julgar a relação. Casos de uso ≠ decomposição funcional (estruturado); classes conceituais ≠ classes de projeto com métodos.",
+   "revisao_rapida": "Caso de uso: interação ator–sistema; classe conceitual: conceito do domínio.",
+   "tags": [
+    "casos-de-uso",
+    "classes-conceituais",
+    "suape-2012",
+    "oficial",
+    "dificil",
+    "analise"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Petroquímica Suape PSP nº 1/2012 (22/04/2012)",
+    "cargo": "Analista de Sistemas Júnior — Ênfase em Negócio",
+    "ano": 2012,
+    "prova": "Prova 6",
+    "numero_original": 37,
+    "id_prova": "PRV-009",
+    "situacao_gabarito": "de espelho (Estude Grátis), após recursos; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/candidatas-2026-11-04/suape-2012-prova.pdf",
     "sha256": "ver docs/estrategia/base-provas.md"
    },
    "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",

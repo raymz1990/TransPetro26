@@ -39,3 +39,63 @@ O **Sistema de Suporte à Decisão (SSD/DSS)** usa **modelos e dados** para apoi
 **Revisão rápida:** SSD = modelos e otimização para decisões semiestruturadas.
 
 **Fonte:** Fundação Cesgranrio, Transpetro PSP RH 2018.1 (Edital nº 1), Analista de Sistemas Júnior — Processos de Negócio (2018), prova Prova 15, questão 54; gabarito: de terceiros (Ética), alterado em 09/05/2018; não validado contra a banca.
+
+## OFI-000106 — Modelo estrela: tabela fato e dimensões
+
+*Questão oficial — Fundação Cesgranrio, Petrobras PSP RH 2017.2, Prova 3, questão 44.*
+
+**Gabarito: A**
+
+A **tabela fato** registra o **evento de negócio mensurável** (a venda, com suas medidas: valor, quantidade); as **dimensões** descrevem o contexto (**quem** comprou, **quem** vendeu, quando, onde). Venda = fato; cliente e vendedor = dimensões.
+
+- **A)** Correta. Venda é o evento medido (fato); cliente e vendedor descrevem o contexto (dimensões).
+- **B)** Incorreta. Inverte: cliente e vendedor são contexto, e não eventos medidos.
+- **C)** Incorreta. Cliente não é evento; a venda também não é dimensão.
+- **D)** Incorreta. Vendedor não é evento mensurável.
+- **E)** Incorreta. Vendedor não é fato, e a venda é o evento central.
+
+**Ponto de atenção:** Pergunta-guia: **"o que está sendo medido?"** (fato). As dimensões respondem a **quem, o quê, onde, quando**.
+
+**Revisão rápida:** Fato = evento medido; dimensão = contexto.
+
+**Fonte:** Fundação Cesgranrio, Petrobras PSP RH 2017.2 (prova de 18/03/2018), Analista de Sistemas Júnior — Processos de Negócio (2018), prova Prova 3, questão 44; gabarito: de espelho (PCI), fornecido pelo usuário; preliminar/definitivo não indicado; anulações não verificadas; não validado contra a banca.
+
+## OFI-000119 — Esquema estrela: tabelas periféricas desnormalizadas
+
+*Questão oficial — Fundação Cesgranrio, Petrobras PSP-RH-1/2006, Caderno de Analista de Sistemas Pleno, questão 45.*
+
+**Gabarito: C**
+
+No **esquema estrela**, uma **tabela fato** central (medidas e chaves) liga-se a **tabelas dimensão** periféricas, em geral **desnormalizadas** (atributos hierárquicos na mesma tabela), o que reduz o número de junções. No **floco de neve**, as dimensões são normalizadas.
+
+- **A)** Incorreta. O esquema é lógico (modelo dimensional) e multidimensional.
+- **B)** Incorreta. Inverte: a tabela central é o fato, e as periféricas são dimensões.
+- **C)** Correta. As dimensões desnormalizadas são característica do estrela.
+- **D)** Incorreta. O estrela é simples de evoluir (novas dimensões e medidas são acrescentadas com facilidade).
+- **E)** Incorreta. O estrela exige **menos** junções que um modelo normalizado, em geral.
+
+**Ponto de atenção:** Estrela: dimensões **desnormalizadas**, poucas junções. Floco de neve: dimensões **normalizadas**, mais junções, menos redundância.
+
+**Revisão rápida:** Estrela: fato central + dimensões desnormalizadas.
+
+**Fonte:** Fundação Cesgranrio, Petrobras PSP-RH-1/2006 (aplicação em 07/05/2006), Analista de Sistemas Pleno — Processos (2006), prova Caderno de Analista de Sistemas Pleno (questões 21 a 60), questão 45; gabarito: de espelho (Estude Grátis); recursos não verificados; não validado contra a banca.
+
+## OFI-000120 — Modelagem multidimensional (afirmação INCORRETA)
+
+*Questão oficial — Fundação Cesgranrio, Petrobras PSP-RH-1/2006, Caderno de Analista de Sistemas Pleno, questão 46.*
+
+**Gabarito: A**
+
+O modelo multidimensional serve a **consultas analíticas** (leitura, agregação), e não a **grandes volumes de atualizações** de usuários, que é característica de sistemas **transacionais (OLTP)**. Os demais itens descrevem corretamente a modelagem.
+
+- **A)** Correta. Incorreta, pois descreve OLTP; o DW é carregado em lote e consultado.
+- **B)** Incorreta. Fatos respondem "o que está sendo medido?".
+- **C)** Incorreta. Pré-agregações aceleram consultas frequentes.
+- **D)** Incorreta. Dimensões respondem a quando, o quê, onde e quem.
+- **E)** Incorreta. O DW (e o modelo multidimensional) é orientado a assunto.
+
+**Ponto de atenção:** OLTP: muitas **escritas** curtas; OLAP/DW: **leituras** analíticas, cargas em lote.
+
+**Revisão rápida:** Multidimensional: consulta analítica, não atualização transacional.
+
+**Fonte:** Fundação Cesgranrio, Petrobras PSP-RH-1/2006 (aplicação em 07/05/2006), Analista de Sistemas Pleno — Processos (2006), prova Caderno de Analista de Sistemas Pleno (questões 21 a 60), questão 46; gabarito: de espelho (Estude Grátis); recursos não verificados; não validado contra a banca.

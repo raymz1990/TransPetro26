@@ -2,7 +2,7 @@
  "modulo": "Questões oficiais — m04-governanca-ti",
  "lote": "T04 — Transpetro 2023 (Prova 6) e 2018 (Prova 15)",
  "data": "2026-11-06",
- "total": 6,
+ "total": 8,
  "questoes": [
   {
    "id": "OFI-000019",
@@ -350,6 +350,124 @@
     "situacao_gabarito": "de terceiros (Ética), alterado em 09/05/2018; não validado contra a banca",
     "aderencia_edital": "parcial",
     "url": "banco-questoes/oficiais/fontes-brutas/transpetro-2018-prova15-analista-sistemas-jr-processos-negocio.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000127",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Petroquímica Suape PSP nº 1/2012, Prova 6, questão 50.",
+   "modulo": "04-governanca-ti",
+   "assunto": "Maturidade dos processos de TI e relacionamento com o negócio",
+   "item_edital": "4.5",
+   "id_matriz": "E5-039",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "analise",
+   "tipo_questao": "cenario",
+   "enunciado": "Em determinada instituição, a área de TI é responsável por realizar atividades técnicas de infraestrutura para continuidade do negócio e desenvolvimento de sistemas que atendem às necessidades das áreas de negócio.\nEssas áreas, no entanto, continuamente tratam, direto com os fornecedores, mudanças em sistemas e aquisições de tecnologia que serão suportadas, posteriormente, pela área de TI.\nA área de TI tem muitas dificuldades para suportar esses projetos, pois participou somente em seus momentos finais. As áreas de negócio alegam que fazem isso para acelerar os processos.\nEm relação à maturidade dos processos, à organização e aos relacionamentos de TI nessa instituição, seu estágio é",
+   "alternativas": {
+    "A": "implícito e flexível",
+    "B": "inicial ou ad hoc",
+    "C": "otimizado e ágil",
+    "D": "gerenciado, porém imensurável",
+    "E": "repetível, porém improvável"
+   },
+   "gabarito": "B",
+   "resolucao": "Processos **sem planejamento coordenado**, decisões tomadas fora da TI e atuação reativa caracterizam o **nível inicial (ad hoc)** dos modelos de maturidade (como CMMI e COBIT): resultados dependem de iniciativas individuais, sem padronização.",
+   "analise_alternativas": {
+    "A": "Incorreta. \"Implícito e flexível\" não é nível de maturidade padrão.",
+    "B": "Correta. Atuação reativa, sem coordenação e sem padrão: nível inicial/ad hoc.",
+    "C": "Incorreta. Otimizado e ágil seria o estágio mais alto, com melhoria contínua.",
+    "D": "Incorreta. Gerenciado supõe medição e controle, o que não ocorre.",
+    "E": "Incorreta. \"Repetível, porém improvável\" não é nível padrão."
+   },
+   "fundamentacao": {
+    "item": "4.5",
+    "arquivo_teoria": "conteudo/04-governanca-ti/04-itsm.md"
+   },
+   "ponto_atencao": "Aderência parcial: modelos de maturidade (CMMI, COBIT) não são citados no edital; o item 4.5 trata de gerenciamento de serviços de TI. Níveis típicos: **inicial → repetível → definido → gerenciado → otimizado**.",
+   "revisao_rapida": "Ad hoc: sem processo, reativo.",
+   "tags": [
+    "maturidade",
+    "governanca",
+    "suape-2012",
+    "oficial",
+    "media",
+    "analise"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Petroquímica Suape PSP nº 1/2012 (22/04/2012)",
+    "cargo": "Analista de Sistemas Júnior — Ênfase em Negócio",
+    "ano": 2012,
+    "prova": "Prova 6",
+    "numero_original": 50,
+    "id_prova": "PRV-009",
+    "situacao_gabarito": "de espelho (Estude Grátis), após recursos; não validado contra a banca",
+    "aderencia_edital": "parcial",
+    "url": "banco-questoes/oficiais/fontes-brutas/candidatas-2026-11-04/suape-2012-prova.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000129",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Petroquímica Suape PSP nº 1/2012, Prova 6, questão 54.",
+   "modulo": "04-governanca-ti",
+   "assunto": "ITIL: objetivo do gerenciamento de incidentes",
+   "item_edital": "4.5",
+   "id_matriz": "E5-039",
+   "itens_secundarios": [],
+   "dificuldade": "facil",
+   "habilidade": "memorizacao",
+   "tipo_questao": "conceitual",
+   "enunciado": "O processo de Gerenciamento de Incidentes definido pelas melhores práticas do ITIL para o processo de Operações de Serviço tem como um de seus objetivos",
+   "alternativas": {
+    "A": "reduzir o tempo de indisponibilidade dos serviços, restaurando a operação normal o mais rapidamente possível, reduzindo o impacto na operação dos negócios.",
+    "B": "prevenir a indisponibilidade do serviço, garantindo que as instalações de versões de hardware e software estejam seguras, autorizadas e devidamente testadas.",
+    "C": "minimizar o impacto no negócio dos incidentes e problemas causados pelos erros na infraestrutura de TI e prevenir incidentes recorrentes.",
+    "D": "minimizar o impacto da mudança requerida para resolução do incidente ou problema, mantendo a qualidade dos serviços, bem como melhorar a operacionalização da infraestrutura.",
+    "E": "identificar e controlar os ativos de TI e itens de configuração que impactem nos acordos de níveis de serviço."
+   },
+   "gabarito": "A",
+   "resolucao": "O **gerenciamento de incidentes** visa **restaurar a operação normal do serviço o mais rápido possível**, minimizando o impacto no negócio. Prevenir recorrência é objetivo do **gerenciamento de problemas**; controlar versões, de **liberação**; impacto de mudanças, de **mudanças**; ativos e itens de configuração, de **configuração**.",
+   "analise_alternativas": {
+    "A": "Correta. Restaurar o serviço rapidamente: incidentes.",
+    "B": "Incorreta. Instalações de versões seguras e testadas: gerenciamento de liberação e implantação.",
+    "C": "Incorreta. Prevenir incidentes recorrentes: gerenciamento de problemas.",
+    "D": "Incorreta. Impacto das mudanças: gerenciamento de mudanças.",
+    "E": "Incorreta. Ativos e itens de configuração: gerenciamento de configuração e ativos."
+   },
+   "fundamentacao": {
+    "item": "4.5",
+    "arquivo_teoria": "conteudo/04-governanca-ti/04-itsm.md"
+   },
+   "ponto_atencao": "Incidente = **restaurar**; problema = **prevenir recorrência**; mudança = **controlar alterações**; configuração = **ativos/IC**.",
+   "revisao_rapida": "Incidentes: restaurar o serviço rapidamente.",
+   "tags": [
+    "itil",
+    "incidentes",
+    "suape-2012",
+    "oficial",
+    "facil",
+    "memorizacao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Petroquímica Suape PSP nº 1/2012 (22/04/2012)",
+    "cargo": "Analista de Sistemas Júnior — Ênfase em Negócio",
+    "ano": 2012,
+    "prova": "Prova 6",
+    "numero_original": 54,
+    "id_prova": "PRV-009",
+    "situacao_gabarito": "de espelho (Estude Grátis), após recursos; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/candidatas-2026-11-04/suape-2012-prova.pdf",
     "sha256": "ver docs/estrategia/base-provas.md"
    },
    "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",

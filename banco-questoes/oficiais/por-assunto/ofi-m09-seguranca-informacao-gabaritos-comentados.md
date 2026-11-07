@@ -699,3 +699,103 @@ No **DRaaS** (*Disaster Recovery as a Service*), um **provedor de nuvem** replic
 **Revisão rápida:** DRaaS: provedor orquestra o plano de recuperação.
 
 **Fonte:** Fundação Cesgranrio, BNDES, Edital 1/2024, Analista — Análise de Sistemas: Desenvolvimento (2024), prova Prova 3 (manhã), questão 53; gabarito: final após recursos (documento da banca, via espelho QConcursos).
+
+## OFI-000111 — Assinatura digital: finalidade do hash
+
+*Questão oficial — Fundação Cesgranrio, Petrobras PSP RH 2017.2, Prova 3, questão 63.*
+
+**Gabarito: B**
+
+O **hash** é um **resumo de tamanho fixo** do documento. Na assinatura digital, o signatário cifra o hash com sua **chave privada**; o verificador recalcula o hash e compara com o decifrado (com a **chave pública**): se coincidem, o conteúdo **não foi alterado** (integridade). O hash **não permite recuperar** o documento (função unidirecional).
+
+- **A)** Incorreta. O hash não facilita a criptografia do documento.
+- **B)** Correta. O hash comprova a integridade desde a assinatura.
+- **C)** Incorreta. A decifragem usa a chave **pública** do signatário (a secreta nunca consta do certificado).
+- **D)** Incorreta. O hash não permite recuperar o documento original, nem com chave secreta.
+- **E)** Incorreta. O hash não permite recuperar o documento, nem com a chave pública.
+
+**Ponto de atenção:** Hash: **unidirecional**, serve para **integridade**. A autoria decorre da **chave privada** do signatário usada para cifrar o hash.
+
+**Revisão rápida:** Hash = integridade; não reversível.
+
+**Fonte:** Fundação Cesgranrio, Petrobras PSP RH 2017.2 (prova de 18/03/2018), Analista de Sistemas Júnior — Processos de Negócio (2018), prova Prova 3, questão 63; gabarito: de espelho (PCI), fornecido pelo usuário; preliminar/definitivo não indicado; anulações não verificadas; não validado contra a banca.
+
+## OFI-000112 — Ataques passivos e requisito ameaçado
+
+*Questão oficial — Fundação Cesgranrio, Petrobras PSP RH 2017.2, Prova 3, questão 64.*
+
+**Gabarito: A**
+
+Ataques **passivos** (escuta e análise de tráfego) **observam** sem alterar os dados e ameaçam a **confidencialidade**. Ataques **ativos** (disfarce, modificação, repetição, negação de serviço) ameaçam integridade, autenticidade e disponibilidade.
+
+- **A)** Correta. Observar ou analisar o tráfego compromete o sigilo: confidencialidade.
+- **B)** Incorreta. A irretratabilidade é ameaçada por negação de autoria, em ataques ativos.
+- **C)** Incorreta. A autenticidade é ameaçada por disfarce (ataque ativo).
+- **D)** Incorreta. A disponibilidade é ameaçada por negação de serviço (ataque ativo).
+- **E)** Incorreta. A integridade é ameaçada por modificação de dados (ataque ativo).
+
+**Ponto de atenção:** Passivo = **escuta** → confidencialidade. Ativo = **altera ou interrompe** → integridade, autenticidade, disponibilidade.
+
+**Revisão rápida:** Passivo ameaça confidencialidade.
+
+**Fonte:** Fundação Cesgranrio, Petrobras PSP RH 2017.2 (prova de 18/03/2018), Analista de Sistemas Júnior — Processos de Negócio (2018), prova Prova 3, questão 64; gabarito: de espelho (PCI), fornecido pelo usuário; preliminar/definitivo não indicado; anulações não verificadas; não validado contra a banca.
+
+## OFI-000113 — ISO 27002: diretrizes de classificação da informação
+
+*Questão oficial — Fundação Cesgranrio, Petrobras PSP RH 2017.2, Prova 3, questão 65.*
+
+**Gabarito: E**
+
+A ISO/IEC 27002 (seção de **classificação e rotulagem**) recomenda que as informações e as **saídas dos sistemas que tratam dados sensíveis** sejam **rotuladas** conforme **valor, requisitos legais, sensibilidade e criticidade**; o **proprietário** do ativo classifica e a classificação é **revisada periodicamente**.
+
+- **A)** Incorreta. A revisão fica com o proprietário da informação, e não necessariamente com a alta gerência.
+- **B)** Incorreta. A atribuição cabe ao **proprietário** da informação, e a TI é custodiante.
+- **C)** Incorreta. Informação oriunda de outra organização pode ter esquema de classificação diferente e exige **mapeamento**, e não manutenção cega dos rótulos.
+- **D)** Incorreta. A norma não prescreve "princípio de equidade" para a classificação.
+- **E)** Correta. A rotulagem de informações e saídas dos sistemas, conforme valor e sensibilidade, é diretriz da norma.
+
+**Ponto de atenção:** Palavras-chave: **rotular + valor + sensibilidade**. Quem classifica: **proprietário**; TI: custodiante.
+
+**Revisão rápida:** 27002: classificar e rotular conforme valor e sensibilidade.
+
+**Fonte:** Fundação Cesgranrio, Petrobras PSP RH 2017.2 (prova de 18/03/2018), Analista de Sistemas Júnior — Processos de Negócio (2018), prova Prova 3, questão 65; gabarito: de espelho (PCI), fornecido pelo usuário; preliminar/definitivo não indicado; anulações não verificadas; não validado contra a banca.
+
+## OFI-000114 — Single Sign-On
+
+*Questão oficial — Fundação Cesgranrio, Petrobras PSP RH 2017.2, Prova 3, questão 66.*
+
+**Gabarito: B**
+
+No **SSO**, o usuário se autentica **uma vez** e acessa várias aplicações sem novas autenticações. OTP e OTT são senhas e tokens de uso único (segundo fator), e ULC e UAD não são mecanismos conhecidos.
+
+- **A)** Incorreta. "Unique Login Control" não é padrão conhecido.
+- **B)** Correta. Autenticar uma vez e acessar várias aplicações: SSO.
+- **C)** Incorreta. OTP é senha descartável, usada como fator de autenticação.
+- **D)** Incorreta. OTT é token de uso único.
+- **E)** Incorreta. "Unique-Auth Database" não é padrão conhecido.
+
+**Ponto de atenção:** SSO ≠ MFA ≠ OTP: SSO reduz **autenticações repetidas**; OTP/MFA reforçam **a autenticação**.
+
+**Revisão rápida:** SSO: uma autenticação, vários sistemas.
+
+**Fonte:** Fundação Cesgranrio, Petrobras PSP RH 2017.2 (prova de 18/03/2018), Analista de Sistemas Júnior — Processos de Negócio (2018), prova Prova 3, questão 66; gabarito: de espelho (PCI), fornecido pelo usuário; preliminar/definitivo não indicado; anulações não verificadas; não validado contra a banca.
+
+## OFI-000128 — Risco, ameaça e vulnerabilidade (asserção e razão)
+
+*Questão oficial — Fundação Cesgranrio, Petroquímica Suape PSP nº 1/2012, Prova 6, questão 51.*
+
+**Gabarito: E**
+
+O **risco** cresce com o **aumento** das **ameaças** e das **vulnerabilidades** (e do impacto). Reduzir ameaças **diminui** o risco, e aumentar vulnerabilidades **o aumenta**. As duas afirmações estão invertidas, portanto, **ambas falsas**.
+
+- **A)** Incorreta. Ambas são falsas.
+- **B)** Incorreta. Ambas são falsas.
+- **C)** Incorreta. A segunda também é falsa.
+- **D)** Incorreta. A primeira é falsa, mas a segunda também.
+- **E)** Correta. Risco ∝ ameaça × vulnerabilidade × impacto: as duas afirmações contrariam a relação.
+
+**Ponto de atenção:** **Risco = probabilidade (ameaça × vulnerabilidade) × impacto.** Mais ameaça ou mais vulnerabilidade, mais risco.
+
+**Revisão rápida:** Risco cresce com ameaças e vulnerabilidades.
+
+**Fonte:** Fundação Cesgranrio, Petroquímica Suape PSP nº 1/2012 (22/04/2012), Analista de Sistemas Júnior — Ênfase em Negócio (2012), prova Prova 6, questão 51; gabarito: de espelho (Estude Grátis), após recursos; não validado contra a banca.

@@ -477,3 +477,71 @@ Esse tipo de recuperação de desastres utilizará o modelo de serviços
 (C) DRaaS
 (D) DRVMaaS
 (E) PaaS
+
+## OFI-000111 — Assinatura digital: finalidade do hash
+
+*Questão oficial — Fundação Cesgranrio, Petrobras PSP RH 2017.2, Prova 3, questão 63.* · item 9.19 · Média
+
+A Infraestrutura de Chaves Públicas Brasileira regula a validação de uma assinatura digital ICP-Brasil, realizada sobre um documento eletrônico, com o estabelecimento de alguns critérios.
+Um desses critérios utiliza resultados hash do documento, que têm como uma de suas finalidades
+
+(A) facilitar a criptografia do documento original.
+(B) assegurar a integridade do conteúdo digital, mostrando que não houve alteração desse conteúdo desde a criação da assinatura digital pelo signatário.
+(C) assegurar a autoria, decifrando a assinatura digital com a chave criptográfica secreta, contida no certificado digital do signatário.
+(D) proporcionar a recuperação do documento original com a aplicação da chave secreta do destinatário sobre o hash.
+(E) proporcionar a recuperação do documento original com a aplicação da chave pública do remetente sobre o hash.
+
+## OFI-000112 — Ataques passivos e requisito ameaçado
+
+*Questão oficial — Fundação Cesgranrio, Petrobras PSP RH 2017.2, Prova 3, questão 64.* · item 9.4 · Fácil
+
+Os sistemas computacionais estão sujeitos a ataques tanto passivos quanto ativos.
+Ataques passivos, tais como o monitoramento ou a análise de tráfego, ameaçam principalmente os requisitos de
+
+(A) confidencialidade
+(B) irretratabilidade
+(C) autenticidade
+(D) disponibilidade
+(E) integridade
+
+## OFI-000113 — ISO 27002: diretrizes de classificação da informação
+
+*Questão oficial — Fundação Cesgranrio, Petrobras PSP RH 2017.2, Prova 3, questão 65.* · item 9.18 · Média
+
+A norma ISO 27002 estabelece que o objetivo da classificação das informações (atribuição de grau de confidencialidade) é a garantia de que os ativos de informação receberão um nível de proteção adequado. Ainda segundo a norma, as informações devem ser classificadas para indicar a necessidade, as prioridades e o grau de proteção.
+Com base nesse objetivo, a norma estabelece diretrizes para essa classificação, entre as quais se inclui a de
+
+(A) atribuir o processo de revisão do nível de confidencialidade de um documento à alta gerência.
+(B) manter a responsabilidade pela atribuição do nível de confidencialidade de um documento com o setor de TI.
+(C) manter os rótulos de classificação originais nos documentos oriundos de outras organizações.
+(D) manter o princípio de equidade que garante aos funcionários com funções similares o mesmo direito de acesso às informações classificadas.
+(E) rotular as informações e as saídas geradas pelos sistemas que tratam dados confidenciais, segundo seu valor e sensibilidade para a organização.
+
+## OFI-000114 — Single Sign-On
+
+*Questão oficial — Fundação Cesgranrio, Petrobras PSP RH 2017.2, Prova 3, questão 66.* · item 9.8 · Fácil
+
+Em ambientes computacionais, muitas aplicações que oferecem funcionalidades distintas são usadas simultaneamente pelos usuários.
+Para possibilitar esse uso simultâneo, sem que o usuário tenha de fazer autenticações distintas em cada uma das aplicações, os administradores podem implantar uma infraestrutura de autenticação com suporte a
+
+(A) Unique Login Control (ULC)
+(B) Single Sign-On (SSO)
+(C) One-Time Password (OTP)
+(D) One-Time Token (OTT)
+(E) Unique-Auth Database (UAD)
+
+## OFI-000128 — Risco, ameaça e vulnerabilidade (asserção e razão)
+
+*Questão oficial — Fundação Cesgranrio, Petroquímica Suape PSP nº 1/2012, Prova 6, questão 51.* · item 9.16 · Média
+
+Os riscos de segurança da informação crescem com a redução das ameaças.
+PORQUE
+Os riscos de segurança da informação diminuem com o aumento das vulnerabilidades.
+
+Analisando-se as afirmações acima, conclui-se que
+
+(A) as duas afirmações são verdadeiras, e a segunda justifica a primeira.
+(B) as duas afirmações são verdadeiras, e a segunda não justifica a primeira.
+(C) a primeira afirmação é verdadeira, e a segunda é falsa.
+(D) a primeira afirmação é falsa, e a segunda é verdadeira.
+(E) as duas afirmações são falsas.

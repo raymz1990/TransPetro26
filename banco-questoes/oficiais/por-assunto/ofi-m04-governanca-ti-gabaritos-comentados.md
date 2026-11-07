@@ -119,3 +119,43 @@ KPIs são indicadores **escolhidos conforme os objetivos de negócio** para medi
 **Revisão rápida:** Sob demanda + assinatura + online = nuvem.
 
 **Fonte:** Fundação Cesgranrio, Transpetro PSP RH 2018.1 (Edital nº 1), Analista de Sistemas Júnior — Processos de Negócio (2018), prova Prova 15, questão 56; gabarito: de terceiros (Ética), alterado em 09/05/2018; não validado contra a banca.
+
+## OFI-000127 — Maturidade dos processos de TI e relacionamento com o negócio
+
+*Questão oficial — Fundação Cesgranrio, Petroquímica Suape PSP nº 1/2012, Prova 6, questão 50.*
+
+**Gabarito: B**
+
+Processos **sem planejamento coordenado**, decisões tomadas fora da TI e atuação reativa caracterizam o **nível inicial (ad hoc)** dos modelos de maturidade (como CMMI e COBIT): resultados dependem de iniciativas individuais, sem padronização.
+
+- **A)** Incorreta. "Implícito e flexível" não é nível de maturidade padrão.
+- **B)** Correta. Atuação reativa, sem coordenação e sem padrão: nível inicial/ad hoc.
+- **C)** Incorreta. Otimizado e ágil seria o estágio mais alto, com melhoria contínua.
+- **D)** Incorreta. Gerenciado supõe medição e controle, o que não ocorre.
+- **E)** Incorreta. "Repetível, porém improvável" não é nível padrão.
+
+**Ponto de atenção:** Aderência parcial: modelos de maturidade (CMMI, COBIT) não são citados no edital; o item 4.5 trata de gerenciamento de serviços de TI. Níveis típicos: **inicial → repetível → definido → gerenciado → otimizado**.
+
+**Revisão rápida:** Ad hoc: sem processo, reativo.
+
+**Fonte:** Fundação Cesgranrio, Petroquímica Suape PSP nº 1/2012 (22/04/2012), Analista de Sistemas Júnior — Ênfase em Negócio (2012), prova Prova 6, questão 50; gabarito: de espelho (Estude Grátis), após recursos; não validado contra a banca.
+
+## OFI-000129 — ITIL: objetivo do gerenciamento de incidentes
+
+*Questão oficial — Fundação Cesgranrio, Petroquímica Suape PSP nº 1/2012, Prova 6, questão 54.*
+
+**Gabarito: A**
+
+O **gerenciamento de incidentes** visa **restaurar a operação normal do serviço o mais rápido possível**, minimizando o impacto no negócio. Prevenir recorrência é objetivo do **gerenciamento de problemas**; controlar versões, de **liberação**; impacto de mudanças, de **mudanças**; ativos e itens de configuração, de **configuração**.
+
+- **A)** Correta. Restaurar o serviço rapidamente: incidentes.
+- **B)** Incorreta. Instalações de versões seguras e testadas: gerenciamento de liberação e implantação.
+- **C)** Incorreta. Prevenir incidentes recorrentes: gerenciamento de problemas.
+- **D)** Incorreta. Impacto das mudanças: gerenciamento de mudanças.
+- **E)** Incorreta. Ativos e itens de configuração: gerenciamento de configuração e ativos.
+
+**Ponto de atenção:** Incidente = **restaurar**; problema = **prevenir recorrência**; mudança = **controlar alterações**; configuração = **ativos/IC**.
+
+**Revisão rápida:** Incidentes: restaurar o serviço rapidamente.
+
+**Fonte:** Fundação Cesgranrio, Petroquímica Suape PSP nº 1/2012 (22/04/2012), Analista de Sistemas Júnior — Ênfase em Negócio (2012), prova Prova 6, questão 54; gabarito: de espelho (Estude Grátis), após recursos; não validado contra a banca.

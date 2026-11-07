@@ -83,3 +83,30 @@ A inovação criada nos últimos anos, na área de sistemas de informação, que
 (C) e-business.
 (D) teletrabalho.
 (E) virtualização.
+
+## OFI-000127 — Maturidade dos processos de TI e relacionamento com o negócio
+
+*Questão oficial — Fundação Cesgranrio, Petroquímica Suape PSP nº 1/2012, Prova 6, questão 50.* · item 4.5 · Média
+
+Em determinada instituição, a área de TI é responsável por realizar atividades técnicas de infraestrutura para continuidade do negócio e desenvolvimento de sistemas que atendem às necessidades das áreas de negócio.
+Essas áreas, no entanto, continuamente tratam, direto com os fornecedores, mudanças em sistemas e aquisições de tecnologia que serão suportadas, posteriormente, pela área de TI.
+A área de TI tem muitas dificuldades para suportar esses projetos, pois participou somente em seus momentos finais. As áreas de negócio alegam que fazem isso para acelerar os processos.
+Em relação à maturidade dos processos, à organização e aos relacionamentos de TI nessa instituição, seu estágio é
+
+(A) implícito e flexível
+(B) inicial ou ad hoc
+(C) otimizado e ágil
+(D) gerenciado, porém imensurável
+(E) repetível, porém improvável
+
+## OFI-000129 — ITIL: objetivo do gerenciamento de incidentes
+
+*Questão oficial — Fundação Cesgranrio, Petroquímica Suape PSP nº 1/2012, Prova 6, questão 54.* · item 4.5 · Fácil
+
+O processo de Gerenciamento de Incidentes definido pelas melhores práticas do ITIL para o processo de Operações de Serviço tem como um de seus objetivos
+
+(A) reduzir o tempo de indisponibilidade dos serviços, restaurando a operação normal o mais rapidamente possível, reduzindo o impacto na operação dos negócios.
+(B) prevenir a indisponibilidade do serviço, garantindo que as instalações de versões de hardware e software estejam seguras, autorizadas e devidamente testadas.
+(C) minimizar o impacto no negócio dos incidentes e problemas causados pelos erros na infraestrutura de TI e prevenir incidentes recorrentes.
+(D) minimizar o impacto da mudança requerida para resolução do incidente ou problema, mantendo a qualidade dos serviços, bem como melhorar a operacionalização da infraestrutura.
+(E) identificar e controlar os ativos de TI e itens de configuração que impactem nos acordos de níveis de serviço.
