@@ -23,3 +23,27 @@
 .rev-notas{display:flex;gap:6px;flex-wrap:wrap}
 .rev-notas .fc-nota{min-width:68px;flex:0 0 auto;padding:5px 10px}
 @media (max-width:640px){.rev-notas{width:100%}.rev-notas .fc-nota{flex:1;min-width:0}}
+.tabs{display:flex;flex-wrap:wrap;gap:0;border-bottom:1px solid var(--line-strong);margin:14px 0 6px}
+.tabs a{padding:8px 16px;color:var(--text-2);text-decoration:none;border:1px solid transparent;border-bottom:0;margin-bottom:-1px}
+.tabs a:hover{color:var(--text)}
+.tabs a[aria-current="page"]{color:var(--text);background:var(--surface);border-color:var(--line-strong);border-top:2px solid var(--amber)}
+.blocos{list-style:none;padding:0;margin:12px 0;border-top:1px solid var(--line)}
+.blocos li{display:grid;grid-template-columns:64px minmax(140px,1fr) 2fr;gap:4px 12px;padding:9px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.blk-min{font:700 .95rem Georgia,serif;color:var(--amber)}
+.blk-nome{font-weight:600}
+.blk-alvo{min-width:0;overflow-wrap:anywhere}
+@media (max-width:640px){.blocos li{grid-template-columns:56px 1fr}.blk-alvo{grid-column:2}}
+.sessao-form{margin:10px 0}
+.sessao-form input[type=text],.sessao-form input[type=number],.sessao-form input[type=date]{background:var(--surface);border:1px solid var(--line-strong);padding:6px 8px;border-radius:2px;min-width:150px;font:inherit;color:inherit}
+.table.cal{table-layout:fixed}
+.table.cal td{height:78px;padding:4px 6px;font-size:.8rem}
+.table.cal td.vazio{background:var(--bg-2)}
+.table.cal td.hoje{outline:2px solid var(--amber);outline-offset:-2px}
+.table.cal td.prova{background:var(--amber-bg)}
+.cal .dia-n{display:block;font-weight:700}
+.cal .dia-real{display:block;color:var(--ok)}
+.cal .dia-prev{display:block;color:var(--text-3)}
+.cal .dia-rev{display:block;color:var(--petrol)}
+.cal .dia-prova{display:block;color:var(--amber);font-weight:700}
+.table tr.hoje td{background:var(--surface-2)}
+@media (max-width:640px){.table.cal td{height:64px;padding:3px 3px;font-size:.7rem}}

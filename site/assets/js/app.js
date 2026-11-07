@@ -18,6 +18,15 @@
     return h("p", {}, h("a", { href: "#/simulados/" + t.sim + "/resultado/" + t.id }, t.titulo), h("br"), t.acertos + "/" + t.total + " acertos (" + Math.round(100 * t.acertos / t.total) + "%)");
   }
 
+  function painelRotina() {
+    var r = TP.planoResumoHoje(), pl = r.plano;
+    if (!pl.min) return h("div", {}, h("p", { class: "muted" }, "Hoje é dia livre no plano."), h("a", { href: "#/plano" }, "Abrir plano de estudos"));
+    return h("div", {},
+      h("p", {}, h("b", {}, pl.min + " min"), " previstos · ", pl.ativ, h("br"),
+        pl.alvo ? h("span", { class: "muted" }, "Teoria: " + pl.alvo.a.titulo) : h("span", { class: "muted" }, "Registrado hoje: " + r.realizado + " min")),
+      h("a", { href: "#/plano" }, "Abrir plano de hoje"));
+  }
+
   function painelRevisoes(erros) {
     if (TP.revSincronizar()) TP.salvar();
     var c = TP.revContagem();
@@ -60,8 +69,7 @@
     /* Painéis: rotina, revisões e simulado (o que ainda não existe é dito como tal) */
     var erros = TP.dados().erros ? Object.keys(TP.dados().erros).length : null;
     main.appendChild(h("div", { class: "panels" },
-      h("section", { class: "panel" }, h("h3", {}, "Rotina de estudos"),
-        h("p", { class: "muted" }, "Plano diário, semanal e mensal: ainda não implementado. Por ora, use a lista de conteúdo e marque o que estudou.")),
+      h("section", { class: "panel" }, h("h3", {}, "Rotina de estudos"), painelRotina()),
       h("section", { class: "panel" }, h("h3", {}, "Próximas revisões"), painelRevisoes(erros)),
       h("section", { class: "panel" }, h("h3", {}, "Último simulado"), ultimoSimulado())));
 
@@ -83,7 +91,7 @@
 
     main.appendChild(h("div", { class: "notice" }, "Seus dados (progresso, respostas, erros) ficam armazenados apenas neste navegador e neste dispositivo; não são sincronizados. Limpar os dados do navegador apaga o progresso: faça backup em ",
       h("a", { href: "#/dados" }, "Meus dados"), ". O edital oficial prevalece sobre qualquer material deste site."));
-    main.appendChild(h("p", { class: "muted" }, "Disponível: teoria (módulos 1 a 9 e Gerais), banco de questões (oficiais da Cesgranrio e autorais, com origem identificada), simulados cronometrados, caderno de erros, desempenho, busca e backup. Flashcards e revisão espaçada disponíveis; ainda não implementado: plano de estudos. Questões autorais não são da Cesgranrio."));
+    main.appendChild(h("p", { class: "muted" }, "Disponível: teoria (módulos 1 a 9 e Gerais), banco de questões (oficiais da Cesgranrio e autorais, com origem identificada), simulados cronometrados, caderno de erros, desempenho, busca e backup. Também disponíveis: flashcards, revisão espaçada e plano de estudos. Questões autorais não são da Cesgranrio."));
   });
 
   /* ---------- Conteúdo ---------- */
@@ -207,7 +215,7 @@
       "- As questões **autorais** (\"estilo Cesgranrio\") foram criadas pelo projeto e **não** são questões de prova nem foram elaboradas pela banca. As marcadas como \"em revisão\" aguardam validação do usuário.\n" +
       "- O texto do edital prevalece sobre qualquer material deste site.\n\n" +
       "## Ainda não disponível\n\n" +
-      "Plano de estudos e questões adaptadas.") }));
+      "Questões adaptadas (a plataforma não as inclui).") }));
   });
 
   /* ---------- Inicialização ---------- */

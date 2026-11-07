@@ -7,7 +7,7 @@
 
   function vazio() {
     return { versao: VERSAO, estudados: {}, respostas: {}, marcadas: {}, erros: {}, simulados: { tentativas: [], andamento: {} },
-      flashcards: {}, atividade: {}, config: {}, revisoes: {} };
+      flashcards: {}, atividade: {}, config: {}, revisoes: {}, plano: {}, sessoes: [] };
   }
   function ehObjeto(x) { return x && typeof x === "object" && !Array.isArray(x); }
 
@@ -33,6 +33,10 @@
       if (d[k] === undefined) d[k] = {};
       if (!ehObjeto(d[k])) throw new Error("Campo inválido: " + k);
     });
+    /* Plano de estudos (T11): configuração e registro de sessões. */
+    if (!Array.isArray(d.sessoes)) { if (d.sessoes !== undefined) throw new Error("Campo inválido: sessoes"); d.sessoes = []; }
+    if (d.plano === undefined) d.plano = {};
+    if (!ehObjeto(d.plano)) throw new Error("Campo inválido: plano");
     d.versao = VERSAO;
     return d;
   }
@@ -87,6 +91,11 @@
         var a = dados.flashcards[id], b = novo.flashcards[id];
         if (!a || (b.ult || "") > (a.ult || "")) dados.flashcards[id] = b;
       });
+      var sid = {};
+      dados.sessoes.forEach(function (x) { sid[x.id] = 1; });
+      novo.sessoes.forEach(function (x) { if (!sid[x.id]) dados.sessoes.push(x); });
+      dados.sessoes.sort(function (a, b) { return a.data < b.data ? -1 : a.data > b.data ? 1 : 0; });
+      Object.keys(novo.plano).forEach(function (k) { if (dados.plano[k] === undefined) dados.plano[k] = novo.plano[k]; });
       Object.keys(novo.revisoes).forEach(function (k) {
         var a = dados.revisoes[k], b = novo.revisoes[k];
         if (!a || (b.ult || "") > (a.ult || "")) dados.revisoes[k] = b;
