@@ -66,16 +66,16 @@ Obtidas e catalogadas duas provas da Cesgranrio (só metadados por questão; nad
 
 ## Sessão de 2026-11-06 (P1: T04 a T08)
 Autorizada pelo usuário em bloco. Detalhes: `docs/qualidade/relatorio-p1.md`.
-- **T04 (parcial):** 63 questões oficiais (`OFI-000001` a `063`) da Transpetro 2023 (Prova 6, 41) e 2018 (Prova 15, 22), mesmo cargo e banca, transcritas do caderno e comentadas alternativa a alternativa; gabarito de terceiros, não validado contra a banca. **166 das 229 candidatas continuam pendentes**; não há `ADP-`. Registro: `banco-questoes/oficiais/registro-t04.md`.
+- **T04 (parcial):** 105 questões oficiais (`OFI-000001` a `105`): Transpetro 2023 (41) e 2018 (22), Caixa 2021 (11, gabarito oficial), BNDES 2024 Cibersegurança (17) e Desenvolvimento (14), transcritas do caderno e comentadas alternativa a alternativa; gabarito de terceiros, não validado contra a banca. **124 das 229 candidatas continuam pendentes**; não há `ADP-`. Registro: `banco-questoes/oficiais/registro-t04.md`.
 - **T05:** 30 autorais (`AUT-000091` a `120`); **os 94 itens do Anexo IV têm questão principal**; M1 a M9 com mais de 10 questões autorais.
 - **T06:** 35 autorais de Gerais (`AUT-000121` a `155`: 24 de Português, 11 de Inglês), textos autorais; regras gramaticais sem consulta a VOLP/gramática de referência.
 - **T07:** 14 simulados (dados) em `banco-questoes/simulados/`, com gabarito comentado. Distribuição **pedagógica** (proporcional ao número de itens do Anexo IV por módulo), não oficial. `SIM-ESP-01` e `SIM-DIAG-01` usam só questões `validada`; os demais são rascunho (há questões `em_revisao`).
 - **T08:** simulados no site (`timer.js`, `simulations.js`): lista, execução cronometrada (relógio real, retoma após recarregar, entrega automática), navegação e marcação, confirmação de entrega, correção comentada, comparação com a tentativa anterior e histórico; gabarito só depois da entrega. Testado no navegador (desktop e 375 px).
-- **Status das questões novas: `em_revisao`** (T04 a T06 = 128 questões). O usuário ainda precisa validá-las; só `validada` entra em simulado "oficial" do projeto.
+- **Status das questões novas: `em_revisao`** (T04 a T06 = 170 questões). O usuário ainda precisa validá-las; só `validada` entra em simulado "oficial" do projeto.
 - Ferramentas: `tools/qlib.py` (autoria), `tools/lotes/*.py` (fonte de cada lote), `tools/validar_banco.py`, `tools/cobertura.py`, `tools/gerar_docs_banco.py`, `tools/build_site_data.py`.
 
 ## Próxima ação
-Validação, pelo usuário, das 128 questões `em_revisao`; concluir a T04 (166 candidatas); depois P2 (T09 a T12), com autorização explícita. Flashcards, revisão espaçada, plano de estudos e NotebookLM não foram iniciados.
+Validação, pelo usuário, das 170 questões `em_revisao`; concluir a T04 (124 candidatas); depois P2 (T09 a T12), com autorização explícita. Flashcards, revisão espaçada, plano de estudos e NotebookLM não foram iniciados.
 
 ## Regras
 - Não repetir tarefas concluídas.

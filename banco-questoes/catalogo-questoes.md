@@ -1,6 +1,6 @@
 # Catálogo geral de questões — Banco de questões
 
-**Atualizado em:** 2026-11-06 (gerado por `python tools/gerar_docs_banco.py`). **Totais:** 218 questões — oficiais 63 · adaptadas 0 · autorais 155 (Específicos 120, Gerais 35). Validadas 90 · em revisão 128.
+**Atualizado em:** 2026-11-06 (gerado por `python tools/gerar_docs_banco.py`). **Totais:** 260 questões — oficiais 105 · adaptadas 0 · autorais 155 (Específicos 120, Gerais 35). Validadas 90 · em revisão 170.
 
 `validada` = aprovada pelo usuário (sem revisão por terceiros). `em_revisao` = produzida na fase P1 (T04 a T06) e **ainda não validada pelo usuário**. Questões oficiais trazem prova e número no campo `fonte_origem`; gabaritos de 2023 são de espelho de terceiros, **não validados contra a banca**. O catálogo das provas (metadados, sem enunciados) está em `docs/estrategia/catalogo-questoes-historicas.md`.
 
@@ -224,3 +224,45 @@
 | OFI-000061 | oficial | M09 | 9.19 | Certificado digital: SHA256RSA | Média | compreensao | E | em_revisao | Transpetro PSP RH 2018.1 2018, Prova 15, Q50 (PRV-006) |
 | OFI-000062 | oficial | M09 | 9.8 | SAML: Artifact Resolution Protocol | Difícil | memorizacao | C | em_revisao | Transpetro PSP RH 2018.1 2018, Prova 15, Q51 (PRV-006) |
 | OFI-000063 | oficial | M09 | 9.19 | ICP-Brasil: certificado da AC subordinada à raiz | Média | compreensao | A | em_revisao | Transpetro PSP RH 2018.1 2018, Prova 15, Q52 (PRV-006) |
+| OFI-000064 | oficial | M05 | 5.4 | DevOps: shift left testing | Fácil | compreensao | D | em_revisao | Caixa Econômica Federal, Edital 1/2021/NM 2021, Caderno de Tecnologia da Informação (questões 31 a 60), Q31 (PRV-008) |
+| OFI-000065 | oficial | M05 | 5.1 | Processo Unificado: disciplina de requisitos nas fases | Média | memorizacao | A | em_revisao | Caixa Econômica Federal, Edital 1/2021/NM 2021, Caderno de Tecnologia da Informação (questões 31 a 60), Q33 (PRV-008) |
+| OFI-000066 | oficial | M05 | 5.3 | Padrão de projeto Proxy | Média | aplicacao | C | em_revisao | Caixa Econômica Federal, Edital 1/2021/NM 2021, Caderno de Tecnologia da Informação (questões 31 a 60), Q36 (PRV-008) |
+| OFI-000067 | oficial | M01 | 1.3 | Modelo relacional: chaves primária e estrangeira | Média | analise | E | em_revisao | Caixa Econômica Federal, Edital 1/2021/NM 2021, Caderno de Tecnologia da Informação (questões 31 a 60), Q38 (PRV-008) |
+| OFI-000068 | oficial | M01 | 1.6 | Metadados em SGBD: uso pelo próprio sistema | Média | compreensao | E | em_revisao | Caixa Econômica Federal, Edital 1/2021/NM 2021, Caderno de Tecnologia da Informação (questões 31 a 60), Q39 (PRV-008) |
+| OFI-000069 | oficial | M05 | 5.1 | Análise de pontos de função: ponto de vista do usuário | Fácil | memorizacao | D | em_revisao | Caixa Econômica Federal, Edital 1/2021/NM 2021, Caderno de Tecnologia da Informação (questões 31 a 60), Q40 (PRV-008) |
+| OFI-000070 | oficial | M05 | 5.4 | Desenvolvimento Dirigido por Testes (TDD) | Média | compreensao | D | em_revisao | Caixa Econômica Federal, Edital 1/2021/NM 2021, Caderno de Tecnologia da Informação (questões 31 a 60), Q53 (PRV-008) |
+| OFI-000071 | oficial | M05 | 5.5 | Controle de versão: commit | Fácil | memorizacao | B | em_revisao | Caixa Econômica Federal, Edital 1/2021/NM 2021, Caderno de Tecnologia da Informação (questões 31 a 60), Q54 (PRV-008) |
+| OFI-000072 | oficial | M05 | 5.4 | Teste de unidade | Fácil | compreensao | A | em_revisao | Caixa Econômica Federal, Edital 1/2021/NM 2021, Caderno de Tecnologia da Informação (questões 31 a 60), Q57 (PRV-008) |
+| OFI-000073 | oficial | M01 | 1.13 | SGBD distribuído federado | Média | compreensao | C | em_revisao | Caixa Econômica Federal, Edital 1/2021/NM 2021, Caderno de Tecnologia da Informação (questões 31 a 60), Q58 (PRV-008) |
+| OFI-000074 | oficial | M09 | 9.17 | Resolução CMN 4.893: revisão da política de segurança cibernética | Média | memorizacao | C | em_revisao | Caixa Econômica Federal, Edital 1/2021/NM 2021, Caderno de Tecnologia da Informação (questões 31 a 60), Q60 (PRV-008) |
+| OFI-000075 | oficial | M09 | 9.3 | Malware: tipo indicado para implantar spyware | Média | analise | A | em_revisao | BNDES, Edital 1/2024 2024, Prova 2 (manhã), Q36 (PRV-010) |
+| OFI-000076 | oficial | M09 | 9.19 | Criptografia: confidencialidade, integridade e autenticidade | Difícil | analise | D | em_revisao | BNDES, Edital 1/2024 2024, Prova 2 (manhã), Q38 (PRV-010) |
+| OFI-000077 | oficial | M09 | 9.11 | ISO/IEC 27035-1: fase de resposta a incidentes | Média | compreensao | E | em_revisao | BNDES, Edital 1/2024 2024, Prova 2 (manhã), Q45 (PRV-010) |
+| OFI-000078 | oficial | M09 | 9.4 | Ataques ativos e passivos: disfarce (masquerade) | Média | compreensao | E | em_revisao | BNDES, Edital 1/2024 2024, Prova 2 (manhã), Q47 (PRV-010) |
+| OFI-000079 | oficial | M09 | 9.13 | Varredura TCP furtiva: idle scan | Média | memorizacao | C | em_revisao | BNDES, Edital 1/2024 2024, Prova 2 (manhã), Q48 (PRV-010) |
+| OFI-000080 | oficial | M09 | 9.3 | Código malicioso: formjacking | Média | compreensao | B | em_revisao | BNDES, Edital 1/2024 2024, Prova 2 (manhã), Q51 (PRV-010) |
+| OFI-000081 | oficial | M09 | 9.1 | Engenharia social presencial: tailgating | Fácil | compreensao | D | em_revisao | BNDES, Edital 1/2024 2024, Prova 2 (manhã), Q52 (PRV-010) |
+| OFI-000082 | oficial | M09 | 9.2 | Defesa em profundidade: firewall proxy | Média | compreensao | A | em_revisao | BNDES, Edital 1/2024 2024, Prova 2 (manhã), Q54 (PRV-010) |
+| OFI-000083 | oficial | M09 | 9.4 | OWASP Top 10 (2021): falhas criptográficas | Média | aplicacao | B | em_revisao | BNDES, Edital 1/2024 2024, Prova 2 (manhã), Q55 (PRV-010) |
+| OFI-000084 | oficial | M09 | 9.19 | Irretratabilidade (não repúdio) | Média | compreensao | D | em_revisao | BNDES, Edital 1/2024 2024, Prova 2 (manhã), Q56 (PRV-010) |
+| OFI-000085 | oficial | M09 | 9.2 | SOAR: automação e orquestração da resposta | Média | compreensao | E | em_revisao | BNDES, Edital 1/2024 2024, Prova 2 (manhã), Q59 (PRV-010) |
+| OFI-000086 | oficial | M09 | 9.2 | Controles CIS v8: Grupos de Implementação | Difícil | memorizacao | C | em_revisao | BNDES, Edital 1/2024 2024, Prova 2 (manhã), Q62 (PRV-010) |
+| OFI-000087 | oficial | M09 | 9.11 | FIRST CSIRT Services Framework | Difícil | memorizacao | E | em_revisao | BNDES, Edital 1/2024 2024, Prova 2 (manhã), Q65 (PRV-010) |
+| OFI-000088 | oficial | M09 | 9.15 | MITRE ATT&CK: técnica da tática Defense Evasion | Média | memorizacao | C | em_revisao | BNDES, Edital 1/2024 2024, Prova 2 (manhã), Q66 (PRV-010) |
+| OFI-000089 | oficial | M09 | 9.4 | CWE Top 25: SSRF | Média | compreensao | A | em_revisao | BNDES, Edital 1/2024 2024, Prova 2 (manhã), Q67 (PRV-010) |
+| OFI-000090 | oficial | M09 | 9.2 | CVSS 4.0: grupos de métricas | Média | memorizacao | C | em_revisao | BNDES, Edital 1/2024 2024, Prova 2 (manhã), Q68 (PRV-010) |
+| OFI-000091 | oficial | M09 | 9.19 | ISO/IEC 27002:2022: atributo de domínios de segurança | Difícil | memorizacao | D | em_revisao | BNDES, Edital 1/2024 2024, Prova 2 (manhã), Q69 (PRV-010) |
+| OFI-000092 | oficial | M05 | 5.1 | Pontos de função: tipo de transação (saída externa) | Média | aplicacao | E | em_revisao | BNDES, Edital 1/2024 2024, Prova 3 (manhã), Q40 (PRV-014) |
+| OFI-000093 | oficial | M05 | 5.5 | Contêineres e orquestração (Docker e Kubernetes) | Média | compreensao | A | em_revisao | BNDES, Edital 1/2024 2024, Prova 3 (manhã), Q41 (PRV-014) |
+| OFI-000094 | oficial | M09 | 9.10 | RBAC e autenticação multifator | Média | compreensao | C | em_revisao | BNDES, Edital 1/2024 2024, Prova 3 (manhã), Q42 (PRV-014) |
+| OFI-000095 | oficial | M05 | 5.3 | Padrões de projeto: Mediator x Facade | Difícil | aplicacao | D | em_revisao | BNDES, Edital 1/2024 2024, Prova 3 (manhã), Q43 (PRV-014) |
+| OFI-000096 | oficial | M05 | 5.4 | Teste de unidade para isolar a origem das falhas | Fácil | analise | E | em_revisao | BNDES, Edital 1/2024 2024, Prova 3 (manhã), Q44 (PRV-014) |
+| OFI-000097 | oficial | M05 | 5.3 | Acoplamento de conteúdo | Média | memorizacao | B | em_revisao | BNDES, Edital 1/2024 2024, Prova 3 (manhã), Q45 (PRV-014) |
+| OFI-000098 | oficial | M02 | 2.3 | Nexus: accountability adicional em Scrum escalado | Média | memorizacao | E | em_revisao | BNDES, Edital 1/2024 2024, Prova 3 (manhã), Q48 (PRV-014) |
+| OFI-000099 | oficial | M09 | 9.20 | Recuperação de desastres como serviço (DRaaS) | Média | compreensao | C | em_revisao | BNDES, Edital 1/2024 2024, Prova 3 (manhã), Q53 (PRV-014) |
+| OFI-000100 | oficial | M01 | 1.7 | Modelo dimensional: medidas aditivas | Difícil | analise | E | em_revisao | BNDES, Edital 1/2024 2024, Prova 3 (manhã), Q65 (PRV-014) |
+| OFI-000101 | oficial | M01 | 1.22 | Data lake: metadados | Média | compreensao | E | em_revisao | BNDES, Edital 1/2024 2024, Prova 3 (manhã), Q66 (PRV-014) |
+| OFI-000102 | oficial | M01 | 1.21 | Governança de dados: monitoramento da qualidade | Média | compreensao | E | em_revisao | BNDES, Edital 1/2024 2024, Prova 3 (manhã), Q67 (PRV-014) |
+| OFI-000103 | oficial | M01 | 1.1 | DER: especialização total e sobreposta | Média | analise | A | em_revisao | BNDES, Edital 1/2024 2024, Prova 3 (manhã), Q68 (PRV-014) |
+| OFI-000104 | oficial | M01 | 1.14 | Nível de isolamento SERIALIZABLE | Média | compreensao | C | em_revisao | BNDES, Edital 1/2024 2024, Prova 3 (manhã), Q69 (PRV-014) |
+| OFI-000105 | oficial | M01 | 1.11 | DDL: cláusula CHECK | Média | compreensao | B | em_revisao | BNDES, Edital 1/2024 2024, Prova 3 (manhã), Q70 (PRV-014) |

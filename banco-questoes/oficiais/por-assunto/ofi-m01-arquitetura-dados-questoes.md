@@ -262,3 +262,129 @@ FROM FORNECEDOR F
 WHERE ID_FORN NOT IN (SELECT ID_F FROM VENDA
                        WHERE DATA < '05/01/2018' OR DATA > '10/01/2018')
 ```
+
+## OFI-000067 — Modelo relacional: chaves primária e estrangeira
+
+*Questão oficial — Fundação Cesgranrio, Caixa Econômica Federal, Edital 1/2021/NM, Caderno de Tecnologia da Informação, questão 38.* · item 1.3 · Média
+
+Leve em conta o conjunto de tabelas a seguir.
+
+CLIENTE (agencia, conta, CPF, nome, endereco, telefone, titular), onde titular = {1º, 2º, 3º, 4º, 5º}
+CONTA_CORRENTE (agencia, conta, data-de-abertura, saldo)
+MOVIMENTACAO (agencia, conta, data, hora, minuto, valor), onde data, hora e minuto são de uma movimentação (crédito ou débito) realizada
+
+Considerando-se o modelo relacional de dados, composto apenas pelas tabelas CLIENTE, CONTA_CORRENTE e MOVIMENTACAO, verifica-se que
+
+(A) não é necessário ter os atributos "hora" e "minuto" como parte da chave primária da tabela MOVIMENTACAO.
+(B) o atributo "CPF" é uma chave estrangeira na tabela CLIENTE.
+(C) o atributo "data-de-abertura" deveria fazer parte da chave primária da tabela CONTA_CORRENTE.
+(D) o atributo "titular" deveria fazer parte da chave primária da tabela CLIENTE.
+(E) os atributos "agencia" e "conta" na tabela CLIENTE formam uma chave estrangeira.
+
+## OFI-000068 — Metadados em SGBD: uso pelo próprio sistema
+
+*Questão oficial — Fundação Cesgranrio, Caixa Econômica Federal, Edital 1/2021/NM, Caderno de Tecnologia da Informação, questão 39.* · item 1.6 · Média
+
+Um sistema gerenciador de banco de dados utiliza metadados, persistidos em bancos de dados, para
+
+(A) avaliar o seu próprio desempenho, considerando metas pré-estabelecidas pelo administrador do banco de dados.
+(B) decidir que páginas de dados sujas na sua cache precisam ser persistidas em disco.
+(C) implementar o isolamento entre transações concorrentes.
+(D) permitir a restauração de um estado íntegro do banco de dados, em caso de falha.
+(E) validar comandos SQL informados por um usuário.
+
+## OFI-000073 — SGBD distribuído federado
+
+*Questão oficial — Fundação Cesgranrio, Caixa Econômica Federal, Edital 1/2021/NM, Caderno de Tecnologia da Informação, questão 58.* · item 1.13 · Média
+
+Os Sistemas de Gerenciamento de Banco de Dados (SGBD) foram afetados pelas demandas trazidas pelo Big Data. Uma das formas de tratar essas demandas são os Sistemas de Gerenciamento de Banco de Dados Distribuídos (SGBDD), nos quais os dados podem estar armazenados em vários servidores, conectados por uma rede de computadores.
+Um SGBDD que usa softwares middleware, de forma que os SGBDs que o compõem estejam fracamente acoplados, é conhecido como
+
+(A) Baseado em Grafos
+(B) Hierárquico
+(C) Federado
+(D) Orientado a objetos
+(E) NoSQL
+
+## OFI-000100 — Modelo dimensional: medidas aditivas
+
+*Questão oficial — Fundação Cesgranrio, BNDES, Edital 1/2024, Prova 3, questão 65.* · item 1.7 · Difícil
+
+Um dos indicadores mais utilizados para avaliação de políticas públicas em municípios brasileiros na área da saúde é a taxa de mortalidade infantil. Para essas políticas, também é importante acompanhar a quantidade de leitos hospitalares disponíveis. Considere três tabelas que representam um modelo dimensional:
+
+MUNICÍPIO (ID-município, @UF, @mês, taxa-mortalidade-infantil, qtd-leitos)
+TEMPO (ID-mês, mês-calendário, ano-calendário)
+ESTADO (sigla, nome, região)
+
+Esse modelo dimensional permite apresentar de um estado da federação, em um dos meses cadastrados, a
+
+(A) divisão da quantidade de leitos pela taxa de mortalidade infantil.
+(B) divisão da taxa de mortalidade infantil pela quantidade de leitos.
+(C) média da taxa de mortalidade infantil.
+(D) soma da taxa de mortalidade infantil.
+(E) soma da quantidade de leitos.
+
+## OFI-000101 — Data lake: metadados
+
+*Questão oficial — Fundação Cesgranrio, BNDES, Edital 1/2024, Prova 3, questão 66.* · item 1.22 · Média
+
+Um data lake é um repositório que pode armazenar grandes volumes de dados e de conjuntos de dados, sejam eles estruturados, semiestruturados ou não estruturados.
+Um dos aspectos-chave de um data lake são os seus metadados, que
+
+(A) devem seguir o padrão American National Standards Institute (ANSI) já consagrado para metadados de data lakes.
+(B) descrevem completa e corretamente todos os dados persistidos.
+(C) precisam ser definidos antes da ingestão de dados.
+(D) podem ser consultados por meio do "information schema".
+(E) podem ser parcialmente descobertos de forma automática.
+
+## OFI-000102 — Governança de dados: monitoramento da qualidade
+
+*Questão oficial — Fundação Cesgranrio, BNDES, Edital 1/2024, Prova 3, questão 67.* · item 1.21 · Média
+
+Um dos aspectos que estão no escopo da governança de dados é a governança sobre a qualidade de dados.
+Uma das características do monitoramento da qualidade dos dados utilizados por uma organização é que esse monitoramento
+
+(A) ajuda na interoperabilidade de dados.
+(B) deve ser realizado apenas quando houver evidências de que alguma tomada de decisão com base em dados foi tomada incorretamente.
+(C) permite melhorar o controle do acesso aos dados.
+(D) pode ser realizado apenas a cada dez anos.
+(E) requer a produção de indicadores, de modo a orientar a definição e a implementação de ações corretivas.
+
+## OFI-000103 — DER: especialização total e sobreposta
+
+*Questão oficial — Fundação Cesgranrio, BNDES, Edital 1/2024, Prova 3, questão 68.* · item 1.1 · Média
+
+Considere um modelo conceitual representado por meio de um Diagrama de Entidades e Relacionamentos (DER) em que há uma entidade denominada PRÉDIO. Nesse contexto, um prédio pode ser de uso exclusivamente residencial, exclusivamente comercial, de uso misto (residencial e comercial), e apenas isso. No DER, a entidade PRÉDIO foi corretamente especializada em duas outras: RESIDENCIAL e COMERCIAL.
+Sendo assim, nesse DER, as duas especializações são
+
+(A) totais e sobrepostas
+(B) totais e parciais
+(C) totais e disjuntas
+(D) parciais e sobrepostas
+(E) parciais e disjuntas
+
+## OFI-000104 — Nível de isolamento SERIALIZABLE
+
+*Questão oficial — Fundação Cesgranrio, BNDES, Edital 1/2024, Prova 3, questão 69.* · item 1.14 · Média
+
+No contexto de um Sistema Gerenciador de Banco de Dados (SGBD), é possível definir o nível de isolamento de uma transação por meio do comando SET TRANSACTION ISOLATION LEVEL. Há vários níveis de isolamento possíveis.
+Entre tais níveis encontra-se o SERIALIZABLE, que
+
+(A) configura o SGBD para modo de leitura de todas as suas tabelas.
+(B) define que apenas uma transação será executada por vez pelo SGBD.
+(C) garante o mais alto nível possível de isolamento de uma transação.
+(D) permite a serialização de objetos JSON em uma transação.
+(E) prepara uma transação W para enviar dados a outra transação Y.
+
+## OFI-000105 — DDL: cláusula CHECK
+
+*Questão oficial — Fundação Cesgranrio, BNDES, Edital 1/2024, Prova 3, questão 70.* · item 1.11 · Média
+
+No momento da criação de uma tabela em um Sistema Gerenciador de Banco de Dados (SGBD), por meio do comando CREATE TABLE, definem-se regras para o controle de integridade e para a garantia de qualidade dos dados dessa tabela. Considere que W e Y são duas tabelas. A é um atributo de W, e B é um atributo de Y. Foi criada corretamente uma cláusula CHECK no atributo A.
+Essa cláusula permite verificar se o atributo A
+
+(A) tem valor único em todas as linhas da tabela W.
+(B) tem valor maior ou igual a zero.
+(C) tem valor existente em uma ou mais linhas da tabela Y na coluna B.
+(D) inviabiliza o acesso a alguma linha da tabela Y.
+(E) está preenchido com algum valor ou não.

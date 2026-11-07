@@ -13,12 +13,12 @@
  },
  "composicao": {
   "por_tipo": {
-   "autoral": 8,
-   "oficial": 7
+   "autoral": 7,
+   "oficial": 8
   },
   "por_status": {
-   "validada": 8,
-   "em_revisao": 7
+   "validada": 7,
+   "em_revisao": 8
   },
   "por_dificuldade": {
    "facil": 5,
@@ -27,9 +27,9 @@
   },
   "por_gabarito": {
    "C": 3,
+   "A": 5,
    "E": 3,
-   "A": 4,
-   "B": 4,
+   "B": 3,
    "D": 1
   }
  },
@@ -40,59 +40,59 @@
   },
   {
    "ordem": 2,
-   "id": "OFI-000010"
+   "id": "OFI-000103"
   },
   {
    "ordem": 3,
-   "id": "AUT-000002"
+   "id": "OFI-000010"
   },
   {
    "ordem": 4,
-   "id": "OFI-000011"
+   "id": "AUT-000002"
   },
   {
    "ordem": 5,
-   "id": "AUT-000003"
+   "id": "OFI-000011"
   },
   {
    "ordem": 6,
-   "id": "AUT-000008"
+   "id": "AUT-000003"
   },
   {
    "ordem": 7,
-   "id": "AUT-000004"
+   "id": "AUT-000008"
   },
   {
    "ordem": 8,
-   "id": "OFI-000005"
+   "id": "AUT-000004"
   },
   {
    "ordem": 9,
-   "id": "OFI-000043"
+   "id": "OFI-000005"
   },
   {
    "ordem": 10,
-   "id": "AUT-000005"
+   "id": "OFI-000043"
   },
   {
    "ordem": 11,
-   "id": "OFI-000009"
+   "id": "AUT-000005"
   },
   {
    "ordem": 12,
-   "id": "AUT-000006"
+   "id": "OFI-000104"
   },
   {
    "ordem": 13,
-   "id": "OFI-000004"
+   "id": "OFI-000009"
   },
   {
    "ordem": 14,
-   "id": "AUT-000007"
+   "id": "AUT-000006"
   },
   {
    "ordem": 15,
-   "id": "OFI-000042"
+   "id": "OFI-000004"
   }
  ]
 }

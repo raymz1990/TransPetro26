@@ -107,3 +107,17 @@ Para garantir a completude do seu trabalho, ele deve garantir que inseriu, nesse
 (C) orçamento e custos
 (D) restrições e premissas
 (E) equipe e patrocinadores
+
+## OFI-000098 — Nexus: accountability adicional em Scrum escalado
+
+*Questão oficial — Fundação Cesgranrio, BNDES, Edital 1/2024, Prova 3, questão 48.* · item 2.3 · Média
+
+Uma empresa especializada em desenvolvimento de software com metodologia ágil Scrum aceitou um contrato em que o tamanho do software desejado exige que seis times trabalhem simultaneamente. Decidiu-se usar conceitos de Scaled Agile para seguir no projeto, o que exige práticas adicionais ao Scrum tradicional. Investigando as possibilidades, a empresa escolheu implantar o Nexus, um framework de processo para múltiplos times Scrum trabalharem juntos. Para que sejam obtidos os melhores resultados no projeto, é necessário implantar no modo de trabalho da empresa um novo papel (accountability), adicional aos três papéis do Scrum que ela já implementa, com a finalidade de coordenar, de treinar e de supervisionar a aplicação do Nexus e a operação do Scrum.
+
+Considerando-se esse contexto, é necessário criar o papel (accountability)
+
+(A) Dono da Integração Nexus
+(B) Gerente de Produto Nexus
+(C) Nexus Boss
+(D) Planejador Integrado Nexus
+(E) Time de Integração Nexus

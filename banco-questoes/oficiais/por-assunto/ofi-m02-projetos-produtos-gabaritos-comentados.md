@@ -159,3 +159,23 @@ A **EAP (WBS)** decompõe hierarquicamente o **escopo total do projeto** em **en
 **Revisão rápida:** EAP = escopo e entregas, em hierarquia.
 
 **Fonte:** Fundação Cesgranrio, Transpetro PSP RH 2018.1 (Edital nº 1), Analista de Sistemas Júnior — Processos de Negócio (2018), prova Prova 15, questão 63; gabarito: de terceiros (Ética), alterado em 09/05/2018; não validado contra a banca.
+
+## OFI-000098 — Nexus: accountability adicional em Scrum escalado
+
+*Questão oficial — Fundação Cesgranrio, BNDES, Edital 1/2024, Prova 3, questão 48.*
+
+**Gabarito: E**
+
+No **Nexus**, o **Time de Integração Nexus (NIT)** é a *accountability* adicional: coordena, orienta e supervisiona a aplicação do Nexus e do Scrum entre os times, ajuda a resolver dependências e integração. É composto pelo Product Owner, pelo Scrum Master Nexus e por membros do time. Os demais nomes não são papéis do Nexus.
+
+- **A)** Incorreta. Não é papel do Nexus.
+- **B)** Incorreta. O PO do Nexus faz parte do NIT; "Gerente de Produto Nexus" não é papel.
+- **C)** Incorreta. "Nexus Boss" não existe.
+- **D)** Incorreta. "Planejador Integrado Nexus" não existe.
+- **E)** Correta. O Nexus Integration Team é a accountability adicional do Nexus.
+
+**Ponto de atenção:** Aderência parcial: o item 2.3 do edital cita o **SAFe**; o Nexus é outro framework de escala. No SAFe, equivalentes: **RTE, Product Management, System Architect**.
+
+**Revisão rápida:** Nexus: NIT (Nexus Integration Team).
+
+**Fonte:** Fundação Cesgranrio, BNDES, Edital 1/2024, Analista — Análise de Sistemas: Desenvolvimento (2024), prova Prova 3 (manhã), questão 48; gabarito: final após recursos (documento da banca, via espelho QConcursos).

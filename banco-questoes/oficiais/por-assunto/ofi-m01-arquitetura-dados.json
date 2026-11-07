@@ -2,7 +2,7 @@
  "modulo": "Questões oficiais — m01-arquitetura-dados",
  "lote": "T04 — Transpetro 2023 (Prova 6) e 2018 (Prova 15)",
  "data": "2026-11-06",
- "total": 13,
+ "total": 22,
  "questoes": [
   {
    "id": "OFI-000001",
@@ -766,6 +766,550 @@
     "sha256": "ver docs/estrategia/base-provas.md"
    },
    "verificacao": "Conferida por análise lógica das cinco consultas (não executadas: dialeto Oracle e literais de data do caderno).",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000067",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Caixa Econômica Federal, Edital 1/2021/NM, Caderno de Tecnologia da Informação, questão 38.",
+   "modulo": "01-arquitetura-dados",
+   "assunto": "Modelo relacional: chaves primária e estrangeira",
+   "item_edital": "1.3",
+   "id_matriz": "E5-004",
+   "itens_secundarios": [
+    "1.5"
+   ],
+   "dificuldade": "media",
+   "habilidade": "analise",
+   "tipo_questao": "cenario",
+   "enunciado": "Leve em conta o conjunto de tabelas a seguir.\n\nCLIENTE (agencia, conta, CPF, nome, endereco, telefone, titular), onde titular = {1º, 2º, 3º, 4º, 5º}\nCONTA_CORRENTE (agencia, conta, data-de-abertura, saldo)\nMOVIMENTACAO (agencia, conta, data, hora, minuto, valor), onde data, hora e minuto são de uma movimentação (crédito ou débito) realizada\n\nConsiderando-se o modelo relacional de dados, composto apenas pelas tabelas CLIENTE, CONTA_CORRENTE e MOVIMENTACAO, verifica-se que",
+   "alternativas": {
+    "A": "não é necessário ter os atributos \"hora\" e \"minuto\" como parte da chave primária da tabela MOVIMENTACAO.",
+    "B": "o atributo \"CPF\" é uma chave estrangeira na tabela CLIENTE.",
+    "C": "o atributo \"data-de-abertura\" deveria fazer parte da chave primária da tabela CONTA_CORRENTE.",
+    "D": "o atributo \"titular\" deveria fazer parte da chave primária da tabela CLIENTE.",
+    "E": "os atributos \"agencia\" e \"conta\" na tabela CLIENTE formam uma chave estrangeira."
+   },
+   "gabarito": "E",
+   "resolucao": "A conta é identificada por (agencia, conta), chave de CONTA_CORRENTE. Em CLIENTE, o par (agencia, conta) referencia a conta a que o cliente pertence: é **chave estrangeira** para CONTA_CORRENTE. Como a mesma conta tem até 5 titulares, a PK de CLIENTE deve incluir um atributo que distinga os titulares (como CPF).",
+   "analise_alternativas": {
+    "A": "Incorreta. Uma conta pode ter várias movimentações no mesmo dia; sem hora e minuto, a chave (agencia, conta, data) repetiria.",
+    "B": "Incorreta. O CPF identifica o cliente (parte da chave candidata) e não referencia outra tabela do modelo apresentado.",
+    "C": "Incorreta. A data de abertura é atributo descritivo; (agencia, conta) já identifica a conta.",
+    "D": "Incorreta. \"Titular\" (1º a 5º) isoladamente não identifica o cliente; a chave deveria combinar conta e CPF (ou o titular), mas o argumento da alternativa não decorre do modelo.",
+    "E": "Correta. (agencia, conta) em CLIENTE referencia CONTA_CORRENTE: chave estrangeira."
+   },
+   "fundamentacao": {
+    "item": "1.3",
+    "arquivo_teoria": "conteudo/01-arquitetura-dados/03-modelo-relacional.md"
+   },
+   "ponto_atencao": "Pergunte: **o conjunto de colunas identifica a linha (PK) ou aponta para outra tabela (FK)?** Cuidado com chaves compostas.",
+   "revisao_rapida": "FK: colunas que referenciam a PK de outra tabela.",
+   "tags": [
+    "chave-primaria",
+    "chave-estrangeira",
+    "caixa-2021",
+    "oficial",
+    "media",
+    "analise"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Caixa Econômica Federal, Edital 1/2021/NM",
+    "cargo": "Técnico Bancário Novo — Tecnologia da Informação",
+    "ano": 2021,
+    "prova": "Caderno de Tecnologia da Informação (questões 31 a 60)",
+    "numero_original": 38,
+    "id_prova": "PRV-008",
+    "situacao_gabarito": "definitivo (fonte oficial: portal da Cesgranrio); recursos sem alteração nem anulação",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/candidatas-2026-11-04/caixa-2021-tb-ti-prova-oficial.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000068",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Caixa Econômica Federal, Edital 1/2021/NM, Caderno de Tecnologia da Informação, questão 39.",
+   "modulo": "01-arquitetura-dados",
+   "assunto": "Metadados em SGBD: uso pelo próprio sistema",
+   "item_edital": "1.6",
+   "id_matriz": "E5-007",
+   "itens_secundarios": [
+    "1.13"
+   ],
+   "dificuldade": "media",
+   "habilidade": "compreensao",
+   "tipo_questao": "conceitual",
+   "enunciado": "Um sistema gerenciador de banco de dados utiliza metadados, persistidos em bancos de dados, para",
+   "alternativas": {
+    "A": "avaliar o seu próprio desempenho, considerando metas pré-estabelecidas pelo administrador do banco de dados.",
+    "B": "decidir que páginas de dados sujas na sua cache precisam ser persistidas em disco.",
+    "C": "implementar o isolamento entre transações concorrentes.",
+    "D": "permitir a restauração de um estado íntegro do banco de dados, em caso de falha.",
+    "E": "validar comandos SQL informados por um usuário."
+   },
+   "gabarito": "E",
+   "resolucao": "O **catálogo (metadados)** descreve tabelas, colunas, tipos, chaves e privilégios. Ao receber um comando SQL, o SGBD consulta o catálogo para verificar se os objetos existem, se os tipos são compatíveis e se o usuário tem permissão: **validação** do comando.",
+   "analise_alternativas": {
+    "A": "Incorreta. Metas de desempenho definidas pelo DBA não são o uso típico do catálogo.",
+    "B": "Incorreta. A escolha de páginas sujas para gravação é tarefa do gerenciador de buffer, não do catálogo.",
+    "C": "Incorreta. O isolamento é implementado por controle de concorrência (bloqueios, MVCC).",
+    "D": "Incorreta. A recuperação usa log de transações e backups.",
+    "E": "Correta. O catálogo é consultado para validar tabelas, colunas e permissões na análise do comando."
+   },
+   "fundamentacao": {
+    "item": "1.6",
+    "arquivo_teoria": "conteudo/01-arquitetura-dados/10-qualidade-e-governanca-dados.md"
+   },
+   "ponto_atencao": "Quem usa o dicionário de dados no dia a dia do SGBD: **análise e otimização de consultas**, verificação de privilégios, restrições.",
+   "revisao_rapida": "Metadados: usados para validar e otimizar comandos.",
+   "tags": [
+    "metadados",
+    "caixa-2021",
+    "oficial",
+    "media",
+    "compreensao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Caixa Econômica Federal, Edital 1/2021/NM",
+    "cargo": "Técnico Bancário Novo — Tecnologia da Informação",
+    "ano": 2021,
+    "prova": "Caderno de Tecnologia da Informação (questões 31 a 60)",
+    "numero_original": 39,
+    "id_prova": "PRV-008",
+    "situacao_gabarito": "definitivo (fonte oficial: portal da Cesgranrio); recursos sem alteração nem anulação",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/candidatas-2026-11-04/caixa-2021-tb-ti-prova-oficial.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000073",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Caixa Econômica Federal, Edital 1/2021/NM, Caderno de Tecnologia da Informação, questão 58.",
+   "modulo": "01-arquitetura-dados",
+   "assunto": "SGBD distribuído federado",
+   "item_edital": "1.13",
+   "id_matriz": "E5-014",
+   "itens_secundarios": [
+    "1.18",
+    "1.23"
+   ],
+   "dificuldade": "media",
+   "habilidade": "compreensao",
+   "tipo_questao": "conceitual",
+   "enunciado": "Os Sistemas de Gerenciamento de Banco de Dados (SGBD) foram afetados pelas demandas trazidas pelo Big Data. Uma das formas de tratar essas demandas são os Sistemas de Gerenciamento de Banco de Dados Distribuídos (SGBDD), nos quais os dados podem estar armazenados em vários servidores, conectados por uma rede de computadores.\nUm SGBDD que usa softwares middleware, de forma que os SGBDs que o compõem estejam fracamente acoplados, é conhecido como",
+   "alternativas": {
+    "A": "Baseado em Grafos",
+    "B": "Hierárquico",
+    "C": "Federado",
+    "D": "Orientado a objetos",
+    "E": "NoSQL"
+   },
+   "gabarito": "C",
+   "resolucao": "No **SGBD federado** (ou multibanco), SGBDs autônomos e frequentemente heterogêneos são **fracamente acoplados** por um **middleware** que oferece visão integrada. Em oposição, o SGBD distribuído homogêneo é fortemente acoplado.",
+   "analise_alternativas": {
+    "A": "Incorreta. Grafos classificam o modelo de dados, e não o acoplamento.",
+    "B": "Incorreta. Hierárquico é um modelo de dados antigo.",
+    "C": "Correta. Federado: componentes autônomos, acoplamento fraco e middleware.",
+    "D": "Incorreta. Orientado a objetos classifica o modelo de dados.",
+    "E": "Incorreta. NoSQL é uma família de modelos, sem relação com o acoplamento descrito."
+   },
+   "fundamentacao": {
+    "item": "1.13",
+    "arquivo_teoria": "conteudo/01-arquitetura-dados/05-sql-e-sgbd.md"
+   },
+   "ponto_atencao": "Distinga **classificação por modelo de dados** (relacional, grafo, documento...) de **classificação por distribuição** (centralizado, distribuído homogêneo, federado).",
+   "revisao_rapida": "Federado = autônomos, fracamente acoplados, middleware.",
+   "tags": [
+    "sgbd-distribuido",
+    "federado",
+    "caixa-2021",
+    "oficial",
+    "media",
+    "compreensao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Caixa Econômica Federal, Edital 1/2021/NM",
+    "cargo": "Técnico Bancário Novo — Tecnologia da Informação",
+    "ano": 2021,
+    "prova": "Caderno de Tecnologia da Informação (questões 31 a 60)",
+    "numero_original": 58,
+    "id_prova": "PRV-008",
+    "situacao_gabarito": "definitivo (fonte oficial: portal da Cesgranrio); recursos sem alteração nem anulação",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/candidatas-2026-11-04/caixa-2021-tb-ti-prova-oficial.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000100",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, BNDES, Edital 1/2024, Prova 3, questão 65.",
+   "modulo": "01-arquitetura-dados",
+   "assunto": "Modelo dimensional: medidas aditivas",
+   "item_edital": "1.7",
+   "id_matriz": "E5-008",
+   "itens_secundarios": [
+    "7.7"
+   ],
+   "dificuldade": "dificil",
+   "habilidade": "analise",
+   "tipo_questao": "cenario",
+   "enunciado": "Um dos indicadores mais utilizados para avaliação de políticas públicas em municípios brasileiros na área da saúde é a taxa de mortalidade infantil. Para essas políticas, também é importante acompanhar a quantidade de leitos hospitalares disponíveis. Considere três tabelas que representam um modelo dimensional:\n\nMUNICÍPIO (ID-município, @UF, @mês, taxa-mortalidade-infantil, qtd-leitos)\nTEMPO (ID-mês, mês-calendário, ano-calendário)\nESTADO (sigla, nome, região)\n\nEsse modelo dimensional permite apresentar de um estado da federação, em um dos meses cadastrados, a",
+   "alternativas": {
+    "A": "divisão da quantidade de leitos pela taxa de mortalidade infantil.",
+    "B": "divisão da taxa de mortalidade infantil pela quantidade de leitos.",
+    "C": "média da taxa de mortalidade infantil.",
+    "D": "soma da taxa de mortalidade infantil.",
+    "E": "soma da quantidade de leitos."
+   },
+   "gabarito": "E",
+   "resolucao": "A **quantidade de leitos** é uma medida **aditiva**: pode ser somada por qualquer dimensão (município → estado). A **taxa de mortalidade** é medida **não aditiva** (razão): somar taxas ou tirar média simples não dá a taxa do estado, que exigiria os numeradores e denominadores (óbitos e nascidos vivos), não disponíveis no modelo.",
+   "analise_alternativas": {
+    "A": "Incorreta. Dividir leitos por taxa não tem sentido de negócio.",
+    "B": "Incorreta. Idem: dividir taxa por leitos não tem sentido de negócio.",
+    "C": "Incorreta. A média simples das taxas dos municípios ignora o tamanho de cada população; não dá a taxa do estado (sem os pesos, que o modelo não traz).",
+    "D": "Incorreta. Somar taxas (razões) é incorreto: medida não aditiva.",
+    "E": "Correta. A soma dos leitos dos municípios é válida: medida aditiva."
+   },
+   "fundamentacao": {
+    "item": "1.7",
+    "arquivo_teoria": "conteudo/01-arquitetura-dados/09-data-warehouse-e-big-data.md"
+   },
+   "ponto_atencao": "Medidas: **aditivas** (somam em todas as dimensões), **semiaditivas** (somam em algumas, como saldos) e **não aditivas** (razões, taxas, preços unitários: recalcular a partir dos componentes).",
+   "revisao_rapida": "Quantidade soma; taxa não soma.",
+   "tags": [
+    "modelo-dimensional",
+    "medidas-aditivas",
+    "bndes-2024",
+    "oficial",
+    "dificil",
+    "analise"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "BNDES, Edital 1/2024",
+    "cargo": "Analista — Análise de Sistemas: Desenvolvimento",
+    "ano": 2024,
+    "prova": "Prova 3 (manhã)",
+    "numero_original": 65,
+    "id_prova": "PRV-014",
+    "situacao_gabarito": "final após recursos (documento da banca, via espelho QConcursos)",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/candidatas-2026-11-04/bndes-2024-desenvolvimento-manha-prova.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000101",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, BNDES, Edital 1/2024, Prova 3, questão 66.",
+   "modulo": "01-arquitetura-dados",
+   "assunto": "Data lake: metadados",
+   "item_edital": "1.22",
+   "id_matriz": "E5-023",
+   "itens_secundarios": [
+    "1.6"
+   ],
+   "dificuldade": "media",
+   "habilidade": "compreensao",
+   "tipo_questao": "conceitual",
+   "enunciado": "Um data lake é um repositório que pode armazenar grandes volumes de dados e de conjuntos de dados, sejam eles estruturados, semiestruturados ou não estruturados.\nUm dos aspectos-chave de um data lake são os seus metadados, que",
+   "alternativas": {
+    "A": "devem seguir o padrão American National Standards Institute (ANSI) já consagrado para metadados de data lakes.",
+    "B": "descrevem completa e corretamente todos os dados persistidos.",
+    "C": "precisam ser definidos antes da ingestão de dados.",
+    "D": "podem ser consultados por meio do \"information schema\".",
+    "E": "podem ser parcialmente descobertos de forma automática."
+   },
+   "gabarito": "E",
+   "resolucao": "O data lake aplica o esquema **na leitura** (*schema-on-read*); por isso, os metadados **não precisam ser definidos antes** da ingestão e podem ser **descobertos automaticamente em parte** (por *crawlers*/catálogos de dados que inferem esquemas e tipos). A catalogação é essencial para evitar o **\"pântano de dados\"**.",
+   "analise_alternativas": {
+    "A": "Incorreta. Não há padrão ANSI consagrado de metadados de data lakes.",
+    "B": "Incorreta. Os metadados nem sempre descrevem completa e corretamente todos os dados (o risco do data swamp).",
+    "C": "Incorreta. A definição prévia é característica do DW (esquema na escrita).",
+    "D": "Incorreta. O *information schema* é recurso de bancos relacionais.",
+    "E": "Correta. Ferramentas de catálogo inferem parte dos metadados automaticamente."
+   },
+   "fundamentacao": {
+    "item": "1.22",
+    "arquivo_teoria": "conteudo/01-arquitetura-dados/09-data-warehouse-e-big-data.md"
+   },
+   "ponto_atencao": "Lake: **schema-on-read**, metadados descobertos e curados; DW: **schema-on-write**, modelo definido antes da carga.",
+   "revisao_rapida": "Lake: metadados em parte descobertos automaticamente.",
+   "tags": [
+    "data-lake",
+    "metadados",
+    "bndes-2024",
+    "oficial",
+    "media",
+    "compreensao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "BNDES, Edital 1/2024",
+    "cargo": "Analista — Análise de Sistemas: Desenvolvimento",
+    "ano": 2024,
+    "prova": "Prova 3 (manhã)",
+    "numero_original": 66,
+    "id_prova": "PRV-014",
+    "situacao_gabarito": "final após recursos (documento da banca, via espelho QConcursos)",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/candidatas-2026-11-04/bndes-2024-desenvolvimento-manha-prova.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000102",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, BNDES, Edital 1/2024, Prova 3, questão 67.",
+   "modulo": "01-arquitetura-dados",
+   "assunto": "Governança de dados: monitoramento da qualidade",
+   "item_edital": "1.21",
+   "id_matriz": "E5-022",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "compreensao",
+   "tipo_questao": "conceitual",
+   "enunciado": "Um dos aspectos que estão no escopo da governança de dados é a governança sobre a qualidade de dados.\nUma das características do monitoramento da qualidade dos dados utilizados por uma organização é que esse monitoramento",
+   "alternativas": {
+    "A": "ajuda na interoperabilidade de dados.",
+    "B": "deve ser realizado apenas quando houver evidências de que alguma tomada de decisão com base em dados foi tomada incorretamente.",
+    "C": "permite melhorar o controle do acesso aos dados.",
+    "D": "pode ser realizado apenas a cada dez anos.",
+    "E": "requer a produção de indicadores, de modo a orientar a definição e a implementação de ações corretivas."
+   },
+   "gabarito": "E",
+   "resolucao": "O monitoramento da qualidade é **contínuo** e baseado em **indicadores** (completude, unicidade, validade, consistência, atualidade), que orientam **ações corretivas** e a melhoria dos processos.",
+   "analise_alternativas": {
+    "A": "Incorreta. A interoperabilidade depende de padrões e integração, e não é característica do monitoramento.",
+    "B": "Incorreta. Monitorar apenas após decisões erradas é reativo; a governança é preventiva.",
+    "C": "Incorreta. O controle de acesso é função da segurança e da governança de acesso.",
+    "D": "Incorreta. Um intervalo de dez anos é incompatível com o monitoramento.",
+    "E": "Correta. Indicadores orientam as ações corretivas: característica do monitoramento."
+   },
+   "fundamentacao": {
+    "item": "1.21",
+    "arquivo_teoria": "conteudo/01-arquitetura-dados/10-qualidade-e-governanca-dados.md"
+   },
+   "ponto_atencao": "Qualidade de dados: **dimensões** (completude, acurácia, consistência, unicidade, atualidade, validade) → **indicadores** → **ações corretivas**.",
+   "revisao_rapida": "Qualidade: medir com indicadores e corrigir.",
+   "tags": [
+    "qualidade-de-dados",
+    "governanca-de-dados",
+    "bndes-2024",
+    "oficial",
+    "media",
+    "compreensao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "BNDES, Edital 1/2024",
+    "cargo": "Analista — Análise de Sistemas: Desenvolvimento",
+    "ano": 2024,
+    "prova": "Prova 3 (manhã)",
+    "numero_original": 67,
+    "id_prova": "PRV-014",
+    "situacao_gabarito": "final após recursos (documento da banca, via espelho QConcursos)",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/candidatas-2026-11-04/bndes-2024-desenvolvimento-manha-prova.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000103",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, BNDES, Edital 1/2024, Prova 3, questão 68.",
+   "modulo": "01-arquitetura-dados",
+   "assunto": "DER: especialização total e sobreposta",
+   "item_edital": "1.1",
+   "id_matriz": "E5-002",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "analise",
+   "tipo_questao": "cenario",
+   "enunciado": "Considere um modelo conceitual representado por meio de um Diagrama de Entidades e Relacionamentos (DER) em que há uma entidade denominada PRÉDIO. Nesse contexto, um prédio pode ser de uso exclusivamente residencial, exclusivamente comercial, de uso misto (residencial e comercial), e apenas isso. No DER, a entidade PRÉDIO foi corretamente especializada em duas outras: RESIDENCIAL e COMERCIAL.\nSendo assim, nesse DER, as duas especializações são",
+   "alternativas": {
+    "A": "totais e sobrepostas",
+    "B": "totais e parciais",
+    "C": "totais e disjuntas",
+    "D": "parciais e sobrepostas",
+    "E": "parciais e disjuntas"
+   },
+   "gabarito": "A",
+   "resolucao": "**Total**: todo prédio pertence a pelo menos uma especialização (\"apenas isso\"). **Sobreposta** (*overlapping*): um prédio pode pertencer às duas (uso misto). Logo, **total e sobreposta**. \"Parcial\" e \"total\" descrevem a participação; \"disjunta\" e \"sobreposta\", a exclusão mútua.",
+   "analise_alternativas": {
+    "A": "Correta. Todo prédio está em pelo menos uma e pode estar nas duas: total e sobreposta.",
+    "B": "Incorreta. \"Total e parcial\" são conceitos do mesmo eixo; não se combinam.",
+    "C": "Incorreta. Disjunta exigiria que nenhum prédio fosse misto.",
+    "D": "Incorreta. Parcial admitiria prédios em nenhuma das duas, o que o texto exclui.",
+    "E": "Incorreta. Parcial e disjunta contradizem o enunciado nos dois eixos."
+   },
+   "fundamentacao": {
+    "item": "1.1",
+    "arquivo_teoria": "conteudo/01-arquitetura-dados/02-modelagem-dados.md"
+   },
+   "ponto_atencao": "Dois eixos independentes: **cobertura** (total × parcial) e **sobreposição** (disjunta × sobreposta). Duas respostas do mesmo eixo nunca combinam.",
+   "revisao_rapida": "Total: sem prédio fora; sobreposta: pode ser misto.",
+   "tags": [
+    "der",
+    "especializacao",
+    "bndes-2024",
+    "oficial",
+    "media",
+    "analise"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "BNDES, Edital 1/2024",
+    "cargo": "Analista — Análise de Sistemas: Desenvolvimento",
+    "ano": 2024,
+    "prova": "Prova 3 (manhã)",
+    "numero_original": 68,
+    "id_prova": "PRV-014",
+    "situacao_gabarito": "final após recursos (documento da banca, via espelho QConcursos)",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/candidatas-2026-11-04/bndes-2024-desenvolvimento-manha-prova.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000104",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, BNDES, Edital 1/2024, Prova 3, questão 69.",
+   "modulo": "01-arquitetura-dados",
+   "assunto": "Nível de isolamento SERIALIZABLE",
+   "item_edital": "1.14",
+   "id_matriz": "E5-015",
+   "itens_secundarios": [
+    "1.16"
+   ],
+   "dificuldade": "media",
+   "habilidade": "compreensao",
+   "tipo_questao": "conceitual",
+   "enunciado": "No contexto de um Sistema Gerenciador de Banco de Dados (SGBD), é possível definir o nível de isolamento de uma transação por meio do comando SET TRANSACTION ISOLATION LEVEL. Há vários níveis de isolamento possíveis.\nEntre tais níveis encontra-se o SERIALIZABLE, que",
+   "alternativas": {
+    "A": "configura o SGBD para modo de leitura de todas as suas tabelas.",
+    "B": "define que apenas uma transação será executada por vez pelo SGBD.",
+    "C": "garante o mais alto nível possível de isolamento de uma transação.",
+    "D": "permite a serialização de objetos JSON em uma transação.",
+    "E": "prepara uma transação W para enviar dados a outra transação Y."
+   },
+   "gabarito": "C",
+   "resolucao": "No padrão SQL, os níveis são **READ UNCOMMITTED, READ COMMITTED, REPEATABLE READ e SERIALIZABLE**. O **SERIALIZABLE** é o **mais alto**: o resultado equivale à execução **em série** das transações, evitando leituras sujas, não repetíveis e fantasmas. Isso **não** significa que só uma execute por vez, e sim que o efeito é **equivalente** a alguma ordem serial.",
+   "analise_alternativas": {
+    "A": "Incorreta. Não é modo somente leitura.",
+    "B": "Incorreta. Garante o efeito serial, mas as transações podem executar concorrentemente (controle por bloqueios ou MVCC).",
+    "C": "Correta. É o nível mais alto de isolamento.",
+    "D": "Incorreta. \"Serializable\" não se refere a objetos JSON.",
+    "E": "Incorreta. Não trata de envio de dados entre transações."
+   },
+   "fundamentacao": {
+    "item": "1.14",
+    "arquivo_teoria": "conteudo/01-arquitetura-dados/06-transacoes-e-acid.md"
+   },
+   "ponto_atencao": "\"Serializável\" ≠ \"executar uma por vez\": é **equivalência a uma execução serial**. Mais isolamento = menos concorrência e mais custo.",
+   "revisao_rapida": "SERIALIZABLE: mais alto isolamento, efeito equivalente ao serial.",
+   "tags": [
+    "isolamento",
+    "serializable",
+    "bndes-2024",
+    "oficial",
+    "media",
+    "compreensao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "BNDES, Edital 1/2024",
+    "cargo": "Analista — Análise de Sistemas: Desenvolvimento",
+    "ano": 2024,
+    "prova": "Prova 3 (manhã)",
+    "numero_original": 69,
+    "id_prova": "PRV-014",
+    "situacao_gabarito": "final após recursos (documento da banca, via espelho QConcursos)",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/candidatas-2026-11-04/bndes-2024-desenvolvimento-manha-prova.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000105",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, BNDES, Edital 1/2024, Prova 3, questão 70.",
+   "modulo": "01-arquitetura-dados",
+   "assunto": "DDL: cláusula CHECK",
+   "item_edital": "1.11",
+   "id_matriz": "E5-012",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "compreensao",
+   "tipo_questao": "conceitual",
+   "enunciado": "No momento da criação de uma tabela em um Sistema Gerenciador de Banco de Dados (SGBD), por meio do comando CREATE TABLE, definem-se regras para o controle de integridade e para a garantia de qualidade dos dados dessa tabela. Considere que W e Y são duas tabelas. A é um atributo de W, e B é um atributo de Y. Foi criada corretamente uma cláusula CHECK no atributo A.\nEssa cláusula permite verificar se o atributo A",
+   "alternativas": {
+    "A": "tem valor único em todas as linhas da tabela W.",
+    "B": "tem valor maior ou igual a zero.",
+    "C": "tem valor existente em uma ou mais linhas da tabela Y na coluna B.",
+    "D": "inviabiliza o acesso a alguma linha da tabela Y.",
+    "E": "está preenchido com algum valor ou não."
+   },
+   "gabarito": "B",
+   "resolucao": "A restrição **CHECK** valida uma **condição lógica** sobre os valores da linha (por exemplo, `A >= 0`). A unicidade usa **UNIQUE**; a existência em outra tabela usa **FOREIGN KEY**; a obrigatoriedade de preenchimento usa **NOT NULL**.",
+   "analise_alternativas": {
+    "A": "Incorreta. Unicidade é UNIQUE (ou PRIMARY KEY).",
+    "B": "Correta. CHECK verifica condições como `A >= 0`.",
+    "C": "Incorreta. Existência em outra tabela é chave estrangeira.",
+    "D": "Incorreta. CHECK não restringe o acesso de leitura a linhas de outra tabela.",
+    "E": "Incorreta. Preenchimento obrigatório é NOT NULL."
+   },
+   "fundamentacao": {
+    "item": "1.11",
+    "arquivo_teoria": "conteudo/01-arquitetura-dados/05-sql-e-sgbd.md"
+   },
+   "ponto_atencao": "Restrições: **PRIMARY KEY / UNIQUE** (unicidade), **FOREIGN KEY** (integridade referencial), **NOT NULL** (obrigatoriedade), **CHECK** (condição), **DEFAULT** (valor padrão).",
+   "revisao_rapida": "CHECK = condição lógica sobre o valor.",
+   "tags": [
+    "check",
+    "ddl",
+    "integridade",
+    "bndes-2024",
+    "oficial",
+    "media",
+    "compreensao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "BNDES, Edital 1/2024",
+    "cargo": "Analista — Análise de Sistemas: Desenvolvimento",
+    "ano": 2024,
+    "prova": "Prova 3 (manhã)",
+    "numero_original": 70,
+    "id_prova": "PRV-014",
+    "situacao_gabarito": "final após recursos (documento da banca, via espelho QConcursos)",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/candidatas-2026-11-04/bndes-2024-desenvolvimento-manha-prova.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
    "status_validacao": "em_revisao"
   }
  ]

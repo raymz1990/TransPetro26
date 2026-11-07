@@ -6,7 +6,7 @@
 
 **Observações:** Mistura de questões oficiais e autorais do módulo; algumas ainda `em_revisao`.
 
-Composição: tipo {'autoral': 8, 'oficial': 7} · status {'validada': 8, 'em_revisao': 7} · dificuldade {'facil': 5, 'media': 7, 'dificil': 3}
+Composição: tipo {'autoral': 7, 'oficial': 8} · status {'validada': 7, 'em_revisao': 8} · dificuldade {'facil': 5, 'media': 7, 'dificil': 3}
 
 ## 1. AUT-000001 — Modelagem de dados: níveis conceitual, lógico e físico
 
@@ -22,7 +22,21 @@ O enunciado descreve entidades, a cardinalidade dos relacionamentos (1 equipamen
 
 **Revisão rápida:** Conceitual = negócio (entidades e relacionamentos), sem tecnologia. Lógico = estrutura de um paradigma (tabelas, chaves). Físico = implementação no SGBD (tipos, índices, partições).
 
-## 2. OFI-000010 — Modelagem conceitual
+## 2. OFI-000103 — DER: especialização total e sobreposta
+
+*Questão oficial — Fundação Cesgranrio, BNDES, Edital 1/2024, Prova 3, questão 68.* · item 1.1 · Média · gabarito **A**
+
+**Total**: todo prédio pertence a pelo menos uma especialização ("apenas isso"). **Sobreposta** (*overlapping*): um prédio pode pertencer às duas (uso misto). Logo, **total e sobreposta**. "Parcial" e "total" descrevem a participação; "disjunta" e "sobreposta", a exclusão mútua.
+
+- **A)** Correta. Todo prédio está em pelo menos uma e pode estar nas duas: total e sobreposta.
+- **B)** Incorreta. "Total e parcial" são conceitos do mesmo eixo; não se combinam.
+- **C)** Incorreta. Disjunta exigiria que nenhum prédio fosse misto.
+- **D)** Incorreta. Parcial admitiria prédios em nenhuma das duas, o que o texto exclui.
+- **E)** Incorreta. Parcial e disjunta contradizem o enunciado nos dois eixos.
+
+**Revisão rápida:** Total: sem prédio fora; sobreposta: pode ser misto.
+
+## 3. OFI-000010 — Modelagem conceitual
 
 *Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 63.* · item 1.1 · Fácil · gabarito **E**
 
@@ -36,7 +50,7 @@ O modelo **conceitual** (ex.: MER/DER) é o mais abstrato: define entidades, atr
 
 **Revisão rápida:** Conceitual → lógico → físico, do mais abstrato ao mais próximo do SGBD.
 
-## 3. AUT-000002 — Normalização: dependência parcial e 2FN
+## 4. AUT-000002 — Normalização: dependência parcial e 2FN
 
 *Questão autoral — estilo Cesgranrio.* · item 1.4 · Média · gabarito **E**
 
@@ -50,7 +64,7 @@ O modelo **conceitual** (ex.: MER/DER) é o mais abstrato: define entidades, atr
 
 **Revisão rápida:** 1FN = atômico. 2FN = sem dependência parcial (atributo depende da chave inteira). 3FN = sem dependência transitiva. Corrige-se decompondo e mantendo a chave estrangeira.
 
-## 4. OFI-000011 — Normalização: objetivo
+## 5. OFI-000011 — Normalização: objetivo
 
 *Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 64.* · item 1.4 · Fácil · gabarito **A**
 
@@ -64,7 +78,7 @@ A normalização busca **reduzir a redundância** e evitar anomalias de inserç�
 
 **Revisão rápida:** Normalizar = menos redundância e menos anomalias.
 
-## 5. AUT-000003 — Integridade referencial: ações ON DELETE e ON UPDATE
+## 6. AUT-000003 — Integridade referencial: ações ON DELETE e ON UPDATE
 
 *Questão autoral — estilo Cesgranrio.* · item 1.5 · Média · gabarito **B**
 
@@ -78,7 +92,7 @@ A normalização busca **reduzir a redundância** e evitar anomalias de inserç�
 
 **Revisão rápida:** FK impede órfãos. ON UPDATE CASCADE propaga a nova chave; ON DELETE RESTRICT barra a exclusão de pai com filhos; INSERT com FK inexistente é rejeitado.
 
-## 6. AUT-000008 — Modelagem dimensional: tipos de medida e grão da tabela fato
+## 7. AUT-000008 — Modelagem dimensional: tipos de medida e grão da tabela fato
 
 *Questão autoral — estilo Cesgranrio.* · item 1.7 · Difícil · gabarito **E**
 
@@ -92,7 +106,7 @@ A tabela é um **retrato periódico** (*snapshot*): o saldo em cada dia já repr
 
 **Revisão rápida:** Saldo = semiaditiva (soma entre depósitos, não no tempo). Quantidade vendida = aditiva. Percentual e preço unitário = não aditivos.
 
-## 7. AUT-000004 — SQL: junção externa, agregação e HAVING
+## 8. AUT-000004 — SQL: junção externa, agregação e HAVING
 
 *Questão autoral — estilo Cesgranrio.* · item 1.10 · Difícil · gabarito **A**
 
@@ -106,7 +120,7 @@ A tabela é um **retrato periódico** (*snapshot*): o saldo em cada dia já repr
 
 **Revisão rápida:** LEFT JOIN preserva a esquerda. COUNT(col) ignora NULL; COUNT(*) não. HAVING filtra grupos; WHERE filtra linhas. SUM e AVG ignoram NULL.
 
-## 8. OFI-000005 — SQL: autojunção em tabela de hierarquia
+## 9. OFI-000005 — SQL: autojunção em tabela de hierarquia
 
 *Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 49.* · item 1.10 · Média · gabarito **A**
 
@@ -120,7 +134,7 @@ Neto de Carlos = filho de um filho de Carlos. Na **autojunção**, `f1` represen
 
 **Revisão rápida:** Neto = `f1.filho = f2.pai`; projeta-se `f2.filho`.
 
-## 9. OFI-000043 — SQL: fornecedores com venda em intervalo de datas
+## 10. OFI-000043 — SQL: fornecedores com venda em intervalo de datas
 
 *Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 38.* · item 1.10 · Difícil · gabarito **B**
 
@@ -134,7 +148,7 @@ Procura-se o fornecedor para o qual **exista ao menos uma linha de VENDA com a d
 
 **Revisão rápida:** Intervalo inclusivo: BETWEEN, ou >= AND <=, na mesma linha.
 
-## 10. AUT-000005 — Propriedades ACID e transações
+## 11. AUT-000005 — Propriedades ACID e transações
 
 *Questão autoral — estilo Cesgranrio.* · item 1.14 · Fácil · gabarito **D**
 
@@ -148,7 +162,21 @@ Na primeira situação, a transação (débito + crédito) foi interrompida e o 
 
 **Revisão rápida:** A: tudo ou nada. C: estado válido para outro válido. I: sem interferência entre concorrentes. D: confirmado não se perde.
 
-## 11. OFI-000009 — Propriedades ACID
+## 12. OFI-000104 — Nível de isolamento SERIALIZABLE
+
+*Questão oficial — Fundação Cesgranrio, BNDES, Edital 1/2024, Prova 3, questão 69.* · item 1.14 · Média · gabarito **C**
+
+No padrão SQL, os níveis são **READ UNCOMMITTED, READ COMMITTED, REPEATABLE READ e SERIALIZABLE**. O **SERIALIZABLE** é o **mais alto**: o resultado equivale à execução **em série** das transações, evitando leituras sujas, não repetíveis e fantasmas. Isso **não** significa que só uma execute por vez, e sim que o efeito é **equivalente** a alguma ordem serial.
+
+- **A)** Incorreta. Não é modo somente leitura.
+- **B)** Incorreta. Garante o efeito serial, mas as transações podem executar concorrentemente (controle por bloqueios ou MVCC).
+- **C)** Correta. É o nível mais alto de isolamento.
+- **D)** Incorreta. "Serializable" não se refere a objetos JSON.
+- **E)** Incorreta. Não trata de envio de dados entre transações.
+
+**Revisão rápida:** SERIALIZABLE: mais alto isolamento, efeito equivalente ao serial.
+
+## 13. OFI-000009 — Propriedades ACID
 
 *Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 53.* · item 1.14 · Fácil · gabarito **C**
 
@@ -162,7 +190,7 @@ Na primeira situação, a transação (débito + crédito) foi interrompida e o 
 
 **Revisão rápida:** ACID: tudo-ou-nada, válido→válido, sem interferência, confirmado persiste.
 
-## 12. AUT-000006 — Bancos NoSQL e diferenciação entre tipos de bancos: grafos
+## 14. AUT-000006 — Bancos NoSQL e diferenciação entre tipos de bancos: grafos
 
 *Questão autoral — estilo Cesgranrio.* · item 1.18 · Média · gabarito **B**
 
@@ -176,7 +204,7 @@ O requisito central é **navegar relacionamentos em profundidade variável** (co
 
 **Revisão rápida:** Relacionamentos em profundidade → grafos. Agregado flexível → documentos. Acesso por chave → chave-valor. Análise por dimensões → multidimensional.
 
-## 13. OFI-000004 — Banco de grafos: consulta em Cypher
+## 15. OFI-000004 — Banco de grafos: consulta em Cypher
 
 *Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 48.* · item 1.18 · Média · gabarito **A**
 
@@ -189,31 +217,3 @@ Em Cypher, `MATCH` descreve um padrão; `(p)-[:TIPO]->(x)` segue a relação de 
 - **E)** Incorreta. `FIND` não é cláusula do Cypher; a sintaxe é inválida.
 
 **Revisão rápida:** Cypher: `MATCH (a)-[:REL]->(b) WHERE ... RETURN b`.
-
-## 14. AUT-000007 — Integração de dados: ETL e ELT
-
-*Questão autoral — estilo Cesgranrio.* · item 1.19 · Média · gabarito **C**
-
-A ordem das fases revela a estratégia: **extração → carga (dados brutos no destino) → transformação no próprio destino**. É o **ELT** (*Extract, Load, Transform*), que aproveita o poder de processamento do data warehouse ou do *data lake*. No ETL clássico, a transformação ocorre **antes** da carga, em uma área ou servidor intermediário.
-
-- **A)** Incorreta. No ETL a transformação precede a carga; aqui os dados brutos são carregados antes de serem transformados.
-- **B)** Incorreta. Replicação mantém cópias sincronizadas, sem padronizar, deduplicar e consolidar dados de múltiplas fontes.
-- **C)** Correta. Carga dos dados brutos no destino e transformação posterior com SQL no data warehouse: ELT.
-- **D)** Incorreta. Transferência de arquivos é uma forma de integração por intercâmbio de arquivos; o enunciado descreve uma etapa de transformação de dados.
-- **E)** Incorreta. Virtualização de dados consulta as fontes sem copiá-las; o enunciado fala em extrair, gravar e consolidar em tabelas finais.
-
-**Revisão rápida:** ETL: extrai → transforma → carrega. ELT: extrai → carrega → transforma no destino.
-
-## 15. OFI-000042 — Data warehouse: Data Staging Area (ETL)
-
-*Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 22.* · item 1.19 · Média · gabarito **B**
-
-A **Data Staging Area** é a área intermediária onde os dados extraídos das fontes transacionais são **limpos, transformados e preparados** (o "T" do ETL) antes de serem carregados na área de apresentação do DW (Kimball).
-
-- **A)** Incorreta. Data marts são subconjuntos do DW voltados a uma área de negócio; ficam na camada de apresentação.
-- **B)** Correta. É a área de trânsito e transformação entre as fontes e o DW.
-- **C)** Incorreta. "Dimensional Model Area" não é camada padrão da arquitetura.
-- **D)** Incorreta. A Presentation Area é onde os dados já organizados ficam disponíveis para consulta.
-- **E)** Incorreta. "Living Sample Area" não é camada de arquitetura de DW.
-
-**Revisão rápida:** Staging area = onde se extrai, limpa e transforma antes de carregar.

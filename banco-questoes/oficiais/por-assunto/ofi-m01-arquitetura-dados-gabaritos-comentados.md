@@ -259,3 +259,183 @@ Procura-se o fornecedor para o qual **exista ao menos uma linha de VENDA com a d
 **Revisão rápida:** Intervalo inclusivo: BETWEEN, ou >= AND <=, na mesma linha.
 
 **Fonte:** Fundação Cesgranrio, Transpetro PSP RH 2018.1 (Edital nº 1), Analista de Sistemas Júnior — Processos de Negócio (2018), prova Prova 15, questão 38; gabarito: de terceiros (Ética), alterado em 09/05/2018; não validado contra a banca.
+
+## OFI-000067 — Modelo relacional: chaves primária e estrangeira
+
+*Questão oficial — Fundação Cesgranrio, Caixa Econômica Federal, Edital 1/2021/NM, Caderno de Tecnologia da Informação, questão 38.*
+
+**Gabarito: E**
+
+A conta é identificada por (agencia, conta), chave de CONTA_CORRENTE. Em CLIENTE, o par (agencia, conta) referencia a conta a que o cliente pertence: é **chave estrangeira** para CONTA_CORRENTE. Como a mesma conta tem até 5 titulares, a PK de CLIENTE deve incluir um atributo que distinga os titulares (como CPF).
+
+- **A)** Incorreta. Uma conta pode ter várias movimentações no mesmo dia; sem hora e minuto, a chave (agencia, conta, data) repetiria.
+- **B)** Incorreta. O CPF identifica o cliente (parte da chave candidata) e não referencia outra tabela do modelo apresentado.
+- **C)** Incorreta. A data de abertura é atributo descritivo; (agencia, conta) já identifica a conta.
+- **D)** Incorreta. "Titular" (1º a 5º) isoladamente não identifica o cliente; a chave deveria combinar conta e CPF (ou o titular), mas o argumento da alternativa não decorre do modelo.
+- **E)** Correta. (agencia, conta) em CLIENTE referencia CONTA_CORRENTE: chave estrangeira.
+
+**Ponto de atenção:** Pergunte: **o conjunto de colunas identifica a linha (PK) ou aponta para outra tabela (FK)?** Cuidado com chaves compostas.
+
+**Revisão rápida:** FK: colunas que referenciam a PK de outra tabela.
+
+**Fonte:** Fundação Cesgranrio, Caixa Econômica Federal, Edital 1/2021/NM, Técnico Bancário Novo — Tecnologia da Informação (2021), prova Caderno de Tecnologia da Informação (questões 31 a 60), questão 38; gabarito: definitivo (fonte oficial: portal da Cesgranrio); recursos sem alteração nem anulação.
+
+## OFI-000068 — Metadados em SGBD: uso pelo próprio sistema
+
+*Questão oficial — Fundação Cesgranrio, Caixa Econômica Federal, Edital 1/2021/NM, Caderno de Tecnologia da Informação, questão 39.*
+
+**Gabarito: E**
+
+O **catálogo (metadados)** descreve tabelas, colunas, tipos, chaves e privilégios. Ao receber um comando SQL, o SGBD consulta o catálogo para verificar se os objetos existem, se os tipos são compatíveis e se o usuário tem permissão: **validação** do comando.
+
+- **A)** Incorreta. Metas de desempenho definidas pelo DBA não são o uso típico do catálogo.
+- **B)** Incorreta. A escolha de páginas sujas para gravação é tarefa do gerenciador de buffer, não do catálogo.
+- **C)** Incorreta. O isolamento é implementado por controle de concorrência (bloqueios, MVCC).
+- **D)** Incorreta. A recuperação usa log de transações e backups.
+- **E)** Correta. O catálogo é consultado para validar tabelas, colunas e permissões na análise do comando.
+
+**Ponto de atenção:** Quem usa o dicionário de dados no dia a dia do SGBD: **análise e otimização de consultas**, verificação de privilégios, restrições.
+
+**Revisão rápida:** Metadados: usados para validar e otimizar comandos.
+
+**Fonte:** Fundação Cesgranrio, Caixa Econômica Federal, Edital 1/2021/NM, Técnico Bancário Novo — Tecnologia da Informação (2021), prova Caderno de Tecnologia da Informação (questões 31 a 60), questão 39; gabarito: definitivo (fonte oficial: portal da Cesgranrio); recursos sem alteração nem anulação.
+
+## OFI-000073 — SGBD distribuído federado
+
+*Questão oficial — Fundação Cesgranrio, Caixa Econômica Federal, Edital 1/2021/NM, Caderno de Tecnologia da Informação, questão 58.*
+
+**Gabarito: C**
+
+No **SGBD federado** (ou multibanco), SGBDs autônomos e frequentemente heterogêneos são **fracamente acoplados** por um **middleware** que oferece visão integrada. Em oposição, o SGBD distribuído homogêneo é fortemente acoplado.
+
+- **A)** Incorreta. Grafos classificam o modelo de dados, e não o acoplamento.
+- **B)** Incorreta. Hierárquico é um modelo de dados antigo.
+- **C)** Correta. Federado: componentes autônomos, acoplamento fraco e middleware.
+- **D)** Incorreta. Orientado a objetos classifica o modelo de dados.
+- **E)** Incorreta. NoSQL é uma família de modelos, sem relação com o acoplamento descrito.
+
+**Ponto de atenção:** Distinga **classificação por modelo de dados** (relacional, grafo, documento...) de **classificação por distribuição** (centralizado, distribuído homogêneo, federado).
+
+**Revisão rápida:** Federado = autônomos, fracamente acoplados, middleware.
+
+**Fonte:** Fundação Cesgranrio, Caixa Econômica Federal, Edital 1/2021/NM, Técnico Bancário Novo — Tecnologia da Informação (2021), prova Caderno de Tecnologia da Informação (questões 31 a 60), questão 58; gabarito: definitivo (fonte oficial: portal da Cesgranrio); recursos sem alteração nem anulação.
+
+## OFI-000100 — Modelo dimensional: medidas aditivas
+
+*Questão oficial — Fundação Cesgranrio, BNDES, Edital 1/2024, Prova 3, questão 65.*
+
+**Gabarito: E**
+
+A **quantidade de leitos** é uma medida **aditiva**: pode ser somada por qualquer dimensão (município → estado). A **taxa de mortalidade** é medida **não aditiva** (razão): somar taxas ou tirar média simples não dá a taxa do estado, que exigiria os numeradores e denominadores (óbitos e nascidos vivos), não disponíveis no modelo.
+
+- **A)** Incorreta. Dividir leitos por taxa não tem sentido de negócio.
+- **B)** Incorreta. Idem: dividir taxa por leitos não tem sentido de negócio.
+- **C)** Incorreta. A média simples das taxas dos municípios ignora o tamanho de cada população; não dá a taxa do estado (sem os pesos, que o modelo não traz).
+- **D)** Incorreta. Somar taxas (razões) é incorreto: medida não aditiva.
+- **E)** Correta. A soma dos leitos dos municípios é válida: medida aditiva.
+
+**Ponto de atenção:** Medidas: **aditivas** (somam em todas as dimensões), **semiaditivas** (somam em algumas, como saldos) e **não aditivas** (razões, taxas, preços unitários: recalcular a partir dos componentes).
+
+**Revisão rápida:** Quantidade soma; taxa não soma.
+
+**Fonte:** Fundação Cesgranrio, BNDES, Edital 1/2024, Analista — Análise de Sistemas: Desenvolvimento (2024), prova Prova 3 (manhã), questão 65; gabarito: final após recursos (documento da banca, via espelho QConcursos).
+
+## OFI-000101 — Data lake: metadados
+
+*Questão oficial — Fundação Cesgranrio, BNDES, Edital 1/2024, Prova 3, questão 66.*
+
+**Gabarito: E**
+
+O data lake aplica o esquema **na leitura** (*schema-on-read*); por isso, os metadados **não precisam ser definidos antes** da ingestão e podem ser **descobertos automaticamente em parte** (por *crawlers*/catálogos de dados que inferem esquemas e tipos). A catalogação é essencial para evitar o **"pântano de dados"**.
+
+- **A)** Incorreta. Não há padrão ANSI consagrado de metadados de data lakes.
+- **B)** Incorreta. Os metadados nem sempre descrevem completa e corretamente todos os dados (o risco do data swamp).
+- **C)** Incorreta. A definição prévia é característica do DW (esquema na escrita).
+- **D)** Incorreta. O *information schema* é recurso de bancos relacionais.
+- **E)** Correta. Ferramentas de catálogo inferem parte dos metadados automaticamente.
+
+**Ponto de atenção:** Lake: **schema-on-read**, metadados descobertos e curados; DW: **schema-on-write**, modelo definido antes da carga.
+
+**Revisão rápida:** Lake: metadados em parte descobertos automaticamente.
+
+**Fonte:** Fundação Cesgranrio, BNDES, Edital 1/2024, Analista — Análise de Sistemas: Desenvolvimento (2024), prova Prova 3 (manhã), questão 66; gabarito: final após recursos (documento da banca, via espelho QConcursos).
+
+## OFI-000102 — Governança de dados: monitoramento da qualidade
+
+*Questão oficial — Fundação Cesgranrio, BNDES, Edital 1/2024, Prova 3, questão 67.*
+
+**Gabarito: E**
+
+O monitoramento da qualidade é **contínuo** e baseado em **indicadores** (completude, unicidade, validade, consistência, atualidade), que orientam **ações corretivas** e a melhoria dos processos.
+
+- **A)** Incorreta. A interoperabilidade depende de padrões e integração, e não é característica do monitoramento.
+- **B)** Incorreta. Monitorar apenas após decisões erradas é reativo; a governança é preventiva.
+- **C)** Incorreta. O controle de acesso é função da segurança e da governança de acesso.
+- **D)** Incorreta. Um intervalo de dez anos é incompatível com o monitoramento.
+- **E)** Correta. Indicadores orientam as ações corretivas: característica do monitoramento.
+
+**Ponto de atenção:** Qualidade de dados: **dimensões** (completude, acurácia, consistência, unicidade, atualidade, validade) → **indicadores** → **ações corretivas**.
+
+**Revisão rápida:** Qualidade: medir com indicadores e corrigir.
+
+**Fonte:** Fundação Cesgranrio, BNDES, Edital 1/2024, Analista — Análise de Sistemas: Desenvolvimento (2024), prova Prova 3 (manhã), questão 67; gabarito: final após recursos (documento da banca, via espelho QConcursos).
+
+## OFI-000103 — DER: especialização total e sobreposta
+
+*Questão oficial — Fundação Cesgranrio, BNDES, Edital 1/2024, Prova 3, questão 68.*
+
+**Gabarito: A**
+
+**Total**: todo prédio pertence a pelo menos uma especialização ("apenas isso"). **Sobreposta** (*overlapping*): um prédio pode pertencer às duas (uso misto). Logo, **total e sobreposta**. "Parcial" e "total" descrevem a participação; "disjunta" e "sobreposta", a exclusão mútua.
+
+- **A)** Correta. Todo prédio está em pelo menos uma e pode estar nas duas: total e sobreposta.
+- **B)** Incorreta. "Total e parcial" são conceitos do mesmo eixo; não se combinam.
+- **C)** Incorreta. Disjunta exigiria que nenhum prédio fosse misto.
+- **D)** Incorreta. Parcial admitiria prédios em nenhuma das duas, o que o texto exclui.
+- **E)** Incorreta. Parcial e disjunta contradizem o enunciado nos dois eixos.
+
+**Ponto de atenção:** Dois eixos independentes: **cobertura** (total × parcial) e **sobreposição** (disjunta × sobreposta). Duas respostas do mesmo eixo nunca combinam.
+
+**Revisão rápida:** Total: sem prédio fora; sobreposta: pode ser misto.
+
+**Fonte:** Fundação Cesgranrio, BNDES, Edital 1/2024, Analista — Análise de Sistemas: Desenvolvimento (2024), prova Prova 3 (manhã), questão 68; gabarito: final após recursos (documento da banca, via espelho QConcursos).
+
+## OFI-000104 — Nível de isolamento SERIALIZABLE
+
+*Questão oficial — Fundação Cesgranrio, BNDES, Edital 1/2024, Prova 3, questão 69.*
+
+**Gabarito: C**
+
+No padrão SQL, os níveis são **READ UNCOMMITTED, READ COMMITTED, REPEATABLE READ e SERIALIZABLE**. O **SERIALIZABLE** é o **mais alto**: o resultado equivale à execução **em série** das transações, evitando leituras sujas, não repetíveis e fantasmas. Isso **não** significa que só uma execute por vez, e sim que o efeito é **equivalente** a alguma ordem serial.
+
+- **A)** Incorreta. Não é modo somente leitura.
+- **B)** Incorreta. Garante o efeito serial, mas as transações podem executar concorrentemente (controle por bloqueios ou MVCC).
+- **C)** Correta. É o nível mais alto de isolamento.
+- **D)** Incorreta. "Serializable" não se refere a objetos JSON.
+- **E)** Incorreta. Não trata de envio de dados entre transações.
+
+**Ponto de atenção:** "Serializável" ≠ "executar uma por vez": é **equivalência a uma execução serial**. Mais isolamento = menos concorrência e mais custo.
+
+**Revisão rápida:** SERIALIZABLE: mais alto isolamento, efeito equivalente ao serial.
+
+**Fonte:** Fundação Cesgranrio, BNDES, Edital 1/2024, Analista — Análise de Sistemas: Desenvolvimento (2024), prova Prova 3 (manhã), questão 69; gabarito: final após recursos (documento da banca, via espelho QConcursos).
+
+## OFI-000105 — DDL: cláusula CHECK
+
+*Questão oficial — Fundação Cesgranrio, BNDES, Edital 1/2024, Prova 3, questão 70.*
+
+**Gabarito: B**
+
+A restrição **CHECK** valida uma **condição lógica** sobre os valores da linha (por exemplo, `A >= 0`). A unicidade usa **UNIQUE**; a existência em outra tabela usa **FOREIGN KEY**; a obrigatoriedade de preenchimento usa **NOT NULL**.
+
+- **A)** Incorreta. Unicidade é UNIQUE (ou PRIMARY KEY).
+- **B)** Correta. CHECK verifica condições como `A >= 0`.
+- **C)** Incorreta. Existência em outra tabela é chave estrangeira.
+- **D)** Incorreta. CHECK não restringe o acesso de leitura a linhas de outra tabela.
+- **E)** Incorreta. Preenchimento obrigatório é NOT NULL.
+
+**Ponto de atenção:** Restrições: **PRIMARY KEY / UNIQUE** (unicidade), **FOREIGN KEY** (integridade referencial), **NOT NULL** (obrigatoriedade), **CHECK** (condição), **DEFAULT** (valor padrão).
+
+**Revisão rápida:** CHECK = condição lógica sobre o valor.
+
+**Fonte:** Fundação Cesgranrio, BNDES, Edital 1/2024, Analista — Análise de Sistemas: Desenvolvimento (2024), prova Prova 3 (manhã), questão 70; gabarito: final após recursos (documento da banca, via espelho QConcursos).

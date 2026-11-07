@@ -6,9 +6,65 @@
 
 **Observações:** Mistura de questões oficiais e autorais do módulo; algumas ainda `em_revisao`.
 
-Composição: tipo {'autoral': 8, 'oficial': 7} · status {'validada': 7, 'em_revisao': 8} · dificuldade {'media': 9, 'facil': 4, 'dificil': 2}
+Composição: tipo {'autoral': 6, 'oficial': 9} · status {'validada': 6, 'em_revisao': 9} · dificuldade {'facil': 5, 'media': 8, 'dificil': 2}
 
-## 1. AUT-000044 — Ciclo de vida: modelo em espiral
+## 1. AUT-000041 — Requisitos funcionais e não funcionais
+
+*Questão autoral — estilo Cesgranrio.* · item 5.1 · Fácil · gabarito **B**
+
+**Requisitos funcionais** descrevem **o que o sistema faz** (serviços, funções, cálculos): I (calcular o tempo de parada) e III (cadastrar ordem de serviço). **Requisitos não funcionais** descrevem **como o sistema deve ser**: atributos de qualidade e condições de operação, como desempenho (II: tempo de resposta mensurável) e segurança (IV: criptografia do tráfego).
+
+- **A)** Incorreta. Calcular o tempo de parada (I) e cadastrar a ordem de serviço (III) são funções do sistema: requisitos funcionais.
+- **B)** Correta. II (desempenho) e IV (segurança) são atributos de qualidade: requisitos não funcionais.
+- **C)** Incorreta. Mistura um requisito funcional (I) com um não funcional (II).
+- **D)** Incorreta. Mistura um requisito funcional (III) com um não funcional (IV).
+- **E)** Incorreta. Classifica como não funcionais dois requisitos funcionais (I e III) e um não funcional (II).
+
+**Revisão rápida:** Funcional: serviço/função. Não funcional: atributo de qualidade (desempenho, segurança, usabilidade). Restrição: limitação imposta (tecnologia, prazo, norma).
+
+## 2. OFI-000024 — Requisitos funcionais x não funcionais
+
+*Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 24.* · item 5.1 · Média · gabarito **A**
+
+**Requisito funcional** descreve o que o sistema **faz** (cálculos, regras, transformações). **Não funcionais** descrevem qualidades e restrições (desempenho, segurança, interface, operação). Calcular a velocidade com uma equação é uma função do sistema.
+
+- **A)** Correta. É uma função de cálculo do software; requisito funcional.
+- **B)** Incorreta. Aparenta ser funcional por citar imagens, mas, no gabarito, é tratado como requisito de interface/qualidade (resolução e dispositivos).
+- **C)** Incorreta. Restrição de implantação/operação (política de atualização); não funcional.
+- **D)** Incorreta. Restrição de desempenho (tempo de resposta); não funcional.
+- **E)** Incorreta. Restrição de segurança (criptografia AES-256); não funcional.
+
+**Revisão rápida:** Funcional = o que faz; não funcional = quão bem / sob que restrições.
+
+## 3. AUT-000042 — Priorização de requisitos: MoSCoW
+
+*Questão autoral — estilo Cesgranrio.* · item 5.1 · Fácil · gabarito **D**
+
+No **MoSCoW**, **Must have** é essencial (sem ele o produto não é viável), **Should have** é **importante**, mas não vital (pode haver alternativa temporária), **Could have** é **desejável**, de menor impacto se omitido, e **Won't have** é o que **não será entregue agora**. O requisito importante com alternativa manual é **Should have**.
+
+- **A)** Incorreta. Must have é essencial para a viabilidade do produto; o enunciado informa que o produto pode ser lançado sem ele.
+- **B)** Incorreta. Could have é apenas desejável, com pouco impacto se omitido; o requisito foi considerado importante.
+- **C)** Incorreta. Won't have é o que não será entregue neste ciclo; o requisito é importante e deve ser tratado como candidato à entrega.
+- **D)** Correta. Importante, mas não vital, com alternativa temporária: Should have.
+- **E)** Incorreta. "Need to have" não é categoria do MoSCoW.
+
+**Revisão rápida:** Must: essencial. Should: importante, mas contornável. Could: desejável. Won't: fora deste ciclo.
+
+## 4. OFI-000052 — Casos de uso
+
+*Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 27.* · item 5.1 · Média · gabarito **A**
+
+O **caso de uso** descreve **uma interação entre um ator e o sistema** para atingir um objetivo, do ponto de vista externo, em geral com um fluxo principal e fluxos alternativos e de exceção.
+
+- **A)** Correta. Descreve uma interação ator-sistema, visão externa.
+- **B)** Incorreta. Um caso de uso reúne **vários** cenários (fluxo principal e alternativos); um único cenário é uma instância.
+- **C)** Incorreta. O comportamento interno é tratado em outros modelos (sequência, atividades).
+- **D)** Incorreta. Estados dos objetos são modelados em diagramas de estados.
+- **E)** Incorreta. Interações entre objetos são modeladas em diagramas de sequência/comunicação.
+
+**Revisão rápida:** Caso de uso = interação ator × sistema.
+
+## 5. AUT-000044 — Ciclo de vida: modelo em espiral
 
 *Questão autoral — estilo Cesgranrio.* · item 5.2 · Média · gabarito **E**
 
@@ -22,7 +78,7 @@ O **modelo em espiral** (Boehm) é **orientado a riscos**: cada volta determina 
 
 **Revisão rápida:** Espiral (Boehm): voltas com objetivos/alternativas, avaliação de riscos, desenvolvimento/verificação e planejamento da próxima volta.
 
-## 2. AUT-000043 — Ciclo de vida: modelo em V
+## 6. AUT-000043 — Ciclo de vida: modelo em V
 
 *Questão autoral — estilo Cesgranrio.* · item 5.2 · Fácil · gabarito **A**
 
@@ -36,7 +92,7 @@ No modelo em V, cada fase da descida (desenvolvimento) corresponde a um nível d
 
 **Revisão rápida:** Modelo em V: requisitos↔aceitação; especificação↔sistema; arquitetura↔integração; detalhado↔unidade.
 
-## 3. OFI-000049 — Processo Unificado: fase de elaboração
+## 7. OFI-000049 — Processo Unificado: fase de elaboração
 
 *Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 23.* · item 5.2 · Média · gabarito **A**
 
@@ -50,7 +106,7 @@ Na **elaboração**, o foco é **reduzir os riscos principais** e **estabelecer 
 
 **Revisão rápida:** Elaboração = arquitetura.
 
-## 4. OFI-000025 — Ciclos de vida sequenciais
+## 8. OFI-000025 — Ciclos de vida sequenciais
 
 *Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 25.* · item 5.2 · Fácil · gabarito **D**
 
@@ -64,7 +120,7 @@ Na **elaboração**, o foco é **reduzir os riscos principais** e **estabelecer 
 
 **Revisão rápida:** Sequencial = cascata e V.
 
-## 5. AUT-000045 — Paradigma orientado a objetos: herança e ligação dinâmica
+## 9. AUT-000045 — Paradigma orientado a objetos: herança e ligação dinâmica
 
 *Questão autoral — estilo Cesgranrio.* · item 5.3 · Difícil · gabarito **C**
 
@@ -78,7 +134,7 @@ A ligação do método é **dinâmica**: a versão de `estado()` executada depen
 
 **Revisão rápida:** Chamada a `self.metodo()` é resolvida pelo tipo real. `super().metodo()` executa a versão da superclasse, com o mesmo objeto.
 
-## 6. AUT-000046 — UML: diagrama de casos de uso (include e extend)
+## 10. AUT-000046 — UML: diagrama de casos de uso (include e extend)
 
 *Questão autoral — estilo Cesgranrio.* · item 5.3 · Média · gabarito **D**
 
@@ -92,7 +148,7 @@ Na **inclusão (*include*)**, um caso de uso **sempre** usa o comportamento de o
 
 **Revisão rápida:** Include: uso obrigatório de outro caso de uso. Extend: ampliação opcional. Generalização: especialização. Associação: ator–caso de uso.
 
-## 7. OFI-000053 — Orientação a objetos: polimorfismo
+## 11. OFI-000053 — Orientação a objetos: polimorfismo
 
 *Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 29.* · item 5.3 · Média · gabarito **E**
 
@@ -106,7 +162,21 @@ Na **inclusão (*include*)**, um caso de uso **sempre** usa o comportamento de o
 
 **Revisão rápida:** Polimorfismo: mesma operação, formas diferentes.
 
-## 8. OFI-000027 — Orientação a objetos: sobrecarga
+## 12. OFI-000095 — Padrões de projeto: Mediator x Facade
+
+*Questão oficial — Fundação Cesgranrio, BNDES, Edital 1/2024, Prova 3, questão 43.* · item 5.3 · Difícil · gabarito **D**
+
+O **Mediator** centraliza a **comunicação entre objetos colegas**, que deixam de se referenciar explicitamente; a comunicação é **multidirecional** e cooperativa. O **Facade** oferece interface simplificada **unidirecional** para um subsistema, que não conhece o facade.
+
+- **A)** Incorreta. Bridge separa abstração e implementação.
+- **B)** Incorreta. Composite compõe objetos em árvores.
+- **C)** Incorreta. Decorator acrescenta responsabilidades dinamicamente.
+- **D)** Correta. Mediator: coordena a cooperação entre objetos sem referências explícitas, em protocolo multidirecional.
+- **E)** Incorreta. Strategy encapsula algoritmos intercambiáveis.
+
+**Revisão rápida:** Mediator: colegas falam com o mediador, não entre si.
+
+## 13. OFI-000027 — Orientação a objetos: sobrecarga
 
 *Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 32.* · item 5.3 · Fácil · gabarito **D**
 
@@ -120,100 +190,30 @@ Na **inclusão (*include*)**, um caso de uso **sempre** usa o comportamento de o
 
 **Revisão rápida:** Overload ≠ override.
 
-## 9. AUT-000047 — Teste de software: complexidade ciclomática
+## 14. OFI-000066 — Padrão de projeto Proxy
 
-*Questão autoral — estilo Cesgranrio.* · item 5.4 · Difícil · gabarito **A**
+*Questão oficial — Fundação Cesgranrio, Caixa Econômica Federal, Edital 1/2021/NM, Caderno de Tecnologia da Informação, questão 36.* · item 5.3 · Média · gabarito **C**
 
-A complexidade ciclomática é **V(G) = número de decisões + 1** (equivalente a E − N + 2P). As decisões do método são: (1) `for`; (2) `if x > limite`; (3) `if alertas > 3`; (4) `elif x < 0`; (5) `while`; (6) `if alertas == 2`. São **6 decisões**; logo, V(G) = 6 + 1 = **7**. O `break`, o `continue` e o `return` não são decisões.
+O **Proxy** oferece um **substituto** do objeto real, com a **mesma interface**, para controlar o acesso (instanciação preguiçosa, proteção, cache, acesso remoto), delegando as requisições ao objeto real.
 
-- **A)** Correta. 6 decisões + 1 = 7.
-- **B)** Incorreta. É o número de decisões (6); falta somar 1 ao total.
-- **C)** Incorreta. Resulta de contar apenas 4 decisões (por exemplo, omitindo o `elif` e o `while`) e somar 1.
-- **D)** Incorreta. Ocorreria se fossem contados também o `break` ou o `continue` como decisões; esses comandos apenas desviam o fluxo e não criam ramificação de decisão.
-- **E)** Incorreta. Resulta de 3 decisões + 1; ignora os laços `for` e `while` ou algumas das estruturas condicionais.
+- **A)** Incorreta. Facade oferece uma interface simplificada para um subsistema.
+- **B)** Incorreta. Adapter converte uma interface em outra esperada pelo cliente.
+- **C)** Correta. Substituto com mesma interface que controla o acesso: Proxy.
+- **D)** Incorreta. Bridge separa abstração e implementação para variarem de forma independente.
+- **E)** Incorreta. Composite trata objetos individuais e composições de forma uniforme (árvores).
 
-**Revisão rápida:** Complexidade ciclomática = nº de decisões + 1 = E − N + 2P. Valores altos indicam risco e dificuldade de manutenção.
+**Revisão rápida:** Proxy: representante com a mesma interface.
 
-## 10. AUT-000048 — Teste de software: análise do valor limite
+## 15. OFI-000097 — Acoplamento de conteúdo
 
-*Questão autoral — estilo Cesgranrio.* · item 5.4 · Média · gabarito **C**
+*Questão oficial — Fundação Cesgranrio, BNDES, Edital 1/2024, Prova 3, questão 45.* · item 5.3 · Média · gabarito **B**
 
-Na **análise do valor limite**, testam-se as **bordas das partições**, onde os defeitos são mais comuns: o limite inferior (1) e o valor imediatamente abaixo (0), o limite superior (99) e o valor imediatamente acima (100). O conjunto é **0, 1, 99 e 100**. (Variações da técnica incluem também 2 e 98.)
+No **acoplamento de conteúdo** um módulo **acessa ou modifica diretamente o conteúdo interno** (dados ou código) de outro. É o **tipo mais forte e indesejável** de acoplamento.
 
-- **A)** Incorreta. Usa os limites válidos (1 e 99) e um representante (50), típico da partição de equivalência; não testa os valores imediatamente fora das fronteiras.
-- **B)** Incorreta. 0 e 100 são valores fora do intervalo nas fronteiras, mas 50 é representante da partição válida, e faltam os limites válidos 1 e 99.
-- **C)** Correta. Limites (1 e 99) e valores adjacentes fora do intervalo (0 e 100).
-- **D)** Incorreta. Testa apenas valores válidos perto das bordas; não exercita os valores inválidos adjacentes às fronteiras.
-- **E)** Incorreta. Testa apenas os valores inválidos adjacentes; faltam os próprios limites válidos 1 e 99.
+- **A)** Incorreta. Acoplamento de comunicação: módulos operam sobre os mesmos dados de entrada ou saída.
+- **B)** Correta. Modificar diretamente os dados internos de outro componente: acoplamento de conteúdo.
+- **C)** Incorreta. Acoplamento de controle: um módulo passa informação que controla a lógica de outro.
+- **D)** Incorreta. Acoplamento externo: módulos compartilham um formato, protocolo ou dispositivo imposto externamente.
+- **E)** Incorreta. "Funcional" refere-se à coesão funcional, característica desejável, e não ao tipo de acoplamento.
 
-**Revisão rápida:** Valor limite para 1–99: 0, 1, 99, 100 (e, em variações, 2 e 98).
-
-## 11. AUT-000049 — Verificação e validação
-
-*Questão autoral — estilo Cesgranrio.* · item 5.4 · Média · gabarito **E**
-
-A **verificação** pergunta "estamos construindo o produto **corretamente**?" (conformidade com a especificação) e pode ser feita por **técnicas estáticas** (revisões, inspeções, análise estática), sem executar o software: atividade I. A **validação** pergunta "estamos construindo o **produto certo**?" (atendimento à necessidade do usuário): atividade II, em que o usuário opera o sistema (técnica dinâmica, de execução).
-
-- **A)** Incorreta. Inverte os conceitos: comparar o projeto com a especificação é verificação (estática), e a demonstração ao usuário é validação.
-- **B)** Incorreta. Inverte verificação e validação e também os tipos de técnica (a revisão é estática; a demonstração executa o sistema).
-- **C)** Incorreta. A revisão contra a especificação é verificação, e a demonstração executa o sistema (técnica dinâmica).
-- **D)** Incorreta. A demonstração ao usuário é validação, e a revisão do documento não executa código (técnica estática).
-- **E)** Correta. I: verificação, por revisão (estática); II: validação, com o usuário.
-
-**Revisão rápida:** Verificação: produto corretamente (especificação). Validação: produto certo (usuário). Estática: sem executar. Dinâmica: executando.
-
-## 12. OFI-000026 — Testes de aceitação
-
-*Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 31.* · item 5.4 · Fácil · gabarito **B**
-
-**Teste de aceitação** é realizado pelo usuário ou cliente (por exemplo, alfa/beta ou UAT) para decidir se o produto é aceito e entra em produção.
-
-- **A)** Incorreta. Testes unitários verificam componentes isolados, feitos por desenvolvedores.
-- **B)** Correta. Usuários finais validando a última versão antes da produção caracterizam testes de aceitação.
-- **C)** Incorreta. Testes de desempenho avaliam tempo de resposta e carga.
-- **D)** Incorreta. Testes de integração verificam a interação entre módulos.
-- **E)** Incorreta. Testes de sistema verificam o sistema completo contra os requisitos, feitos pela equipe de testes.
-
-**Revisão rápida:** Aceitação: decide se o produto é aceito.
-
-## 13. AUT-000106 — Complexidade ciclomática e testes de caminho básico
-
-*Questão autoral — estilo Cesgranrio.* · item 5.4 · Média · gabarito **B**
-
-A complexidade ciclomática é **V(G) = número de pontos de decisão + 1**. Aqui há três decisões simples: o `if n < 0`, o laço `for` e o `if n % 2 == 0`. Logo, **V(G) = 3 + 1 = 4**, ou seja, quatro caminhos independentes (e, no mínimo, quatro casos de teste para o teste de caminho básico).
-
-- **A)** Incorreta. 3 corresponde ao número de decisões, sem somar 1.
-- **B)** Correta. V(G) = 3 decisões + 1 = 4.
-- **C)** Incorreta. 5 contaria uma decisão a mais (por exemplo, o `return`, que não é decisão).
-- **D)** Incorreta. 6 não corresponde ao número de decisões.
-- **E)** Incorreta. 2 consideraria apenas uma decisão.
-
-**Revisão rápida:** V(G) = decisões + 1.
-
-## 14. OFI-000050 — Teste de mutação
-
-*Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 24.* · item 5.4 · Média · gabarito **C**
-
-No **teste de mutação**, criam-se **mutantes** (cópias do programa com pequenas alterações) e executam-se os testes; se o teste detecta a diferença, o mutante é "morto". Avalia a **qualidade do conjunto de testes**.
-
-- **A)** Incorreta. Testes aleatórios geram entradas ao acaso.
-- **B)** Incorreta. Exploratórios combinam aprendizado, projeto e execução simultâneos, sem scripts.
-- **C)** Correta. Descreve o teste de mutação.
-- **D)** Incorreta. Perfil operacional seleciona entradas conforme o uso esperado.
-- **E)** Incorreta. Fluxo de controle usa o grafo do programa para cobertura de comandos, ramos e caminhos.
-
-**Revisão rápida:** Mutação: alterar o programa para avaliar os testes.
-
-## 15. OFI-000051 — Complexidade ciclomática a partir do grafo de fluxo
-
-*Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 25.* · item 5.4 · Média · gabarito **A**
-
-**V(G) = E − N + 2P**, com E arestas, N nós e P componentes conexos (P = 1 para um programa): V(G) = 12 − 5 + 2 = **9**.
-
-- **A)** Correta. 12 − 5 + 2 = 9: correta.
-- **B)** Incorreta. 11 não resulta da fórmula (por exemplo, 12 − 5 + 4).
-- **C)** Incorreta. 15 = 12 + 5 − 2 (sinal trocado).
-- **D)** Incorreta. 17 = 12 + 5.
-- **E)** Incorreta. 19 = 12 + 5 + 2.
-
-**Revisão rápida:** V(G) = E − N + 2.
+**Revisão rápida:** Conteúdo: um módulo mexe nos internos de outro.

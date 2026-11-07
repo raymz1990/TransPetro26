@@ -6,7 +6,7 @@
 
 **Observações:** Disjunto do SIM-ESP-01. Contém questões oficiais (Transpetro 2023) e autorais da expansão T05, ainda `em_revisao` (aguardam validação do usuário).
 
-Composição: tipo {'oficial': 26, 'autoral': 24} · status {'em_revisao': 39, 'validada': 11} · dificuldade {'media': 29, 'facil': 14, 'dificil': 7}
+Composição: tipo {'oficial': 26, 'autoral': 24} · status {'em_revisao': 39, 'validada': 11} · dificuldade {'media': 28, 'facil': 15, 'dificil': 7}
 
 ## 1. OFI-000002 — Desempenho de banco de dados: desnormalização controlada
 
@@ -36,7 +36,21 @@ Operadores **binários** recebem duas relações; os **unários** recebem uma. P
 
 **Revisão rápida:** Unários: σ, π, ρ. Binários: ∪, ∩, −, ×, ⋈ e ÷.
 
-## 3. OFI-000043 — SQL: fornecedores com venda em intervalo de datas
+## 3. OFI-000067 — Modelo relacional: chaves primária e estrangeira
+
+*Questão oficial — Fundação Cesgranrio, Caixa Econômica Federal, Edital 1/2021/NM, Caderno de Tecnologia da Informação, questão 38.* · item 1.3 · Média · gabarito **E**
+
+A conta é identificada por (agencia, conta), chave de CONTA_CORRENTE. Em CLIENTE, o par (agencia, conta) referencia a conta a que o cliente pertence: é **chave estrangeira** para CONTA_CORRENTE. Como a mesma conta tem até 5 titulares, a PK de CLIENTE deve incluir um atributo que distinga os titulares (como CPF).
+
+- **A)** Incorreta. Uma conta pode ter várias movimentações no mesmo dia; sem hora e minuto, a chave (agencia, conta, data) repetiria.
+- **B)** Incorreta. O CPF identifica o cliente (parte da chave candidata) e não referencia outra tabela do modelo apresentado.
+- **C)** Incorreta. A data de abertura é atributo descritivo; (agencia, conta) já identifica a conta.
+- **D)** Incorreta. "Titular" (1º a 5º) isoladamente não identifica o cliente; a chave deveria combinar conta e CPF (ou o titular), mas o argumento da alternativa não decorre do modelo.
+- **E)** Correta. (agencia, conta) em CLIENTE referencia CONTA_CORRENTE: chave estrangeira.
+
+**Revisão rápida:** FK: colunas que referenciam a PK de outra tabela.
+
+## 4. OFI-000043 — SQL: fornecedores com venda em intervalo de datas
 
 *Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 38.* · item 1.10 · Difícil · gabarito **B**
 
@@ -50,7 +64,7 @@ Procura-se o fornecedor para o qual **exista ao menos uma linha de VENDA com a d
 
 **Revisão rápida:** Intervalo inclusivo: BETWEEN, ou >= AND <=, na mesma linha.
 
-## 4. OFI-000005 — SQL: autojunção em tabela de hierarquia
+## 5. OFI-000005 — SQL: autojunção em tabela de hierarquia
 
 *Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 49.* · item 1.10 · Média · gabarito **A**
 
@@ -64,7 +78,7 @@ Neto de Carlos = filho de um filho de Carlos. Na **autojunção**, `f1` represen
 
 **Revisão rápida:** Neto = `f1.filho = f2.pai`; projeta-se `f2.filho`.
 
-## 5. OFI-000003 — Bancos de documentos x relacionais x grafos
+## 6. OFI-000003 — Bancos de documentos x relacionais x grafos
 
 *Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 46.* · item 1.23 · Fácil · gabarito **D**
 
@@ -77,20 +91,6 @@ Bancos de documentos (MongoDB, CouchDB) guardam documentos **JSON/BSON**, de esq
 - **E)** Incorreta. Normalização com chaves estrangeiras é característica do modelo relacional; documentos favorecem agregados embutidos.
 
 **Revisão rápida:** Documentos = JSON/BSON, esquema flexível; grafos = nós/arestas; relacional = tabelas/SQL.
-
-## 6. OFI-000004 — Banco de grafos: consulta em Cypher
-
-*Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 48.* · item 1.18 · Média · gabarito **A**
-
-Em Cypher, `MATCH` descreve um padrão; `(p)-[:TIPO]->(x)` segue a relação de `p` para `x`, e `WHERE` filtra. A consulta A localiza a pessoa de nome Alice e retorna os nós ligados por `AMIGO_DE` a partir dela.
-
-- **A)** Correta. Padrão válido: Alice como origem, relação `AMIGO_DE` saindo dela e retorno dos amigos.
-- **B)** Incorreta. Inverte a direção da seta, retornando quem aponta para Alice; com a relação modelada de Alice para o amigo, não retorna os amigos dela.
-- **C)** Incorreta. Usa a relação `INIMIGO_DE`; retorna inimigos, não amigos.
-- **D)** Incorreta. É SQL relacional e não se aplica a um banco de grafos.
-- **E)** Incorreta. `FIND` não é cláusula do Cypher; a sintaxe é inválida.
-
-**Revisão rápida:** Cypher: `MATCH (a)-[:REL]->(b) WHERE ... RETURN b`.
 
 ## 7. AUT-000091 — Mapeamento do DER para o modelo relacional: relacionamento N:N com atributo
 
@@ -316,19 +316,19 @@ Pela LGPD (art. 5º): **controlador** é quem **decide** sobre o tratamento; **o
 
 **Revisão rápida:** Funcional = o que faz; não funcional = quão bem / sob que restrições.
 
-## 23. OFI-000052 — Casos de uso
+## 23. OFI-000069 — Análise de pontos de função: ponto de vista do usuário
 
-*Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 27.* · item 5.1 · Média · gabarito **A**
+*Questão oficial — Fundação Cesgranrio, Caixa Econômica Federal, Edital 1/2021/NM, Caderno de Tecnologia da Informação, questão 40.* · item 5.1 · Fácil · gabarito **D**
 
-O **caso de uso** descreve **uma interação entre um ator e o sistema** para atingir um objetivo, do ponto de vista externo, em geral com um fluxo principal e fluxos alternativos e de exceção.
+A **Análise de Pontos de Função (APF)** mede o tamanho funcional do software pela **visão do usuário**: entradas, saídas e consultas externas, arquivos lógicos internos e de interface externa, independentemente da tecnologia.
 
-- **A)** Correta. Descreve uma interação ator-sistema, visão externa.
-- **B)** Incorreta. Um caso de uso reúne **vários** cenários (fluxo principal e alternativos); um único cenário é uma instância.
-- **C)** Incorreta. O comportamento interno é tratado em outros modelos (sequência, atividades).
-- **D)** Incorreta. Estados dos objetos são modelados em diagramas de estados.
-- **E)** Incorreta. Interações entre objetos são modeladas em diagramas de sequência/comunicação.
+- **A)** Incorreta. Linhas de código são outra métrica (LOC), dependente de linguagem.
+- **B)** Incorreta. Erros são medidos por métricas de qualidade (densidade de defeitos).
+- **C)** Incorreta. A APF não adota a visão do desenvolvedor.
+- **D)** Correta. A APF conta as funcionalidades sob a visão do usuário.
+- **E)** Incorreta. A visão do testador não é a base da contagem.
 
-**Revisão rápida:** Caso de uso = interação ator × sistema.
+**Revisão rápida:** APF: funções do ponto de vista do usuário.
 
 ## 24. AUT-000041 — Requisitos funcionais e não funcionais
 
@@ -596,33 +596,33 @@ A **NIST SP 800-61** (*Computer Security Incident Handling Guide*) define o cicl
 
 **Revisão rápida:** 800-61 = resposta a incidentes.
 
-## 43. OFI-000062 — SAML: Artifact Resolution Protocol
+## 43. OFI-000087 — FIRST CSIRT Services Framework
 
-*Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 51.* · item 9.8 · Difícil · gabarito **C**
+*Questão oficial — Fundação Cesgranrio, BNDES, Edital 1/2024, Prova 2, questão 65.* · item 9.11 · Difícil · gabarito **E**
 
-No **Artifact Resolution Protocol**, uma mensagem SAML é substituída por um **artefato** (valor pequeno e de tamanho fixo) que **referencia** a mensagem; o receptor o "resolve" para obter a mensagem completa, por canal seguro.
+O **FIRST CSIRT Services Framework** organiza os serviços em áreas: gestão de **eventos** de segurança (monitoramento, detecção e análise), gestão de **incidentes** (aceitação, análise, **mitigação e recuperação**, coordenação, comunicação), gestão de **vulnerabilidades**, **consciência situacional** e **transferência de conhecimento**.
 
-- **A)** Incorreta. Authentication Request Protocol solicita uma asserção de autenticação.
-- **B)** Incorreta. Assertion Query and Request Protocol consulta ou requisita asserções existentes.
-- **C)** Correta. Passagem por referência com valor fixo e pequeno: Artifact Resolution.
-- **D)** Incorreta. Name Identifier Management trata do gerenciamento de identificadores de nome.
-- **E)** Incorreta. Name Identifier Mapping mapeia identificadores entre provedores.
+- **A)** Incorreta. Consciência situacional trata de inteligência, análise de ameaças e comunicação de contexto.
+- **B)** Incorreta. Transferência de conhecimento trata de treinamento e conscientização.
+- **C)** Incorreta. Gestão de vulnerabilidades trata de descoberta, análise e correção de vulnerabilidades.
+- **D)** Incorreta. Gestão de eventos trata de monitoramento, detecção e análise de eventos.
+- **E)** Correta. Mitigação e recuperação do incidente pertencem à gestão de incidentes.
 
-**Revisão rápida:** Artifact = referência pequena e fixa para uma mensagem SAML.
+**Revisão rápida:** Mitigação e recuperação: área de gestão de incidentes.
 
-## 44. OFI-000036 — Controle de acesso: ABAC x RBAC
+## 44. OFI-000077 — ISO/IEC 27035-1: fase de resposta a incidentes
 
-*Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 39.* · item 9.10 · Média · gabarito **A**
+*Questão oficial — Fundação Cesgranrio, BNDES, Edital 1/2024, Prova 2, questão 45.* · item 9.11 · Média · gabarito **E**
 
-**ABAC** (*Attribute-Based Access Control*) decide com base em **atributos** do usuário, do recurso, da ação e do contexto/ambiente (local, horário etc.). RBAC usa papéis; DAC deixa o dono decidir; MAC usa rótulos de classificação; ACL é uma lista de permissões por recurso.
+As cinco fases da ISO/IEC 27035-1:2023 são **planejar e preparar; detectar e reportar; avaliar e decidir; responder; lições aprendidas**. Na fase **responder** ocorrem contenção, erradicação e recuperação e, se o incidente excede os limites das equipes, o acionamento de **continuidade de negócios e recuperação de desastres**.
 
-- **A)** Correta. Combinação de atributos (local, recurso, contexto, ambiente) define ABAC.
-- **B)** Incorreta. RBAC concede acesso por papel, sem considerar contexto e atributos dinâmicos.
-- **C)** Incorreta. DAC: o proprietário do recurso define as permissões.
-- **D)** Incorreta. MAC: o sistema impõe regras por rótulos de sensibilidade e níveis de autorização.
-- **E)** Incorreta. ACL é um mecanismo de lista de permissões, não uma abordagem de decisão por atributos.
+- **A)** Incorreta. Avaliar e decidir classifica o evento como incidente e decide como tratá-lo.
+- **B)** Incorreta. Detectar e reportar identifica e comunica eventos.
+- **C)** Incorreta. Lições aprendidas revisa e melhora o processo após o incidente.
+- **D)** Incorreta. Planejar e preparar estabelece políticas, equipe e planos antes dos incidentes.
+- **E)** Correta. Na resposta é que se executam as ações, inclusive o acionamento de continuidade e recuperação.
 
-**Revisão rápida:** ABAC: decide por atributos e contexto.
+**Revisão rápida:** 27035-1: preparar, detectar, avaliar, responder, aprender.
 
 ## 45. OFI-000040 — SIEM
 
@@ -638,19 +638,19 @@ O **SIEM** (*Security Information and Event Management*) **coleta, correlaciona 
 
 **Revisão rápida:** SIEM: coleta + correlação + alerta.
 
-## 46. AUT-000116 — SSO: vantagens e riscos
+## 46. AUT-000114 — VPN: IPsec em modo túnel
 
-*Questão autoral — estilo Cesgranrio.* · item 9.8 · Média · gabarito **B**
+*Questão autoral — estilo Cesgranrio.* · item 9.6 · Média · gabarito **E**
 
-No **SSO**, um **provedor de identidade (IdP)** autentica o usuário e emite **asserções/tokens** (SAML, OpenID Connect/OAuth 2.0, Kerberos) aceitos pelos sistemas. **Vantagens:** menos senhas, melhor experiência, controle e revogação centralizados, auditoria no IdP. **Risco:** o IdP é **ponto único de falha e de comprometimento**, mitigado com **MFA**, monitoramento e alta disponibilidade.
+No **IPsec**, o **modo túnel** protege e **encapsula o pacote IP original inteiro** em um novo pacote com novo cabeçalho IP, e é o usual em **VPN site-to-site** (gateway a gateway). No **modo transporte**, protege-se apenas o **payload**, mantendo o cabeçalho original (típico host a host). O **ESP** oferece confidencialidade, autenticação de origem e integridade; o **AH** oferece integridade e autenticação, **sem** confidencialidade.
 
-- **A)** Incorreta. A autenticação ocorre uma vez, no IdP; ela não é eliminada.
-- **B)** Correta. Descreve vantagens e riscos do SSO, e a mitigação por MFA.
-- **C)** Incorreta. O SSO **reduz** bases de senhas por sistema, e não as replica.
-- **D)** Incorreta. SAML e OIDC são justamente protocolos usados em SSO.
-- **E)** Incorreta. O IdP centraliza logs e facilita a auditoria.
+- **A)** Incorreta. A VPN protege o tráfego no caminho, mas não torna o usuário anônimo.
+- **B)** Incorreta. A VPN não substitui firewall; as defesas se complementam.
+- **C)** Incorreta. A descrição corresponde ao modo túnel; o transporte preserva o cabeçalho IP original.
+- **D)** Incorreta. É o contrário: o ESP oferece confidencialidade, e o AH, não.
+- **E)** Correta. Descreve corretamente o modo túnel e seu uso entre gateways.
 
-**Revisão rápida:** SSO: IdP + tokens (SAML/OIDC); risco do ponto único → MFA.
+**Revisão rápida:** IPsec: túnel encapsula tudo; ESP cifra; AH só autentica.
 
 ## 47. AUT-000113 — Segurança física e lógica: classificação de controles
 
@@ -666,21 +666,7 @@ No **SSO**, um **provedor de identidade (IdP)** autentica o usuário e emite **a
 
 **Revisão rápida:** Físico = lugar/equipamento; lógico = sistema/dado.
 
-## 48. AUT-000114 — VPN: IPsec em modo túnel
-
-*Questão autoral — estilo Cesgranrio.* · item 9.6 · Média · gabarito **E**
-
-No **IPsec**, o **modo túnel** protege e **encapsula o pacote IP original inteiro** em um novo pacote com novo cabeçalho IP, e é o usual em **VPN site-to-site** (gateway a gateway). No **modo transporte**, protege-se apenas o **payload**, mantendo o cabeçalho original (típico host a host). O **ESP** oferece confidencialidade, autenticação de origem e integridade; o **AH** oferece integridade e autenticação, **sem** confidencialidade.
-
-- **A)** Incorreta. A VPN protege o tráfego no caminho, mas não torna o usuário anônimo.
-- **B)** Incorreta. A VPN não substitui firewall; as defesas se complementam.
-- **C)** Incorreta. A descrição corresponde ao modo túnel; o transporte preserva o cabeçalho IP original.
-- **D)** Incorreta. É o contrário: o ESP oferece confidencialidade, e o AH, não.
-- **E)** Correta. Descreve corretamente o modo túnel e seu uso entre gateways.
-
-**Revisão rápida:** IPsec: túnel encapsula tudo; ESP cifra; AH só autentica.
-
-## 49. AUT-000115 — MDM: gerenciamento de dispositivos móveis
+## 48. AUT-000115 — MDM: gerenciamento de dispositivos móveis
 
 *Questão autoral — estilo Cesgranrio.* · item 9.7 · Média · gabarito **A**
 
@@ -693,6 +679,20 @@ O **MDM** permite **inventariar** dispositivos, **impor políticas** (senha, cri
 - **E)** Incorreta. Nenhum controle garante ausência total de infecção; o MDM reduz riscos.
 
 **Revisão rápida:** MDM: inventário, políticas, bloqueio e wipe remoto.
+
+## 49. AUT-000116 — SSO: vantagens e riscos
+
+*Questão autoral — estilo Cesgranrio.* · item 9.8 · Média · gabarito **B**
+
+No **SSO**, um **provedor de identidade (IdP)** autentica o usuário e emite **asserções/tokens** (SAML, OpenID Connect/OAuth 2.0, Kerberos) aceitos pelos sistemas. **Vantagens:** menos senhas, melhor experiência, controle e revogação centralizados, auditoria no IdP. **Risco:** o IdP é **ponto único de falha e de comprometimento**, mitigado com **MFA**, monitoramento e alta disponibilidade.
+
+- **A)** Incorreta. A autenticação ocorre uma vez, no IdP; ela não é eliminada.
+- **B)** Correta. Descreve vantagens e riscos do SSO, e a mitigação por MFA.
+- **C)** Incorreta. O SSO **reduz** bases de senhas por sistema, e não as replica.
+- **D)** Incorreta. SAML e OIDC são justamente protocolos usados em SSO.
+- **E)** Incorreta. O IdP centraliza logs e facilita a auditoria.
+
+**Revisão rápida:** SSO: IdP + tokens (SAML/OIDC); risco do ponto único → MFA.
 
 ## 50. AUT-000117 — Teste de penetração: autorização e escopo
 

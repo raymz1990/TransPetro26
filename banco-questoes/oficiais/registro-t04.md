@@ -1,12 +1,14 @@
 # Registro da T04 — questões oficiais transcritas
 
-**Atualizado:** 2026-11-06. 63 questões transcritas do caderno em `fontes-brutas/` (texto e alternativas conferidos contra o PDF), com comentário de cada alternativa. Lotes: **Transpetro 2023, Prova 6** (PRV-005, 41) e **Transpetro 2018, Prova 15** (PRV-006, 22), as duas provas do mesmo cargo e da mesma banca do concurso-alvo. Status `em_revisao`: aguardam validação do usuário.
+**Atualizado:** 2026-11-06. 105 questões transcritas dos cadernos em `fontes-brutas/` (texto e alternativas conferidos), com comentário de cada alternativa. Lotes: **Transpetro 2023, Prova 6** (PRV-005, 41), **Transpetro 2018, Prova 15** (PRV-006, 22), **Caixa 2021, TI** (PRV-008, 11; gabarito **oficial**), **BNDES 2024 Cibersegurança** (PRV-010, 17) e **BNDES 2024 Desenvolvimento** (PRV-014, 14) (gabarito final após recursos). Status `em_revisao`: aguardam validação do usuário.
+
 
 ## Limites
 
-- Gabaritos: **espelho de terceiros** (QConcursos para 2023; Ética para 2018), alterados após recursos; **não validados contra a banca**.
+- Gabaritos: 2023 e 2018 são **espelhos de terceiros** (QConcursos; Ética), **não validados contra a banca**; Caixa 2021 é **oficial** (portal da Cesgranrio); BNDES 2024 é o **final após recursos** (documento da banca, via espelho).
 - Os comentários são do projeto; enunciado e alternativas são da prova. Aderência por questão está em `fonte_origem.aderencia_edital`.
 - **Pontos de atenção** nas próprias questões: 2023 Q55 (alternativa B incompleta, por exclusão), Q70, Q44 (ISO 27002:2013 × 2022), Q24 e Q60; 2018 Q46 (numeração da ISO 27002:2005 de memória), Q38 (consultas não executadas, dialeto Oracle), Q27 e Q57 (alternativas próximas).
+- Pontos de atenção do lote 3: BNDES Q55 é da edição 2021 do OWASP Top 10 (há edição 2025); Q66 usa a lista de 14 táticas do ATT&CK (a v19 tem 15); Caixa Q60 (periodicidade da Res. CMN 4.893) sem consulta ao texto da norma; BNDES Q38 e Q43 exigem leitura atenta das justificativas.
 
 ## Questões transcritas
 
@@ -75,13 +77,56 @@
 | OFI-000061 | PRV-006 | 50 | HIS-000080 | 9.19 | Certificado digital: SHA256RSA | E |
 | OFI-000062 | PRV-006 | 51 | HIS-000081 | 9.8 | SAML: Artifact Resolution Protocol | C |
 | OFI-000063 | PRV-006 | 52 | HIS-000082 | 9.19 | ICP-Brasil: certificado da AC subordinada à raiz | A |
+| OFI-000064 | PRV-008 | 31 | HIS-000141 | 5.4 | DevOps: shift left testing | D |
+| OFI-000065 | PRV-008 | 33 | HIS-000143 | 5.1 | Processo Unificado: disciplina de requisitos nas fases | A |
+| OFI-000066 | PRV-008 | 36 | HIS-000146 | 5.3 | Padrão de projeto Proxy | C |
+| OFI-000067 | PRV-008 | 38 | HIS-000148 | 1.3 | Modelo relacional: chaves primária e estrangeira | E |
+| OFI-000068 | PRV-008 | 39 | HIS-000149 | 1.6 | Metadados em SGBD: uso pelo próprio sistema | E |
+| OFI-000069 | PRV-008 | 40 | HIS-000150 | 5.1 | Análise de pontos de função: ponto de vista do usuário | D |
+| OFI-000070 | PRV-008 | 53 | HIS-000163 | 5.4 | Desenvolvimento Dirigido por Testes (TDD) | D |
+| OFI-000071 | PRV-008 | 54 | HIS-000164 | 5.5 | Controle de versão: commit | B |
+| OFI-000072 | PRV-008 | 57 | HIS-000167 | 5.4 | Teste de unidade | A |
+| OFI-000073 | PRV-008 | 58 | HIS-000168 | 1.13 | SGBD distribuído federado | C |
+| OFI-000074 | PRV-008 | 60 | HIS-000170 | 9.17 | Resolução CMN 4.893: revisão da política de segurança cibernética | C |
+| OFI-000075 | PRV-010 | 36 | HIS-000201 | 9.3 | Malware: tipo indicado para implantar spyware | A |
+| OFI-000076 | PRV-010 | 38 | HIS-000203 | 9.19 | Criptografia: confidencialidade, integridade e autenticidade | D |
+| OFI-000077 | PRV-010 | 45 | HIS-000210 | 9.11 | ISO/IEC 27035-1: fase de resposta a incidentes | E |
+| OFI-000078 | PRV-010 | 47 | HIS-000212 | 9.4 | Ataques ativos e passivos: disfarce (masquerade) | E |
+| OFI-000079 | PRV-010 | 48 | HIS-000213 | 9.13 | Varredura TCP furtiva: idle scan | C |
+| OFI-000080 | PRV-010 | 51 | HIS-000216 | 9.3 | Código malicioso: formjacking | B |
+| OFI-000081 | PRV-010 | 52 | HIS-000217 | 9.1 | Engenharia social presencial: tailgating | D |
+| OFI-000082 | PRV-010 | 54 | HIS-000219 | 9.2 | Defesa em profundidade: firewall proxy | A |
+| OFI-000083 | PRV-010 | 55 | HIS-000220 | 9.4 | OWASP Top 10 (2021): falhas criptográficas | B |
+| OFI-000084 | PRV-010 | 56 | HIS-000221 | 9.19 | Irretratabilidade (não repúdio) | D |
+| OFI-000085 | PRV-010 | 59 | HIS-000224 | 9.2 | SOAR: automação e orquestração da resposta | E |
+| OFI-000086 | PRV-010 | 62 | HIS-000227 | 9.2 | Controles CIS v8: Grupos de Implementação | C |
+| OFI-000087 | PRV-010 | 65 | HIS-000230 | 9.11 | FIRST CSIRT Services Framework | E |
+| OFI-000088 | PRV-010 | 66 | HIS-000231 | 9.15 | MITRE ATT&CK: técnica da tática Defense Evasion | C |
+| OFI-000089 | PRV-010 | 67 | HIS-000232 | 9.4 | CWE Top 25: SSRF | A |
+| OFI-000090 | PRV-010 | 68 | HIS-000233 | 9.2 | CVSS 4.0: grupos de métricas | C |
+| OFI-000091 | PRV-010 | 69 | HIS-000234 | 9.19 | ISO/IEC 27002:2022: atributo de domínios de segurança | D |
+| OFI-000092 | PRV-014 | 40 | HIS-000325 | 5.1 | Pontos de função: tipo de transação (saída externa) | E |
+| OFI-000093 | PRV-014 | 41 | HIS-000326 | 5.5 | Contêineres e orquestração (Docker e Kubernetes) | A |
+| OFI-000094 | PRV-014 | 42 | HIS-000327 | 9.10 | RBAC e autenticação multifator | C |
+| OFI-000095 | PRV-014 | 43 | HIS-000328 | 5.3 | Padrões de projeto: Mediator x Facade | D |
+| OFI-000096 | PRV-014 | 44 | HIS-000329 | 5.4 | Teste de unidade para isolar a origem das falhas | E |
+| OFI-000097 | PRV-014 | 45 | HIS-000330 | 5.3 | Acoplamento de conteúdo | B |
+| OFI-000098 | PRV-014 | 48 | HIS-000333 | 2.3 | Nexus: accountability adicional em Scrum escalado | E |
+| OFI-000099 | PRV-014 | 53 | HIS-000338 | 9.20 | Recuperação de desastres como serviço (DRaaS) | C |
+| OFI-000100 | PRV-014 | 65 | HIS-000350 | 1.7 | Modelo dimensional: medidas aditivas | E |
+| OFI-000101 | PRV-014 | 66 | HIS-000351 | 1.22 | Data lake: metadados | E |
+| OFI-000102 | PRV-014 | 67 | HIS-000352 | 1.21 | Governança de dados: monitoramento da qualidade | E |
+| OFI-000103 | PRV-014 | 68 | HIS-000353 | 1.1 | DER: especialização total e sobreposta | A |
+| OFI-000104 | PRV-014 | 69 | HIS-000354 | 1.14 | Nível de isolamento SERIALIZABLE | C |
+| OFI-000105 | PRV-014 | 70 | HIS-000355 | 1.11 | DDL: cláusula CHECK | B |
 
 ## Candidatas ainda não transcritas
 
-**PRV-005 (6):** Q21, Q22 e Q27 (alternativas são diagramas), Q23 (enunciado incompleto na extração), Q30 (aderência parcial), Q62 (duas alternativas defensáveis).
-**PRV-006 (candidatas não transcritas):** Q34 (gabarito C incoerente com o conteúdo do ePING, a verificar), Q39, Q40, Q41 e Q42 (dependem de figuras ou tabelas), Q62 e Q66 (PMBOK 6, gabarito discutível), Q67 (alternativa A ausente na extração), Q69 (símbolos lógicos perdidos na extração).
+- **PRV-005:** Q21, Q22 e Q27 (diagramas), Q23 (enunciado incompleto na extração), Q30 (parcial), Q62 (duas alternativas defensáveis).
+- **PRV-006:** Q34 (gabarito a verificar), Q39 a Q42 (figuras e tabelas), Q62 e Q66 (PMBOK 6, gabarito discutível), Q67 (alternativa A ausente na extração), Q69 (símbolos perdidos).
+- **PRV-008, PRV-010, PRV-014:** as com figuras, as de código (Java, Python) fora do escopo já excluídas, e algumas com alternativas cortadas na extração (por exemplo, BNDES Cibersegurança Q37, Q39, Q46, Q49, Q57, Q60, Q64; Desenvolvimento Q47, Q61 a Q64).
+- **PRV-007 (Petrobras 2006), PRV-009 (Suape 2012), PRV-011 (Petrobras 2018) e PRV-012 (BB 2021):** não iniciadas.
 
 ## Pendências da T04
 
-Das **229 candidatas** (PRV-005 a PRV-014, aderentes e parciais), **63 foram transcritas**; **166 continuam pendentes**, a maioria das provas PRV-007 (Petrobras 2006), PRV-008 (Caixa 2021, gabarito oficial), PRV-009 (Suape 2012), PRV-010 e PRV-014 (BNDES 2024, gabarito final), PRV-011 (Petrobras 2018) e PRV-012 (BB 2021).
-A T04 **continua parcial**. Questões adaptadas (`ADP-`) não foram criadas. Próximo passo sugerido: Petrobras 2018 (PRV-011, mesmo cargo em outra empresa) e as provas com gabarito oficial (Caixa 2021, BNDES 2024).
+Das **229 candidatas**, **105 foram transcritas**; **124 continuam pendentes**. A T04 **continua parcial**. Questões adaptadas (`ADP-`) não foram criadas. Provas com gabarito de espelho (2006, 2012, 2018 e BB 2021) exigem conferência do gabarito na T13.

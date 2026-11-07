@@ -2,7 +2,7 @@
  "modulo": "Questões oficiais — m05-engenharia-software",
  "lote": "T04 — Transpetro 2023 (Prova 6) e 2018 (Prova 15)",
  "data": "2026-11-06",
- "total": 9,
+ "total": 21,
  "questoes": [
   {
    "id": "OFI-000024",
@@ -526,6 +526,710 @@
     "situacao_gabarito": "de terceiros (Ética), alterado em 09/05/2018; não validado contra a banca",
     "aderencia_edital": "aderente",
     "url": "banco-questoes/oficiais/fontes-brutas/transpetro-2018-prova15-analista-sistemas-jr-processos-negocio.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000064",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Caixa Econômica Federal, Edital 1/2021/NM, Caderno de Tecnologia da Informação, questão 31.",
+   "modulo": "05-engenharia-software",
+   "assunto": "DevOps: shift left testing",
+   "item_edital": "5.4",
+   "id_matriz": "E5-045",
+   "itens_secundarios": [],
+   "dificuldade": "facil",
+   "habilidade": "compreensao",
+   "tipo_questao": "conceitual",
+   "enunciado": "No âmbito de DevOps, o termo \"shift left testing\" significa que os testes devem",
+   "alternativas": {
+    "A": "ser feitos junto com a entrada em operação do produto.",
+    "B": "ser feitos apenas no ambiente de desenvolvimento.",
+    "C": "ser feitos apenas por meio de ferramentas de automação de testes.",
+    "D": "ser feitos desde as fases iniciais do ciclo de vida do produto.",
+    "E": "dirigir o desenvolvimento do produto."
+   },
+   "gabarito": "D",
+   "resolucao": "*Shift left* é **antecipar** os testes (mover \"para a esquerda\" na linha do tempo), começando nas fases iniciais (requisitos, projeto), para achar defeitos cedo, quando custam menos.",
+   "analise_alternativas": {
+    "A": "Incorreta. Testar só na entrada em operação é o oposto (*shift right*/produção).",
+    "B": "Incorreta. Restringir ao ambiente de desenvolvimento não é o conceito; o foco é a antecipação, em todo o ciclo.",
+    "C": "Incorreta. O conceito não exige automação exclusiva.",
+    "D": "Correta. Descreve o *shift left*: testar desde o início.",
+    "E": "Incorreta. Testes que dirigem o desenvolvimento são característica do TDD, conceito diferente."
+   },
+   "fundamentacao": {
+    "item": "5.4",
+    "arquivo_teoria": "conteudo/05-engenharia-software/06-verificacao-e-validacao.md"
+   },
+   "ponto_atencao": "Cuidado para não confundir *shift left* (**quando** testar) com TDD (**testes dirigem o código**).",
+   "revisao_rapida": "Shift left = testar cedo.",
+   "tags": [
+    "devops",
+    "shift-left",
+    "caixa-2021",
+    "oficial",
+    "facil",
+    "compreensao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Caixa Econômica Federal, Edital 1/2021/NM",
+    "cargo": "Técnico Bancário Novo — Tecnologia da Informação",
+    "ano": 2021,
+    "prova": "Caderno de Tecnologia da Informação (questões 31 a 60)",
+    "numero_original": 31,
+    "id_prova": "PRV-008",
+    "situacao_gabarito": "definitivo (fonte oficial: portal da Cesgranrio); recursos sem alteração nem anulação",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/candidatas-2026-11-04/caixa-2021-tb-ti-prova-oficial.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000065",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Caixa Econômica Federal, Edital 1/2021/NM, Caderno de Tecnologia da Informação, questão 33.",
+   "modulo": "05-engenharia-software",
+   "assunto": "Processo Unificado: disciplina de requisitos nas fases",
+   "item_edital": "5.1",
+   "id_matriz": "E5-042",
+   "itens_secundarios": [
+    "5.2"
+   ],
+   "dificuldade": "media",
+   "habilidade": "memorizacao",
+   "tipo_questao": "conceitual",
+   "enunciado": "Em quais fases do Processo Unificado (UP) o workflow (disciplina) de requisitos é executado?",
+   "alternativas": {
+    "A": "Inception, Elaboration, Construction e Transition",
+    "B": "Inception, Elaboration e Construction, somente",
+    "C": "Elaboration e Construction, somente",
+    "D": "Elaboration, somente",
+    "E": "Inception, somente"
+   },
+   "gabarito": "A",
+   "resolucao": "No UP/RUP, as **disciplinas** (requisitos, análise e projeto, implementação, testes etc.) atravessam as **quatro fases**, com esforço variável: a disciplina de requisitos tem maior peso na concepção e na elaboração, mas continua ativa na construção e na transição (mudanças e ajustes).",
+   "analise_alternativas": {
+    "A": "Correta. Todas as fases têm alguma atividade de requisitos, em intensidade diferente.",
+    "B": "Incorreta. Exclui a transição, em que ainda há ajustes de requisitos.",
+    "C": "Incorreta. Exclui a concepção, em que os requisitos principais são levantados.",
+    "D": "Incorreta. Restringir à elaboração ignora a concepção, a construção e a transição.",
+    "E": "Incorreta. Restringir à concepção ignora o refinamento posterior."
+   },
+   "fundamentacao": {
+    "item": "5.1",
+    "arquivo_teoria": "conteudo/05-engenharia-software/02-requisitos-software.md"
+   },
+   "ponto_atencao": "Gráfico clássico do RUP: **fases** nas colunas, **disciplinas** nas linhas; todas as disciplinas aparecem em todas as fases, com \"ondas\" de esforço.",
+   "revisao_rapida": "UP: disciplinas atravessam as 4 fases.",
+   "tags": [
+    "processo-unificado",
+    "requisitos",
+    "caixa-2021",
+    "oficial",
+    "media",
+    "memorizacao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Caixa Econômica Federal, Edital 1/2021/NM",
+    "cargo": "Técnico Bancário Novo — Tecnologia da Informação",
+    "ano": 2021,
+    "prova": "Caderno de Tecnologia da Informação (questões 31 a 60)",
+    "numero_original": 33,
+    "id_prova": "PRV-008",
+    "situacao_gabarito": "definitivo (fonte oficial: portal da Cesgranrio); recursos sem alteração nem anulação",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/candidatas-2026-11-04/caixa-2021-tb-ti-prova-oficial.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000066",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Caixa Econômica Federal, Edital 1/2021/NM, Caderno de Tecnologia da Informação, questão 36.",
+   "modulo": "05-engenharia-software",
+   "assunto": "Padrão de projeto Proxy",
+   "item_edital": "5.3",
+   "id_matriz": "E5-044",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "aplicacao",
+   "tipo_questao": "cenario",
+   "enunciado": "Uma aplicação Java deve oferecer suporte para que os serviços disponibilizados por objetos que consomem muitos recursos possam ser requisitados, indiretamente, pelas demais classes (clientes) dessa aplicação. As soluções para esse problema de design devem impedir que esses objetos sejam diretamente referenciados pelos clientes, pois eles só devem ser instanciados quando seus serviços forem realmente solicitados.\nA solução que a equipe de desenvolvimento propôs irá fornecer substitutos para esses objetos reais, de modo a controlar o acesso a eles. As classes dos objetos reais e dos objetos substitutos devem implementar uma mesma interface. Dessa forma, os substitutos servirão de representantes dos objetos reais. Eles receberão requisições dos clientes e as delegarão aos objetos reais.\nA solução proposta pela equipe de desenvolvimento foi baseada no padrão de projeto",
+   "alternativas": {
+    "A": "Facade",
+    "B": "Adapter",
+    "C": "Proxy",
+    "D": "Bridge",
+    "E": "Composite"
+   },
+   "gabarito": "C",
+   "resolucao": "O **Proxy** oferece um **substituto** do objeto real, com a **mesma interface**, para controlar o acesso (instanciação preguiçosa, proteção, cache, acesso remoto), delegando as requisições ao objeto real.",
+   "analise_alternativas": {
+    "A": "Incorreta. Facade oferece uma interface simplificada para um subsistema.",
+    "B": "Incorreta. Adapter converte uma interface em outra esperada pelo cliente.",
+    "C": "Correta. Substituto com mesma interface que controla o acesso: Proxy.",
+    "D": "Incorreta. Bridge separa abstração e implementação para variarem de forma independente.",
+    "E": "Incorreta. Composite trata objetos individuais e composições de forma uniforme (árvores)."
+   },
+   "fundamentacao": {
+    "item": "5.3",
+    "arquivo_teoria": "conteudo/05-engenharia-software/05-analise-e-projeto.md"
+   },
+   "ponto_atencao": "Padrões de projeto não são citados literalmente no item 5.3 (aderência parcial). Palavras-chave de Proxy: **substituto, mesma interface, controla o acesso**.",
+   "revisao_rapida": "Proxy: representante com a mesma interface.",
+   "tags": [
+    "padroes-de-projeto",
+    "proxy",
+    "caixa-2021",
+    "oficial",
+    "media",
+    "aplicacao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Caixa Econômica Federal, Edital 1/2021/NM",
+    "cargo": "Técnico Bancário Novo — Tecnologia da Informação",
+    "ano": 2021,
+    "prova": "Caderno de Tecnologia da Informação (questões 31 a 60)",
+    "numero_original": 36,
+    "id_prova": "PRV-008",
+    "situacao_gabarito": "definitivo (fonte oficial: portal da Cesgranrio); recursos sem alteração nem anulação",
+    "aderencia_edital": "parcial",
+    "url": "banco-questoes/oficiais/fontes-brutas/candidatas-2026-11-04/caixa-2021-tb-ti-prova-oficial.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000069",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Caixa Econômica Federal, Edital 1/2021/NM, Caderno de Tecnologia da Informação, questão 40.",
+   "modulo": "05-engenharia-software",
+   "assunto": "Análise de pontos de função: ponto de vista do usuário",
+   "item_edital": "5.1",
+   "id_matriz": "E5-042",
+   "itens_secundarios": [],
+   "dificuldade": "facil",
+   "habilidade": "memorizacao",
+   "tipo_questao": "conceitual",
+   "enunciado": "Uma equipe de desenvolvimento precisa informar a quantidade de pontos de função do software que será mantido por uma empresa.\nNa contagem por ponto de função, um dos itens a ser considerado é o de",
+   "alternativas": {
+    "A": "contagem das linhas do código",
+    "B": "contagem de erros do software",
+    "C": "funcionalidades implementadas, sob o ponto de vista do desenvolvedor",
+    "D": "funcionalidades implementadas, sob o ponto de vista do usuário",
+    "E": "funcionalidades implementadas, sob o ponto de vista do testador"
+   },
+   "gabarito": "D",
+   "resolucao": "A **Análise de Pontos de Função (APF)** mede o tamanho funcional do software pela **visão do usuário**: entradas, saídas e consultas externas, arquivos lógicos internos e de interface externa, independentemente da tecnologia.",
+   "analise_alternativas": {
+    "A": "Incorreta. Linhas de código são outra métrica (LOC), dependente de linguagem.",
+    "B": "Incorreta. Erros são medidos por métricas de qualidade (densidade de defeitos).",
+    "C": "Incorreta. A APF não adota a visão do desenvolvedor.",
+    "D": "Correta. A APF conta as funcionalidades sob a visão do usuário.",
+    "E": "Incorreta. A visão do testador não é a base da contagem."
+   },
+   "fundamentacao": {
+    "item": "5.1",
+    "arquivo_teoria": "conteudo/05-engenharia-software/02-requisitos-software.md"
+   },
+   "ponto_atencao": "Aderência parcial (métrica de estimativa não citada no edital). **APF = função percebida pelo usuário, independente de tecnologia.**",
+   "revisao_rapida": "APF: funções do ponto de vista do usuário.",
+   "tags": [
+    "pontos-de-funcao",
+    "caixa-2021",
+    "oficial",
+    "facil",
+    "memorizacao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Caixa Econômica Federal, Edital 1/2021/NM",
+    "cargo": "Técnico Bancário Novo — Tecnologia da Informação",
+    "ano": 2021,
+    "prova": "Caderno de Tecnologia da Informação (questões 31 a 60)",
+    "numero_original": 40,
+    "id_prova": "PRV-008",
+    "situacao_gabarito": "definitivo (fonte oficial: portal da Cesgranrio); recursos sem alteração nem anulação",
+    "aderencia_edital": "parcial",
+    "url": "banco-questoes/oficiais/fontes-brutas/candidatas-2026-11-04/caixa-2021-tb-ti-prova-oficial.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000070",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Caixa Econômica Federal, Edital 1/2021/NM, Caderno de Tecnologia da Informação, questão 53.",
+   "modulo": "05-engenharia-software",
+   "assunto": "Desenvolvimento Dirigido por Testes (TDD)",
+   "item_edital": "5.4",
+   "id_matriz": "E5-045",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "compreensao",
+   "tipo_questao": "conceitual",
+   "enunciado": "O Desenvolvimento Dirigido por Testes se caracteriza por",
+   "alternativas": {
+    "A": "manter sem modificação um arquivo de código fonte que já tenha sido aprovado em um teste.",
+    "B": "escrever o código fonte e, baseado na análise do código, escrever os testes.",
+    "C": "escrever as histórias do usuário na forma de testes.",
+    "D": "projetar os casos de teste antes de criar o código fonte.",
+    "E": "repetir todos os testes a cada modificação do código fonte."
+   },
+   "gabarito": "D",
+   "resolucao": "No **TDD**, o ciclo é **Red–Green–Refactor**: escreve-se um teste que falha, implementa-se o mínimo para passar e refatora-se. Portanto, os **casos de teste são projetados antes do código**.",
+   "analise_alternativas": {
+    "A": "Incorreta. Código aprovado pode e deve ser refatorado, com os testes protegendo.",
+    "B": "Incorreta. Descreve o desenvolvimento tradicional (código antes dos testes).",
+    "C": "Incorreta. Histórias como testes aproximam-se do BDD/ATDD, não do TDD.",
+    "D": "Correta. Projetar os testes antes do código é a essência do TDD.",
+    "E": "Incorreta. Repetir testes a cada modificação é prática de testes de regressão/CI."
+   },
+   "fundamentacao": {
+    "item": "5.4",
+    "arquivo_teoria": "conteudo/05-engenharia-software/06-verificacao-e-validacao.md"
+   },
+   "ponto_atencao": "TDD ≠ testar cedo (*shift left*) ≠ BDD. Ordem: **teste → código → refatoração**.",
+   "revisao_rapida": "TDD: teste primeiro, vermelho-verde-refatora.",
+   "tags": [
+    "tdd",
+    "caixa-2021",
+    "oficial",
+    "media",
+    "compreensao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Caixa Econômica Federal, Edital 1/2021/NM",
+    "cargo": "Técnico Bancário Novo — Tecnologia da Informação",
+    "ano": 2021,
+    "prova": "Caderno de Tecnologia da Informação (questões 31 a 60)",
+    "numero_original": 53,
+    "id_prova": "PRV-008",
+    "situacao_gabarito": "definitivo (fonte oficial: portal da Cesgranrio); recursos sem alteração nem anulação",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/candidatas-2026-11-04/caixa-2021-tb-ti-prova-oficial.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000071",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Caixa Econômica Federal, Edital 1/2021/NM, Caderno de Tecnologia da Informação, questão 54.",
+   "modulo": "05-engenharia-software",
+   "assunto": "Controle de versão: commit",
+   "item_edital": "5.5",
+   "id_matriz": "E5-046",
+   "itens_secundarios": [],
+   "dificuldade": "facil",
+   "habilidade": "memorizacao",
+   "tipo_questao": "conceitual",
+   "enunciado": "Entre as principais ferramentas de gestão de configuração de software, estão os sistemas de controle de versão, como o svn ou cvs.\nNesses sistemas, o comando de registrar as mudanças locais em um repositório é denominado",
+   "alternativas": {
+    "A": "branch",
+    "B": "commit",
+    "C": "save",
+    "D": "store",
+    "E": "update"
+   },
+   "gabarito": "B",
+   "resolucao": "O **commit** registra (confirma) as mudanças da cópia de trabalho no repositório, criando uma nova revisão. *Branch* cria uma linha de desenvolvimento; *update* traz mudanças do repositório para a cópia local.",
+   "analise_alternativas": {
+    "A": "Incorreta. Branch cria um ramo de desenvolvimento.",
+    "B": "Correta. Commit registra as mudanças no repositório.",
+    "C": "Incorreta. \"Save\" não é comando de controle de versão (salva arquivo no editor).",
+    "D": "Incorreta. \"Store\" não é comando padrão.",
+    "E": "Incorreta. Update atualiza a cópia local com mudanças do repositório (sentido inverso)."
+   },
+   "fundamentacao": {
+    "item": "5.5",
+    "arquivo_teoria": "conteudo/05-engenharia-software/07-testes-e-ambientes.md"
+   },
+   "ponto_atencao": "Fluxo básico: **update/pull** (trazer) e **commit/push** (enviar). Em Git há ainda a separação entre *commit* local e *push*.",
+   "revisao_rapida": "Commit = registrar mudanças no repositório.",
+   "tags": [
+    "controle-de-versao",
+    "caixa-2021",
+    "oficial",
+    "facil",
+    "memorizacao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Caixa Econômica Federal, Edital 1/2021/NM",
+    "cargo": "Técnico Bancário Novo — Tecnologia da Informação",
+    "ano": 2021,
+    "prova": "Caderno de Tecnologia da Informação (questões 31 a 60)",
+    "numero_original": 54,
+    "id_prova": "PRV-008",
+    "situacao_gabarito": "definitivo (fonte oficial: portal da Cesgranrio); recursos sem alteração nem anulação",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/candidatas-2026-11-04/caixa-2021-tb-ti-prova-oficial.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000072",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Caixa Econômica Federal, Edital 1/2021/NM, Caderno de Tecnologia da Informação, questão 57.",
+   "modulo": "05-engenharia-software",
+   "assunto": "Teste de unidade",
+   "item_edital": "5.4",
+   "id_matriz": "E5-045",
+   "itens_secundarios": [],
+   "dificuldade": "facil",
+   "habilidade": "compreensao",
+   "tipo_questao": "conceitual",
+   "enunciado": "O teste de unidade tem como finalidade testar os componentes mais simples do software",
+   "alternativas": {
+    "A": "de forma isolada.",
+    "B": "quanto à sua coesão.",
+    "C": "quanto ao seu acoplamento.",
+    "D": "quando unificados na versão a ser lançada.",
+    "E": "quanto à sua capacidade de responder a entradas únicas."
+   },
+   "gabarito": "A",
+   "resolucao": "O **teste de unidade** verifica a menor parte testável (função, método, classe) **isolada** das demais, com dublês (*mocks/stubs*) quando preciso.",
+   "analise_alternativas": {
+    "A": "Correta. Isolamento é a característica definidora do teste de unidade.",
+    "B": "Incorreta. Coesão é atributo de projeto, não finalidade do teste.",
+    "C": "Incorreta. Acoplamento é atributo de projeto; o teste de unidade isola a unidade.",
+    "D": "Incorreta. Testar unificados na versão final é teste de sistema/aceitação.",
+    "E": "Incorreta. \"Entradas únicas\" não define o teste de unidade."
+   },
+   "fundamentacao": {
+    "item": "5.4",
+    "arquivo_teoria": "conteudo/05-engenharia-software/06-verificacao-e-validacao.md"
+   },
+   "ponto_atencao": "Pirâmide: **unidade** (isolada) → **integração** (interação entre módulos) → **sistema** → **aceitação**.",
+   "revisao_rapida": "Unidade: isolada, menor parte testável.",
+   "tags": [
+    "teste-de-unidade",
+    "caixa-2021",
+    "oficial",
+    "facil",
+    "compreensao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Caixa Econômica Federal, Edital 1/2021/NM",
+    "cargo": "Técnico Bancário Novo — Tecnologia da Informação",
+    "ano": 2021,
+    "prova": "Caderno de Tecnologia da Informação (questões 31 a 60)",
+    "numero_original": 57,
+    "id_prova": "PRV-008",
+    "situacao_gabarito": "definitivo (fonte oficial: portal da Cesgranrio); recursos sem alteração nem anulação",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/candidatas-2026-11-04/caixa-2021-tb-ti-prova-oficial.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000092",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, BNDES, Edital 1/2024, Prova 3, questão 40.",
+   "modulo": "05-engenharia-software",
+   "assunto": "Pontos de função: tipo de transação (saída externa)",
+   "item_edital": "5.1",
+   "id_matriz": "E5-042",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "aplicacao",
+   "tipo_questao": "cenario",
+   "enunciado": "Uma equipe de desenvolvimento está trabalhando em um sistema de gestão de pedidos, no qual é necessário implementar uma transação que gera um relatório detalhado de vendas. Esse relatório contém informações sobre as vendas do dia, agrupadas por categoria de produto, cliente e vendedor. O usuário pode selecionar a data específica como entrada para gerar o relatório. O relatório gerado não permite navegação ou consulta adicional e é produzido para ser impresso.\n\nDada a descrição da transação, qual tipo de ponto de função deve ser contado?",
+   "alternativas": {
+    "A": "Consulta Externa",
+    "B": "Entrada Externa",
+    "C": "Impressão Externa",
+    "D": "Relatório Externo",
+    "E": "Saída Externa"
+   },
+   "gabarito": "E",
+   "resolucao": "Na APF, **Saída Externa (SE)** é a transação que **envia dados para fora** da fronteira da aplicação com **processamento adicional** (agrupamentos, totais, cálculos). A **Consulta Externa (CE)** apenas recupera dados, sem cálculo. O relatório agrupado e totalizado é saída externa. \"Impressão externa\" e \"relatório externo\" não são tipos de função.",
+   "analise_alternativas": {
+    "A": "Incorreta. A consulta externa recupera dados sem processamento lógico (agrupamento/cálculo).",
+    "B": "Incorreta. A entrada externa traz dados para dentro da aplicação para manter arquivos.",
+    "C": "Incorreta. Não existe esse tipo de função de transação.",
+    "D": "Incorreta. Não existe esse tipo de função de transação.",
+    "E": "Correta. O relatório agrupado por categoria, cliente e vendedor é saída externa."
+   },
+   "fundamentacao": {
+    "item": "5.1",
+    "arquivo_teoria": "conteudo/05-engenharia-software/02-requisitos-software.md"
+   },
+   "ponto_atencao": "Tipos da APF: **EE** (entrada), **SE** (saída), **CE** (consulta), **ALI** (arquivo lógico interno) e **AIE** (arquivo de interface externa). SE tem **lógica de processamento** além de recuperar dados.",
+   "revisao_rapida": "SE = envia dados processados (agrupados/calculados) para fora.",
+   "tags": [
+    "pontos-de-funcao",
+    "bndes-2024",
+    "oficial",
+    "media",
+    "aplicacao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "BNDES, Edital 1/2024",
+    "cargo": "Analista — Análise de Sistemas: Desenvolvimento",
+    "ano": 2024,
+    "prova": "Prova 3 (manhã)",
+    "numero_original": 40,
+    "id_prova": "PRV-014",
+    "situacao_gabarito": "final após recursos (documento da banca, via espelho QConcursos)",
+    "aderencia_edital": "parcial",
+    "url": "banco-questoes/oficiais/fontes-brutas/candidatas-2026-11-04/bndes-2024-desenvolvimento-manha-prova.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000093",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, BNDES, Edital 1/2024, Prova 3, questão 41.",
+   "modulo": "05-engenharia-software",
+   "assunto": "Contêineres e orquestração (Docker e Kubernetes)",
+   "item_edital": "5.5",
+   "id_matriz": "E5-046",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "compreensao",
+   "tipo_questao": "conceitual",
+   "enunciado": "Uma empresa de tecnologia está desenvolvendo uma nova aplicação que será baseada em microsserviços e distribuída em vários servidores na nuvem. Os líderes do projeto decidiram usar uma solução com orquestração de contêineres e precisam explicar como essa solução funciona para a equipe e para os clientes.\n\nConsiderando-se esse contexto, como descrever as funcionalidades que caracterizam as ferramentas de conteinerização e de orquestração?",
+   "alternativas": {
+    "A": "Ferramentas de conteinerização, como Docker, são responsáveis por criar e empacotar aplicações e suas dependências em contêineres isolados, enquanto ferramentas de orquestração, como Kubernetes, gerenciam a distribuição, o escalonamento automático e a resiliência desses contêineres em um cluster de servidores.",
+    "B": "Ferramentas de orquestração, como Docker, permitem criar e empacotar aplicações em contêineres isolados, enquanto ferramentas de conteinerização, como Kubernetes, gerenciam a distribuição e escalonamento desses contêineres em um ambiente de produção.",
+    "C": "Ferramentas de conteinerização, como Kubernetes, são responsáveis por gerenciar a distribuição e escalonamento dos contêineres em um cluster, enquanto ferramentas de orquestração, como Podman, criam e empacotam as aplicações em contêineres isolados.",
+    "D": "Ferramentas de orquestração, como Podman, criam e empacotam contêineres isolados, enquanto ferramentas de conteinerização, como Docker, gerenciam a escalabilidade e a resiliência dos contêineres em um ambiente distribuído.",
+    "E": "Ferramentas de conteinerização, como Docker, são usadas para criar uma rede de contêineres interligados, enquanto ferramentas de orquestração, como Kubernetes, servem apenas para monitorar o desempenho dos contêineres em um cluster."
+   },
+   "gabarito": "A",
+   "resolucao": "**Conteinerização** (Docker, Podman) empacota a aplicação e suas dependências em **contêineres isolados**. **Orquestração** (Kubernetes, Docker Swarm) **gerencia** muitos contêineres em um cluster: distribuição (*scheduling*), escalonamento automático, balanceamento, recuperação de falhas e atualizações.",
+   "analise_alternativas": {
+    "A": "Correta. Descreve corretamente os dois papéis.",
+    "B": "Incorreta. Inverte os papéis: Docker não é orquestrador, e Kubernetes não é ferramenta de conteinerização.",
+    "C": "Incorreta. Inverte os papéis: Kubernetes orquestra, e Podman é ferramenta de contêineres.",
+    "D": "Incorreta. Inverte os papéis: Podman não orquestra e Docker, no sentido citado, não gerencia a escala do cluster.",
+    "E": "Incorreta. Reduz a orquestração a monitoramento, o que a descaracteriza (ela gerencia, escalona e recupera)."
+   },
+   "fundamentacao": {
+    "item": "5.5",
+    "arquivo_teoria": "conteudo/05-engenharia-software/07-testes-e-ambientes.md"
+   },
+   "ponto_atencao": "Aderência parcial (o edital não cita contêineres). Distrator comum: **trocar** quem faz o quê. Conteinerização = **empacotar**; orquestração = **gerenciar em escala**.",
+   "revisao_rapida": "Docker empacota; Kubernetes orquestra.",
+   "tags": [
+    "containers",
+    "kubernetes",
+    "bndes-2024",
+    "oficial",
+    "media",
+    "compreensao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "BNDES, Edital 1/2024",
+    "cargo": "Analista — Análise de Sistemas: Desenvolvimento",
+    "ano": 2024,
+    "prova": "Prova 3 (manhã)",
+    "numero_original": 41,
+    "id_prova": "PRV-014",
+    "situacao_gabarito": "final após recursos (documento da banca, via espelho QConcursos)",
+    "aderencia_edital": "parcial",
+    "url": "banco-questoes/oficiais/fontes-brutas/candidatas-2026-11-04/bndes-2024-desenvolvimento-manha-prova.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000095",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, BNDES, Edital 1/2024, Prova 3, questão 43.",
+   "modulo": "05-engenharia-software",
+   "assunto": "Padrões de projeto: Mediator x Facade",
+   "item_edital": "5.3",
+   "id_matriz": "E5-044",
+   "itens_secundarios": [],
+   "dificuldade": "dificil",
+   "habilidade": "aplicacao",
+   "tipo_questao": "cenario",
+   "enunciado": "Um desenvolvedor está trabalhando em um sistema onde o padrão Façade está sendo usado para encapsular como um conjunto de objetos interage de forma fracamente acoplada. Verificando as especificações, ele percebeu que esse padrão não atendia os requisitos do projeto, já que era necessário um comportamento cooperativo e um protocolo multidirecional, além de evitar que os objetos interagissem de forma explícita uns com os outros.\n\nConsiderando-se esse contexto, o desenvolvedor deve corrigir o sistema implementando o padrão",
+   "alternativas": {
+    "A": "Bridge",
+    "B": "Composite",
+    "C": "Decorator",
+    "D": "Mediator",
+    "E": "Strategy"
+   },
+   "gabarito": "D",
+   "resolucao": "O **Mediator** centraliza a **comunicação entre objetos colegas**, que deixam de se referenciar explicitamente; a comunicação é **multidirecional** e cooperativa. O **Facade** oferece interface simplificada **unidirecional** para um subsistema, que não conhece o facade.",
+   "analise_alternativas": {
+    "A": "Incorreta. Bridge separa abstração e implementação.",
+    "B": "Incorreta. Composite compõe objetos em árvores.",
+    "C": "Incorreta. Decorator acrescenta responsabilidades dinamicamente.",
+    "D": "Correta. Mediator: coordena a cooperação entre objetos sem referências explícitas, em protocolo multidirecional.",
+    "E": "Incorreta. Strategy encapsula algoritmos intercambiáveis."
+   },
+   "fundamentacao": {
+    "item": "5.3",
+    "arquivo_teoria": "conteudo/05-engenharia-software/05-analise-e-projeto.md"
+   },
+   "ponto_atencao": "Aderência parcial. Diferença-chave: **Facade = unidirecional** (cliente → subsistema); **Mediator = multidirecional** (colegas ↔ mediador).",
+   "revisao_rapida": "Mediator: colegas falam com o mediador, não entre si.",
+   "tags": [
+    "padroes-de-projeto",
+    "mediator",
+    "bndes-2024",
+    "oficial",
+    "dificil",
+    "aplicacao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "BNDES, Edital 1/2024",
+    "cargo": "Analista — Análise de Sistemas: Desenvolvimento",
+    "ano": 2024,
+    "prova": "Prova 3 (manhã)",
+    "numero_original": 43,
+    "id_prova": "PRV-014",
+    "situacao_gabarito": "final após recursos (documento da banca, via espelho QConcursos)",
+    "aderencia_edital": "parcial",
+    "url": "banco-questoes/oficiais/fontes-brutas/candidatas-2026-11-04/bndes-2024-desenvolvimento-manha-prova.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000096",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, BNDES, Edital 1/2024, Prova 3, questão 44.",
+   "modulo": "05-engenharia-software",
+   "assunto": "Teste de unidade para isolar a origem das falhas",
+   "item_edital": "5.4",
+   "id_matriz": "E5-045",
+   "itens_secundarios": [],
+   "dificuldade": "facil",
+   "habilidade": "analise",
+   "tipo_questao": "cenario",
+   "enunciado": "Em um projeto de desenvolvimento de software, os desenvolvedores perceberam que, ao integrar diferentes módulos do sistema, o comportamento esperado não estava sendo alcançado. Os desenvolvedores notaram que as funções individuais dentro de cada módulo não estavam retornando os resultados esperados, mesmo antes da integração.\n\nPara identificar a origem dos problemas e corrigi-los, devem ser priorizados os testes de",
+   "alternativas": {
+    "A": "aceitação",
+    "B": "independência",
+    "C": "modularidade",
+    "D": "carga",
+    "E": "unidade"
+   },
+   "gabarito": "E",
+   "resolucao": "As falhas já aparecem **dentro** de cada módulo, antes da integração: o foco é a **menor unidade** (funções), logo, **testes de unidade**, que isolam a origem do defeito.",
+   "analise_alternativas": {
+    "A": "Incorreta. Aceitação valida o sistema com o usuário, em fase posterior.",
+    "B": "Incorreta. \"Teste de independência\" não é tipo de teste padrão.",
+    "C": "Incorreta. \"Teste de modularidade\" não é tipo de teste padrão.",
+    "D": "Incorreta. Carga avalia comportamento sob volume de uso.",
+    "E": "Correta. Funções individuais com resultados incorretos pedem teste de unidade."
+   },
+   "fundamentacao": {
+    "item": "5.4",
+    "arquivo_teoria": "conteudo/05-engenharia-software/06-verificacao-e-validacao.md"
+   },
+   "ponto_atencao": "Escolha o nível de teste pelo **escopo da falha**: função (unidade) → interação entre módulos (integração) → sistema → aceitação.",
+   "revisao_rapida": "Defeito dentro da função: teste de unidade.",
+   "tags": [
+    "teste-de-unidade",
+    "bndes-2024",
+    "oficial",
+    "facil",
+    "analise"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "BNDES, Edital 1/2024",
+    "cargo": "Analista — Análise de Sistemas: Desenvolvimento",
+    "ano": 2024,
+    "prova": "Prova 3 (manhã)",
+    "numero_original": 44,
+    "id_prova": "PRV-014",
+    "situacao_gabarito": "final após recursos (documento da banca, via espelho QConcursos)",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/candidatas-2026-11-04/bndes-2024-desenvolvimento-manha-prova.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000097",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, BNDES, Edital 1/2024, Prova 3, questão 45.",
+   "modulo": "05-engenharia-software",
+   "assunto": "Acoplamento de conteúdo",
+   "item_edital": "5.3",
+   "id_matriz": "E5-044",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "memorizacao",
+   "tipo_questao": "conceitual",
+   "enunciado": "Analisando o projeto de um componente de software, uma equipe de qualidade determinou que ele modificava diretamente os dados internos de outro componente.\n\nEssa forma de acoplamento é conhecida como acoplamento",
+   "alternativas": {
+    "A": "de comunicação",
+    "B": "de conteúdo",
+    "C": "de controle",
+    "D": "externo",
+    "E": "funcional"
+   },
+   "gabarito": "B",
+   "resolucao": "No **acoplamento de conteúdo** um módulo **acessa ou modifica diretamente o conteúdo interno** (dados ou código) de outro. É o **tipo mais forte e indesejável** de acoplamento.",
+   "analise_alternativas": {
+    "A": "Incorreta. Acoplamento de comunicação: módulos operam sobre os mesmos dados de entrada ou saída.",
+    "B": "Correta. Modificar diretamente os dados internos de outro componente: acoplamento de conteúdo.",
+    "C": "Incorreta. Acoplamento de controle: um módulo passa informação que controla a lógica de outro.",
+    "D": "Incorreta. Acoplamento externo: módulos compartilham um formato, protocolo ou dispositivo imposto externamente.",
+    "E": "Incorreta. \"Funcional\" refere-se à coesão funcional, característica desejável, e não ao tipo de acoplamento."
+   },
+   "fundamentacao": {
+    "item": "5.3",
+    "arquivo_teoria": "conteudo/05-engenharia-software/05-analise-e-projeto.md"
+   },
+   "ponto_atencao": "Do pior para o melhor: **conteúdo → comum → externo → controle → estampa → dados**. Coesão (dentro do módulo) ≠ acoplamento (entre módulos).",
+   "revisao_rapida": "Conteúdo: um módulo mexe nos internos de outro.",
+   "tags": [
+    "acoplamento",
+    "projeto",
+    "bndes-2024",
+    "oficial",
+    "media",
+    "memorizacao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "BNDES, Edital 1/2024",
+    "cargo": "Analista — Análise de Sistemas: Desenvolvimento",
+    "ano": 2024,
+    "prova": "Prova 3 (manhã)",
+    "numero_original": 45,
+    "id_prova": "PRV-014",
+    "situacao_gabarito": "final após recursos (documento da banca, via espelho QConcursos)",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/candidatas-2026-11-04/bndes-2024-desenvolvimento-manha-prova.pdf",
     "sha256": "ver docs/estrategia/base-provas.md"
    },
    "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",

@@ -2,7 +2,7 @@
  "modulo": "Questões oficiais — m09-seguranca-informacao",
  "lote": "T04 — Transpetro 2023 (Prova 6) e 2018 (Prova 15)",
  "data": "2026-11-06",
- "total": 15,
+ "total": 35,
  "questoes": [
   {
    "id": "OFI-000035",
@@ -886,6 +886,1201 @@
     "situacao_gabarito": "de terceiros (Ética), alterado em 09/05/2018; não validado contra a banca",
     "aderencia_edital": "aderente",
     "url": "banco-questoes/oficiais/fontes-brutas/transpetro-2018-prova15-analista-sistemas-jr-processos-negocio.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000074",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Caixa Econômica Federal, Edital 1/2021/NM, Caderno de Tecnologia da Informação, questão 60.",
+   "modulo": "09-seguranca-informacao",
+   "assunto": "Resolução CMN 4.893: revisão da política de segurança cibernética",
+   "item_edital": "9.17",
+   "id_matriz": null,
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "memorizacao",
+   "tipo_questao": "normativa",
+   "enunciado": "A Resolução CMN nº 4.893, de 26 de fevereiro de 2021, dispõe sobre a política de segurança cibernética e sobre os requisitos para a contratação de serviços de processamento e armazenamento de dados e de computação em nuvem, a serem observados pelas instituições autorizadas a funcionar pelo Banco Central do Brasil.\nEssa Resolução determina que a política de segurança cibernética e o plano de ação e de resposta a incidentes devem ser, no mínimo, documentados e revisados",
+   "alternativas": {
+    "A": "trimestralmente",
+    "B": "semestralmente",
+    "C": "anualmente",
+    "D": "bienalmente",
+    "E": "trienalmente"
+   },
+   "gabarito": "C",
+   "resolucao": "A Resolução determina que a política de segurança cibernética e o plano de ação e de resposta a incidentes sejam **documentados e revisados, no mínimo, anualmente**. Revisão periódica das políticas é também princípio geral da gestão de segurança (ISO 27001/27002).",
+   "analise_alternativas": {
+    "A": "Incorreta. Trimestral é mais frequente que o mínimo.",
+    "B": "Incorreta. Semestral é mais frequente que o mínimo.",
+    "C": "Correta. O mínimo é anual, segundo o gabarito oficial.",
+    "D": "Incorreta. Bienal é menos frequente que o mínimo.",
+    "E": "Incorreta. Trienal é menos frequente que o mínimo."
+   },
+   "fundamentacao": {
+    "item": "9.17",
+    "arquivo_teoria": "conteudo/09-seguranca-informacao/10-politicas-e-classificacao.md"
+   },
+   "ponto_atencao": "Aderência parcial: norma setorial bancária; a ideia de **revisão periódica** da política decorre do item 9.17. Memorize a periodicidade **mínima anual**.",
+   "revisao_rapida": "Política e plano de resposta: revisão no mínimo anual.",
+   "tags": [
+    "cmn-4893",
+    "politica-de-seguranca",
+    "caixa-2021",
+    "oficial",
+    "media",
+    "memorizacao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Caixa Econômica Federal, Edital 1/2021/NM",
+    "cargo": "Técnico Bancário Novo — Tecnologia da Informação",
+    "ano": 2021,
+    "prova": "Caderno de Tecnologia da Informação (questões 31 a 60)",
+    "numero_original": 60,
+    "id_prova": "PRV-008",
+    "situacao_gabarito": "definitivo (fonte oficial: portal da Cesgranrio); recursos sem alteração nem anulação",
+    "aderencia_edital": "parcial",
+    "url": "banco-questoes/oficiais/fontes-brutas/candidatas-2026-11-04/caixa-2021-tb-ti-prova-oficial.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Gabarito oficial da Cesgranrio (sem alteração em recurso); texto da resolução não consultado.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000075",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, BNDES, Edital 1/2024, Prova 2, questão 36.",
+   "modulo": "09-seguranca-informacao",
+   "assunto": "Malware: tipo indicado para implantar spyware",
+   "item_edital": "9.3",
+   "id_matriz": null,
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "analise",
+   "tipo_questao": "aplicada",
+   "enunciado": "As divisões categóricas dos códigos maliciosos, também conhecidos como malware, servem para homogeneizar os tipos de tratamento e resposta a essas ameaças.\n\nPara implementar um spyware em uma máquina-alvo, o tipo de malware mais indicado para ser usado na infecção é um(a)",
+   "alternativas": {
+    "A": "trojan, pois o usuário do sistema terá interesse em usá-lo e é silencioso.",
+    "B": "vírus, pois são notórios pela capacidade de se replicar autonomamente em diversos computadores de uma rede.",
+    "C": "worm, pois é capaz de se replicar em diversas áreas da memória (seja principal ou secundária) de um único dispositivo-alvo.",
+    "D": "spear phishing, pois usa diversos computadores controlados para infectar um alvo específico.",
+    "E": "botnet, pois engana o usuário e o leva a fornecer as suas credenciais a um programa conhecido como botmaster."
+   },
+   "gabarito": "A",
+   "resolucao": "O **trojan (cavalo de Troia)** se disfarça de programa útil, e o usuário o instala voluntariamente; ele age em silêncio, o que o torna adequado para **implantar um spyware** (código de espionagem).",
+   "analise_alternativas": {
+    "A": "Correta. Trojan: induz a instalação por parecer útil e age em silêncio.",
+    "B": "Incorreta. Vírus precisa de um hospedeiro e da execução do arquivo infectado; a replicação autônoma entre computadores descreve melhor o worm; a justificativa é incorreta.",
+    "C": "Incorreta. O worm se propaga pela rede; a descrição \"em áreas da memória de um único dispositivo\" não corresponde a ele.",
+    "D": "Incorreta. Spear phishing é técnica de engenharia social, e não tipo de malware.",
+    "E": "Incorreta. Botnet é uma rede de máquinas controladas; o *botmaster* é o controlador, e a descrição está trocada."
+   },
+   "fundamentacao": {
+    "item": "9.3",
+    "arquivo_teoria": "conteudo/09-seguranca-informacao/03-ameacas-e-malwares.md"
+   },
+   "ponto_atencao": "Leia a **justificativa** de cada alternativa: a classificação pode estar certa e a explicação errada. Spyware é **o que** faz; trojan é **como** chega.",
+   "revisao_rapida": "Trojan: disfarce e instalação voluntária; entrega outros códigos.",
+   "tags": [
+    "malware",
+    "trojan",
+    "spyware",
+    "bndes-2024",
+    "oficial",
+    "media",
+    "analise"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "BNDES, Edital 1/2024",
+    "cargo": "Analista — Análise de Sistemas: Cibersegurança",
+    "ano": 2024,
+    "prova": "Prova 2 (manhã)",
+    "numero_original": 36,
+    "id_prova": "PRV-010",
+    "situacao_gabarito": "final após recursos (documento da banca, via espelho QConcursos)",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/candidatas-2026-11-04/bndes-2024-ciberseguranca-manha-prova.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000076",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, BNDES, Edital 1/2024, Prova 2, questão 38.",
+   "modulo": "09-seguranca-informacao",
+   "assunto": "Criptografia: confidencialidade, integridade e autenticidade",
+   "item_edital": "9.19",
+   "id_matriz": null,
+   "itens_secundarios": [],
+   "dificuldade": "dificil",
+   "habilidade": "analise",
+   "tipo_questao": "aplicada",
+   "enunciado": "Durante muitos séculos, a criptografia era utilizada apenas para proteger a confidencialidade das mensagens. Entretanto, ao final do século XX uma nova forma de criptografia foi criada. Esta, em conjunto com outras técnicas, permite proteger a integridade, a confidencialidade e a autenticidade das informações que são transmitidas. Considere a transmissão de uma mensagem (M) de R para J.\n\nUma solução de segurança que protege a integridade, a confidencialidade e a autenticidade das informações, durante essa transmissão, é a solução realizada com os seguintes procedimentos de R:",
+   "alternativas": {
+    "A": "cifrar M com chave simétrica k, gerando a cifra C; transmitir k e C para J; e depois transmitir M em claro para ser conferido por J.",
+    "B": "cifrar M com a chave secreta (Sr) de R, gerando a cifra C1; cifrar C1 com a chave secreta de J (Sj), gerando a cifra C2; e transmitir C2 para J.",
+    "C": "cifrar M com a chave pública de R (Pr), gerando a cifra C1; cifrar C1 com a chave secreta de R (Sr), gerando a cifra C2; transmitir C2 e M em claro para ser conferido por J.",
+    "D": "cifrar M com a chave secreta de R (Sr), gerando a cifra C1; cifrar C1 com a chave pública de J (Pj), gerando a cifra C2; transmitir C2 e um hash H(M) para ser conferido por J.",
+    "E": "cifrar M com a chave simétrica k, gerando a cifra C; transmitir C e um hash H(M) para ser conferido por J."
+   },
+   "gabarito": "D",
+   "resolucao": "Cifrar com a **chave secreta (privada) de R** produz uma **assinatura** (autenticidade); cifrar o resultado com a **chave pública de J** garante **confidencialidade** (só J abre); o **hash H(M)** permite a J conferir a **integridade**. A combinação cobre os três objetivos.",
+   "analise_alternativas": {
+    "A": "Incorreta. Transmite a chave simétrica junto com a cifra (anula a confidencialidade) e a mensagem em claro.",
+    "B": "Incorreta. Usa a chave secreta de J, que R não possui: o esquema é inviável.",
+    "C": "Incorreta. Transmite M em claro (sem confidencialidade) e cifra com a chave pública de R, que não prova a autoria.",
+    "D": "Correta. Assina com Sr (autenticidade), cifra com Pj (confidencialidade) e envia o hash para conferir a integridade.",
+    "E": "Incorreta. A chave simétrica k não foi entregue com segurança a J e não há autenticação da origem."
+   },
+   "fundamentacao": {
+    "item": "9.19",
+    "arquivo_teoria": "conteudo/09-seguranca-informacao/11-iso-27002.md"
+   },
+   "ponto_atencao": "Cifrar com a **privada do remetente** = autenticidade/não repúdio; com a **pública do destinatário** = confidencialidade; **hash** = integridade.",
+   "revisao_rapida": "Assinar (Sr) + cifrar (Pj) + hash = C, I e A.",
+   "tags": [
+    "criptografia",
+    "assinatura-digital",
+    "bndes-2024",
+    "oficial",
+    "dificil",
+    "analise"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "BNDES, Edital 1/2024",
+    "cargo": "Analista — Análise de Sistemas: Cibersegurança",
+    "ano": 2024,
+    "prova": "Prova 2 (manhã)",
+    "numero_original": 38,
+    "id_prova": "PRV-010",
+    "situacao_gabarito": "final após recursos (documento da banca, via espelho QConcursos)",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/candidatas-2026-11-04/bndes-2024-ciberseguranca-manha-prova.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000077",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, BNDES, Edital 1/2024, Prova 2, questão 45.",
+   "modulo": "09-seguranca-informacao",
+   "assunto": "ISO/IEC 27035-1: fase de resposta a incidentes",
+   "item_edital": "9.11",
+   "id_matriz": null,
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "compreensao",
+   "tipo_questao": "normativa",
+   "enunciado": "A ABNT NBR ISO/IEC 27035-1:2023 destina-se a complementar outras normas e documentos que fornecem orientação sobre a investigação e preparação para investigar incidentes de segurança da informação. Conforme definido nessa norma, o processo de gestão de incidentes de segurança da informação consiste em cinco fases distintas. Há uma fase na qual pode ocorrer a necessidade de invocar medidas do plano de continuidade de negócios ou do plano de recuperação de desastre para os incidentes que excedem determinados limites organizacionais para as equipes de resposta a incidentes.\n\nEssa fase é a de",
+   "alternativas": {
+    "A": "avaliar e decidir",
+    "B": "detectar e comunicar",
+    "C": "lições aprendidas",
+    "D": "planejar e preparar",
+    "E": "responder"
+   },
+   "gabarito": "E",
+   "resolucao": "As cinco fases da ISO/IEC 27035-1:2023 são **planejar e preparar; detectar e reportar; avaliar e decidir; responder; lições aprendidas**. Na fase **responder** ocorrem contenção, erradicação e recuperação e, se o incidente excede os limites das equipes, o acionamento de **continuidade de negócios e recuperação de desastres**.",
+   "analise_alternativas": {
+    "A": "Incorreta. Avaliar e decidir classifica o evento como incidente e decide como tratá-lo.",
+    "B": "Incorreta. Detectar e reportar identifica e comunica eventos.",
+    "C": "Incorreta. Lições aprendidas revisa e melhora o processo após o incidente.",
+    "D": "Incorreta. Planejar e preparar estabelece políticas, equipe e planos antes dos incidentes.",
+    "E": "Correta. Na resposta é que se executam as ações, inclusive o acionamento de continuidade e recuperação."
+   },
+   "fundamentacao": {
+    "item": "9.11",
+    "arquivo_teoria": "conteudo/09-seguranca-informacao/06-gestao-incidentes.md"
+   },
+   "ponto_atencao": "Aderência parcial (a ISO 27035 não é citada; o item 9.11 cita NIST SP 800-61). Compare com o ciclo da **NIST SP 800-61 Rev. 2**: preparação; detecção e análise; contenção, erradicação e recuperação; pós-incidente.",
+   "revisao_rapida": "27035-1: preparar, detectar, avaliar, responder, aprender.",
+   "tags": [
+    "iso-27035",
+    "incidentes",
+    "bndes-2024",
+    "oficial",
+    "media",
+    "compreensao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "BNDES, Edital 1/2024",
+    "cargo": "Analista — Análise de Sistemas: Cibersegurança",
+    "ano": 2024,
+    "prova": "Prova 2 (manhã)",
+    "numero_original": 45,
+    "id_prova": "PRV-010",
+    "situacao_gabarito": "final após recursos (documento da banca, via espelho QConcursos)",
+    "aderencia_edital": "parcial",
+    "url": "banco-questoes/oficiais/fontes-brutas/candidatas-2026-11-04/bndes-2024-ciberseguranca-manha-prova.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000078",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, BNDES, Edital 1/2024, Prova 2, questão 47.",
+   "modulo": "09-seguranca-informacao",
+   "assunto": "Ataques ativos e passivos: disfarce (masquerade)",
+   "item_edital": "9.4",
+   "id_matriz": null,
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "compreensao",
+   "tipo_questao": "conceitual",
+   "enunciado": "Os ataques passivos são muito difíceis de detectar, pois não envolvem alteração dos dados trafegados na rede. Por outro lado, os ataques ativos envolvem alguma modificação do fluxo de dados ou a criação de um fluxo falso.\n\nDentre os exemplos de ataques, há o ataque de disfarce, cujo objetivo é o de",
+   "alternativas": {
+    "A": "coletar informações, com base na escuta do fluxo de dados transmitido na linha de comunicação.",
+    "B": "ganhar conhecimento por inferência, com base nas características observáveis do fluxo de dados.",
+    "C": "provocar a sobrecarga da rede como um tipo de obstrução, com a finalidade de causar uma interrupção.",
+    "D": "consumir e esgotar os recursos do sistema da vítima, como ciclos de CPU, memória e espaço em disco.",
+    "E": "ganhar acesso a um sistema ou desempenhar uma ação maliciosa, por posar ilegitimamente como uma entidade autorizada."
+   },
+   "gabarito": "E",
+   "resolucao": "No **ataque de disfarce (*masquerade*)**, o atacante **se faz passar** por uma entidade legítima para obter acesso ou praticar ações maliciosas; é um ataque **ativo** (Stallings).",
+   "analise_alternativas": {
+    "A": "Incorreta. Escuta do fluxo é ataque passivo (*eavesdropping*, liberação de conteúdo).",
+    "B": "Incorreta. Inferência pela análise do tráfego é ataque passivo (análise de tráfego).",
+    "C": "Incorreta. Sobrecarga da rede é negação de serviço (DoS).",
+    "D": "Incorreta. Esgotar recursos da vítima também é negação de serviço.",
+    "E": "Correta. Passar-se por entidade autorizada é o disfarce."
+   },
+   "fundamentacao": {
+    "item": "9.4",
+    "arquivo_teoria": "conteudo/09-seguranca-informacao/03-ameacas-e-malwares.md"
+   },
+   "ponto_atencao": "Classificação clássica: **passivos** (escuta, análise de tráfego) × **ativos** (disfarce, repetição, modificação de mensagens, negação de serviço).",
+   "revisao_rapida": "Masquerade = personificar entidade autorizada.",
+   "tags": [
+    "ataques",
+    "masquerade",
+    "bndes-2024",
+    "oficial",
+    "media",
+    "compreensao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "BNDES, Edital 1/2024",
+    "cargo": "Analista — Análise de Sistemas: Cibersegurança",
+    "ano": 2024,
+    "prova": "Prova 2 (manhã)",
+    "numero_original": 47,
+    "id_prova": "PRV-010",
+    "situacao_gabarito": "final após recursos (documento da banca, via espelho QConcursos)",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/candidatas-2026-11-04/bndes-2024-ciberseguranca-manha-prova.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000079",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, BNDES, Edital 1/2024, Prova 2, questão 48.",
+   "modulo": "09-seguranca-informacao",
+   "assunto": "Varredura TCP furtiva: idle scan",
+   "item_edital": "9.13",
+   "id_matriz": null,
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "memorizacao",
+   "tipo_questao": "conceitual",
+   "enunciado": "A varredura de porta de comunicação visa fazer uma avaliação em massa do alvo e a identificação de serviços buscando os corredores de entrada mais poderosos. A técnica de varredura de porta TCP explora o 3-way handshake do TCP para determinar se uma porta de comunicação da vítima está aberta ou fechada. Dentre os exemplos de uso dessa técnica, há um que protege o endereço IP do atacante, pois faz uso de um zumbi para fazer a varredura de porta TCP da vítima.\n\nEssa técnica de varredura furtiva de porta TCP é conhecida como varredura TCP",
+   "alternativas": {
+    "A": "FIN",
+    "B": "ACK",
+    "C": "IDLE",
+    "D": "NULL",
+    "E": "XMAS"
+   },
+   "gabarito": "C",
+   "resolucao": "No **idle scan** (varredura TCP ociosa), o atacante usa um **host zumbi** ocioso, observando a sequência de identificação IP dele, para inferir o estado das portas da vítima **sem que o IP do atacante apareça** para o alvo.",
+   "analise_alternativas": {
+    "A": "Incorreta. FIN envia pacotes com o flag FIN, direto da origem do atacante.",
+    "B": "Incorreta. ACK sonda regras de filtragem de firewall, direto da origem.",
+    "C": "Correta. IDLE usa um zumbi, ocultando o IP do atacante.",
+    "D": "Incorreta. NULL envia pacotes sem flags, direto da origem.",
+    "E": "Incorreta. XMAS envia FIN, PSH e URG, direto da origem."
+   },
+   "fundamentacao": {
+    "item": "9.13",
+    "arquivo_teoria": "conteudo/09-seguranca-informacao/08-pentest-stride-mitre.md"
+   },
+   "ponto_atencao": "Aderência parcial (técnicas de reconhecimento fazem parte do pentest, 9.13). Palavra-chave: **zumbi** = idle.",
+   "revisao_rapida": "Idle scan: IP do atacante oculto por zumbi.",
+   "tags": [
+    "varredura",
+    "pentest",
+    "bndes-2024",
+    "oficial",
+    "media",
+    "memorizacao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "BNDES, Edital 1/2024",
+    "cargo": "Analista — Análise de Sistemas: Cibersegurança",
+    "ano": 2024,
+    "prova": "Prova 2 (manhã)",
+    "numero_original": 48,
+    "id_prova": "PRV-010",
+    "situacao_gabarito": "final após recursos (documento da banca, via espelho QConcursos)",
+    "aderencia_edital": "parcial",
+    "url": "banco-questoes/oficiais/fontes-brutas/candidatas-2026-11-04/bndes-2024-ciberseguranca-manha-prova.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000080",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, BNDES, Edital 1/2024, Prova 2, questão 51.",
+   "modulo": "09-seguranca-informacao",
+   "assunto": "Código malicioso: formjacking",
+   "item_edital": "9.3",
+   "id_matriz": null,
+   "itens_secundarios": [
+    "9.4"
+   ],
+   "dificuldade": "media",
+   "habilidade": "compreensao",
+   "tipo_questao": "conceitual",
+   "enunciado": "O código malicioso é aquele programa de computador que tem o potencial de danificar sua vítima, mas nem sempre age dessa forma. Alguns códigos maliciosos optam por furtar dados pessoais, enquanto outros usam recursos de computação da vítima em benefício próprio, sem o conhecimento ou a autorização da vítima. Dentre esses códigos maliciosos, existe uma certa categoria que visa utilizar código Javascript malicioso para furtar dados de cartão de crédito e outras informações preenchidas em páginas de pagamento de web sites de e-Commerce.\nEssa categoria de códigos maliciosos é conhecida como",
+   "alternativas": {
+    "A": "worm",
+    "B": "formjacking",
+    "C": "downloader",
+    "D": "ransomware",
+    "E": "cryptojacking"
+   },
+   "gabarito": "B",
+   "resolucao": "O **formjacking** injeta JavaScript malicioso em formulários de sites (especialmente de pagamento) para **capturar os dados digitados**, como números de cartão (ataques do tipo *Magecart*).",
+   "analise_alternativas": {
+    "A": "Incorreta. Worm se autorreplica pela rede.",
+    "B": "Correta. Formjacking: JavaScript que rouba dados de formulários.",
+    "C": "Incorreta. Downloader baixa e instala outros códigos.",
+    "D": "Incorreta. Ransomware cifra dados e exige resgate.",
+    "E": "Incorreta. Cryptojacking usa recursos da vítima para minerar criptomoedas."
+   },
+   "fundamentacao": {
+    "item": "9.3",
+    "arquivo_teoria": "conteudo/09-seguranca-informacao/03-ameacas-e-malwares.md"
+   },
+   "ponto_atencao": "Sufixo **-jacking**: sequestro de algo (form, crypto, click). Formjacking = **formulário**.",
+   "revisao_rapida": "Formjacking: JS que captura dados de formulários de pagamento.",
+   "tags": [
+    "malware",
+    "formjacking",
+    "bndes-2024",
+    "oficial",
+    "media",
+    "compreensao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "BNDES, Edital 1/2024",
+    "cargo": "Analista — Análise de Sistemas: Cibersegurança",
+    "ano": 2024,
+    "prova": "Prova 2 (manhã)",
+    "numero_original": 51,
+    "id_prova": "PRV-010",
+    "situacao_gabarito": "final após recursos (documento da banca, via espelho QConcursos)",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/candidatas-2026-11-04/bndes-2024-ciberseguranca-manha-prova.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000081",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, BNDES, Edital 1/2024, Prova 2, questão 52.",
+   "modulo": "09-seguranca-informacao",
+   "assunto": "Engenharia social presencial: tailgating",
+   "item_edital": "9.1",
+   "id_matriz": null,
+   "itens_secundarios": [
+    "9.4"
+   ],
+   "dificuldade": "facil",
+   "habilidade": "compreensao",
+   "tipo_questao": "conceitual",
+   "enunciado": "A engenharia social é uma técnica de manipulação que visa persuadir pessoas a cometerem erros ou burlar políticas de segurança, de forma que o adversário tenha êxito em ações maliciosas que não seriam viáveis sem a participação da vítima. Dentre os métodos mais comuns de engenharia social, existe um que tem como objetivo seguir um membro autorizado da equipe em uma área de acesso restrito e se aproveitar da cortesia social para fazer com que a pessoa segure a porta para o atacante ou para convencer a pessoa de que o atacante também está autorizado a ficar na área de acesso restrito.\nEsse método de engenharia social é conhecido como",
+   "alternativas": {
+    "A": "baiting",
+    "B": "phishing",
+    "C": "smishing",
+    "D": "tailgating",
+    "E": "honeytrap"
+   },
+   "gabarito": "D",
+   "resolucao": "**Tailgating** (ou *piggybacking*) é entrar em área restrita **seguindo** uma pessoa autorizada, aproveitando a cortesia. Mitigação: catracas, antipassback, conscientização e segurança presencial.",
+   "analise_alternativas": {
+    "A": "Incorreta. Baiting oferece uma isca (por exemplo, um pendrive deixado de propósito).",
+    "B": "Incorreta. Phishing usa mensagens fraudulentas por e-mail.",
+    "C": "Incorreta. Smishing é phishing por SMS.",
+    "D": "Correta. Seguir o autorizado e se aproveitar da cortesia: tailgating.",
+    "E": "Incorreta. Honeytrap usa sedução ou relacionamento para obter informação."
+   },
+   "fundamentacao": {
+    "item": "9.1",
+    "arquivo_teoria": "conteudo/09-seguranca-informacao/02-seguranca-fisica-e-logica.md"
+   },
+   "ponto_atencao": "Associe: **tailgating = porta**; phishing = e-mail; smishing = SMS; vishing = voz; baiting = isca.",
+   "revisao_rapida": "Tailgating: entrar atrás de quem tem acesso.",
+   "tags": [
+    "engenharia-social",
+    "seguranca-fisica",
+    "bndes-2024",
+    "oficial",
+    "facil",
+    "compreensao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "BNDES, Edital 1/2024",
+    "cargo": "Analista — Análise de Sistemas: Cibersegurança",
+    "ano": 2024,
+    "prova": "Prova 2 (manhã)",
+    "numero_original": 52,
+    "id_prova": "PRV-010",
+    "situacao_gabarito": "final após recursos (documento da banca, via espelho QConcursos)",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/candidatas-2026-11-04/bndes-2024-ciberseguranca-manha-prova.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000082",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, BNDES, Edital 1/2024, Prova 2, questão 54.",
+   "modulo": "09-seguranca-informacao",
+   "assunto": "Defesa em profundidade: firewall proxy",
+   "item_edital": "9.2",
+   "id_matriz": null,
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "compreensao",
+   "tipo_questao": "cenario",
+   "enunciado": "A estratégia de defesa em profundidade implica a implantação de camadas de segurança independentes. Essa estratégia é amplamente adotada na segurança do perímetro da rede de comunicação de dados, por meio da implantação de componentes de segurança. Um desses componentes opera no nível de aplicação como um intermediário na comunicação entre as aplicações das estações internas e os servidores externos, para proteger a privacidade e aplicar políticas corporativas de restrição de acesso a sítios externos.\n\nEsse componente de segurança é o",
+   "alternativas": {
+    "A": "firewall proxy",
+    "B": "firewall com estado",
+    "C": "gateway VPN",
+    "D": "filtro de pacotes",
+    "E": "intrusion detection system"
+   },
+   "gabarito": "A",
+   "resolucao": "O **firewall proxy** (de aplicação) atua na **camada de aplicação** como **intermediário**: os clientes internos conectam-se a ele, que se conecta aos servidores externos em seu nome, ocultando os clientes e aplicando políticas (por exemplo, filtragem de URLs).",
+   "analise_alternativas": {
+    "A": "Correta. Intermediário de camada de aplicação com políticas de acesso: firewall proxy.",
+    "B": "Incorreta. Firewall com estado acompanha conexões nas camadas de rede e transporte, sem agir como intermediário de aplicação.",
+    "C": "Incorreta. Gateway VPN estabelece túneis cifrados entre redes ou usuários.",
+    "D": "Incorreta. Filtro de pacotes decide por cabeçalhos (IP, porta), sem entender a aplicação.",
+    "E": "Incorreta. IDS apenas detecta e alerta."
+   },
+   "fundamentacao": {
+    "item": "9.2",
+    "arquivo_teoria": "conteudo/09-seguranca-informacao/14-operacao-de-seguranca.md"
+   },
+   "ponto_atencao": "Ordem de \"profundidade\" de inspeção: **filtro de pacotes** (L3/L4) → **com estado** (conexão) → **proxy/aplicação** (L7).",
+   "revisao_rapida": "Proxy: intermediário em L7, esconde clientes, aplica política.",
+   "tags": [
+    "firewall",
+    "proxy",
+    "defesa-em-profundidade",
+    "bndes-2024",
+    "oficial",
+    "media",
+    "compreensao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "BNDES, Edital 1/2024",
+    "cargo": "Analista — Análise de Sistemas: Cibersegurança",
+    "ano": 2024,
+    "prova": "Prova 2 (manhã)",
+    "numero_original": 54,
+    "id_prova": "PRV-010",
+    "situacao_gabarito": "final após recursos (documento da banca, via espelho QConcursos)",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/candidatas-2026-11-04/bndes-2024-ciberseguranca-manha-prova.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000083",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, BNDES, Edital 1/2024, Prova 2, questão 55.",
+   "modulo": "09-seguranca-informacao",
+   "assunto": "OWASP Top 10 (2021): falhas criptográficas",
+   "item_edital": "9.4",
+   "id_matriz": null,
+   "itens_secundarios": [
+    "9.5"
+   ],
+   "dificuldade": "media",
+   "habilidade": "aplicacao",
+   "tipo_questao": "cenario",
+   "enunciado": "O OWASP Top 10 apresenta as categorias de riscos de segurança mais críticos de aplicações Web, verificadas durante um certo período de avaliação e serve como um guia para profissionais de segurança e desenvolvedores de sistemas. Num dos cenários de ataque apresentados na publicação de 2021, um invasor monitora uma aplicação Web que não usa nem força o uso do TLS (Transport Layer Security), o que possibilita que um invasor monitore o tráfego de rede (por exemplo, em uma rede sem fio insegura), intercepte solicitações e roube o cookie de sessão do usuário.\n\nEsse cenário de ataque é apontado na categoria de risco de segurança",
+   "alternativas": {
+    "A": "Injection",
+    "B": "Cryptographic Failures",
+    "C": "Broken Access Control",
+    "D": "Server Side Request Forgery",
+    "E": "Vulnerable and Outdated Components"
+   },
+   "gabarito": "B",
+   "resolucao": "No OWASP Top 10 **2021**, **A02 — Cryptographic Failures** (antes \"Exposição de dados sensíveis\") inclui a **ausência de TLS** ou criptografia fraca, que permite interceptar dados e cookies de sessão em trânsito.",
+   "analise_alternativas": {
+    "A": "Incorreta. Injection (A03) é o envio de dados não confiáveis a um interpretador.",
+    "B": "Correta. Falta de TLS e dados expostos em trânsito: Cryptographic Failures (A02).",
+    "C": "Incorreta. Broken Access Control (A01) é falha na imposição de permissões.",
+    "D": "Incorreta. SSRF (A10) faz o servidor requisitar recursos indevidos.",
+    "E": "Incorreta. Componentes vulneráveis e desatualizados (A06) tratam de bibliotecas com falhas conhecidas."
+   },
+   "fundamentacao": {
+    "item": "9.4",
+    "arquivo_teoria": "conteudo/09-seguranca-informacao/03-ameacas-e-malwares.md"
+   },
+   "ponto_atencao": "**Edição importa**: o Top 10 foi atualizado em 2025; o cenário é da edição 2021. Associe: **sem TLS / dado em trânsito = criptografia**.",
+   "revisao_rapida": "A02:2021 Cryptographic Failures: sem TLS, algoritmos fracos, chaves mal geridas.",
+   "tags": [
+    "owasp-top-10",
+    "tls",
+    "bndes-2024",
+    "oficial",
+    "media",
+    "aplicacao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "BNDES, Edital 1/2024",
+    "cargo": "Analista — Análise de Sistemas: Cibersegurança",
+    "ano": 2024,
+    "prova": "Prova 2 (manhã)",
+    "numero_original": 55,
+    "id_prova": "PRV-010",
+    "situacao_gabarito": "final após recursos (documento da banca, via espelho QConcursos)",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/candidatas-2026-11-04/bndes-2024-ciberseguranca-manha-prova.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000084",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, BNDES, Edital 1/2024, Prova 2, questão 56.",
+   "modulo": "09-seguranca-informacao",
+   "assunto": "Irretratabilidade (não repúdio)",
+   "item_edital": "9.19",
+   "id_matriz": null,
+   "itens_secundarios": [
+    "9.1"
+   ],
+   "dificuldade": "media",
+   "habilidade": "compreensao",
+   "tipo_questao": "conceitual",
+   "enunciado": "A fim de garantir a segurança da informação, é preciso adotar um conjunto de medidas de proteção para tornar sistemas de informação e sistemas de comunicação resistentes a ataques. Dentre essas medidas de proteção, existe uma que visa fornecer evidências que podem ser armazenadas e, posteriormente, apresentadas a terceiros, para resolver disputas que surgem se e quando uma comunicação é negada por uma das entidades envolvidas.\n\nEssa medida de proteção é conhecida como",
+   "alternativas": {
+    "A": "integridade",
+    "B": "autenticidade",
+    "C": "irretroatividade",
+    "D": "irretratabilidade",
+    "E": "confidencialidade"
+   },
+   "gabarito": "D",
+   "resolucao": "**Irretratabilidade (não repúdio)** impede que uma parte **negue** ter enviado ou recebido uma comunicação, fornecendo **provas** (por exemplo, assinatura digital e carimbo de tempo) utilizáveis perante terceiros.",
+   "analise_alternativas": {
+    "A": "Incorreta. Integridade garante que o dado não foi alterado.",
+    "B": "Incorreta. Autenticidade garante a origem verdadeira, mas não produz prova contra a negação perante terceiros.",
+    "C": "Incorreta. \"Irretroatividade\" é conceito jurídico sobre aplicação de leis, e não de segurança da informação.",
+    "D": "Correta. Evidências para resolver disputas sobre negação: irretratabilidade.",
+    "E": "Incorreta. Confidencialidade restringe o acesso à informação."
+   },
+   "fundamentacao": {
+    "item": "9.19",
+    "arquivo_teoria": "conteudo/09-seguranca-informacao/11-iso-27002.md"
+   },
+   "ponto_atencao": "Atenção às **paronímias**: irretratabilidade (segurança) × irretroatividade (direito). Assinatura digital oferece integridade, autenticidade e não repúdio.",
+   "revisao_rapida": "Não repúdio: evidência contra a negação.",
+   "tags": [
+    "nao-repudio",
+    "assinatura-digital",
+    "bndes-2024",
+    "oficial",
+    "media",
+    "compreensao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "BNDES, Edital 1/2024",
+    "cargo": "Analista — Análise de Sistemas: Cibersegurança",
+    "ano": 2024,
+    "prova": "Prova 2 (manhã)",
+    "numero_original": 56,
+    "id_prova": "PRV-010",
+    "situacao_gabarito": "final após recursos (documento da banca, via espelho QConcursos)",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/candidatas-2026-11-04/bndes-2024-ciberseguranca-manha-prova.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000085",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, BNDES, Edital 1/2024, Prova 2, questão 59.",
+   "modulo": "09-seguranca-informacao",
+   "assunto": "SOAR: automação e orquestração da resposta",
+   "item_edital": "9.2",
+   "id_matriz": null,
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "compreensao",
+   "tipo_questao": "conceitual",
+   "enunciado": "As equipes do Security Operation Center (SOC) da organização, muitas vezes, são inundadas com tarefas repetitivas e demoradas que prejudicam e reduzem a eficiência na resposta aos incidentes. Para minimizar esse problema, um conjunto de tecnologias de segurança cibernética permite que as organizações respondam a alguns incidentes automaticamente, possibilitando que os administradores lidem com alertas de segurança, sem a necessidade de intervenção manual. Para isso, englobam três importantes recursos de software usados pelas equipes de cibersegurança: gerenciamento de casos e de fluxos de trabalho; automação de tarefas e acesso a meios centralizados de consulta; e compartilhamento de informações sobre ameaças.\n\nEsse conjunto de tecnologias de segurança cibernética é conhecido como",
+   "alternativas": {
+    "A": "IPS",
+    "B": "DLP",
+    "C": "WAF",
+    "D": "CASB",
+    "E": "SOAR"
+   },
+   "gabarito": "E",
+   "resolucao": "**SOAR** (*Security Orchestration, Automation and Response*) integra ferramentas, **automatiza respostas** por *playbooks*, gerencia casos e fluxos e incorpora inteligência de ameaças.",
+   "analise_alternativas": {
+    "A": "Incorreta. IPS detecta e bloqueia ataques em linha.",
+    "B": "Incorreta. DLP evita vazamento de dados.",
+    "C": "Incorreta. WAF protege aplicações web.",
+    "D": "Incorreta. CASB controla o uso de serviços em nuvem.",
+    "E": "Correta. Casos e fluxos, automação e inteligência de ameaças: SOAR."
+   },
+   "fundamentacao": {
+    "item": "9.2",
+    "arquivo_teoria": "conteudo/09-seguranca-informacao/14-operacao-de-seguranca.md"
+   },
+   "ponto_atencao": "Aderência parcial: SOAR não consta da lista literal do item 9.2 (que cita SIEM, EDR, WAF etc.). Siglas: **SIEM correlaciona**; **SOAR automatiza a resposta**.",
+   "revisao_rapida": "SOAR: orquestração + automação + resposta.",
+   "tags": [
+    "soar",
+    "soc",
+    "bndes-2024",
+    "oficial",
+    "media",
+    "compreensao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "BNDES, Edital 1/2024",
+    "cargo": "Analista — Análise de Sistemas: Cibersegurança",
+    "ano": 2024,
+    "prova": "Prova 2 (manhã)",
+    "numero_original": 59,
+    "id_prova": "PRV-010",
+    "situacao_gabarito": "final após recursos (documento da banca, via espelho QConcursos)",
+    "aderencia_edital": "parcial",
+    "url": "banco-questoes/oficiais/fontes-brutas/candidatas-2026-11-04/bndes-2024-ciberseguranca-manha-prova.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000086",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, BNDES, Edital 1/2024, Prova 2, questão 62.",
+   "modulo": "09-seguranca-informacao",
+   "assunto": "Controles CIS v8: Grupos de Implementação",
+   "item_edital": "9.2",
+   "id_matriz": null,
+   "itens_secundarios": [],
+   "dificuldade": "dificil",
+   "habilidade": "memorizacao",
+   "tipo_questao": "conceitual",
+   "enunciado": "Os Controles CIS (Center for Internet Security) refletem o conhecimento combinado de inúmeros especialistas de várias áreas de segurança e de vários setores, que compartilham percepções sobre ataques e invasores, identificam as causas básicas e as traduzem em classes de ação defensivas. A versão 8 dos Controles CIS apresenta Grupos de Implementação (IG, sigla em inglês) de Controles CIS, e cada IG identifica um subconjunto dos Controles CIS que a comunidade avaliou amplamente para serem aplicáveis a uma empresa com um perfil de risco e recursos semelhantes para implementação. Dentre esses IG, um deles é recomendado para uma empresa que emprega especialistas em segurança especializados nas diferentes facetas da segurança cibernética (por exemplo, gestão de riscos, teste de invasão, segurança de aplicações) e na qual os ativos e os dados contêm informações ou funções confidenciais que estão sujeitas à supervisão regulatória e de conformidade, o que obriga a empresa a abordar a disponibilidade dos serviços e a confidencialidade e integridade dos dados sensíveis.\n\nEsse Grupo de Implementação de Controle CIS é o",
+   "alternativas": {
+    "A": "IG1",
+    "B": "IG2",
+    "C": "IG3",
+    "D": "IG4",
+    "E": "IG5"
+   },
+   "gabarito": "C",
+   "resolucao": "Os **Controles CIS v8** têm **três** grupos de implementação: **IG1** (higiene cibernética básica, 56 salvaguardas), **IG2** (empresas com equipe de TI e dados sensíveis moderados) e **IG3** (empresas com especialistas de segurança, dados sujeitos a regulação e maior exposição). O IG3 inclui todas as salvaguardas dos anteriores.",
+   "analise_alternativas": {
+    "A": "Incorreta. IG1 é para organizações pequenas com recursos limitados.",
+    "B": "Incorreta. IG2 é para organizações com equipe de TI e múltiplos departamentos.",
+    "C": "Correta. Especialistas, dados regulados e alta criticidade: IG3.",
+    "D": "Incorreta. Não há IG4 no CIS v8.",
+    "E": "Incorreta. Não há IG5 no CIS v8."
+   },
+   "fundamentacao": {
+    "item": "9.2",
+    "arquivo_teoria": "conteudo/09-seguranca-informacao/14-operacao-de-seguranca.md"
+   },
+   "ponto_atencao": "Aderência parcial: os Controles CIS não são citados no edital. Existem **apenas IG1, IG2 e IG3** (IG4 e IG5 são distratores fáceis).",
+   "revisao_rapida": "CIS v8: IG1 (básico) ⊂ IG2 ⊂ IG3 (mais maduro).",
+   "tags": [
+    "cis-controls",
+    "bndes-2024",
+    "oficial",
+    "dificil",
+    "memorizacao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "BNDES, Edital 1/2024",
+    "cargo": "Analista — Análise de Sistemas: Cibersegurança",
+    "ano": 2024,
+    "prova": "Prova 2 (manhã)",
+    "numero_original": 62,
+    "id_prova": "PRV-010",
+    "situacao_gabarito": "final após recursos (documento da banca, via espelho QConcursos)",
+    "aderencia_edital": "parcial",
+    "url": "banco-questoes/oficiais/fontes-brutas/candidatas-2026-11-04/bndes-2024-ciberseguranca-manha-prova.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000087",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, BNDES, Edital 1/2024, Prova 2, questão 65.",
+   "modulo": "09-seguranca-informacao",
+   "assunto": "FIRST CSIRT Services Framework",
+   "item_edital": "9.11",
+   "id_matriz": null,
+   "itens_secundarios": [],
+   "dificuldade": "dificil",
+   "habilidade": "memorizacao",
+   "tipo_questao": "normativa",
+   "enunciado": "Um CSIRT (Computer Security Incident Response Team) é capaz não apenas de coletar e avaliar relatórios de incidentes de segurança da informação, mas também de analisar dados relevantes e executar análises técnicas detalhadas do incidente em si e de quaisquer artefatos usados. A partir dessa análise, a mitigação e as etapas para se recuperar do incidente podem ser recomendadas.\n\nDe acordo com o FIRST CSIRT Services Framework, o serviço de mitigação e recuperação está definido para a área de serviço de",
+   "alternativas": {
+    "A": "Consciência Situacional",
+    "B": "Transferência de Conhecimento",
+    "C": "Gestão de Vulnerabilidade",
+    "D": "Gestão de Eventos de Segurança da Informação",
+    "E": "Gestão de Incidentes de Segurança da Informação"
+   },
+   "gabarito": "E",
+   "resolucao": "O **FIRST CSIRT Services Framework** organiza os serviços em áreas: gestão de **eventos** de segurança (monitoramento, detecção e análise), gestão de **incidentes** (aceitação, análise, **mitigação e recuperação**, coordenação, comunicação), gestão de **vulnerabilidades**, **consciência situacional** e **transferência de conhecimento**.",
+   "analise_alternativas": {
+    "A": "Incorreta. Consciência situacional trata de inteligência, análise de ameaças e comunicação de contexto.",
+    "B": "Incorreta. Transferência de conhecimento trata de treinamento e conscientização.",
+    "C": "Incorreta. Gestão de vulnerabilidades trata de descoberta, análise e correção de vulnerabilidades.",
+    "D": "Incorreta. Gestão de eventos trata de monitoramento, detecção e análise de eventos.",
+    "E": "Correta. Mitigação e recuperação do incidente pertencem à gestão de incidentes."
+   },
+   "fundamentacao": {
+    "item": "9.11",
+    "arquivo_teoria": "conteudo/09-seguranca-informacao/06-gestao-incidentes.md"
+   },
+   "ponto_atencao": "Aderência parcial (o framework não consta do edital; o item 9.11 trata de resposta a incidentes). **Evento** é o que se detecta; **incidente** é o que se trata.",
+   "revisao_rapida": "Mitigação e recuperação: área de gestão de incidentes.",
+   "tags": [
+    "csirt",
+    "incidentes",
+    "bndes-2024",
+    "oficial",
+    "dificil",
+    "memorizacao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "BNDES, Edital 1/2024",
+    "cargo": "Analista — Análise de Sistemas: Cibersegurança",
+    "ano": 2024,
+    "prova": "Prova 2 (manhã)",
+    "numero_original": 65,
+    "id_prova": "PRV-010",
+    "situacao_gabarito": "final após recursos (documento da banca, via espelho QConcursos)",
+    "aderencia_edital": "parcial",
+    "url": "banco-questoes/oficiais/fontes-brutas/candidatas-2026-11-04/bndes-2024-ciberseguranca-manha-prova.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000088",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, BNDES, Edital 1/2024, Prova 2, questão 66.",
+   "modulo": "09-seguranca-informacao",
+   "assunto": "MITRE ATT&CK: técnica da tática Defense Evasion",
+   "item_edital": "9.15",
+   "id_matriz": null,
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "memorizacao",
+   "tipo_questao": "conceitual",
+   "enunciado": "A taxonomia das táticas, técnicas e subtécnicas adversárias proposta pela MITRE ATT&CK® estabelece uma linguagem comum para compartilhar informações sobre ameaças cibernéticas e para colaborar na prevenção de ameaças.\nUm exemplo de técnica da tática de evasão de defesa da matriz para empresas da MITRE ATT&CK® é",
+   "alternativas": {
+    "A": "criar conta.",
+    "B": "usar força bruta.",
+    "C": "ocultar artefatos.",
+    "D": "coletar informações do host da vítima.",
+    "E": "criar e modificar processos do sistema."
+   },
+   "gabarito": "C",
+   "resolucao": "**Hide Artifacts (ocultar artefatos)** é técnica da tática **Defense Evasion**. As demais pertencem a outras táticas: *Create Account* (persistência), *Brute Force* (acesso a credenciais), *Gather Victim Host Information* (reconhecimento) e *Create or Modify System Process* (persistência e escalada de privilégios).",
+   "analise_alternativas": {
+    "A": "Incorreta. Criar conta: persistência.",
+    "B": "Incorreta. Força bruta: acesso a credenciais.",
+    "C": "Correta. Ocultar artefatos: evasão de defesa.",
+    "D": "Incorreta. Coletar informações do host da vítima: reconhecimento.",
+    "E": "Incorreta. Criar e modificar processos do sistema: persistência/escalada de privilégios."
+   },
+   "fundamentacao": {
+    "item": "9.15",
+    "arquivo_teoria": "conteudo/09-seguranca-informacao/08-pentest-stride-mitre.md"
+   },
+   "ponto_atencao": "A prova de 2024 trata a lista de 14 táticas; a v19 do ATT&CK tem 15 (decisão do projeto: 14 + nota). **Tática** = objetivo; **técnica** = método.",
+   "revisao_rapida": "Defense Evasion: ocultar artefatos, desativar defesas, mascarar.",
+   "tags": [
+    "mitre-attack",
+    "defense-evasion",
+    "bndes-2024",
+    "oficial",
+    "media",
+    "memorizacao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "BNDES, Edital 1/2024",
+    "cargo": "Analista — Análise de Sistemas: Cibersegurança",
+    "ano": 2024,
+    "prova": "Prova 2 (manhã)",
+    "numero_original": 66,
+    "id_prova": "PRV-010",
+    "situacao_gabarito": "final após recursos (documento da banca, via espelho QConcursos)",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/candidatas-2026-11-04/bndes-2024-ciberseguranca-manha-prova.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000089",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, BNDES, Edital 1/2024, Prova 2, questão 67.",
+   "modulo": "09-seguranca-informacao",
+   "assunto": "CWE Top 25: SSRF",
+   "item_edital": "9.4",
+   "id_matriz": null,
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "compreensao",
+   "tipo_questao": "conceitual",
+   "enunciado": "O Common Weakness Enumeration (CWE) é uma base de conhecimento sobre fraquezas comuns em hardware e software que, sob certas circunstâncias, podem contribuir para a introdução de vulnerabilidades. O CWE Top 25 de 2023 demonstra as fraquezas de software mais comuns e impactantes atualmente. Dentre essas 25 fraquezas, destaca-se uma na qual o servidor web recebe uma URL e recupera o conteúdo dessa URL, mas não garante suficientemente que a solicitação seja enviada ao destino esperado, permitindo que o servidor seja usado como um proxy para realizar a varredura de portas de hosts em redes internas.\nEssa fraqueza é listada no CWE como",
+   "alternativas": {
+    "A": "SSRF",
+    "B": "CSRF",
+    "C": "Out-of-bounds read",
+    "D": "Missing Authorization",
+    "E": "Deserialization of Untrusted Data"
+   },
+   "gabarito": "A",
+   "resolucao": "**SSRF** (*Server-Side Request Forgery*): o servidor é induzido a fazer requisições a destinos escolhidos pelo atacante (inclusive redes internas), servindo de *proxy* para varreduras e acessos indevidos.",
+   "analise_alternativas": {
+    "A": "Correta. SSRF: o servidor requisita a URL controlada pelo atacante.",
+    "B": "Incorreta. CSRF induz o navegador de uma vítima autenticada a enviar requisições indesejadas ao site.",
+    "C": "Incorreta. Out-of-bounds read é leitura fora dos limites de memória.",
+    "D": "Incorreta. Missing Authorization é ausência de verificação de permissão.",
+    "E": "Incorreta. Deserialization of Untrusted Data é desserializar dados não confiáveis, com possibilidade de execução de código."
+   },
+   "fundamentacao": {
+    "item": "9.4",
+    "arquivo_teoria": "conteudo/09-seguranca-informacao/03-ameacas-e-malwares.md"
+   },
+   "ponto_atencao": "**SSRF**: o **servidor** faz a requisição. **CSRF**: o **navegador da vítima** faz a requisição.",
+   "revisao_rapida": "SSRF: servidor usado como proxy para alcançar a rede interna.",
+   "tags": [
+    "cwe",
+    "ssrf",
+    "bndes-2024",
+    "oficial",
+    "media",
+    "compreensao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "BNDES, Edital 1/2024",
+    "cargo": "Analista — Análise de Sistemas: Cibersegurança",
+    "ano": 2024,
+    "prova": "Prova 2 (manhã)",
+    "numero_original": 67,
+    "id_prova": "PRV-010",
+    "situacao_gabarito": "final após recursos (documento da banca, via espelho QConcursos)",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/candidatas-2026-11-04/bndes-2024-ciberseguranca-manha-prova.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000090",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, BNDES, Edital 1/2024, Prova 2, questão 68.",
+   "modulo": "09-seguranca-informacao",
+   "assunto": "CVSS 4.0: grupos de métricas",
+   "item_edital": "9.2",
+   "id_matriz": null,
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "memorizacao",
+   "tipo_questao": "conceitual",
+   "enunciado": "O Common Vulnerability Scoring System (CVSS) é um framework aberto para comunicar as características e a gravidade das vulnerabilidades de sistemas que propõe uma maneira de capturar as principais características de uma vulnerabilidade e de produzir uma pontuação numérica que reflete sua gravidade e pode ser traduzida em uma representação qualitativa.\nOs quatro grupos de métricas definidos no CVSS versão 4.0 são:",
+   "alternativas": {
+    "A": "Base, Threat, Temporal e Supplemental",
+    "B": "Base, Threat, Environmental e Temporal",
+    "C": "Base, Threat, Environmental e Supplemental",
+    "D": "Base, Temporal, Environmental e Supplemental",
+    "E": "Threat, Temporal, Environmental e Supplemental"
+   },
+   "gabarito": "C",
+   "resolucao": "No **CVSS 4.0**, os grupos são **Base**, **Threat** (substitui o antigo *Temporal*), **Environmental** e **Supplemental** (novo). O CVSS 3.x tinha Base, Temporal e Environmental.",
+   "analise_alternativas": {
+    "A": "Incorreta. \"Temporal\" não existe no 4.0, e falta Environmental.",
+    "B": "Incorreta. \"Temporal\" não existe no 4.0, e falta Supplemental.",
+    "C": "Correta. Base, Threat, Environmental e Supplemental: os quatro grupos do 4.0.",
+    "D": "Incorreta. \"Temporal\" foi renomeado para Threat, e falta Threat.",
+    "E": "Incorreta. Falta o grupo Base, obrigatório."
+   },
+   "fundamentacao": {
+    "item": "9.2",
+    "arquivo_teoria": "conteudo/09-seguranca-informacao/14-operacao-de-seguranca.md"
+   },
+   "ponto_atencao": "Evolução: **3.1** = Base, Temporal, Environmental; **4.0** = Base, **Threat**, Environmental, **Supplemental**.",
+   "revisao_rapida": "CVSS 4.0: Base, Threat, Environmental, Supplemental.",
+   "tags": [
+    "cvss",
+    "vulnerabilidades",
+    "bndes-2024",
+    "oficial",
+    "media",
+    "memorizacao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "BNDES, Edital 1/2024",
+    "cargo": "Analista — Análise de Sistemas: Cibersegurança",
+    "ano": 2024,
+    "prova": "Prova 2 (manhã)",
+    "numero_original": 68,
+    "id_prova": "PRV-010",
+    "situacao_gabarito": "final após recursos (documento da banca, via espelho QConcursos)",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/candidatas-2026-11-04/bndes-2024-ciberseguranca-manha-prova.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000091",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, BNDES, Edital 1/2024, Prova 2, questão 69.",
+   "modulo": "09-seguranca-informacao",
+   "assunto": "ISO/IEC 27002:2022: atributo de domínios de segurança",
+   "item_edital": "9.19",
+   "id_matriz": null,
+   "itens_secundarios": [],
+   "dificuldade": "dificil",
+   "habilidade": "memorizacao",
+   "tipo_questao": "normativa",
+   "enunciado": "A norma ABNT NBR ISO/IEC 27002:2022 organiza os controles de segurança em diferentes categorias (ou temas), e cada controle está associado a cinco atributos com valores de atributo correspondentes. Dentre esses atributos, o de domínios de segurança é usado para visualizar controles na perspectiva de quatro domínios de segurança da informação.\nOs valores desse atributo consistem em:",
+   "alternativas": {
+    "A": "Confidencialidade, Integridade, Disponibilidade e Resiliência",
+    "B": "Governança, Defesa, Continuidade e Segurança_física",
+    "C": "Governança, Confidencialidade, Integridade e Disponibilidade",
+    "D": "Governança_e_Ecossistema, Proteção, Defesa e Resiliência",
+    "E": "Governança_e_Ecossistema, Proteção, Defesa e Segurança_física"
+   },
+   "gabarito": "D",
+   "resolucao": "Na ISO/IEC 27002:2022, os atributos são: **tipo de controle**, **propriedades de segurança da informação**, **conceitos de cibersegurança**, **capacidades operacionais** e **domínios de segurança**. Os valores deste último são **Governança e Ecossistema, Proteção, Defesa e Resiliência**.",
+   "analise_alternativas": {
+    "A": "Incorreta. Confidencialidade, integridade e disponibilidade são valores do atributo *propriedades de segurança da informação*.",
+    "B": "Incorreta. A combinação mistura termos que não são os valores do atributo.",
+    "C": "Incorreta. Mistura governança com propriedades da tríade CIA.",
+    "D": "Correta. São os quatro valores do atributo *domínios de segurança*.",
+    "E": "Incorreta. \"Segurança física\" é um dos **temas** (categorias), não um valor deste atributo."
+   },
+   "fundamentacao": {
+    "item": "9.19",
+    "arquivo_teoria": "conteudo/09-seguranca-informacao/11-iso-27002.md"
+   },
+   "ponto_atencao": "Não confunda **temas** (organizacionais, pessoas, físicos, tecnológicos) com os **atributos** e seus valores. Os quatro domínios: **Governança e Ecossistema, Proteção, Defesa, Resiliência**.",
+   "revisao_rapida": "27002:2022: 4 temas, 93 controles, 5 atributos.",
+   "tags": [
+    "iso-27002",
+    "atributos",
+    "bndes-2024",
+    "oficial",
+    "dificil",
+    "memorizacao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "BNDES, Edital 1/2024",
+    "cargo": "Analista — Análise de Sistemas: Cibersegurança",
+    "ano": 2024,
+    "prova": "Prova 2 (manhã)",
+    "numero_original": 69,
+    "id_prova": "PRV-010",
+    "situacao_gabarito": "final após recursos (documento da banca, via espelho QConcursos)",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/candidatas-2026-11-04/bndes-2024-ciberseguranca-manha-prova.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000094",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, BNDES, Edital 1/2024, Prova 3, questão 42.",
+   "modulo": "09-seguranca-informacao",
+   "assunto": "RBAC e autenticação multifator",
+   "item_edital": "9.10",
+   "id_matriz": null,
+   "itens_secundarios": [
+    "9.9"
+   ],
+   "dificuldade": "media",
+   "habilidade": "compreensao",
+   "tipo_questao": "cenario",
+   "enunciado": "Em uma aplicação financeira, um banco está implementando a autenticação multifatorial dos usuários junto com um sistema de Controle de Acesso Baseado em Papéis (RBAC, sigla em inglês) para gerenciar as permissões desses mesmos usuários.\n\nConsiderando-se esse contexto, quando implementado, o RBAC",
+   "alternativas": {
+    "A": "atribuirá permissões baseadas em funções sem considerar a identidade do usuário, enquanto a autenticação atribuirá permissões diretamente aos usuários.",
+    "B": "lidará exclusivamente com a autenticação dos usuários, garantindo que apenas usuários autenticados possam acessar a aplicação.",
+    "C": "será responsável por determinar as permissões dos usuários com base em seus papéis, enquanto a autenticação verificará a identidade dos usuários antes de atribuir esses papéis.",
+    "D": "será independente da autenticação, e ambos não se relacionarão na gestão de acesso.",
+    "E": "substituirá a necessidade de autenticação multifatorial, uma vez que os papéis já definem quem pode acessar a aplicação."
+   },
+   "gabarito": "C",
+   "resolucao": "**Autenticação** responde \"**quem é você?**\" (MFA reforça); **autorização** responde \"**o que você pode fazer?**\". O RBAC é modelo de **autorização**: as permissões associam-se a **papéis**, e os usuários recebem papéis. Os dois são complementares.",
+   "analise_alternativas": {
+    "A": "Incorreta. A autenticação não atribui permissões; e o RBAC considera o papel do usuário identificado.",
+    "B": "Incorreta. O RBAC trata de autorização, e não de autenticação.",
+    "C": "Correta. RBAC define permissões por papel; a autenticação confirma a identidade antes.",
+    "D": "Incorreta. Ambos se relacionam: o papel só vale para um usuário autenticado.",
+    "E": "Incorreta. Papéis não substituem a autenticação: sem identificar o usuário, não há como aplicar o papel."
+   },
+   "fundamentacao": {
+    "item": "9.10",
+    "arquivo_teoria": "conteudo/09-seguranca-informacao/05-vpn-mdm-sso-mfa-iam.md"
+   },
+   "ponto_atencao": "**AAA**: autenticação (identidade), autorização (permissões), auditoria (registro). RBAC e ABAC são modelos de **autorização**.",
+   "revisao_rapida": "Autenticação identifica; RBAC autoriza por papéis.",
+   "tags": [
+    "rbac",
+    "mfa",
+    "iam",
+    "bndes-2024",
+    "oficial",
+    "media",
+    "compreensao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "BNDES, Edital 1/2024",
+    "cargo": "Analista — Análise de Sistemas: Desenvolvimento",
+    "ano": 2024,
+    "prova": "Prova 3 (manhã)",
+    "numero_original": 42,
+    "id_prova": "PRV-014",
+    "situacao_gabarito": "final após recursos (documento da banca, via espelho QConcursos)",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/candidatas-2026-11-04/bndes-2024-desenvolvimento-manha-prova.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000099",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, BNDES, Edital 1/2024, Prova 3, questão 53.",
+   "modulo": "09-seguranca-informacao",
+   "assunto": "Recuperação de desastres como serviço (DRaaS)",
+   "item_edital": "9.20",
+   "id_matriz": null,
+   "itens_secundarios": [
+    "9.16"
+   ],
+   "dificuldade": "media",
+   "habilidade": "compreensao",
+   "tipo_questao": "cenario",
+   "enunciado": "Uma empresa financeira está elaborando um projeto para dar continuidade aos negócios de TI nas situações de recuperação de desastres, focando na parte de backup dos dados e na infraestrutura de TI. Para isso, a empresa permitirá que tais ações sejam sempre hospedadas em uma infraestrutura de nuvem, associada a um provedor de terceiros. Nesse modelo proposto, ocorrendo uma crise, esse provedor implementará e orquestrará o plano de recuperação de desastres, de modo a dar continuidade ao acesso e à funcionalidade dos sistemas, com o mínimo de interrupções nas operações.\nEsse tipo de recuperação de desastres utilizará o modelo de serviços",
+   "alternativas": {
+    "A": "IaaS",
+    "B": "BaaS",
+    "C": "DRaaS",
+    "D": "DRVMaaS",
+    "E": "PaaS"
+   },
+   "gabarito": "C",
+   "resolucao": "No **DRaaS** (*Disaster Recovery as a Service*), um **provedor de nuvem** replica dados e infraestrutura e **executa a recuperação** em caso de desastre, para manter a continuidade com o mínimo de interrupção.",
+   "analise_alternativas": {
+    "A": "Incorreta. IaaS entrega infraestrutura (máquinas, rede, armazenamento) sem orquestrar o plano de recuperação.",
+    "B": "Incorreta. BaaS (*Backup as a Service*) cobre apenas o backup dos dados, e não a orquestração da recuperação de toda a infraestrutura.",
+    "C": "Correta. O provedor implementa e orquestra a recuperação: DRaaS.",
+    "D": "Incorreta. \"DRVMaaS\" não é modelo de serviço padrão.",
+    "E": "Incorreta. PaaS entrega plataforma de desenvolvimento e execução."
+   },
+   "fundamentacao": {
+    "item": "9.20",
+    "arquivo_teoria": "conteudo/09-seguranca-informacao/13-seguranca-cloud-e-iot.md"
+   },
+   "ponto_atencao": "BaaS = **guardar** cópias; DRaaS = **recuperar** serviços (replicação, failover, orquestração). Relaciona-se a RTO e RPO (9.16).",
+   "revisao_rapida": "DRaaS: provedor orquestra o plano de recuperação.",
+   "tags": [
+    "draas",
+    "nuvem",
+    "continuidade",
+    "bndes-2024",
+    "oficial",
+    "media",
+    "compreensao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "BNDES, Edital 1/2024",
+    "cargo": "Analista — Análise de Sistemas: Desenvolvimento",
+    "ano": 2024,
+    "prova": "Prova 3 (manhã)",
+    "numero_original": 53,
+    "id_prova": "PRV-014",
+    "situacao_gabarito": "final após recursos (documento da banca, via espelho QConcursos)",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/candidatas-2026-11-04/bndes-2024-desenvolvimento-manha-prova.pdf",
     "sha256": "ver docs/estrategia/base-provas.md"
    },
    "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",

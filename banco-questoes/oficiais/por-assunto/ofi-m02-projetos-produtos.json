@@ -2,7 +2,7 @@
  "modulo": "Questões oficiais — m02-projetos-produtos",
  "lote": "T04 — Transpetro 2023 (Prova 6) e 2018 (Prova 15)",
  "data": "2026-11-06",
- "total": 8,
+ "total": 9,
  "questoes": [
   {
    "id": "OFI-000012",
@@ -473,6 +473,65 @@
     "situacao_gabarito": "de terceiros (Ética), alterado em 09/05/2018; não validado contra a banca",
     "aderencia_edital": "aderente",
     "url": "banco-questoes/oficiais/fontes-brutas/transpetro-2018-prova15-analista-sistemas-jr-processos-negocio.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000098",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, BNDES, Edital 1/2024, Prova 3, questão 48.",
+   "modulo": "02-projetos-produtos",
+   "assunto": "Nexus: accountability adicional em Scrum escalado",
+   "item_edital": "2.3",
+   "id_matriz": "E5-028",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "memorizacao",
+   "tipo_questao": "conceitual",
+   "enunciado": "Uma empresa especializada em desenvolvimento de software com metodologia ágil Scrum aceitou um contrato em que o tamanho do software desejado exige que seis times trabalhem simultaneamente. Decidiu-se usar conceitos de Scaled Agile para seguir no projeto, o que exige práticas adicionais ao Scrum tradicional. Investigando as possibilidades, a empresa escolheu implantar o Nexus, um framework de processo para múltiplos times Scrum trabalharem juntos. Para que sejam obtidos os melhores resultados no projeto, é necessário implantar no modo de trabalho da empresa um novo papel (accountability), adicional aos três papéis do Scrum que ela já implementa, com a finalidade de coordenar, de treinar e de supervisionar a aplicação do Nexus e a operação do Scrum.\n\nConsiderando-se esse contexto, é necessário criar o papel (accountability)",
+   "alternativas": {
+    "A": "Dono da Integração Nexus",
+    "B": "Gerente de Produto Nexus",
+    "C": "Nexus Boss",
+    "D": "Planejador Integrado Nexus",
+    "E": "Time de Integração Nexus"
+   },
+   "gabarito": "E",
+   "resolucao": "No **Nexus**, o **Time de Integração Nexus (NIT)** é a *accountability* adicional: coordena, orienta e supervisiona a aplicação do Nexus e do Scrum entre os times, ajuda a resolver dependências e integração. É composto pelo Product Owner, pelo Scrum Master Nexus e por membros do time. Os demais nomes não são papéis do Nexus.",
+   "analise_alternativas": {
+    "A": "Incorreta. Não é papel do Nexus.",
+    "B": "Incorreta. O PO do Nexus faz parte do NIT; \"Gerente de Produto Nexus\" não é papel.",
+    "C": "Incorreta. \"Nexus Boss\" não existe.",
+    "D": "Incorreta. \"Planejador Integrado Nexus\" não existe.",
+    "E": "Correta. O Nexus Integration Team é a accountability adicional do Nexus."
+   },
+   "fundamentacao": {
+    "item": "2.3",
+    "arquivo_teoria": "conteudo/02-projetos-produtos/04-metodos-ageis-escalados.md"
+   },
+   "ponto_atencao": "Aderência parcial: o item 2.3 do edital cita o **SAFe**; o Nexus é outro framework de escala. No SAFe, equivalentes: **RTE, Product Management, System Architect**.",
+   "revisao_rapida": "Nexus: NIT (Nexus Integration Team).",
+   "tags": [
+    "nexus",
+    "agil-em-escala",
+    "bndes-2024",
+    "oficial",
+    "media",
+    "memorizacao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "BNDES, Edital 1/2024",
+    "cargo": "Analista — Análise de Sistemas: Desenvolvimento",
+    "ano": 2024,
+    "prova": "Prova 3 (manhã)",
+    "numero_original": 48,
+    "id_prova": "PRV-014",
+    "situacao_gabarito": "final após recursos (documento da banca, via espelho QConcursos)",
+    "aderencia_edital": "parcial",
+    "url": "banco-questoes/oficiais/fontes-brutas/candidatas-2026-11-04/bndes-2024-desenvolvimento-manha-prova.pdf",
     "sha256": "ver docs/estrategia/base-provas.md"
    },
    "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
