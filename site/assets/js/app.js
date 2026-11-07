@@ -121,6 +121,9 @@
       if (e[a.id]) delete e[a.id]; else e[a.id] = new Date().toISOString().slice(0, 10);
       TP.salvar(); chk.textContent = e[a.id] ? "Estudado ✓ (desmarcar)" : "Marcar como estudado"; chk.setAttribute("aria-pressed", String(!!e[a.id]));
     });
+    var extras = h("div", { class: "row" });
+    main.appendChild(extras);
+    if (TP.fcBotaoAssunto) TP.fcBotaoAssunto(a.id, extras);
     main.appendChild(h("div", { class: "nav2" },
       i > 0 ? h("a", { class: "btn", href: "#/conteudo/" + lista[i - 1].id }, "← " + lista[i - 1].titulo) : h("a", { class: "btn", href: "#/conteudo" }, "← Índice"),
       chk,

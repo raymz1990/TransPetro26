@@ -6,7 +6,8 @@
   window.TP = window.TP || {};
 
   function vazio() {
-    return { versao: VERSAO, estudados: {}, respostas: {}, marcadas: {}, erros: {}, simulados: { tentativas: [], andamento: {} } };
+    return { versao: VERSAO, estudados: {}, respostas: {}, marcadas: {}, erros: {}, simulados: { tentativas: [], andamento: {} },
+      flashcards: {}, atividade: {}, config: {} };
   }
   function ehObjeto(x) { return x && typeof x === "object" && !Array.isArray(x); }
 
@@ -27,6 +28,11 @@
     if (!ehObjeto(d.simulados)) throw new Error("Campo inválido: simulados");
     if (!Array.isArray(d.simulados.tentativas)) d.simulados.tentativas = [];
     if (!ehObjeto(d.simulados.andamento)) d.simulados.andamento = {};
+    /* Campos acrescentados depois (T09): flashcards, atividade diária e configurações. Backups antigos não os possuem. */
+    ["flashcards", "atividade", "config"].forEach(function (k) {
+      if (d[k] === undefined) d[k] = {};
+      if (!ehObjeto(d[k])) throw new Error("Campo inválido: " + k);
+    });
     d.versao = VERSAO;
     return d;
   }
@@ -76,6 +82,16 @@
       dados.simulados.tentativas.forEach(function (t) { ids[t.id] = 1; });
       novo.simulados.tentativas.forEach(function (t) { if (!ids[t.id]) dados.simulados.tentativas.push(t); });
       dados.simulados.tentativas.sort(function (a, b) { return a.inicio - b.inicio; });
+      /* Flashcards: prevalece o registro de revisão mais recente. Atividade diária: maior valor por campo (evita somar duas vezes o mesmo dia). */
+      Object.keys(novo.flashcards).forEach(function (id) {
+        var a = dados.flashcards[id], b = novo.flashcards[id];
+        if (!a || (b.ult || "") > (a.ult || "")) dados.flashcards[id] = b;
+      });
+      Object.keys(novo.atividade).forEach(function (dia) {
+        var a = dados.atividade[dia] = dados.atividade[dia] || {}, b = novo.atividade[dia];
+        Object.keys(b).forEach(function (k) { a[k] = Math.max(a[k] || 0, b[k] || 0); });
+      });
+      Object.keys(novo.config).forEach(function (k) { if (dados.config[k] === undefined) dados.config[k] = novo.config[k]; });
       Object.keys(novo.simulados.andamento).forEach(function (s) { if (!dados.simulados.andamento[s]) dados.simulados.andamento[s] = novo.simulados.andamento[s]; });
     }
     return TP.salvar();

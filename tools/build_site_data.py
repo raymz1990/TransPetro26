@@ -86,3 +86,9 @@ for q in qs:
     busca.append({"k": "q", "id": q["id"], "t": q["id"] + " · " + q["assunto"], "s": "item " + str(q["item_edital"]), "x": _limpa(q["enunciado"] + " " + alts + " " + q.get("revisao_rapida", ""))[:3000], "g": q["modulo"]})
 json.dump({"n": len(busca), "itens": busca}, open(os.path.join(S, "assets/data/busca.json"), "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
 print("busca", len(busca), "entradas")
+
+# ---- Flashcards (T09): extraídos da teoria e das questões ----
+import sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import build_flashcards
+build_flashcards.gerar(grupos, qs)
