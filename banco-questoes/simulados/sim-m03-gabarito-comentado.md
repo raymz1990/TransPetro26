@@ -1,12 +1,12 @@
 # Simulado do módulo 3 — Processos e seu gerenciamento
 
-**Status:** rascunho · **Tempo:** 54 min · **Questões:** 14
+**Status:** rascunho · **Tempo:** 58 min · **Questões:** 15
 
 **Critério de distribuição:** Até 15 questões por módulo, priorizando itens ainda não usados e mistura de dificuldade 30/50/20% (critério pedagógico).
 
 **Observações:** Mistura de questões oficiais e autorais do módulo; algumas ainda `em_revisao`.
 
-Composição: tipo {'autoral': 12, 'oficial': 2} · status {'validada': 10, 'em_revisao': 4} · dificuldade {'media': 6, 'facil': 6, 'dificil': 2}
+Composição: tipo {'autoral': 12, 'oficial': 3} · status {'validada': 10, 'em_revisao': 5} · dificuldade {'media': 7, 'facil': 6, 'dificil': 2}
 
 ## 1. AUT-000022 — Validar o escopo e grupo de Monitoramento e Controle
 
@@ -176,7 +176,21 @@ As dez áreas são: **integração, escopo, cronograma, custos, qualidade, recur
 
 **Revisão rápida:** 10 áreas: ICSC QRC RAP (integração, escopo, cronograma, custos, qualidade, recursos, comunicações, riscos, aquisições, partes interessadas).
 
-## 13. OFI-000017 — Sequência dos grupos de processos
+## 13. OFI-000047 — Workflow: automação de processos de negócio
+
+*Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 57.* · item 3 · Média · gabarito **B**
+
+A definição clássica (WfMC) descreve **workflow** como a **automação de um processo de negócio, total ou parcial**, em que documentos, informações ou tarefas são **passados entre participantes**, segundo **regras de procedimento**.
+
+- **A)** Incorreta. Descreve o contexto humano do processo, sem automação.
+- **B)** Correta. Corresponde à definição de workflow da WfMC.
+- **C)** Incorreta. Descreve captura e indexação de documentos.
+- **D)** Incorreta. Descreve melhoria/racionalização de processos por qualidade, não workflow.
+- **E)** Incorreta. Parece a definição, mas exige "pelo menos um agente" e "todas as atividades de troca", o que é mais restritivo e impreciso.
+
+**Revisão rápida:** Workflow = automação de processo (todo ou parte), tarefas passando entre participantes por regras.
+
+## 14. OFI-000017 — Sequência dos grupos de processos
 
 *Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 55.* · item 3 · Fácil · gabarito **B**
 
@@ -190,7 +204,7 @@ A ordem dos grupos de processos (PMBOK 6ª ed.) é **Iniciação → Planejament
 
 **Revisão rápida:** Ordem: Iniciação, Planejamento, Execução, M&C (contínuo), Encerramento.
 
-## 14. OFI-000018 — Grupo de monitoramento e controle
+## 15. OFI-000018 — Grupo de monitoramento e controle
 
 *Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 70.* · item 3 · Fácil · gabarito **A**
 

@@ -13,46 +13,46 @@
  },
  "composicao": {
   "por_tipo": {
-   "oficial": 4,
-   "autoral": 11
+   "autoral": 8,
+   "oficial": 7
   },
   "por_status": {
-   "em_revisao": 6,
-   "validada": 9
+   "validada": 7,
+   "em_revisao": 8
   },
   "por_dificuldade": {
-   "media": 7,
-   "facil": 6,
+   "media": 9,
+   "facil": 4,
    "dificil": 2
   },
   "por_gabarito": {
-   "A": 3,
-   "B": 4,
    "E": 3,
+   "A": 4,
    "D": 3,
-   "C": 2
+   "C": 3,
+   "B": 2
   }
  },
  "questoes": [
   {
    "ordem": 1,
-   "id": "OFI-000024"
-  },
-  {
-   "ordem": 2,
-   "id": "AUT-000041"
-  },
-  {
-   "ordem": 3,
    "id": "AUT-000044"
   },
   {
-   "ordem": 4,
+   "ordem": 2,
    "id": "AUT-000043"
   },
   {
-   "ordem": 5,
+   "ordem": 3,
+   "id": "OFI-000049"
+  },
+  {
+   "ordem": 4,
    "id": "OFI-000025"
+  },
+  {
+   "ordem": 5,
+   "id": "AUT-000045"
   },
   {
    "ordem": 6,
@@ -60,7 +60,7 @@
   },
   {
    "ordem": 7,
-   "id": "AUT-000045"
+   "id": "OFI-000053"
   },
   {
    "ordem": 8,
@@ -68,31 +68,31 @@
   },
   {
    "ordem": 9,
-   "id": "AUT-000048"
-  },
-  {
-   "ordem": 10,
-   "id": "AUT-000049"
-  },
-  {
-   "ordem": 11,
    "id": "AUT-000047"
   },
   {
-   "ordem": 12,
-   "id": "AUT-000106"
+   "ordem": 10,
+   "id": "AUT-000048"
   },
   {
-   "ordem": 13,
+   "ordem": 11,
+   "id": "AUT-000049"
+  },
+  {
+   "ordem": 12,
    "id": "OFI-000026"
   },
   {
+   "ordem": 13,
+   "id": "AUT-000106"
+  },
+  {
    "ordem": 14,
-   "id": "AUT-000050"
+   "id": "OFI-000050"
   },
   {
    "ordem": 15,
-   "id": "AUT-000107"
+   "id": "OFI-000051"
   }
  ]
 }

@@ -1,8 +1,8 @@
 {
  "modulo": "Questões oficiais — m07-analise-dados",
- "lote": "T04 — Transpetro 2023 (Prova 6)",
+ "lote": "T04 — Transpetro 2023 (Prova 6) e 2018 (Prova 15)",
  "data": "2026-11-06",
- "total": 1,
+ "total": 2,
  "questoes": [
   {
    "id": "OFI-000032",
@@ -57,6 +57,67 @@
     "situacao_gabarito": "de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca",
     "aderencia_edital": "aderente",
     "url": "banco-questoes/oficiais/fontes-brutas/transpetro-2023-psp002-prova06-analise-sistemas-processos-negocios.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000055",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 54.",
+   "modulo": "07-analise-dados",
+   "assunto": "Sistema de Suporte à Decisão (tipo de sistema de informação)",
+   "item_edital": "7.11",
+   "id_matriz": "E5-070",
+   "itens_secundarios": [
+    "7.2"
+   ],
+   "dificuldade": "media",
+   "habilidade": "aplicacao",
+   "tipo_questao": "cenario",
+   "enunciado": "Determinada empresa de transporte possui uma frota de caminhões que movimenta diversos tipos de carga, tais como eletrônicos, brinquedos e eletrodomésticos. Um Sistema de Informações proprietário calcula detalhes financeiros e técnicos das viagens dessa frota. Os cálculos financeiros incluem, entre outros, custos de combustível, mão de obra e valor de frete. Os detalhes técnicos são inúmeros, como tipo e volume da carga, capacidade, consumo e velocidade dos caminhões, restrições dos trajetos, distâncias aos destinos e outros.\nO sistema responde a perguntas, tais como:\ni) dada uma especificação de carga, uma escala de entrega e preços de frete, quais caminhões e motoristas devem ser alocados para maximizar o lucro?\nii) qual conjunto (velocidade, trajeto) deve ser utilizado por determinado caminhão para otimizar o lucro e garantir as datas de entrega?\n\nCom base na descrição acima, o tipo de Sistema de Informação utilizado por essa empresa é o",
+   "alternativas": {
+    "A": "CRM",
+    "B": "SIG",
+    "C": "Sistema Especialista",
+    "D": "Sistema de Suporte à Decisão",
+    "E": "Sistema de Processamento de Transações"
+   },
+   "gabarito": "D",
+   "resolucao": "O **Sistema de Suporte à Decisão (SSD/DSS)** usa **modelos e dados** para apoiar decisões semiestruturadas, com análise e **otimização** (\"quais caminhões alocar para maximizar o lucro?\").",
+   "analise_alternativas": {
+    "A": "Incorreta. CRM gerencia o relacionamento com clientes.",
+    "B": "Incorreta. SIG produz relatórios gerenciais de rotina, resumindo dados, sem modelagem de otimização.",
+    "C": "Incorreta. Sistemas especialistas reproduzem o raciocínio de especialistas com base de regras.",
+    "D": "Correta. Modelagem e otimização para apoiar decisões: SSD.",
+    "E": "Incorreta. Processamento de transações registra eventos operacionais (vendas, pagamentos)."
+   },
+   "fundamentacao": {
+    "item": "7.11",
+    "arquivo_teoria": "conteudo/07-analise-dados/08-insights-e-tomada-de-decisao.md"
+   },
+   "ponto_atencao": "Aderência parcial (a classificação de SIs não é item literal do edital; relaciona-se a 7.11, BI como suporte à decisão). Palavras-chave: **maximizar/otimizar**, **modelos**, **decisões não rotineiras**.",
+   "revisao_rapida": "SSD = modelos e otimização para decisões semiestruturadas.",
+   "tags": [
+    "ssd",
+    "sistemas-de-informacao",
+    "transpetro-2018",
+    "oficial",
+    "media",
+    "aplicacao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Transpetro PSP RH 2018.1 (Edital nº 1)",
+    "cargo": "Analista de Sistemas Júnior — Processos de Negócio",
+    "ano": 2018,
+    "prova": "Prova 15",
+    "numero_original": 54,
+    "id_prova": "PRV-006",
+    "situacao_gabarito": "de terceiros (Ética), alterado em 09/05/2018; não validado contra a banca",
+    "aderencia_edital": "parcial",
+    "url": "banco-questoes/oficiais/fontes-brutas/transpetro-2018-prova15-analista-sistemas-jr-processos-negocio.pdf",
     "sha256": "ver docs/estrategia/base-provas.md"
    },
    "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",

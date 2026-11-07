@@ -6,15 +6,15 @@
 
 | Indicador | Valor |
 |---|---|
-| Questões no banco | 196 (Específicos 161 · Gerais 35) |
-| Oficiais / adaptadas / autorais | 41 / 0 / 155 |
-| Validadas pelo usuário / em revisão | 90 / 106 |
+| Questões no banco | 218 (Específicos 183 · Gerais 35) |
+| Oficiais / adaptadas / autorais | 63 / 0 / 155 |
+| Validadas pelo usuário / em revisão | 90 / 128 |
 | Itens do Anexo IV com ao menos uma questão principal | 94 de 94 |
 | Itens sem questão principal | nenhum |
-| Itens com apenas 1 questão principal | 60 |
+| Itens com apenas 1 questão principal | 53 |
 | Conhecimentos Gerais | 35 questões em 14 itens (Português: 12 itens; Inglês: 2 itens) |
 
-## M01 (30 questões: 11 oficiais, 19 autorais)
+## M01 (32 questões: 13 oficiais, 19 autorais)
 
 | ID matriz | Item | Texto oficial | Autorais | Oficiais | Total |
 |---|---|---|---|---|---|
@@ -27,7 +27,7 @@
 | E5-008 | 1.7 | Modelagem dimensional | 1 | 0 | 1 |
 | E5-009 | 1.8 | Avaliação de modelos de dados | 1 | 0 | 1 |
 | E5-010 | 1.9 | Técnicas de engenharia reversa para criação e atualização de modelos de dados | 1 | 0 | 1 |
-| E5-011 | 1.10 | Linguagem de consulta estruturada (SQL) | 1 | 1 | 2 |
+| E5-011 | 1.10 | Linguagem de consulta estruturada (SQL) | 1 | 2 | 3 |
 | E5-012 | 1.11 | Linguagem de definição de dados (DDL) | 1 | 0 | 1 |
 | E5-013 | 1.12 | Linguagem de manipulação de dados (DML) | 1 | 0 | 1 |
 | E5-014 | 1.13 | Sistema Gerenciador de Banco de Dados (SGBD) | 0 | 1 | 1 |
@@ -36,56 +36,56 @@
 | E5-017 | 1.16 | Transações de bancos de dados | 2 | 0 | 2 |
 | E5-018 | 1.17 | Melhoria de performance de banco de dados | 1 | 1 | 2 |
 | E5-019 | 1.18 | Bancos de dados NoSQL | 1 | 1 | 2 |
-| E5-020 | 1.19 | Integração dos dados (ETL, Transferência de Arquivos e Integração via Base de Dados) | 1 | 0 | 1 |
+| E5-020 | 1.19 | Integração dos dados (ETL, Transferência de Arquivos e Integração via Base de Dados) | 1 | 1 | 2 |
 | E5-021 | 1.20 | Banco de dados em memória | 1 | 0 | 1 |
 | E5-022 | 1.21 | Qualidade de dados e gestão de dados mestres e de referência | 1 | 0 | 1 |
 | E5-023 | 1.22 | Data Lakes e Soluções para Big Data | 0 | 1 | 1 |
 | E5-024 | 1.23 | Diferenciação entre bancos relacionais, multidimensionais, documentos e grafos. | 0 | 1 | 1 |
 
-## M02 (17 questões: 5 oficiais, 12 autorais)
+## M02 (20 questões: 8 oficiais, 12 autorais)
 
 | ID matriz | Item | Texto oficial | Autorais | Oficiais | Total |
 |---|---|---|---|---|---|
-| E5-026 | 2.1 | Scrum e Kanban | 4 | 1 | 5 |
+| E5-026 | 2.1 | Scrum e Kanban | 4 | 3 | 7 |
 | E5-027 | 2.2 | Gestão de projeto versus gestão de produto | 1 | 0 | 1 |
 | E5-028 | 2.3 | Impulso de práticas ágeis em escala, gestão de portfólio alinhada à estratégia de negócios e realização de entregas incrementais utilizando a metodologia safe | 1 | 1 | 2 |
-| E5-029 | 2.4 | PMBOK 7ª edição | 2 | 2 | 4 |
+| E5-029 | 2.4 | PMBOK 7ª edição | 2 | 3 | 5 |
 | E5-030 | 2.5 | Projetos e a organização | 1 | 1 | 2 |
 | E5-031 | 2.6 | Escritório de projetos | 2 | 0 | 2 |
 | E5-032 | 2.7 | Modelos e características. | 1 | 0 | 1 |
 
-## M03 (14 questões: 2 oficiais, 12 autorais)
+## M03 (15 questões: 3 oficiais, 12 autorais)
 
 | ID matriz | Item | Texto oficial | Autorais | Oficiais | Total |
 |---|---|---|---|---|---|
-| E5-033 | 3 | Processos, grupos de processos e área de conhecimento. | 12 | 2 | 14 |
+| E5-033 | 3 | Processos, grupos de processos e área de conhecimento. | 12 | 3 | 15 |
 
-## M04 (17 questões: 5 oficiais, 12 autorais)
+## M04 (18 questões: 6 oficiais, 12 autorais)
 
 | ID matriz | Item | Texto oficial | Autorais | Oficiais | Total |
 |---|---|---|---|---|---|
 | E5-035 | 4.1 | Conceitos, segmentos e mercado de tecnologia da informação | 1 | 0 | 1 |
 | E5-036 | 4.2 | Princípios de economia da inovação | 1 | 1 | 2 |
-| E5-037 | 4.3 | Conceitos e perspectivas da tecnologia | 0 | 1 | 1 |
+| E5-037 | 4.3 | Conceitos e perspectivas da tecnologia | 0 | 2 | 2 |
 | E5-038 | 4.4 | Ciência, pesquisa, desenvolvimento e indústria | 1 | 0 | 1 |
 | E5-039 | 4.5 | Conceitos, disciplinas, técnicas e ferramentas de gerenciamento de serviços de TI | 4 | 1 | 5 |
 | E5-040 | 4.6 | Lei Geral de Proteção de Dados Pessoais - LGPD (Lei nº 13.709, de 14 de agosto de 2018, e suas alterações). | 5 | 1 | 6 |
 
-## M05 (16 questões: 4 oficiais, 12 autorais)
+## M05 (21 questões: 9 oficiais, 12 autorais)
 
 | ID matriz | Item | Texto oficial | Autorais | Oficiais | Total |
 |---|---|---|---|---|---|
-| E5-042 | 5.1 | Levantamento, análise e gerenciamento de requisitos | 2 | 1 | 3 |
-| E5-043 | 5.2 | Ciclo de vida de sistemas e seus paradigmas | 2 | 1 | 3 |
-| E5-044 | 5.3 | Uso de modelos, metodologias, técnicas e ferramentas de análise e projeto de sistemas (paradigma estruturado e paradigma orientado a objetos) | 2 | 1 | 3 |
-| E5-045 | 5.4 | Verificação, validação e teste | 4 | 1 | 5 |
+| E5-042 | 5.1 | Levantamento, análise e gerenciamento de requisitos | 2 | 2 | 4 |
+| E5-043 | 5.2 | Ciclo de vida de sistemas e seus paradigmas | 2 | 2 | 4 |
+| E5-044 | 5.3 | Uso de modelos, metodologias, técnicas e ferramentas de análise e projeto de sistemas (paradigma estruturado e paradigma orientado a objetos) | 2 | 2 | 4 |
+| E5-045 | 5.4 | Verificação, validação e teste | 4 | 3 | 7 |
 | E5-046 | 5.5 | Ambientes de desenvolvimento de software. | 2 | 0 | 2 |
 
-## M06 (16 questões: 4 oficiais, 12 autorais)
+## M06 (17 questões: 5 oficiais, 12 autorais)
 
 | ID matriz | Item | Texto oficial | Autorais | Oficiais | Total |
 |---|---|---|---|---|---|
-| E5-048 | 6.1 | Conceitos de acessibilidade e usabilidade | 1 | 1 | 2 |
+| E5-048 | 6.1 | Conceitos de acessibilidade e usabilidade | 1 | 2 | 3 |
 | E5-049 | 6.2 | Histórias do usuário | 2 | 0 | 2 |
 | E5-050 | 6.3 | Desenho e planejamento de interação em aplicações web | 1 | 0 | 1 |
 | E5-051 | 6.4 | Projeto centrado no usuário de software | 1 | 0 | 1 |
@@ -97,7 +97,7 @@
 | E5-057 | 6.10 | Design thinking | 1 | 1 | 2 |
 | E5-058 | 6.11 | Análise de personas (papéis, perfis etc.) de usuários de software. | 2 | 0 | 2 |
 
-## M07 (13 questões: 1 oficiais, 12 autorais)
+## M07 (14 questões: 2 oficiais, 12 autorais)
 
 | ID matriz | Item | Texto oficial | Autorais | Oficiais | Total |
 |---|---|---|---|---|---|
@@ -111,7 +111,7 @@
 | E5-067 | 7.8 | Construção de relatórios e dashboards interativos em ferramentas de BI | 1 | 0 | 1 |
 | E5-068 | 7.9 | Manipulação de dados em planilhas | 1 | 0 | 1 |
 | E5-069 | 7.10 | Geração de insights a partir de relatórios e dashboards | 1 | 0 | 1 |
-| E5-070 | 7.11 | BI como suporte a processos de tomada decisão. | 1 | 0 | 1 |
+| E5-070 | 7.11 | BI como suporte a processos de tomada decisão. | 1 | 1 | 2 |
 
 ## M08 (13 questões: 2 oficiais, 11 autorais)
 
@@ -127,18 +127,18 @@
 | E5-079 | 8.8 | Valores-verdade | 2 | 0 | 2 |
 | E5-080 | 8.9 | Funções de avaliação. | 1 | 0 | 1 |
 
-## M09 (25 questões: 7 oficiais, 18 autorais)
+## M09 (33 questões: 15 oficiais, 18 autorais)
 
 | ID matriz | Item | Texto oficial | Autorais | Oficiais | Total |
 |---|---|---|---|---|---|
 | E5-082 | 9.1 | Segurança física e lógica | 1 | 0 | 1 |
-| E5-083 | 9.2 | Operação de segurança (Firewall, Proxy, IPS/IDS, DLP, CASB, SIEM, Antivírus, EDR, WAF, Gestão de vulnerabilidades, Monitoração, Backup) | 1 | 1 | 2 |
-| E5-084 | 9.3 | Softwares maliciosos (ransomware, vírus, worms, spywares, rootkit etc.) | 1 | 0 | 1 |
+| E5-083 | 9.2 | Operação de segurança (Firewall, Proxy, IPS/IDS, DLP, CASB, SIEM, Antivírus, EDR, WAF, Gestão de vulnerabilidades, Monitoração, Backup) | 1 | 2 | 3 |
+| E5-084 | 9.3 | Softwares maliciosos (ransomware, vírus, worms, spywares, rootkit etc.) | 1 | 1 | 2 |
 | E5-085 | 9.4 | Ataques (DDoS, SQL Injection, XSS, CSRF, Path Traversal etc.) | 1 | 0 | 1 |
 | E5-086 | 9.5 | Técnicas de desenvolvimento seguro, SAST/DAST/IAST | 0 | 1 | 1 |
-| E5-087 | 9.6 | VPN | 1 | 0 | 1 |
+| E5-087 | 9.6 | VPN | 1 | 1 | 2 |
 | E5-088 | 9.7 | MDM | 1 | 0 | 1 |
-| E5-089 | 9.8 | SSO | 1 | 0 | 1 |
+| E5-089 | 9.8 | SSO | 1 | 1 | 2 |
 | E5-090 | 9.9 | MFA | 1 | 0 | 1 |
 | E5-091 | 9.10 | Gestão de Identidade e acesso (autenticação, autorização e auditoria), RBAC e ABAC | 0 | 1 | 1 |
 | E5-092 | 9.11 | Conceitos gerais: Gerenciamento de resposta a incidente (NIST SP 800-61) | 1 | 1 | 2 |
@@ -148,8 +148,8 @@
 | E5-096 | 9.15 | conhecimento das Táticas do framework Mitre ATT&CK | 0 | 1 | 1 |
 | E5-097 | 9.16 | Gestão de riscos (ISO 31000), Gestão de Continuidade de Negócios (ISO 22301) e Lei Sarbannes-Oxley | 1 | 0 | 1 |
 | E5-098 | 9.17 | Políticas de Segurança de Informação | 1 | 0 | 1 |
-| E5-099 | 9.18 | Classificação de informações | 1 | 0 | 1 |
-| E5-100 | 9.19 | Norma ISO 27002, Criptografia, certificação digital e assinatura digital | 1 | 2 | 3 |
+| E5-099 | 9.18 | Classificação de informações | 1 | 1 | 2 |
+| E5-100 | 9.19 | Norma ISO 27002, Criptografia, certificação digital e assinatura digital | 1 | 5 | 6 |
 | E5-101 | 9.20 | Conceitos de segurança em nuvem | 1 | 0 | 1 |
 | E5-102 | 9.21 | Segurança em IoT. | 1 | 0 | 1 |
 
@@ -174,4 +174,4 @@
 
 ## Distribuição das alternativas corretas (todo o banco)
 
-A 40 · B 42 · C 37 · D 41 · E 36. Alternativa correta é a mais longa em 44 de 196 questões (22%); nas oficiais não há controle do projeto sobre isso.
+A 46 · B 49 · C 40 · D 43 · E 40. Alternativa correta é a mais longa em 51 de 218 questões (23%); nas oficiais não há controle do projeto sobre isso.

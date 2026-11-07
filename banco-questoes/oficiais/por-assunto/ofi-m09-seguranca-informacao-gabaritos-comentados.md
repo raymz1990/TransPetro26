@@ -1,4 +1,4 @@
-# Questões oficiais — m09-seguranca-informacao — gabaritos comentados (T04 — Transpetro 2023 (Prova 6))
+# Questões oficiais — m09-seguranca-informacao — gabaritos comentados (T04 — Transpetro 2023 (Prova 6) e 2018 (Prova 15))
 
 ## OFI-000035 — SDL: testes SAST x DAST
 
@@ -139,3 +139,163 @@ Na edição de 2013 da ISO/IEC 27002, a proteção contra malware é um objetivo
 **Revisão rápida:** Malware: 27002:2013 → 12.2 (operações); 27002:2022 → 8.7 (tecnológico).
 
 **Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 44; gabarito: de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca.
+
+## OFI-000056 — Classificação da informação: quem decide
+
+*Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 45.*
+
+**Gabarito: E**
+
+A classificação é **decisão de negócio**: quem **conhece o valor e a sensibilidade** da informação (proprietário, gestores da área) a classifica; a TI e a segurança implementam os controles correspondentes ao nível.
+
+- **A)** Incorreta. A TI é custodiante; não decide o valor da informação.
+- **B)** Incorreta. Terceirizar a decisão não é adequado: o conhecimento do negócio está na empresa.
+- **C)** Incorreta. Segurança física controla acessos físicos, não classifica informações.
+- **D)** Incorreta. O profissional de segurança orienta e aplica controles, mas a decisão de classificação é do negócio.
+- **E)** Correta. Decisão de negócio, com papel ativo do setor gerencial (proprietários da informação).
+
+**Ponto de atenção:** Proprietário (negócio) **classifica**; segurança e TI **protegem** conforme o nível. Distratores atribuem a decisão à TI ou à segurança.
+
+**Revisão rápida:** Classificar é decisão de negócio.
+
+**Fonte:** Fundação Cesgranrio, Transpetro PSP RH 2018.1 (Edital nº 1), Analista de Sistemas Júnior — Processos de Negócio (2018), prova Prova 15, questão 45; gabarito: de terceiros (Ética), alterado em 09/05/2018; não validado contra a banca.
+
+## OFI-000057 — ISO 27002: controle de acesso à rede
+
+*Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 46.*
+
+**Gabarito: D**
+
+Na ISO/IEC 27002:2005, a seção **11.4 (Controle de acesso à rede)** inclui a **autenticação para conexão externa do usuário** (11.4.2). As demais opções pertencem a outros controles: privilégios (11.2.2, gerenciamento de acesso do usuário), isolamento de sistemas sensíveis (11.6.2), encerramento por inatividade (11.5.5, acesso ao sistema operacional) e relato de eventos (13.1).
+
+- **A)** Incorreta. Gerenciamento de privilégios: controle de acesso de usuário.
+- **B)** Incorreta. Isolamento de sistemas sensíveis: controle de acesso à aplicação e à informação.
+- **C)** Incorreta. Time-out de sessão: controle de acesso ao sistema operacional.
+- **D)** Correta. Autenticação de usuários remotos: controle de acesso à rede.
+- **E)** Incorreta. Relato de eventos: gestão de incidentes.
+
+**Ponto de atenção:** **Versão importa**: a numeração citada é a da edição 2005; a de 2013 reorganizou (A.9) e a de 2022 usa temas. Memorize o **tipo de controle** (rede, aplicação, sistema operacional, usuário).
+
+**Revisão rápida:** Rede: autenticação de acesso remoto, segregação, roteamento.
+
+**Fonte:** Fundação Cesgranrio, Transpetro PSP RH 2018.1 (Edital nº 1), Analista de Sistemas Júnior — Processos de Negócio (2018), prova Prova 15, questão 46; gabarito: de terceiros (Ética), alterado em 09/05/2018; não validado contra a banca.
+
+## OFI-000058 — Firewall: listas de controle de acesso
+
+*Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 47.*
+
+**Gabarito: A**
+
+O **firewall** filtra o tráfego conforme **regras** (listas de controle de acesso) com base em endereços, portas e protocolos, permitindo ou bloqueando a passagem.
+
+- **A)** Correta. Firewall: filtragem por regras/ACL.
+- **B)** Incorreta. Proxy intermedia requisições de clientes e pode filtrar conteúdo e armazenar em cache.
+- **C)** Incorreta. DMZ é uma zona de rede intermediária, não um componente de filtragem.
+- **D)** Incorreta. IDS detecta e alerta, sem bloquear.
+- **E)** Incorreta. IPS detecta e bloqueia ataques por assinaturas/comportamento.
+
+**Ponto de atenção:** Firewall = **regras**; IDS = **detecta**; IPS = **detecta e bloqueia**; DMZ = **zona**; proxy = **intermediário**.
+
+**Revisão rápida:** Firewall: regras que permitem ou negam pacotes.
+
+**Fonte:** Fundação Cesgranrio, Transpetro PSP RH 2018.1 (Edital nº 1), Analista de Sistemas Júnior — Processos de Negócio (2018), prova Prova 15, questão 47; gabarito: de terceiros (Ética), alterado em 09/05/2018; não validado contra a banca.
+
+## OFI-000059 — VPN: tunelamento
+
+*Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 48.*
+
+**Gabarito: C**
+
+O **tunelamento** encapsula um pacote inteiro dentro de outro (com cifragem, na VPN), criando o "túnel" entre os extremos.
+
+- **A)** Incorreta. "Empacotamento" não é a técnica nomeada em VPN.
+- **B)** Incorreta. Encaminhamento é a função de roteamento.
+- **C)** Correta. Tunelamento = encapsulamento de pacote em outro.
+- **D)** Incorreta. "Reflexão segura" não é técnica de VPN.
+- **E)** Incorreta. "Inundação segura" não é técnica de VPN.
+
+**Ponto de atenção:** VPN: **túnel + criptografia + autenticação**. IPsec modo túnel encapsula o pacote IP inteiro.
+
+**Revisão rápida:** Tunelamento = pacote dentro de pacote.
+
+**Fonte:** Fundação Cesgranrio, Transpetro PSP RH 2018.1 (Edital nº 1), Analista de Sistemas Júnior — Processos de Negócio (2018), prova Prova 15, questão 48; gabarito: de terceiros (Ética), alterado em 09/05/2018; não validado contra a banca.
+
+## OFI-000060 — Malware: bot e botnet
+
+*Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 49.*
+
+**Gabarito: A**
+
+O **bot** transforma o computador em "zumbi" de uma **botnet** controlada remotamente pelo atacante, usada em DDoS, spam e outras ações automatizadas, sem conhecimento do dono.
+
+- **A)** Correta. Bot: integra o equipamento a uma botnet.
+- **B)** Incorreta. Worm se autorreplica pela rede, sem depender de hospedeiro.
+- **C)** Incorreta. Trojan se disfarça de programa legítimo.
+- **D)** Incorreta. "Rabbit" é programa que se replica até esgotar recursos, termo menos usual.
+- **E)** Incorreta. Ransomware cifra dados e exige resgate.
+
+**Ponto de atenção:** "Armada" = botnet; "sem conhecimento do dono" = zumbi.
+
+**Revisão rápida:** Bot = computador zumbi em botnet.
+
+**Fonte:** Fundação Cesgranrio, Transpetro PSP RH 2018.1 (Edital nº 1), Analista de Sistemas Júnior — Processos de Negócio (2018), prova Prova 15, questão 49; gabarito: de terceiros (Ética), alterado em 09/05/2018; não validado contra a banca.
+
+## OFI-000061 — Certificado digital: SHA256RSA
+
+*Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 50.*
+
+**Gabarito: E**
+
+**SHA256** é a função de **hash** que gera um resumo (*digest*) de **256 bits**; **RSA** é algoritmo de criptografia **assimétrica**, usado para cifrar esse resumo com a **chave privada** da AC (a assinatura).
+
+- **A)** Incorreta. "SHA" isolado e "RSA simétrico" estão errados; os 256 bits são do digest, não da chave.
+- **B)** Incorreta. Os 256 bits referem-se ao digest do SHA256, e não à chave privada.
+- **C)** Incorreta. A chave não é simétrica, e RSA não é simétrico.
+- **D)** Incorreta. RSA é assimétrico.
+- **E)** Correta. SHA256 gera digest de 256 bits e RSA é assimétrico: correta.
+
+**Ponto de atenção:** **Hash** (SHA256: resumo de 256 bits) + **assimétrico** (RSA: assinatura com a privada). A chave RSA costuma ter 2048 bits ou mais.
+
+**Revisão rápida:** SHA256RSA = hash SHA-256 + assinatura RSA.
+
+**Fonte:** Fundação Cesgranrio, Transpetro PSP RH 2018.1 (Edital nº 1), Analista de Sistemas Júnior — Processos de Negócio (2018), prova Prova 15, questão 50; gabarito: de terceiros (Ética), alterado em 09/05/2018; não validado contra a banca.
+
+## OFI-000062 — SAML: Artifact Resolution Protocol
+
+*Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 51.*
+
+**Gabarito: C**
+
+No **Artifact Resolution Protocol**, uma mensagem SAML é substituída por um **artefato** (valor pequeno e de tamanho fixo) que **referencia** a mensagem; o receptor o "resolve" para obter a mensagem completa, por canal seguro.
+
+- **A)** Incorreta. Authentication Request Protocol solicita uma asserção de autenticação.
+- **B)** Incorreta. Assertion Query and Request Protocol consulta ou requisita asserções existentes.
+- **C)** Correta. Passagem por referência com valor fixo e pequeno: Artifact Resolution.
+- **D)** Incorreta. Name Identifier Management trata do gerenciamento de identificadores de nome.
+- **E)** Incorreta. Name Identifier Mapping mapeia identificadores entre provedores.
+
+**Ponto de atenção:** O SAML não é citado literalmente no edital; entra pelo SSO (9.8). Palavra-chave: **referência / artefato**.
+
+**Revisão rápida:** Artifact = referência pequena e fixa para uma mensagem SAML.
+
+**Fonte:** Fundação Cesgranrio, Transpetro PSP RH 2018.1 (Edital nº 1), Analista de Sistemas Júnior — Processos de Negócio (2018), prova Prova 15, questão 51; gabarito: de terceiros (Ética), alterado em 09/05/2018; não validado contra a banca.
+
+## OFI-000063 — ICP-Brasil: certificado da AC subordinada à raiz
+
+*Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 52.*
+
+**Gabarito: A**
+
+Na hierarquia da ICP-Brasil, a **AC Raiz** (do ITI) emite e **assina** os certificados das ACs de primeiro nível; estas assinam os das ACs seguintes e os de usuários finais. A **AR** apenas valida e encaminha pedidos, **não assina** certificados.
+
+- **A)** Correta. A AC imediatamente subordinada tem seu certificado assinado somente pela AC Raiz.
+- **B)** Incorreta. A AR não emite nem assina certificados.
+- **C)** Incorreta. O certificado autoassinado é o da própria AC Raiz, e não o das subordinadas.
+- **D)** Incorreta. A AR não assina certificados.
+- **E)** Incorreta. Só a AC Raiz assina; a própria AC não assina o seu certificado de AC subordinada.
+
+**Ponto de atenção:** Cadeia de confiança: **AC Raiz (autoassinado) → ACs → usuários**. AR = identificação e registro, sem assinar.
+
+**Revisão rápida:** AC de 1º nível: assinada apenas pela AC Raiz.
+
+**Fonte:** Fundação Cesgranrio, Transpetro PSP RH 2018.1 (Edital nº 1), Analista de Sistemas Júnior — Processos de Negócio (2018), prova Prova 15, questão 52; gabarito: de terceiros (Ética), alterado em 09/05/2018; não validado contra a banca.

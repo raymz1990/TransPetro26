@@ -6,37 +6,9 @@
 
 **Observações:** Mistura de questões oficiais e autorais do módulo; algumas ainda `em_revisao`.
 
-Composição: tipo {'oficial': 4, 'autoral': 11} · status {'em_revisao': 6, 'validada': 9} · dificuldade {'media': 7, 'facil': 6, 'dificil': 2}
+Composição: tipo {'autoral': 8, 'oficial': 7} · status {'validada': 7, 'em_revisao': 8} · dificuldade {'media': 9, 'facil': 4, 'dificil': 2}
 
-## 1. OFI-000024 — Requisitos funcionais x não funcionais
-
-*Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 24.* · item 5.1 · Média · gabarito **A**
-
-**Requisito funcional** descreve o que o sistema **faz** (cálculos, regras, transformações). **Não funcionais** descrevem qualidades e restrições (desempenho, segurança, interface, operação). Calcular a velocidade com uma equação é uma função do sistema.
-
-- **A)** Correta. É uma função de cálculo do software; requisito funcional.
-- **B)** Incorreta. Aparenta ser funcional por citar imagens, mas, no gabarito, é tratado como requisito de interface/qualidade (resolução e dispositivos).
-- **C)** Incorreta. Restrição de implantação/operação (política de atualização); não funcional.
-- **D)** Incorreta. Restrição de desempenho (tempo de resposta); não funcional.
-- **E)** Incorreta. Restrição de segurança (criptografia AES-256); não funcional.
-
-**Revisão rápida:** Funcional = o que faz; não funcional = quão bem / sob que restrições.
-
-## 2. AUT-000041 — Requisitos funcionais e não funcionais
-
-*Questão autoral — estilo Cesgranrio.* · item 5.1 · Fácil · gabarito **B**
-
-**Requisitos funcionais** descrevem **o que o sistema faz** (serviços, funções, cálculos): I (calcular o tempo de parada) e III (cadastrar ordem de serviço). **Requisitos não funcionais** descrevem **como o sistema deve ser**: atributos de qualidade e condições de operação, como desempenho (II: tempo de resposta mensurável) e segurança (IV: criptografia do tráfego).
-
-- **A)** Incorreta. Calcular o tempo de parada (I) e cadastrar a ordem de serviço (III) são funções do sistema: requisitos funcionais.
-- **B)** Correta. II (desempenho) e IV (segurança) são atributos de qualidade: requisitos não funcionais.
-- **C)** Incorreta. Mistura um requisito funcional (I) com um não funcional (II).
-- **D)** Incorreta. Mistura um requisito funcional (III) com um não funcional (IV).
-- **E)** Incorreta. Classifica como não funcionais dois requisitos funcionais (I e III) e um não funcional (II).
-
-**Revisão rápida:** Funcional: serviço/função. Não funcional: atributo de qualidade (desempenho, segurança, usabilidade). Restrição: limitação imposta (tecnologia, prazo, norma).
-
-## 3. AUT-000044 — Ciclo de vida: modelo em espiral
+## 1. AUT-000044 — Ciclo de vida: modelo em espiral
 
 *Questão autoral — estilo Cesgranrio.* · item 5.2 · Média · gabarito **E**
 
@@ -50,7 +22,7 @@ O **modelo em espiral** (Boehm) é **orientado a riscos**: cada volta determina 
 
 **Revisão rápida:** Espiral (Boehm): voltas com objetivos/alternativas, avaliação de riscos, desenvolvimento/verificação e planejamento da próxima volta.
 
-## 4. AUT-000043 — Ciclo de vida: modelo em V
+## 2. AUT-000043 — Ciclo de vida: modelo em V
 
 *Questão autoral — estilo Cesgranrio.* · item 5.2 · Fácil · gabarito **A**
 
@@ -64,7 +36,21 @@ No modelo em V, cada fase da descida (desenvolvimento) corresponde a um nível d
 
 **Revisão rápida:** Modelo em V: requisitos↔aceitação; especificação↔sistema; arquitetura↔integração; detalhado↔unidade.
 
-## 5. OFI-000025 — Ciclos de vida sequenciais
+## 3. OFI-000049 — Processo Unificado: fase de elaboração
+
+*Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 23.* · item 5.2 · Média · gabarito **A**
+
+Na **elaboração**, o foco é **reduzir os riscos principais** e **estabelecer a arquitetura executável** (baseline da arquitetura), além de detalhar a maioria dos requisitos. O **escopo** e o *business case* são estabelecidos na **concepção**.
+
+- **A)** Correta. Definir (e validar) a arquitetura é objetivo central da elaboração.
+- **B)** Incorreta. A estimativa global de custo e o business case são da concepção (refinados depois).
+- **C)** Incorreta. Estabelecer o escopo é objetivo da concepção.
+- **D)** Incorreta. Minimizar custos não é objetivo de fase.
+- **E)** Incorreta. A conversão de bancos operacionais é atividade de transição.
+
+**Revisão rápida:** Elaboração = arquitetura.
+
+## 4. OFI-000025 — Ciclos de vida sequenciais
 
 *Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 25.* · item 5.2 · Fácil · gabarito **D**
 
@@ -77,6 +63,20 @@ No modelo em V, cada fase da descida (desenvolvimento) corresponde a um nível d
 - **E)** Incorreta. Incremental não é sequencial.
 
 **Revisão rápida:** Sequencial = cascata e V.
+
+## 5. AUT-000045 — Paradigma orientado a objetos: herança e ligação dinâmica
+
+*Questão autoral — estilo Cesgranrio.* · item 5.3 · Difícil · gabarito **C**
+
+A ligação do método é **dinâmica**: a versão de `estado()` executada depende do **tipo real** do objeto, mesmo quando chamada dentro de `alarme()` herdado de `Maquina`. (1) `Maquina("M1")`: `alarme()` de Maquina chama `estado()` de Maquina → "ALARME: Máquina M1 em operação". (2) `Bomba("P1")`: `alarme()` é herdado de Maquina, mas `self.estado()` resolve para a versão sobrescrita em Bomba → "ALARME: Bomba P1 pressurizada". (3) `Compressor("C1")`: `alarme()` de Compressor chama `super().alarme()` (de Maquina, via Bomba, que não o redefine), em que `self.estado()` resolve para o `estado()` de Bomba (herdado por Compressor) e, depois, acrescenta " [compressor]".
+
+- **A)** Incorreta. Supõe ligação estática: em `alarme()` de Maquina, `self.estado()` seria sempre a versão de Maquina. Em Python (e em OO em geral) a escolha depende do tipo real do objeto.
+- **B)** Incorreta. Acerta a segunda linha, mas, na terceira, ignora que Compressor herda `estado()` de Bomba (sobrescrito) e que `self.estado()` resolve para a versão de Bomba.
+- **C)** Correta. Ligação dinâmica nas três linhas, com `super()` na terceira.
+- **D)** Incorreta. Omite o acréscimo " [compressor]" feito pelo método sobrescrito em Compressor, que chama `super().alarme()` e concatena o texto.
+- **E)** Incorreta. Bomba herda `alarme()` de Maquina; não há erro de execução. O que falta em Bomba é só a redefinição, que é opcional.
+
+**Revisão rápida:** Chamada a `self.metodo()` é resolvida pelo tipo real. `super().metodo()` executa a versão da superclasse, com o mesmo objeto.
 
 ## 6. AUT-000046 — UML: diagrama de casos de uso (include e extend)
 
@@ -92,19 +92,19 @@ Na **inclusão (*include*)**, um caso de uso **sempre** usa o comportamento de o
 
 **Revisão rápida:** Include: uso obrigatório de outro caso de uso. Extend: ampliação opcional. Generalização: especialização. Associação: ator–caso de uso.
 
-## 7. AUT-000045 — Paradigma orientado a objetos: herança e ligação dinâmica
+## 7. OFI-000053 — Orientação a objetos: polimorfismo
 
-*Questão autoral — estilo Cesgranrio.* · item 5.3 · Difícil · gabarito **C**
+*Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 29.* · item 5.3 · Média · gabarito **E**
 
-A ligação do método é **dinâmica**: a versão de `estado()` executada depende do **tipo real** do objeto, mesmo quando chamada dentro de `alarme()` herdado de `Maquina`. (1) `Maquina("M1")`: `alarme()` de Maquina chama `estado()` de Maquina → "ALARME: Máquina M1 em operação". (2) `Bomba("P1")`: `alarme()` é herdado de Maquina, mas `self.estado()` resolve para a versão sobrescrita em Bomba → "ALARME: Bomba P1 pressurizada". (3) `Compressor("C1")`: `alarme()` de Compressor chama `super().alarme()` (de Maquina, via Bomba, que não o redefine), em que `self.estado()` resolve para o `estado()` de Bomba (herdado por Compressor) e, depois, acrescenta " [compressor]".
+**Polimorfismo** permite que operações distintas respondam à mesma mensagem (mesmo nome), cada classe com sua implementação; clientes dependem da interface, reduzindo o acoplamento.
 
-- **A)** Incorreta. Supõe ligação estática: em `alarme()` de Maquina, `self.estado()` seria sempre a versão de Maquina. Em Python (e em OO em geral) a escolha depende do tipo real do objeto.
-- **B)** Incorreta. Acerta a segunda linha, mas, na terceira, ignora que Compressor herda `estado()` de Bomba (sobrescrito) e que `self.estado()` resolve para a versão de Bomba.
-- **C)** Correta. Ligação dinâmica nas três linhas, com `super()` na terceira.
-- **D)** Incorreta. Omite o acréscimo " [compressor]" feito pelo método sobrescrito em Compressor, que chama `super().alarme()` e concatena o texto.
-- **E)** Incorreta. Bomba herda `alarme()` de Maquina; não há erro de execução. O que falta em Bomba é só a redefinição, que é opcional.
+- **A)** Incorreta. Encapsulamento oculta o estado interno.
+- **B)** Incorreta. Especialização cria subclasses mais específicas.
+- **C)** Incorreta. Herança reaproveita características da superclasse.
+- **D)** Incorreta. Padrões de projeto não são propriedade da orientação a objetos.
+- **E)** Correta. Operações diferentes com o mesmo nome: polimorfismo.
 
-**Revisão rápida:** Chamada a `self.metodo()` é resolvida pelo tipo real. `super().metodo()` executa a versão da superclasse, com o mesmo objeto.
+**Revisão rápida:** Polimorfismo: mesma operação, formas diferentes.
 
 ## 8. OFI-000027 — Orientação a objetos: sobrecarga
 
@@ -120,35 +120,7 @@ A ligação do método é **dinâmica**: a versão de `estado()` executada depen
 
 **Revisão rápida:** Overload ≠ override.
 
-## 9. AUT-000048 — Teste de software: análise do valor limite
-
-*Questão autoral — estilo Cesgranrio.* · item 5.4 · Média · gabarito **C**
-
-Na **análise do valor limite**, testam-se as **bordas das partições**, onde os defeitos são mais comuns: o limite inferior (1) e o valor imediatamente abaixo (0), o limite superior (99) e o valor imediatamente acima (100). O conjunto é **0, 1, 99 e 100**. (Variações da técnica incluem também 2 e 98.)
-
-- **A)** Incorreta. Usa os limites válidos (1 e 99) e um representante (50), típico da partição de equivalência; não testa os valores imediatamente fora das fronteiras.
-- **B)** Incorreta. 0 e 100 são valores fora do intervalo nas fronteiras, mas 50 é representante da partição válida, e faltam os limites válidos 1 e 99.
-- **C)** Correta. Limites (1 e 99) e valores adjacentes fora do intervalo (0 e 100).
-- **D)** Incorreta. Testa apenas valores válidos perto das bordas; não exercita os valores inválidos adjacentes às fronteiras.
-- **E)** Incorreta. Testa apenas os valores inválidos adjacentes; faltam os próprios limites válidos 1 e 99.
-
-**Revisão rápida:** Valor limite para 1–99: 0, 1, 99, 100 (e, em variações, 2 e 98).
-
-## 10. AUT-000049 — Verificação e validação
-
-*Questão autoral — estilo Cesgranrio.* · item 5.4 · Média · gabarito **E**
-
-A **verificação** pergunta "estamos construindo o produto **corretamente**?" (conformidade com a especificação) e pode ser feita por **técnicas estáticas** (revisões, inspeções, análise estática), sem executar o software: atividade I. A **validação** pergunta "estamos construindo o **produto certo**?" (atendimento à necessidade do usuário): atividade II, em que o usuário opera o sistema (técnica dinâmica, de execução).
-
-- **A)** Incorreta. Inverte os conceitos: comparar o projeto com a especificação é verificação (estática), e a demonstração ao usuário é validação.
-- **B)** Incorreta. Inverte verificação e validação e também os tipos de técnica (a revisão é estática; a demonstração executa o sistema).
-- **C)** Incorreta. A revisão contra a especificação é verificação, e a demonstração executa o sistema (técnica dinâmica).
-- **D)** Incorreta. A demonstração ao usuário é validação, e a revisão do documento não executa código (técnica estática).
-- **E)** Correta. I: verificação, por revisão (estática); II: validação, com o usuário.
-
-**Revisão rápida:** Verificação: produto corretamente (especificação). Validação: produto certo (usuário). Estática: sem executar. Dinâmica: executando.
-
-## 11. AUT-000047 — Teste de software: complexidade ciclomática
+## 9. AUT-000047 — Teste de software: complexidade ciclomática
 
 *Questão autoral — estilo Cesgranrio.* · item 5.4 · Difícil · gabarito **A**
 
@@ -162,21 +134,35 @@ A complexidade ciclomática é **V(G) = número de decisões + 1** (equivalente 
 
 **Revisão rápida:** Complexidade ciclomática = nº de decisões + 1 = E − N + 2P. Valores altos indicam risco e dificuldade de manutenção.
 
-## 12. AUT-000106 — Complexidade ciclomática e testes de caminho básico
+## 10. AUT-000048 — Teste de software: análise do valor limite
 
-*Questão autoral — estilo Cesgranrio.* · item 5.4 · Média · gabarito **B**
+*Questão autoral — estilo Cesgranrio.* · item 5.4 · Média · gabarito **C**
 
-A complexidade ciclomática é **V(G) = número de pontos de decisão + 1**. Aqui há três decisões simples: o `if n < 0`, o laço `for` e o `if n % 2 == 0`. Logo, **V(G) = 3 + 1 = 4**, ou seja, quatro caminhos independentes (e, no mínimo, quatro casos de teste para o teste de caminho básico).
+Na **análise do valor limite**, testam-se as **bordas das partições**, onde os defeitos são mais comuns: o limite inferior (1) e o valor imediatamente abaixo (0), o limite superior (99) e o valor imediatamente acima (100). O conjunto é **0, 1, 99 e 100**. (Variações da técnica incluem também 2 e 98.)
 
-- **A)** Incorreta. 3 corresponde ao número de decisões, sem somar 1.
-- **B)** Correta. V(G) = 3 decisões + 1 = 4.
-- **C)** Incorreta. 5 contaria uma decisão a mais (por exemplo, o `return`, que não é decisão).
-- **D)** Incorreta. 6 não corresponde ao número de decisões.
-- **E)** Incorreta. 2 consideraria apenas uma decisão.
+- **A)** Incorreta. Usa os limites válidos (1 e 99) e um representante (50), típico da partição de equivalência; não testa os valores imediatamente fora das fronteiras.
+- **B)** Incorreta. 0 e 100 são valores fora do intervalo nas fronteiras, mas 50 é representante da partição válida, e faltam os limites válidos 1 e 99.
+- **C)** Correta. Limites (1 e 99) e valores adjacentes fora do intervalo (0 e 100).
+- **D)** Incorreta. Testa apenas valores válidos perto das bordas; não exercita os valores inválidos adjacentes às fronteiras.
+- **E)** Incorreta. Testa apenas os valores inválidos adjacentes; faltam os próprios limites válidos 1 e 99.
 
-**Revisão rápida:** V(G) = decisões + 1.
+**Revisão rápida:** Valor limite para 1–99: 0, 1, 99, 100 (e, em variações, 2 e 98).
 
-## 13. OFI-000026 — Testes de aceitação
+## 11. AUT-000049 — Verificação e validação
+
+*Questão autoral — estilo Cesgranrio.* · item 5.4 · Média · gabarito **E**
+
+A **verificação** pergunta "estamos construindo o produto **corretamente**?" (conformidade com a especificação) e pode ser feita por **técnicas estáticas** (revisões, inspeções, análise estática), sem executar o software: atividade I. A **validação** pergunta "estamos construindo o **produto certo**?" (atendimento à necessidade do usuário): atividade II, em que o usuário opera o sistema (técnica dinâmica, de execução).
+
+- **A)** Incorreta. Inverte os conceitos: comparar o projeto com a especificação é verificação (estática), e a demonstração ao usuário é validação.
+- **B)** Incorreta. Inverte verificação e validação e também os tipos de técnica (a revisão é estática; a demonstração executa o sistema).
+- **C)** Incorreta. A revisão contra a especificação é verificação, e a demonstração executa o sistema (técnica dinâmica).
+- **D)** Incorreta. A demonstração ao usuário é validação, e a revisão do documento não executa código (técnica estática).
+- **E)** Correta. I: verificação, por revisão (estática); II: validação, com o usuário.
+
+**Revisão rápida:** Verificação: produto corretamente (especificação). Validação: produto certo (usuário). Estática: sem executar. Dinâmica: executando.
+
+## 12. OFI-000026 — Testes de aceitação
 
 *Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 31.* · item 5.4 · Fácil · gabarito **B**
 
@@ -190,30 +176,44 @@ A complexidade ciclomática é **V(G) = número de pontos de decisão + 1**. Aqu
 
 **Revisão rápida:** Aceitação: decide se o produto é aceito.
 
-## 14. AUT-000050 — Ambientes de desenvolvimento: CI/CD
+## 13. AUT-000106 — Complexidade ciclomática e testes de caminho básico
 
-*Questão autoral — estilo Cesgranrio.* · item 5.5 · Média · gabarito **B**
+*Questão autoral — estilo Cesgranrio.* · item 5.4 · Média · gabarito **B**
 
-A **integração contínua (CI)** integra o código com frequência, com *build* e testes automáticos. A **entrega contínua** mantém o software sempre em condição de ser liberado, com a **implantação em produção como decisão (manual) de negócio**. Na **implantação contínua (*continuous deployment*)**, **toda alteração aprovada nos testes é implantada automaticamente em produção, sem aprovação manual**, que é o caso descrito.
+A complexidade ciclomática é **V(G) = número de pontos de decisão + 1**. Aqui há três decisões simples: o `if n < 0`, o laço `for` e o `if n % 2 == 0`. Logo, **V(G) = 3 + 1 = 4**, ou seja, quatro caminhos independentes (e, no mínimo, quatro casos de teste para o teste de caminho básico).
 
-- **A)** Incorreta. A integração contínua trata da integração e da verificação automática do código; não inclui, por si só, a implantação em produção.
-- **B)** Correta. Implantação automática em produção, sem aprovação manual, após os testes: implantação contínua.
-- **C)** Incorreta. Na entrega contínua, a liberação para produção depende de decisão manual; o enunciado exclui essa aprovação.
-- **D)** Incorreta. A estratégia canário é uma forma de liberação gradual a uma parcela de usuários, e não o nome da prática de implantar automaticamente tudo o que passa nos testes.
-- **E)** Incorreta. Gerência de configuração controla versões e mudanças; não define a implantação automática em produção.
+- **A)** Incorreta. 3 corresponde ao número de decisões, sem somar 1.
+- **B)** Correta. V(G) = 3 decisões + 1 = 4.
+- **C)** Incorreta. 5 contaria uma decisão a mais (por exemplo, o `return`, que não é decisão).
+- **D)** Incorreta. 6 não corresponde ao número de decisões.
+- **E)** Incorreta. 2 consideraria apenas uma decisão.
 
-**Revisão rápida:** CI: integra e testa com frequência. Delivery: sempre liberável, deploy manual. Deployment: deploy automático em produção.
+**Revisão rápida:** V(G) = decisões + 1.
 
-## 15. AUT-000107 — Ambientes de desenvolvimento: integração contínua
+## 14. OFI-000050 — Teste de mutação
 
-*Questão autoral — estilo Cesgranrio.* · item 5.5 · Fácil · gabarito **E**
+*Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 24.* · item 5.4 · Média · gabarito **C**
 
-Na **integração contínua**, desenvolvedores integram o código ao repositório compartilhado várias vezes ao dia, e **cada integração dispara compilação e testes automatizados**, revelando cedo os erros de integração. A entrega/implantação contínua (CD) estende o pipeline até a liberação.
+No **teste de mutação**, criam-se **mutantes** (cópias do programa com pequenas alterações) e executam-se os testes; se o teste detecta a diferença, o mutante é "morto". Avalia a **qualidade do conjunto de testes**.
 
-- **A)** Incorreta. Implantação automática sem testes é um uso inadequado de CD; CI exige verificação automatizada.
-- **B)** Incorreta. Ramos longos e integração tardia é o oposto da CI ("inferno da integração").
-- **C)** Incorreta. Lançamentos trimestrais não caracterizam CI.
-- **D)** Incorreta. Revisão manual por um só especialista não é a prática definidora da CI.
-- **E)** Correta. Integração frequente com *build* e testes automatizados define CI.
+- **A)** Incorreta. Testes aleatórios geram entradas ao acaso.
+- **B)** Incorreta. Exploratórios combinam aprendizado, projeto e execução simultâneos, sem scripts.
+- **C)** Correta. Descreve o teste de mutação.
+- **D)** Incorreta. Perfil operacional seleciona entradas conforme o uso esperado.
+- **E)** Incorreta. Fluxo de controle usa o grafo do programa para cobertura de comandos, ramos e caminhos.
 
-**Revisão rápida:** CI: commits frequentes, build e testes automáticos.
+**Revisão rápida:** Mutação: alterar o programa para avaliar os testes.
+
+## 15. OFI-000051 — Complexidade ciclomática a partir do grafo de fluxo
+
+*Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 25.* · item 5.4 · Média · gabarito **A**
+
+**V(G) = E − N + 2P**, com E arestas, N nós e P componentes conexos (P = 1 para um programa): V(G) = 12 − 5 + 2 = **9**.
+
+- **A)** Correta. 12 − 5 + 2 = 9: correta.
+- **B)** Incorreta. 11 não resulta da fórmula (por exemplo, 12 − 5 + 4).
+- **C)** Incorreta. 15 = 12 + 5 − 2 (sinal trocado).
+- **D)** Incorreta. 17 = 12 + 5.
+- **E)** Incorreta. 19 = 12 + 5 + 2.
+
+**Revisão rápida:** V(G) = E − N + 2.

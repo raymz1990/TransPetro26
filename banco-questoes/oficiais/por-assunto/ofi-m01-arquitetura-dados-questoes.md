@@ -1,4 +1,4 @@
-# Questões oficiais — m01-arquitetura-dados — questões (T04 — Transpetro 2023 (Prova 6))
+# Questões oficiais — m01-arquitetura-dados — questões (T04 — Transpetro 2023 (Prova 6) e 2018 (Prova 15))
 
 Sem gabarito; o comentário está no arquivo `gabaritos-comentados`.
 
@@ -187,3 +187,78 @@ A esse respeito, o objetivo principal da normalização das estruturas de dados 
 (C) reduzir a quantidade de dados armazenados no banco de dados, resultando em uma economia de espaço de armazenamento.
 (D) simplificar as consultas complexas e otimizar a recuperação de informações do banco de dados, resultando em um melhor desempenho.
 (E) criar uma representação visual da estrutura física dos dados no disco, facilitando o acesso direto e rápido às informações armazenadas.
+
+## OFI-000042 — Data warehouse: Data Staging Area (ETL)
+
+*Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 22.* · item 1.19 · Média
+
+Os sistemas de data warehouse diferem de várias formas dos sistemas transacionais das empresas, como, por exemplo, em seu modelo de dados. Para transferir e transformar os dados dos sistemas transacionais para os sistemas de data warehousing, é comum utilizar, como estratégia, a existência de uma camada especial da arquitetura conhecida como
+
+(A) Data Marts
+(B) Data Staging Area
+(C) Dimensional Model Area
+(D) Presentation Area
+(E) Living Sample Area
+
+## OFI-000043 — SQL: fornecedores com venda em intervalo de datas
+
+*Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 38.* · item 1.10 · Difícil
+
+O banco de dados de uma empresa contém as tabelas a seguir, que são usadas para controlar as compras de materiais de escritório.
+
+```sql
+CREATE TABLE FORNECEDOR (
+  ID_FORN NUMBER(5) NOT NULL, NOME VARCHAR2(100) NOT NULL,
+  TEL1 CHAR(15) NOT NULL, TEL2 CHAR(15), TEL3 CHAR(15),
+  CONSTRAINT FORNECEDOR_PK PRIMARY KEY (ID_FORN));
+CREATE TABLE MATERIAL (
+  ID_MATER NUMBER(5) NOT NULL, DESCR VARCHAR2(100) NOT NULL,
+  CONSTRAINT MATERIAL_PK PRIMARY KEY (ID_MATER));
+CREATE TABLE VENDA (
+  ID_F NUMBER(5) NOT NULL, ID_M NUMBER(5) NOT NULL,
+  DATA DATE NOT NULL, PRECO NUMBER(9,2) NOT NULL, QTD NUMBER(5) NOT NULL,
+  CONSTRAINT VENDA_PK PRIMARY KEY (ID_F, ID_M, DATA),
+  CONSTRAINT VENDA_FK1 FOREIGN KEY (ID_F) REFERENCES FORNECEDOR (ID_FORN),
+  CONSTRAINT VENDA_FK2 FOREIGN KEY (ID_M) REFERENCES MATERIAL (ID_MATER));
+```
+
+Sabe-se que um fornecedor pode vender muitos materiais, e um material pode ser vendido por vários fornecedores.
+
+Considerando as tabelas e as informações dadas, qual consulta exibe o número de identificação e o nome dos fornecedores que realizaram pelo menos uma venda entre os dias 05/01/2018 (inclusive) e 10/01/2018 (inclusive)?
+
+(A) ```sql
+SELECT ID_FORN, NOME
+FROM FORNECEDOR F, VENDA V
+WHERE F.ID_FORN=ID_F AND DATA >= '05/01/2018'
+INTERSECT
+SELECT ID_FORN, NOME
+FROM FORNECEDOR F, VENDA V
+WHERE F.ID_FORN=ID_F AND DATA <= '10/01/2018'
+```
+(B) ```sql
+SELECT ID_FORN, NOME
+FROM FORNECEDOR F
+WHERE (SELECT COUNT(*) FROM VENDA
+       WHERE F.ID_FORN=ID_F AND
+       DATA BETWEEN '05/01/2018' AND '10/01/2018') > 0
+```
+(C) ```sql
+SELECT UNIQUE ID_FORN, NOME
+FROM FORNECEDOR F LEFT JOIN VENDA V ON F.ID_FORN = V.ID_F
+WHERE DATA >= '05/01/2018' OR DATA <= '10/01/2018'
+```
+(D) ```sql
+SELECT ID_FORN, NOME
+FROM FORNECEDOR F, VENDA V
+WHERE F.ID_FORN=ID_F AND DATA >= '05/01/2018'
+UNION
+SELECT ID_FORN, NOME
+FROM FORNECEDOR F, VENDA V
+WHERE F.ID_FORN=ID_F AND DATA <= '10/01/2018'
+```
+(E) ```sql
+SELECT ID_FORN, NOME
+FROM FORNECEDOR F
+WHERE ID_FORN NOT IN (SELECT ID_F FROM VENDA
+                       WHERE DATA < '05/01/2018' OR DATA > '10/01/2018')
+```

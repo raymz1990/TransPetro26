@@ -6,7 +6,7 @@
 
 **Observações:** Mistura de questões oficiais e autorais do módulo; algumas ainda `em_revisao`.
 
-Composição: tipo {'autoral': 10, 'oficial': 5} · status {'validada': 10, 'em_revisao': 5} · dificuldade {'media': 7, 'facil': 6, 'dificil': 2}
+Composição: tipo {'autoral': 8, 'oficial': 7} · status {'validada': 8, 'em_revisao': 7} · dificuldade {'media': 7, 'facil': 6, 'dificil': 2}
 
 ## 1. AUT-000014 — Kanban: limite de WIP e Lei de Little
 
@@ -78,7 +78,35 @@ A Sprint Review é uma **sessão de trabalho** em que o Scrum Team e as partes i
 
 **Revisão rápida:** Review: inspeciona o resultado com stakeholders e adapta o backlog. Retrospective: melhora o processo do time. Daily: 15 min, Meta da Sprint.
 
-## 6. AUT-000015 — Gestão de projeto versus gestão de produto
+## 6. OFI-000045 — Scrum: escala dos Pontos de História (Planning Poker)
+
+*Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 31.* · item 2.1 · Média · gabarito **B**
+
+O **Planning Poker** usa uma escala **tipo Fibonacci modificada** (0, 1, 2, 3, 5, 8, 13, 20, 40, 100): os saltos crescentes refletem a **incerteza** maior em itens maiores.
+
+- **A)** Incorreta. Escala linear não representa o crescimento da incerteza.
+- **B)** Correta. Fibonacci modificada: a escala típica do Planning Poker.
+- **C)** Incorreta. Potências de 2 não são a escala usual.
+- **D)** Incorreta. Dobros a partir de 3 não são a escala usual.
+- **E)** Incorreta. A escala 1-5-10... não é a usada.
+
+**Revisão rápida:** Planning Poker: 0, 1, 2, 3, 5, 8, 13, 20, 40, 100.
+
+## 7. OFI-000044 — Scrum: momento da Retrospectiva da Sprint
+
+*Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 28.* · item 2.1 · Fácil · gabarito **B**
+
+A **Sprint Retrospective** ocorre **depois da Sprint Review** e **antes do próximo Sprint Planning**; é o último evento da Sprint. Inspeciona pessoas, relacionamentos, processos e ferramentas.
+
+- **A)** Incorreta. A Retrospectiva ocorre depois da Revisão, e não antes.
+- **B)** Correta. Posição correta: após a Revisão e antes do planejamento da próxima Sprint.
+- **C)** Incorreta. No início da Sprint ocorre o Planejamento.
+- **D)** Incorreta. No fim de cada dia não há retrospectiva; a reunião diária é a Daily Scrum.
+- **E)** Incorreta. No início do dia ocorre a Daily Scrum.
+
+**Revisão rápida:** Revisão (produto) antes da Retrospectiva (processo).
+
+## 8. AUT-000015 — Gestão de projeto versus gestão de produto
 
 *Questão autoral — estilo Cesgranrio.* · item 2.2 · Média · gabarito **C**
 
@@ -92,7 +120,7 @@ A **gestão de projeto** mede a execução do que foi combinado (escopo, prazo, 
 
 **Revisão rápida:** Projeto = aderência ao plano. Produto = valor e resultado ao longo do ciclo de vida.
 
-## 7. AUT-000016 — SAFe: ART, PI e PI Planning
+## 9. AUT-000016 — SAFe: ART, PI e PI Planning
 
 *Questão autoral — estilo Cesgranrio.* · item 2.3 · Média · gabarito **D**
 
@@ -106,7 +134,7 @@ O **PI Planning** é o evento baseado em cadência, de **todo o ART**, tipicamen
 
 **Revisão rápida:** PI = 8–12 semanas. PI Planning: todo o ART, ~2 dias, facilitado pelo RTE. Inspect & Adapt: fim do PI.
 
-## 8. OFI-000015 — SAFe: Program Increment (PI)
+## 10. OFI-000015 — SAFe: Program Increment (PI)
 
 *Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 68.* · item 2.3 · Média · gabarito **C**
 
@@ -120,7 +148,7 @@ O **PI** é a *timebox* do SAFe (tipicamente 8 a 12 semanas) em que as equipes d
 
 **Revisão rápida:** PI: 8–12 semanas, ART entrega valor incremental.
 
-## 9. AUT-000020 — PMBOK 7ª edição: domínios de desempenho
+## 11. AUT-000020 — PMBOK 7ª edição: domínios de desempenho
 
 *Questão autoral — estilo Cesgranrio.* · item 2.4 · Difícil · gabarito **B**
 
@@ -134,7 +162,21 @@ Na 7ª edição, os **oito domínios de desempenho** (partes interessadas, equip
 
 **Revisão rápida:** PMBOK 7: 12 princípios (orientam comportamento) + 8 domínios (atividades correlatas e simultâneas). PMBOK 6: 5 grupos de processos e 10 áreas.
 
-## 10. AUT-000017 — PMBOK 7ª edição: Estrutura Analítica do Projeto (EAP)
+## 12. OFI-000046 — EAP: o que deve conter
+
+*Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 63.* · item 2.4 · Média · gabarito **B**
+
+A **EAP (WBS)** decompõe hierarquicamente o **escopo total do projeto** em **entregas** e pacotes de trabalho; vale a **regra dos 100%**: deve conter todo o escopo (e só ele). Riscos, custos, restrições e equipe são tratados em outros artefatos.
+
+- **A)** Incorreta. Riscos são tratados na análise e no registro de riscos.
+- **B)** Correta. A EAP cobre todo o escopo e as entregas do projeto.
+- **C)** Incorreta. Orçamento e custos são derivados da EAP, e não conteúdo dela.
+- **D)** Incorreta. Restrições e premissas ficam na declaração do escopo.
+- **E)** Incorreta. Equipe e patrocinadores pertencem ao plano de recursos e ao registro das partes interessadas.
+
+**Revisão rápida:** EAP = escopo e entregas, em hierarquia.
+
+## 13. AUT-000017 — PMBOK 7ª edição: Estrutura Analítica do Projeto (EAP)
 
 *Questão autoral — estilo Cesgranrio.* · item 2.4 · Fácil · gabarito **A**
 
@@ -148,7 +190,7 @@ A **EAP (WBS)** é a decomposição hierárquica do **escopo total** do trabalho
 
 **Revisão rápida:** EAP: decomposição hierárquica do escopo em pacotes; regra dos 100%; orientada a entregas; não é cronograma, estimativa de custo nem análise de risco.
 
-## 11. OFI-000012 — Ciclos de vida: modelo em cascata
+## 14. OFI-000012 — Ciclos de vida: modelo em cascata
 
 *Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 54.* · item 2.4 · Fácil · gabarito **E**
 
@@ -162,7 +204,7 @@ No **cascata (waterfall)**, as fases (requisitos, projeto, implementação, test
 
 **Revisão rápida:** Cascata: fases em sequência, sem retorno planejado.
 
-## 12. OFI-000014 — EAP (Estrutura Analítica do Projeto)
+## 15. OFI-000014 — EAP (Estrutura Analítica do Projeto)
 
 *Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 67.* · item 2.4 · Fácil · gabarito **D**
 
@@ -175,45 +217,3 @@ A **EAP (WBS)** é a decomposição **hierárquica** do escopo total do trabalho
 - **E)** Incorreta. Estimativa de custos é outra técnica (analógica, paramétrica, *bottom-up*), embora a EAP a apoie.
 
 **Revisão rápida:** EAP = decomposição hierárquica do escopo em pacotes de trabalho.
-
-## 13. AUT-000018 — Projetos e a organização: estruturas organizacionais
-
-*Questão autoral — estilo Cesgranrio.* · item 2.5 · Média · gabarito **C**
-
-Na **estrutura matricial**, especialistas são compartilhados entre projetos, o que traz flexibilidade, mas surge a **dupla subordinação** (ao gerente funcional e ao gerente de projetos) e possíveis conflitos. A estrutura **funcional** privilegia especialização e carreira, com pouca ou nenhuma autoridade do gerente de projetos; na **projetizada**, a equipe é alocada ao gerente de projetos (alta autoridade, foco total).
-
-- **A)** Incorreta. Foco total e comunicação rápida, com equipe alocada ao gerente de projetos, são vantagens da estrutura projetizada, não da funcional.
-- **B)** Incorreta. Especialização e clareza de carreira, com o trabalho nos departamentos, são vantagens da estrutura funcional; na projetizada, as equipes são organizadas por projeto.
-- **C)** Correta. Vantagem (compartilhamento de especialistas) e limitação (dupla subordinação) da estrutura matricial.
-- **D)** Incorreta. Descreve a estrutura funcional ou a matricial fraca. Na projetizada, o gerente de projetos tem autoridade alta a quase total e administra o orçamento.
-- **E)** Incorreta. Na matricial forte, o gerente de projetos tem autoridade moderada a alta e maior disponibilidade de recursos; pouca ou nenhuma autoridade caracteriza a estrutura funcional.
-
-**Revisão rápida:** Funcional: especialização. Matricial: compartilha especialistas, dupla subordinação. Projetizada: foco total, equipe alocada ao gerente.
-
-## 14. OFI-000016 — Estruturas organizacionais: matriz forte
-
-*Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 69.* · item 2.5 · Fácil · gabarito **C**
-
-Nas estruturas matriciais: na **matriz fraca**, predomina o gerente funcional; na **balanceada**, há equilíbrio; na **forte**, o gerente de projeto tem **alta autoridade e influência**, com mais recursos dedicados.
-
-- **A)** Incorreta. "Composta" refere-se à combinação de estruturas, não a um grau de influência.
-- **B)** Incorreta. Na matriz fraca, a autoridade do gerente de projeto é baixa.
-- **C)** Correta. Na matriz forte, o gerente de projeto tem alto grau de autoridade e influência.
-- **D)** Incorreta. Na balanceada, a autoridade é compartilhada entre o gerente de projeto e o funcional.
-- **E)** Incorreta. "Invertida" não é tipo padrão de matriz.
-
-**Revisão rápida:** Matriz forte = gerente de projeto com alta autoridade.
-
-## 15. AUT-000019 — Escritório de projetos (PMO): modelos
-
-*Questão autoral — estilo Cesgranrio.* · item 2.6 · Média · gabarito **E**
-
-Na classificação por grau de controle, o PMO **de suporte** tem baixo controle (consultivo, adoção voluntária), o **de controle** tem grau moderado (**exige conformidade** com métodos, modelos, ferramentas e governança, com auditorias, sem assumir a gestão dos projetos) e o **diretivo** tem alto controle (**assume** a gestão e os gerentes de projetos pertencem ao PMO). O cenário descreve exigência de conformidade e auditoria, sem assumir projetos: PMO de controle.
-
-- **A)** Incorreta. O PMO de suporte é consultivo, com adoção voluntária; no cenário, a adoção é exigida e auditada.
-- **B)** Incorreta. O PMO diretivo assume o controle dos projetos e tem os gerentes de projetos a ele subordinados; o enunciado exclui as duas coisas.
-- **C)** Incorreta. A classificação por escopo (corporativo/estratégico) é outra; o enunciado se refere ao grau de controle, e o corporativo tem foco em portfólio e estratégia, não em auditoria de conformidade de projetos.
-- **D)** Incorreta. O PMO ágil (escritório de valor) atua pela facilitação e transparência, e não pela exigência de conformidade e auditorias.
-- **E)** Correta. Grau moderado de controle: exige conformidade e verifica a aderência, sem assumir os projetos.
-
-**Revisão rápida:** Suporte: consultivo. Controle: exige conformidade e audita. Diretivo: assume projetos e gerentes.

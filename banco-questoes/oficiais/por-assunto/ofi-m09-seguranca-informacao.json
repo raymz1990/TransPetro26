@@ -1,8 +1,8 @@
 {
  "modulo": "Questões oficiais — m09-seguranca-informacao",
- "lote": "T04 — Transpetro 2023 (Prova 6)",
+ "lote": "T04 — Transpetro 2023 (Prova 6) e 2018 (Prova 15)",
  "data": "2026-11-06",
- "total": 7,
+ "total": 15,
  "questoes": [
   {
    "id": "OFI-000035",
@@ -417,6 +417,478 @@
     "sha256": "ver docs/estrategia/base-provas.md"
    },
    "verificacao": "Gabarito do catálogo; seção 12 da edição 2013 conferida de memória (norma não consultada na fonte primária).",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000056",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 45.",
+   "modulo": "09-seguranca-informacao",
+   "assunto": "Classificação da informação: quem decide",
+   "item_edital": "9.18",
+   "id_matriz": null,
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "compreensao",
+   "tipo_questao": "conceitual",
+   "enunciado": "A classificação da informação visa a assegurar que a informação receba um nível adequado de proteção.\n\nO processo de classificação da informação é um processo",
+   "alternativas": {
+    "A": "executado pelo coordenador de TI para determinar a melhor forma de armazenamento e quem pode e quem não pode acessar uma informação.",
+    "B": "executado por uma empresa externa especializada em segurança da informação para determinar quem pode e quem não pode acessar uma informação.",
+    "C": "de decisão estratégica, e requer que o agente de segurança física determine o que pode e o que não pode entrar e sair do ambiente da empresa.",
+    "D": "de decisão estratégica, e requer que o profissional de segurança determine o que deve ser classificado como confidencial, de uso interno ou público.",
+    "E": "de decisão de negócios, e requer o papel ativo do setor gerencial da empresa para determinar o que deve ser classificado como confidencial, de uso interno ou público."
+   },
+   "gabarito": "E",
+   "resolucao": "A classificação é **decisão de negócio**: quem **conhece o valor e a sensibilidade** da informação (proprietário, gestores da área) a classifica; a TI e a segurança implementam os controles correspondentes ao nível.",
+   "analise_alternativas": {
+    "A": "Incorreta. A TI é custodiante; não decide o valor da informação.",
+    "B": "Incorreta. Terceirizar a decisão não é adequado: o conhecimento do negócio está na empresa.",
+    "C": "Incorreta. Segurança física controla acessos físicos, não classifica informações.",
+    "D": "Incorreta. O profissional de segurança orienta e aplica controles, mas a decisão de classificação é do negócio.",
+    "E": "Correta. Decisão de negócio, com papel ativo do setor gerencial (proprietários da informação)."
+   },
+   "fundamentacao": {
+    "item": "9.18",
+    "arquivo_teoria": "conteudo/09-seguranca-informacao/10-politicas-e-classificacao.md"
+   },
+   "ponto_atencao": "Proprietário (negócio) **classifica**; segurança e TI **protegem** conforme o nível. Distratores atribuem a decisão à TI ou à segurança.",
+   "revisao_rapida": "Classificar é decisão de negócio.",
+   "tags": [
+    "classificacao-informacao",
+    "transpetro-2018",
+    "oficial",
+    "media",
+    "compreensao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Transpetro PSP RH 2018.1 (Edital nº 1)",
+    "cargo": "Analista de Sistemas Júnior — Processos de Negócio",
+    "ano": 2018,
+    "prova": "Prova 15",
+    "numero_original": 45,
+    "id_prova": "PRV-006",
+    "situacao_gabarito": "de terceiros (Ética), alterado em 09/05/2018; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/transpetro-2018-prova15-analista-sistemas-jr-processos-negocio.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000057",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 46.",
+   "modulo": "09-seguranca-informacao",
+   "assunto": "ISO 27002: controle de acesso à rede",
+   "item_edital": "9.19",
+   "id_matriz": null,
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "memorizacao",
+   "tipo_questao": "normativa",
+   "enunciado": "A Norma ISO 27002 define o código de prática para a gestão da segurança da informação.\n\nDentre as recomendações de segurança, o controle de acesso à rede recomenda implantar ações de controle para que",
+   "alternativas": {
+    "A": "concessão e uso de privilégios sejam restritos e controlados.",
+    "B": "sistemas sensíveis tenham um ambiente computacional dedicado (isolado).",
+    "C": "sessões inativas sejam encerradas após um período definido de inatividade.",
+    "D": "métodos apropriados de autenticações sejam usados para controlar acesso de usuários remotos.",
+    "E": "eventos de segurança da informação sejam relatados através dos canais apropriados da direção."
+   },
+   "gabarito": "D",
+   "resolucao": "Na ISO/IEC 27002:2005, a seção **11.4 (Controle de acesso à rede)** inclui a **autenticação para conexão externa do usuário** (11.4.2). As demais opções pertencem a outros controles: privilégios (11.2.2, gerenciamento de acesso do usuário), isolamento de sistemas sensíveis (11.6.2), encerramento por inatividade (11.5.5, acesso ao sistema operacional) e relato de eventos (13.1).",
+   "analise_alternativas": {
+    "A": "Incorreta. Gerenciamento de privilégios: controle de acesso de usuário.",
+    "B": "Incorreta. Isolamento de sistemas sensíveis: controle de acesso à aplicação e à informação.",
+    "C": "Incorreta. Time-out de sessão: controle de acesso ao sistema operacional.",
+    "D": "Correta. Autenticação de usuários remotos: controle de acesso à rede.",
+    "E": "Incorreta. Relato de eventos: gestão de incidentes."
+   },
+   "fundamentacao": {
+    "item": "9.19",
+    "arquivo_teoria": "conteudo/09-seguranca-informacao/11-iso-27002.md"
+   },
+   "ponto_atencao": "**Versão importa**: a numeração citada é a da edição 2005; a de 2013 reorganizou (A.9) e a de 2022 usa temas. Memorize o **tipo de controle** (rede, aplicação, sistema operacional, usuário).",
+   "revisao_rapida": "Rede: autenticação de acesso remoto, segregação, roteamento.",
+   "tags": [
+    "iso-27002",
+    "controle-de-acesso",
+    "transpetro-2018",
+    "oficial",
+    "media",
+    "memorizacao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Transpetro PSP RH 2018.1 (Edital nº 1)",
+    "cargo": "Analista de Sistemas Júnior — Processos de Negócio",
+    "ano": 2018,
+    "prova": "Prova 15",
+    "numero_original": 46,
+    "id_prova": "PRV-006",
+    "situacao_gabarito": "de terceiros (Ética), alterado em 09/05/2018; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/transpetro-2018-prova15-analista-sistemas-jr-processos-negocio.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Gabarito do catálogo; numeração das seções conferida de memória (norma não consultada).",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000058",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 47.",
+   "modulo": "09-seguranca-informacao",
+   "assunto": "Firewall: listas de controle de acesso",
+   "item_edital": "9.2",
+   "id_matriz": null,
+   "itens_secundarios": [],
+   "dificuldade": "facil",
+   "habilidade": "compreensao",
+   "tipo_questao": "conceitual",
+   "enunciado": "Para proteger as redes de dados, as empresas criam perímetros de segurança formados por componentes que avaliam o tráfego de ingresso e egresso.\nO componente que utiliza listas de controle de acesso formadas por regras que determinam se um pacote pode ou não atravessar a barreira é a(o)",
+   "alternativas": {
+    "A": "Firewall",
+    "B": "Proxy",
+    "C": "DMZ",
+    "D": "IDS",
+    "E": "IPS"
+   },
+   "gabarito": "A",
+   "resolucao": "O **firewall** filtra o tráfego conforme **regras** (listas de controle de acesso) com base em endereços, portas e protocolos, permitindo ou bloqueando a passagem.",
+   "analise_alternativas": {
+    "A": "Correta. Firewall: filtragem por regras/ACL.",
+    "B": "Incorreta. Proxy intermedia requisições de clientes e pode filtrar conteúdo e armazenar em cache.",
+    "C": "Incorreta. DMZ é uma zona de rede intermediária, não um componente de filtragem.",
+    "D": "Incorreta. IDS detecta e alerta, sem bloquear.",
+    "E": "Incorreta. IPS detecta e bloqueia ataques por assinaturas/comportamento."
+   },
+   "fundamentacao": {
+    "item": "9.2",
+    "arquivo_teoria": "conteudo/09-seguranca-informacao/14-operacao-de-seguranca.md"
+   },
+   "ponto_atencao": "Firewall = **regras**; IDS = **detecta**; IPS = **detecta e bloqueia**; DMZ = **zona**; proxy = **intermediário**.",
+   "revisao_rapida": "Firewall: regras que permitem ou negam pacotes.",
+   "tags": [
+    "firewall",
+    "transpetro-2018",
+    "oficial",
+    "facil",
+    "compreensao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Transpetro PSP RH 2018.1 (Edital nº 1)",
+    "cargo": "Analista de Sistemas Júnior — Processos de Negócio",
+    "ano": 2018,
+    "prova": "Prova 15",
+    "numero_original": 47,
+    "id_prova": "PRV-006",
+    "situacao_gabarito": "de terceiros (Ética), alterado em 09/05/2018; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/transpetro-2018-prova15-analista-sistemas-jr-processos-negocio.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000059",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 48.",
+   "modulo": "09-seguranca-informacao",
+   "assunto": "VPN: tunelamento",
+   "item_edital": "9.6",
+   "id_matriz": null,
+   "itens_secundarios": [],
+   "dificuldade": "facil",
+   "habilidade": "memorizacao",
+   "tipo_questao": "conceitual",
+   "enunciado": "A Virtual Private Network (VPN) permite o estabelecimento de um enlace seguro do tipo host-to-host, host-to-gateway ou gateway-to-gateway. Existe uma técnica que permite o encapsulamento de um pacote inteiro em outro pacote na VPN do tipo host-to-gateway, de forma segura, usando criptografia.\n\nEssa técnica é o(a)",
+   "alternativas": {
+    "A": "empacotamento",
+    "B": "encaminhamento",
+    "C": "tunelamento",
+    "D": "reflexão segura",
+    "E": "inundação segura"
+   },
+   "gabarito": "C",
+   "resolucao": "O **tunelamento** encapsula um pacote inteiro dentro de outro (com cifragem, na VPN), criando o \"túnel\" entre os extremos.",
+   "analise_alternativas": {
+    "A": "Incorreta. \"Empacotamento\" não é a técnica nomeada em VPN.",
+    "B": "Incorreta. Encaminhamento é a função de roteamento.",
+    "C": "Correta. Tunelamento = encapsulamento de pacote em outro.",
+    "D": "Incorreta. \"Reflexão segura\" não é técnica de VPN.",
+    "E": "Incorreta. \"Inundação segura\" não é técnica de VPN."
+   },
+   "fundamentacao": {
+    "item": "9.6",
+    "arquivo_teoria": "conteudo/09-seguranca-informacao/05-vpn-mdm-sso-mfa-iam.md"
+   },
+   "ponto_atencao": "VPN: **túnel + criptografia + autenticação**. IPsec modo túnel encapsula o pacote IP inteiro.",
+   "revisao_rapida": "Tunelamento = pacote dentro de pacote.",
+   "tags": [
+    "vpn",
+    "tunelamento",
+    "transpetro-2018",
+    "oficial",
+    "facil",
+    "memorizacao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Transpetro PSP RH 2018.1 (Edital nº 1)",
+    "cargo": "Analista de Sistemas Júnior — Processos de Negócio",
+    "ano": 2018,
+    "prova": "Prova 15",
+    "numero_original": 48,
+    "id_prova": "PRV-006",
+    "situacao_gabarito": "de terceiros (Ética), alterado em 09/05/2018; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/transpetro-2018-prova15-analista-sistemas-jr-processos-negocio.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000060",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 49.",
+   "modulo": "09-seguranca-informacao",
+   "assunto": "Malware: bot e botnet",
+   "item_edital": "9.3",
+   "id_matriz": null,
+   "itens_secundarios": [],
+   "dificuldade": "facil",
+   "habilidade": "compreensao",
+   "tipo_questao": "conceitual",
+   "enunciado": "O malware (malicious software) é um código malicioso que tem o potencial de danificar sua vítima, mas nem sempre age dessa forma. Dentre eles, há um que engaja um computador em uma armada que permite a realização de tarefas de forma automatizada para atacar alvos determinados por criminosos cibernéticos, sem o conhecimento do dono do computador.\n\nEsse malware é o",
+   "alternativas": {
+    "A": "Bot",
+    "B": "Worm",
+    "C": "Trojan",
+    "D": "Rabbit",
+    "E": "Ransomware"
+   },
+   "gabarito": "A",
+   "resolucao": "O **bot** transforma o computador em \"zumbi\" de uma **botnet** controlada remotamente pelo atacante, usada em DDoS, spam e outras ações automatizadas, sem conhecimento do dono.",
+   "analise_alternativas": {
+    "A": "Correta. Bot: integra o equipamento a uma botnet.",
+    "B": "Incorreta. Worm se autorreplica pela rede, sem depender de hospedeiro.",
+    "C": "Incorreta. Trojan se disfarça de programa legítimo.",
+    "D": "Incorreta. \"Rabbit\" é programa que se replica até esgotar recursos, termo menos usual.",
+    "E": "Incorreta. Ransomware cifra dados e exige resgate."
+   },
+   "fundamentacao": {
+    "item": "9.3",
+    "arquivo_teoria": "conteudo/09-seguranca-informacao/03-ameacas-e-malwares.md"
+   },
+   "ponto_atencao": "\"Armada\" = botnet; \"sem conhecimento do dono\" = zumbi.",
+   "revisao_rapida": "Bot = computador zumbi em botnet.",
+   "tags": [
+    "malware",
+    "botnet",
+    "transpetro-2018",
+    "oficial",
+    "facil",
+    "compreensao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Transpetro PSP RH 2018.1 (Edital nº 1)",
+    "cargo": "Analista de Sistemas Júnior — Processos de Negócio",
+    "ano": 2018,
+    "prova": "Prova 15",
+    "numero_original": 49,
+    "id_prova": "PRV-006",
+    "situacao_gabarito": "de terceiros (Ética), alterado em 09/05/2018; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/transpetro-2018-prova15-analista-sistemas-jr-processos-negocio.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000061",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 50.",
+   "modulo": "09-seguranca-informacao",
+   "assunto": "Certificado digital: SHA256RSA",
+   "item_edital": "9.19",
+   "id_matriz": null,
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "compreensao",
+   "tipo_questao": "conceitual",
+   "enunciado": "Um certificado digital possui o valor SHA256RSA no campo algoritmo de assinatura.\nEssa informação indica que a assinatura digital do certificado digital foi criada com o algoritmo de hash",
+   "alternativas": {
+    "A": "SHA, uma chave privada de 256 bits e o algoritmo de criptografia simétrica RSA.",
+    "B": "SHA, uma chave privada de 256 bits e o algoritmo de criptografia assimétrica RSA.",
+    "C": "SHA, uma chave simétrica de 256 bits e o algoritmo de criptografia simétrica RSA.",
+    "D": "SHA256, que produz um digest de 256 bits, e o algoritmo de criptografia simétrica RSA.",
+    "E": "SHA256, que produz um digest de 256 bits, e o algoritmo de criptografia assimétrica RSA."
+   },
+   "gabarito": "E",
+   "resolucao": "**SHA256** é a função de **hash** que gera um resumo (*digest*) de **256 bits**; **RSA** é algoritmo de criptografia **assimétrica**, usado para cifrar esse resumo com a **chave privada** da AC (a assinatura).",
+   "analise_alternativas": {
+    "A": "Incorreta. \"SHA\" isolado e \"RSA simétrico\" estão errados; os 256 bits são do digest, não da chave.",
+    "B": "Incorreta. Os 256 bits referem-se ao digest do SHA256, e não à chave privada.",
+    "C": "Incorreta. A chave não é simétrica, e RSA não é simétrico.",
+    "D": "Incorreta. RSA é assimétrico.",
+    "E": "Correta. SHA256 gera digest de 256 bits e RSA é assimétrico: correta."
+   },
+   "fundamentacao": {
+    "item": "9.19",
+    "arquivo_teoria": "conteudo/09-seguranca-informacao/11-iso-27002.md"
+   },
+   "ponto_atencao": "**Hash** (SHA256: resumo de 256 bits) + **assimétrico** (RSA: assinatura com a privada). A chave RSA costuma ter 2048 bits ou mais.",
+   "revisao_rapida": "SHA256RSA = hash SHA-256 + assinatura RSA.",
+   "tags": [
+    "certificado-digital",
+    "assinatura-digital",
+    "transpetro-2018",
+    "oficial",
+    "media",
+    "compreensao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Transpetro PSP RH 2018.1 (Edital nº 1)",
+    "cargo": "Analista de Sistemas Júnior — Processos de Negócio",
+    "ano": 2018,
+    "prova": "Prova 15",
+    "numero_original": 50,
+    "id_prova": "PRV-006",
+    "situacao_gabarito": "de terceiros (Ética), alterado em 09/05/2018; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/transpetro-2018-prova15-analista-sistemas-jr-processos-negocio.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000062",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 51.",
+   "modulo": "09-seguranca-informacao",
+   "assunto": "SAML: Artifact Resolution Protocol",
+   "item_edital": "9.8",
+   "id_matriz": null,
+   "itens_secundarios": [
+    "9.10"
+   ],
+   "dificuldade": "dificil",
+   "habilidade": "memorizacao",
+   "tipo_questao": "conceitual",
+   "enunciado": "O SAML (Security Assertion Markup Language) é constituído por componentes modulares que permitem a transferência de identidade, autenticação e informações de autorização entre organizações. Dentre esses componentes, os protocolos são utilizados para realizar as requisições definidas pelo SAML e retornar as respostas apropriadas.\nO protocolo que fornece um mecanismo pelo qual as mensagens do protocolo SAML podem ser passadas por referência, utilizando, para isso, um valor pequeno e de tamanho fixo, é o",
+   "alternativas": {
+    "A": "Authentication Request Protocol",
+    "B": "Assertion Query and Request Protocol",
+    "C": "Artifact Resolution Protocol",
+    "D": "Name Identifier Management Protocol",
+    "E": "Name Identifier Mapping Protocol"
+   },
+   "gabarito": "C",
+   "resolucao": "No **Artifact Resolution Protocol**, uma mensagem SAML é substituída por um **artefato** (valor pequeno e de tamanho fixo) que **referencia** a mensagem; o receptor o \"resolve\" para obter a mensagem completa, por canal seguro.",
+   "analise_alternativas": {
+    "A": "Incorreta. Authentication Request Protocol solicita uma asserção de autenticação.",
+    "B": "Incorreta. Assertion Query and Request Protocol consulta ou requisita asserções existentes.",
+    "C": "Correta. Passagem por referência com valor fixo e pequeno: Artifact Resolution.",
+    "D": "Incorreta. Name Identifier Management trata do gerenciamento de identificadores de nome.",
+    "E": "Incorreta. Name Identifier Mapping mapeia identificadores entre provedores."
+   },
+   "fundamentacao": {
+    "item": "9.8",
+    "arquivo_teoria": "conteudo/09-seguranca-informacao/05-vpn-mdm-sso-mfa-iam.md"
+   },
+   "ponto_atencao": "O SAML não é citado literalmente no edital; entra pelo SSO (9.8). Palavra-chave: **referência / artefato**.",
+   "revisao_rapida": "Artifact = referência pequena e fixa para uma mensagem SAML.",
+   "tags": [
+    "saml",
+    "sso",
+    "transpetro-2018",
+    "oficial",
+    "dificil",
+    "memorizacao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Transpetro PSP RH 2018.1 (Edital nº 1)",
+    "cargo": "Analista de Sistemas Júnior — Processos de Negócio",
+    "ano": 2018,
+    "prova": "Prova 15",
+    "numero_original": 51,
+    "id_prova": "PRV-006",
+    "situacao_gabarito": "de terceiros (Ética), alterado em 09/05/2018; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/transpetro-2018-prova15-analista-sistemas-jr-processos-negocio.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000063",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 52.",
+   "modulo": "09-seguranca-informacao",
+   "assunto": "ICP-Brasil: certificado da AC subordinada à raiz",
+   "item_edital": "9.19",
+   "id_matriz": null,
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "compreensao",
+   "tipo_questao": "normativa",
+   "enunciado": "A ICP (Infraestrutura de Chaves Públicas) define um conjunto de técnicas, práticas e procedimentos a serem adotados pelas entidades a fim de estabelecer um sistema de certificação digital baseado em chave pública.\nNa ICP-Brasil, o certificado de uma Autoridade Certificadora, imediatamente subsequente à Autoridade Certificadora Raiz, é assinado",
+   "alternativas": {
+    "A": "apenas pela Autoridade Certificadora Raiz",
+    "B": "apenas pela Autoridade de Registro",
+    "C": "apenas pela própria Autoridade Certificadora",
+    "D": "pela Autoridade Certificadora Raiz e pela Autoridade de Registro",
+    "E": "pela Autoridade Certificadora Raiz e pela própria Autoridade Certificadora"
+   },
+   "gabarito": "A",
+   "resolucao": "Na hierarquia da ICP-Brasil, a **AC Raiz** (do ITI) emite e **assina** os certificados das ACs de primeiro nível; estas assinam os das ACs seguintes e os de usuários finais. A **AR** apenas valida e encaminha pedidos, **não assina** certificados.",
+   "analise_alternativas": {
+    "A": "Correta. A AC imediatamente subordinada tem seu certificado assinado somente pela AC Raiz.",
+    "B": "Incorreta. A AR não emite nem assina certificados.",
+    "C": "Incorreta. O certificado autoassinado é o da própria AC Raiz, e não o das subordinadas.",
+    "D": "Incorreta. A AR não assina certificados.",
+    "E": "Incorreta. Só a AC Raiz assina; a própria AC não assina o seu certificado de AC subordinada."
+   },
+   "fundamentacao": {
+    "item": "9.19",
+    "arquivo_teoria": "conteudo/09-seguranca-informacao/11-iso-27002.md"
+   },
+   "ponto_atencao": "Cadeia de confiança: **AC Raiz (autoassinado) → ACs → usuários**. AR = identificação e registro, sem assinar.",
+   "revisao_rapida": "AC de 1º nível: assinada apenas pela AC Raiz.",
+   "tags": [
+    "icp-brasil",
+    "certificacao",
+    "transpetro-2018",
+    "oficial",
+    "media",
+    "compreensao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Transpetro PSP RH 2018.1 (Edital nº 1)",
+    "cargo": "Analista de Sistemas Júnior — Processos de Negócio",
+    "ano": 2018,
+    "prova": "Prova 15",
+    "numero_original": 52,
+    "id_prova": "PRV-006",
+    "situacao_gabarito": "de terceiros (Ética), alterado em 09/05/2018; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/transpetro-2018-prova15-analista-sistemas-jr-processos-negocio.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
    "status_validacao": "em_revisao"
   }
  ]

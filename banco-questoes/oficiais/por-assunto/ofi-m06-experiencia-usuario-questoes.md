@@ -1,4 +1,4 @@
-# Questões oficiais — m06-experiencia-usuario — questões (T04 — Transpetro 2023 (Prova 6))
+# Questões oficiais — m06-experiencia-usuario — questões (T04 — Transpetro 2023 (Prova 6) e 2018 (Prova 15))
 
 Sem gabarito; o comentário está no arquivo `gabaritos-comentados`.
 
@@ -53,3 +53,16 @@ Nesse sentido, o conceito de Produto Mínimo Viável (MVP) passou a ser muito ut
 (C) o primeiro lançamento de um novo produto de software destinado ao grande público, correspondendo à V1.0 desse software lançado no mercado, e os esforços destinados à sua construção devem ser compatíveis para garantir alta manutenibilidade.
 (D) uma versão necessariamente reduzida de um produto de software, implementado com a utilização das mesmas tecnologias que serão usadas no produto final.
 (E) a versão de um produto de software lançado no mercado após uma validação de hipóteses, realizada na etapa de pesquisas, durante o processo de ideação desse produto.
+
+## OFI-000054 — eMAG: recomendações de acessibilidade
+
+*Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 35.* · item 6.1 · Média
+
+O Modelo de Acessibilidade em Governo Eletrônico (eMAG) define recomendações que norteiam o desenvolvimento e adaptação de conteúdos do Governo Federal. Esse documento é uma importante norma brasileira que orienta o desenvolvimento de sites acessíveis, sendo uma versão especializada do WCAG (Web Contente Accessibility Guidelines).
+Entre as recomendações de acessibilidade do eMAG no design de Web sites, inclui-se
+
+(A) impedir o redimensionamento da página
+(B) utilizar apenas cores para diferenciar elementos
+(C) provocar automaticamente alterações de contexto
+(D) sempre utilizar o uso de CAPTCHAS em questões de segurança
+(E) garantir um contraste mínimo entre o plano de fundo e o primeiro plano

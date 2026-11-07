@@ -1,12 +1,12 @@
 # Simulado do módulo 7 — Análise de dados e informações
 
-**Status:** rascunho · **Tempo:** 50 min · **Questões:** 13
+**Status:** rascunho · **Tempo:** 54 min · **Questões:** 14
 
 **Critério de distribuição:** Até 15 questões por módulo, priorizando itens ainda não usados e mistura de dificuldade 30/50/20% (critério pedagógico).
 
 **Observações:** Mistura de questões oficiais e autorais do módulo; algumas ainda `em_revisao`.
 
-Composição: tipo {'autoral': 12, 'oficial': 1} · status {'validada': 10, 'em_revisao': 3} · dificuldade {'facil': 3, 'media': 8, 'dificil': 2}
+Composição: tipo {'autoral': 12, 'oficial': 2} · status {'validada': 10, 'em_revisao': 4} · dificuldade {'facil': 3, 'media': 9, 'dificil': 2}
 
 ## 1. AUT-000061 — Dado, informação, conhecimento e inteligência
 
@@ -189,3 +189,17 @@ O BI **transforma dados em informação para apoiar decisões** nos níveis estr
 - **E)** Incorreta. O DW é a base integrada que costuma alimentar os painéis; não é dispensável.
 
 **Revisão rápida:** BI apoia decisões em todos os níveis; não decide sozinho.
+
+## 14. OFI-000055 — Sistema de Suporte à Decisão (tipo de sistema de informação)
+
+*Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 54.* · item 7.11 · Média · gabarito **D**
+
+O **Sistema de Suporte à Decisão (SSD/DSS)** usa **modelos e dados** para apoiar decisões semiestruturadas, com análise e **otimização** ("quais caminhões alocar para maximizar o lucro?").
+
+- **A)** Incorreta. CRM gerencia o relacionamento com clientes.
+- **B)** Incorreta. SIG produz relatórios gerenciais de rotina, resumindo dados, sem modelagem de otimização.
+- **C)** Incorreta. Sistemas especialistas reproduzem o raciocínio de especialistas com base de regras.
+- **D)** Correta. Modelagem e otimização para apoiar decisões: SSD.
+- **E)** Incorreta. Processamento de transações registra eventos operacionais (vendas, pagamentos).
+
+**Revisão rápida:** SSD = modelos e otimização para decisões semiestruturadas.

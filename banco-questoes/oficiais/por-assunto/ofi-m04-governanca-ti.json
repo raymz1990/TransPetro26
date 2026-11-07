@@ -1,8 +1,8 @@
 {
  "modulo": "Questões oficiais — m04-governanca-ti",
- "lote": "T04 — Transpetro 2023 (Prova 6)",
+ "lote": "T04 — Transpetro 2023 (Prova 6) e 2018 (Prova 15)",
  "data": "2026-11-06",
- "total": 5,
+ "total": 6,
  "questoes": [
   {
    "id": "OFI-000019",
@@ -113,7 +113,7 @@
     "numero_original": 59,
     "id_prova": "PRV-005",
     "situacao_gabarito": "de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca",
-    "aderencia_edital": "aderente",
+    "aderencia_edital": "parcial",
     "url": "banco-questoes/oficiais/fontes-brutas/transpetro-2023-psp002-prova06-analise-sistemas-processos-negocios.pdf",
     "sha256": "ver docs/estrategia/base-provas.md"
    },
@@ -291,6 +291,65 @@
     "situacao_gabarito": "de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca",
     "aderencia_edital": "aderente",
     "url": "banco-questoes/oficiais/fontes-brutas/transpetro-2023-psp002-prova06-analise-sistemas-processos-negocios.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000048",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 56.",
+   "modulo": "04-governanca-ti",
+   "assunto": "Computação em nuvem (SaaS)",
+   "item_edital": "4.3",
+   "id_matriz": "E5-037",
+   "itens_secundarios": [],
+   "dificuldade": "facil",
+   "habilidade": "compreensao",
+   "tipo_questao": "conceitual",
+   "enunciado": "Os sistemas de informação são aperfeiçoados continuamente como consequência da evolução da tecnologia e dos processos gerenciais, e estão cada vez mais presentes na lista de impactos relevantes no sucesso dos negócios. Exemplo desses impactos é o avanço da migração de aplicações tradicionalmente realizadas nos computadores das empresas para serviços prestados online, sob demanda e, muitas vezes, mediante sistema de assinatura (software como serviço).\nA inovação criada nos últimos anos, na área de sistemas de informação, que proporciona a utilização de tais aplicações é conhecida como",
+   "alternativas": {
+    "A": "Big data.",
+    "B": "computação em nuvem.",
+    "C": "e-business.",
+    "D": "teletrabalho.",
+    "E": "virtualização."
+   },
+   "gabarito": "B",
+   "resolucao": "**Computação em nuvem** entrega recursos e aplicações **sob demanda, pela rede**, com cobrança por uso ou assinatura; **software como serviço (SaaS)** é um dos seus modelos (com IaaS e PaaS).",
+   "analise_alternativas": {
+    "A": "Incorreta. Big data trata de grandes volumes, variedade e velocidade de dados.",
+    "B": "Correta. A descrição (serviços online, sob demanda, assinatura, SaaS) é de nuvem.",
+    "C": "Incorreta. E-business é a condução de negócios por meios eletrônicos, conceito mais amplo.",
+    "D": "Incorreta. Teletrabalho é modalidade de trabalho.",
+    "E": "Incorreta. Virtualização é uma tecnologia-base da nuvem, e não o modelo de entrega descrito."
+   },
+   "fundamentacao": {
+    "item": "4.3",
+    "arquivo_teoria": "conteudo/04-governanca-ti/02-inovacao-e-tecnologia.md"
+   },
+   "ponto_atencao": "SaaS, PaaS e IaaS são modelos de **serviço** da nuvem; virtualização é tecnologia **habilitadora**.",
+   "revisao_rapida": "Sob demanda + assinatura + online = nuvem.",
+   "tags": [
+    "nuvem",
+    "saas",
+    "transpetro-2018",
+    "oficial",
+    "facil",
+    "compreensao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Transpetro PSP RH 2018.1 (Edital nº 1)",
+    "cargo": "Analista de Sistemas Júnior — Processos de Negócio",
+    "ano": 2018,
+    "prova": "Prova 15",
+    "numero_original": 56,
+    "id_prova": "PRV-006",
+    "situacao_gabarito": "de terceiros (Ética), alterado em 09/05/2018; não validado contra a banca",
+    "aderencia_edital": "parcial",
+    "url": "banco-questoes/oficiais/fontes-brutas/transpetro-2018-prova15-analista-sistemas-jr-processos-negocio.pdf",
     "sha256": "ver docs/estrategia/base-provas.md"
    },
    "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",

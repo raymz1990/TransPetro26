@@ -6,7 +6,7 @@
 
 **Observações:** Mistura de questões oficiais e autorais do módulo; algumas ainda `em_revisao`.
 
-Composição: tipo {'autoral': 11, 'oficial': 4} · status {'validada': 10, 'em_revisao': 5} · dificuldade {'media': 8, 'facil': 5, 'dificil': 2}
+Composição: tipo {'autoral': 7, 'oficial': 8} · status {'validada': 7, 'em_revisao': 8} · dificuldade {'media': 10, 'facil': 4, 'dificil': 1}
 
 ## 1. AUT-000082 — Operação de segurança: backup completo e diferencial
 
@@ -36,7 +36,21 @@ O **SIEM** (*Security Information and Event Management*) **coleta, correlaciona 
 
 **Revisão rápida:** SIEM: coleta + correlação + alerta.
 
-## 3. AUT-000083 — Softwares maliciosos: classificação pelo comportamento
+## 3. OFI-000058 — Firewall: listas de controle de acesso
+
+*Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 47.* · item 9.2 · Fácil · gabarito **A**
+
+O **firewall** filtra o tráfego conforme **regras** (listas de controle de acesso) com base em endereços, portas e protocolos, permitindo ou bloqueando a passagem.
+
+- **A)** Correta. Firewall: filtragem por regras/ACL.
+- **B)** Incorreta. Proxy intermedia requisições de clientes e pode filtrar conteúdo e armazenar em cache.
+- **C)** Incorreta. DMZ é uma zona de rede intermediária, não um componente de filtragem.
+- **D)** Incorreta. IDS detecta e alerta, sem bloquear.
+- **E)** Incorreta. IPS detecta e bloqueia ataques por assinaturas/comportamento.
+
+**Revisão rápida:** Firewall: regras que permitem ou negam pacotes.
+
+## 4. AUT-000083 — Softwares maliciosos: classificação pelo comportamento
 
 *Questão autoral — estilo Cesgranrio.* · item 9.3 · Fácil · gabarito **A**
 
@@ -50,7 +64,21 @@ O **SIEM** (*Security Information and Event Management*) **coleta, correlaciona 
 
 **Revisão rápida:** Vírus: hospedeiro. Worm: autônomo pela rede. Trojan: disfarce. Ransomware: resgate. Spyware: coleta. Rootkit: oculta o invasor.
 
-## 4. AUT-000081 — Ataques: injeção de SQL e consulta parametrizada
+## 5. OFI-000060 — Malware: bot e botnet
+
+*Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 49.* · item 9.3 · Fácil · gabarito **A**
+
+O **bot** transforma o computador em "zumbi" de uma **botnet** controlada remotamente pelo atacante, usada em DDoS, spam e outras ações automatizadas, sem conhecimento do dono.
+
+- **A)** Correta. Bot: integra o equipamento a uma botnet.
+- **B)** Incorreta. Worm se autorreplica pela rede, sem depender de hospedeiro.
+- **C)** Incorreta. Trojan se disfarça de programa legítimo.
+- **D)** Incorreta. "Rabbit" é programa que se replica até esgotar recursos, termo menos usual.
+- **E)** Incorreta. Ransomware cifra dados e exige resgate.
+
+**Revisão rápida:** Bot = computador zumbi em botnet.
+
+## 6. AUT-000081 — Ataques: injeção de SQL e consulta parametrizada
 
 *Questão autoral — estilo Cesgranrio.* · item 9.4 · Média · gabarito **B**
 
@@ -64,21 +92,7 @@ O código **concatena** a entrada do usuário ao texto SQL; com o valor `' OR '1
 
 **Revisão rápida:** SQLi: dado interpretado como comando. Defesa: consultas parametrizadas, validação por lista permitida, menor privilégio.
 
-## 5. AUT-000114 — VPN: IPsec em modo túnel
-
-*Questão autoral — estilo Cesgranrio.* · item 9.6 · Média · gabarito **E**
-
-No **IPsec**, o **modo túnel** protege e **encapsula o pacote IP original inteiro** em um novo pacote com novo cabeçalho IP, e é o usual em **VPN site-to-site** (gateway a gateway). No **modo transporte**, protege-se apenas o **payload**, mantendo o cabeçalho original (típico host a host). O **ESP** oferece confidencialidade, autenticação de origem e integridade; o **AH** oferece integridade e autenticação, **sem** confidencialidade.
-
-- **A)** Incorreta. A VPN protege o tráfego no caminho, mas não torna o usuário anônimo.
-- **B)** Incorreta. A VPN não substitui firewall; as defesas se complementam.
-- **C)** Incorreta. A descrição corresponde ao modo túnel; o transporte preserva o cabeçalho IP original.
-- **D)** Incorreta. É o contrário: o ESP oferece confidencialidade, e o AH, não.
-- **E)** Correta. Descreve corretamente o modo túnel e seu uso entre gateways.
-
-**Revisão rápida:** IPsec: túnel encapsula tudo; ESP cifra; AH só autentica.
-
-## 6. AUT-000084 — Autenticação multifator (MFA): fatores de autenticação
+## 7. AUT-000084 — Autenticação multifator (MFA): fatores de autenticação
 
 *Questão autoral — estilo Cesgranrio.* · item 9.9 · Média · gabarito **E**
 
@@ -92,35 +106,7 @@ A **MFA** exige **dois ou mais fatores de categorias diferentes**: **conheciment
 
 **Revisão rápida:** MFA: ≥ 2 fatores de categorias distintas (sabe, possui, é).
 
-## 7. AUT-000086 — Resposta a incidentes: fases do ciclo (NIST SP 800-61 Rev. 2)
-
-*Questão autoral — estilo Cesgranrio.* · item 9.11 · Fácil · gabarito **D**
-
-O ciclo da Rev. 2 tem **quatro fases**: **preparação**; **detecção e análise**; **contenção, erradicação e recuperação**; e **atividade pós-incidente** (lições aprendidas). Isolar o servidor é **contenção**; remover o código malicioso e redefinir credenciais é **erradicação**; restaurar o serviço é **recuperação**. As três fazem parte da mesma fase.
-
-- **A)** Incorreta. A preparação ocorre antes do incidente (política, equipe, ferramentas, prevenção).
-- **B)** Incorreta. A detecção e análise identifica, valida e prioriza o incidente, o que já ocorreu no enunciado.
-- **C)** Incorreta. A atividade pós-incidente trata de lições aprendidas e melhoria, e vem depois da recuperação.
-- **D)** Correta. Isolamento (contenção), remoção e troca de credenciais (erradicação) e restauração (recuperação).
-- **E)** Incorreta. Essas duas fases antecedem a resposta ao incidente já detectado.
-
-**Revisão rápida:** NIST 800-61 Rev. 2: 4 fases. Contenção, erradicação e recuperação formam uma só fase.
-
-## 8. OFI-000039 — Resposta a incidentes: NIST SP 800-61
-
-*Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 42.* · item 9.11 · Fácil · gabarito **C**
-
-A **NIST SP 800-61** (*Computer Security Incident Handling Guide*) define o ciclo de vida de resposta a incidentes (Rev. 2: preparação; detecção e análise; contenção, erradicação e recuperação; atividade pós-incidente). A Rev. 3 (2025) alinha a resposta ao NIST CSF 2.0.
-
-- **A)** Incorreta. SP 800-30 trata de avaliação de riscos.
-- **B)** Incorreta. SP 800-34 trata de planejamento de contingência.
-- **C)** Correta. SP 800-61 define o ciclo de vida de resposta a incidentes.
-- **D)** Incorreta. ISO 27033-5 trata de segurança de redes (VPN).
-- **E)** Incorreta. ISO 27034-1 trata de segurança de aplicações.
-
-**Revisão rápida:** 800-61 = resposta a incidentes.
-
-## 9. AUT-000085 — Inteligência de ameaças: IoC, TTP e níveis
+## 8. AUT-000085 — Inteligência de ameaças: IoC, TTP e níveis
 
 *Questão autoral — estilo Cesgranrio.* · item 9.12 · Média · gabarito **C**
 
@@ -134,7 +120,7 @@ A **NIST SP 800-61** (*Computer Security Incident Handling Guide*) define o cicl
 
 **Revisão rápida:** IoC: indicador técnico (tática). TTP: comportamento (operacional). Estratégica: tendências para decisão.
 
-## 10. AUT-000087 — Modelagem de ameaças: categorias do STRIDE
+## 9. AUT-000087 — Modelagem de ameaças: categorias do STRIDE
 
 *Questão autoral — estilo Cesgranrio.* · item 9.14 · Difícil · gabarito **A**
 
@@ -148,21 +134,7 @@ A **NIST SP 800-61** (*Computer Security Incident Handling Guide*) define o cicl
 
 **Revisão rápida:** S: falsificar identidade. T: adulterar. R: negar autoria. I: divulgar. D: negar serviço. E: elevar privilégio.
 
-## 11. AUT-000088 — Gestão de riscos: perda esperada anual (SLE e ALE)
-
-*Questão autoral — estilo Cesgranrio.* · item 9.16 · Difícil · gabarito **C**
-
-**SLE** (perda por evento) = valor do ativo × fator de exposição = 800.000 × 0,25 = **R$ 200.000**. **ALE antes** = SLE × ARO = 200.000 × 0,5 = **R$ 100.000**. **ALE depois** = 200.000 × 0,1 = **R$ 20.000**. Redução da perda esperada = 100.000 − 20.000 = **R$ 80.000**. Benefício líquido = 80.000 − 40.000 = **R$ 40.000**.
-
-- **A)** Incorreta. R$ 80.000 é a redução da perda esperada, sem subtrair o custo do controle.
-- **B)** Incorreta. Não decorre dos dados; poderia resultar de erro na aplicação da fórmula (por exemplo, usar ARO de 0,2 em vez de 0,1).
-- **C)** Correta. 80.000 − 40.000 = 40.000.
-- **D)** Incorreta. R$ 100.000 é a perda esperada anual **antes** do controle (ALE inicial).
-- **E)** Incorreta. R$ 20.000 é a perda esperada anual **depois** do controle (ALE residual).
-
-**Revisão rápida:** SLE: perda por evento. ARO: ocorrências por ano. ALE = SLE × ARO. Vale a pena se (ALE antes − ALE depois) > custo.
-
-## 12. AUT-000089 — Assinatura digital: propriedades garantidas
+## 10. AUT-000089 — Assinatura digital: propriedades garantidas
 
 *Questão autoral — estilo Cesgranrio.* · item 9.19 · Média · gabarito **E**
 
@@ -176,7 +148,7 @@ Na **assinatura digital**, o resumo do documento é assinado com a **chave priva
 
 **Revisão rápida:** Assinatura: hash assinado com a chave privada, verificado com a pública. Sem sigilo do conteúdo.
 
-## 13. OFI-000038 — Criptografia híbrida: envelope digital
+## 11. OFI-000038 — Criptografia híbrida: envelope digital
 
 *Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 41.* · item 9.19 · Média · gabarito **D**
 
@@ -190,7 +162,7 @@ No **envelope digital**, a mensagem é cifrada com uma **chave de sessão simét
 
 **Revisão rápida:** Envelope: dados (simétrica) + chave simétrica (pública do destinatário).
 
-## 14. OFI-000041 — ISO/IEC 27002: proteção contra malware
+## 12. OFI-000041 — ISO/IEC 27002: proteção contra malware
 
 *Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 44.* · item 9.19 · Média · gabarito **A**
 
@@ -204,16 +176,44 @@ Na edição de 2013 da ISO/IEC 27002, a proteção contra malware é um objetivo
 
 **Revisão rápida:** Malware: 27002:2013 → 12.2 (operações); 27002:2022 → 8.7 (tecnológico).
 
-## 15. AUT-000090 — Segurança em nuvem: responsabilidade compartilhada
+## 13. OFI-000057 — ISO 27002: controle de acesso à rede
 
-*Questão autoral — estilo Cesgranrio.* · item 9.20 · Fácil · gabarito **B**
+*Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 46.* · item 9.19 · Média · gabarito **D**
 
-No **modelo de responsabilidade compartilhada**, o provedor é responsável pela segurança **da** nuvem (instalações físicas, hosts, rede e, no SaaS, a maior parte da pilha), e o cliente, pela segurança **na** nuvem. **Dados, identidades e configurações** permanecem **sempre** com o cliente, em IaaS, PaaS e SaaS.
+Na ISO/IEC 27002:2005, a seção **11.4 (Controle de acesso à rede)** inclui a **autenticação para conexão externa do usuário** (11.4.2). As demais opções pertencem a outros controles: privilégios (11.2.2, gerenciamento de acesso do usuário), isolamento de sistemas sensíveis (11.6.2), encerramento por inatividade (11.5.5, acesso ao sistema operacional) e relato de eventos (13.1).
 
-- **A)** Incorreta. A segurança física dos datacenters é do provedor em todos os modelos.
-- **B)** Correta. Dados, identidades e configurações de acesso são sempre do cliente.
-- **C)** Incorreta. No SaaS, o sistema operacional é gerenciado pelo provedor.
-- **D)** Incorreta. A virtualização e os servidores são responsabilidade do provedor.
-- **E)** Incorreta. A rede física e os equipamentos de conectividade do provedor são do provedor.
+- **A)** Incorreta. Gerenciamento de privilégios: controle de acesso de usuário.
+- **B)** Incorreta. Isolamento de sistemas sensíveis: controle de acesso à aplicação e à informação.
+- **C)** Incorreta. Time-out de sessão: controle de acesso ao sistema operacional.
+- **D)** Correta. Autenticação de usuários remotos: controle de acesso à rede.
+- **E)** Incorreta. Relato de eventos: gestão de incidentes.
 
-**Revisão rápida:** Dados, identidades e configuração: sempre do cliente. Instalações físicas, hosts e rede do provedor: do provedor. SO: cliente em IaaS; provedor em PaaS e SaaS.
+**Revisão rápida:** Rede: autenticação de acesso remoto, segregação, roteamento.
+
+## 14. OFI-000061 — Certificado digital: SHA256RSA
+
+*Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 50.* · item 9.19 · Média · gabarito **E**
+
+**SHA256** é a função de **hash** que gera um resumo (*digest*) de **256 bits**; **RSA** é algoritmo de criptografia **assimétrica**, usado para cifrar esse resumo com a **chave privada** da AC (a assinatura).
+
+- **A)** Incorreta. "SHA" isolado e "RSA simétrico" estão errados; os 256 bits são do digest, não da chave.
+- **B)** Incorreta. Os 256 bits referem-se ao digest do SHA256, e não à chave privada.
+- **C)** Incorreta. A chave não é simétrica, e RSA não é simétrico.
+- **D)** Incorreta. RSA é assimétrico.
+- **E)** Correta. SHA256 gera digest de 256 bits e RSA é assimétrico: correta.
+
+**Revisão rápida:** SHA256RSA = hash SHA-256 + assinatura RSA.
+
+## 15. OFI-000063 — ICP-Brasil: certificado da AC subordinada à raiz
+
+*Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 52.* · item 9.19 · Média · gabarito **A**
+
+Na hierarquia da ICP-Brasil, a **AC Raiz** (do ITI) emite e **assina** os certificados das ACs de primeiro nível; estas assinam os das ACs seguintes e os de usuários finais. A **AR** apenas valida e encaminha pedidos, **não assina** certificados.
+
+- **A)** Correta. A AC imediatamente subordinada tem seu certificado assinado somente pela AC Raiz.
+- **B)** Incorreta. A AR não emite nem assina certificados.
+- **C)** Incorreta. O certificado autoassinado é o da própria AC Raiz, e não o das subordinadas.
+- **D)** Incorreta. A AR não assina certificados.
+- **E)** Incorreta. Só a AC Raiz assina; a própria AC não assina o seu certificado de AC subordinada.
+
+**Revisão rápida:** AC de 1º nível: assinada apenas pela AC Raiz.

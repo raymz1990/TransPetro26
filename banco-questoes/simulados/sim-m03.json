@@ -2,32 +2,32 @@
  "id": "SIM-M03",
  "titulo": "Simulado do módulo 3 — Processos e seu gerenciamento",
  "tipo": "modulo",
- "tempo_minutos": 54,
- "total": 14,
+ "tempo_minutos": 58,
+ "total": 15,
  "criterio_tempo": "proporcional à prova real (270 min para 70 questões): 3.86 min por questão",
  "status": "rascunho",
  "observacoes": "Mistura de questões oficiais e autorais do módulo; algumas ainda `em_revisao`.",
  "criterio_distribuicao": "Até 15 questões por módulo, priorizando itens ainda não usados e mistura de dificuldade 30/50/20% (critério pedagógico).",
  "distribuicao_modulos": {
-  "M03": 14
+  "M03": 15
  },
  "composicao": {
   "por_tipo": {
    "autoral": 12,
-   "oficial": 2
+   "oficial": 3
   },
   "por_status": {
    "validada": 10,
-   "em_revisao": 4
+   "em_revisao": 5
   },
   "por_dificuldade": {
-   "media": 6,
+   "media": 7,
    "facil": 6,
    "dificil": 2
   },
   "por_gabarito": {
    "D": 2,
-   "B": 4,
+   "B": 5,
    "E": 2,
    "C": 3,
    "A": 3
@@ -84,10 +84,14 @@
   },
   {
    "ordem": 13,
-   "id": "OFI-000017"
+   "id": "OFI-000047"
   },
   {
    "ordem": 14,
+   "id": "OFI-000017"
+  },
+  {
+   "ordem": 15,
    "id": "OFI-000018"
   }
  ]

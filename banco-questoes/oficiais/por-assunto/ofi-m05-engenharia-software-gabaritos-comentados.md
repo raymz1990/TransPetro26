@@ -1,4 +1,4 @@
-# Questões oficiais — m05-engenharia-software — gabaritos comentados (T04 — Transpetro 2023 (Prova 6))
+# Questões oficiais — m05-engenharia-software — gabaritos comentados (T04 — Transpetro 2023 (Prova 6) e 2018 (Prova 15))
 
 ## OFI-000024 — Requisitos funcionais x não funcionais
 
@@ -79,3 +79,103 @@
 **Revisão rápida:** Overload ≠ override.
 
 **Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 32; gabarito: de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca.
+
+## OFI-000049 — Processo Unificado: fase de elaboração
+
+*Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 23.*
+
+**Gabarito: A**
+
+Na **elaboração**, o foco é **reduzir os riscos principais** e **estabelecer a arquitetura executável** (baseline da arquitetura), além de detalhar a maioria dos requisitos. O **escopo** e o *business case* são estabelecidos na **concepção**.
+
+- **A)** Correta. Definir (e validar) a arquitetura é objetivo central da elaboração.
+- **B)** Incorreta. A estimativa global de custo e o business case são da concepção (refinados depois).
+- **C)** Incorreta. Estabelecer o escopo é objetivo da concepção.
+- **D)** Incorreta. Minimizar custos não é objetivo de fase.
+- **E)** Incorreta. A conversão de bancos operacionais é atividade de transição.
+
+**Ponto de atenção:** UP: **Concepção** (escopo, viabilidade), **Elaboração** (arquitetura, riscos), **Construção** (implementação), **Transição** (implantação). Aderência parcial: o RUP/UP não é citado literalmente no item 5.2.
+
+**Revisão rápida:** Elaboração = arquitetura.
+
+**Fonte:** Fundação Cesgranrio, Transpetro PSP RH 2018.1 (Edital nº 1), Analista de Sistemas Júnior — Processos de Negócio (2018), prova Prova 15, questão 23; gabarito: de terceiros (Ética), alterado em 09/05/2018; não validado contra a banca.
+
+## OFI-000050 — Teste de mutação
+
+*Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 24.*
+
+**Gabarito: C**
+
+No **teste de mutação**, criam-se **mutantes** (cópias do programa com pequenas alterações) e executam-se os testes; se o teste detecta a diferença, o mutante é "morto". Avalia a **qualidade do conjunto de testes**.
+
+- **A)** Incorreta. Testes aleatórios geram entradas ao acaso.
+- **B)** Incorreta. Exploratórios combinam aprendizado, projeto e execução simultâneos, sem scripts.
+- **C)** Correta. Descreve o teste de mutação.
+- **D)** Incorreta. Perfil operacional seleciona entradas conforme o uso esperado.
+- **E)** Incorreta. Fluxo de controle usa o grafo do programa para cobertura de comandos, ramos e caminhos.
+
+**Ponto de atenção:** Palavras-chave: **versões levemente modificadas** = mutantes.
+
+**Revisão rápida:** Mutação: alterar o programa para avaliar os testes.
+
+**Fonte:** Fundação Cesgranrio, Transpetro PSP RH 2018.1 (Edital nº 1), Analista de Sistemas Júnior — Processos de Negócio (2018), prova Prova 15, questão 24; gabarito: de terceiros (Ética), alterado em 09/05/2018; não validado contra a banca.
+
+## OFI-000051 — Complexidade ciclomática a partir do grafo de fluxo
+
+*Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 25.*
+
+**Gabarito: A**
+
+**V(G) = E − N + 2P**, com E arestas, N nós e P componentes conexos (P = 1 para um programa): V(G) = 12 − 5 + 2 = **9**.
+
+- **A)** Correta. 12 − 5 + 2 = 9: correta.
+- **B)** Incorreta. 11 não resulta da fórmula (por exemplo, 12 − 5 + 4).
+- **C)** Incorreta. 15 = 12 + 5 − 2 (sinal trocado).
+- **D)** Incorreta. 17 = 12 + 5.
+- **E)** Incorreta. 19 = 12 + 5 + 2.
+
+**Ponto de atenção:** Fórmulas equivalentes: **E − N + 2**, **decisões + 1**, **regiões do grafo planar**. Cuidado para não somar nós e arcos.
+
+**Revisão rápida:** V(G) = E − N + 2.
+
+**Fonte:** Fundação Cesgranrio, Transpetro PSP RH 2018.1 (Edital nº 1), Analista de Sistemas Júnior — Processos de Negócio (2018), prova Prova 15, questão 25; gabarito: de terceiros (Ética), alterado em 09/05/2018; não validado contra a banca.
+
+## OFI-000052 — Casos de uso
+
+*Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 27.*
+
+**Gabarito: A**
+
+O **caso de uso** descreve **uma interação entre um ator e o sistema** para atingir um objetivo, do ponto de vista externo, em geral com um fluxo principal e fluxos alternativos e de exceção.
+
+- **A)** Correta. Descreve uma interação ator-sistema, visão externa.
+- **B)** Incorreta. Um caso de uso reúne **vários** cenários (fluxo principal e alternativos); um único cenário é uma instância.
+- **C)** Incorreta. O comportamento interno é tratado em outros modelos (sequência, atividades).
+- **D)** Incorreta. Estados dos objetos são modelados em diagramas de estados.
+- **E)** Incorreta. Interações entre objetos são modeladas em diagramas de sequência/comunicação.
+
+**Ponto de atenção:** Caso de uso: **visão externa**, objetivo do ator. B é a pegadinha: o caso de uso agrupa **vários cenários**.
+
+**Revisão rápida:** Caso de uso = interação ator × sistema.
+
+**Fonte:** Fundação Cesgranrio, Transpetro PSP RH 2018.1 (Edital nº 1), Analista de Sistemas Júnior — Processos de Negócio (2018), prova Prova 15, questão 27; gabarito: de terceiros (Ética), alterado em 09/05/2018; não validado contra a banca.
+
+## OFI-000053 — Orientação a objetos: polimorfismo
+
+*Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 29.*
+
+**Gabarito: E**
+
+**Polimorfismo** permite que operações distintas respondam à mesma mensagem (mesmo nome), cada classe com sua implementação; clientes dependem da interface, reduzindo o acoplamento.
+
+- **A)** Incorreta. Encapsulamento oculta o estado interno.
+- **B)** Incorreta. Especialização cria subclasses mais específicas.
+- **C)** Incorreta. Herança reaproveita características da superclasse.
+- **D)** Incorreta. Padrões de projeto não são propriedade da orientação a objetos.
+- **E)** Correta. Operações diferentes com o mesmo nome: polimorfismo.
+
+**Ponto de atenção:** Polimorfismo (mesmo nome, comportamentos diferentes) ≠ herança (reuso) ≠ encapsulamento (ocultação).
+
+**Revisão rápida:** Polimorfismo: mesma operação, formas diferentes.
+
+**Fonte:** Fundação Cesgranrio, Transpetro PSP RH 2018.1 (Edital nº 1), Analista de Sistemas Júnior — Processos de Negócio (2018), prova Prova 15, questão 29; gabarito: de terceiros (Ética), alterado em 09/05/2018; não validado contra a banca.

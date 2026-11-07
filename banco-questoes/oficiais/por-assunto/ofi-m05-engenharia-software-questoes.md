@@ -1,4 +1,4 @@
-# Questões oficiais — m05-engenharia-software — questões (T04 — Transpetro 2023 (Prova 6))
+# Questões oficiais — m05-engenharia-software — questões (T04 — Transpetro 2023 (Prova 6) e 2018 (Prova 15))
 
 Sem gabarito; o comentário está no arquivo `gabaritos-comentados`.
 
@@ -56,3 +56,67 @@ Qual o nome da técnica a ser usada pelo desenvolvedor?
 (C) Instanciação
 (D) Sobrecarga
 (E) Sobrescrita
+
+## OFI-000049 — Processo Unificado: fase de elaboração
+
+*Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 23.* · item 5.2 · Média
+
+O Processo Unificado de desenvolvimento de software é dividido em quatro fases: concepção (inception), elaboração, construção e transição.
+Um dos objetivos da fase de elaboração é
+
+(A) definir a arquitetura
+(B) estimar o custo total
+(C) estabelecer o escopo do projeto
+(D) minimizar custos de desenvolvimento
+(E) converter bancos de dados operacionais
+
+## OFI-000050 — Teste de mutação
+
+*Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 24.* · item 5.4 · Média
+
+Entre as técnicas de teste de software, aquela que gera versões levemente modificadas de um programa sob teste e exercita tanto o programa original quanto os programas modificados, procurando diferenças entre essas formas, é conhecida como testes
+
+(A) aleatórios
+(B) exploratórios
+(C) de mutação
+(D) de perfil operacional
+(E) baseados em fluxo de controle
+
+## OFI-000051 — Complexidade ciclomática a partir do grafo de fluxo
+
+*Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 25.* · item 5.4 · Média
+
+Uma das medidas de qualidade do código de um software é a Complexidade, que pode ser medida por meio da complexidade ciclomática.
+Considere um grafo de fluxo que possui 5 nós e 12 arcos.
+Qual a complexidade ciclomática desse grafo?
+
+(A) 9
+(B) 11
+(C) 15
+(D) 17
+(E) 19
+
+## OFI-000052 — Casos de uso
+
+*Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 27.* · item 5.1 · Média
+
+Casos de uso são das mais importantes ferramentas de especificação de sistemas em uso atualmente, constituindo representações textuais em forma de narrativa.
+Tais representações demonstram
+
+(A) uma interação entre um ator e o sistema
+(B) um único cenário de uso do sistema por um ator
+(C) um comportamento interno do sistema quando o ator o utiliza
+(D) os estados dos objetos do sistema quando são usados
+(E) a interação entre os objetos do sistema por meio de mensagens
+
+## OFI-000053 — Orientação a objetos: polimorfismo
+
+*Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 29.* · item 5.3 · Média
+
+Qual a propriedade, típica da orientação a objeto, que habilita uma quantidade de operações diferentes a ter o mesmo nome, diminuindo o acoplamento entre objetos?
+
+(A) Encapsulamento
+(B) Especialização
+(C) Herança
+(D) Padrões de projeto
+(E) Polimorfismo

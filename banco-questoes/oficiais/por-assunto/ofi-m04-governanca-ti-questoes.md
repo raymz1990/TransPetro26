@@ -1,4 +1,4 @@
-# Questões oficiais — m04-governanca-ti — questões (T04 — Transpetro 2023 (Prova 6))
+# Questões oficiais — m04-governanca-ti — questões (T04 — Transpetro 2023 (Prova 6) e 2018 (Prova 15))
 
 Sem gabarito; o comentário está no arquivo `gabaritos-comentados`.
 
@@ -70,3 +70,16 @@ A respeito dos KPIs, verifica-se que são
 (C) aplicados apenas em organizações de pequeno porte.
 (D) selecionados com base nas necessidades de negócios e ajudam a medir o sucesso do serviço.
 (E) isentos da influência de ferramentas de monitoramento em sua definição ou em seu rastreamento.
+
+## OFI-000048 — Computação em nuvem (SaaS)
+
+*Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 56.* · item 4.3 · Fácil
+
+Os sistemas de informação são aperfeiçoados continuamente como consequência da evolução da tecnologia e dos processos gerenciais, e estão cada vez mais presentes na lista de impactos relevantes no sucesso dos negócios. Exemplo desses impactos é o avanço da migração de aplicações tradicionalmente realizadas nos computadores das empresas para serviços prestados online, sob demanda e, muitas vezes, mediante sistema de assinatura (software como serviço).
+A inovação criada nos últimos anos, na área de sistemas de informação, que proporciona a utilização de tais aplicações é conhecida como
+
+(A) Big data.
+(B) computação em nuvem.
+(C) e-business.
+(D) teletrabalho.
+(E) virtualização.

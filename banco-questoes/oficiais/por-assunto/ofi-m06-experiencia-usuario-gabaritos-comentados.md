@@ -1,4 +1,4 @@
-# Questões oficiais — m06-experiencia-usuario — gabaritos comentados (T04 — Transpetro 2023 (Prova 6))
+# Questões oficiais — m06-experiencia-usuario — gabaritos comentados (T04 — Transpetro 2023 (Prova 6) e 2018 (Prova 15))
 
 ## OFI-000028 — Prototipação de alta fidelidade
 
@@ -79,3 +79,23 @@ O **MVP** é a versão mais enxuta que permite **aprender com usuários reais** 
 **Revisão rápida:** MVP: mínimo para validar hipóteses com usuários reais.
 
 **Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 58; gabarito: de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca.
+
+## OFI-000054 — eMAG: recomendações de acessibilidade
+
+*Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 35.*
+
+**Gabarito: E**
+
+O eMAG (alinhado ao WCAG) recomenda **contraste mínimo** entre texto e fundo, **permitir redimensionamento**, **não depender só da cor** para transmitir informação, **não causar mudanças de contexto automáticas** e evitar barreiras como CAPTCHAs sem alternativa.
+
+- **A)** Incorreta. Contraria a recomendação: o redimensionamento deve ser permitido.
+- **B)** Incorreta. Contraria a recomendação: não se deve usar apenas a cor.
+- **C)** Incorreta. Mudanças automáticas de contexto são práticas a evitar.
+- **D)** Incorreta. CAPTCHAs sem alternativa criam barreira; a recomendação é fornecer alternativas.
+- **E)** Correta. Contraste mínimo entre fundo e primeiro plano é recomendação de acessibilidade.
+
+**Ponto de atenção:** Em questões de acessibilidade, as práticas **proibidas** costumam aparecer como distratores: impedir zoom, depender só de cor, mudar contexto sozinho, CAPTCHA sem alternativa.
+
+**Revisão rápida:** eMAG/WCAG: contraste, zoom, não só cor, sem mudança automática de contexto.
+
+**Fonte:** Fundação Cesgranrio, Transpetro PSP RH 2018.1 (Edital nº 1), Analista de Sistemas Júnior — Processos de Negócio (2018), prova Prova 15, questão 35; gabarito: de terceiros (Ética), alterado em 09/05/2018; não validado contra a banca.

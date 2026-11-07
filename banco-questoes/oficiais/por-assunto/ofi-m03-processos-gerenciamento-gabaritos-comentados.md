@@ -1,4 +1,4 @@
-# Questões oficiais — m03-processos-gerenciamento — gabaritos comentados (T04 — Transpetro 2023 (Prova 6))
+# Questões oficiais — m03-processos-gerenciamento — gabaritos comentados (T04 — Transpetro 2023 (Prova 6) e 2018 (Prova 15))
 
 ## OFI-000017 — Sequência dos grupos de processos
 
@@ -39,3 +39,23 @@ O grupo que acompanha o desempenho, compara com o plano e aciona ações correti
 **Revisão rápida:** M&C: monitorar, analisar, controlar mudanças, ações corretivas.
 
 **Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 70; gabarito: de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca.
+
+## OFI-000047 — Workflow: automação de processos de negócio
+
+*Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 57.*
+
+**Gabarito: B**
+
+A definição clássica (WfMC) descreve **workflow** como a **automação de um processo de negócio, total ou parcial**, em que documentos, informações ou tarefas são **passados entre participantes**, segundo **regras de procedimento**.
+
+- **A)** Incorreta. Descreve o contexto humano do processo, sem automação.
+- **B)** Correta. Corresponde à definição de workflow da WfMC.
+- **C)** Incorreta. Descreve captura e indexação de documentos.
+- **D)** Incorreta. Descreve melhoria/racionalização de processos por qualidade, não workflow.
+- **E)** Incorreta. Parece a definição, mas exige "pelo menos um agente" e "todas as atividades de troca", o que é mais restritivo e impreciso.
+
+**Ponto de atenção:** Aderência parcial: o item 3 do edital é genérico. Diferença chave entre B e E: o **processo de negócio, no todo ou em parte** é automatizado; E fala em "todas as atividades de troca de documentos".
+
+**Revisão rápida:** Workflow = automação de processo (todo ou parte), tarefas passando entre participantes por regras.
+
+**Fonte:** Fundação Cesgranrio, Transpetro PSP RH 2018.1 (Edital nº 1), Analista de Sistemas Júnior — Processos de Negócio (2018), prova Prova 15, questão 57; gabarito: de terceiros (Ética), alterado em 09/05/2018; não validado contra a banca.

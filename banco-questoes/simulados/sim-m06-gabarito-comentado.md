@@ -6,7 +6,7 @@
 
 **Observações:** Mistura de questões oficiais e autorais do módulo; algumas ainda `em_revisao`.
 
-Composição: tipo {'autoral': 12, 'oficial': 3} · status {'validada': 10, 'em_revisao': 5} · dificuldade {'media': 8, 'facil': 5, 'dificil': 2}
+Composição: tipo {'autoral': 11, 'oficial': 4} · status {'validada': 10, 'em_revisao': 5} · dificuldade {'media': 8, 'facil': 5, 'dificil': 2}
 
 ## 1. AUT-000051 — Acessibilidade: princípios do WCAG (POUR)
 
@@ -36,7 +36,21 @@ Acessibilidade e usabilidade são **requisitos de qualidade** a considerar desde
 
 **Revisão rápida:** A11y e usabilidade: complementares e desde o protótipo.
 
-## 3. AUT-000052 — Histórias do usuário: critério INVEST
+## 3. OFI-000054 — eMAG: recomendações de acessibilidade
+
+*Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 35.* · item 6.1 · Média · gabarito **E**
+
+O eMAG (alinhado ao WCAG) recomenda **contraste mínimo** entre texto e fundo, **permitir redimensionamento**, **não depender só da cor** para transmitir informação, **não causar mudanças de contexto automáticas** e evitar barreiras como CAPTCHAs sem alternativa.
+
+- **A)** Incorreta. Contraria a recomendação: o redimensionamento deve ser permitido.
+- **B)** Incorreta. Contraria a recomendação: não se deve usar apenas a cor.
+- **C)** Incorreta. Mudanças automáticas de contexto são práticas a evitar.
+- **D)** Incorreta. CAPTCHAs sem alternativa criam barreira; a recomendação é fornecer alternativas.
+- **E)** Correta. Contraste mínimo entre fundo e primeiro plano é recomendação de acessibilidade.
+
+**Revisão rápida:** eMAG/WCAG: contraste, zoom, não só cor, sem mudança automática de contexto.
+
+## 4. AUT-000052 — Histórias do usuário: critério INVEST
 
 *Questão autoral — estilo Cesgranrio.* · item 6.2 · Fácil · gabarito **D**
 
@@ -50,7 +64,7 @@ O **INVEST** descreve boas histórias: **I**ndependentes, **N**egociáveis, **V*
 
 **Revisão rápida:** INVEST: independente, negociável, valiosa, estimável, pequena, testável.
 
-## 4. AUT-000108 — Histórias de usuário: critérios INVEST
+## 5. AUT-000108 — Histórias de usuário: critérios INVEST
 
 *Questão autoral — estilo Cesgranrio.* · item 6.2 · Média · gabarito **C**
 
@@ -64,7 +78,7 @@ INVEST: **I**ndependente, **N**egociável, **V**alioso, **E**stimável, **P**equ
 
 **Revisão rápida:** INVEST: história boa é Pequena; épico deve ser quebrado.
 
-## 5. AUT-000053 — Interação web: arquitetura da informação e classificação de cartões
+## 6. AUT-000053 — Interação web: arquitetura da informação e classificação de cartões
 
 *Questão autoral — estilo Cesgranrio.* · item 6.3 · Fácil · gabarito **A**
 
@@ -78,7 +92,7 @@ Na **classificação de cartões (*card sorting*)**, usuários agrupam e nomeiam
 
 **Revisão rápida:** Card sorting: gera a estrutura a partir do modelo mental dos usuários. Tree testing: valida a estrutura. Heurística: especialistas. Teste de usabilidade: usuários em tarefas.
 
-## 6. AUT-000054 — Projeto centrado no usuário: avaliação heurística e teste de usabilidade
+## 7. AUT-000054 — Projeto centrado no usuário: avaliação heurística e teste de usabilidade
 
 *Questão autoral — estilo Cesgranrio.* · item 6.4 · Média · gabarito **E**
 
@@ -92,7 +106,7 @@ Na **avaliação heurística**, **especialistas inspecionam** a interface com ba
 
 **Revisão rápida:** Avaliação heurística: especialistas. Teste de usabilidade: usuários reais. Percurso cognitivo: simula passos do usuário novo.
 
-## 7. AUT-000055 — Storytelling com dados: escolha de gráficos e boas práticas
+## 8. AUT-000055 — Storytelling com dados: escolha de gráficos e boas práticas
 
 *Questão autoral — estilo Cesgranrio.* · item 6.5 · Difícil · gabarito **C**
 
@@ -106,7 +120,7 @@ Na **avaliação heurística**, **especialistas inspecionam** a interface com ba
 
 **Revisão rápida:** Gráfico por objetivo: comparar categorias (barras), evolução (linhas), composição (empilhadas/poucas fatias), relação (dispersão). Evitar distorções, 3D e excesso de cor.
 
-## 8. AUT-000056 — Relatórios e dashboards: tipos de dashboard
+## 9. AUT-000056 — Relatórios e dashboards: tipos de dashboard
 
 *Questão autoral — estilo Cesgranrio.* · item 6.6 · Fácil · gabarito **D**
 
@@ -120,7 +134,7 @@ O **dashboard operacional** é voltado ao **monitoramento em tempo (quase) real*
 
 **Revisão rápida:** Dashboard: monitoramento rápido em uma tela. Operacional (tempo real), analítico (exploração), estratégico (metas).
 
-## 9. AUT-000057 — Interoperabilidade entre navegadores: detecção de recursos e melhoria progressiva
+## 10. AUT-000057 — Interoperabilidade entre navegadores: detecção de recursos e melhoria progressiva
 
 *Questão autoral — estilo Cesgranrio.* · item 6.7 · Média · gabarito **A**
 
@@ -134,7 +148,7 @@ A recomendação é usar **detecção de recursos** (*feature detection*), que v
 
 **Revisão rápida:** Compatibilidade: padrões web, HTML semântico, detecção de recursos, melhoria progressiva, polyfills, matriz de testes.
 
-## 10. AUT-000058 — MVP e prototipação: distinção entre MVP e protótipo
+## 11. AUT-000058 — MVP e prototipação: distinção entre MVP e protótipo
 
 *Questão autoral — estilo Cesgranrio.* · item 6.8 · Difícil · gabarito **C**
 
@@ -148,7 +162,7 @@ O **MVP** é a **versão mínima utilizável**, usada por **usuários reais**, p
 
 **Revisão rápida:** MVP: versão mínima funcional para validar hipóteses com usuários reais. Protótipo: modelo (papel, wireframe, mockup, interativo) para explorar e testar; alta fidelidade = realista.
 
-## 11. OFI-000031 — MVP: Mínimo Produto Viável
+## 12. OFI-000031 — MVP: Mínimo Produto Viável
 
 *Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 58.* · item 6.8 · Média · gabarito **A**
 
@@ -162,7 +176,7 @@ O **MVP** é a versão mais enxuta que permite **aprender com usuários reais** 
 
 **Revisão rápida:** MVP: mínimo para validar hipóteses com usuários reais.
 
-## 12. AUT-000059 — Design thinking: etapas do processo
+## 13. AUT-000059 — Design thinking: etapas do processo
 
 *Questão autoral — estilo Cesgranrio.* · item 6.10 · Fácil · gabarito **E**
 
@@ -176,7 +190,7 @@ As cinco etapas do d.school são **empatizar, definir, idear, prototipar e testa
 
 **Revisão rápida:** Design thinking (d.school): empatizar, definir, idear, prototipar, testar. Iterativo e centrado nas pessoas.
 
-## 13. OFI-000030 — Design Thinking: mapa de empatia
+## 14. OFI-000030 — Design Thinking: mapa de empatia
 
 *Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 34.* · item 6.10 · Fácil · gabarito **D**
 
@@ -190,7 +204,7 @@ O **mapa de empatia** organiza o que o usuário **pensa e sente, ouve, vê, fala
 
 **Revisão rápida:** Mapa: pensa e sente, ouve, vê, fala e faz.
 
-## 14. AUT-000060 — Análise de personas: persona, perfil e papel
+## 15. AUT-000060 — Análise de personas: persona, perfil e papel
 
 *Questão autoral — estilo Cesgranrio.* · item 6.11 · Média · gabarito **B**
 
@@ -203,17 +217,3 @@ O **mapa de empatia** organiza o que o usuário **pensa e sente, ouve, vê, fala
 - **E)** Incorreta. A proto-persona parte de hipóteses, sem pesquisa; aqui, o arquétipo foi construído a partir de entrevistas, observação e dados de uso.
 
 **Revisão rápida:** Persona: arquétipo baseado em pesquisa. Perfil: agregado. Papel: função ligada a acesso. Stakeholder: afetado ou interessado.
-
-## 15. AUT-000109 — Personas em projeto centrado no usuário
-
-*Questão autoral — estilo Cesgranrio.* · item 6.11 · Média · gabarito **D**
-
-**Persona** é um **arquétipo fictício** construído a partir de **dados de pesquisa** (entrevistas, observação, analytics), que representa um grupo de usuários com objetivos, comportamentos, necessidades, dores e contexto semelhantes. Ela **ajuda a empatizar e a decidir**, mas não substitui a pesquisa.
-
-- **A)** Incorreta. Persona é fictícia; usar dados de pessoas reais identificadas fere a privacidade e a própria técnica.
-- **B)** Incorreta. Persona é produto da pesquisa; não a dispensa.
-- **C)** Incorreta. Não é média estatística: representa um arquétipo com narrativa e objetivos.
-- **D)** Correta. Define corretamente a persona.
-- **E)** Incorreta. Requisitos funcionais são outro artefato; a persona alimenta, mas não é a lista de requisitos.
-
-**Revisão rápida:** Persona: arquétipo fictício baseado em pesquisa.

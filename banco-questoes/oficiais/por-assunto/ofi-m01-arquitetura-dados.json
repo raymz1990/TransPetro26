@@ -1,8 +1,8 @@
 {
  "modulo": "Questões oficiais — m01-arquitetura-dados",
- "lote": "T04 — Transpetro 2023 (Prova 6)",
+ "lote": "T04 — Transpetro 2023 (Prova 6) e 2018 (Prova 15)",
  "data": "2026-11-06",
- "total": 11,
+ "total": 13,
  "questoes": [
   {
    "id": "OFI-000001",
@@ -648,6 +648,124 @@
     "sha256": "ver docs/estrategia/base-provas.md"
    },
    "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000042",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 22.",
+   "modulo": "01-arquitetura-dados",
+   "assunto": "Data warehouse: Data Staging Area (ETL)",
+   "item_edital": "1.19",
+   "id_matriz": "E5-020",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "memorizacao",
+   "tipo_questao": "conceitual",
+   "enunciado": "Os sistemas de data warehouse diferem de várias formas dos sistemas transacionais das empresas, como, por exemplo, em seu modelo de dados. Para transferir e transformar os dados dos sistemas transacionais para os sistemas de data warehousing, é comum utilizar, como estratégia, a existência de uma camada especial da arquitetura conhecida como",
+   "alternativas": {
+    "A": "Data Marts",
+    "B": "Data Staging Area",
+    "C": "Dimensional Model Area",
+    "D": "Presentation Area",
+    "E": "Living Sample Area"
+   },
+   "gabarito": "B",
+   "resolucao": "A **Data Staging Area** é a área intermediária onde os dados extraídos das fontes transacionais são **limpos, transformados e preparados** (o \"T\" do ETL) antes de serem carregados na área de apresentação do DW (Kimball).",
+   "analise_alternativas": {
+    "A": "Incorreta. Data marts são subconjuntos do DW voltados a uma área de negócio; ficam na camada de apresentação.",
+    "B": "Correta. É a área de trânsito e transformação entre as fontes e o DW.",
+    "C": "Incorreta. \"Dimensional Model Area\" não é camada padrão da arquitetura.",
+    "D": "Incorreta. A Presentation Area é onde os dados já organizados ficam disponíveis para consulta.",
+    "E": "Incorreta. \"Living Sample Area\" não é camada de arquitetura de DW."
+   },
+   "fundamentacao": {
+    "item": "1.19",
+    "arquivo_teoria": "conteudo/01-arquitetura-dados/08-integracao-e-etl.md"
+   },
+   "ponto_atencao": "Arquitetura de Kimball: fontes → **staging** (ETL) → **presentation** (data marts dimensionais) → ferramentas de acesso (BI).",
+   "revisao_rapida": "Staging area = onde se extrai, limpa e transforma antes de carregar.",
+   "tags": [
+    "data-warehouse",
+    "etl",
+    "transpetro-2018",
+    "oficial",
+    "media",
+    "memorizacao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Transpetro PSP RH 2018.1 (Edital nº 1)",
+    "cargo": "Analista de Sistemas Júnior — Processos de Negócio",
+    "ano": 2018,
+    "prova": "Prova 15",
+    "numero_original": 22,
+    "id_prova": "PRV-006",
+    "situacao_gabarito": "de terceiros (Ética), alterado em 09/05/2018; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/transpetro-2018-prova15-analista-sistemas-jr-processos-negocio.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000043",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 38.",
+   "modulo": "01-arquitetura-dados",
+   "assunto": "SQL: fornecedores com venda em intervalo de datas",
+   "item_edital": "1.10",
+   "id_matriz": "E5-011",
+   "itens_secundarios": [],
+   "dificuldade": "dificil",
+   "habilidade": "analise",
+   "tipo_questao": "aplicada",
+   "enunciado": "O banco de dados de uma empresa contém as tabelas a seguir, que são usadas para controlar as compras de materiais de escritório.\n\n```sql\nCREATE TABLE FORNECEDOR (\n  ID_FORN NUMBER(5) NOT NULL, NOME VARCHAR2(100) NOT NULL,\n  TEL1 CHAR(15) NOT NULL, TEL2 CHAR(15), TEL3 CHAR(15),\n  CONSTRAINT FORNECEDOR_PK PRIMARY KEY (ID_FORN));\nCREATE TABLE MATERIAL (\n  ID_MATER NUMBER(5) NOT NULL, DESCR VARCHAR2(100) NOT NULL,\n  CONSTRAINT MATERIAL_PK PRIMARY KEY (ID_MATER));\nCREATE TABLE VENDA (\n  ID_F NUMBER(5) NOT NULL, ID_M NUMBER(5) NOT NULL,\n  DATA DATE NOT NULL, PRECO NUMBER(9,2) NOT NULL, QTD NUMBER(5) NOT NULL,\n  CONSTRAINT VENDA_PK PRIMARY KEY (ID_F, ID_M, DATA),\n  CONSTRAINT VENDA_FK1 FOREIGN KEY (ID_F) REFERENCES FORNECEDOR (ID_FORN),\n  CONSTRAINT VENDA_FK2 FOREIGN KEY (ID_M) REFERENCES MATERIAL (ID_MATER));\n```\n\nSabe-se que um fornecedor pode vender muitos materiais, e um material pode ser vendido por vários fornecedores.\n\nConsiderando as tabelas e as informações dadas, qual consulta exibe o número de identificação e o nome dos fornecedores que realizaram pelo menos uma venda entre os dias 05/01/2018 (inclusive) e 10/01/2018 (inclusive)?",
+   "alternativas": {
+    "A": "```sql\nSELECT ID_FORN, NOME\nFROM FORNECEDOR F, VENDA V\nWHERE F.ID_FORN=ID_F AND DATA >= '05/01/2018'\nINTERSECT\nSELECT ID_FORN, NOME\nFROM FORNECEDOR F, VENDA V\nWHERE F.ID_FORN=ID_F AND DATA <= '10/01/2018'\n```",
+    "B": "```sql\nSELECT ID_FORN, NOME\nFROM FORNECEDOR F\nWHERE (SELECT COUNT(*) FROM VENDA\n       WHERE F.ID_FORN=ID_F AND\n       DATA BETWEEN '05/01/2018' AND '10/01/2018') > 0\n```",
+    "C": "```sql\nSELECT UNIQUE ID_FORN, NOME\nFROM FORNECEDOR F LEFT JOIN VENDA V ON F.ID_FORN = V.ID_F\nWHERE DATA >= '05/01/2018' OR DATA <= '10/01/2018'\n```",
+    "D": "```sql\nSELECT ID_FORN, NOME\nFROM FORNECEDOR F, VENDA V\nWHERE F.ID_FORN=ID_F AND DATA >= '05/01/2018'\nUNION\nSELECT ID_FORN, NOME\nFROM FORNECEDOR F, VENDA V\nWHERE F.ID_FORN=ID_F AND DATA <= '10/01/2018'\n```",
+    "E": "```sql\nSELECT ID_FORN, NOME\nFROM FORNECEDOR F\nWHERE ID_FORN NOT IN (SELECT ID_F FROM VENDA\n                       WHERE DATA < '05/01/2018' OR DATA > '10/01/2018')\n```"
+   },
+   "gabarito": "B",
+   "resolucao": "Procura-se o fornecedor para o qual **exista ao menos uma linha de VENDA com a data dentro do intervalo**. A alternativa B conta, por fornecedor, as vendas com `DATA BETWEEN` (inclusivo nas duas pontas) e exige contagem maior que zero. (Os literais de data seguem a formatação do caderno.)",
+   "analise_alternativas": {
+    "A": "Incorreta. O INTERSECT combina duas condições **avaliadas em linhas diferentes**: um fornecedor com uma venda antes de 05/01 e outra depois de 10/01 satisfaz as duas, mesmo sem nenhuma venda dentro do intervalo.",
+    "B": "Correta. Filtra as vendas no intervalo e exige que haja ao menos uma: resposta correta.",
+    "C": "Incorreta. O `OR` entre as duas condições é verdadeiro para **qualquer** data não nula, e não restringe ao intervalo (a sintaxe `UNIQUE` também é específica de dialeto).",
+    "D": "Incorreta. O UNION de duas condições separadas equivale ao OR: qualquer fornecedor com venda em qualquer data satisfaz uma delas.",
+    "E": "Incorreta. Retorna os fornecedores que **não** têm venda fora do intervalo, incluindo os que **nunca** venderam."
+   },
+   "fundamentacao": {
+    "item": "1.10",
+    "arquivo_teoria": "conteudo/01-arquitetura-dados/05-sql-e-sgbd.md"
+   },
+   "ponto_atencao": "Em consultas com intervalo, verifique se as condições são avaliadas **na mesma linha** (AND/BETWEEN) ou **em linhas diferentes** (INTERSECT, UNION), e o efeito de `NOT IN` e de `OR`.",
+   "revisao_rapida": "Intervalo inclusivo: BETWEEN, ou >= AND <=, na mesma linha.",
+   "tags": [
+    "sql",
+    "between",
+    "transpetro-2018",
+    "oficial",
+    "dificil",
+    "analise"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Transpetro PSP RH 2018.1 (Edital nº 1)",
+    "cargo": "Analista de Sistemas Júnior — Processos de Negócio",
+    "ano": 2018,
+    "prova": "Prova 15",
+    "numero_original": 38,
+    "id_prova": "PRV-006",
+    "situacao_gabarito": "de terceiros (Ética), alterado em 09/05/2018; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/transpetro-2018-prova15-analista-sistemas-jr-processos-negocio.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por análise lógica das cinco consultas (não executadas: dialeto Oracle e literais de data do caderno).",
    "status_validacao": "em_revisao"
   }
  ]

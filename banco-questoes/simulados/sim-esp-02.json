@@ -21,24 +21,24 @@
  },
  "composicao": {
   "por_tipo": {
-   "oficial": 25,
-   "autoral": 25
+   "oficial": 26,
+   "autoral": 24
   },
   "por_status": {
-   "em_revisao": 38,
-   "validada": 12
+   "em_revisao": 39,
+   "validada": 11
   },
   "por_dificuldade": {
-   "media": 28,
-   "facil": 16,
-   "dificil": 6
+   "media": 29,
+   "facil": 14,
+   "dificil": 7
   },
   "por_gabarito": {
-   "B": 12,
+   "B": 14,
    "A": 12,
-   "D": 9,
-   "C": 9,
-   "E": 8
+   "D": 8,
+   "C": 11,
+   "E": 5
   }
  },
  "questoes": [
@@ -52,19 +52,19 @@
   },
   {
    "ordem": 3,
-   "id": "OFI-000004"
+   "id": "OFI-000043"
   },
   {
    "ordem": 4,
-   "id": "OFI-000003"
-  },
-  {
-   "ordem": 5,
    "id": "OFI-000005"
   },
   {
+   "ordem": 5,
+   "id": "OFI-000003"
+  },
+  {
    "ordem": 6,
-   "id": "OFI-000007"
+   "id": "OFI-000004"
   },
   {
    "ordem": 7,
@@ -92,23 +92,23 @@
   },
   {
    "ordem": 13,
-   "id": "OFI-000012"
+   "id": "OFI-000044"
   },
   {
    "ordem": 14,
-   "id": "AUT-000017"
+   "id": "AUT-000015"
   },
   {
    "ordem": 15,
-   "id": "AUT-000020"
+   "id": "AUT-000017"
   },
   {
    "ordem": 16,
-   "id": "OFI-000017"
+   "id": "OFI-000047"
   },
   {
    "ordem": 17,
-   "id": "OFI-000018"
+   "id": "OFI-000017"
   },
   {
    "ordem": 18,
@@ -132,7 +132,7 @@
   },
   {
    "ordem": 23,
-   "id": "OFI-000025"
+   "id": "OFI-000052"
   },
   {
    "ordem": 24,
@@ -168,23 +168,23 @@
   },
   {
    "ordem": 32,
-   "id": "AUT-000068"
+   "id": "OFI-000055"
   },
   {
    "ordem": 33,
-   "id": "AUT-000067"
+   "id": "AUT-000110"
   },
   {
    "ordem": 34,
-   "id": "AUT-000070"
+   "id": "AUT-000067"
   },
   {
    "ordem": 35,
-   "id": "AUT-000069"
+   "id": "AUT-000070"
   },
   {
    "ordem": 36,
-   "id": "AUT-000110"
+   "id": "AUT-000068"
   },
   {
    "ordem": 37,
@@ -212,19 +212,19 @@
   },
   {
    "ordem": 43,
-   "id": "OFI-000036"
+   "id": "OFI-000062"
   },
   {
    "ordem": 44,
-   "id": "OFI-000040"
+   "id": "OFI-000036"
   },
   {
    "ordem": 45,
-   "id": "OFI-000037"
+   "id": "OFI-000040"
   },
   {
    "ordem": 46,
-   "id": "AUT-000114"
+   "id": "AUT-000116"
   },
   {
    "ordem": 47,
@@ -232,11 +232,11 @@
   },
   {
    "ordem": 48,
-   "id": "AUT-000115"
+   "id": "AUT-000114"
   },
   {
    "ordem": 49,
-   "id": "AUT-000116"
+   "id": "AUT-000115"
   },
   {
    "ordem": 50,

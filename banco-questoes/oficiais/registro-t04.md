@@ -1,12 +1,12 @@
 # Registro da T04 — questões oficiais transcritas
 
-**Atualizado:** 2026-11-06. Lote 1: **Transpetro PSP/Terra 002/2023, Prova 6** (PRV-005), a prova do mesmo cargo e da mesma banca do concurso-alvo. 41 questões transcritas do caderno em `fontes-brutas/` (texto e alternativas conferidos contra o PDF), com comentário de cada alternativa. Status `em_revisao`: aguardam validação do usuário.
+**Atualizado:** 2026-11-06. 63 questões transcritas do caderno em `fontes-brutas/` (texto e alternativas conferidos contra o PDF), com comentário de cada alternativa. Lotes: **Transpetro 2023, Prova 6** (PRV-005, 41) e **Transpetro 2018, Prova 15** (PRV-006, 22), as duas provas do mesmo cargo e da mesma banca do concurso-alvo. Status `em_revisao`: aguardam validação do usuário.
 
 ## Limites
 
-- Gabarito: **espelho de terceiros** (QConcursos), alterado em 9/01/2024; **não validado contra a banca**. Conferido por resolução: ver `docs/estrategia/catalogo-questoes-historicas.md`.
-- Os comentários são do projeto; o enunciado e as alternativas são da prova.
-- **Pontos de atenção** documentados nas questões: OFI de Q55 (alternativa B incompleta, escolhida por exclusão), Q70 (nome do grupo abreviado), Q44 (ISO 27002:2013 × 2022), Q24 (alternativa B discutível) e Q60 (enunciado vago).
+- Gabaritos: **espelho de terceiros** (QConcursos para 2023; Ética para 2018), alterados após recursos; **não validados contra a banca**.
+- Os comentários são do projeto; enunciado e alternativas são da prova. Aderência por questão está em `fonte_origem.aderencia_edital`.
+- **Pontos de atenção** nas próprias questões: 2023 Q55 (alternativa B incompleta, por exclusão), Q70, Q44 (ISO 27002:2013 × 2022), Q24 e Q60; 2018 Q46 (numeração da ISO 27002:2005 de memória), Q38 (consultas não executadas, dialeto Oracle), Q27 e Q57 (alternativas próximas).
 
 ## Questões transcritas
 
@@ -53,17 +53,35 @@
 | OFI-000039 | PRV-005 | 42 | HIS-000022 | 9.11 | Resposta a incidentes: NIST SP 800-61 | C |
 | OFI-000040 | PRV-005 | 43 | HIS-000023 | 9.2 | SIEM | D |
 | OFI-000041 | PRV-005 | 44 | HIS-000024 | 9.19 | ISO/IEC 27002: proteção contra malware | A |
+| OFI-000042 | PRV-006 | 22 | HIS-000052 | 1.19 | Data warehouse: Data Staging Area (ETL) | B |
+| OFI-000043 | PRV-006 | 38 | HIS-000068 | 1.10 | SQL: fornecedores com venda em intervalo de datas | B |
+| OFI-000044 | PRV-006 | 28 | HIS-000058 | 2.1 | Scrum: momento da Retrospectiva da Sprint | B |
+| OFI-000045 | PRV-006 | 31 | HIS-000061 | 2.1 | Scrum: escala dos Pontos de História (Planning Poker) | B |
+| OFI-000046 | PRV-006 | 63 | HIS-000093 | 2.4 | EAP: o que deve conter | B |
+| OFI-000047 | PRV-006 | 57 | HIS-000087 | 3 | Workflow: automação de processos de negócio | B |
+| OFI-000048 | PRV-006 | 56 | HIS-000086 | 4.3 | Computação em nuvem (SaaS) | B |
+| OFI-000049 | PRV-006 | 23 | HIS-000053 | 5.2 | Processo Unificado: fase de elaboração | A |
+| OFI-000050 | PRV-006 | 24 | HIS-000054 | 5.4 | Teste de mutação | C |
+| OFI-000051 | PRV-006 | 25 | HIS-000055 | 5.4 | Complexidade ciclomática a partir do grafo de fluxo | A |
+| OFI-000052 | PRV-006 | 27 | HIS-000057 | 5.1 | Casos de uso | A |
+| OFI-000053 | PRV-006 | 29 | HIS-000059 | 5.3 | Orientação a objetos: polimorfismo | E |
+| OFI-000054 | PRV-006 | 35 | HIS-000065 | 6.1 | eMAG: recomendações de acessibilidade | E |
+| OFI-000055 | PRV-006 | 54 | HIS-000084 | 7.11 | Sistema de Suporte à Decisão (tipo de sistema de informação) | D |
+| OFI-000056 | PRV-006 | 45 | HIS-000075 | 9.18 | Classificação da informação: quem decide | E |
+| OFI-000057 | PRV-006 | 46 | HIS-000076 | 9.19 | ISO 27002: controle de acesso à rede | D |
+| OFI-000058 | PRV-006 | 47 | HIS-000077 | 9.2 | Firewall: listas de controle de acesso | A |
+| OFI-000059 | PRV-006 | 48 | HIS-000078 | 9.6 | VPN: tunelamento | C |
+| OFI-000060 | PRV-006 | 49 | HIS-000079 | 9.3 | Malware: bot e botnet | A |
+| OFI-000061 | PRV-006 | 50 | HIS-000080 | 9.19 | Certificado digital: SHA256RSA | E |
+| OFI-000062 | PRV-006 | 51 | HIS-000081 | 9.8 | SAML: Artifact Resolution Protocol | C |
+| OFI-000063 | PRV-006 | 52 | HIS-000082 | 9.19 | ICP-Brasil: certificado da AC subordinada à raiz | A |
 
-## Candidatas da PRV-005 ainda não transcritas (6)
+## Candidatas ainda não transcritas
 
-| Nº | Motivo |
-|---|---|
-| 21, 22, 27 | alternativas são diagramas E-R/tabelas (exigem imagem; não transcritas) |
-| 23 | enunciado incompleto na extração do PDF (conferir visualmente) |
-| 30 | brainwriting: aderência parcial |
-| 62 | OLAP: duas alternativas defensáveis (A e E); decidir tratamento |
+**PRV-005 (6):** Q21, Q22 e Q27 (alternativas são diagramas), Q23 (enunciado incompleto na extração), Q30 (aderência parcial), Q62 (duas alternativas defensáveis).
+**PRV-006 (candidatas não transcritas):** Q34 (gabarito C incoerente com o conteúdo do ePING, a verificar), Q39, Q40, Q41 e Q42 (dependem de figuras ou tabelas), Q62 e Q66 (PMBOK 6, gabarito discutível), Q67 (alternativa A ausente na extração), Q69 (símbolos lógicos perdidos na extração).
 
 ## Pendências da T04
 
-Das **229 candidatas** do catálogo (PRV-005 a PRV-014, aderentes e parciais), **41 foram transcritas**; **188 continuam pendentes**: 6 da PRV-005 (acima) e as demais das provas PRV-006 (Transpetro 2018), PRV-007 (Petrobras 2006), PRV-008 (Caixa 2021), PRV-009 (Suape 2012), PRV-010 e PRV-014 (BNDES 2024), PRV-011 (Petrobras 2018) e PRV-012 (BB 2021).
-A T04 **não está concluída**: falta transcrever e comentar as demais. Prioridade sugerida: Transpetro 2018 (PRV-006) e Petrobras 2018 (PRV-011), mesmo cargo; depois as provas com gabarito oficial (Caixa 2021, BNDES 2024). Questões adaptadas (`ADP-`) não foram criadas.
+Das **229 candidatas** (PRV-005 a PRV-014, aderentes e parciais), **63 foram transcritas**; **166 continuam pendentes**, a maioria das provas PRV-007 (Petrobras 2006), PRV-008 (Caixa 2021, gabarito oficial), PRV-009 (Suape 2012), PRV-010 e PRV-014 (BNDES 2024, gabarito final), PRV-011 (Petrobras 2018) e PRV-012 (BB 2021).
+A T04 **continua parcial**. Questões adaptadas (`ADP-`) não foram criadas. Próximo passo sugerido: Petrobras 2018 (PRV-011, mesmo cargo em outra empresa) e as provas com gabarito oficial (Caixa 2021, BNDES 2024).

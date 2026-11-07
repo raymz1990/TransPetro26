@@ -1,8 +1,8 @@
 {
  "modulo": "Questões oficiais — m05-engenharia-software",
- "lote": "T04 — Transpetro 2023 (Prova 6)",
+ "lote": "T04 — Transpetro 2023 (Prova 6) e 2018 (Prova 15)",
  "data": "2026-11-06",
- "total": 4,
+ "total": 9,
  "questoes": [
   {
    "id": "OFI-000024",
@@ -232,6 +232,300 @@
     "situacao_gabarito": "de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca",
     "aderencia_edital": "aderente",
     "url": "banco-questoes/oficiais/fontes-brutas/transpetro-2023-psp002-prova06-analise-sistemas-processos-negocios.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000049",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 23.",
+   "modulo": "05-engenharia-software",
+   "assunto": "Processo Unificado: fase de elaboração",
+   "item_edital": "5.2",
+   "id_matriz": "E5-043",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "memorizacao",
+   "tipo_questao": "conceitual",
+   "enunciado": "O Processo Unificado de desenvolvimento de software é dividido em quatro fases: concepção (inception), elaboração, construção e transição.\nUm dos objetivos da fase de elaboração é",
+   "alternativas": {
+    "A": "definir a arquitetura",
+    "B": "estimar o custo total",
+    "C": "estabelecer o escopo do projeto",
+    "D": "minimizar custos de desenvolvimento",
+    "E": "converter bancos de dados operacionais"
+   },
+   "gabarito": "A",
+   "resolucao": "Na **elaboração**, o foco é **reduzir os riscos principais** e **estabelecer a arquitetura executável** (baseline da arquitetura), além de detalhar a maioria dos requisitos. O **escopo** e o *business case* são estabelecidos na **concepção**.",
+   "analise_alternativas": {
+    "A": "Correta. Definir (e validar) a arquitetura é objetivo central da elaboração.",
+    "B": "Incorreta. A estimativa global de custo e o business case são da concepção (refinados depois).",
+    "C": "Incorreta. Estabelecer o escopo é objetivo da concepção.",
+    "D": "Incorreta. Minimizar custos não é objetivo de fase.",
+    "E": "Incorreta. A conversão de bancos operacionais é atividade de transição."
+   },
+   "fundamentacao": {
+    "item": "5.2",
+    "arquivo_teoria": "conteudo/05-engenharia-software/03-ciclo-de-vida.md"
+   },
+   "ponto_atencao": "UP: **Concepção** (escopo, viabilidade), **Elaboração** (arquitetura, riscos), **Construção** (implementação), **Transição** (implantação). Aderência parcial: o RUP/UP não é citado literalmente no item 5.2.",
+   "revisao_rapida": "Elaboração = arquitetura.",
+   "tags": [
+    "processo-unificado",
+    "ciclo-de-vida",
+    "transpetro-2018",
+    "oficial",
+    "media",
+    "memorizacao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Transpetro PSP RH 2018.1 (Edital nº 1)",
+    "cargo": "Analista de Sistemas Júnior — Processos de Negócio",
+    "ano": 2018,
+    "prova": "Prova 15",
+    "numero_original": 23,
+    "id_prova": "PRV-006",
+    "situacao_gabarito": "de terceiros (Ética), alterado em 09/05/2018; não validado contra a banca",
+    "aderencia_edital": "parcial",
+    "url": "banco-questoes/oficiais/fontes-brutas/transpetro-2018-prova15-analista-sistemas-jr-processos-negocio.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000050",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 24.",
+   "modulo": "05-engenharia-software",
+   "assunto": "Teste de mutação",
+   "item_edital": "5.4",
+   "id_matriz": "E5-045",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "memorizacao",
+   "tipo_questao": "conceitual",
+   "enunciado": "Entre as técnicas de teste de software, aquela que gera versões levemente modificadas de um programa sob teste e exercita tanto o programa original quanto os programas modificados, procurando diferenças entre essas formas, é conhecida como testes",
+   "alternativas": {
+    "A": "aleatórios",
+    "B": "exploratórios",
+    "C": "de mutação",
+    "D": "de perfil operacional",
+    "E": "baseados em fluxo de controle"
+   },
+   "gabarito": "C",
+   "resolucao": "No **teste de mutação**, criam-se **mutantes** (cópias do programa com pequenas alterações) e executam-se os testes; se o teste detecta a diferença, o mutante é \"morto\". Avalia a **qualidade do conjunto de testes**.",
+   "analise_alternativas": {
+    "A": "Incorreta. Testes aleatórios geram entradas ao acaso.",
+    "B": "Incorreta. Exploratórios combinam aprendizado, projeto e execução simultâneos, sem scripts.",
+    "C": "Correta. Descreve o teste de mutação.",
+    "D": "Incorreta. Perfil operacional seleciona entradas conforme o uso esperado.",
+    "E": "Incorreta. Fluxo de controle usa o grafo do programa para cobertura de comandos, ramos e caminhos."
+   },
+   "fundamentacao": {
+    "item": "5.4",
+    "arquivo_teoria": "conteudo/05-engenharia-software/06-verificacao-e-validacao.md"
+   },
+   "ponto_atencao": "Palavras-chave: **versões levemente modificadas** = mutantes.",
+   "revisao_rapida": "Mutação: alterar o programa para avaliar os testes.",
+   "tags": [
+    "teste-de-mutacao",
+    "transpetro-2018",
+    "oficial",
+    "media",
+    "memorizacao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Transpetro PSP RH 2018.1 (Edital nº 1)",
+    "cargo": "Analista de Sistemas Júnior — Processos de Negócio",
+    "ano": 2018,
+    "prova": "Prova 15",
+    "numero_original": 24,
+    "id_prova": "PRV-006",
+    "situacao_gabarito": "de terceiros (Ética), alterado em 09/05/2018; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/transpetro-2018-prova15-analista-sistemas-jr-processos-negocio.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000051",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 25.",
+   "modulo": "05-engenharia-software",
+   "assunto": "Complexidade ciclomática a partir do grafo de fluxo",
+   "item_edital": "5.4",
+   "id_matriz": "E5-045",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "resolucao_problemas",
+   "tipo_questao": "calculo",
+   "enunciado": "Uma das medidas de qualidade do código de um software é a Complexidade, que pode ser medida por meio da complexidade ciclomática.\nConsidere um grafo de fluxo que possui 5 nós e 12 arcos.\nQual a complexidade ciclomática desse grafo?",
+   "alternativas": {
+    "A": "9",
+    "B": "11",
+    "C": "15",
+    "D": "17",
+    "E": "19"
+   },
+   "gabarito": "A",
+   "resolucao": "**V(G) = E − N + 2P**, com E arestas, N nós e P componentes conexos (P = 1 para um programa): V(G) = 12 − 5 + 2 = **9**.",
+   "analise_alternativas": {
+    "A": "Correta. 12 − 5 + 2 = 9: correta.",
+    "B": "Incorreta. 11 não resulta da fórmula (por exemplo, 12 − 5 + 4).",
+    "C": "Incorreta. 15 = 12 + 5 − 2 (sinal trocado).",
+    "D": "Incorreta. 17 = 12 + 5.",
+    "E": "Incorreta. 19 = 12 + 5 + 2."
+   },
+   "fundamentacao": {
+    "item": "5.4",
+    "arquivo_teoria": "conteudo/05-engenharia-software/06-verificacao-e-validacao.md"
+   },
+   "ponto_atencao": "Fórmulas equivalentes: **E − N + 2**, **decisões + 1**, **regiões do grafo planar**. Cuidado para não somar nós e arcos.",
+   "revisao_rapida": "V(G) = E − N + 2.",
+   "tags": [
+    "mccabe",
+    "transpetro-2018",
+    "oficial",
+    "media",
+    "resolucao_problemas"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Transpetro PSP RH 2018.1 (Edital nº 1)",
+    "cargo": "Analista de Sistemas Júnior — Processos de Negócio",
+    "ano": 2018,
+    "prova": "Prova 15",
+    "numero_original": 25,
+    "id_prova": "PRV-006",
+    "situacao_gabarito": "de terceiros (Ética), alterado em 09/05/2018; não validado contra a banca",
+    "aderencia_edital": "parcial",
+    "url": "banco-questoes/oficiais/fontes-brutas/transpetro-2018-prova15-analista-sistemas-jr-processos-negocio.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Cálculo direto: 12 − 5 + 2 = 9.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000052",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 27.",
+   "modulo": "05-engenharia-software",
+   "assunto": "Casos de uso",
+   "item_edital": "5.1",
+   "id_matriz": "E5-042",
+   "itens_secundarios": [
+    "6.2"
+   ],
+   "dificuldade": "media",
+   "habilidade": "compreensao",
+   "tipo_questao": "conceitual",
+   "enunciado": "Casos de uso são das mais importantes ferramentas de especificação de sistemas em uso atualmente, constituindo representações textuais em forma de narrativa.\nTais representações demonstram",
+   "alternativas": {
+    "A": "uma interação entre um ator e o sistema",
+    "B": "um único cenário de uso do sistema por um ator",
+    "C": "um comportamento interno do sistema quando o ator o utiliza",
+    "D": "os estados dos objetos do sistema quando são usados",
+    "E": "a interação entre os objetos do sistema por meio de mensagens"
+   },
+   "gabarito": "A",
+   "resolucao": "O **caso de uso** descreve **uma interação entre um ator e o sistema** para atingir um objetivo, do ponto de vista externo, em geral com um fluxo principal e fluxos alternativos e de exceção.",
+   "analise_alternativas": {
+    "A": "Correta. Descreve uma interação ator-sistema, visão externa.",
+    "B": "Incorreta. Um caso de uso reúne **vários** cenários (fluxo principal e alternativos); um único cenário é uma instância.",
+    "C": "Incorreta. O comportamento interno é tratado em outros modelos (sequência, atividades).",
+    "D": "Incorreta. Estados dos objetos são modelados em diagramas de estados.",
+    "E": "Incorreta. Interações entre objetos são modeladas em diagramas de sequência/comunicação."
+   },
+   "fundamentacao": {
+    "item": "5.1",
+    "arquivo_teoria": "conteudo/05-engenharia-software/02-requisitos-software.md"
+   },
+   "ponto_atencao": "Caso de uso: **visão externa**, objetivo do ator. B é a pegadinha: o caso de uso agrupa **vários cenários**.",
+   "revisao_rapida": "Caso de uso = interação ator × sistema.",
+   "tags": [
+    "casos-de-uso",
+    "transpetro-2018",
+    "oficial",
+    "media",
+    "compreensao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Transpetro PSP RH 2018.1 (Edital nº 1)",
+    "cargo": "Analista de Sistemas Júnior — Processos de Negócio",
+    "ano": 2018,
+    "prova": "Prova 15",
+    "numero_original": 27,
+    "id_prova": "PRV-006",
+    "situacao_gabarito": "de terceiros (Ética), alterado em 09/05/2018; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/transpetro-2018-prova15-analista-sistemas-jr-processos-negocio.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000053",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 29.",
+   "modulo": "05-engenharia-software",
+   "assunto": "Orientação a objetos: polimorfismo",
+   "item_edital": "5.3",
+   "id_matriz": "E5-044",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "compreensao",
+   "tipo_questao": "conceitual",
+   "enunciado": "Qual a propriedade, típica da orientação a objeto, que habilita uma quantidade de operações diferentes a ter o mesmo nome, diminuindo o acoplamento entre objetos?",
+   "alternativas": {
+    "A": "Encapsulamento",
+    "B": "Especialização",
+    "C": "Herança",
+    "D": "Padrões de projeto",
+    "E": "Polimorfismo"
+   },
+   "gabarito": "E",
+   "resolucao": "**Polimorfismo** permite que operações distintas respondam à mesma mensagem (mesmo nome), cada classe com sua implementação; clientes dependem da interface, reduzindo o acoplamento.",
+   "analise_alternativas": {
+    "A": "Incorreta. Encapsulamento oculta o estado interno.",
+    "B": "Incorreta. Especialização cria subclasses mais específicas.",
+    "C": "Incorreta. Herança reaproveita características da superclasse.",
+    "D": "Incorreta. Padrões de projeto não são propriedade da orientação a objetos.",
+    "E": "Correta. Operações diferentes com o mesmo nome: polimorfismo."
+   },
+   "fundamentacao": {
+    "item": "5.3",
+    "arquivo_teoria": "conteudo/05-engenharia-software/05-analise-e-projeto.md"
+   },
+   "ponto_atencao": "Polimorfismo (mesmo nome, comportamentos diferentes) ≠ herança (reuso) ≠ encapsulamento (ocultação).",
+   "revisao_rapida": "Polimorfismo: mesma operação, formas diferentes.",
+   "tags": [
+    "oo",
+    "polimorfismo",
+    "transpetro-2018",
+    "oficial",
+    "media",
+    "compreensao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Transpetro PSP RH 2018.1 (Edital nº 1)",
+    "cargo": "Analista de Sistemas Júnior — Processos de Negócio",
+    "ano": 2018,
+    "prova": "Prova 15",
+    "numero_original": 29,
+    "id_prova": "PRV-006",
+    "situacao_gabarito": "de terceiros (Ética), alterado em 09/05/2018; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/transpetro-2018-prova15-analista-sistemas-jr-processos-negocio.pdf",
     "sha256": "ver docs/estrategia/base-provas.md"
    },
    "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",

@@ -1,4 +1,4 @@
-# Questões oficiais — m01-arquitetura-dados — gabaritos comentados (T04 — Transpetro 2023 (Prova 6))
+# Questões oficiais — m01-arquitetura-dados — gabaritos comentados (T04 — Transpetro 2023 (Prova 6) e 2018 (Prova 15))
 
 ## OFI-000001 — Álgebra relacional: operador unário
 
@@ -219,3 +219,43 @@ A normalização busca **reduzir a redundância** e evitar anomalias de inserç�
 **Revisão rápida:** Normalizar = menos redundância e menos anomalias.
 
 **Fonte:** Fundação Cesgranrio, Transpetro PSP/Terra 002/2023 (Edital nº 2), Análise de Sistemas — Processos de Negócios (2023), prova Prova 6, questão 64; gabarito: de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca.
+
+## OFI-000042 — Data warehouse: Data Staging Area (ETL)
+
+*Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 22.*
+
+**Gabarito: B**
+
+A **Data Staging Area** é a área intermediária onde os dados extraídos das fontes transacionais são **limpos, transformados e preparados** (o "T" do ETL) antes de serem carregados na área de apresentação do DW (Kimball).
+
+- **A)** Incorreta. Data marts são subconjuntos do DW voltados a uma área de negócio; ficam na camada de apresentação.
+- **B)** Correta. É a área de trânsito e transformação entre as fontes e o DW.
+- **C)** Incorreta. "Dimensional Model Area" não é camada padrão da arquitetura.
+- **D)** Incorreta. A Presentation Area é onde os dados já organizados ficam disponíveis para consulta.
+- **E)** Incorreta. "Living Sample Area" não é camada de arquitetura de DW.
+
+**Ponto de atenção:** Arquitetura de Kimball: fontes → **staging** (ETL) → **presentation** (data marts dimensionais) → ferramentas de acesso (BI).
+
+**Revisão rápida:** Staging area = onde se extrai, limpa e transforma antes de carregar.
+
+**Fonte:** Fundação Cesgranrio, Transpetro PSP RH 2018.1 (Edital nº 1), Analista de Sistemas Júnior — Processos de Negócio (2018), prova Prova 15, questão 22; gabarito: de terceiros (Ética), alterado em 09/05/2018; não validado contra a banca.
+
+## OFI-000043 — SQL: fornecedores com venda em intervalo de datas
+
+*Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 38.*
+
+**Gabarito: B**
+
+Procura-se o fornecedor para o qual **exista ao menos uma linha de VENDA com a data dentro do intervalo**. A alternativa B conta, por fornecedor, as vendas com `DATA BETWEEN` (inclusivo nas duas pontas) e exige contagem maior que zero. (Os literais de data seguem a formatação do caderno.)
+
+- **A)** Incorreta. O INTERSECT combina duas condições **avaliadas em linhas diferentes**: um fornecedor com uma venda antes de 05/01 e outra depois de 10/01 satisfaz as duas, mesmo sem nenhuma venda dentro do intervalo.
+- **B)** Correta. Filtra as vendas no intervalo e exige que haja ao menos uma: resposta correta.
+- **C)** Incorreta. O `OR` entre as duas condições é verdadeiro para **qualquer** data não nula, e não restringe ao intervalo (a sintaxe `UNIQUE` também é específica de dialeto).
+- **D)** Incorreta. O UNION de duas condições separadas equivale ao OR: qualquer fornecedor com venda em qualquer data satisfaz uma delas.
+- **E)** Incorreta. Retorna os fornecedores que **não** têm venda fora do intervalo, incluindo os que **nunca** venderam.
+
+**Ponto de atenção:** Em consultas com intervalo, verifique se as condições são avaliadas **na mesma linha** (AND/BETWEEN) ou **em linhas diferentes** (INTERSECT, UNION), e o efeito de `NOT IN` e de `OR`.
+
+**Revisão rápida:** Intervalo inclusivo: BETWEEN, ou >= AND <=, na mesma linha.
+
+**Fonte:** Fundação Cesgranrio, Transpetro PSP RH 2018.1 (Edital nº 1), Analista de Sistemas Júnior — Processos de Negócio (2018), prova Prova 15, questão 38; gabarito: de terceiros (Ética), alterado em 09/05/2018; não validado contra a banca.

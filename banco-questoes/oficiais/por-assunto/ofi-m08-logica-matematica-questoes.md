@@ -1,4 +1,4 @@
-# Questões oficiais — m08-logica-matematica — questões (T04 — Transpetro 2023 (Prova 6))
+# Questões oficiais — m08-logica-matematica — questões (T04 — Transpetro 2023 (Prova 6) e 2018 (Prova 15))
 
 Sem gabarito; o comentário está no arquivo `gabaritos-comentados`.
 

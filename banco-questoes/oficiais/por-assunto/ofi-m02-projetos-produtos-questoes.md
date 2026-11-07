@@ -1,4 +1,4 @@
-# Questões oficiais — m02-projetos-produtos — questões (T04 — Transpetro 2023 (Prova 6))
+# Questões oficiais — m02-projetos-produtos — questões (T04 — Transpetro 2023 (Prova 6) e 2018 (Prova 15))
 
 Sem gabarito; o comentário está no arquivo `gabaritos-comentados`.
 
@@ -69,3 +69,41 @@ Caracteriza-se por um alto grau de influência do gerente de projeto sobre o pro
 (C) forte
 (D) balanceada
 (E) invertida
+
+## OFI-000044 — Scrum: momento da Retrospectiva da Sprint
+
+*Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 28.* · item 2.1 · Fácil
+
+Quando ocorre, no SCRUM, a reunião de Retrospectiva da Sprint?
+
+(A) No fim da Sprint, antes da Reunião de Revisão
+(B) Entre a Reunião de Revisão da Sprint e a de Planejamento da próxima Sprint
+(C) No início da Sprint, após a Reunião de Planejamento
+(D) No final de cada dia da Sprint
+(E) No início de cada dia da Sprint
+
+## OFI-000045 — Scrum: escala dos Pontos de História (Planning Poker)
+
+*Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 31.* · item 2.1 · Média
+
+No uso de alguns métodos ágeis, como o SCRUM, é comum que o esforço de desenvolvimento seja avaliado por meio de Pontos de História (Story Points).
+Essa metodologia usa cartas, semelhantes a cartas de baralho, onde cada uma apresenta um valor de uma escala de valores numéricos, que, normalmente, segue a seguinte sequência:
+
+(A) 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+(B) 0, 1, 2, 3, 5, 8, 13, 20, 40 e 100
+(C) 0, 1, 2, 4, 8, 16, 32, 64, 128
+(D) 1, 2, 3, 6, 12, 24, 48, 96
+(E) 1, 5, 10, 50, 100, 500, 1000
+
+## OFI-000046 — EAP: o que deve conter
+
+*Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 63.* · item 2.4 · Média
+
+Ao planejar um projeto de migração de software, foi solicitado ao analista realizar uma EAP e apresentá-la ao gerente.
+Para garantir a completude do seu trabalho, ele deve garantir que inseriu, nesse momento, na EAP,
+
+(A) cenários e riscos
+(B) escopo e entregas
+(C) orçamento e custos
+(D) restrições e premissas
+(E) equipe e patrocinadores

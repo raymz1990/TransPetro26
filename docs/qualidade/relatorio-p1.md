@@ -4,17 +4,17 @@
 
 | Task | Estado | Entrega |
 |---|---|---|
-| T04 — Oficiais e adaptadas | **Parcial** | 41 `OFI-` (Transpetro 2023, Prova 6), 9 módulos; 188 das 229 candidatas pendentes; 0 `ADP-` |
+| T04 — Oficiais e adaptadas | **Parcial** | 63 `OFI-` (Transpetro 2023 e 2018), 9 módulos; 166 das 229 candidatas pendentes; 0 `ADP-` |
 | T05 — Autorais para cobrir os itens sem questão | Feita | 30 `AUT-` (091 a 120); **94 de 94 itens** com questão principal; todos os módulos com mais de 10 autorais |
 | T06 — Conhecimentos Gerais | Feita | 35 `AUT-` (121 a 155): 24 de Português (12 de 12 itens), 11 de Inglês (2 de 2 itens) |
 | T07 — Simulados (dados) | Feita | 14 simulados: ESP-01, ESP-02, COM-01 (70), GER-01, M01 a M09, DIAG-01 |
 | T08 — Simulados no site | Feita | `timer.js`, `simulations.js`, CSS, rotas `#/simulados`, histórico, integração com caderno de erros e desempenho |
 
-Banco total: **196 questões** (41 oficiais, 155 autorais); 90 `validada` (lote piloto, aprovadas pelo usuário) e **106 `em_revisao`** (T04 a T06, aguardam o usuário).
+Banco total: **218 questões** (63 oficiais, 155 autorais); 90 `validada` (lote piloto, aprovadas pelo usuário) e **128 `em_revisao`** (T04 a T06, aguardam o usuário).
 
 ## Verificações realizadas
 
-- `python tools/validar_banco.py`: 196 questões, 0 erros (IDs únicos, 5 alternativas, gabarito e análise coerentes, `fonte_origem` completa em oficiais, rótulo de autoral, arquivo de teoria existente).
+- `python tools/validar_banco.py`: 218 questões, 0 erros (IDs únicos, 5 alternativas, gabarito e análise coerentes, `fonte_origem` completa em oficiais, rótulo de autoral, arquivo de teoria existente).
 - `python tools/cobertura.py`: 0 itens sem questão principal.
 - Conferência por execução: SQL (T05: UPDATE/DELETE/INSERT = 283; SAVEPOINT = 120) em SQLite; valoração lógica por enumeração; argumento da OFI Q28 por tabela-verdade; complexidade ciclomática contada à mão.
 - Simulados: IDs existentes, sem repetição dentro do simulado, tamanhos 50/70/20, ESP-01 e ESP-02 disjuntos; `build_site_data.py` aborta se algum simulado citar ID inexistente.
@@ -32,7 +32,7 @@ Banco total: **196 questões** (41 oficiais, 155 autorais); 90 `validada` (lote 
 
 ## Pendências
 
-- Usuário validar as 106 questões `em_revisao` (ou apontar reprovadas).
-- T04: 188 candidatas (prioridade: Transpetro 2018 e Petrobras 2018) e `ADP-`.
+- Usuário validar as 128 questões `em_revisao` (ou apontar reprovadas).
+- T04: 166 candidatas (prioridade: Petrobras 2018 e provas com gabarito oficial) e `ADP-`.
 - Conferência dos gabaritos 2018/2023 contra a fonte oficial (T13).
 - P2 e P3 inalteradas.

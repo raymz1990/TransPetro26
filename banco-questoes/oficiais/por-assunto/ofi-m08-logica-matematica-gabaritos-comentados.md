@@ -1,4 +1,4 @@
-# Questões oficiais — m08-logica-matematica — gabaritos comentados (T04 — Transpetro 2023 (Prova 6))
+# Questões oficiais — m08-logica-matematica — gabaritos comentados (T04 — Transpetro 2023 (Prova 6) e 2018 (Prova 15))
 
 ## OFI-000033 — Argumento válido: conclusão a partir das premissas
 

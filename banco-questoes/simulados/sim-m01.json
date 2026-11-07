@@ -13,24 +13,24 @@
  },
  "composicao": {
   "por_tipo": {
-   "autoral": 9,
-   "oficial": 6
+   "autoral": 8,
+   "oficial": 7
   },
   "por_status": {
-   "validada": 9,
-   "em_revisao": 6
+   "validada": 8,
+   "em_revisao": 7
   },
   "por_dificuldade": {
    "facil": 5,
-   "media": 8,
-   "dificil": 2
+   "media": 7,
+   "dificil": 3
   },
   "por_gabarito": {
    "C": 3,
    "E": 3,
    "A": 4,
-   "B": 3,
-   "D": 2
+   "B": 4,
+   "D": 1
   }
  },
  "questoes": [
@@ -68,31 +68,31 @@
   },
   {
    "ordem": 9,
-   "id": "AUT-000005"
+   "id": "OFI-000043"
   },
   {
    "ordem": 10,
-   "id": "OFI-000009"
+   "id": "AUT-000005"
   },
   {
    "ordem": 11,
-   "id": "AUT-000010"
+   "id": "OFI-000009"
   },
   {
    "ordem": 12,
-   "id": "OFI-000002"
-  },
-  {
-   "ordem": 13,
    "id": "AUT-000006"
   },
   {
-   "ordem": 14,
+   "ordem": 13,
    "id": "OFI-000004"
   },
   {
-   "ordem": 15,
+   "ordem": 14,
    "id": "AUT-000007"
+  },
+  {
+   "ordem": 15,
+   "id": "OFI-000042"
   }
  ]
 }

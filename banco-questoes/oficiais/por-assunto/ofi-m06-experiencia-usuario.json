@@ -1,8 +1,8 @@
 {
  "modulo": "Questões oficiais — m06-experiencia-usuario",
- "lote": "T04 — Transpetro 2023 (Prova 6)",
+ "lote": "T04 — Transpetro 2023 (Prova 6) e 2018 (Prova 15)",
  "data": "2026-11-06",
- "total": 4,
+ "total": 5,
  "questoes": [
   {
    "id": "OFI-000028",
@@ -234,6 +234,65 @@
     "situacao_gabarito": "de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca",
     "aderencia_edital": "aderente",
     "url": "banco-questoes/oficiais/fontes-brutas/transpetro-2023-psp002-prova06-analise-sistemas-processos-negocios.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000054",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 35.",
+   "modulo": "06-experiencia-usuario",
+   "assunto": "eMAG: recomendações de acessibilidade",
+   "item_edital": "6.1",
+   "id_matriz": "E5-048",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "compreensao",
+   "tipo_questao": "normativa",
+   "enunciado": "O Modelo de Acessibilidade em Governo Eletrônico (eMAG) define recomendações que norteiam o desenvolvimento e adaptação de conteúdos do Governo Federal. Esse documento é uma importante norma brasileira que orienta o desenvolvimento de sites acessíveis, sendo uma versão especializada do WCAG (Web Contente Accessibility Guidelines).\nEntre as recomendações de acessibilidade do eMAG no design de Web sites, inclui-se",
+   "alternativas": {
+    "A": "impedir o redimensionamento da página",
+    "B": "utilizar apenas cores para diferenciar elementos",
+    "C": "provocar automaticamente alterações de contexto",
+    "D": "sempre utilizar o uso de CAPTCHAS em questões de segurança",
+    "E": "garantir um contraste mínimo entre o plano de fundo e o primeiro plano"
+   },
+   "gabarito": "E",
+   "resolucao": "O eMAG (alinhado ao WCAG) recomenda **contraste mínimo** entre texto e fundo, **permitir redimensionamento**, **não depender só da cor** para transmitir informação, **não causar mudanças de contexto automáticas** e evitar barreiras como CAPTCHAs sem alternativa.",
+   "analise_alternativas": {
+    "A": "Incorreta. Contraria a recomendação: o redimensionamento deve ser permitido.",
+    "B": "Incorreta. Contraria a recomendação: não se deve usar apenas a cor.",
+    "C": "Incorreta. Mudanças automáticas de contexto são práticas a evitar.",
+    "D": "Incorreta. CAPTCHAs sem alternativa criam barreira; a recomendação é fornecer alternativas.",
+    "E": "Correta. Contraste mínimo entre fundo e primeiro plano é recomendação de acessibilidade."
+   },
+   "fundamentacao": {
+    "item": "6.1",
+    "arquivo_teoria": "conteudo/06-experiencia-usuario/01-usabilidade-e-acessibilidade.md"
+   },
+   "ponto_atencao": "Em questões de acessibilidade, as práticas **proibidas** costumam aparecer como distratores: impedir zoom, depender só de cor, mudar contexto sozinho, CAPTCHA sem alternativa.",
+   "revisao_rapida": "eMAG/WCAG: contraste, zoom, não só cor, sem mudança automática de contexto.",
+   "tags": [
+    "emag",
+    "wcag",
+    "transpetro-2018",
+    "oficial",
+    "media",
+    "compreensao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Transpetro PSP RH 2018.1 (Edital nº 1)",
+    "cargo": "Analista de Sistemas Júnior — Processos de Negócio",
+    "ano": 2018,
+    "prova": "Prova 15",
+    "numero_original": 35,
+    "id_prova": "PRV-006",
+    "situacao_gabarito": "de terceiros (Ética), alterado em 09/05/2018; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/transpetro-2018-prova15-analista-sistemas-jr-processos-negocio.pdf",
     "sha256": "ver docs/estrategia/base-provas.md"
    },
    "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",

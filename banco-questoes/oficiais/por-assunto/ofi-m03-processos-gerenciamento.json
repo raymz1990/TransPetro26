@@ -1,8 +1,8 @@
 {
  "modulo": "Questões oficiais — m03-processos-gerenciamento",
- "lote": "T04 — Transpetro 2023 (Prova 6)",
+ "lote": "T04 — Transpetro 2023 (Prova 6) e 2018 (Prova 15)",
  "data": "2026-11-06",
- "total": 2,
+ "total": 3,
  "questoes": [
   {
    "id": "OFI-000017",
@@ -115,6 +115,65 @@
     "situacao_gabarito": "de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca",
     "aderencia_edital": "aderente",
     "url": "banco-questoes/oficiais/fontes-brutas/transpetro-2023-psp002-prova06-analise-sistemas-processos-negocios.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000047",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 57.",
+   "modulo": "03-processos-gerenciamento",
+   "assunto": "Workflow: automação de processos de negócio",
+   "item_edital": "3",
+   "id_matriz": "E5-033",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "compreensao",
+   "tipo_questao": "conceitual",
+   "enunciado": "Diversos autores e instituições definem Workflow. Alguns tratam como tecnologia, outros como ferramenta, mas todos, entretanto, falam de automação de processos.\nConsiderando o contexto de suas aplicações, Workflow pode ser entendido como a automação",
+   "alternativas": {
+    "A": "das situações, fatos, movimentos e relações que incluem as pessoas envolvidas em determinado processo.",
+    "B": "de um processo de negócios, no todo ou em parte, de forma que documentos, informações ou tarefas sejam passados de um participante a outro para tomada de providências, de acordo com determinadas regras de procedimento.",
+    "C": "de uma atividade na qual o processo de indexação de documentos é realizado com base em informações constantes no próprio documento, e cuja captura exige interação com os usuários.",
+    "D": "de processos, racionalizando-os e aumentando sua eficácia, por meio de políticas organizacionais de qualidade.",
+    "E": "de todas as atividades de troca de documentos e informações que envolvam, pelo menos, um agente de um processo, garantindo que transitem entre todos eles, de acordo com determinadas regras de procedimento, para que as providências necessárias sejam tomadas em tempo útil."
+   },
+   "gabarito": "B",
+   "resolucao": "A definição clássica (WfMC) descreve **workflow** como a **automação de um processo de negócio, total ou parcial**, em que documentos, informações ou tarefas são **passados entre participantes**, segundo **regras de procedimento**.",
+   "analise_alternativas": {
+    "A": "Incorreta. Descreve o contexto humano do processo, sem automação.",
+    "B": "Correta. Corresponde à definição de workflow da WfMC.",
+    "C": "Incorreta. Descreve captura e indexação de documentos.",
+    "D": "Incorreta. Descreve melhoria/racionalização de processos por qualidade, não workflow.",
+    "E": "Incorreta. Parece a definição, mas exige \"pelo menos um agente\" e \"todas as atividades de troca\", o que é mais restritivo e impreciso."
+   },
+   "fundamentacao": {
+    "item": "3",
+    "arquivo_teoria": "conteudo/03-processos-gerenciamento/01-fundamentos-processos.md"
+   },
+   "ponto_atencao": "Aderência parcial: o item 3 do edital é genérico. Diferença chave entre B e E: o **processo de negócio, no todo ou em parte** é automatizado; E fala em \"todas as atividades de troca de documentos\".",
+   "revisao_rapida": "Workflow = automação de processo (todo ou parte), tarefas passando entre participantes por regras.",
+   "tags": [
+    "workflow",
+    "bpm",
+    "transpetro-2018",
+    "oficial",
+    "media",
+    "compreensao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Transpetro PSP RH 2018.1 (Edital nº 1)",
+    "cargo": "Analista de Sistemas Júnior — Processos de Negócio",
+    "ano": 2018,
+    "prova": "Prova 15",
+    "numero_original": 57,
+    "id_prova": "PRV-006",
+    "situacao_gabarito": "de terceiros (Ética), alterado em 09/05/2018; não validado contra a banca",
+    "aderencia_edital": "parcial",
+    "url": "banco-questoes/oficiais/fontes-brutas/transpetro-2018-prova15-analista-sistemas-jr-processos-negocio.pdf",
     "sha256": "ver docs/estrategia/base-provas.md"
    },
    "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",

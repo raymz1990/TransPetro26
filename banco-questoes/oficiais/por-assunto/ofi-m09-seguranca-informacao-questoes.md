@@ -1,4 +1,4 @@
-# Questões oficiais — m09-seguranca-informacao — questões (T04 — Transpetro 2023 (Prova 6))
+# Questões oficiais — m09-seguranca-informacao — questões (T04 — Transpetro 2023 (Prova 6) e 2018 (Prova 15))
 
 Sem gabarito; o comentário está no arquivo `gabaritos-comentados`.
 
@@ -97,3 +97,111 @@ Conforme definido nessa norma, assegurar que as informações e os recursos de p
 (C) em recursos humanos
 (D) no controle de acesso
 (E) física e do ambiente
+
+## OFI-000056 — Classificação da informação: quem decide
+
+*Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 45.* · item 9.18 · Média
+
+A classificação da informação visa a assegurar que a informação receba um nível adequado de proteção.
+
+O processo de classificação da informação é um processo
+
+(A) executado pelo coordenador de TI para determinar a melhor forma de armazenamento e quem pode e quem não pode acessar uma informação.
+(B) executado por uma empresa externa especializada em segurança da informação para determinar quem pode e quem não pode acessar uma informação.
+(C) de decisão estratégica, e requer que o agente de segurança física determine o que pode e o que não pode entrar e sair do ambiente da empresa.
+(D) de decisão estratégica, e requer que o profissional de segurança determine o que deve ser classificado como confidencial, de uso interno ou público.
+(E) de decisão de negócios, e requer o papel ativo do setor gerencial da empresa para determinar o que deve ser classificado como confidencial, de uso interno ou público.
+
+## OFI-000057 — ISO 27002: controle de acesso à rede
+
+*Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 46.* · item 9.19 · Média
+
+A Norma ISO 27002 define o código de prática para a gestão da segurança da informação.
+
+Dentre as recomendações de segurança, o controle de acesso à rede recomenda implantar ações de controle para que
+
+(A) concessão e uso de privilégios sejam restritos e controlados.
+(B) sistemas sensíveis tenham um ambiente computacional dedicado (isolado).
+(C) sessões inativas sejam encerradas após um período definido de inatividade.
+(D) métodos apropriados de autenticações sejam usados para controlar acesso de usuários remotos.
+(E) eventos de segurança da informação sejam relatados através dos canais apropriados da direção.
+
+## OFI-000058 — Firewall: listas de controle de acesso
+
+*Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 47.* · item 9.2 · Fácil
+
+Para proteger as redes de dados, as empresas criam perímetros de segurança formados por componentes que avaliam o tráfego de ingresso e egresso.
+O componente que utiliza listas de controle de acesso formadas por regras que determinam se um pacote pode ou não atravessar a barreira é a(o)
+
+(A) Firewall
+(B) Proxy
+(C) DMZ
+(D) IDS
+(E) IPS
+
+## OFI-000059 — VPN: tunelamento
+
+*Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 48.* · item 9.6 · Fácil
+
+A Virtual Private Network (VPN) permite o estabelecimento de um enlace seguro do tipo host-to-host, host-to-gateway ou gateway-to-gateway. Existe uma técnica que permite o encapsulamento de um pacote inteiro em outro pacote na VPN do tipo host-to-gateway, de forma segura, usando criptografia.
+
+Essa técnica é o(a)
+
+(A) empacotamento
+(B) encaminhamento
+(C) tunelamento
+(D) reflexão segura
+(E) inundação segura
+
+## OFI-000060 — Malware: bot e botnet
+
+*Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 49.* · item 9.3 · Fácil
+
+O malware (malicious software) é um código malicioso que tem o potencial de danificar sua vítima, mas nem sempre age dessa forma. Dentre eles, há um que engaja um computador em uma armada que permite a realização de tarefas de forma automatizada para atacar alvos determinados por criminosos cibernéticos, sem o conhecimento do dono do computador.
+
+Esse malware é o
+
+(A) Bot
+(B) Worm
+(C) Trojan
+(D) Rabbit
+(E) Ransomware
+
+## OFI-000061 — Certificado digital: SHA256RSA
+
+*Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 50.* · item 9.19 · Média
+
+Um certificado digital possui o valor SHA256RSA no campo algoritmo de assinatura.
+Essa informação indica que a assinatura digital do certificado digital foi criada com o algoritmo de hash
+
+(A) SHA, uma chave privada de 256 bits e o algoritmo de criptografia simétrica RSA.
+(B) SHA, uma chave privada de 256 bits e o algoritmo de criptografia assimétrica RSA.
+(C) SHA, uma chave simétrica de 256 bits e o algoritmo de criptografia simétrica RSA.
+(D) SHA256, que produz um digest de 256 bits, e o algoritmo de criptografia simétrica RSA.
+(E) SHA256, que produz um digest de 256 bits, e o algoritmo de criptografia assimétrica RSA.
+
+## OFI-000062 — SAML: Artifact Resolution Protocol
+
+*Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 51.* · item 9.8 · Difícil
+
+O SAML (Security Assertion Markup Language) é constituído por componentes modulares que permitem a transferência de identidade, autenticação e informações de autorização entre organizações. Dentre esses componentes, os protocolos são utilizados para realizar as requisições definidas pelo SAML e retornar as respostas apropriadas.
+O protocolo que fornece um mecanismo pelo qual as mensagens do protocolo SAML podem ser passadas por referência, utilizando, para isso, um valor pequeno e de tamanho fixo, é o
+
+(A) Authentication Request Protocol
+(B) Assertion Query and Request Protocol
+(C) Artifact Resolution Protocol
+(D) Name Identifier Management Protocol
+(E) Name Identifier Mapping Protocol
+
+## OFI-000063 — ICP-Brasil: certificado da AC subordinada à raiz
+
+*Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 52.* · item 9.19 · Média
+
+A ICP (Infraestrutura de Chaves Públicas) define um conjunto de técnicas, práticas e procedimentos a serem adotados pelas entidades a fim de estabelecer um sistema de certificação digital baseado em chave pública.
+Na ICP-Brasil, o certificado de uma Autoridade Certificadora, imediatamente subsequente à Autoridade Certificadora Raiz, é assinado
+
+(A) apenas pela Autoridade Certificadora Raiz
+(B) apenas pela Autoridade de Registro
+(C) apenas pela própria Autoridade Certificadora
+(D) pela Autoridade Certificadora Raiz e pela Autoridade de Registro
+(E) pela Autoridade Certificadora Raiz e pela própria Autoridade Certificadora

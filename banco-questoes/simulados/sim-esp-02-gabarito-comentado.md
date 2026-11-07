@@ -6,7 +6,7 @@
 
 **Observações:** Disjunto do SIM-ESP-01. Contém questões oficiais (Transpetro 2023) e autorais da expansão T05, ainda `em_revisao` (aguardam validação do usuário).
 
-Composição: tipo {'oficial': 25, 'autoral': 25} · status {'em_revisao': 38, 'validada': 12} · dificuldade {'media': 28, 'facil': 16, 'dificil': 6}
+Composição: tipo {'oficial': 26, 'autoral': 24} · status {'em_revisao': 39, 'validada': 11} · dificuldade {'media': 29, 'facil': 14, 'dificil': 7}
 
 ## 1. OFI-000002 — Desempenho de banco de dados: desnormalização controlada
 
@@ -36,35 +36,21 @@ Operadores **binários** recebem duas relações; os **unários** recebem uma. P
 
 **Revisão rápida:** Unários: σ, π, ρ. Binários: ∪, ∩, −, ×, ⋈ e ÷.
 
-## 3. OFI-000004 — Banco de grafos: consulta em Cypher
+## 3. OFI-000043 — SQL: fornecedores com venda em intervalo de datas
 
-*Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 48.* · item 1.18 · Média · gabarito **A**
+*Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 38.* · item 1.10 · Difícil · gabarito **B**
 
-Em Cypher, `MATCH` descreve um padrão; `(p)-[:TIPO]->(x)` segue a relação de `p` para `x`, e `WHERE` filtra. A consulta A localiza a pessoa de nome Alice e retorna os nós ligados por `AMIGO_DE` a partir dela.
+Procura-se o fornecedor para o qual **exista ao menos uma linha de VENDA com a data dentro do intervalo**. A alternativa B conta, por fornecedor, as vendas com `DATA BETWEEN` (inclusivo nas duas pontas) e exige contagem maior que zero. (Os literais de data seguem a formatação do caderno.)
 
-- **A)** Correta. Padrão válido: Alice como origem, relação `AMIGO_DE` saindo dela e retorno dos amigos.
-- **B)** Incorreta. Inverte a direção da seta, retornando quem aponta para Alice; com a relação modelada de Alice para o amigo, não retorna os amigos dela.
-- **C)** Incorreta. Usa a relação `INIMIGO_DE`; retorna inimigos, não amigos.
-- **D)** Incorreta. É SQL relacional e não se aplica a um banco de grafos.
-- **E)** Incorreta. `FIND` não é cláusula do Cypher; a sintaxe é inválida.
+- **A)** Incorreta. O INTERSECT combina duas condições **avaliadas em linhas diferentes**: um fornecedor com uma venda antes de 05/01 e outra depois de 10/01 satisfaz as duas, mesmo sem nenhuma venda dentro do intervalo.
+- **B)** Correta. Filtra as vendas no intervalo e exige que haja ao menos uma: resposta correta.
+- **C)** Incorreta. O `OR` entre as duas condições é verdadeiro para **qualquer** data não nula, e não restringe ao intervalo (a sintaxe `UNIQUE` também é específica de dialeto).
+- **D)** Incorreta. O UNION de duas condições separadas equivale ao OR: qualquer fornecedor com venda em qualquer data satisfaz uma delas.
+- **E)** Incorreta. Retorna os fornecedores que **não** têm venda fora do intervalo, incluindo os que **nunca** venderam.
 
-**Revisão rápida:** Cypher: `MATCH (a)-[:REL]->(b) WHERE ... RETURN b`.
+**Revisão rápida:** Intervalo inclusivo: BETWEEN, ou >= AND <=, na mesma linha.
 
-## 4. OFI-000003 — Bancos de documentos x relacionais x grafos
-
-*Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 46.* · item 1.23 · Fácil · gabarito **D**
-
-Bancos de documentos (MongoDB, CouchDB) guardam documentos **JSON/BSON**, de esquema flexível, adequados a dados semiestruturados. SQL e relações são do modelo relacional; vértices e arestas são dos grafos.
-
-- **A)** Incorreta. SQL e relações matemáticas caracterizam o modelo relacional.
-- **B)** Incorreta. Vértices e arestas caracterizam o modelo de grafos.
-- **C)** Incorreta. A otimização para consultas por relacionamentos (travessias) é típica de grafos.
-- **D)** Correta. Documentos em JSON/BSON com esquema flexível são a característica central dos bancos de documentos.
-- **E)** Incorreta. Normalização com chaves estrangeiras é característica do modelo relacional; documentos favorecem agregados embutidos.
-
-**Revisão rápida:** Documentos = JSON/BSON, esquema flexível; grafos = nós/arestas; relacional = tabelas/SQL.
-
-## 5. OFI-000005 — SQL: autojunção em tabela de hierarquia
+## 4. OFI-000005 — SQL: autojunção em tabela de hierarquia
 
 *Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 49.* · item 1.10 · Média · gabarito **A**
 
@@ -78,19 +64,33 @@ Neto de Carlos = filho de um filho de Carlos. Na **autojunção**, `f1` represen
 
 **Revisão rápida:** Neto = `f1.filho = f2.pai`; projeta-se `f2.filho`.
 
-## 6. OFI-000007 — SGBD: otimizador de consultas (alternativa NÃO)
+## 5. OFI-000003 — Bancos de documentos x relacionais x grafos
 
-*Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 51.* · item 1.13 · Média · gabarito **D**
+*Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 46.* · item 1.23 · Fácil · gabarito **D**
 
-O otimizador **não altera o esquema**: ele escolhe o melhor plano de execução (métodos de acesso, ordem e algoritmo de junção) com base em estatísticas e custo. Criar tabelas é papel do DBA ou da aplicação.
+Bancos de documentos (MongoDB, CouchDB) guardam documentos **JSON/BSON**, de esquema flexível, adequados a dados semiestruturados. SQL e relações são do modelo relacional; vértices e arestas são dos grafos.
 
-- **A)** Incorreta. Escolher o plano de menor custo é a função central do otimizador.
-- **B)** Incorreta. Decidir entre varredura sequencial e uso de índice é escolha de método de acesso, tarefa do otimizador.
-- **C)** Incorreta. Estatísticas (cardinalidade, seletividade) alimentam o modelo de custo.
-- **D)** Correta. Criação de tabelas não é função do otimizador; é a alternativa que **não** representa sua funcionalidade.
-- **E)** Incorreta. Escolher ordem e algoritmo de junção é típico do otimizador.
+- **A)** Incorreta. SQL e relações matemáticas caracterizam o modelo relacional.
+- **B)** Incorreta. Vértices e arestas caracterizam o modelo de grafos.
+- **C)** Incorreta. A otimização para consultas por relacionamentos (travessias) é típica de grafos.
+- **D)** Correta. Documentos em JSON/BSON com esquema flexível são a característica central dos bancos de documentos.
+- **E)** Incorreta. Normalização com chaves estrangeiras é característica do modelo relacional; documentos favorecem agregados embutidos.
 
-**Revisão rápida:** Otimizador: gera planos, estima custo com estatísticas, escolhe o menor.
+**Revisão rápida:** Documentos = JSON/BSON, esquema flexível; grafos = nós/arestas; relacional = tabelas/SQL.
+
+## 6. OFI-000004 — Banco de grafos: consulta em Cypher
+
+*Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 48.* · item 1.18 · Média · gabarito **A**
+
+Em Cypher, `MATCH` descreve um padrão; `(p)-[:TIPO]->(x)` segue a relação de `p` para `x`, e `WHERE` filtra. A consulta A localiza a pessoa de nome Alice e retorna os nós ligados por `AMIGO_DE` a partir dela.
+
+- **A)** Correta. Padrão válido: Alice como origem, relação `AMIGO_DE` saindo dela e retorno dos amigos.
+- **B)** Incorreta. Inverte a direção da seta, retornando quem aponta para Alice; com a relação modelada de Alice para o amigo, não retorna os amigos dela.
+- **C)** Incorreta. Usa a relação `INIMIGO_DE`; retorna inimigos, não amigos.
+- **D)** Incorreta. É SQL relacional e não se aplica a um banco de grafos.
+- **E)** Incorreta. `FIND` não é cláusula do Cypher; a sintaxe é inválida.
+
+**Revisão rápida:** Cypher: `MATCH (a)-[:REL]->(b) WHERE ... RETURN b`.
 
 ## 7. AUT-000091 — Mapeamento do DER para o modelo relacional: relacionamento N:N com atributo
 
@@ -176,21 +176,35 @@ O Scrum trabalha em **Sprints** de duração fixa; o Kanban é um fluxo **contí
 
 **Revisão rápida:** Scrum: Sprint fixa. Kanban: fluxo contínuo e WIP.
 
-## 13. OFI-000012 — Ciclos de vida: modelo em cascata
+## 13. OFI-000044 — Scrum: momento da Retrospectiva da Sprint
 
-*Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 54.* · item 2.4 · Fácil · gabarito **E**
+*Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 28.* · item 2.1 · Fácil · gabarito **B**
 
-No **cascata (waterfall)**, as fases (requisitos, projeto, implementação, testes, manutenção) são **sequenciais e lineares**, cada uma dependendo da conclusão da anterior; é um ciclo de vida preditivo.
+A **Sprint Retrospective** ocorre **depois da Sprint Review** e **antes do próximo Sprint Planning**; é o último evento da Sprint. Inspeciona pessoas, relacionamentos, processos e ferramentas.
 
-- **A)** Incorreta. Aceitar mudanças como inevitáveis é postura dos métodos ágeis.
-- **B)** Incorreta. Mistura iteração com sequência; o cascata não é iterativo.
-- **C)** Incorreta. Sprints são do Scrum.
-- **D)** Incorreta. Requisitos revisitados o tempo todo são característica ágil/iterativa.
-- **E)** Correta. Descreve corretamente o cascata: fases sequenciais e lineares.
+- **A)** Incorreta. A Retrospectiva ocorre depois da Revisão, e não antes.
+- **B)** Correta. Posição correta: após a Revisão e antes do planejamento da próxima Sprint.
+- **C)** Incorreta. No início da Sprint ocorre o Planejamento.
+- **D)** Incorreta. No fim de cada dia não há retrospectiva; a reunião diária é a Daily Scrum.
+- **E)** Incorreta. No início do dia ocorre a Daily Scrum.
 
-**Revisão rápida:** Cascata: fases em sequência, sem retorno planejado.
+**Revisão rápida:** Revisão (produto) antes da Retrospectiva (processo).
 
-## 14. AUT-000017 — PMBOK 7ª edição: Estrutura Analítica do Projeto (EAP)
+## 14. AUT-000015 — Gestão de projeto versus gestão de produto
+
+*Questão autoral — estilo Cesgranrio.* · item 2.2 · Média · gabarito **C**
+
+A **gestão de projeto** mede a execução do que foi combinado (escopo, prazo, custo, aderência ao plano: **I e IV**). A **gestão de produto** foca **valor e resultados** (*outcomes*) para usuários e negócio: adoção e retenção, redução de tempo de atendimento, receita ou economia (**II e III**). O produto continua após o lançamento, com equipe estável e investimento contínuo.
+
+- **A)** Incorreta. I (prazo e orçamento) e IV (aderência ao escopo) são indicadores de execução do projeto, a medida típica da gestão de projeto.
+- **B)** Incorreta. Mistura um indicador de projeto (I) com um de produto (II).
+- **C)** Correta. Adoção pelos usuários e redução do tempo de atendimento medem valor e resultado (produto).
+- **D)** Incorreta. Mistura um indicador de produto (III) com um de projeto (IV).
+- **E)** Incorreta. Inclui o indicador I, de prazo e orçamento, típico da gestão de projeto.
+
+**Revisão rápida:** Projeto = aderência ao plano. Produto = valor e resultado ao longo do ciclo de vida.
+
+## 15. AUT-000017 — PMBOK 7ª edição: Estrutura Analítica do Projeto (EAP)
 
 *Questão autoral — estilo Cesgranrio.* · item 2.4 · Fácil · gabarito **A**
 
@@ -204,21 +218,21 @@ A **EAP (WBS)** é a decomposição hierárquica do **escopo total** do trabalho
 
 **Revisão rápida:** EAP: decomposição hierárquica do escopo em pacotes; regra dos 100%; orientada a entregas; não é cronograma, estimativa de custo nem análise de risco.
 
-## 15. AUT-000020 — PMBOK 7ª edição: domínios de desempenho
+## 16. OFI-000047 — Workflow: automação de processos de negócio
 
-*Questão autoral — estilo Cesgranrio.* · item 2.4 · Difícil · gabarito **B**
+*Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 57.* · item 3 · Média · gabarito **B**
 
-Na 7ª edição, os **oito domínios de desempenho** (partes interessadas, equipe, abordagem de desenvolvimento e ciclo de vida, planejamento, trabalho do projeto, entrega, mensuração e incerteza) são **grupos de atividades correlatas** críticas para a entrega efetiva dos resultados; eles **interagem, sobrepõem-se e ocorrem simultaneamente**, e não em sequência. Os **princípios** orientam o comportamento; os grupos de processos e as áreas de conhecimento pertencem à 6ª edição.
+A definição clássica (WfMC) descreve **workflow** como a **automação de um processo de negócio, total ou parcial**, em que documentos, informações ou tarefas são **passados entre participantes**, segundo **regras de procedimento**.
 
-- **A)** Incorreta. Domínios não são fases sequenciais. A ideia de sequência da iniciação ao encerramento remete aos grupos de processos da 6ª edição.
-- **B)** Correta. Definição de domínios de desempenho na 7ª edição.
-- **C)** Incorreta. As dez áreas de conhecimento fazem parte da 6ª edição; a 7ª edição não as adota como estrutura.
-- **D)** Incorreta. Os cinco grupos de processos (iniciação, planejamento, execução, monitoramento e controle e encerramento) são da 6ª edição.
-- **E)** Incorreta. Os 12 princípios são outro elemento da 7ª edição, que orienta comportamentos e decisões; não são os domínios.
+- **A)** Incorreta. Descreve o contexto humano do processo, sem automação.
+- **B)** Correta. Corresponde à definição de workflow da WfMC.
+- **C)** Incorreta. Descreve captura e indexação de documentos.
+- **D)** Incorreta. Descreve melhoria/racionalização de processos por qualidade, não workflow.
+- **E)** Incorreta. Parece a definição, mas exige "pelo menos um agente" e "todas as atividades de troca", o que é mais restritivo e impreciso.
 
-**Revisão rápida:** PMBOK 7: 12 princípios (orientam comportamento) + 8 domínios (atividades correlatas e simultâneas). PMBOK 6: 5 grupos de processos e 10 áreas.
+**Revisão rápida:** Workflow = automação de processo (todo ou parte), tarefas passando entre participantes por regras.
 
-## 16. OFI-000017 — Sequência dos grupos de processos
+## 17. OFI-000017 — Sequência dos grupos de processos
 
 *Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 55.* · item 3 · Fácil · gabarito **B**
 
@@ -231,20 +245,6 @@ A ordem dos grupos de processos (PMBOK 6ª ed.) é **Iniciação → Planejament
 - **E)** Incorreta. Começa por Monitoramento e termina na Iniciação, invertendo a sequência.
 
 **Revisão rápida:** Ordem: Iniciação, Planejamento, Execução, M&C (contínuo), Encerramento.
-
-## 17. OFI-000018 — Grupo de monitoramento e controle
-
-*Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 70.* · item 3 · Fácil · gabarito **A**
-
-O grupo que acompanha o desempenho, compara com o plano e aciona ações corretivas é o de **Monitoramento e Controle**. Entre as opções, a única que remete a essa função é "controle".
-
-- **A)** Correta. Corresponde, na prova, ao grupo de Monitoramento e Controle (a forma completa do nome é "Monitoramento e Controle").
-- **B)** Incorreta. Encerramento finaliza as atividades e formaliza a conclusão.
-- **C)** Incorreta. Execução realiza o trabalho definido no plano.
-- **D)** Incorreta. Iniciação autoriza o projeto e define seu escopo inicial.
-- **E)** Incorreta. Planejamento define o escopo, o cronograma e a abordagem.
-
-**Revisão rápida:** M&C: monitorar, analisar, controlar mudanças, ações corretivas.
 
 ## 18. AUT-000025 — Área de Custos: processos por grupo
 
@@ -316,19 +316,19 @@ Pela LGPD (art. 5º): **controlador** é quem **decide** sobre o tratamento; **o
 
 **Revisão rápida:** Funcional = o que faz; não funcional = quão bem / sob que restrições.
 
-## 23. OFI-000025 — Ciclos de vida sequenciais
+## 23. OFI-000052 — Casos de uso
 
-*Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 25.* · item 5.2 · Fácil · gabarito **D**
+*Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 27.* · item 5.1 · Média · gabarito **A**
 
-**Cascata** e **modelo em V** são sequenciais (o V acrescenta a correspondência entre fases de desenvolvimento e de teste). Incremental, iterativo, espiral e ágil repetem ciclos.
+O **caso de uso** descreve **uma interação entre um ator e o sistema** para atingir um objetivo, do ponto de vista externo, em geral com um fluxo principal e fluxos alternativos e de exceção.
 
-- **A)** Incorreta. Incremental entrega partes sucessivas; não é estritamente sequencial.
-- **B)** Incorreta. Iterativo e espiral repetem ciclos.
-- **C)** Incorreta. Ágil e espiral são iterativos.
-- **D)** Correta. Em V e em cascata são sequenciais.
-- **E)** Incorreta. Incremental não é sequencial.
+- **A)** Correta. Descreve uma interação ator-sistema, visão externa.
+- **B)** Incorreta. Um caso de uso reúne **vários** cenários (fluxo principal e alternativos); um único cenário é uma instância.
+- **C)** Incorreta. O comportamento interno é tratado em outros modelos (sequência, atividades).
+- **D)** Incorreta. Estados dos objetos são modelados em diagramas de estados.
+- **E)** Incorreta. Interações entre objetos são modeladas em diagramas de sequência/comunicação.
 
-**Revisão rápida:** Sequencial = cascata e V.
+**Revisão rápida:** Caso de uso = interação ator × sistema.
 
 ## 24. AUT-000041 — Requisitos funcionais e não funcionais
 
@@ -442,21 +442,35 @@ O **data warehouse** é **orientado a assunto, integrado, histórico e não vol�
 
 **Revisão rápida:** DW = integração + histórico + análise.
 
-## 32. AUT-000068 — Manipulação de dados em planilhas: SOMASES
+## 32. OFI-000055 — Sistema de Suporte à Decisão (tipo de sistema de informação)
 
-*Questão autoral — estilo Cesgranrio.* · item 7.9 · Média · gabarito **C**
+*Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 54.* · item 7.11 · Média · gabarito **D**
 
-A função `SOMASES` soma os valores de C que atendem a **todos** os critérios simultaneamente (operação E): região = "Norte" **e** mês diferente de "Mar" (`"<>Mar"`). As linhas que atendem são 2 (Norte, Jan, 100) e 4 (Norte, Fev, 120). Soma: 100 + 120 = **220**.
+O **Sistema de Suporte à Decisão (SSD/DSS)** usa **modelos e dados** para apoiar decisões semiestruturadas, com análise e **otimização** ("quais caminhões alocar para maximizar o lucro?").
 
-- **A)** Incorreta. 280 é a soma de todas as linhas da região Norte (100 + 120 + 60), desconsiderando o critério do mês.
-- **B)** Incorreta. 390 é a soma de todas as linhas com mês diferente de março (100 + 80 + 120 + 90), desconsiderando o critério da região.
-- **C)** Correta. Região Norte e mês diferente de março: 100 + 120 = 220.
-- **D)** Incorreta. 450 é a soma de toda a coluna C, sem nenhum critério.
-- **E)** Incorreta. 170 é a soma da região Sul (80 + 90), que o critério não seleciona.
+- **A)** Incorreta. CRM gerencia o relacionamento com clientes.
+- **B)** Incorreta. SIG produz relatórios gerenciais de rotina, resumindo dados, sem modelagem de otimização.
+- **C)** Incorreta. Sistemas especialistas reproduzem o raciocínio de especialistas com base de regras.
+- **D)** Correta. Modelagem e otimização para apoiar decisões: SSD.
+- **E)** Incorreta. Processamento de transações registra eventos operacionais (vendas, pagamentos).
 
-**Revisão rápida:** SOMASES(soma; critério1_intervalo; critério1; ...): soma as células que atendem a todos os critérios.
+**Revisão rápida:** SSD = modelos e otimização para decisões semiestruturadas.
 
-## 33. AUT-000067 — Modelagem multidimensional: tipos de tabela fato
+## 33. AUT-000110 — BI como suporte à tomada de decisão
+
+*Questão autoral — estilo Cesgranrio.* · item 7.11 · Média · gabarito **A**
+
+O BI **transforma dados em informação para apoiar decisões** nos níveis estratégico, tático e operacional, entregando visão integrada, histórica e tempestiva. Ele **apoia**, e não **substitui** o decisor, e depende da **qualidade dos dados** e do alinhamento aos indicadores do negócio.
+
+- **A)** Correta. Descreve o papel do BI: apoiar a decisão com informação integrada e confiável.
+- **B)** Incorreta. Nenhuma ferramenta garante decisão ótima; o decisor continua responsável.
+- **C)** Incorreta. BI depende de qualidade de dados; "lixo entra, lixo sai".
+- **D)** Incorreta. BI atende aos três níveis decisórios.
+- **E)** Incorreta. O DW é a base integrada que costuma alimentar os painéis; não é dispensável.
+
+**Revisão rápida:** BI apoia decisões em todos os níveis; não decide sozinho.
+
+## 34. AUT-000067 — Modelagem multidimensional: tipos de tabela fato
 
 *Questão autoral — estilo Cesgranrio.* · item 7.7 · Fácil · gabarito **A**
 
@@ -470,7 +484,7 @@ Na tabela fato de **snapshot acumulativo**, há **uma linha por ciclo de process
 
 **Revisão rápida:** Acumulativo: linha por ciclo, atualizada nas etapas. Periódico: retrato por período. Transacional: um evento.
 
-## 34. AUT-000070 — Insights e BI na tomada de decisão: correlação e causalidade
+## 35. AUT-000070 — Insights e BI na tomada de decisão: correlação e causalidade
 
 *Questão autoral — estilo Cesgranrio.* · item 7.10 · Difícil · gabarito **B**
 
@@ -484,33 +498,19 @@ Duas séries que variam juntas têm **correlação**, o que **não implica causa
 
 **Revisão rápida:** Insight: descoberta relevante e acionável. Vieses: correlação×causalidade, confirmação, seleção, cherry-picking.
 
-## 35. AUT-000069 — Ferramentas de BI: medidas, colunas calculadas e interatividade
+## 36. AUT-000068 — Manipulação de dados em planilhas: SOMASES
 
-*Questão autoral — estilo Cesgranrio.* · item 7.8 · Média · gabarito **E**
+*Questão autoral — estilo Cesgranrio.* · item 7.9 · Média · gabarito **C**
 
-Uma **medida** é um cálculo **dinâmico**, avaliado no **contexto dos filtros** e das seleções do usuário (por exemplo, uma margem percentual agregada). Uma **coluna calculada** é calculada **linha a linha** durante a carga ou o modelo (por exemplo, a faixa de preço de cada produto). Assim: margem = medida; faixa de preço = coluna calculada.
+A função `SOMASES` soma os valores de C que atendem a **todos** os critérios simultaneamente (operação E): região = "Norte" **e** mês diferente de "Mar" (`"<>Mar"`). As linhas que atendem são 2 (Norte, Jan, 100) e 4 (Norte, Fev, 120). Soma: 100 + 120 = **220**.
 
-- **A)** Incorreta. Inverte os conceitos: a margem que reage a filtros é uma medida, e a faixa por linha é coluna calculada.
-- **B)** Incorreta. A coluna calculada não se ajusta dinamicamente aos filtros do usuário; para a margem agregada, é necessária uma medida.
-- **C)** Incorreta. A medida avalia agregações no contexto de filtros, mas classificar cada linha na carga é papel de uma coluna calculada.
-- **D)** Incorreta. Parâmetro é um valor ajustável pelo usuário (por exemplo, uma meta), e filtro de página restringe dados; nenhum dos dois define os cálculos pedidos.
-- **E)** Correta. Margem sensível aos filtros: medida; classificação por linha na carga: coluna calculada.
+- **A)** Incorreta. 280 é a soma de todas as linhas da região Norte (100 + 120 + 60), desconsiderando o critério do mês.
+- **B)** Incorreta. 390 é a soma de todas as linhas com mês diferente de março (100 + 80 + 120 + 90), desconsiderando o critério da região.
+- **C)** Correta. Região Norte e mês diferente de março: 100 + 120 = 220.
+- **D)** Incorreta. 450 é a soma de toda a coluna C, sem nenhum critério.
+- **E)** Incorreta. 170 é a soma da região Sul (80 + 90), que o critério não seleciona.
 
-**Revisão rápida:** Medida: cálculo dinâmico no contexto de filtro. Coluna calculada: valor por linha. Parâmetro: valor ajustável. Filtro: restringe os dados.
-
-## 36. AUT-000110 — BI como suporte à tomada de decisão
-
-*Questão autoral — estilo Cesgranrio.* · item 7.11 · Média · gabarito **A**
-
-O BI **transforma dados em informação para apoiar decisões** nos níveis estratégico, tático e operacional, entregando visão integrada, histórica e tempestiva. Ele **apoia**, e não **substitui** o decisor, e depende da **qualidade dos dados** e do alinhamento aos indicadores do negócio.
-
-- **A)** Correta. Descreve o papel do BI: apoiar a decisão com informação integrada e confiável.
-- **B)** Incorreta. Nenhuma ferramenta garante decisão ótima; o decisor continua responsável.
-- **C)** Incorreta. BI depende de qualidade de dados; "lixo entra, lixo sai".
-- **D)** Incorreta. BI atende aos três níveis decisórios.
-- **E)** Incorreta. O DW é a base integrada que costuma alimentar os painéis; não é dispensável.
-
-**Revisão rápida:** BI apoia decisões em todos os níveis; não decide sozinho.
+**Revisão rápida:** SOMASES(soma; critério1_intervalo; critério1; ...): soma as células que atendem a todos os critérios.
 
 ## 37. OFI-000033 — Argumento válido: conclusão a partir das premissas
 
@@ -596,7 +596,21 @@ A **NIST SP 800-61** (*Computer Security Incident Handling Guide*) define o cicl
 
 **Revisão rápida:** 800-61 = resposta a incidentes.
 
-## 43. OFI-000036 — Controle de acesso: ABAC x RBAC
+## 43. OFI-000062 — SAML: Artifact Resolution Protocol
+
+*Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 51.* · item 9.8 · Difícil · gabarito **C**
+
+No **Artifact Resolution Protocol**, uma mensagem SAML é substituída por um **artefato** (valor pequeno e de tamanho fixo) que **referencia** a mensagem; o receptor o "resolve" para obter a mensagem completa, por canal seguro.
+
+- **A)** Incorreta. Authentication Request Protocol solicita uma asserção de autenticação.
+- **B)** Incorreta. Assertion Query and Request Protocol consulta ou requisita asserções existentes.
+- **C)** Correta. Passagem por referência com valor fixo e pequeno: Artifact Resolution.
+- **D)** Incorreta. Name Identifier Management trata do gerenciamento de identificadores de nome.
+- **E)** Incorreta. Name Identifier Mapping mapeia identificadores entre provedores.
+
+**Revisão rápida:** Artifact = referência pequena e fixa para uma mensagem SAML.
+
+## 44. OFI-000036 — Controle de acesso: ABAC x RBAC
 
 *Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 39.* · item 9.10 · Média · gabarito **A**
 
@@ -610,7 +624,7 @@ A **NIST SP 800-61** (*Computer Security Incident Handling Guide*) define o cicl
 
 **Revisão rápida:** ABAC: decide por atributos e contexto.
 
-## 44. OFI-000040 — SIEM
+## 45. OFI-000040 — SIEM
 
 *Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 43.* · item 9.2 · Fácil · gabarito **D**
 
@@ -624,33 +638,19 @@ O **SIEM** (*Security Information and Event Management*) **coleta, correlaciona 
 
 **Revisão rápida:** SIEM: coleta + correlação + alerta.
 
-## 45. OFI-000037 — MITRE ATT&CK: táticas
+## 46. AUT-000116 — SSO: vantagens e riscos
 
-*Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 40.* · item 9.15 · Média · gabarito **E**
+*Questão autoral — estilo Cesgranrio.* · item 9.8 · Média · gabarito **B**
 
-As táticas do ATT&CK Enterprise incluem *Reconnaissance, Resource Development, Initial Access, Execution, Persistence, Privilege Escalation, Defense Evasion, **Credential Access**, Discovery, Lateral Movement, Collection, Command and Control, Exfiltration e Impact* (14 na v14; a v19 tem 15). "Acesso à credencial" é uma tática; as demais opções são técnicas ou termos genéricos.
+No **SSO**, um **provedor de identidade (IdP)** autentica o usuário e emite **asserções/tokens** (SAML, OpenID Connect/OAuth 2.0, Kerberos) aceitos pelos sistemas. **Vantagens:** menos senhas, melhor experiência, controle e revogação centralizados, auditoria no IdP. **Risco:** o IdP é **ponto único de falha e de comprometimento**, mitigado com **MFA**, monitoramento e alta disponibilidade.
 
-- **A)** Incorreta. Não é tática do ATT&CK (a técnica de varredura de vulnerabilidades está sob Reconnaissance).
-- **B)** Incorreta. "Comunicação entre processos" é técnica (execução por IPC), não tática.
-- **C)** Incorreta. "Manipulação de conta" (*Account Manipulation*) é **técnica** (Persistence/Privilege Escalation).
-- **D)** Incorreta. "Evasão do depurador" é técnica de Defense Evasion/Discovery.
-- **E)** Correta. *Credential Access* é tática do ATT&CK.
+- **A)** Incorreta. A autenticação ocorre uma vez, no IdP; ela não é eliminada.
+- **B)** Correta. Descreve vantagens e riscos do SSO, e a mitigação por MFA.
+- **C)** Incorreta. O SSO **reduz** bases de senhas por sistema, e não as replica.
+- **D)** Incorreta. SAML e OIDC são justamente protocolos usados em SSO.
+- **E)** Incorreta. O IdP centraliza logs e facilita a auditoria.
 
-**Revisão rápida:** Tática = objetivo; técnica = método; subtécnica = detalhe.
-
-## 46. AUT-000114 — VPN: IPsec em modo túnel
-
-*Questão autoral — estilo Cesgranrio.* · item 9.6 · Média · gabarito **E**
-
-No **IPsec**, o **modo túnel** protege e **encapsula o pacote IP original inteiro** em um novo pacote com novo cabeçalho IP, e é o usual em **VPN site-to-site** (gateway a gateway). No **modo transporte**, protege-se apenas o **payload**, mantendo o cabeçalho original (típico host a host). O **ESP** oferece confidencialidade, autenticação de origem e integridade; o **AH** oferece integridade e autenticação, **sem** confidencialidade.
-
-- **A)** Incorreta. A VPN protege o tráfego no caminho, mas não torna o usuário anônimo.
-- **B)** Incorreta. A VPN não substitui firewall; as defesas se complementam.
-- **C)** Incorreta. A descrição corresponde ao modo túnel; o transporte preserva o cabeçalho IP original.
-- **D)** Incorreta. É o contrário: o ESP oferece confidencialidade, e o AH, não.
-- **E)** Correta. Descreve corretamente o modo túnel e seu uso entre gateways.
-
-**Revisão rápida:** IPsec: túnel encapsula tudo; ESP cifra; AH só autentica.
+**Revisão rápida:** SSO: IdP + tokens (SAML/OIDC); risco do ponto único → MFA.
 
 ## 47. AUT-000113 — Segurança física e lógica: classificação de controles
 
@@ -666,7 +666,21 @@ No **IPsec**, o **modo túnel** protege e **encapsula o pacote IP original intei
 
 **Revisão rápida:** Físico = lugar/equipamento; lógico = sistema/dado.
 
-## 48. AUT-000115 — MDM: gerenciamento de dispositivos móveis
+## 48. AUT-000114 — VPN: IPsec em modo túnel
+
+*Questão autoral — estilo Cesgranrio.* · item 9.6 · Média · gabarito **E**
+
+No **IPsec**, o **modo túnel** protege e **encapsula o pacote IP original inteiro** em um novo pacote com novo cabeçalho IP, e é o usual em **VPN site-to-site** (gateway a gateway). No **modo transporte**, protege-se apenas o **payload**, mantendo o cabeçalho original (típico host a host). O **ESP** oferece confidencialidade, autenticação de origem e integridade; o **AH** oferece integridade e autenticação, **sem** confidencialidade.
+
+- **A)** Incorreta. A VPN protege o tráfego no caminho, mas não torna o usuário anônimo.
+- **B)** Incorreta. A VPN não substitui firewall; as defesas se complementam.
+- **C)** Incorreta. A descrição corresponde ao modo túnel; o transporte preserva o cabeçalho IP original.
+- **D)** Incorreta. É o contrário: o ESP oferece confidencialidade, e o AH, não.
+- **E)** Correta. Descreve corretamente o modo túnel e seu uso entre gateways.
+
+**Revisão rápida:** IPsec: túnel encapsula tudo; ESP cifra; AH só autentica.
+
+## 49. AUT-000115 — MDM: gerenciamento de dispositivos móveis
 
 *Questão autoral — estilo Cesgranrio.* · item 9.7 · Média · gabarito **A**
 
@@ -679,20 +693,6 @@ O **MDM** permite **inventariar** dispositivos, **impor políticas** (senha, cri
 - **E)** Incorreta. Nenhum controle garante ausência total de infecção; o MDM reduz riscos.
 
 **Revisão rápida:** MDM: inventário, políticas, bloqueio e wipe remoto.
-
-## 49. AUT-000116 — SSO: vantagens e riscos
-
-*Questão autoral — estilo Cesgranrio.* · item 9.8 · Média · gabarito **B**
-
-No **SSO**, um **provedor de identidade (IdP)** autentica o usuário e emite **asserções/tokens** (SAML, OpenID Connect/OAuth 2.0, Kerberos) aceitos pelos sistemas. **Vantagens:** menos senhas, melhor experiência, controle e revogação centralizados, auditoria no IdP. **Risco:** o IdP é **ponto único de falha e de comprometimento**, mitigado com **MFA**, monitoramento e alta disponibilidade.
-
-- **A)** Incorreta. A autenticação ocorre uma vez, no IdP; ela não é eliminada.
-- **B)** Correta. Descreve vantagens e riscos do SSO, e a mitigação por MFA.
-- **C)** Incorreta. O SSO **reduz** bases de senhas por sistema, e não as replica.
-- **D)** Incorreta. SAML e OIDC são justamente protocolos usados em SSO.
-- **E)** Incorreta. O IdP centraliza logs e facilita a auditoria.
-
-**Revisão rápida:** SSO: IdP + tokens (SAML/OIDC); risco do ponto único → MFA.
 
 ## 50. AUT-000117 — Teste de penetração: autorização e escopo
 

@@ -1,6 +1,6 @@
 # Catálogo geral de questões — Banco de questões
 
-**Atualizado em:** 2026-11-06 (gerado por `python tools/gerar_docs_banco.py`). **Totais:** 196 questões — oficiais 41 · adaptadas 0 · autorais 155 (Específicos 120, Gerais 35). Validadas 90 · em revisão 106.
+**Atualizado em:** 2026-11-06 (gerado por `python tools/gerar_docs_banco.py`). **Totais:** 218 questões — oficiais 63 · adaptadas 0 · autorais 155 (Específicos 120, Gerais 35). Validadas 90 · em revisão 128.
 
 `validada` = aprovada pelo usuário (sem revisão por terceiros). `em_revisao` = produzida na fase P1 (T04 a T06) e **ainda não validada pelo usuário**. Questões oficiais trazem prova e número no campo `fonte_origem`; gabaritos de 2023 são de espelho de terceiros, **não validados contra a banca**. O catálogo das provas (metadados, sem enunciados) está em `docs/estrategia/catalogo-questoes-historicas.md`.
 
@@ -202,3 +202,25 @@
 | OFI-000039 | oficial | M09 | 9.11 | Resposta a incidentes: NIST SP 800-61 | Fácil | memorizacao | C | em_revisao | Transpetro PSP/Terra 002/2023 2023, Prova 6, Q42 (PRV-005) |
 | OFI-000040 | oficial | M09 | 9.2 | SIEM | Fácil | compreensao | D | em_revisao | Transpetro PSP/Terra 002/2023 2023, Prova 6, Q43 (PRV-005) |
 | OFI-000041 | oficial | M09 | 9.19 | ISO/IEC 27002: proteção contra malware | Média | memorizacao | A | em_revisao | Transpetro PSP/Terra 002/2023 2023, Prova 6, Q44 (PRV-005) |
+| OFI-000042 | oficial | M01 | 1.19 | Data warehouse: Data Staging Area (ETL) | Média | memorizacao | B | em_revisao | Transpetro PSP RH 2018.1 2018, Prova 15, Q22 (PRV-006) |
+| OFI-000043 | oficial | M01 | 1.10 | SQL: fornecedores com venda em intervalo de datas | Difícil | analise | B | em_revisao | Transpetro PSP RH 2018.1 2018, Prova 15, Q38 (PRV-006) |
+| OFI-000044 | oficial | M02 | 2.1 | Scrum: momento da Retrospectiva da Sprint | Fácil | memorizacao | B | em_revisao | Transpetro PSP RH 2018.1 2018, Prova 15, Q28 (PRV-006) |
+| OFI-000045 | oficial | M02 | 2.1 | Scrum: escala dos Pontos de História (Planning Poker) | Média | memorizacao | B | em_revisao | Transpetro PSP RH 2018.1 2018, Prova 15, Q31 (PRV-006) |
+| OFI-000046 | oficial | M02 | 2.4 | EAP: o que deve conter | Média | compreensao | B | em_revisao | Transpetro PSP RH 2018.1 2018, Prova 15, Q63 (PRV-006) |
+| OFI-000047 | oficial | M03 | 3 | Workflow: automação de processos de negócio | Média | compreensao | B | em_revisao | Transpetro PSP RH 2018.1 2018, Prova 15, Q57 (PRV-006) |
+| OFI-000048 | oficial | M04 | 4.3 | Computação em nuvem (SaaS) | Fácil | compreensao | B | em_revisao | Transpetro PSP RH 2018.1 2018, Prova 15, Q56 (PRV-006) |
+| OFI-000049 | oficial | M05 | 5.2 | Processo Unificado: fase de elaboração | Média | memorizacao | A | em_revisao | Transpetro PSP RH 2018.1 2018, Prova 15, Q23 (PRV-006) |
+| OFI-000050 | oficial | M05 | 5.4 | Teste de mutação | Média | memorizacao | C | em_revisao | Transpetro PSP RH 2018.1 2018, Prova 15, Q24 (PRV-006) |
+| OFI-000051 | oficial | M05 | 5.4 | Complexidade ciclomática a partir do grafo de fluxo | Média | resolucao_problemas | A | em_revisao | Transpetro PSP RH 2018.1 2018, Prova 15, Q25 (PRV-006) |
+| OFI-000052 | oficial | M05 | 5.1 | Casos de uso | Média | compreensao | A | em_revisao | Transpetro PSP RH 2018.1 2018, Prova 15, Q27 (PRV-006) |
+| OFI-000053 | oficial | M05 | 5.3 | Orientação a objetos: polimorfismo | Média | compreensao | E | em_revisao | Transpetro PSP RH 2018.1 2018, Prova 15, Q29 (PRV-006) |
+| OFI-000054 | oficial | M06 | 6.1 | eMAG: recomendações de acessibilidade | Média | compreensao | E | em_revisao | Transpetro PSP RH 2018.1 2018, Prova 15, Q35 (PRV-006) |
+| OFI-000055 | oficial | M07 | 7.11 | Sistema de Suporte à Decisão (tipo de sistema de informação) | Média | aplicacao | D | em_revisao | Transpetro PSP RH 2018.1 2018, Prova 15, Q54 (PRV-006) |
+| OFI-000056 | oficial | M09 | 9.18 | Classificação da informação: quem decide | Média | compreensao | E | em_revisao | Transpetro PSP RH 2018.1 2018, Prova 15, Q45 (PRV-006) |
+| OFI-000057 | oficial | M09 | 9.19 | ISO 27002: controle de acesso à rede | Média | memorizacao | D | em_revisao | Transpetro PSP RH 2018.1 2018, Prova 15, Q46 (PRV-006) |
+| OFI-000058 | oficial | M09 | 9.2 | Firewall: listas de controle de acesso | Fácil | compreensao | A | em_revisao | Transpetro PSP RH 2018.1 2018, Prova 15, Q47 (PRV-006) |
+| OFI-000059 | oficial | M09 | 9.6 | VPN: tunelamento | Fácil | memorizacao | C | em_revisao | Transpetro PSP RH 2018.1 2018, Prova 15, Q48 (PRV-006) |
+| OFI-000060 | oficial | M09 | 9.3 | Malware: bot e botnet | Fácil | compreensao | A | em_revisao | Transpetro PSP RH 2018.1 2018, Prova 15, Q49 (PRV-006) |
+| OFI-000061 | oficial | M09 | 9.19 | Certificado digital: SHA256RSA | Média | compreensao | E | em_revisao | Transpetro PSP RH 2018.1 2018, Prova 15, Q50 (PRV-006) |
+| OFI-000062 | oficial | M09 | 9.8 | SAML: Artifact Resolution Protocol | Difícil | memorizacao | C | em_revisao | Transpetro PSP RH 2018.1 2018, Prova 15, Q51 (PRV-006) |
+| OFI-000063 | oficial | M09 | 9.19 | ICP-Brasil: certificado da AC subordinada à raiz | Média | compreensao | A | em_revisao | Transpetro PSP RH 2018.1 2018, Prova 15, Q52 (PRV-006) |

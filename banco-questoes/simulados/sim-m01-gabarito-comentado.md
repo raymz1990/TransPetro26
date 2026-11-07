@@ -6,7 +6,7 @@
 
 **Observações:** Mistura de questões oficiais e autorais do módulo; algumas ainda `em_revisao`.
 
-Composição: tipo {'autoral': 9, 'oficial': 6} · status {'validada': 9, 'em_revisao': 6} · dificuldade {'facil': 5, 'media': 8, 'dificil': 2}
+Composição: tipo {'autoral': 8, 'oficial': 7} · status {'validada': 8, 'em_revisao': 7} · dificuldade {'facil': 5, 'media': 7, 'dificil': 3}
 
 ## 1. AUT-000001 — Modelagem de dados: níveis conceitual, lógico e físico
 
@@ -120,7 +120,21 @@ Neto de Carlos = filho de um filho de Carlos. Na **autojunção**, `f1` represen
 
 **Revisão rápida:** Neto = `f1.filho = f2.pai`; projeta-se `f2.filho`.
 
-## 9. AUT-000005 — Propriedades ACID e transações
+## 9. OFI-000043 — SQL: fornecedores com venda em intervalo de datas
+
+*Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 38.* · item 1.10 · Difícil · gabarito **B**
+
+Procura-se o fornecedor para o qual **exista ao menos uma linha de VENDA com a data dentro do intervalo**. A alternativa B conta, por fornecedor, as vendas com `DATA BETWEEN` (inclusivo nas duas pontas) e exige contagem maior que zero. (Os literais de data seguem a formatação do caderno.)
+
+- **A)** Incorreta. O INTERSECT combina duas condições **avaliadas em linhas diferentes**: um fornecedor com uma venda antes de 05/01 e outra depois de 10/01 satisfaz as duas, mesmo sem nenhuma venda dentro do intervalo.
+- **B)** Correta. Filtra as vendas no intervalo e exige que haja ao menos uma: resposta correta.
+- **C)** Incorreta. O `OR` entre as duas condições é verdadeiro para **qualquer** data não nula, e não restringe ao intervalo (a sintaxe `UNIQUE` também é específica de dialeto).
+- **D)** Incorreta. O UNION de duas condições separadas equivale ao OR: qualquer fornecedor com venda em qualquer data satisfaz uma delas.
+- **E)** Incorreta. Retorna os fornecedores que **não** têm venda fora do intervalo, incluindo os que **nunca** venderam.
+
+**Revisão rápida:** Intervalo inclusivo: BETWEEN, ou >= AND <=, na mesma linha.
+
+## 10. AUT-000005 — Propriedades ACID e transações
 
 *Questão autoral — estilo Cesgranrio.* · item 1.14 · Fácil · gabarito **D**
 
@@ -134,7 +148,7 @@ Na primeira situação, a transação (débito + crédito) foi interrompida e o 
 
 **Revisão rápida:** A: tudo ou nada. C: estado válido para outro válido. I: sem interferência entre concorrentes. D: confirmado não se perde.
 
-## 10. OFI-000009 — Propriedades ACID
+## 11. OFI-000009 — Propriedades ACID
 
 *Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 53.* · item 1.14 · Fácil · gabarito **C**
 
@@ -148,35 +162,7 @@ Na primeira situação, a transação (débito + crédito) foi interrompida e o 
 
 **Revisão rápida:** ACID: tudo-ou-nada, válido→válido, sem interferência, confirmado persiste.
 
-## 11. AUT-000010 — Melhoria de performance: índices e predicados sargáveis
-
-*Questão autoral — estilo Cesgranrio.* · item 1.17 · Média · gabarito **D**
-
-Aplicar uma função à coluna (UPPER(tag)) torna o predicado **não sargável** em relação ao índice sobre tag: o otimizador não consegue usar o índice e faz a varredura completa. Há duas soluções: (a) criar um **índice sobre a expressão** UPPER(tag), de modo que a comparação use esse índice; ou (b) se os dados já estiverem padronizados em maiúsculas, **reescrever** o predicado como tag = 'P-101'. Em ambos os casos, o resultado da consulta é preservado.
-
-- **A)** Incorreta. Um segundo índice idêntico não altera o problema (o predicado continua inviável para ele) e ainda aumenta o custo de escrita e de armazenamento.
-- **B)** Incorreta. O particionamento por tipo de equipamento não ajuda uma consulta que filtra por tag sem informar o tipo; a varredura continuaria percorrendo as partições.
-- **C)** Incorreta. A premissa é falsa: o índice sobre tag não é usado quando a coluna é envolvida em função no predicado. Mais memória não resolve a varredura completa.
-- **D)** Correta. Índice funcional ou predicado reescrito de forma sargável.
-- **E)** Incorreta. Índices bitmap são, em geral, indicados para colunas de **baixa** cardinalidade (e cargas analíticas); tag tem alta cardinalidade. Além disso, o problema continuaria, pois o predicado usa a função UPPER.
-
-**Revisão rápida:** Predicado sargável usa a coluna "limpa". Função na coluna → varredura, salvo índice sobre a expressão. Mais índices não resolvem predicado não sargável.
-
-## 12. OFI-000002 — Desempenho de banco de dados: desnormalização controlada
-
-*Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 45.* · item 1.17 · Média · gabarito **B**
-
-A **desnormalização controlada** reduz o número de junções em consultas frequentes (trocando redundância por leitura mais rápida), e é uma técnica reconhecida de ajuste de desempenho. Todas as outras ações pioram o desempenho ou não garantem o que afirmam.
-
-- **A)** Incorreta. Execução estritamente serial elimina a concorrência e derruba o desempenho; a correção é garantida por controle de concorrência (isolamento, bloqueios, MVCC), não por serialização total.
-- **B)** Correta. Reduz junções custosas em consultas muito frequentes; tem custo em redundância e manutenção, mas melhora o desempenho de leitura.
-- **C)** Incorreta. DISTINCT acrescenta ordenação ou *hash* para eliminar duplicatas e pode alterar o resultado; trocar todos os SELECT por ele é prejudicial.
-- **D)** Incorreta. ORDER BY adiciona custo de ordenação; deve ser usado só quando a ordem for necessária.
-- **E)** Incorreta. Fragmentação de índice **degrada** o desempenho; o ajuste correto é reorganizar ou reconstruir índices.
-
-**Revisão rápida:** Ajuste: índices adequados, consultas sargáveis, desnormalização controlada, estatísticas atualizadas.
-
-## 13. AUT-000006 — Bancos NoSQL e diferenciação entre tipos de bancos: grafos
+## 12. AUT-000006 — Bancos NoSQL e diferenciação entre tipos de bancos: grafos
 
 *Questão autoral — estilo Cesgranrio.* · item 1.18 · Média · gabarito **B**
 
@@ -190,7 +176,7 @@ O requisito central é **navegar relacionamentos em profundidade variável** (co
 
 **Revisão rápida:** Relacionamentos em profundidade → grafos. Agregado flexível → documentos. Acesso por chave → chave-valor. Análise por dimensões → multidimensional.
 
-## 14. OFI-000004 — Banco de grafos: consulta em Cypher
+## 13. OFI-000004 — Banco de grafos: consulta em Cypher
 
 *Questão oficial — Fundação Cesgranrio, Transpetro PSP/Terra 002/2023, Prova 6, questão 48.* · item 1.18 · Média · gabarito **A**
 
@@ -204,7 +190,7 @@ Em Cypher, `MATCH` descreve um padrão; `(p)-[:TIPO]->(x)` segue a relação de 
 
 **Revisão rápida:** Cypher: `MATCH (a)-[:REL]->(b) WHERE ... RETURN b`.
 
-## 15. AUT-000007 — Integração de dados: ETL e ELT
+## 14. AUT-000007 — Integração de dados: ETL e ELT
 
 *Questão autoral — estilo Cesgranrio.* · item 1.19 · Média · gabarito **C**
 
@@ -217,3 +203,17 @@ A ordem das fases revela a estratégia: **extração → carga (dados brutos no 
 - **E)** Incorreta. Virtualização de dados consulta as fontes sem copiá-las; o enunciado fala em extrair, gravar e consolidar em tabelas finais.
 
 **Revisão rápida:** ETL: extrai → transforma → carrega. ELT: extrai → carrega → transforma no destino.
+
+## 15. OFI-000042 — Data warehouse: Data Staging Area (ETL)
+
+*Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 22.* · item 1.19 · Média · gabarito **B**
+
+A **Data Staging Area** é a área intermediária onde os dados extraídos das fontes transacionais são **limpos, transformados e preparados** (o "T" do ETL) antes de serem carregados na área de apresentação do DW (Kimball).
+
+- **A)** Incorreta. Data marts são subconjuntos do DW voltados a uma área de negócio; ficam na camada de apresentação.
+- **B)** Correta. É a área de trânsito e transformação entre as fontes e o DW.
+- **C)** Incorreta. "Dimensional Model Area" não é camada padrão da arquitetura.
+- **D)** Incorreta. A Presentation Area é onde os dados já organizados ficam disponíveis para consulta.
+- **E)** Incorreta. "Living Sample Area" não é camada de arquitetura de DW.
+
+**Revisão rápida:** Staging area = onde se extrai, limpa e transforma antes de carregar.

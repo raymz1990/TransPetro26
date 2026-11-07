@@ -1,8 +1,8 @@
 {
  "modulo": "Questões oficiais — m02-projetos-produtos",
- "lote": "T04 — Transpetro 2023 (Prova 6)",
+ "lote": "T04 — Transpetro 2023 (Prova 6) e 2018 (Prova 15)",
  "data": "2026-11-06",
- "total": 5,
+ "total": 8,
  "questoes": [
   {
    "id": "OFI-000012",
@@ -295,6 +295,184 @@
     "situacao_gabarito": "de terceiros (QConcursos), alterado em 9/01/2024; não validado contra a banca",
     "aderencia_edital": "aderente",
     "url": "banco-questoes/oficiais/fontes-brutas/transpetro-2023-psp002-prova06-analise-sistemas-processos-negocios.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000044",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 28.",
+   "modulo": "02-projetos-produtos",
+   "assunto": "Scrum: momento da Retrospectiva da Sprint",
+   "item_edital": "2.1",
+   "id_matriz": "E5-026",
+   "itens_secundarios": [],
+   "dificuldade": "facil",
+   "habilidade": "memorizacao",
+   "tipo_questao": "conceitual",
+   "enunciado": "Quando ocorre, no SCRUM, a reunião de Retrospectiva da Sprint?",
+   "alternativas": {
+    "A": "No fim da Sprint, antes da Reunião de Revisão",
+    "B": "Entre a Reunião de Revisão da Sprint e a de Planejamento da próxima Sprint",
+    "C": "No início da Sprint, após a Reunião de Planejamento",
+    "D": "No final de cada dia da Sprint",
+    "E": "No início de cada dia da Sprint"
+   },
+   "gabarito": "B",
+   "resolucao": "A **Sprint Retrospective** ocorre **depois da Sprint Review** e **antes do próximo Sprint Planning**; é o último evento da Sprint. Inspeciona pessoas, relacionamentos, processos e ferramentas.",
+   "analise_alternativas": {
+    "A": "Incorreta. A Retrospectiva ocorre depois da Revisão, e não antes.",
+    "B": "Correta. Posição correta: após a Revisão e antes do planejamento da próxima Sprint.",
+    "C": "Incorreta. No início da Sprint ocorre o Planejamento.",
+    "D": "Incorreta. No fim de cada dia não há retrospectiva; a reunião diária é a Daily Scrum.",
+    "E": "Incorreta. No início do dia ocorre a Daily Scrum."
+   },
+   "fundamentacao": {
+    "item": "2.1",
+    "arquivo_teoria": "conteudo/02-projetos-produtos/02-scrum.md"
+   },
+   "ponto_atencao": "Ordem dos eventos: Planejamento → Daily Scrum (diária) → **Revisão** → **Retrospectiva**. A Revisão inspeciona o **Incremento**; a Retrospectiva inspeciona o **processo**.",
+   "revisao_rapida": "Revisão (produto) antes da Retrospectiva (processo).",
+   "tags": [
+    "scrum",
+    "retrospectiva",
+    "transpetro-2018",
+    "oficial",
+    "facil",
+    "memorizacao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Transpetro PSP RH 2018.1 (Edital nº 1)",
+    "cargo": "Analista de Sistemas Júnior — Processos de Negócio",
+    "ano": 2018,
+    "prova": "Prova 15",
+    "numero_original": 28,
+    "id_prova": "PRV-006",
+    "situacao_gabarito": "de terceiros (Ética), alterado em 09/05/2018; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/transpetro-2018-prova15-analista-sistemas-jr-processos-negocio.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000045",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 31.",
+   "modulo": "02-projetos-produtos",
+   "assunto": "Scrum: escala dos Pontos de História (Planning Poker)",
+   "item_edital": "2.1",
+   "id_matriz": "E5-026",
+   "itens_secundarios": [],
+   "dificuldade": "media",
+   "habilidade": "memorizacao",
+   "tipo_questao": "conceitual",
+   "enunciado": "No uso de alguns métodos ágeis, como o SCRUM, é comum que o esforço de desenvolvimento seja avaliado por meio de Pontos de História (Story Points).\nEssa metodologia usa cartas, semelhantes a cartas de baralho, onde cada uma apresenta um valor de uma escala de valores numéricos, que, normalmente, segue a seguinte sequência:",
+   "alternativas": {
+    "A": "0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10",
+    "B": "0, 1, 2, 3, 5, 8, 13, 20, 40 e 100",
+    "C": "0, 1, 2, 4, 8, 16, 32, 64, 128",
+    "D": "1, 2, 3, 6, 12, 24, 48, 96",
+    "E": "1, 5, 10, 50, 100, 500, 1000"
+   },
+   "gabarito": "B",
+   "resolucao": "O **Planning Poker** usa uma escala **tipo Fibonacci modificada** (0, 1, 2, 3, 5, 8, 13, 20, 40, 100): os saltos crescentes refletem a **incerteza** maior em itens maiores.",
+   "analise_alternativas": {
+    "A": "Incorreta. Escala linear não representa o crescimento da incerteza.",
+    "B": "Correta. Fibonacci modificada: a escala típica do Planning Poker.",
+    "C": "Incorreta. Potências de 2 não são a escala usual.",
+    "D": "Incorreta. Dobros a partir de 3 não são a escala usual.",
+    "E": "Incorreta. A escala 1-5-10... não é a usada."
+   },
+   "fundamentacao": {
+    "item": "2.1",
+    "arquivo_teoria": "conteudo/02-projetos-produtos/02-scrum.md"
+   },
+   "ponto_atencao": "Pontos de história medem **esforço relativo**, não horas. A sequência é Fibonacci (ou variação), para evitar falsa precisão.",
+   "revisao_rapida": "Planning Poker: 0, 1, 2, 3, 5, 8, 13, 20, 40, 100.",
+   "tags": [
+    "scrum",
+    "story-points",
+    "transpetro-2018",
+    "oficial",
+    "media",
+    "memorizacao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Transpetro PSP RH 2018.1 (Edital nº 1)",
+    "cargo": "Analista de Sistemas Júnior — Processos de Negócio",
+    "ano": 2018,
+    "prova": "Prova 15",
+    "numero_original": 31,
+    "id_prova": "PRV-006",
+    "situacao_gabarito": "de terceiros (Ética), alterado em 09/05/2018; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/transpetro-2018-prova15-analista-sistemas-jr-processos-negocio.pdf",
+    "sha256": "ver docs/estrategia/base-provas.md"
+   },
+   "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",
+   "status_validacao": "em_revisao"
+  },
+  {
+   "id": "OFI-000046",
+   "tipo": "oficial",
+   "rotulo": "Questão oficial — Fundação Cesgranrio, Transpetro PSP RH 2018.1, Prova 15, questão 63.",
+   "modulo": "02-projetos-produtos",
+   "assunto": "EAP: o que deve conter",
+   "item_edital": "2.4",
+   "id_matriz": "E5-029",
+   "itens_secundarios": [
+    "3"
+   ],
+   "dificuldade": "media",
+   "habilidade": "compreensao",
+   "tipo_questao": "cenario",
+   "enunciado": "Ao planejar um projeto de migração de software, foi solicitado ao analista realizar uma EAP e apresentá-la ao gerente.\nPara garantir a completude do seu trabalho, ele deve garantir que inseriu, nesse momento, na EAP,",
+   "alternativas": {
+    "A": "cenários e riscos",
+    "B": "escopo e entregas",
+    "C": "orçamento e custos",
+    "D": "restrições e premissas",
+    "E": "equipe e patrocinadores"
+   },
+   "gabarito": "B",
+   "resolucao": "A **EAP (WBS)** decompõe hierarquicamente o **escopo total do projeto** em **entregas** e pacotes de trabalho; vale a **regra dos 100%**: deve conter todo o escopo (e só ele). Riscos, custos, restrições e equipe são tratados em outros artefatos.",
+   "analise_alternativas": {
+    "A": "Incorreta. Riscos são tratados na análise e no registro de riscos.",
+    "B": "Correta. A EAP cobre todo o escopo e as entregas do projeto.",
+    "C": "Incorreta. Orçamento e custos são derivados da EAP, e não conteúdo dela.",
+    "D": "Incorreta. Restrições e premissas ficam na declaração do escopo.",
+    "E": "Incorreta. Equipe e patrocinadores pertencem ao plano de recursos e ao registro das partes interessadas."
+   },
+   "fundamentacao": {
+    "item": "2.4",
+    "arquivo_teoria": "conteudo/02-projetos-produtos/05-pmbok-7.md"
+   },
+   "ponto_atencao": "**100% do escopo** = completude da EAP. A EAP é base para cronograma, custos e responsabilidades, mas não os contém.",
+   "revisao_rapida": "EAP = escopo e entregas, em hierarquia.",
+   "tags": [
+    "eap",
+    "transpetro-2018",
+    "oficial",
+    "media",
+    "compreensao"
+   ],
+   "fonte_origem": {
+    "banca": "Fundação Cesgranrio",
+    "concurso": "Transpetro PSP RH 2018.1 (Edital nº 1)",
+    "cargo": "Analista de Sistemas Júnior — Processos de Negócio",
+    "ano": 2018,
+    "prova": "Prova 15",
+    "numero_original": 63,
+    "id_prova": "PRV-006",
+    "situacao_gabarito": "de terceiros (Ética), alterado em 09/05/2018; não validado contra a banca",
+    "aderencia_edital": "aderente",
+    "url": "banco-questoes/oficiais/fontes-brutas/transpetro-2018-prova15-analista-sistemas-jr-processos-negocio.pdf",
     "sha256": "ver docs/estrategia/base-provas.md"
    },
    "verificacao": "Conferida por resolução conforme a teoria do projeto; coincide com o gabarito do catálogo.",

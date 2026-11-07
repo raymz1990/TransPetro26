@@ -50,7 +50,7 @@ Pronto quando: cada decisão registrada em `CONTEXTO-ATUAL.md` e os arquivos afe
 
 ### P1 — Núcleo de estudo que ainda falta
 
-**T04 — Questões oficiais e adaptadas (usa o resultado da T02)** *(PARCIAL, 2026-11-06: 41 `OFI-` da Transpetro 2023, Prova 6, comentadas e `em_revisao`; 188 candidatas pendentes; nenhuma `ADP-` — ver `banco-questoes/oficiais/registro-t04.md`)*
+**T04 — Questões oficiais e adaptadas (usa o resultado da T02)** *(PARCIAL, 2026-11-06: 63 `OFI-` (Transpetro 2023 e 2018), comentadas e `em_revisao`; 166 candidatas pendentes; nenhuma `ADP-` — ver `banco-questoes/oficiais/registro-t04.md`)*
 Transcrever as questões catalogadas com texto, alternativas e gabarito conferidos, nos esquemas `OFI-` e `ADP-`; comentar cada alternativa; marcar status. Adaptadas indicam a origem e as alterações.
 Pronto quando: lote `OFI-` por assunto, cada uma com identificação verificável e comentário completo.
 

@@ -2,32 +2,32 @@
  "id": "SIM-M07",
  "titulo": "Simulado do módulo 7 — Análise de dados e informações",
  "tipo": "modulo",
- "tempo_minutos": 50,
- "total": 13,
+ "tempo_minutos": 54,
+ "total": 14,
  "criterio_tempo": "proporcional à prova real (270 min para 70 questões): 3.86 min por questão",
  "status": "rascunho",
  "observacoes": "Mistura de questões oficiais e autorais do módulo; algumas ainda `em_revisao`.",
  "criterio_distribuicao": "Até 15 questões por módulo, priorizando itens ainda não usados e mistura de dificuldade 30/50/20% (critério pedagógico).",
  "distribuicao_modulos": {
-  "M07": 13
+  "M07": 14
  },
  "composicao": {
   "por_tipo": {
    "autoral": 12,
-   "oficial": 1
+   "oficial": 2
   },
   "por_status": {
    "validada": 10,
-   "em_revisao": 3
+   "em_revisao": 4
   },
   "por_dificuldade": {
    "facil": 3,
-   "media": 8,
+   "media": 9,
    "dificil": 2
   },
   "por_gabarito": {
    "B": 4,
-   "D": 2,
+   "D": 3,
    "A": 3,
    "E": 2,
    "C": 2
@@ -85,6 +85,10 @@
   {
    "ordem": 13,
    "id": "AUT-000110"
+  },
+  {
+   "ordem": 14,
+   "id": "OFI-000055"
   }
  ]
 }

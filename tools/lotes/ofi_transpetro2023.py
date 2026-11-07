@@ -289,14 +289,4 @@ L.append(O(9, 44, "9.19", "ISO/IEC 27002: proteção contra malware", "media", "
  "**Versão importa**: na 27002:2013, malware = operações (12.2); na 27002:2022, é o controle tecnológico 8.7. Registre a edição ao estudar controles.", "Malware: 27002:2013 → 12.2 (operações); 27002:2022 → 8.7 (tecnológico).", ["iso-27002", "malware"], sec=["9.1"], teoria="conteudo/09-seguranca-informacao/02-seguranca-fisica-e-logica.md", verif="Gabarito do catálogo; seção 12 da edição 2013 conferida de memória (norma não consultada na fonte primária)."))
 
 # ---------------- grava ----------------
-n = 0
-por = {}
-for mod, q in L:
-    n += 1
-    q["id"] = "OFI-%06d" % n
-    por.setdefault(mod, []).append(q)
-assert n == len(L)
-for mod in sorted(por):
-    grava(por[mod], os.path.join(R, "banco-questoes/oficiais/por-assunto", "ofi-" + SLUG[mod] + ".json"),
-          "Questões oficiais — " + SLUG[mod], "T04 — Transpetro 2023 (Prova 6)", "2026-11-06")
-print(n, {m: len(v) for m, v in por.items()})
+# A gravação é feita por tools/lotes/ofi_build.py (junta os lotes e numera OFI-nnnnnn em sequência).
