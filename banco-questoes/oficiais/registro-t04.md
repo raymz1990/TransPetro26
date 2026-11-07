@@ -156,4 +156,4 @@
 
 ## Pendências da T04
 
-Das **229 candidatas**, **129 foram transcritas**; **100 continuam pendentes**. A T04 **continua parcial**. Questões adaptadas (`ADP-`) não foram criadas. Provas com gabarito de espelho (2006, 2012, 2018 e BB 2021) exigem conferência do gabarito na T13.
+Das **229 candidatas**, **129 foram transcritas**; **100 continuam pendentes**. A T04 foi **encerrada por decisão do usuário em 2026-11-06, com cobertura parcial**; as pendentes podem ser retomadas depois (ver acima). Questões adaptadas (`ADP-`) não foram criadas. Provas com gabarito de espelho (2006, 2012, 2018 e BB 2021) exigem conferência do gabarito na T13.

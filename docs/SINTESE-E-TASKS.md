@@ -50,7 +50,7 @@ Pronto quando: cada decisão registrada em `CONTEXTO-ATUAL.md` e os arquivos afe
 
 ### P1 — Núcleo de estudo que ainda falta
 
-**T04 — Questões oficiais e adaptadas (usa o resultado da T02)** *(PARCIAL, 2026-11-06: 129 `OFI-` (Transpetro, Caixa, BNDES, Petrobras, Suape), comentadas e `em_revisao`; 100 candidatas pendentes; BB 2021 não transcrita (gabarito a conferir); nenhuma `ADP-` — ver `banco-questoes/oficiais/registro-t04.md`)*
+**T04 — Questões oficiais e adaptadas (usa o resultado da T02)** *(ENCERRADA com cobertura parcial por decisão do usuário em 2026-11-06: 129 `OFI-` (Transpetro, Caixa, BNDES, Petrobras, Suape), comentadas e `em_revisao`; 100 candidatas pendentes; BB 2021 não transcrita (gabarito a conferir); nenhuma `ADP-` — ver `banco-questoes/oficiais/registro-t04.md`)*
 Transcrever as questões catalogadas com texto, alternativas e gabarito conferidos, nos esquemas `OFI-` e `ADP-`; comentar cada alternativa; marcar status. Adaptadas indicam a origem e as alterações.
 Pronto quando: lote `OFI-` por assunto, cada uma com identificação verificável e comentário completo.
 
