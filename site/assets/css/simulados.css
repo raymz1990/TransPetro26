@@ -1,0 +1,23 @@
+/* Simulados: cronômetro, navegação entre questões e resultado. */
+.sim-bar{position:sticky;top:0;z-index:5;display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;
+  background:var(--bg-2);border:1px solid var(--line-strong);border-left:3px solid var(--amber);padding:8px 14px;margin:0 0 14px}
+.sim-bar .tit{font:600 .85rem "Segoe UI",sans-serif;color:var(--text-2)}
+.sim-timer{font:700 1.6rem Georgia,serif;font-variant-numeric:tabular-nums;letter-spacing:.04em}
+.sim-timer.curto{color:var(--amber)}
+.sim-timer.fim{color:var(--err)}
+.sim-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(38px,1fr));gap:4px;margin:12px 0;max-width:640px}
+.sim-grid button{padding:6px 0;font:600 .8rem "Segoe UI",sans-serif;background:var(--surface);border:1px solid var(--line);color:var(--text-2);cursor:pointer;position:relative}
+.sim-grid button.a{background:var(--petrol-bg);border-color:var(--petrol);color:var(--text)}
+.sim-grid button.f::after{content:"";position:absolute;top:2px;right:2px;width:7px;height:7px;background:var(--amber)}
+.sim-grid button.c{outline:2px solid var(--amber);outline-offset:1px}
+.alt.sel{border-color:var(--petrol);background:var(--petrol-bg)}
+.sim-blk{font:600 .72rem "Segoe UI",sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--amber)}
+.sim-legenda{display:flex;flex-wrap:wrap;gap:14px;font-size:.78rem;color:var(--text-3)}
+.sim-resumo{border:1px solid var(--line-strong);background:var(--surface);padding:6px 18px 14px;margin:14px 0}
+.chip{display:inline-block;font-size:.7rem;letter-spacing:.05em;text-transform:uppercase;padding:1px 7px;border:1px solid var(--line-strong);color:var(--text-2)}
+.chip.c{border-color:var(--ok);color:var(--ok)}.chip.e{border-color:var(--err);color:var(--err)}.chip.b{border-color:var(--amber);color:var(--amber)}
+.res-q{border-top:1px solid var(--line);padding:10px 0}
+.res-q summary{cursor:pointer;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.res-q .qtext{margin-top:10px}
+.sim-aprov{border-left:3px solid var(--petrol)}
+@media (max-width:640px){.sim-timer{font-size:1.3rem}.sim-bar{position:static}}

@@ -8,7 +8,8 @@
     "03-processos-gerenciamento": "M3 · Processos", "04-governanca-ti": "M4 · Governança de TI",
     "05-engenharia-software": "M5 · Engenharia de software", "06-experiencia-usuario": "M6 · UX",
     "07-analise-dados": "M7 · Análise de dados", "08-logica-matematica": "M8 · Lógica matemática",
-    "09-seguranca-informacao": "M9 · Segurança da informação"
+    "09-seguranca-informacao": "M9 · Segurança da informação",
+    "gerais-lingua-portuguesa": "Gerais · Língua Portuguesa", "gerais-lingua-inglesa": "Gerais · Língua Inglesa"
   };
 
   TP.ultimaResposta = function (qid) {

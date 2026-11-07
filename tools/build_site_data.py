@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """Gera site/assets/data/*.json e copia os .md de conteudo/ para site/conteudo/.
-Fonte única: conteudo/, conteudo-gerais/ e banco-questoes/autorais/por-assunto/*.json.
+Fonte única: conteudo/, conteudo-gerais/, banco-questoes/**/*.json (autorais, gerais e oficiais) e banco-questoes/simulados/*.json.
 Uso: python tools/build_site_data.py (na raiz do projeto)."""
 import json, re, shutil, glob, os
 R = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -37,10 +37,26 @@ for tipo, base in (("especifico", "conteudo"), ("geral", "conteudo-gerais")):
         grupos.append({"id": f"{tipo[0]}{num}", "tipo": tipo, "numero": num, "pasta": d, "titulo": titulo, "assuntos": arqs})
 json.dump({"gerado_de": "conteudo/ e conteudo-gerais/", "grupos": grupos}, open(os.path.join(S, "assets/data/conteudo.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 qs = []
-for f in sorted(glob.glob(os.path.join(R, "banco-questoes/autorais/por-assunto/*.json"))):
+_ARQS = []
+for _p in ("banco-questoes/autorais/por-assunto", "banco-questoes/autorais/gerais", "banco-questoes/oficiais/por-assunto"):
+    _ARQS += sorted(glob.glob(os.path.join(R, _p, "*.json")))
+for f in _ARQS:
     for q in json.load(open(f, encoding="utf-8"))["questoes"]:
-        qs.append({k: q[k] for k in ("id","tipo","rotulo","modulo","assunto","item_edital","dificuldade","habilidade","enunciado","alternativas","gabarito","resolucao","analise_alternativas","ponto_atencao","revisao_rapida","status_validacao")})
+        o = {k: q[k] for k in ("id","tipo","rotulo","modulo","assunto","item_edital","dificuldade","habilidade","enunciado","alternativas","gabarito","resolucao","analise_alternativas","ponto_atencao","revisao_rapida","status_validacao")}
+        if q.get("fonte_origem"):
+            fo = q["fonte_origem"]
+            o["fonte_origem"] = {k: fo.get(k) for k in ("banca","concurso","cargo","ano","prova","numero_original","id_prova","situacao_gabarito","aderencia_edital")}
+        qs.append(o)
+ids = [q["id"] for q in qs]
+assert len(ids) == len(set(ids)), "IDs duplicados"
 json.dump({"total": len(qs), "questoes": qs}, open(os.path.join(S, "assets/data/questoes.json"), "w", encoding="utf-8"), ensure_ascii=False)
+sims = []
+for f in sorted(glob.glob(os.path.join(R, "banco-questoes/simulados/sim-*.json"))):
+    s = json.load(open(f, encoding="utf-8"))
+    for x in s["questoes"]: assert x["id"] in ids, (s["id"], x["id"])
+    sims.append(s)
+json.dump({"simulados": sims}, open(os.path.join(S, "assets/data/simulados.json"), "w", encoding="utf-8"), ensure_ascii=False)
+print("simulados", len(sims))
 print("grupos", len(grupos), "assuntos", sum(len(g["assuntos"]) for g in grupos), "questoes", len(qs))
 
 # ---- Índice de busca textual (site/assets/data/busca.json) ----

@@ -10,6 +10,14 @@
     });
   }
 
+  function ultimoSimulado() {
+    var d = TP.dados().simulados || { tentativas: [], andamento: {} }, ts = d.tentativas, and = Object.keys(d.andamento);
+    if (and.length) return h("p", {}, "Em andamento: ", h("a", { href: "#/simulados/" + and[0] + "/prova" }, and[0]), ".");
+    if (!ts.length) return h("p", { class: "muted" }, "Nenhuma tentativa ainda. ", h("a", { href: "#/simulados" }, "Ver simulados"), ".");
+    var t = ts[ts.length - 1];
+    return h("p", {}, h("a", { href: "#/simulados/" + t.sim + "/resultado/" + t.id }, t.titulo), h("br"), t.acertos + "/" + t.total + " acertos (" + Math.round(100 * t.acertos / t.total) + "%)");
+  }
+
   /* ---------- Início ---------- */
   TP.rota("", function (main) {
     var c = TP.resumoConteudo(), q = TP.resumoQuestoes();
@@ -34,6 +42,7 @@
     main.appendChild(h("div", { class: "row" },
       h("a", { class: "btn primary", href: "#/conteudo" }, "Estudar conteúdo"),
       h("a", { class: "btn", href: "#/questoes" }, "Resolver questões"),
+      h("a", { class: "btn", href: "#/simulados" }, "Simulados"),
       h("a", { class: "btn", href: "#/erros" }, "Caderno de erros"),
       h("a", { class: "btn", href: "#/busca" }, "Buscar")));
 
@@ -44,8 +53,7 @@
         h("p", { class: "muted" }, "Plano diário, semanal e mensal: ainda não implementado. Por ora, use a lista de conteúdo e marque o que estudou.")),
       h("section", { class: "panel" }, h("h3", {}, "Próximas revisões"),
         h("p", { class: "muted" }, "Revisão espaçada: ainda não implementada." + (erros ? " Há " + erros + " item(ns) no caderno de erros." : ""))),
-      h("section", { class: "panel" }, h("h3", {}, "Último simulado"),
-        h("p", { class: "muted" }, "Simulados: ainda não implementados."))));
+      h("section", { class: "panel" }, h("h3", {}, "Último simulado"), ultimoSimulado())));
 
     /* Cobertura por módulo */
     main.appendChild(h("h2", {}, "Progresso por módulo"));
@@ -65,7 +73,7 @@
 
     main.appendChild(h("div", { class: "notice" }, "Seus dados (progresso, respostas, erros) ficam armazenados apenas neste navegador e neste dispositivo; não são sincronizados. Limpar os dados do navegador apaga o progresso: faça backup em ",
       h("a", { href: "#/dados" }, "Meus dados"), ". O edital oficial prevalece sobre qualquer material deste site."));
-    main.appendChild(h("p", { class: "muted" }, "Disponível: teoria (módulos 1 a 9 e Gerais), 90 questões autorais, caderno de erros, desempenho, busca e backup. Ainda não implementado: plano de estudos, simulados, flashcards e revisão espaçada. As questões são autorais, não da Cesgranrio."));
+    main.appendChild(h("p", { class: "muted" }, "Disponível: teoria (módulos 1 a 9 e Gerais), banco de questões (oficiais da Cesgranrio e autorais, com origem identificada), simulados cronometrados, caderno de erros, desempenho, busca e backup. Ainda não implementado: plano de estudos, flashcards e revisão espaçada. Questões autorais não são da Cesgranrio."));
   });
 
   /* ---------- Conteúdo ---------- */
@@ -181,10 +189,11 @@
       "Plataforma estática (HTML, CSS e JavaScript) de preparação para o **Processo Seletivo Público TRANSPETRO 2026.4, Ênfase 5**, organizado pela Fundação Cesgranrio.\n\n" +
       "## Origem e limites do conteúdo\n\n" +
       "- A teoria foi produzida pelo projeto a partir do Anexo IV do edital e **validada pelo usuário com ressalvas** (fontes de memória, normas não lidas e versões a confirmar, registradas nos relatórios em `docs/qualidade/`).\n" +
-      "- As questões são **autorais** (\"estilo Cesgranrio\"): foram criadas pelo projeto e **não** são questões de prova nem foram elaboradas pela banca.\n" +
+      "- As questões **oficiais** foram transcritas de provas anteriores da Fundação Cesgranrio, com concurso, cargo, ano, prova e número identificados; os gabaritos são, em geral, de espelhos de terceiros e **não foram validados contra a banca**. Os comentários são do projeto.\n" +
+      "- As questões **autorais** (\"estilo Cesgranrio\") foram criadas pelo projeto e **não** são questões de prova nem foram elaboradas pela banca. As marcadas como \"em revisão\" aguardam validação do usuário.\n" +
       "- O texto do edital prevalece sobre qualquer material deste site.\n\n" +
       "## Ainda não disponível\n\n" +
-      "Plano de estudos, simulados, flashcards, revisão espaçada, questões oficiais e adaptadas e questões de Conhecimentos Gerais.") }));
+      "Plano de estudos, flashcards, revisão espaçada e questões adaptadas.") }));
   });
 
   /* ---------- Inicialização ---------- */
@@ -201,8 +210,8 @@
     TP.iniciarBuscaTopo(document.getElementById("topsearch"));
     TP.carregar();
     var main = document.getElementById("app");
-    Promise.all([carregarJson("assets/data/conteudo.json"), carregarJson("assets/data/questoes.json")]).then(function (r) {
-      TP.data = { conteudo: r[0], questoes: r[1].questoes };
+    Promise.all([carregarJson("assets/data/conteudo.json"), carregarJson("assets/data/questoes.json"), carregarJson("assets/data/simulados.json")]).then(function (r) {
+      TP.data = { conteudo: r[0], questoes: r[1].questoes, simulados: r[2].simulados };
       if (TP.storageAviso) TP.toast(TP.storageAviso);
       window.addEventListener("hashchange", TP.navegar);
       TP.navegar();

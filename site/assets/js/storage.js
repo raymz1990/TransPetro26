@@ -6,7 +6,7 @@
   window.TP = window.TP || {};
 
   function vazio() {
-    return { versao: VERSAO, estudados: {}, respostas: {}, marcadas: {}, erros: {} };
+    return { versao: VERSAO, estudados: {}, respostas: {}, marcadas: {}, erros: {}, simulados: { tentativas: [], andamento: {} } };
   }
   function ehObjeto(x) { return x && typeof x === "object" && !Array.isArray(x); }
 
@@ -22,6 +22,11 @@
     Object.keys(d.respostas).forEach(function (q) {
       if (!Array.isArray(d.respostas[q])) throw new Error("Respostas inválidas para " + q);
     });
+    /* Simulados (campo acrescentado depois da versão 1: backups antigos não o possuem). */
+    if (d.simulados === undefined) d.simulados = {};
+    if (!ehObjeto(d.simulados)) throw new Error("Campo inválido: simulados");
+    if (!Array.isArray(d.simulados.tentativas)) d.simulados.tentativas = [];
+    if (!ehObjeto(d.simulados.andamento)) d.simulados.andamento = {};
     d.versao = VERSAO;
     return d;
   }
@@ -67,6 +72,11 @@
         dados.respostas[q] = atual;
       });
       Object.keys(novo.erros).forEach(function (q) { if (!dados.erros[q]) dados.erros[q] = novo.erros[q]; });
+      var ids = {};
+      dados.simulados.tentativas.forEach(function (t) { ids[t.id] = 1; });
+      novo.simulados.tentativas.forEach(function (t) { if (!ids[t.id]) dados.simulados.tentativas.push(t); });
+      dados.simulados.tentativas.sort(function (a, b) { return a.inicio - b.inicio; });
+      Object.keys(novo.simulados.andamento).forEach(function (s) { if (!dados.simulados.andamento[s]) dados.simulados.andamento[s] = novo.simulados.andamento[s]; });
     }
     return TP.salvar();
   };

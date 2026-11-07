@@ -50,23 +50,23 @@ Pronto quando: cada decisão registrada em `CONTEXTO-ATUAL.md` e os arquivos afe
 
 ### P1 — Núcleo de estudo que ainda falta
 
-**T04 — Questões oficiais e adaptadas (usa o resultado da T02)**
+**T04 — Questões oficiais e adaptadas (usa o resultado da T02)** *(PARCIAL, 2026-11-06: 41 `OFI-` da Transpetro 2023, Prova 6, comentadas e `em_revisao`; 188 candidatas pendentes; nenhuma `ADP-` — ver `banco-questoes/oficiais/registro-t04.md`)*
 Transcrever as questões catalogadas com texto, alternativas e gabarito conferidos, nos esquemas `OFI-` e `ADP-`; comentar cada alternativa; marcar status. Adaptadas indicam a origem e as alterações.
 Pronto quando: lote `OFI-` por assunto, cada uma com identificação verificável e comentário completo.
 
-**T05 — Expansão do banco autoral por módulo (cobrir os 29 itens sem questão)**
+**T05 — Expansão do banco autoral por módulo (cobrir os 29 itens sem questão)** *(FEITO, 2026-11-06: AUT-000091 a 120; 94 de 94 itens com questão principal; todos os módulos com mais de 10; questões `em_revisao`)*
 Itens sem questão principal: 9.1, 9.5 a 9.8, 9.10, 9.13, 9.15, 9.17, 9.18, 9.21 (M9) e os equivalentes nos demais módulos (ver `relatorio-cobertura-questoes.md`). Mais questões difíceis, de análise de afirmações e integradoras. Equilibrar a alternativa correta por extensão (em M9, a correta é a mais longa em 5 de 10).
 Pronto quando: todo item do edital tem ao menos uma questão e cada módulo tem mais de 10.
 
-**T06 — Questões de Conhecimentos Gerais**
+**T06 — Questões de Conhecimentos Gerais** *(FEITO, 2026-11-06: 35 autorais, AUT-000121 a 155 — 24 de Português e 11 de Inglês, 14 de 14 itens; `em_revisao`)*
 Português e Inglês, estilo Cesgranrio, a partir da teoria validada; textos de interpretação autorais ou de fonte verificável.
 Pronto quando: banco de Gerais com cobertura dos 14 itens.
 
-**T07 — Simulados (dados)**
+**T07 — Simulados (dados)** *(FEITO, 2026-11-06: 14 simulados em `banco-questoes/simulados/` — ESP-01 e ESP-02 (50), COM-01 (70), GER-01 (20), 9 por módulo, DIAG-01 (20); validados por `tools/validar_banco.py`)*
 Montar simulado específico de 50 questões e simulado completo de 70 (estrutura conforme `docs/edital/estrutura-prova.md`), simulados por módulo e diagnóstico; sem inventar pesos por assunto. Depende de T04 a T06 para ter volume.
 Pronto quando: `banco-questoes/simulados/` com JSON validado (IDs existentes, tamanho correto) e gabarito comentado.
 
-**T08 — Simulados no site (cronômetro, entrega, correção, histórico)**
+**T08 — Simulados no site (cronômetro, entrega, correção, histórico)** *(FEITO, 2026-11-06: `timer.js`, `simulations.js`; testado no navegador, inclusive entrega automática por tempo e celular)*
 `simulations.js`, `timer.js`; navegação entre questões, marcação, confirmação de entrega, resultado detalhado, tentativas independentes salvas em localStorage.
 Pronto quando: simulado completo executável, com histórico e sem revelar gabarito durante a prova.
 

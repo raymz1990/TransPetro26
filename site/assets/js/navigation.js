@@ -33,8 +33,8 @@
   };
 
   var MENU = [
-    ["Estudo", [["#/", "Início"], ["#/conteudo", "Conteúdo"], ["#/questoes", "Questões"], ["#/erros", "Caderno de erros"], ["#/desempenho", "Desempenho"]]],
-    ["Em desenvolvimento", [["plano", "Plano de estudos"], ["simulados", "Simulados"], ["flashcards", "Flashcards"], ["revisoes", "Revisões"]]],
+    ["Estudo", [["#/", "Início"], ["#/conteudo", "Conteúdo"], ["#/questoes", "Questões"], ["#/simulados", "Simulados"], ["#/erros", "Caderno de erros"], ["#/desempenho", "Desempenho"]]],
+    ["Em desenvolvimento", [["plano", "Plano de estudos"], ["flashcards", "Flashcards"], ["revisoes", "Revisões"]]],
     ["Sistema", [["#/dados", "Meus dados"], ["#/sobre", "Sobre o projeto"]]]
   ];
 
@@ -54,6 +54,7 @@
 
   TP.navegar = function () {
     var main = document.getElementById("app");
+    if (TP.aoSair) { var sair = TP.aoSair; TP.aoSair = null; sair(); }   /* encerra cronômetros da tela anterior */
     var partes = (location.hash || "#/").replace(/^#\/?/, "").split("/").filter(Boolean).map(decodeURIComponent);
     var nome = partes[0] || "";
     var fn = TP.rotas[nome];
