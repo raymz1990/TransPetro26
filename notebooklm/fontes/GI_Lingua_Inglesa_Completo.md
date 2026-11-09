@@ -5,7 +5,7 @@
 - Ênfase: 5 — Análise de Sistemas: Processos de Negócios
 - Banca: Fundação Cesgranrio
 - Módulo: GI — Conhecimentos Gerais — Língua Inglesa
-- Gerado em: 2026-11-07, por `tools/build_notebooklm.py`, a partir de `conteudo-gerais/02-lingua-inglesa/` (fonte de verdade; não editar este arquivo)
+- Gerado em: 2026-11-09, por `tools/build_notebooklm.py`, a partir de `conteudo-gerais/02-lingua-inglesa/` (fonte de verdade; não editar este arquivo)
 - Situação do conteúdo nos arquivos de origem: VALIDADO (com ressalvas nos relatórios de produção em `docs/qualidade/`)
 
 ## Como usar este documento

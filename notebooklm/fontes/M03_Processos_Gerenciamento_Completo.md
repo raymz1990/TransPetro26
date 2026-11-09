@@ -5,7 +5,7 @@
 - Ênfase: 5 — Análise de Sistemas: Processos de Negócios
 - Banca: Fundação Cesgranrio
 - Módulo: M03 — Processos, Grupos de Processos e Áreas de Conhecimento
-- Gerado em: 2026-11-07, por `tools/build_notebooklm.py`, a partir de `conteudo/03-processos-gerenciamento/` (fonte de verdade; não editar este arquivo)
+- Gerado em: 2026-11-09, por `tools/build_notebooklm.py`, a partir de `conteudo/03-processos-gerenciamento/` (fonte de verdade; não editar este arquivo)
 - Situação do conteúdo nos arquivos de origem: EM_REVISAO, VALIDADO (com ressalvas nos relatórios de produção em `docs/qualidade/`)
 
 ## Como usar este documento

@@ -87,7 +87,7 @@ Autorizada pelo usuário em bloco. Detalhes, limitações e testes: `docs/qualid
 Validação, pelo usuário, das 194 questões `em_revisao`; concluir a T04 (100 candidatas); informar data da prova e capacidade real de estudo (T11); depois P3 (T13 a T15), com autorização explícita. NotebookLM (T14) não foi iniciado.
 
 ## Sessão de 2026-11-07 (P3: T13 a T15)
-Ver `docs/qualidade/relatorio-p3.md` e `relatorio-t13.md`. 63 gabaritos Transpetro 2018/2023 conferidos com PDFs oficiais; `notebooklm/` gerado por `tools/build_notebooklm.py`; auditoria do site com `tools/auditar_site.py`. Pendências: validação das 194 questões, gabaritos de 66 oficiais de outras provas, fontes primárias PMI/ISO/ITIL, roteiros de podcast, testes em outros navegadores/leitor de tela.
+Ver `docs/qualidade/relatorio-p3.md` e `relatorio-t13.md`. 63 gabaritos Transpetro 2018/2023 conferidos com PDFs oficiais; `notebooklm/` gerado por `tools/build_notebooklm.py`; auditoria do site com `tools/auditar_site.py`. Pendências: validação das 194 questões, gabaritos de 66 oficiais de outras provas, fontes primárias PMI/ISO/ITIL, envio de teste ao NotebookLM (roteiros de podcast M01–M09 feitos em 2026-11-09), testes em outros navegadores/leitor de tela.
 
 ## Regras
 - Não repetir tarefas concluídas.

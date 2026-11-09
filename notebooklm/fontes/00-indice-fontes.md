@@ -1,6 +1,6 @@
 # Índice das fontes para o NotebookLM
 
-Gerado em 2026-11-07 por `python tools/build_notebooklm.py`. Concurso: TRANSPETRO 2026.4, Ênfase 5, Fundação Cesgranrio.
+Gerado em 2026-11-09 por `python tools/build_notebooklm.py`. Concurso: TRANSPETRO 2026.4, Ênfase 5, Fundação Cesgranrio.
 
 | Cód. | Módulo | Arquivo | Arquivos de origem | Tamanho (KB) |
 |---|---|---|---|---|
@@ -23,5 +23,5 @@ Questões: `fontes/questoes/` (um par *sem gabarito* e *gabarito comentado* por 
 - Itens com referência "não verificada" ou "de memória" mantêm essa ressalva no texto; ver `docs/qualidade/relatorio-t13.md`.
 - 284 questões exportadas (oficiais e autorais); 194 estão `em_revisao` (não validadas pelo usuário).
 - Resumos e mapas são extraídos automaticamente (seções "Síntese" e títulos); não são reescritos.
-- Roteiros de podcast **não** foram produzidos (pendente); use `prompts/podcast.md` no NotebookLM.
+- Roteiros de podcast: 9 (M01–M09) em `roteiros-podcast/`, escritos à mão (não gerados por este script); não há roteiros de Português e Inglês. Use também `prompts/podcast.md`.
 - O NotebookLM aceita até 50 fontes por notebook: use um notebook por módulo (teoria + questões) ou por fase de estudo.

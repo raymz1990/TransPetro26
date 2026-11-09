@@ -6,7 +6,7 @@
 - Banca: Fundação Cesgranrio
 - Módulo: GI — Conhecimentos Gerais — Língua Inglesa
 - Total: 11 questões; status `validada` ou `em_revisao` (indicado em cada questão)
-- Gerado em 2026-11-07 por `tools/build_notebooklm.py` a partir de `banco-questoes/`
+- Gerado em 2026-11-09 por `tools/build_notebooklm.py` a partir de `banco-questoes/`
 
 
 ### AUT-000145 — item LI-01 — dificuldade media
