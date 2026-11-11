@@ -6,7 +6,7 @@
 - Banca: Fundação Cesgranrio
 - Módulo: M07 — Análise de Dados e Informações
 - Total: 17 questões; status `validada` ou `em_revisao` (indicado em cada questão)
-- Gerado em 2026-11-09 por `tools/build_notebooklm.py` a partir de `banco-questoes/`
+- Gerado em 2026-11-11 por `tools/build_notebooklm.py` a partir de `banco-questoes/`
 
 
 ### AUT-000061 — Gabarito: B

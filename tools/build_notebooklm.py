@@ -166,6 +166,6 @@ w(os.path.join(N, "README.md"),
   "# NotebookLM — fontes do projeto\n\nArquivos **gerados**: edite `conteudo/` ou `banco-questoes/` e rode `python tools/build_notebooklm.py`.\n\n"
   "Sugestão: um notebook por módulo, com `fontes/Mxx_*_Completo.md` e, para treino, `fontes/questoes/Mxx_*_Questoes_sem_gabarito.md`, mantendo o gabarito comentado fora até terminar. Prompts em `prompts/`.\n\n"
   "`roteiros-podcast/`: roteiros de revisão por módulo, **escritos à mão** (o build não os apaga nem regenera; revise-os quando a teoria mudar).\n\n"
-  "`TESTE-ENVIO.md`: procedimento do teste de envio ao NotebookLM (**não executado**).\n\n"
+  "`TESTE-ENVIO.md`: procedimento e resultado parcial do teste de envio ao NotebookLM.\n\n"
   "O NotebookLM é ferramenta complementar: não valida conteúdo nem gabarito. Ver `fontes/00-indice-fontes.md`.\n")
 print("fontes", len(indice), "questoes", nq)

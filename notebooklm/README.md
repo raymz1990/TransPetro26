@@ -6,6 +6,6 @@ Sugestão: um notebook por módulo, com `fontes/Mxx_*_Completo.md` e, para trein
 
 `roteiros-podcast/`: roteiros de revisão por módulo, **escritos à mão** (o build não os apaga nem regenera; revise-os quando a teoria mudar).
 
-`TESTE-ENVIO.md`: procedimento do teste de envio ao NotebookLM (**não executado**).
+`TESTE-ENVIO.md`: procedimento e resultado parcial do teste de envio ao NotebookLM.
 
 O NotebookLM é ferramenta complementar: não valida conteúdo nem gabarito. Ver `fontes/00-indice-fontes.md`.

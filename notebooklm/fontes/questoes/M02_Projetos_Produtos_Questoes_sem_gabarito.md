@@ -6,7 +6,7 @@
 - Banca: Fundação Cesgranrio
 - Módulo: M02 — Gerenciamento de Projetos e Produtos
 - Total: 21 questões; status `validada` ou `em_revisao` (indicado em cada questão)
-- Gerado em 2026-11-09 por `tools/build_notebooklm.py` a partir de `banco-questoes/`
+- Gerado em 2026-11-11 por `tools/build_notebooklm.py` a partir de `banco-questoes/`
 
 
 ### AUT-000011 — item 2.1 — dificuldade facil

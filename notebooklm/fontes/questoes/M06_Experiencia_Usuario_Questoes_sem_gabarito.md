@@ -6,7 +6,7 @@
 - Banca: Fundação Cesgranrio
 - Módulo: M06 — Experiência do Usuário (UX)
 - Total: 17 questões; status `validada` ou `em_revisao` (indicado em cada questão)
-- Gerado em 2026-11-09 por `tools/build_notebooklm.py` a partir de `banco-questoes/`
+- Gerado em 2026-11-11 por `tools/build_notebooklm.py` a partir de `banco-questoes/`
 
 
 ### AUT-000051 — item 6.1 — dificuldade media

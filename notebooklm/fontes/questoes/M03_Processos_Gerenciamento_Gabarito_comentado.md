@@ -6,7 +6,7 @@
 - Banca: Fundação Cesgranrio
 - Módulo: M03 — Processos, Grupos de Processos e Áreas de Conhecimento
 - Total: 15 questões; status `validada` ou `em_revisao` (indicado em cada questão)
-- Gerado em 2026-11-09 por `tools/build_notebooklm.py` a partir de `banco-questoes/`
+- Gerado em 2026-11-11 por `tools/build_notebooklm.py` a partir de `banco-questoes/`
 
 
 ### AUT-000021 — Gabarito: B

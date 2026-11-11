@@ -5,7 +5,7 @@
 - Ênfase: 5 — Análise de Sistemas: Processos de Negócios
 - Banca: Fundação Cesgranrio
 - Módulo: M06 — Experiência do Usuário (UX)
-- Gerado em: 2026-11-09, por `tools/build_notebooklm.py`, a partir de `conteudo/06-experiencia-usuario/` (fonte de verdade; não editar este arquivo)
+- Gerado em: 2026-11-11, por `tools/build_notebooklm.py`, a partir de `conteudo/06-experiencia-usuario/` (fonte de verdade; não editar este arquivo)
 - Situação do conteúdo nos arquivos de origem: VALIDADO (com ressalvas nos relatórios de produção em `docs/qualidade/`)
 
 ## Como usar este documento

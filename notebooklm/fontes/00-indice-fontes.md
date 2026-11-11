@@ -1,6 +1,6 @@
 # Índice das fontes para o NotebookLM
 
-Gerado em 2026-11-09 por `python tools/build_notebooklm.py`. Concurso: TRANSPETRO 2026.4, Ênfase 5, Fundação Cesgranrio.
+Gerado em 2026-11-11 por `python tools/build_notebooklm.py`. Concurso: TRANSPETRO 2026.4, Ênfase 5, Fundação Cesgranrio.
 
 | Cód. | Módulo | Arquivo | Arquivos de origem | Tamanho (KB) |
 |---|---|---|---|---|

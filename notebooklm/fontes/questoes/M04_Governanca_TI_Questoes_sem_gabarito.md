@@ -6,7 +6,7 @@
 - Banca: Fundação Cesgranrio
 - Módulo: M04 — Gestão e Governança em TI
 - Total: 20 questões; status `validada` ou `em_revisao` (indicado em cada questão)
-- Gerado em 2026-11-09 por `tools/build_notebooklm.py` a partir de `banco-questoes/`
+- Gerado em 2026-11-11 por `tools/build_notebooklm.py` a partir de `banco-questoes/`
 
 
 ### AUT-000031 — item 4.6 — dificuldade facil
